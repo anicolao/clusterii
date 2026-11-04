@@ -11478,5 +11478,563 @@
         "decision": null
       }
     ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e595be6e7580c9dae522437039b82d6083d5a1e901a4bab161af0e1678b5cdc0",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/faction-composition-gallery/large/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "sha256": "e595be6e7580c9dae522437039b82d6083d5a1e901a4bab161af0e1678b5cdc0",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2cd988a3ae3d3f84b0e22c7e362004774053c3a986032622d4966ef3561fa030",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/faction-composition-gallery/large/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "sha256": "2cd988a3ae3d3f84b0e22c7e362004774053c3a986032622d4966ef3561fa030",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/faction-composition-gallery/large/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "sha256": "2cd988a3ae3d3f84b0e22c7e362004774053c3a986032622d4966ef3561fa030",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8e08879ed84f15b5adfab20d4a6bc4a785c3398b2387b828caaace3fa022ded1",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/faction-composition-gallery/large/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "sha256": "8e08879ed84f15b5adfab20d4a6bc4a785c3398b2387b828caaace3fa022ded1",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "677f019ddc305d6ee8595f4319aff1e80824521e69c15001607776074ff8e3aa",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/route-instrument-components/large/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/large/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "sha256": "677f019ddc305d6ee8595f4319aff1e80824521e69c15001607776074ff8e3aa",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1a89ea3106e246bc2c53d5bce2e7d002c08d7013e9455144e61c191bbbd888dc",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/route-instrument-components/large/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/large/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "sha256": "1a89ea3106e246bc2c53d5bce2e7d002c08d7013e9455144e61c191bbbd888dc",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "050b3715a3a4767a86da11cb253b7aa10b55ad0a5bf194e2dc92068dacd1193d",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/contextual-aftermath-components/large/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/large/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "sha256": "050b3715a3a4767a86da11cb253b7aa10b55ad0a5bf194e2dc92068dacd1193d",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "13af7f56ed583170d5e38b66c75d57f04674efe27fc7f4544848faaff6a59900",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Large 3840x2160 viewed downscaled2048x1152; visible layout/content only. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/contextual-aftermath-components/large/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/large/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "sha256": "13af7f56ed583170d5e38b66c75d57f04674efe27fc7f4544848faaff6a59900",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/contextual-aftermath-components/large/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/large/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "sha256": "13af7f56ed583170d5e38b66c75d57f04674efe27fc7f4544848faaff6a59900",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4558f8b2819a72297eca005aad0e35b099609bc4964cc78144856df9794c727e",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/faction-composition-gallery/short/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "sha256": "4558f8b2819a72297eca005aad0e35b099609bc4964cc78144856df9794c727e",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/faction-composition-gallery/short/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "sha256": "4558f8b2819a72297eca005aad0e35b099609bc4964cc78144856df9794c727e",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5fbdc225d4c0f7de234efcf0ad0cb4072fc811e04eacfed1f9c73435784d62f8",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/faction-composition-gallery/short/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "sha256": "5fbdc225d4c0f7de234efcf0ad0cb4072fc811e04eacfed1f9c73435784d62f8",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/faction-composition-gallery/short/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "sha256": "5fbdc225d4c0f7de234efcf0ad0cb4072fc811e04eacfed1f9c73435784d62f8",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6d69202b441de4b52db26bd7ad89f5f974677f0c4fd54df1ffc464cd17e42683",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/route-instrument-components/short/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/short/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "sha256": "6d69202b441de4b52db26bd7ad89f5f974677f0c4fd54df1ffc464cd17e42683",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b5eb4cf38893957bfe0e4c45fd9333de6b35ec7f01cd5e3196da5e9d57d318dc",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/route-instrument-components/short/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/short/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "sha256": "b5eb4cf38893957bfe0e4c45fd9333de6b35ec7f01cd5e3196da5e9d57d318dc",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0598d3cfc5e2f99c493d5e8126eb698f41a328c2b7889e8c558c644e70c8df24",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/contextual-aftermath-components/short/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/short/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "sha256": "0598d3cfc5e2f99c493d5e8126eb698f41a328c2b7889e8c558c644e70c8df24",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3bd4c43e8ebde884d1c5b7a1f9fe3ef411bb1c69279a622700cc1fb189446227",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/contextual-aftermath-components/short/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/short/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "sha256": "3bd4c43e8ebde884d1c5b7a1f9fe3ef411bb1c69279a622700cc1fb189446227",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/contextual-aftermath-components/short/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/short/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "sha256": "3bd4c43e8ebde884d1c5b7a1f9fe3ef411bb1c69279a622700cc1fb189446227",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "66497b5437746900e8cda989c4ecdc344721ef6ed00ebdc2b1f36886f5eed03f",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/faction-composition-gallery/desktop/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "sha256": "66497b5437746900e8cda989c4ecdc344721ef6ed00ebdc2b1f36886f5eed03f",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/faction-composition-gallery/desktop/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "sha256": "66497b5437746900e8cda989c4ecdc344721ef6ed00ebdc2b1f36886f5eed03f",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c47cf851a59a386423899cb413849ff6ccbe7b25f09b1ce7b1bc28f2e7ffc13d",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/faction-composition-gallery/desktop/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "sha256": "c47cf851a59a386423899cb413849ff6ccbe7b25f09b1ce7b1bc28f2e7ffc13d",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/faction-composition-gallery/desktop/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "sha256": "c47cf851a59a386423899cb413849ff6ccbe7b25f09b1ce7b1bc28f2e7ffc13d",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f98bf90ef5d4892b62d05d5d7a2b23d0144737a581a00db4babd96c77caca456",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/route-instrument-components/desktop/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/desktop/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "sha256": "f98bf90ef5d4892b62d05d5d7a2b23d0144737a581a00db4babd96c77caca456",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ba4b2f5983599a7b928b01baa178bb21ce7cd7f25b3e48efbe5b490030ff17cc",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/route-instrument-components/desktop/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/desktop/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "sha256": "ba4b2f5983599a7b928b01baa178bb21ce7cd7f25b3e48efbe5b490030ff17cc",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d2e54a941ef369a144d60a2b078f81a5dd2e11291b199ffa0153dead8b50ad41",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/contextual-aftermath-components/desktop/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/desktop/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "sha256": "d2e54a941ef369a144d60a2b078f81a5dd2e11291b199ffa0153dead8b50ad41",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "86fec7f9f7f919c72ef48bff7721d6433b10a0fb281d145853e8094fe28977df",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/contextual-aftermath-components/desktop/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/desktop/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "sha256": "86fec7f9f7f919c72ef48bff7721d6433b10a0fb281d145853e8094fe28977df",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/contextual-aftermath-components/desktop/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/desktop/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "sha256": "86fec7f9f7f919c72ef48bff7721d6433b10a0fb281d145853e8094fe28977df",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1a24e739b6538de33841481b91337246f47bad1492cb5c778d907de5ba810583",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/faction-composition-gallery/phone/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/001-choose-reduce-1-component-reviewer.png",
+        "sha256": "1a24e739b6538de33841481b91337246f47bad1492cb5c778d907de5ba810583",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/faction-composition-gallery/phone/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/003-choose-no-preference-1-component-reviewer.png",
+        "sha256": "1a24e739b6538de33841481b91337246f47bad1492cb5c778d907de5ba810583",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c931c41c4d7c65b560c9ae52e7dec8680e59c6bc726bf49fe55f6bdd1803aba0",
+    "disposition": "approved-regression",
+    "inspection": "Selected/focused Vesper and quota-disabled Pelagic readable; affinity and expanded campaign rules retain actual values and explicit victory-not-enabled qualification. Briefing is a bounded, scrollable reading, not simultaneous full-content display. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/faction-composition-gallery/phone/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/002-briefing-reduce-1-component-reviewer.png",
+        "sha256": "c931c41c4d7c65b560c9ae52e7dec8680e59c6bc726bf49fe55f6bdd1803aba0",
+        "existing": null,
+        "decision": null
+      },
+      {
+        "story": "faction-composition-gallery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/faction-composition-gallery/phone/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/004-briefing-no-preference-1-component-reviewer.png",
+        "sha256": "c931c41c4d7c65b560c9ae52e7dec8680e59c6bc726bf49fe55f6bdd1803aba0",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "19bbbf2dbb81a1ac06c29b03b1de04aa3a8cd35444bf5f302c346713b52f38c4",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/route-instrument-components/phone/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/phone/linux-arm64/001-review-gallery-route-1-component-reviewer.png",
+        "sha256": "19bbbf2dbb81a1ac06c29b03b1de04aa3a8cd35444bf5f302c346713b52f38c4",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "40a0e04244f4aab484088ef62d5cd3d10d6a8a65f34003385cfe5d73c166415c",
+    "disposition": "approved-regression",
+    "inspection": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "route-instrument-components",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/route-instrument-components/phone/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "reference": "tests/e2e/009-route-forces/screenshots/route-instrument-components/phone/linux-arm64/002-inspect-accepted-lab-1-component-reviewer.png",
+        "sha256": "40a0e04244f4aab484088ef62d5cd3d10d6a8a65f34003385cfe5d73c166415c",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6f4dd4a86fad3303fe6f59371a6ecac6cab59ccecbb1c11b7986048bddab0e32",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/contextual-aftermath-components/phone/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/phone/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png",
+        "sha256": "6f4dd4a86fad3303fe6f59371a6ecac6cab59ccecbb1c11b7986048bddab0e32",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "27c53cc9140e11aae9a4e6a91be4046b87b7c1cdac233a52545a904d20acd42d",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/contextual-aftermath-components/phone/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/phone/linux-arm64/002-inspect-lab-outcome-1-standard-motion-comparison.png",
+        "sha256": "27c53cc9140e11aae9a4e6a91be4046b87b7c1cdac233a52545a904d20acd42d",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "f488d8b0e33aa772b77d6e48b146bd867df59ad9",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "28d8e0564327c3cee269fa795830011c06ae997296fd52d3409307c4b2252979",
+    "disposition": "approved-regression",
+    "inspection": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Original representative actually viewed; duplicate coverage verified by exact SHA256. Native viewport original viewed. No full design, live authorization or full motion acceptance.",
+    "covered": [
+      {
+        "story": "contextual-aftermath-components",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/contextual-aftermath-components/phone/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/phone/linux-arm64/002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+        "sha256": "28d8e0564327c3cee269fa795830011c06ae997296fd52d3409307c4b2252979",
+        "existing": null,
+        "decision": null
+      }
+    ]
   }
 ]
