@@ -1,0 +1,13 @@
+{
+  "failedRun": 41864888414,
+  "failure": "Depth3 checkout excludes pinned target5e77413f; git rev-parse target:src exits128 before tests. All four test steps skipped, zero image artifacts.",
+  "failedJob": 126696477835,
+  "failureTime": "2026-11-04T16:17:29Z",
+  "failedLogSha256": "b73fd958a6ec2ba388e6f58f3867d3878e95573c3506dea0da7f2ff26fe59aaf",
+  "repairCommit": "426a708526703a1315510086158b3538dcbcd018",
+  "newRequest": "829ef8ed6652b7b6ff444ac05133ecf8bf39eb4a",
+  "repair": "Branch-only checkout depth8 includes target. Regression fails at3 and passes at8. Six guard tests and immutable request verify pass.",
+  "unchanged": "Production/story/renderer/reference inputs, original budgets/assertions and required workflows.",
+  "artifactLifetime": "Only compact failure provenance retained; zero candidate downloads.",
+  "requiredRunPreserved": 41852381575
+}
