@@ -885,3 +885,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record current-source isolated missing-family execution and bounded selected-entry inspection of remaining strict pixel failures.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Diagnose integrated science reader offset drift and settle actual keyboard scrolling before unchanged containment and exact capture.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind settled keyboard science component evidence to locally repeated exact source with unchanged production and capture limits.
