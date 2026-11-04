@@ -1,0 +1,498 @@
+{
+  "head": "8eeea5e6315e309f9d883ed3ef3fcf50be2340fe",
+  "run": 41893585935,
+  "provenance": {
+    "artifact": {
+      "id": 13362694322,
+      "node_id": "MDg6QXJ0aWZhY3QxMzM2MjY5NDMyMg==",
+      "name": "illustrated-stories-verify-linux-arm64",
+      "size_in_bytes": 3470058384,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362694322",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362694322/zip",
+      "expired": false,
+      "digest": "sha256:bfd6e6cbc74430a841424b3190bb51209952725339bd972c3b8807f0145db3f9",
+      "created_at": "2026-11-04T21:09:39Z",
+      "updated_at": "2026-11-04T21:09:39Z",
+      "expires_at": "2027-02-02T19:05:43Z",
+      "workflow_run": {
+        "id": 41893585935,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "feat/admission-briefing-composition",
+        "head_sha": "8eeea5e6315e309f9d883ed3ef3fcf50be2340fe"
+      }
+    },
+    "etag": "\"0x8DF3AB7F042C638\"",
+    "rangeBytes": 43980749,
+    "ranges": [
+      [
+        3470058362,
+        3470058383
+      ],
+      [
+        3470058342,
+        3470058361
+      ],
+      [
+        3469293590,
+        3470058361
+      ],
+      [
+        1554320328,
+        1554320357
+      ],
+      [
+        1554320358,
+        1554320589
+      ],
+      [
+        1554320590,
+        1555529984
+      ],
+      [
+        1555530001,
+        1555530030
+      ],
+      [
+        1555530031,
+        1555530260
+      ],
+      [
+        1555530261,
+        1555818721
+      ],
+      [
+        1555818738,
+        1555818767
+      ],
+      [
+        1555818768,
+        1555819001
+      ],
+      [
+        1555819002,
+        1557040824
+      ],
+      [
+        1567201643,
+        1567201672
+      ],
+      [
+        1567201673,
+        1567201900
+      ],
+      [
+        1567201901,
+        1574600724
+      ],
+      [
+        1574600741,
+        1574600770
+      ],
+      [
+        1574600771,
+        1574600996
+      ],
+      [
+        1574600997,
+        1575846854
+      ],
+      [
+        1575846871,
+        1575846900
+      ],
+      [
+        1575846901,
+        1575847130
+      ],
+      [
+        1575847131,
+        1583261102
+      ],
+      [
+        1620883302,
+        1620883331
+      ],
+      [
+        1620883332,
+        1620883559
+      ],
+      [
+        1620883560,
+        1621573850
+      ],
+      [
+        1621573867,
+        1621573896
+      ],
+      [
+        1621573897,
+        1621574122
+      ],
+      [
+        1621574123,
+        1621762066
+      ],
+      [
+        1621762083,
+        1621762112
+      ],
+      [
+        1621762113,
+        1621762342
+      ],
+      [
+        1621762343,
+        1622454229
+      ],
+      [
+        1630272904,
+        1630272933
+      ],
+      [
+        1630272934,
+        1630273147
+      ],
+      [
+        1630273148,
+        1631778320
+      ],
+      [
+        1631778337,
+        1631778366
+      ],
+      [
+        1631778367,
+        1631778578
+      ],
+      [
+        1631778579,
+        1632098452
+      ],
+      [
+        1632098469,
+        1632098498
+      ],
+      [
+        1632098499,
+        1632098714
+      ],
+      [
+        1632098715,
+        1633615915
+      ],
+      [
+        1647768512,
+        1647768541
+      ],
+      [
+        1647768542,
+        1647768751
+      ],
+      [
+        1647768752,
+        1655407774
+      ],
+      [
+        1655407791,
+        1655407820
+      ],
+      [
+        1655407821,
+        1655408028
+      ],
+      [
+        1655408029,
+        1656630755
+      ],
+      [
+        1656630772,
+        1656630801
+      ],
+      [
+        1656630802,
+        1656631013
+      ],
+      [
+        1656631014,
+        1664285087
+      ],
+      [
+        1717932062,
+        1717932091
+      ],
+      [
+        1717932092,
+        1717932301
+      ],
+      [
+        1717932302,
+        1718229922
+      ],
+      [
+        1718229939,
+        1718229968
+      ],
+      [
+        1718229969,
+        1718230180
+      ],
+      [
+        1718230181,
+        1718530915
+      ],
+      [
+        1718530932,
+        1718530961
+      ],
+      [
+        1718530962,
+        1718531169
+      ],
+      [
+        1718531170,
+        1718610371
+      ],
+      [
+        1723806194,
+        1723806223
+      ],
+      [
+        1723806224,
+        1723806433
+      ],
+      [
+        1723806434,
+        1724845631
+      ],
+      [
+        1724845648,
+        1724845677
+      ],
+      [
+        1724845678,
+        1724845885
+      ],
+      [
+        1724845886,
+        1725081228
+      ],
+      [
+        1725081245,
+        1725081274
+      ],
+      [
+        1725081275,
+        1725081486
+      ],
+      [
+        1725081487,
+        1726133569
+      ]
+    ],
+    "entries": [
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-desktop/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host-actual.png",
+        "size": 1213178,
+        "crc32": "36a2c734",
+        "sha256": "79b23d27fdc3e99c11dbad98393243bfa76cb5fc5ff7f6f601bc7a2822facc93"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-desktop/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host-diff.png",
+        "size": 394936,
+        "crc32": "90e17b73",
+        "sha256": "4b5292c0a03f418b344eab3ae9c0c7440d9db2f5a854e481090f44f71f4e931d"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-desktop/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host-expected.png",
+        "size": 1225500,
+        "crc32": "835c8a41",
+        "sha256": "09194c9ad2cbf16adadf4dc32e7c6115f57f003052bea395564efe4285bf7eba"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-large/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host-actual.png",
+        "size": 7402170,
+        "crc32": "00f92258",
+        "sha256": "507e964228fb08ce474b7fb427603248b6b1ed1f565ac89463069c1f843eb95d"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-large/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host-diff.png",
+        "size": 1844906,
+        "crc32": "bd36a96f",
+        "sha256": "f6aefcf2ce3ab8aa67993dc7d8defbc63afcf4122e312a43daef48773c18f9b8"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-large/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host-expected.png",
+        "size": 7417142,
+        "crc32": "135e6518",
+        "sha256": "6ac7887138b3cb06d42ccbed5f8de42394be5a25a238a5acf985fdb79aad173b"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-short/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host-actual.png",
+        "size": 693337,
+        "crc32": "bea245b9",
+        "sha256": "ed5500c8e210978c1cd99f17a6cec6c60a6721f712f5347a2a133bcfabee5f96"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-short/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host-diff.png",
+        "size": 258120,
+        "crc32": "cd71404f",
+        "sha256": "585a6a0cf53fbcf64eb709eef74325ea467ac55708fbfb58ef009bf31197c93e"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-short/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host-expected.png",
+        "size": 694905,
+        "crc32": "7d89ce03",
+        "sha256": "fcce0d6076a6470bf47e49527e97837be82fc38af2e0a31ede514fa1041652f4"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-desktop/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+        "size": 1505644,
+        "crc32": "0380ea1e",
+        "sha256": "9bd6c1c719f46bd21b697113cf0f3a9e10e38071d917c65fcd0e66b8562c39a7"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-desktop/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+        "size": 438743,
+        "crc32": "b68daa10",
+        "sha256": "9e039ad802e291d416dfc71b270f0e9b592a607facf5efa8e32408ee1855bd8e"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-desktop/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+        "size": 1517466,
+        "crc32": "e8643c72",
+        "sha256": "6f71b92024737e7fa260d0a1d1e44a66e01d2ae784a0c668a04e7c23231c614c"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-large/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+        "size": 7639561,
+        "crc32": "ddee1927",
+        "sha256": "e4e9071760064be6fe73232acaf80eeb782e5897cb2f5fe6b5937aa2e0a173b4"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-large/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+        "size": 1830228,
+        "crc32": "d78b0b9c",
+        "sha256": "4c70f5213c0a07325112667734b074ae8cc1ea35c96ada6bc30659cde5242322"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-large/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+        "size": 7654405,
+        "crc32": "6d2f3cba",
+        "sha256": "3be53f56afcb4ed9a69f4a31d9a6d182e497dc5daa4346906108b8239f5ac7d7"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+        "size": 297774,
+        "crc32": "0bf2fe0c",
+        "sha256": "b083db9ac9dd24bb8982aa8572609e2e407028b4393d2bd7eb6ef733c6311878"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+        "size": 300932,
+        "crc32": "c53e1f15",
+        "sha256": "3c3b9ee2e8ef24d14e3aa96eb38d32e5394f537b668b6342fe2c2d13ea74b00f"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+        "size": 100711,
+        "crc32": "5234adbf",
+        "sha256": "1abd15dcac659717d184147638d92d083dc48e8346756eb9ccdef3e722fe5bca"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-short/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+        "size": 1039607,
+        "crc32": "104e86c9",
+        "sha256": "3100deb754bfdacf31dd0517e5482a0cec1e856c32c4ba8b5f3071e6afb8573a"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-short/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+        "size": 320561,
+        "crc32": "0523c69a",
+        "sha256": "2fff24834b927889ddd4f183fa426a2a357dc2bfe20b90140a03b5b72c24c541"
+      },
+      {
+        "path": "test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-short/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+        "size": 1052439,
+        "crc32": "c530cc57",
+        "sha256": "b0434e2c458a407bc174406bbf60351fb3613cdde053419d64f071817d39a67a"
+      }
+    ],
+    "integrity": "Selected entries CRC/size/SHA256 verified against remote ZIP central directory. Every response exact206 Content-Range and immutable ETag. Whole archive SHA256 NOT verified; no full archive downloaded."
+  },
+  "triples": [
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-desktop/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-desktop/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-desktop/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "actualSha256": "79b23d27fdc3e99c11dbad98393243bfa76cb5fc5ff7f6f601bc7a2822facc93",
+      "expectedSha256": "09194c9ad2cbf16adadf4dc32e7c6115f57f003052bea395564efe4285bf7eba",
+      "diffSha256": "4b5292c0a03f418b344eab3ae9c0c7440d9db2f5a854e481090f44f71f4e931d",
+      "viewed": true
+    },
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-large/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-large/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-large/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "actualSha256": "507e964228fb08ce474b7fb427603248b6b1ed1f565ac89463069c1f843eb95d",
+      "expectedSha256": "6ac7887138b3cb06d42ccbed5f8de42394be5a25a238a5acf985fdb79aad173b",
+      "diffSha256": "f6aefcf2ce3ab8aa67993dc7d8defbc63afcf4122e312a43daef48773c18f9b8",
+      "viewed": false
+    },
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-short/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-short/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-57c4e-recovers-inaccessible-links-short/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "actualSha256": "ed5500c8e210978c1cd99f17a6cec6c60a6721f712f5347a2a133bcfabee5f96",
+      "expectedSha256": "fcce0d6076a6470bf47e49527e97837be82fc38af2e0a31ede514fa1041652f4",
+      "diffSha256": "585a6a0cf53fbcf64eb709eef74325ea467ac55708fbfb58ef009bf31197c93e",
+      "viewed": false
+    },
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-desktop/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-desktop/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-desktop/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "actualSha256": "9bd6c1c719f46bd21b697113cf0f3a9e10e38071d917c65fcd0e66b8562c39a7",
+      "expectedSha256": "6f71b92024737e7fa260d0a1d1e44a66e01d2ae784a0c668a04e7c23231c614c",
+      "diffSha256": "9e039ad802e291d416dfc71b270f0e9b592a607facf5efa8e32408ee1855bd8e",
+      "viewed": false
+    },
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-large/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-large/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-large/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "actualSha256": "e4e9071760064be6fe73232acaf80eeb782e5897cb2f5fe6b5937aa2e0a173b4",
+      "expectedSha256": "3be53f56afcb4ed9a69f4a31d9a6d182e497dc5daa4346906108b8239f5ac7d7",
+      "diffSha256": "4c70f5213c0a07325112667734b074ae8cc1ea35c96ada6bc30659cde5242322",
+      "viewed": false
+    },
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-phone/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "actualSha256": "b083db9ac9dd24bb8982aa8572609e2e407028b4393d2bd7eb6ef733c6311878",
+      "expectedSha256": "3c3b9ee2e8ef24d14e3aa96eb38d32e5394f537b668b6342fe2c2d13ea74b00f",
+      "diffSha256": "1abd15dcac659717d184147638d92d083dc48e8346756eb9ccdef3e722fe5bca",
+      "viewed": true
+    },
+    {
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-short/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-short/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322/selected/test-results/stories/e2e-005-campaign-access-in-8f3cc-oins-the-preserved-campaign-short/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy-diff.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "actualSha256": "3100deb754bfdacf31dd0517e5482a0cec1e856c32c4ba8b5f3071e6afb8573a",
+      "expectedSha256": "b0434e2c458a407bc174406bbf60351fb3613cdde053419d64f071817d39a67a",
+      "diffSha256": "2fff24834b927889ddd4f183fa426a2a357dc2bfe20b90140a03b5b72c24c541",
+      "viewed": true
+    }
+  ],
+  "inspection": "Implementation agent individually viewed full expected/actual/diff for returning desktop and first-admission phone/short only. Remaining four triples retained but not visually approved. These three show only footer reader edge/confirmation position shift, controls remain unchanged. None promoted from failed output; complete affected candidates requested.",
+  "cause": "CampaignWaiting footer .notice:not(:empty) margin-bottom12px added at a84fa78c for evidenced focus clearance. Current diff shows12px earlier footer top/status; roster and player facts unchanged. Previously reviewed actual focus fix intentionally affects other waiting journeys.",
+  "integrityLimits": "CRC/size/SHA verified for each selected entry; every HTTP206 Content-Range and ETag checked. Whole3.47GB archive SHA not verified or claimed.21 PNG entries transferred using43980749 range bytes; no local full ZIP."
+}
