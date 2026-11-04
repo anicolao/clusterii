@@ -14738,5 +14738,1142 @@
         "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png"
       }
     ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "40e37f2303abf92ee4f5764a84c38db1b7de6489056822482d57b5c25c32d71d",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "sha256": "40e37f2303abf92ee4f5764a84c38db1b7de6489056822482d57b5c25c32d71d",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "previousSha256": "40e37f2303abf92ee4f5764a84c38db1b7de6489056822482d57b5c25c32d71d",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "b533d4300b73e598d3fac3de301fea479910086ffb2488edd0629703856f1790",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "sha256": "b533d4300b73e598d3fac3de301fea479910086ffb2488edd0629703856f1790",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "previousSha256": "b533d4300b73e598d3fac3de301fea479910086ffb2488edd0629703856f1790",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "3c3a41f14d163a19906d64076c77214f51dc9463f2e6f136a2dfa30ebfbd01e6",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "sha256": "3c3a41f14d163a19906d64076c77214f51dc9463f2e6f136a2dfa30ebfbd01e6",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "previousSha256": "3c3a41f14d163a19906d64076c77214f51dc9463f2e6f136a2dfa30ebfbd01e6",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "867dc8c051f274f85773d226e09ab1fd30847fb5927a8d98019dc5257307f0c8",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "sha256": "867dc8c051f274f85773d226e09ab1fd30847fb5927a8d98019dc5257307f0c8",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "previousSha256": "867dc8c051f274f85773d226e09ab1fd30847fb5927a8d98019dc5257307f0c8",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "c50d9bd2869aab156eaa7465fadf37c71f264f490ac9dc40b170c128d9dec52f",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "sha256": "c50d9bd2869aab156eaa7465fadf37c71f264f490ac9dc40b170c128d9dec52f",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "previousSha256": "c50d9bd2869aab156eaa7465fadf37c71f264f490ac9dc40b170c128d9dec52f",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "6a636806e95b67a704c4316204fd8a1abe89108d20d750d84ad9de4177861085",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "sha256": "6a636806e95b67a704c4316204fd8a1abe89108d20d750d84ad9de4177861085",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "previousSha256": "6a636806e95b67a704c4316204fd8a1abe89108d20d750d84ad9de4177861085",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "sha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "previousSha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05",
+        "changed": false,
+        "approvedExact": false
+      },
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/012-retry-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/012-retry-history-1-history-envoy-reading-device.png",
+        "sha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/012-retry-history-1-history-envoy-reading-device.png",
+        "previousSha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "88fe71c605c70a6276648447546bd4fbd5477d39b4f3291dc0c14b55c577de56",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/010-offline-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/010-offline-history-1-history-envoy-reading-device.png",
+        "sha256": "88fe71c605c70a6276648447546bd4fbd5477d39b4f3291dc0c14b55c577de56",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/010-offline-history-1-history-envoy-reading-device.png",
+        "previousSha256": "88fe71c605c70a6276648447546bd4fbd5477d39b4f3291dc0c14b55c577de56",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "5c8923e588e0602a78d2d7d6b192750ee5d1a11711d768beb9d3c2b7fe2e7489",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/013-return-to-galaxy-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/013-return-to-galaxy-1-history-envoy.png",
+        "sha256": "5c8923e588e0602a78d2d7d6b192750ee5d1a11711d768beb9d3c2b7fe2e7489",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/013-return-to-galaxy-1-history-envoy.png",
+        "previousSha256": "5c8923e588e0602a78d2d7d6b192750ee5d1a11711d768beb9d3c2b7fe2e7489",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "ecd78a140c279b55ddf056533df6ebcbb248f1145385daa8a1db0dd928814674",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/014-reload-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/014-reload-history-1-history-envoy-reading-device.png",
+        "sha256": "ecd78a140c279b55ddf056533df6ebcbb248f1145385daa8a1db0dd928814674",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/014-reload-history-1-history-envoy-reading-device.png",
+        "previousSha256": "ecd78a140c279b55ddf056533df6ebcbb248f1145385daa8a1db0dd928814674",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "4e70b0ff6722d4e16320e2f1e8b5677319c0497336b109306dfdb40387f8cda3",
+    "disposition": "approved-regression",
+    "inspection": "Exact byte identity to previously individually inspected phone history originals recorded in history-current-linux-result.json.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/015-finish-reading-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/015-finish-reading-1-history-envoy.png",
+        "sha256": "4e70b0ff6722d4e16320e2f1e8b5677319c0497336b109306dfdb40387f8cda3",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/phone/test-results/stories/campaign-history/phone/linux-arm64/015-finish-reading-1-history-envoy.png",
+        "previousSha256": "4e70b0ff6722d4e16320e2f1e8b5677319c0497336b109306dfdb40387f8cda3",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "63a45740592511712265d6d772c73a1cb27c3a8c18cd41e81e595261dfb58edb",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "sha256": "63a45740592511712265d6d772c73a1cb27c3a8c18cd41e81e595261dfb58edb",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "previousSha256": "bf37eb4455359d312f55a59b4f81315877f844f724ea57897e98cbe89a23fe03",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "006aa2c378d16f9214cd9383a0772893a57c64c74b3704867c5f403e7c86872a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "sha256": "006aa2c378d16f9214cd9383a0772893a57c64c74b3704867c5f403e7c86872a",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "previousSha256": "65716d3abc8453ba89bec9371f19e8573ab5b0092d9cc67b59179377a1764849",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "sha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "previousSha256": "83817a6d7cfbb838bbeea23ef481b7523fc7e26920818de5c31f2ce985d6715a",
+        "changed": true,
+        "approvedExact": false
+      },
+      {
+        "story": "live-menu-preservation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "sha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "previousSha256": "83817a6d7cfbb838bbeea23ef481b7523fc7e26920818de5c31f2ce985d6715a",
+        "changed": true,
+        "approvedExact": false
+      },
+      {
+        "story": "live-menu-preservation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "sha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "previousSha256": "83817a6d7cfbb838bbeea23ef481b7523fc7e26920818de5c31f2ce985d6715a",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "8f22408627161ae09858a37eaee71d1ac7703673638921fc4b6387bc5ae2fd66",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "sha256": "8f22408627161ae09858a37eaee71d1ac7703673638921fc4b6387bc5ae2fd66",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "previousSha256": "af3494a74ebad45d4a9a5423e83ee70ce3b25da39158c93e44194529d5be128d",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "cb35ba5c8e3ccce87ebe982ba85ef92060cc0fff6bda1228cc4efcfe28f15b8e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "sha256": "cb35ba5c8e3ccce87ebe982ba85ef92060cc0fff6bda1228cc4efcfe28f15b8e",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "previousSha256": "9fd8daad0d58aa6eb38fda2a176be0d065f9b5bbb4343279c22f56dac668d21c",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "0304db1b05aedfaab86e7f895e2561ea06e803bdb3f0b08e2d47f1c47b31298c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "sha256": "0304db1b05aedfaab86e7f895e2561ea06e803bdb3f0b08e2d47f1c47b31298c",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "previousSha256": "7484a99cb22fb31503c95644e26b97bf6ed3311fd0c3cbbd52be3135bac8fee0",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "d8ca3d0d6360acd5548fde56a536a9fa196faa9a1c2d22f57bb15c70c5fec30d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "sha256": "d8ca3d0d6360acd5548fde56a536a9fa196faa9a1c2d22f57bb15c70c5fec30d",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "previousSha256": "ea789657c6424a8f9c3ee70627bcc28308b24820f4d8d93707d83df97bc959dd",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "e43f41580c80a199a4d27fd75d55b985bbc0e3dfd0a46cfdc09c2638bcec44ca",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "sha256": "e43f41580c80a199a4d27fd75d55b985bbc0e3dfd0a46cfdc09c2638bcec44ca",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "previousSha256": "41fab309ef6055cb204f8cb0781c47da4b06e862061196e85f3bf73d0e7338b8",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "505e20e9fdf0d872c0f6c0f5cd648c83e14f49f7b66a24fa481e5a172274b8f1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "sha256": "505e20e9fdf0d872c0f6c0f5cd648c83e14f49f7b66a24fa481e5a172274b8f1",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "previousSha256": "505e20e9fdf0d872c0f6c0f5cd648c83e14f49f7b66a24fa481e5a172274b8f1",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "63394e8a907458bc36ba71d1847e6961e3205408f827dd3d7aa561020b9c31a8",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "sha256": "63394e8a907458bc36ba71d1847e6961e3205408f827dd3d7aa561020b9c31a8",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "previousSha256": "939cce37db70783d01f2fbcfa01aa8fa671599dad39eb5a1322470b61ba8bdd2",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "570989cb28d6521c08c82d0bbf2a991751cbd4e4320d910ea3c3e2dc587bc042",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "sha256": "570989cb28d6521c08c82d0bbf2a991751cbd4e4320d910ea3c3e2dc587bc042",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "previousSha256": "439e79b31d69a0ee6b3393c8a858b30bf3ece34d3d5928bbf4865907eb824a42",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "fa4d7a0a267d005215ea4b487ee448c32a4aa9e5486ccc44b58feff8e447c59c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "sha256": "fa4d7a0a267d005215ea4b487ee448c32a4aa9e5486ccc44b58feff8e447c59c",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "previousSha256": "fa4d7a0a267d005215ea4b487ee448c32a4aa9e5486ccc44b58feff8e447c59c",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "68174a6f0f05cafe1d3656a8c67fb4c4877fa96be64811b0b6c1794cc886e94e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "sha256": "68174a6f0f05cafe1d3656a8c67fb4c4877fa96be64811b0b6c1794cc886e94e",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "previousSha256": "fddc034ea7cdef496f45ebfc5813b22af5495a4a421835645252b6b6d57f0197",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "43ab91e9f463f40545450ad83f0445af1e87a10ebddf7a22d4154e1010408e9e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/desktop/test-results/stories/campaign-history/desktop/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "sha256": "43ab91e9f463f40545450ad83f0445af1e87a10ebddf7a22d4154e1010408e9e",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/desktop/test-results/stories/campaign-history/desktop/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "previousSha256": "43ab91e9f463f40545450ad83f0445af1e87a10ebddf7a22d4154e1010408e9e",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "cfaeecb2e8bafefd0af63d49a81b34bf5b6cabc3ad8ca90bbd20d936fe6ca0ce",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "sha256": "cfaeecb2e8bafefd0af63d49a81b34bf5b6cabc3ad8ca90bbd20d936fe6ca0ce",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/short/test-results/stories/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "previousSha256": "33bc9b1fd2a140a793f442c4fd5b8735a0aa899bc511d36bd5d5ab96ad6cd93a",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "bc5769a321e0ca1b34f54faa472b9f19282258ba5fafbbf863842f81a8e53952",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/live-menu-preservation/short/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "sha256": "bc5769a321e0ca1b34f54faa472b9f19282258ba5fafbbf863842f81a8e53952",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/short/test-results/stories/live-menu-preservation/short/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "previousSha256": "1c374a8d636123b631e6b390b980b7150ac29c6c5b5fe2f0baa8d4fd897cb3bf",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "sha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/short/test-results/stories/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "previousSha256": "aebb01ee707cd8d42d215289cb3b8d375aea7e1f5f658261975625c5124f1ed8",
+        "changed": true,
+        "approvedExact": false
+      },
+      {
+        "story": "live-menu-preservation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "sha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/short/test-results/stories/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "previousSha256": "aebb01ee707cd8d42d215289cb3b8d375aea7e1f5f658261975625c5124f1ed8",
+        "changed": true,
+        "approvedExact": false
+      },
+      {
+        "story": "live-menu-preservation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "sha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/short/test-results/stories/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "previousSha256": "aebb01ee707cd8d42d215289cb3b8d375aea7e1f5f658261975625c5124f1ed8",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "286ae4942705fc2068cc31e9d7b9c10b428679072454857569de5e931910a374",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "sha256": "286ae4942705fc2068cc31e9d7b9c10b428679072454857569de5e931910a374",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/short/test-results/stories/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "previousSha256": "ef552b4884ae683d1413330d402308b2ca7d5905e7822b154946f1e3124499b6",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "8a00521fbabd033cc68a2916a5ab270c66619d118c4ea35340131b5d5f790eb1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "sha256": "8a00521fbabd033cc68a2916a5ab270c66619d118c4ea35340131b5d5f790eb1",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "previousSha256": "031a777a7080ee4a56e172015354d8a60982f4c4fcf65c83bee28df1ba6d72e6",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "3db5e5447b161b524b701a40cbde4cd3b42c666e31fbf2280caa57372fe3e2e6",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "sha256": "3db5e5447b161b524b701a40cbde4cd3b42c666e31fbf2280caa57372fe3e2e6",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "previousSha256": "74738c43facacb5c7f16924424032211c05605100e7c2017c5db8bbd80c85c24",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "ac56dc90453a18aeaa234f247d8217b928343c2a4897fb05bfc46642fba2e807",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "sha256": "ac56dc90453a18aeaa234f247d8217b928343c2a4897fb05bfc46642fba2e807",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "previousSha256": "5dae9209a1edc36e826e7f3fd24d3bc757ca39544a856e70ef4126078bebe24e",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "81204b6048374c4dcc4d246f90db0eec0cdfe4a7eb1c854691c55621fa58d00b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "sha256": "81204b6048374c4dcc4d246f90db0eec0cdfe4a7eb1c854691c55621fa58d00b",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "previousSha256": "d298d493d814b8724eaf40cb3095159eb59128c1ffe4a23b56b1dc9b94bcf763",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "332d5ab11b7046c0609f0d511079ad6d09196a85b69cbafe4cfb8c3e18e14671",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "sha256": "332d5ab11b7046c0609f0d511079ad6d09196a85b69cbafe4cfb8c3e18e14671",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "previousSha256": "332d5ab11b7046c0609f0d511079ad6d09196a85b69cbafe4cfb8c3e18e14671",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "3e99d0e788718e3779792dea1d95437ffbceba167b8d5cfe0b673e9436637ed1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "sha256": "3e99d0e788718e3779792dea1d95437ffbceba167b8d5cfe0b673e9436637ed1",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "previousSha256": "77717085195cb4b3e7479de1473fe4cc733bd921db57ed59d887ce2a51480993",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "e926fa23033bd7f7ffc504f07b35fa24fd0cc51bddbe1aec9d933f60f3586a1b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "sha256": "e926fa23033bd7f7ffc504f07b35fa24fd0cc51bddbe1aec9d933f60f3586a1b",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "previousSha256": "75ee0f1b45cffcd08c7572ffe9639a547899b7d394d48cbde74f6c00a98b70a8",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "7913bab82edc21546c0400bdfcfa14e9fe3a43e59f06be3d0c94242529bbb7ac",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "sha256": "7913bab82edc21546c0400bdfcfa14e9fe3a43e59f06be3d0c94242529bbb7ac",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "previousSha256": "7913bab82edc21546c0400bdfcfa14e9fe3a43e59f06be3d0c94242529bbb7ac",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "b605c60386ae777a8fdce630ebac15eda1e8345382133e370a053c8b791ef2d5",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "sha256": "b605c60386ae777a8fdce630ebac15eda1e8345382133e370a053c8b791ef2d5",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "previousSha256": "7b8acbbf8658cc31c9e0eb79c0b5ec8b414f88bb8c8f4c8a9390fbcdc717f6e4",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "cbdee0c60372df2110de038ad7915ceaa52353e97160a3462e32bb577c5876c1",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "sha256": "cbdee0c60372df2110de038ad7915ceaa52353e97160a3462e32bb577c5876c1",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/short/test-results/stories/campaign-history/short/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "previousSha256": "cbdee0c60372df2110de038ad7915ceaa52353e97160a3462e32bb577c5876c1",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "0d8024b322fd1156952646f368a9ac5df20c2f76aa260a6ca3af99250346c41e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "sha256": "0d8024b322fd1156952646f368a9ac5df20c2f76aa260a6ca3af99250346c41e",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/large/test-results/stories/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+        "previousSha256": "2a8729b2b83e2327e055a0fb428c5625458f2452d568581fd0d7e501cdb8e701",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "c865c787b0435cdf79e791d14f0cc75f7945f7a981516401de9e3997b08bca41",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/live-menu-preservation/large/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "sha256": "c865c787b0435cdf79e791d14f0cc75f7945f7a981516401de9e3997b08bca41",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/large/test-results/stories/live-menu-preservation/large/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+        "previousSha256": "7ae2d88d4e6bd505104b87629d2f232b9e65690cc67e52360e4621f92b53261b",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "sha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/large/test-results/stories/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+        "previousSha256": "407f3bfcef79eb2656b51e2e3b6f77b60fb36fc4079925a04680ee84e6bc0273",
+        "changed": true,
+        "approvedExact": false
+      },
+      {
+        "story": "live-menu-preservation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "sha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/large/test-results/stories/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+        "previousSha256": "407f3bfcef79eb2656b51e2e3b6f77b60fb36fc4079925a04680ee84e6bc0273",
+        "changed": true,
+        "approvedExact": false
+      },
+      {
+        "story": "live-menu-preservation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "sha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/large/test-results/stories/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+        "previousSha256": "407f3bfcef79eb2656b51e2e3b6f77b60fb36fc4079925a04680ee84e6bc0273",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "fb8b6f13eddce09a46969d8b4c76795c1faaf8430374392631ffdf5dc91445fb",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "live-menu-preservation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "sha256": "fb8b6f13eddce09a46969d8b4c76795c1faaf8430374392631ffdf5dc91445fb",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-responsive-candidates-41736199420/large/test-results/stories/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+        "previousSha256": "9977151f53eca329f4941817c5a4f28800ef4e289d5e38310f240b35ceed2fe6",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "0dc99fbfe17764efe4a12dd352e585a99f9c29b5a7474deee48e31726b4bb5b2",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "sha256": "0dc99fbfe17764efe4a12dd352e585a99f9c29b5a7474deee48e31726b4bb5b2",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/002-open-records-1-history-envoy-reading-device.png",
+        "previousSha256": "a26bb80667874b45b4e7b9cba4482a2baeb501767ac82e2d367848164e5e4035",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "aa560e9c91e00bc685ff23f1108eef826f6e13b7b07e672aceabd0a2afcebb48",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "sha256": "aa560e9c91e00bc685ff23f1108eef826f6e13b7b07e672aceabd0a2afcebb48",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/003-keyboard-cycle-1-history-envoy-reading-device.png",
+        "previousSha256": "095d271d62cb78678930ec550f5819b31ccce04e3d6f16581277e171ea16ad75",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "b79559ff44a3f1e4598d0376aeec58b1053c16a48557b516e4e9c19259f64821",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "sha256": "b79559ff44a3f1e4598d0376aeec58b1053c16a48557b516e4e9c19259f64821",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/004-inspect-record-1-history-envoy-reading-device.png",
+        "previousSha256": "8a97baf33e6a36cf5124385f97a69f27b998c7f99c784318b53fc1580194d18b",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "5fedff3bb8e70a8e27ad8dc18c06380fb2c1fe04b8f80b4331243d0f0a7cf67f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "sha256": "5fedff3bb8e70a8e27ad8dc18c06380fb2c1fe04b8f80b4331243d0f0a7cf67f",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/005-earlier-records-1-history-envoy-reading-device.png",
+        "previousSha256": "93eb5b1850e062347044b767c56b7fe2dc86cfbdadf412f8aa51db06e77e8ba3",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "3b4e314bf5808fe71f72210c6d3a2212ad02057a646ab06fa06696da27542dcd",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "sha256": "3b4e314bf5808fe71f72210c6d3a2212ad02057a646ab06fa06696da27542dcd",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/007-other-device-change-1-history-envoy-second-device.png",
+        "previousSha256": "3b4e314bf5808fe71f72210c6d3a2212ad02057a646ab06fa06696da27542dcd",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "e1b1e3aa5ea5e06ad3c607df3a2f3bfd0d0071d4c5933d0e187ca85cfa697a1c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "sha256": "e1b1e3aa5ea5e06ad3c607df3a2f3bfd0d0071d4c5933d0e187ca85cfa697a1c",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/007-other-device-change-2-history-envoy-reading-device.png",
+        "previousSha256": "db7b7df4bdd79777d6b96948be276c587b8fc229c632cd6764fabfdab892c25d",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "9a04a40c573636e20cb63ea6a24e9cfc135b650a085c795e723f8828029908b2",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "sha256": "9a04a40c573636e20cb63ea6a24e9cfc135b650a085c795e723f8828029908b2",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/008-recover-latest-1-history-envoy-reading-device.png",
+        "previousSha256": "616ca5c009faa2de54f3c399d16edb824264a2159ee08f2cafddf0575c28db3b",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "707204db51422a76a60a33caa54d5108ba3ff520dd1c03f31e5c7e394b93d002",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "sha256": "707204db51422a76a60a33caa54d5108ba3ff520dd1c03f31e5c7e394b93d002",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/009-return-to-galaxy-1-history-envoy.png",
+        "previousSha256": "707204db51422a76a60a33caa54d5108ba3ff520dd1c03f31e5c7e394b93d002",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "5c5d9dff71199beec6d926488fc920b8bfc14ed60c2541f39acf7514e97cdc46",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "sha256": "5c5d9dff71199beec6d926488fc920b8bfc14ed60c2541f39acf7514e97cdc46",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/010-reload-history-1-history-envoy-reading-device.png",
+        "previousSha256": "c9806a87be3d6284bd018c7e6582c4fb805eb5990eb7b5cfebcaa7960fbf5219",
+        "changed": true,
+        "approvedExact": false
+      }
+    ]
+  },
+  {
+    "target": "4cf5625670b624b9e6f21640ef9a515a04687e38",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "5aae9197901a63b6e9b05599589bbb42c82eb06d7376c1624f8d4541bd89adb4",
+    "disposition": "approved-regression",
+    "inspection": "Original individually opened and inspected. Selected label clear of reader; controls, focus and recorded facts readable. Bounded reader intentionally scrolls neighboring content. Large displayed at 2048 from 3840; layout/content review, not native-pixel/full-design certification.",
+    "covered": [
+      {
+        "story": "campaign-history",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/large/test-results/stories/campaign-history/large/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "reference": "tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "sha256": "5aae9197901a63b6e9b05599589bbb42c82eb06d7376c1624f8d4541bd89adb4",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-current-41842448559/large/test-results/stories/campaign-history/large/linux-arm64/011-finish-reading-1-history-envoy.png",
+        "previousSha256": "5aae9197901a63b6e9b05599589bbb42c82eb06d7376c1624f8d4541bd89adb4",
+        "changed": false,
+        "approvedExact": false
+      }
+    ]
   }
 ]

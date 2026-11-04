@@ -1,0 +1,76 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-menu-preservation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "44198cd8eeb2a31a2f02c770f29954ac89c43bb0",
+    "dirty": false,
+    "spec": "tests/browser/live-menu-preservation.story.spec.ts",
+    "specSha256": "238ed2e67bb4fda6741cc8429922f74ce47f9613414ed7e48d1a6b2c515a7f56"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "010-select-and-draft-1-menu-envoy.png",
+      "sha256": "a0be16c705cf3cc121eb116b88d229841276c9f0b2edab0c77fb34260b18a32d"
+    },
+    {
+      "image": "010-select-and-draft-2-ledger-witness.png",
+      "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8"
+    },
+    {
+      "image": "011-read-menu-rules-1-menu-envoy.png",
+      "sha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597"
+    },
+    {
+      "image": "013-acknowledge-while-reading-1-menu-envoy.png",
+      "sha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597"
+    },
+    {
+      "image": "013-acknowledge-while-reading-2-ledger-witness.png",
+      "sha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf"
+    },
+    {
+      "image": "014-return-to-updated-galaxy-1-menu-envoy.png",
+      "sha256": "aebd329b98fc095f0db323288ec49830fc03e8a8eec979735495987033462247"
+    },
+    {
+      "image": "014-return-to-updated-galaxy-2-ledger-witness.png",
+      "sha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf"
+    },
+    {
+      "image": "015-recover-unsent-allocation-1-menu-envoy.png",
+      "sha256": "6c94cc3af65623beb16a71ae0528ff03948df6f676e9912455107995ac3e92c9"
+    },
+    {
+      "image": "015-recover-unsent-allocation-2-ledger-witness.png",
+      "sha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf"
+    }
+  ]
+}

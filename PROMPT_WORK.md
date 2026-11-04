@@ -797,3 +797,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the sole pinned Linux reader-label execution with immutable source, exact collection and preserved required workflows.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review retained campaign-feedback lab references against current component source while the single Linux reader-label run completes.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Validate the consolidated recovery source and unchanged required checks before publishing the reviewed batch to existing PR140.
