@@ -2764,7 +2764,7 @@
   }
   /* The real resource rail grows with commander, labels and viewport. Match
      the existing history inset to its measured height, not a device guess. */
-  .history-panel.science-panel {
+  .history-panel.economy-panel {
     top: calc(var(--command-rail-height) + 8px);
   }
   @media (min-width: 2500px) {

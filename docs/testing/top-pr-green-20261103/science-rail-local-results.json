@@ -1,0 +1,342 @@
+[
+  {
+    "viewport": "phone",
+    "manifest": "/tmp/cluster-science-rail-after/stories/science-rate-sources/phone/darwin-arm64/story.json",
+    "source": {
+      "commit": "94026c225b2d01cd2e7c5ab6bae14ca5b8b1ac54",
+      "dirty": true,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+    },
+    "images": [
+      {
+        "name": "010-inspect-private-sources-1-chart-envoy.png",
+        "sha256": "65210dcc7125f48e59a25de3f7442bbd4769ebd906ae05799d49ba4d2756ea8c"
+      },
+      {
+        "name": "010-inspect-private-sources-2-tidal-envoy.png",
+        "sha256": "0b49f8bdf2411d557eb3e8c647ad19d20934c3979890c8d1460d628698ba0d85"
+      },
+      {
+        "name": "011-commit-innovation-1-chart-envoy.png",
+        "sha256": "78cbadfc41cc280e3973afbcf14312c1d4cbcf4634cc36117727d2f23328107f"
+      },
+      {
+        "name": "013-read-earned-capacity-1-chart-envoy.png",
+        "sha256": "91bf16f1069bb114a29bbb72ea696d08f49a6bf881509e484cd42fbc32544db6"
+      },
+      {
+        "name": "013-read-earned-capacity-2-tidal-envoy.png",
+        "sha256": "56ec9223bcb13335c5da3fa6cb50b783bac69ef73f7c6eda3218645fcf95eb79"
+      },
+      {
+        "name": "014-earned-normal-ledger-1-chart-envoy.png",
+        "sha256": "3d2280b1f21f0ee8c1216e5029bae7fcb77d75289cb6f85538bcdbd8386ce952"
+      },
+      {
+        "name": "014-earned-normal-ledger-2-tidal-envoy.png",
+        "sha256": "3b62fba8d033ce3c112a46a66048b08d888dd388bad0d27fa818312a269792f2"
+      },
+      {
+        "name": "015-earned-normal-totals-1-chart-envoy.png",
+        "sha256": "91bf16f1069bb114a29bbb72ea696d08f49a6bf881509e484cd42fbc32544db6"
+      },
+      {
+        "name": "015-earned-normal-totals-2-tidal-envoy.png",
+        "sha256": "56ec9223bcb13335c5da3fa6cb50b783bac69ef73f7c6eda3218645fcf95eb79"
+      },
+      {
+        "name": "016-earned-normal-return-1-chart-envoy.png",
+        "sha256": "e42c6be4e1c2d41925be7f033128b55252e9d3a52dd21164a013d05dd0935fb4"
+      },
+      {
+        "name": "016-earned-normal-return-2-tidal-envoy.png",
+        "sha256": "7fe3dbc165a2492819c4cd8f5edf13440dc5e2e981aa2b079882f7feef725d09"
+      },
+      {
+        "name": "017-earned-reduced-ledger-1-chart-envoy.png",
+        "sha256": "3d2280b1f21f0ee8c1216e5029bae7fcb77d75289cb6f85538bcdbd8386ce952"
+      },
+      {
+        "name": "017-earned-reduced-ledger-2-tidal-envoy.png",
+        "sha256": "3b62fba8d033ce3c112a46a66048b08d888dd388bad0d27fa818312a269792f2"
+      },
+      {
+        "name": "018-earned-reduced-totals-1-chart-envoy.png",
+        "sha256": "91bf16f1069bb114a29bbb72ea696d08f49a6bf881509e484cd42fbc32544db6"
+      },
+      {
+        "name": "018-earned-reduced-totals-2-tidal-envoy.png",
+        "sha256": "56ec9223bcb13335c5da3fa6cb50b783bac69ef73f7c6eda3218645fcf95eb79"
+      },
+      {
+        "name": "019-earned-reduced-return-1-chart-envoy.png",
+        "sha256": "e42c6be4e1c2d41925be7f033128b55252e9d3a52dd21164a013d05dd0935fb4"
+      },
+      {
+        "name": "019-earned-reduced-return-2-tidal-envoy.png",
+        "sha256": "7fe3dbc165a2492819c4cd8f5edf13440dc5e2e981aa2b079882f7feef725d09"
+      },
+      {
+        "name": "021-recover-delivered-rate-1-chart-envoy.png",
+        "sha256": "ae23b5342dfd7e3c4cabbc3105e7b498eb5f7d9ee3d21d20223851950b32d6be"
+      }
+    ],
+    "review": "Implementation agent inspected ordinary Economy011: header clear and selected Innovation/action visible. Large displayed downscaled; not Linux approval or complete-family visual approval."
+  },
+  {
+    "viewport": "desktop",
+    "manifest": "/tmp/cluster-science-rail-after/stories/science-rate-sources/desktop/darwin-arm64/story.json",
+    "source": {
+      "commit": "94026c225b2d01cd2e7c5ab6bae14ca5b8b1ac54",
+      "dirty": true,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+    },
+    "images": [
+      {
+        "name": "010-inspect-private-sources-1-chart-envoy.png",
+        "sha256": "c470956a0b1a88515005fe63bd55a4b64c961240e21b61a91b4c0e82d0334436"
+      },
+      {
+        "name": "010-inspect-private-sources-2-tidal-envoy.png",
+        "sha256": "2029e3251f0b73626735288a43b145655f3b9b7b5ccd40a38ba5281aefb9712b"
+      },
+      {
+        "name": "011-commit-innovation-1-chart-envoy.png",
+        "sha256": "af3b0ca03c2d2497b82d4a487e67e42a06a8965e3203729c1c26c508835f0de0"
+      },
+      {
+        "name": "013-read-earned-capacity-1-chart-envoy.png",
+        "sha256": "ecb1c580f7479472636130f3cdb8666529aacbf9d2fa8b949fc7bed821553a5d"
+      },
+      {
+        "name": "013-read-earned-capacity-2-tidal-envoy.png",
+        "sha256": "e8c3dfe43ab4d6381dc877c7a26a7f5bdec6cad471c7e30606ec8f1cf074d02f"
+      },
+      {
+        "name": "014-earned-normal-ledger-1-chart-envoy.png",
+        "sha256": "9a23129473536f22be413e85e9bf06a4e14b825287beb99917bda62ec16e6d69"
+      },
+      {
+        "name": "014-earned-normal-ledger-2-tidal-envoy.png",
+        "sha256": "075ca34854ca018ac2604cfca9e217b346b72a088c72c9c56e6314719e5915a5"
+      },
+      {
+        "name": "015-earned-normal-totals-1-chart-envoy.png",
+        "sha256": "ecb1c580f7479472636130f3cdb8666529aacbf9d2fa8b949fc7bed821553a5d"
+      },
+      {
+        "name": "015-earned-normal-totals-2-tidal-envoy.png",
+        "sha256": "e8c3dfe43ab4d6381dc877c7a26a7f5bdec6cad471c7e30606ec8f1cf074d02f"
+      },
+      {
+        "name": "016-earned-normal-return-1-chart-envoy.png",
+        "sha256": "1e5e167a70380bbd83133feb37133eeaf56eb923b6ca319ddfe29bde48c62890"
+      },
+      {
+        "name": "016-earned-normal-return-2-tidal-envoy.png",
+        "sha256": "a342e76e7ad5a25ef451ca3059ade02fe07d5fbb610a85c6f6ff77ebbb12d5b2"
+      },
+      {
+        "name": "017-earned-reduced-ledger-1-chart-envoy.png",
+        "sha256": "9a23129473536f22be413e85e9bf06a4e14b825287beb99917bda62ec16e6d69"
+      },
+      {
+        "name": "017-earned-reduced-ledger-2-tidal-envoy.png",
+        "sha256": "075ca34854ca018ac2604cfca9e217b346b72a088c72c9c56e6314719e5915a5"
+      },
+      {
+        "name": "018-earned-reduced-totals-1-chart-envoy.png",
+        "sha256": "ecb1c580f7479472636130f3cdb8666529aacbf9d2fa8b949fc7bed821553a5d"
+      },
+      {
+        "name": "018-earned-reduced-totals-2-tidal-envoy.png",
+        "sha256": "e8c3dfe43ab4d6381dc877c7a26a7f5bdec6cad471c7e30606ec8f1cf074d02f"
+      },
+      {
+        "name": "019-earned-reduced-return-1-chart-envoy.png",
+        "sha256": "1e5e167a70380bbd83133feb37133eeaf56eb923b6ca319ddfe29bde48c62890"
+      },
+      {
+        "name": "019-earned-reduced-return-2-tidal-envoy.png",
+        "sha256": "a342e76e7ad5a25ef451ca3059ade02fe07d5fbb610a85c6f6ff77ebbb12d5b2"
+      },
+      {
+        "name": "021-recover-delivered-rate-1-chart-envoy.png",
+        "sha256": "c6ee084eb47a0dec5268b262797dfbd41d438f1a92347e31364f0948e4412285"
+      }
+    ],
+    "review": "Implementation agent inspected ordinary Economy011: header clear and selected Innovation/action visible. Large displayed downscaled; not Linux approval or complete-family visual approval."
+  },
+  {
+    "viewport": "large",
+    "manifest": "/tmp/cluster-science-rail-after/stories/science-rate-sources/large/darwin-arm64/story.json",
+    "source": {
+      "commit": "94026c225b2d01cd2e7c5ab6bae14ca5b8b1ac54",
+      "dirty": true,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+    },
+    "images": [
+      {
+        "name": "010-inspect-private-sources-1-chart-envoy.png",
+        "sha256": "da293481c0a0bda290e1a0f4b2efe5069a630eb0b70f1e62a15d7488b24a09a8"
+      },
+      {
+        "name": "010-inspect-private-sources-2-tidal-envoy.png",
+        "sha256": "de902073bf6f4826d7903ff89df9739a71f295d182d45f9c02f4d5dcdc9f3f87"
+      },
+      {
+        "name": "011-commit-innovation-1-chart-envoy.png",
+        "sha256": "9ffc5407a0c3b35d259b440316b1a7e178209efc590fbd322d5ca3ec959a76df"
+      },
+      {
+        "name": "013-read-earned-capacity-1-chart-envoy.png",
+        "sha256": "c913ecfeb76ea536fa7a5a9ec3d0d38bdc4eda077b891fcc25411f67f0b7bac7"
+      },
+      {
+        "name": "013-read-earned-capacity-2-tidal-envoy.png",
+        "sha256": "ad15bcdbb9e6b86084c7d295a7555e08d9b1adb877ede8db2549a0ad70922d1b"
+      },
+      {
+        "name": "014-earned-normal-ledger-1-chart-envoy.png",
+        "sha256": "c913ecfeb76ea536fa7a5a9ec3d0d38bdc4eda077b891fcc25411f67f0b7bac7"
+      },
+      {
+        "name": "014-earned-normal-ledger-2-tidal-envoy.png",
+        "sha256": "ad15bcdbb9e6b86084c7d295a7555e08d9b1adb877ede8db2549a0ad70922d1b"
+      },
+      {
+        "name": "015-earned-normal-totals-1-chart-envoy.png",
+        "sha256": "c913ecfeb76ea536fa7a5a9ec3d0d38bdc4eda077b891fcc25411f67f0b7bac7"
+      },
+      {
+        "name": "015-earned-normal-totals-2-tidal-envoy.png",
+        "sha256": "ad15bcdbb9e6b86084c7d295a7555e08d9b1adb877ede8db2549a0ad70922d1b"
+      },
+      {
+        "name": "016-earned-normal-return-1-chart-envoy.png",
+        "sha256": "6cae3b83dc27c764326f26e819e1a097c3dc92beb4cdefa158737d79c44ad7ce"
+      },
+      {
+        "name": "016-earned-normal-return-2-tidal-envoy.png",
+        "sha256": "8281d757ab37b4301b3ec648f87665fa594a52612baa170c1fbc32c27925b623"
+      },
+      {
+        "name": "017-earned-reduced-ledger-1-chart-envoy.png",
+        "sha256": "c913ecfeb76ea536fa7a5a9ec3d0d38bdc4eda077b891fcc25411f67f0b7bac7"
+      },
+      {
+        "name": "017-earned-reduced-ledger-2-tidal-envoy.png",
+        "sha256": "ad15bcdbb9e6b86084c7d295a7555e08d9b1adb877ede8db2549a0ad70922d1b"
+      },
+      {
+        "name": "018-earned-reduced-totals-1-chart-envoy.png",
+        "sha256": "c913ecfeb76ea536fa7a5a9ec3d0d38bdc4eda077b891fcc25411f67f0b7bac7"
+      },
+      {
+        "name": "018-earned-reduced-totals-2-tidal-envoy.png",
+        "sha256": "ad15bcdbb9e6b86084c7d295a7555e08d9b1adb877ede8db2549a0ad70922d1b"
+      },
+      {
+        "name": "019-earned-reduced-return-1-chart-envoy.png",
+        "sha256": "6cae3b83dc27c764326f26e819e1a097c3dc92beb4cdefa158737d79c44ad7ce"
+      },
+      {
+        "name": "019-earned-reduced-return-2-tidal-envoy.png",
+        "sha256": "8281d757ab37b4301b3ec648f87665fa594a52612baa170c1fbc32c27925b623"
+      },
+      {
+        "name": "021-recover-delivered-rate-1-chart-envoy.png",
+        "sha256": "d3f9ae8d039e36aac437ca54a1502dba421915bc10db287ca17eba231bb9b5c1"
+      }
+    ],
+    "review": "Implementation agent inspected ordinary Economy011: header clear and selected Innovation/action visible. Large displayed downscaled; not Linux approval or complete-family visual approval."
+  },
+  {
+    "viewport": "short",
+    "manifest": "/tmp/cluster-science-rail-after/stories/science-rate-sources/short/darwin-arm64/story.json",
+    "source": {
+      "commit": "94026c225b2d01cd2e7c5ab6bae14ca5b8b1ac54",
+      "dirty": true,
+      "spec": "tests/e2e/003-science/science.spec.ts",
+      "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+    },
+    "images": [
+      {
+        "name": "010-inspect-private-sources-1-chart-envoy.png",
+        "sha256": "ea1b74bc7ffde94b303761e48b6ffeea7dcc644b91c7777a00f6e9cbfa86f298"
+      },
+      {
+        "name": "010-inspect-private-sources-2-tidal-envoy.png",
+        "sha256": "b40f7e73579ad14509c5807fae018259f51a6b5cbd098e9b78036cc965b23c76"
+      },
+      {
+        "name": "011-commit-innovation-1-chart-envoy.png",
+        "sha256": "c78968e0abbd4c96f55c00c3affa791efa00c103dc7a9ad77cfad0a75c9b7a47"
+      },
+      {
+        "name": "013-read-earned-capacity-1-chart-envoy.png",
+        "sha256": "f3a6231ca6c60c99b88e6a358f73506e985f964cf3c1a62661c9585d0be2c6e5"
+      },
+      {
+        "name": "013-read-earned-capacity-2-tidal-envoy.png",
+        "sha256": "b9856112441d08dc4a56feb565365fba19d4208bd42d9ce4004a6d1333d0a20c"
+      },
+      {
+        "name": "014-earned-normal-ledger-1-chart-envoy.png",
+        "sha256": "d0223292e57cb3f1f43cd3ef7194961f15e578571d78ce580d5b3966aeabf420"
+      },
+      {
+        "name": "014-earned-normal-ledger-2-tidal-envoy.png",
+        "sha256": "514b39a5b18ded69025d7261b47c3394d1083515b9fe22eb1659563c3f4c92ef"
+      },
+      {
+        "name": "015-earned-normal-totals-1-chart-envoy.png",
+        "sha256": "f3a6231ca6c60c99b88e6a358f73506e985f964cf3c1a62661c9585d0be2c6e5"
+      },
+      {
+        "name": "015-earned-normal-totals-2-tidal-envoy.png",
+        "sha256": "b9856112441d08dc4a56feb565365fba19d4208bd42d9ce4004a6d1333d0a20c"
+      },
+      {
+        "name": "016-earned-normal-return-1-chart-envoy.png",
+        "sha256": "7c850e18f3b868bbea5a8c0e4704354f63c0502313fa5f3f25ac34e884549e08"
+      },
+      {
+        "name": "016-earned-normal-return-2-tidal-envoy.png",
+        "sha256": "23a91aa762e478854d1c98d0d1f6ceaf9a832382add5fc23a937875357bb414e"
+      },
+      {
+        "name": "017-earned-reduced-ledger-1-chart-envoy.png",
+        "sha256": "d0223292e57cb3f1f43cd3ef7194961f15e578571d78ce580d5b3966aeabf420"
+      },
+      {
+        "name": "017-earned-reduced-ledger-2-tidal-envoy.png",
+        "sha256": "514b39a5b18ded69025d7261b47c3394d1083515b9fe22eb1659563c3f4c92ef"
+      },
+      {
+        "name": "018-earned-reduced-totals-1-chart-envoy.png",
+        "sha256": "f3a6231ca6c60c99b88e6a358f73506e985f964cf3c1a62661c9585d0be2c6e5"
+      },
+      {
+        "name": "018-earned-reduced-totals-2-tidal-envoy.png",
+        "sha256": "b9856112441d08dc4a56feb565365fba19d4208bd42d9ce4004a6d1333d0a20c"
+      },
+      {
+        "name": "019-earned-reduced-return-1-chart-envoy.png",
+        "sha256": "7c850e18f3b868bbea5a8c0e4704354f63c0502313fa5f3f25ac34e884549e08"
+      },
+      {
+        "name": "019-earned-reduced-return-2-tidal-envoy.png",
+        "sha256": "23a91aa762e478854d1c98d0d1f6ceaf9a832382add5fc23a937875357bb414e"
+      },
+      {
+        "name": "021-recover-delivered-rate-1-chart-envoy.png",
+        "sha256": "e41d4e6c03ab995d135a62d30abb961c2bce64a0c4da9e53694b65530855b9fd"
+      }
+    ],
+    "review": "Implementation agent inspected ordinary Economy011: header clear and selected Innovation/action visible. Large displayed downscaled; not Linux approval or complete-family visual approval."
+  }
+]

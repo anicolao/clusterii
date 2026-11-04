@@ -1,0 +1,19 @@
+{
+  "reviewer": "implementation agent",
+  "status": "held for actual layout defect; not approved",
+  "run": 41909174034,
+  "images": [
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-current-41909174034/phone/test-results/stories/science-rate-sources/phone/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-current-41909174034/phone/test-results/stories/science-rate-sources/phone/linux-arm64/story.json",
+      "story": "science-rate-sources",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+      "sha256": "4d2ff540d4c2f29e7209d1d36382fa786599335c42b67a6f0ed647ce2d48653f",
+      "oldSha256": null
+    }
+  ],
+  "finding": "Ordinary Economy starts at y66, obscuring the resource/next-tick rail. Resource entry uses measured inset. Local assertion reproduces panel.y66 < rail.bottom121.",
+  "beforeLogSha256": "2639bae21ef2dd3623a6e33032c550e5fe21fe153fe511bf1d214c47e4279c07",
+  "correction": "Apply existing measured rail inset to shared economy-panel class; assert clearance during ordinary-route story as well as existing resource routes."
+}
