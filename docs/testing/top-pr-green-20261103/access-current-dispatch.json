@@ -1,0 +1,56 @@
+{
+  "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+  "executor": "8f4abdef8876108271334d7bb7810b79109533ff",
+  "request": "1957ac54bf9e476572bf9af407998aea800061eb",
+  "run": 41911242352,
+  "branch": "investigate/pr140-access-current-20261104",
+  "scope": {
+    "campaign-admission-navigation": 15,
+    "campaign-chart-navigation": {
+      "phone": 8,
+      "desktop": 7,
+      "large": 7,
+      "short": 7
+    },
+    "entry-profile-readiness": 3
+  },
+  "expectedTotalViews": 101,
+  "guardTests": "6 passed under established offline Nix",
+  "actualCollection": {
+    "phone": {
+      "sha256": "27b37a9aba860c4e0061b4a7497ddfc114260c41cb0d5238222b7c4fe3792a0e",
+      "tests": 3,
+      "expectedViews": 26
+    },
+    "desktop": {
+      "sha256": "6a57124eee4e3b5e21e1c34f9711a7bee472bef7bed7a3420da4d72b394fffbd",
+      "tests": 3,
+      "expectedViews": 25
+    },
+    "large": {
+      "sha256": "88c8aa17649736c12baa12d30cf6a46f0646a7b9fbf0912984a9f95caf0cf97b",
+      "tests": 3,
+      "expectedViews": 25
+    },
+    "short": {
+      "sha256": "0f677f9bc98a7288931e5b12677b6204130f8067109adaf87a3c2d96d3470cdb",
+      "tests": 3,
+      "expectedViews": 25
+    }
+  },
+  "originalLimits": "Unchanged 90-second story, 30-second acknowledged steps, 10-second actions/assertions/navigation; retries0, snapshots none; real create/join/reload/release and authoritative profile readiness.",
+  "whyFreshEvidence": "Eleven historical first-reference paths remain absent. Retained earlier navigation manifests precede the current overview-before-orbit and in-chart boundary assertions and updated shared waiting/label components. Current code and all assertions are unchanged by this request.",
+  "sourceAudit": "Target, executor and request input tree identities checked for all guarded product/story/reference/runtime paths; only isolated request orchestration and continuation logs differ. Required workflows unchanged.",
+  "retention": "Remote14days; no local artifact download yet; useful originals only after bounded archive validation.",
+  "liveRequiredStrict": {
+    "head": "8eeea5e6315e309f9d883ed3ef3fcf50be2340fe",
+    "run": 41893585935,
+    "job": 126797060512,
+    "status": "IN_PROGRESS"
+  },
+  "scienceCandidate": {
+    "run": 41909174034,
+    "status": "IN_PROGRESS",
+    "noDuplicateRequest": true
+  }
+}
