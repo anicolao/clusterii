@@ -25615,5 +25615,879 @@
         "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/023-keyboard-return-1-exchange-sender.png"
       }
     ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1e36480825895dafbf0393ceefe120b1e0b84cf78d0ff7b41958373ac2b39940",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/015-keep-order-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/017-released-draft-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/011-choose-complement-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/013-reload-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-2-independent-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9dc594e665c6d31db99eaf38ae4d7f82483b0053839482d88510a6253ba5cb91",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "17c159763b6ca6c7f8b87bb18909c516b5187fe983244e9e75428ce661c1e7a6",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3adc93148293bd229afe6b7a2e18fa07e3c86201b29dab1c4ed24e7016983708",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "56b4e3e2ae0aeade28a54cbb635651cd23ddb20e1ed5a9b0c26fde597fcf6cbc",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/014-review-cancellation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5dbcaf1290f8e76c299e487df6367d71942375069ce9038f3b1e24fdcbf478f0",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/015-keep-order-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "203817345f01fff812be9139e473e4ca97f5879f8a73c338da9d818ff40c0fd9",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/016-cancel-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3d1903803f6d5b57227adb06dc964cfb58c2225ea694c9df9f7ce84703a017ce",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/017-released-draft-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d248cd5eb3309917e09275a06db5272ccda7d7419b0cf25e99e6ef11379df618",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/018-reload-cancelled-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0ab6111d95428d9d6ae5ec983690140e97d44f3f413a84ad0dfbfeaa9bf1b495",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/016-map-presence-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/016-map-presence-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/017-reserve-disband-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/017-reserve-disband-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/018-reload-disband-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/018-reload-disband-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/017-review-split-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/017-review-split-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/019-pending-split-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/019-pending-split-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-2-independent-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a692b412e4deb3814ec6f89075fd69b7e632095827d8a0c542145efcf0ccc3c5",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-cancellation/phone/linux-arm64/story.json",
+        "story": "live-fleet-cancellation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/021-return-to-system-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "edf036c2e181d05918910c04e4a5ba9af12f5469dfd9f43aa7a7797cde323707",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "94a05e49ce82961f3d363982c729da4bae0b291d700d3b6527625ccd39bc55c8",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "86f50332aef08d1d85dde2ad9ebd7e46c6136bdbb2d8badce2dae59d7b178504",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f25fa2869d930877e8d0010ab5397b02db7a84b84ea9f4173415c0be110c5de4",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cbd19801e2889785f2709b55ace9d64f32f75eeed9777c4da7ccf0314d626464",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f3bf8c80a33b00d8d17e96454c7035551129f3a567fe9a75a7fc9716f6b5d3fa",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/016-map-presence-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/016-map-presence-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4fb9a3d1f8c5fbf72bb6a1071b259557638f2dbb464c30b74f8b8b005468dd66",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/017-reserve-disband-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/017-reserve-disband-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "60dd27d6094cefc78deb4623fd8e19899c29d8be05a8d2e14154b5c86cab5638",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/018-reload-disband-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/018-reload-disband-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5f48b83b4ca6ec7bb38a734cae69a3047687892cbab38f26ada13b38d267b6fc",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/020-disbanded-fleet-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/020-disbanded-fleet-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/020-disbanded-fleet-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/020-disbanded-fleet-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/021-recover-final-forces-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/021-recover-final-forces-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-2-independent-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a44c8df1d59d2319418b6a73951b9dc12f1f06351555411e4ad26276bb41521e",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/021-recover-final-forces-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+        "story": "live-fleet-formation",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-formation/phone/linux-arm64/021-recover-final-forces-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c57a86e081d74cbee23dde27d9c7db03a86203f52c0a5151baf9c0819f67fa8d",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e288612227e339465cc1d3ecf6e9c8e7f771ca3792c2cc799000d16fa70d13be",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/016-invalid-split-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5a074fa5699a5e3b76247f2c007f1d9936f098068f5f94d116cddbd53aead84f",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/017-review-split-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/017-review-split-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "95fb49fbc37a5bc2c26c53f9b3ad5226e0e4291662b7e2e8758f6eced9060025",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/019-pending-split-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/019-pending-split-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7e4ddaa2235b825559e172eb72bd2548b41601c314b3b2a9983c3497899744fe",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/020-reload-pending-split-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f4fbc0954be1f1f7639dd624e91b60109f507eb2fdfd4d9f5d3de5439360c272",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/022-accepted-split-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "12d4d5f0ad19914840c502650c8fe053ed62887833321e5e3f3f8c975d24bdf9",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/024-split-fleets-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fe6d06f1028d3d8a0bccc6fa0052d52e90374d4f0c1e121fb72ff11b1111ddcf",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/025-choose-recipient-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f15caac919865a846d62c1e67113825a0a8fe8f9136080e4620ef5b12ab07d13",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/026-accepted-merge-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ed5c12b91d24d4b0725ac99a265a0583500241c9ec07a1c99f5d2ab9a10c3813",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/027-reserved-recipient-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "90ace6c4348796dfaa8b4699a8200ec8cbda72be90a4776f2c1801077204269a",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/028-reload-merge-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5ec5fb195ad989417acf6dc556e10c32955133b6a385c4d1244df3e7830bdba7",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-1-fleet-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c45ebcd6905b9013462929ea93c74ac6b4a2cfc3467eea7deb4c7824d1623008",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/030-merged-fleet-2-independent-marshal.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-2-independent-marshal.png"
+      }
+    ]
+  },
+  {
+    "target": "ee56db9c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ecf7a3623c649b50ab1e422767e73ca25e2b47d2356feae1ecfb4b1541c6f3ca",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually inspected. Formation/capacity validation, reservations, cancellation confirmation/release, split recovery and merge quantities/receipts remain readable; fixed actions and visible focused control outlines fit. Deliberate bounded reading positions clip unfocused neighboring navigation, headings or controls. Cancellation review explicitly focuses the manifest before scrolling its orders section: its pressed cancellation button is not the keyboard focus. This is scoped regression approval, not simultaneous full-content visibility, concept fidelity, normal-motion certification or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+        "story": "live-fleet-reorganization",
+        "viewport": "phone",
+        "reference": "tests/browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png"
+      }
+    ]
   }
 ]
