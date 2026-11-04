@@ -1,0 +1,62 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "entry-profile-readiness",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+    "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "003-entry-waits-for-profile-1-star-envoy.png",
+      "sha256": "d3a2608fa412457b319c113a6f835711daff1fe1adaff203e301722e59e83841",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-ready-campaign-selection-1-star-envoy.png",
+      "sha256": "8c19d9ec15f6f7cda1961d97841a4a9f7613e9d1b771f985cbcdc90e076c764c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-saved-identity-unchanged-1-star-envoy.png",
+      "sha256": "c9249598e1b0dad02db954e9b43332d0d9bcca4b31513defb4e24785f18acf49",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

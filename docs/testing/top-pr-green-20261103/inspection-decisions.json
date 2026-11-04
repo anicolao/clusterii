@@ -29111,5 +29111,1202 @@
         "reference": "tests/browser/story-baselines/live-fleet-reorganization/large/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png"
       }
     ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "17c7a4d537d966b20cc2f51097b9a926fe380b3c27ab0f1e2db70d3f746afd2f",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "sha256": "17c7a4d537d966b20cc2f51097b9a926fe380b3c27ab0f1e2db70d3f746afd2f",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "77e329960eb65f53c8a667a816343ced95963783bf85595d38fc6eb63acf2d26",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/003-created-faction-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/003-created-faction-1-star-envoy.png",
+        "sha256": "77e329960eb65f53c8a667a816343ced95963783bf85595d38fc6eb63acf2d26",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "51801c7989f07681f5f99c1f051adc43deab0b9c13ffc6bb3dd757dcc951ecef",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "sha256": "51801c7989f07681f5f99c1f051adc43deab0b9c13ffc6bb3dd757dcc951ecef",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "30a87946064a7836c656f9edab378ab675270a8db528428ddc122347aaa3d358",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/005-review-faction-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/005-review-faction-1-star-envoy.png",
+        "sha256": "30a87946064a7836c656f9edab378ab675270a8db528428ddc122347aaa3d358",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6e0c5bebfc96f752430228aa3928074b259e1fa723d8e6c583c8db1cb68b88c1",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/006-review-rules-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/006-review-rules-1-star-envoy.png",
+        "sha256": "6e0c5bebfc96f752430228aa3928074b259e1fa723d8e6c583c8db1cb68b88c1",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d447b91e9309d86cfa4cdac6e2cf373a36325802c58b8e3e999110c925e5e0bd",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "sha256": "d447b91e9309d86cfa4cdac6e2cf373a36325802c58b8e3e999110c925e5e0bd",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f18ee2ed43f43d62baf63d0d8a26a1c69e1a5f06e8b59accbf545c8ddd42c769",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "sha256": "f18ee2ed43f43d62baf63d0d8a26a1c69e1a5f06e8b59accbf545c8ddd42c769",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "63f1a6e37a2ce67950b73e984855b758cfe4bea4279fc3bbf4f87ef007233675",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "sha256": "63f1a6e37a2ce67950b73e984855b758cfe4bea4279fc3bbf4f87ef007233675",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+        "sha256": "63f1a6e37a2ce67950b73e984855b758cfe4bea4279fc3bbf4f87ef007233675",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e949eca35e89f5d8e882e055515e4b540e1b5be4de12db2d33e8a805f2b6ceee",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "sha256": "e949eca35e89f5d8e882e055515e4b540e1b5be4de12db2d33e8a805f2b6ceee",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d31ffd8128ea715b5f665c931ea86a66fa1a3973de24a4fa722be01a76478b40",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "sha256": "d31ffd8128ea715b5f665c931ea86a66fa1a3973de24a4fa722be01a76478b40",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "04f3d0cbce5bc07c2a78de9066dd5f6582ef57b3f7fce825090fe4c7ac716610",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "sha256": "04f3d0cbce5bc07c2a78de9066dd5f6582ef57b3f7fce825090fe4c7ac716610",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ae71ddaa26da16501823e0ae0be194f54141b85e78c5749bc8931fecce5ad579",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "sha256": "ae71ddaa26da16501823e0ae0be194f54141b85e78c5749bc8931fecce5ad579",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4707830b2854a199ec11eb17a7581f9fba3ee2b740050315305a628080a65c34",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/015-release-seat-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/015-release-seat-1-star-envoy.png",
+        "sha256": "4707830b2854a199ec11eb17a7581f9fba3ee2b740050315305a628080a65c34",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/002-assigned-chart-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/002-assigned-chart-1-star-envoy.png",
+        "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/006-overview-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fce8eba6577d2509f6a24e10876c9bc8c74b739e15d3e472d8574190cf307de0",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "fce8eba6577d2509f6a24e10876c9bc8c74b739e15d3e472d8574190cf307de0",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8a3ffbe96bc7a42e0166989f3832346b9a93c539aeab5777ba577c0c1cf17b16",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "8a3ffbe96bc7a42e0166989f3832346b9a93c539aeab5777ba577c0c1cf17b16",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0790f9bdcb34e7ef2ddeb2a864f71c1d8563b5b56fb239fd8fe7fee51fa088b7",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "0790f9bdcb34e7ef2ddeb2a864f71c1d8563b5b56fb239fd8fe7fee51fa088b7",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b401f47f672ab13892719339d631b500f03cded2a469d15ebdb9b00195f219bc",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/007-select-rana-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "b401f47f672ab13892719339d631b500f03cded2a469d15ebdb9b00195f219bc",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4fd0bd6eca7d0cbd6bad2b303d64ef6d0a36a62a9ba8bfafaf9cb07069520b18",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "sha256": "4fd0bd6eca7d0cbd6bad2b303d64ef6d0a36a62a9ba8bfafaf9cb07069520b18",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a286e481711c73fe915130fb9c47cbcc4422c57adeb01d94f64f210578919d91",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/003-created-faction-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/003-created-faction-1-star-envoy.png",
+        "sha256": "a286e481711c73fe915130fb9c47cbcc4422c57adeb01d94f64f210578919d91",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ce0cbcad3d60251cfd677fc1f9536fa67b9d14ba8d53e7a326d04a3385fc0e71",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "sha256": "ce0cbcad3d60251cfd677fc1f9536fa67b9d14ba8d53e7a326d04a3385fc0e71",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "89906ba064bdf296ae977de4f1387e1d74320847545f71230d2d8450c66b2627",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/005-review-faction-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/005-review-faction-1-star-envoy.png",
+        "sha256": "89906ba064bdf296ae977de4f1387e1d74320847545f71230d2d8450c66b2627",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "198ef0a83171e694ecde6f64685651e3cb4d9f0425f0a3ab8246945e75485228",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/006-review-rules-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/006-review-rules-1-star-envoy.png",
+        "sha256": "198ef0a83171e694ecde6f64685651e3cb4d9f0425f0a3ab8246945e75485228",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0646de5fa01a7dc7b05fae56bd31f86f0fda21cd6e7787abe3bd0c7b21dd9ff5",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "sha256": "0646de5fa01a7dc7b05fae56bd31f86f0fda21cd6e7787abe3bd0c7b21dd9ff5",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ee68758e6662de2668d6819ed203a3287e1dfbcd40aa8aa8a0073ca599c50dd9",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "sha256": "ee68758e6662de2668d6819ed203a3287e1dfbcd40aa8aa8a0073ca599c50dd9",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a24901508406e48e0ffff6378a567930e4a9d317d9935ff3674ebc6633664bdf",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "sha256": "a24901508406e48e0ffff6378a567930e4a9d317d9935ff3674ebc6633664bdf",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+        "sha256": "a24901508406e48e0ffff6378a567930e4a9d317d9935ff3674ebc6633664bdf",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "df884281e06202e9731f6053aeef4ade31567398582cee17ff30f477821c3750",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "sha256": "df884281e06202e9731f6053aeef4ade31567398582cee17ff30f477821c3750",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d8b63536d05b6c1d8f62c3c3d1335190803d0c582dadfe6404b163ebe6f4ddc7",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "sha256": "d8b63536d05b6c1d8f62c3c3d1335190803d0c582dadfe6404b163ebe6f4ddc7",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "90cf54ac09d71ffc498c8506c7c4bbd7535a3bf20ee1a7eb8b9c02f530ff79f0",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "sha256": "90cf54ac09d71ffc498c8506c7c4bbd7535a3bf20ee1a7eb8b9c02f530ff79f0",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c62bab1b837e20d156d90862015555fcf4510103cb0a09ca5571d42f47958443",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "sha256": "c62bab1b837e20d156d90862015555fcf4510103cb0a09ca5571d42f47958443",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cc6a61454d3a46bbcea38ef93860abfd9020bae539bdc18fd09c4e25b85468a7",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/015-release-seat-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/015-release-seat-1-star-envoy.png",
+        "sha256": "cc6a61454d3a46bbcea38ef93860abfd9020bae539bdc18fd09c4e25b85468a7",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8c19d9ec15f6f7cda1961d97841a4a9f7613e9d1b771f985cbcdc90e076c764c",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+        "sha256": "8c19d9ec15f6f7cda1961d97841a4a9f7613e9d1b771f985cbcdc90e076c764c",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/story.json",
+        "story": "entry-profile-readiness",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/large/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+        "sha256": "8c19d9ec15f6f7cda1961d97841a4a9f7613e9d1b771f985cbcdc90e076c764c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/002-assigned-chart-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/002-assigned-chart-1-star-envoy.png",
+        "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/006-overview-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d966651ab570c979a0f13d2ed9ae7e3e4f0a688bf41afa3729684b25bdcd9b80",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "d966651ab570c979a0f13d2ed9ae7e3e4f0a688bf41afa3729684b25bdcd9b80",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0dab6b4f0d875056e3506628a36a40a708eda170d17df941474699be4135b4d2",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "0dab6b4f0d875056e3506628a36a40a708eda170d17df941474699be4135b4d2",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "502d4a3e327a7eb6ef2d1514d7d49938fc0a55e422b7adf5a30ba17bcfe47e5b",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "502d4a3e327a7eb6ef2d1514d7d49938fc0a55e422b7adf5a30ba17bcfe47e5b",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "105b1c77209cccee7998ee8106b9741ceff7b80ba82c12dda293ca1bfa488466",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/007-select-rana-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "105b1c77209cccee7998ee8106b9741ceff7b80ba82c12dda293ca1bfa488466",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d3a2608fa412457b319c113a6f835711daff1fe1adaff203e301722e59e83841",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Play is deliberately disabled while saved profile is unresolved. Saved identity retains name, selected portrait and complete Save/Close/Sign-out controls after recovery. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/story.json",
+        "story": "entry-profile-readiness",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/large/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+        "sha256": "d3a2608fa412457b319c113a6f835711daff1fe1adaff203e301722e59e83841",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c9249598e1b0dad02db954e9b43332d0d9bcca4b31513defb4e24785f18acf49",
+    "disposition": "approved-regression",
+    "inspection": "Large original3840x2160 viewed at2048x1152; layout/content approval, not native-pixel fidelity. Play is deliberately disabled while saved profile is unresolved. Saved identity retains name, selected portrait and complete Save/Close/Sign-out controls after recovery. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/story.json",
+        "story": "entry-profile-readiness",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/large/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+        "sha256": "c9249598e1b0dad02db954e9b43332d0d9bcca4b31513defb4e24785f18acf49",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "51381526536b11d8d5eec89655bf5dfe76ff5a83c631f82ce924e6ef4cdef954",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "phone",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "sha256": "51381526536b11d8d5eec89655bf5dfe76ff5a83c631f82ce924e6ef4cdef954",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ef01d637689aec0f2065a6b44d5cb746f07b5e117b9cb2077119651a750fa411",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/002-propose-campaign-1-star-envoy.png",
+        "sha256": "ef01d637689aec0f2065a6b44d5cb746f07b5e117b9cb2077119651a750fa411",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "350e3e6eae4044eeae2ecc489047a303f8bb5823835ee5cf83b1c13da15d35af",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/003-created-faction-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/003-created-faction-1-star-envoy.png",
+        "sha256": "350e3e6eae4044eeae2ecc489047a303f8bb5823835ee5cf83b1c13da15d35af",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "13e1b8ca45265b2d509278e6f6948783268770c9edbe4331933542658400f133",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/004-choose-portrait-1-star-envoy.png",
+        "sha256": "13e1b8ca45265b2d509278e6f6948783268770c9edbe4331933542658400f133",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a02271b66ced7cec36fe803e318e9a73240bcc5b784ba4401aab6134b9b709e8",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/005-review-faction-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/005-review-faction-1-star-envoy.png",
+        "sha256": "a02271b66ced7cec36fe803e318e9a73240bcc5b784ba4401aab6134b9b709e8",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "07c370d9d9181a55481a6ed79bd27b1ee55a0a50a8e498496789f12c9e804803",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/006-review-rules-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/006-review-rules-1-star-envoy.png",
+        "sha256": "07c370d9d9181a55481a6ed79bd27b1ee55a0a50a8e498496789f12c9e804803",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f87d56cb03fd91cd249e87ff7de027e065499c49eae84e434d68c08e6138aad9",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+        "sha256": "f87d56cb03fd91cd249e87ff7de027e065499c49eae84e434d68c08e6138aad9",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d46ac168a39ad65ce6d5b6efec8dc22b86f3e429515f619056eb922339b5047c",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+        "sha256": "d46ac168a39ad65ce6d5b6efec8dc22b86f3e429515f619056eb922339b5047c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/009-waiting-entry-1-star-envoy.png",
+        "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+        "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a17dd7b933127b7c4d91fae8dfb30eaf049c903dfa43eb4391bec3f7a90e74f0",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/011-campaign-directory-1-star-envoy.png",
+        "sha256": "a17dd7b933127b7c4d91fae8dfb30eaf049c903dfa43eb4391bec3f7a90e74f0",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "07c405c7d27cf04e61b05fdee7d3a3e910e0bed9e89555e07e3a96176a634d16",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+        "sha256": "07c405c7d27cf04e61b05fdee7d3a3e910e0bed9e89555e07e3a96176a634d16",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c94404654d2a59d3712d20965b96ef8c4be1682c5a079f96dded8ab28b1cf4f1",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/013-reload-membership-1-star-envoy.png",
+        "sha256": "c94404654d2a59d3712d20965b96ef8c4be1682c5a079f96dded8ab28b1cf4f1",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "421bd514261c56fd5aee15c5ebb1dcbe00cc7158ab022058d672f1aa9441d71a",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+        "sha256": "421bd514261c56fd5aee15c5ebb1dcbe00cc7158ab022058d672f1aa9441d71a",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f326293ac28ed6167eddd93cafc830e06cfeb8e425f5f65cd10744e7f5f6a40c",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/015-release-seat-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/015-release-seat-1-star-envoy.png",
+        "sha256": "f326293ac28ed6167eddd93cafc830e06cfeb8e425f5f65cd10744e7f5f6a40c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c1645c7d4bf5b21b81c0ea1861448572577ef16f70a0c6bf093d4f6878c616ee",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Campaign name and available seats, separate faction and cosmetic portrait choices, affinity matrix, rules/briefing, acknowledged seat, directory recovery, roster return focus and released membership are readable. Smaller viewports deliberately scroll briefing/roster content; fixed commitment controls remain reachable. Singular seat copy remains a recorded copy defect, not a blocked action. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+        "story": "campaign-admission-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+        "sha256": "c1645c7d4bf5b21b81c0ea1861448572577ef16f70a0c6bf093d4f6878c616ee",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/story.json",
+        "story": "entry-profile-readiness",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/short/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+        "sha256": "c1645c7d4bf5b21b81c0ea1861448572577ef16f70a0c6bf093d4f6878c616ee",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/002-assigned-chart-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/002-assigned-chart-1-star-envoy.png",
+        "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/006-overview-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "905055a8a41d09bc41c3ad41e4cdff37b312e1d53cc75a4c9626bb264540f020",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "905055a8a41d09bc41c3ad41e4cdff37b312e1d53cc75a4c9626bb264540f020",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "58e4c3f0d0d3c74f08026e3a34f41e05a9314903669cb2b172e6b45c8dacc97f",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "58e4c3f0d0d3c74f08026e3a34f41e05a9314903669cb2b172e6b45c8dacc97f",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b57c8d3aee17bb0ecb1e12aee16b5586baf5aa85fd578b7542cf3f7484aa8925",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "b57c8d3aee17bb0ecb1e12aee16b5586baf5aa85fd578b7542cf3f7484aa8925",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "440cf07bcd26545e7ed4850dd5a2093e74731fc580aa2a22a7e77d233271c900",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Actual selected home and unknown Rana facts, catalogue/filter controls, camera controls, keyboard orbit and full opener focus ring are readable. Open list covers background chart; short unselected Saiph label is partly occluded behind list, recorded composition limitation, not full label-fidelity signoff. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/007-select-rana-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+        "story": "campaign-chart-navigation",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "440cf07bcd26545e7ed4850dd5a2093e74731fc580aa2a22a7e77d233271c900",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3cba615c21a4290390a765a76cb2d3f5842a0230da83f1d70a6db12c2a5c2700",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Play is deliberately disabled while saved profile is unresolved. Saved identity retains name, selected portrait and complete Save/Close/Sign-out controls after recovery. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/story.json",
+        "story": "entry-profile-readiness",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/short/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+        "sha256": "3cba615c21a4290390a765a76cb2d3f5842a0230da83f1d70a6db12c2a5c2700",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "020f3ba9bde8bc0c2e2b1e0542d761774fbe6aec",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4018f71243fffd5ec27e9a74223eb05dbc41f0db73818234a18954361d1187aa",
+    "disposition": "approved-regression",
+    "inspection": "Original viewed at native viewport. Play is deliberately disabled while saved profile is unresolved. Saved identity retains name, selected portrait and complete Save/Close/Sign-out controls after recovery. Scoped regression approval only; no full concept, release, normal-motion or privacy certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/story.json",
+        "story": "entry-profile-readiness",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+        "sha256": "4018f71243fffd5ec27e9a74223eb05dbc41f0db73818234a18954361d1187aa",
+        "oldSha256": null
+      }
+    ]
   }
 ]

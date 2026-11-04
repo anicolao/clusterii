@@ -1,0 +1,90 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "campaign-chart-navigation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+    "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-assigned-chart-1-star-envoy.png",
+      "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-filter-o-stars-1-star-envoy.png",
+      "sha256": "905055a8a41d09bc41c3ad41e4cdff37b312e1d53cc75a4c9626bb264540f020",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-expand-camera-controls-1-star-envoy.png",
+      "sha256": "58e4c3f0d0d3c74f08026e3a34f41e05a9314903669cb2b172e6b45c8dacc97f",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-keyboard-orbit-1-star-envoy.png",
+      "sha256": "b57c8d3aee17bb0ecb1e12aee16b5586baf5aa85fd578b7542cf3f7484aa8925",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-overview-1-star-envoy.png",
+      "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-select-rana-1-star-envoy.png",
+      "sha256": "440cf07bcd26545e7ed4850dd5a2093e74731fc580aa2a22a7e77d233271c900",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "008-reload-chart-1-star-envoy.png",
+      "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}
