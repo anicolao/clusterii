@@ -849,3 +849,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reproduce short credit focused-input clipping using the existing read-only full painted-bounds audit.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete Linux credit evidence to the diagnosed focused-reader correction and original budgets.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete four-size Linux credit family after the demonstrated focused-input correction.
