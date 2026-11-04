@@ -18841,5 +18841,55 @@
         "viewport": "large"
       }
     ]
+  },
+  {
+    "target": "e9a748cc",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
+    "disposition": "approved-regression",
+    "inspection": "Original return-entry image individually opened; reload exact hash verified. Named Continue, Play, Learn, utility links, saved name and full keyboard focus ring readable. Entry component/assets/global style unchanged since candidate source. Large3840 displayed2048: layout/content only, not full design. Later galaxy capture explicitly excluded because Galaxy/Scene source changed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+        "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
+        "existing": null,
+        "story": "cinematic-returning-entry",
+        "viewport": "desktop"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+        "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
+        "existing": null,
+        "story": "cinematic-returning-entry",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "e9a748cc",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0",
+    "disposition": "approved-regression",
+    "inspection": "Original return-entry image individually opened; reload exact hash verified. Named Continue, Play, Learn, utility links, saved name and full keyboard focus ring readable. Entry component/assets/global style unchanged since candidate source. Large3840 displayed2048: layout/content only, not full design. Later galaxy capture explicitly excluded because Galaxy/Scene source changed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+        "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0",
+        "existing": null,
+        "story": "cinematic-returning-entry",
+        "viewport": "large"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+        "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0",
+        "existing": null,
+        "story": "cinematic-returning-entry",
+        "viewport": "large"
+      }
+    ]
   }
 ]

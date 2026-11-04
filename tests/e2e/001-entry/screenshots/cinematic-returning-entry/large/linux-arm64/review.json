@@ -1,0 +1,50 @@
+{
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/001-entry/returning.spec.ts",
+    "specSha256": "67e6b4a94a13767b38dbf54638c343e5808b2239fc371edd262ed3da5fb0d372"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+      "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+      "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0",
+      "existing": null
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+      "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+      "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0",
+      "existing": null
+    }
+  ],
+  "scope": "Only inspected010/011 entry screens.012galaxy not promoted; current-source evidence still required."
+}
