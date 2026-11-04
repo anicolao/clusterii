@@ -299,3 +299,7 @@ we have filled out a campaign and it is supposed to start in 13m. Is that proper
 ## Prompt 28: Start Immediately
 
 can we set the game start time to now so that it starts immediately thn?
+
+## Prompt 29: Start Campaign
+
+ok we made a new campaign, kick it off please
