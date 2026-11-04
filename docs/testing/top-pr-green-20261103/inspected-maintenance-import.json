@@ -1,170 +1,322 @@
 {
-  "ledgerSha256": "bfd8434e52ee8ba51607dac1a54cca6dab1426d4a3be09b57b21bfaeb138ffb9",
-  "targetBeforeImport": "6732aa093b08f0778dbcf334dc490b1b4474299e",
+  "ledgerSha256": "9813d6cd7183f75adc3768ff81a3c3978852842921f53cb5eda515b266dead5c",
+  "targetBeforeImport": "cd324670c91652e2ca7f7eed515eba5b6962852a",
   "families": [
     {
       "story": "maintenance-admission-recovery",
-      "viewport": "phone",
+      "viewport": "desktop",
       "source": {
         "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
         "dirty": false,
         "spec": "tests/browser/maintenance.story.spec.ts",
         "specSha256": "87960ba1304fa96d14f8645b45c84f871bc596a3ec6679704226fb2d76917b87"
       },
-      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/phone/test-results/stories/maintenance-admission-recovery/phone/linux-arm64/story.json",
-      "destination": "tests/browser/story-baselines/maintenance-admission-recovery/phone/linux-arm64",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64",
       "captures": [
         {
           "image": "002-open-roster-1-maintenance-host.png",
-          "sha256": "1442f6fc1de788166a2ab27a51ced5518187fa1bb9eab77bbc7bd43321800e31",
-          "previousSha256": "6cc347535cb194d47f11fa61e1b3359277610d780453e9c19ccbb9918331da59",
+          "sha256": "f96fc066bbe61411125312b0e58548d5d7cd4dce3e61a8bda183836881c02ef7",
+          "previousSha256": "f75fbf9ba8a7ed5423d6ac678a381e4bd4ba26b8bb6e8d9629038dba1e016ea8",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "002-open-roster-2-waiting-envoy.png",
-          "sha256": "f55444b82e65af5772478798fff3a708149f89cf0f32e7b155461b119b9becb5",
-          "previousSha256": "28bee18085719e6b1c42a0112797434e33959b5a36ff1216d41ff51a2fc43bfa",
+          "sha256": "80d7d77ad14bd89e2506ca429d14b918554c72fbadfc87e18a9dc1fc6a169edf",
+          "previousSha256": "bafabd1f0c5959a12ded887116bb4f3d866a37fb6ab1b8d7d09e9003eac17356",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "003-keyboard-controls-1-maintenance-host.png",
-          "sha256": "5b289cec2bc8ffc7eef3bf3b2805735733ab6716b83072a134e87b16204058d1",
-          "previousSha256": "8ea66df8dec746e90bffe21943b45468ccb4ebf94ea0b17ef3fbaa31e97fab56",
+          "sha256": "24670a6922653f03308c89840414ca9962a9c58725987b29c8ab692ba27bbc87",
+          "previousSha256": "49604687edc042066e55ed8e48d553deb99f454142cc9b90e9d53c33ac87ac9a",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "004-pause-admission-1-maintenance-host.png",
-          "sha256": "e61fb8838a202d4a843ab3914cadf65751b14f3a11a6aee47e9255a10743f717",
-          "previousSha256": "d93a73580909c6f39ce88f6e8b567a70ca755fbb0a82dea2cae082a627180e75",
+          "sha256": "5b68dfa8544124b0b8ef1d96562d960ca51ca969b5edad283f4a16a5eb509d4b",
+          "previousSha256": "19dacd3e4cfec4dec8183a33b82c7bc33b8614ca3ee9c7c511b3e5ae78034503",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "004-pause-admission-2-waiting-envoy.png",
-          "sha256": "6efaa91b3be3547edee6db8546c2596b5b8f0e57c02c4693ab225d37c7c5eb50",
-          "previousSha256": "e8d61226223ccbff425be853dba34519fa717b4d2d5a1cd728c88fa8036d5803",
+          "sha256": "efa908d1d201a2417eb94f56cdcbd820a924fb0fc09cf1ef450dbdd2e5cc0d66",
+          "previousSha256": "00197f5bf283c045cac3a971fd88bd08c27c7dbc1e12d50d52d19ae9160e5f1b",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "005-recover-pause-1-maintenance-host.png",
-          "sha256": "c2b6e518f44be7ac22d2ffb3e113d5c66ffd7eb146e4861be12027aeda6b6a17",
-          "previousSha256": "31e84aeb03e609e418e67eaa2c6fad65dc4c0ec637b03f5ce16cbac6b45e1c10",
+          "sha256": "4c5883075dbb38f157f7c3deaad625e3c5ee44675cdd6d20a32ee5d0e5907a2d",
+          "previousSha256": "9d2a8fa148e75b1f0d497293f6179a19e447e291ef2f9cbe3c6898d7aa3befed",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "005-recover-pause-2-waiting-envoy.png",
-          "sha256": "6efaa91b3be3547edee6db8546c2596b5b8f0e57c02c4693ab225d37c7c5eb50",
-          "previousSha256": "e8d61226223ccbff425be853dba34519fa717b4d2d5a1cd728c88fa8036d5803",
+          "sha256": "efa908d1d201a2417eb94f56cdcbd820a924fb0fc09cf1ef450dbdd2e5cc0d66",
+          "previousSha256": "00197f5bf283c045cac3a971fd88bd08c27c7dbc1e12d50d52d19ae9160e5f1b",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "006-reopen-controls-1-maintenance-host.png",
-          "sha256": "3ab1006efcc06d15ed1397c467bd860afd58316bff59c1d9fefa84bbef6f3ec7",
-          "previousSha256": "8578da48f1d6c71eae5f77834ce63207fb96554059e359ba95360753e64a238d",
+          "sha256": "2c01b6f62b09f85139d2d094a919dbe949df6c778f4a133ad269531b5a20fdad",
+          "previousSha256": "7d6c8dd87f9b6826d47aaf77cd4d38a03ebc675fe71300ee73845c2907ef613e",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "007-resume-admission-1-maintenance-host.png",
-          "sha256": "e989dfd1710622f5d226eb341fe87c975ec3c5b65bbd5e5f7504c7cdfe69e58a",
-          "previousSha256": "1425628776976012d0c1aea41687c2b7677eae6b2bc59db75416640792d8f21a",
+          "sha256": "ca41c9ca0d52d2bd2124e40a4d71694429ec7d3316ee4ad6224a605beb9427d2",
+          "previousSha256": "225ba82dd9e851bea4a349c25a5a54f7e9a649a21a6d0203f4ceb7f4bbd55f89",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "007-resume-admission-2-waiting-envoy.png",
-          "sha256": "f55444b82e65af5772478798fff3a708149f89cf0f32e7b155461b119b9becb5",
-          "previousSha256": "28bee18085719e6b1c42a0112797434e33959b5a36ff1216d41ff51a2fc43bfa",
+          "sha256": "80d7d77ad14bd89e2506ca429d14b918554c72fbadfc87e18a9dc1fc6a169edf",
+          "previousSha256": "bafabd1f0c5959a12ded887116bb4f3d866a37fb6ab1b8d7d09e9003eac17356",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "008-return-focus-1-maintenance-host.png",
-          "sha256": "828f6c3d518b339b1345855b950c9523df8cdbfc65578bc8942ae643dad7cb0c",
-          "previousSha256": "804a9dc588baf5fe9f4097cc662d7b56b25c9557193b8f4b3b069085ac6a96a8",
+          "sha256": "257187fe6bd6d38f56a108d04ecb0ef451e8cb4c0afa9a4989c601dfd12506a6",
+          "previousSha256": "bf1d7fe7e51e033890abed79ec1ed46dc7b07c5687e2d362d3103495b8fc58b4",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "009-admit-waiting-envoy-1-maintenance-host.png",
-          "sha256": "e958161b7d51864e1033c22a5e3b5b820a19dff404e1a82f86c099a0cdbd0e75",
-          "previousSha256": "9e7731f5177f2147650a2972216e3603b489c7b52f9a048ff16de70626029914",
+          "sha256": "8169b1f37a0d8bff0b61aad40bf454011d57f21c60983746452fa2cb4d71659a",
+          "previousSha256": "8b44080f418924dfd52839e2a7028f648078742a8507ac0c4b8b0c91856fd199",
           "changed": true,
           "approval": "exact individually inspected hash"
         },
         {
           "image": "009-admit-waiting-envoy-2-waiting-envoy.png",
-          "sha256": "365f34f9431e33ab4e7bcad1559ea7964cf58bc41cdea12a2672ae315cbbda6b",
-          "previousSha256": "9732d447d70d83100efbb2111421d9d4afdeba25ae842bd226a6d5e567806dbd",
+          "sha256": "d62ef7288a8e8a964b8b5d3b739836bda579a07c2b2815f9190c80de1821def1",
+          "previousSha256": "3dccd6f197b47f66be269bdc554d040872afee895bfc903da6d9452817e68b1d",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "maintenance-admission-recovery",
+      "viewport": "large",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/browser/maintenance.story.spec.ts",
+        "specSha256": "87960ba1304fa96d14f8645b45c84f871bc596a3ec6679704226fb2d76917b87"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64",
+      "captures": [
+        {
+          "image": "002-open-roster-1-maintenance-host.png",
+          "sha256": "8d18818b6a0746309f1f461c511ac94f8b71f2e83522138e1a9e33e7a4431acb",
+          "previousSha256": "43268012a7cef47d94ae7dc03f242987f5b4577c42819ea93d6367aeaa0b3588",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-open-roster-2-waiting-envoy.png",
+          "sha256": "7aa9dc9aba7e13f5f2ec1958f8f0a3bf1329ab7dc5a89c07fb57cdb10f254cd4",
+          "previousSha256": "ad87776bef275be35ce53e2534f3c6abcbef7a1c173cedde950265e9d04af5bd",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-keyboard-controls-1-maintenance-host.png",
+          "sha256": "73c026d74e5273d212f01cc5f1d9dbe948a493d1c9c5fd90ff62906a722330da",
+          "previousSha256": "6a0412a3d47ba00d100de5fc14aaab1fbf1b62567abfde2fe3a9f71e2359ecc9",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-pause-admission-1-maintenance-host.png",
+          "sha256": "1b012014276b70fd7f2604386707a988c24e71b6bffb9f2e8aa890ff966b29f9",
+          "previousSha256": "f0afe36f775b7ace988f92dcee3d76ee9d11a2244065e6e3c6eef96c705244e9",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-pause-admission-2-waiting-envoy.png",
+          "sha256": "8a910b2eb890e353a16681069f62d7c252db4be0270e4d46d9d4265bd981fca3",
+          "previousSha256": "3789ca96f77614c254c550867d1f9967a30762753e7d9ae79f721c7c4a1524c5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recover-pause-1-maintenance-host.png",
+          "sha256": "344bfda221f0adb371e2fdb15438d3650e72fad16173aaef623b97a6ad8aefbc",
+          "previousSha256": "eb66823c80f38fbba0d2275a29d39b683fde8021d98ecf2186d03fa9bbe685f7",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recover-pause-2-waiting-envoy.png",
+          "sha256": "8a910b2eb890e353a16681069f62d7c252db4be0270e4d46d9d4265bd981fca3",
+          "previousSha256": "3789ca96f77614c254c550867d1f9967a30762753e7d9ae79f721c7c4a1524c5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-reopen-controls-1-maintenance-host.png",
+          "sha256": "7f6e9cafa3300ab11361f6f9182e38dbf43c4380053c8b0742cceac9d424e030",
+          "previousSha256": "830c880339b2be6dce88a93608fed7bdc59d970a3a655881481aef9adc5317f6",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-resume-admission-1-maintenance-host.png",
+          "sha256": "b1656ac57ead5db5190bd049396c1e955f286bd838f23386129e12eb5195b071",
+          "previousSha256": "d92bb31ed3fdb5c640374f8d85be02bd167a83d203b12efb0cf130f6e22fe1c9",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-resume-admission-2-waiting-envoy.png",
+          "sha256": "7aa9dc9aba7e13f5f2ec1958f8f0a3bf1329ab7dc5a89c07fb57cdb10f254cd4",
+          "previousSha256": "ad87776bef275be35ce53e2534f3c6abcbef7a1c173cedde950265e9d04af5bd",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-return-focus-1-maintenance-host.png",
+          "sha256": "e06c992f6eb7b84844e9e7fc97d733b39e3711b9418cfedadcdb5231343a7d39",
+          "previousSha256": "a9d7c90a7055513fce47dba4b0ce35fb25201f24d80f8b4fb84ea2262e7ea89c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-admit-waiting-envoy-1-maintenance-host.png",
+          "sha256": "e84276264916b6b390a30aedddb40a911a118bf8815d45b01f3d4fadd245c8de",
+          "previousSha256": "beb6325810fc64bedc5600a5fe00562a8070f98c03c226f8e3a8770664b70c5b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-admit-waiting-envoy-2-waiting-envoy.png",
+          "sha256": "54abf1bbb180521f78458f2d776b028bb9a80cf74e398899d669d2d4b5064c6b",
+          "previousSha256": "b6799a893e8483883ed0f3a326bbb806ad70e18f1026863bb323fd4ad9539b39",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "maintenance-admission-recovery",
+      "viewport": "short",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/browser/maintenance.story.spec.ts",
+        "specSha256": "87960ba1304fa96d14f8645b45c84f871bc596a3ec6679704226fb2d76917b87"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64",
+      "captures": [
+        {
+          "image": "002-open-roster-1-maintenance-host.png",
+          "sha256": "0a54a373e8c458470e20bb02fcf0fefd5de00f610e08cd02357f68bf4a4582f7",
+          "previousSha256": "9f895679b2e9dcbf2315501ced5d9d535d08f7c177818ea5b4980db04869f902",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-open-roster-2-waiting-envoy.png",
+          "sha256": "53d033f63233ba505000b2814ef836f34b9dec39a6c338aca7ee240d491151c7",
+          "previousSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-keyboard-controls-1-maintenance-host.png",
+          "sha256": "65db0ac2eebfa364d158a85b0be20ff562ad4866250e4c2983191a80ff4bbac3",
+          "previousSha256": "932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-pause-admission-1-maintenance-host.png",
+          "sha256": "b8e3f267f9145c0460336d41eff471b56594b26dce980307d4ee298b992dd60b",
+          "previousSha256": "999d68d5233c5a1da3ac5e2ccb7a4350ceae1fc881e03a7e01c283ab9bf19155",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-pause-admission-2-waiting-envoy.png",
+          "sha256": "ba607909df4a644196ffe8916406460c037dc3dea0738f7231f53cccc3586fd7",
+          "previousSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recover-pause-1-maintenance-host.png",
+          "sha256": "715833802c578e50bc0564a7f4527f642ea34c858955f5ee75608d75381183e7",
+          "previousSha256": "0981621660a68e66cfb12d90d58e7fade1fb71e4903a0156712f1c7a08009c9b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recover-pause-2-waiting-envoy.png",
+          "sha256": "ba607909df4a644196ffe8916406460c037dc3dea0738f7231f53cccc3586fd7",
+          "previousSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-reopen-controls-1-maintenance-host.png",
+          "sha256": "d559d650b8425779940e11bae1d02f0f209c2a0e7f8190c28951e2849d29c52e",
+          "previousSha256": "d9bea55b6e451d5323b72ce4ba317d1ea502d4f2c610791ccd9bfb6160b87a4d",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-resume-admission-1-maintenance-host.png",
+          "sha256": "29f5442299bec8f790c9f8b812b8196fb24aa4646297b6754cfe106eca5c291e",
+          "previousSha256": "0d369278969e687552757d0842e496c36cab88a26bed11f8ddde6ccdfa07926d",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-resume-admission-2-waiting-envoy.png",
+          "sha256": "53d033f63233ba505000b2814ef836f34b9dec39a6c338aca7ee240d491151c7",
+          "previousSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-return-focus-1-maintenance-host.png",
+          "sha256": "2fe154e586f1e3ab7f0a2431141ba9053e616b3e34dfdd4bd25c2aab0459f6c6",
+          "previousSha256": "969cfc9aa7bd565f583af433b7a24c43c1e303ad5063c364750f06d259089e18",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-admit-waiting-envoy-1-maintenance-host.png",
+          "sha256": "cc680b57f7d7d57a46ea981bb09c712c3628df400856762ca026713dc8352c5b",
+          "previousSha256": "719a37528539dcf3d0f14418dbd25e3055d0f93e651febd44f97d9e776290ec6",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-admit-waiting-envoy-2-waiting-envoy.png",
+          "sha256": "44303712f208b13734c536a61359526318787ad6aab3494cd756156372a1cd92",
+          "previousSha256": "8e4d2670dd934748841955eeaada4be43070eba3efa52d4b8f83aaa0d103dc2e",
           "changed": true,
           "approval": "exact individually inspected hash"
         }
       ]
     }
   ],
-  "remainingUnreviewed": [
-    {
-      "story": "maintenance-admission-recovery",
-      "viewport": "desktop",
-      "unreviewed": [
-        "002-open-roster-1-maintenance-host.png",
-        "002-open-roster-2-waiting-envoy.png",
-        "003-keyboard-controls-1-maintenance-host.png",
-        "004-pause-admission-1-maintenance-host.png",
-        "004-pause-admission-2-waiting-envoy.png",
-        "005-recover-pause-1-maintenance-host.png",
-        "005-recover-pause-2-waiting-envoy.png",
-        "006-reopen-controls-1-maintenance-host.png",
-        "007-resume-admission-1-maintenance-host.png",
-        "007-resume-admission-2-waiting-envoy.png",
-        "008-return-focus-1-maintenance-host.png",
-        "009-admit-waiting-envoy-1-maintenance-host.png",
-        "009-admit-waiting-envoy-2-waiting-envoy.png"
-      ]
-    },
-    {
-      "story": "maintenance-admission-recovery",
-      "viewport": "large",
-      "unreviewed": [
-        "002-open-roster-1-maintenance-host.png",
-        "002-open-roster-2-waiting-envoy.png",
-        "003-keyboard-controls-1-maintenance-host.png",
-        "004-pause-admission-1-maintenance-host.png",
-        "004-pause-admission-2-waiting-envoy.png",
-        "005-recover-pause-1-maintenance-host.png",
-        "005-recover-pause-2-waiting-envoy.png",
-        "006-reopen-controls-1-maintenance-host.png",
-        "007-resume-admission-1-maintenance-host.png",
-        "007-resume-admission-2-waiting-envoy.png",
-        "008-return-focus-1-maintenance-host.png",
-        "009-admit-waiting-envoy-1-maintenance-host.png",
-        "009-admit-waiting-envoy-2-waiting-envoy.png"
-      ]
-    },
-    {
-      "story": "maintenance-admission-recovery",
-      "viewport": "short",
-      "unreviewed": [
-        "002-open-roster-1-maintenance-host.png",
-        "002-open-roster-2-waiting-envoy.png",
-        "003-keyboard-controls-1-maintenance-host.png",
-        "004-pause-admission-1-maintenance-host.png",
-        "004-pause-admission-2-waiting-envoy.png",
-        "005-recover-pause-1-maintenance-host.png",
-        "005-recover-pause-2-waiting-envoy.png",
-        "006-reopen-controls-1-maintenance-host.png",
-        "007-resume-admission-1-maintenance-host.png",
-        "007-resume-admission-2-waiting-envoy.png",
-        "008-return-focus-1-maintenance-host.png",
-        "009-admit-waiting-envoy-1-maintenance-host.png",
-        "009-admit-waiting-envoy-2-waiting-envoy.png"
-      ]
-    }
-  ]
+  "remainingUnreviewed": []
 }

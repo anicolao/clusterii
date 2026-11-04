@@ -32513,5 +32513,653 @@
         "oldSha256": "9732d447d70d83100efbb2111421d9d4afdeba25ae842bd226a6d5e567806dbd"
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f96fc066bbe61411125312b0e58548d5d7cd4dce3e61a8bda183836881c02ef7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/002-open-roster-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/002-open-roster-1-maintenance-host.png",
+        "sha256": "f96fc066bbe61411125312b0e58548d5d7cd4dce3e61a8bda183836881c02ef7",
+        "oldSha256": "f75fbf9ba8a7ed5423d6ac678a381e4bd4ba26b8bb6e8d9629038dba1e016ea8"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "80d7d77ad14bd89e2506ca429d14b918554c72fbadfc87e18a9dc1fc6a169edf",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/002-open-roster-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/002-open-roster-2-waiting-envoy.png",
+        "sha256": "80d7d77ad14bd89e2506ca429d14b918554c72fbadfc87e18a9dc1fc6a169edf",
+        "oldSha256": "bafabd1f0c5959a12ded887116bb4f3d866a37fb6ab1b8d7d09e9003eac17356"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+        "sha256": "80d7d77ad14bd89e2506ca429d14b918554c72fbadfc87e18a9dc1fc6a169edf",
+        "oldSha256": "bafabd1f0c5959a12ded887116bb4f3d866a37fb6ab1b8d7d09e9003eac17356"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "24670a6922653f03308c89840414ca9962a9c58725987b29c8ab692ba27bbc87",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+        "sha256": "24670a6922653f03308c89840414ca9962a9c58725987b29c8ab692ba27bbc87",
+        "oldSha256": "49604687edc042066e55ed8e48d553deb99f454142cc9b90e9d53c33ac87ac9a"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5b68dfa8544124b0b8ef1d96562d960ca51ca969b5edad283f4a16a5eb509d4b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/004-pause-admission-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/004-pause-admission-1-maintenance-host.png",
+        "sha256": "5b68dfa8544124b0b8ef1d96562d960ca51ca969b5edad283f4a16a5eb509d4b",
+        "oldSha256": "19dacd3e4cfec4dec8183a33b82c7bc33b8614ca3ee9c7c511b3e5ae78034503"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "efa908d1d201a2417eb94f56cdcbd820a924fb0fc09cf1ef450dbdd2e5cc0d66",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+        "sha256": "efa908d1d201a2417eb94f56cdcbd820a924fb0fc09cf1ef450dbdd2e5cc0d66",
+        "oldSha256": "00197f5bf283c045cac3a971fd88bd08c27c7dbc1e12d50d52d19ae9160e5f1b"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+        "sha256": "efa908d1d201a2417eb94f56cdcbd820a924fb0fc09cf1ef450dbdd2e5cc0d66",
+        "oldSha256": "00197f5bf283c045cac3a971fd88bd08c27c7dbc1e12d50d52d19ae9160e5f1b"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4c5883075dbb38f157f7c3deaad625e3c5ee44675cdd6d20a32ee5d0e5907a2d",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/005-recover-pause-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/005-recover-pause-1-maintenance-host.png",
+        "sha256": "4c5883075dbb38f157f7c3deaad625e3c5ee44675cdd6d20a32ee5d0e5907a2d",
+        "oldSha256": "9d2a8fa148e75b1f0d497293f6179a19e447e291ef2f9cbe3c6898d7aa3befed"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2c01b6f62b09f85139d2d094a919dbe949df6c778f4a133ad269531b5a20fdad",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+        "sha256": "2c01b6f62b09f85139d2d094a919dbe949df6c778f4a133ad269531b5a20fdad",
+        "oldSha256": "7d6c8dd87f9b6826d47aaf77cd4d38a03ebc675fe71300ee73845c2907ef613e"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ca41c9ca0d52d2bd2124e40a4d71694429ec7d3316ee4ad6224a605beb9427d2",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/007-resume-admission-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/007-resume-admission-1-maintenance-host.png",
+        "sha256": "ca41c9ca0d52d2bd2124e40a4d71694429ec7d3316ee4ad6224a605beb9427d2",
+        "oldSha256": "225ba82dd9e851bea4a349c25a5a54f7e9a649a21a6d0203f4ceb7f4bbd55f89"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "257187fe6bd6d38f56a108d04ecb0ef451e8cb4c0afa9a4989c601dfd12506a6",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/008-return-focus-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/008-return-focus-1-maintenance-host.png",
+        "sha256": "257187fe6bd6d38f56a108d04ecb0ef451e8cb4c0afa9a4989c601dfd12506a6",
+        "oldSha256": "bf1d7fe7e51e033890abed79ec1ed46dc7b07c5687e2d362d3103495b8fc58b4"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8169b1f37a0d8bff0b61aad40bf454011d57f21c60983746452fa2cb4d71659a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+        "sha256": "8169b1f37a0d8bff0b61aad40bf454011d57f21c60983746452fa2cb4d71659a",
+        "oldSha256": "8b44080f418924dfd52839e2a7028f648078742a8507ac0c4b8b0c91856fd199"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d62ef7288a8e8a964b8b5d3b739836bda579a07c2b2815f9190c80de1821def1",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/maintenance-admission-recovery/desktop/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/desktop/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+        "sha256": "d62ef7288a8e8a964b8b5d3b739836bda579a07c2b2815f9190c80de1821def1",
+        "oldSha256": "3dccd6f197b47f66be269bdc554d040872afee895bfc903da6d9452817e68b1d"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8d18818b6a0746309f1f461c511ac94f8b71f2e83522138e1a9e33e7a4431acb",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/002-open-roster-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/002-open-roster-1-maintenance-host.png",
+        "sha256": "8d18818b6a0746309f1f461c511ac94f8b71f2e83522138e1a9e33e7a4431acb",
+        "oldSha256": "43268012a7cef47d94ae7dc03f242987f5b4577c42819ea93d6367aeaa0b3588"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7aa9dc9aba7e13f5f2ec1958f8f0a3bf1329ab7dc5a89c07fb57cdb10f254cd4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/002-open-roster-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/002-open-roster-2-waiting-envoy.png",
+        "sha256": "7aa9dc9aba7e13f5f2ec1958f8f0a3bf1329ab7dc5a89c07fb57cdb10f254cd4",
+        "oldSha256": "ad87776bef275be35ce53e2534f3c6abcbef7a1c173cedde950265e9d04af5bd"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+        "sha256": "7aa9dc9aba7e13f5f2ec1958f8f0a3bf1329ab7dc5a89c07fb57cdb10f254cd4",
+        "oldSha256": "ad87776bef275be35ce53e2534f3c6abcbef7a1c173cedde950265e9d04af5bd"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "73c026d74e5273d212f01cc5f1d9dbe948a493d1c9c5fd90ff62906a722330da",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+        "sha256": "73c026d74e5273d212f01cc5f1d9dbe948a493d1c9c5fd90ff62906a722330da",
+        "oldSha256": "6a0412a3d47ba00d100de5fc14aaab1fbf1b62567abfde2fe3a9f71e2359ecc9"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1b012014276b70fd7f2604386707a988c24e71b6bffb9f2e8aa890ff966b29f9",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/004-pause-admission-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/004-pause-admission-1-maintenance-host.png",
+        "sha256": "1b012014276b70fd7f2604386707a988c24e71b6bffb9f2e8aa890ff966b29f9",
+        "oldSha256": "f0afe36f775b7ace988f92dcee3d76ee9d11a2244065e6e3c6eef96c705244e9"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8a910b2eb890e353a16681069f62d7c252db4be0270e4d46d9d4265bd981fca3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+        "sha256": "8a910b2eb890e353a16681069f62d7c252db4be0270e4d46d9d4265bd981fca3",
+        "oldSha256": "3789ca96f77614c254c550867d1f9967a30762753e7d9ae79f721c7c4a1524c5"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+        "sha256": "8a910b2eb890e353a16681069f62d7c252db4be0270e4d46d9d4265bd981fca3",
+        "oldSha256": "3789ca96f77614c254c550867d1f9967a30762753e7d9ae79f721c7c4a1524c5"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "344bfda221f0adb371e2fdb15438d3650e72fad16173aaef623b97a6ad8aefbc",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/005-recover-pause-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/005-recover-pause-1-maintenance-host.png",
+        "sha256": "344bfda221f0adb371e2fdb15438d3650e72fad16173aaef623b97a6ad8aefbc",
+        "oldSha256": "eb66823c80f38fbba0d2275a29d39b683fde8021d98ecf2186d03fa9bbe685f7"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7f6e9cafa3300ab11361f6f9182e38dbf43c4380053c8b0742cceac9d424e030",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+        "sha256": "7f6e9cafa3300ab11361f6f9182e38dbf43c4380053c8b0742cceac9d424e030",
+        "oldSha256": "830c880339b2be6dce88a93608fed7bdc59d970a3a655881481aef9adc5317f6"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b1656ac57ead5db5190bd049396c1e955f286bd838f23386129e12eb5195b071",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/007-resume-admission-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/007-resume-admission-1-maintenance-host.png",
+        "sha256": "b1656ac57ead5db5190bd049396c1e955f286bd838f23386129e12eb5195b071",
+        "oldSha256": "d92bb31ed3fdb5c640374f8d85be02bd167a83d203b12efb0cf130f6e22fe1c9"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e06c992f6eb7b84844e9e7fc97d733b39e3711b9418cfedadcdb5231343a7d39",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/008-return-focus-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/008-return-focus-1-maintenance-host.png",
+        "sha256": "e06c992f6eb7b84844e9e7fc97d733b39e3711b9418cfedadcdb5231343a7d39",
+        "oldSha256": "a9d7c90a7055513fce47dba4b0ce35fb25201f24d80f8b4fb84ea2262e7ea89c"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e84276264916b6b390a30aedddb40a911a118bf8815d45b01f3d4fadd245c8de",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+        "sha256": "e84276264916b6b390a30aedddb40a911a118bf8815d45b01f3d4fadd245c8de",
+        "oldSha256": "beb6325810fc64bedc5600a5fe00562a8070f98c03c226f8e3a8770664b70c5b"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "54abf1bbb180521f78458f2d776b028bb9a80cf74e398899d669d2d4b5064c6b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/maintenance-admission-recovery/large/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/large/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+        "sha256": "54abf1bbb180521f78458f2d776b028bb9a80cf74e398899d669d2d4b5064c6b",
+        "oldSha256": "b6799a893e8483883ed0f3a326bbb806ad70e18f1026863bb323fd4ad9539b39"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0a54a373e8c458470e20bb02fcf0fefd5de00f610e08cd02357f68bf4a4582f7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/002-open-roster-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/002-open-roster-1-maintenance-host.png",
+        "sha256": "0a54a373e8c458470e20bb02fcf0fefd5de00f610e08cd02357f68bf4a4582f7",
+        "oldSha256": "9f895679b2e9dcbf2315501ced5d9d535d08f7c177818ea5b4980db04869f902"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "53d033f63233ba505000b2814ef836f34b9dec39a6c338aca7ee240d491151c7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/002-open-roster-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/002-open-roster-2-waiting-envoy.png",
+        "sha256": "53d033f63233ba505000b2814ef836f34b9dec39a6c338aca7ee240d491151c7",
+        "oldSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-2-waiting-envoy.png",
+        "sha256": "53d033f63233ba505000b2814ef836f34b9dec39a6c338aca7ee240d491151c7",
+        "oldSha256": "d6bf91e06e6549e1d5aac956381df477973e824a75f25166f6d3a49b3ae0bbdc"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "65db0ac2eebfa364d158a85b0be20ff562ad4866250e4c2983191a80ff4bbac3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/003-keyboard-controls-1-maintenance-host.png",
+        "sha256": "65db0ac2eebfa364d158a85b0be20ff562ad4866250e4c2983191a80ff4bbac3",
+        "oldSha256": "932203f38bf4763abc499f0a94dfb5b81798656461a5e5627bde527c00678510"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b8e3f267f9145c0460336d41eff471b56594b26dce980307d4ee298b992dd60b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-1-maintenance-host.png",
+        "sha256": "b8e3f267f9145c0460336d41eff471b56594b26dce980307d4ee298b992dd60b",
+        "oldSha256": "999d68d5233c5a1da3ac5e2ccb7a4350ceae1fc881e03a7e01c283ab9bf19155"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ba607909df4a644196ffe8916406460c037dc3dea0738f7231f53cccc3586fd7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/004-pause-admission-2-waiting-envoy.png",
+        "sha256": "ba607909df4a644196ffe8916406460c037dc3dea0738f7231f53cccc3586fd7",
+        "oldSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/005-recover-pause-2-waiting-envoy.png",
+        "sha256": "ba607909df4a644196ffe8916406460c037dc3dea0738f7231f53cccc3586fd7",
+        "oldSha256": "ff8f86bcc6fe9669ecfb1f1421d7250dfe1939f5530a0a6ebc83b5a9c0dc4b71"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "715833802c578e50bc0564a7f4527f642ea34c858955f5ee75608d75381183e7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/005-recover-pause-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/005-recover-pause-1-maintenance-host.png",
+        "sha256": "715833802c578e50bc0564a7f4527f642ea34c858955f5ee75608d75381183e7",
+        "oldSha256": "0981621660a68e66cfb12d90d58e7fade1fb71e4903a0156712f1c7a08009c9b"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d559d650b8425779940e11bae1d02f0f209c2a0e7f8190c28951e2849d29c52e",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/006-reopen-controls-1-maintenance-host.png",
+        "sha256": "d559d650b8425779940e11bae1d02f0f209c2a0e7f8190c28951e2849d29c52e",
+        "oldSha256": "d9bea55b6e451d5323b72ce4ba317d1ea502d4f2c610791ccd9bfb6160b87a4d"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "29f5442299bec8f790c9f8b812b8196fb24aa4646297b6754cfe106eca5c291e",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/007-resume-admission-1-maintenance-host.png",
+        "sha256": "29f5442299bec8f790c9f8b812b8196fb24aa4646297b6754cfe106eca5c291e",
+        "oldSha256": "0d369278969e687552757d0842e496c36cab88a26bed11f8ddde6ccdfa07926d"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2fe154e586f1e3ab7f0a2431141ba9053e616b3e34dfdd4bd25c2aab0459f6c6",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/008-return-focus-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/008-return-focus-1-maintenance-host.png",
+        "sha256": "2fe154e586f1e3ab7f0a2431141ba9053e616b3e34dfdd4bd25c2aab0459f6c6",
+        "oldSha256": "969cfc9aa7bd565f583af433b7a24c43c1e303ad5063c364750f06d259089e18"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cc680b57f7d7d57a46ea981bb09c712c3628df400856762ca026713dc8352c5b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/009-admit-waiting-envoy-1-maintenance-host.png",
+        "sha256": "cc680b57f7d7d57a46ea981bb09c712c3628df400856762ca026713dc8352c5b",
+        "oldSha256": "719a37528539dcf3d0f14418dbd25e3055d0f93e651febd44f97d9e776290ec6"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "44303712f208b13734c536a61359526318787ad6aab3494cd756156372a1cd92",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed original representative; duplicates covered by exact SHA. Named host and envoy, pause/reload/resume state and final 2/4 admission are readable. Complete focused Pause/Resume and roster return outlines remain within panel. Desktop and short native display; large 3840x2160 viewed at 2048x1152, layout/content scope only. Neighboring content uses bounded scrolling; pre-existing singular-seat copy and underlying waiting panel are not full design approval. Faction disabled Claim does not itself explain pause; host status does. No full design, privacy-rule or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/maintenance-admission-recovery/short/linux-arm64/story.json",
+        "story": "maintenance-admission-recovery",
+        "viewport": "short",
+        "reference": "tests/browser/story-baselines/maintenance-admission-recovery/short/linux-arm64/009-admit-waiting-envoy-2-waiting-envoy.png",
+        "sha256": "44303712f208b13734c536a61359526318787ad6aab3494cd756156372a1cd92",
+        "oldSha256": "8e4d2670dd934748841955eeaada4be43070eba3efa52d4b8f83aaa0d103dc2e"
+      }
+    ]
   }
 ]
