@@ -331,3 +331,7 @@ In the step 0 decisions table, for ground combat, it says "Preserves linear scal
 ## Prompt 36: Market Formula
 
 explain what is meant by "Bounds construction-ring profits. Replaces unlimited per-focus-point generation; investing applies to normal income, not this bounded pool. This is a material change to the draft formula" for markets
+
+## Prompt 37: Fighter Normalization
+
+OK now explain the fighter combat line. How could the original spec "create units"?
