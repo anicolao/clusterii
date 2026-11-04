@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr59-shared-reviewed/APPROVAL.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "live-fleet-formation",
   "renderer": {
@@ -27,5 +27,155 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+    "dirty": false,
+    "spec": "tests/browser/fleet-formation.story.spec.ts",
+    "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "edf036c2e181d05918910c04e4a5ba9af12f5469dfd9f43aa7a7797cde323707",
+      "previousSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "94a05e49ce82961f3d363982c729da4bae0b291d700d3b6527625ccd39bc55c8",
+      "previousSha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "86f50332aef08d1d85dde2ad9ebd7e46c6136bdbb2d8badce2dae59d7b178504",
+      "previousSha256": "f2a1b05ed2860ed4a991a03d25511fd89fa00ea410b3529b169bf23b8106a082",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "f25fa2869d930877e8d0010ab5397b02db7a84b84ea9f4173415c0be110c5de4",
+      "previousSha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "cbd19801e2889785f2709b55ace9d64f32f75eeed9777c4da7ccf0314d626464",
+      "previousSha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-formed-fleet-2-independent-marshal.png",
+      "sha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-map-presence-1-fleet-marshal.png",
+      "sha256": "f3bf8c80a33b00d8d17e96454c7035551129f3a567fe9a75a7fc9716f6b5d3fa",
+      "previousSha256": "b92cc44bdf830d317b0ddd467be86a6ced9ba5497a02e88707c0b6b5a0535f0a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-map-presence-2-independent-marshal.png",
+      "sha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-reserve-disband-1-fleet-marshal.png",
+      "sha256": "4fb9a3d1f8c5fbf72bb6a1071b259557638f2dbb464c30b74f8b8b005468dd66",
+      "previousSha256": "3a746d52ea2e70db34ef217813cb9b75efeb6d7dd9e3f5a4315b7e09325e12c6",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-reserve-disband-2-independent-marshal.png",
+      "sha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-reload-disband-1-fleet-marshal.png",
+      "sha256": "60dd27d6094cefc78deb4623fd8e19899c29d8be05a8d2e14154b5c86cab5638",
+      "previousSha256": "fffad14b395f9af2a0e7d79213c7e6f1929fa691be86182ba8f0e62459f191dc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-reload-disband-2-independent-marshal.png",
+      "sha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-disbanded-fleet-1-fleet-marshal.png",
+      "sha256": "5f48b83b4ca6ec7bb38a734cae69a3047687892cbab38f26ada13b38d267b6fc",
+      "previousSha256": "f8bae959975d79e4ff0ee1f418d92306e6780b3ef46ac494d580c8e4d82a754b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-disbanded-fleet-2-independent-marshal.png",
+      "sha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "previousSha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-recover-final-forces-1-fleet-marshal.png",
+      "sha256": "a44c8df1d59d2319418b6a73951b9dc12f1f06351555411e4ad26276bb41521e",
+      "previousSha256": "69522733d0da1e159b7b0f62ab2c694d4e19812b58c98a5c43671b07ff22b5f8",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-recover-final-forces-2-independent-marshal.png",
+      "sha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "previousSha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

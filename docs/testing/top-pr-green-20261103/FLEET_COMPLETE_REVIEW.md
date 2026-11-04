@@ -1,0 +1,19 @@
+# Complete fleet reference review
+
+The implementation agent inspected all 152 distinct image hashes covering 304 Linux captures from run 41870610515: formation 20, reorganization 34, and cancellation 22 at each of four sizes. Phone, desktop and short originals were inspected at their displayed native sizes; large 3840x2160 originals were displayed at 2048x1152. Large approval concerns visible layout/content, not native-pixel fidelity. Individual decisions and exact duplicate coverage are recorded in inspection-decisions.json and the four fleet-current viewport reports. This is agent review under the human inspect-before-approval instruction, not an independent human review.
+
+Capacity errors, focused controls, accepted reservations, cancellation/released draft, reload recovery, disbanding, split and merge receipts, conserved quantities, peer views and return-to-chart focus were reviewed. No new blocking visual defect was found. Deliberate bounded reading positions can leave unfocused neighboring headings/navigation outside the reader; this is not an assertion of simultaneous full-content visibility. Neither these screenshots nor admin projection assertions establish authenticated foreign-read denial, full concept fidelity, normal-motion approval or release readiness.
+
+## Source applicability
+
+Candidate target ee56db9c was executed by 5b731871, request ac4afe2a2a0763bfaa7696f27b98d80099631106. All twelve manifests report that request commit, dirty false, generate mode and passed completion. Each current fleet spec SHA agrees with its manifest. The request adds guarded recovery launcher routes and GitHub request environment forwarding; it changes no player source, story, shared helper, dependency or renderer configuration.
+
+The current recovery code differs from the target only in CampaignWaiting, CreditOffers, MarketFocus, SystemLayers and the extracted focused-reader helper (plus the unrelated strengthened credit story). Fleet specs, helpers, SystemFleets, Galaxy, shared reducers/services, functions, assets, dependencies and renderer inputs remain unchanged. Waiting is not captured in these active-campaign journeys; credit/market panels are not opened. The MarketFocus helper extraction preserves its function body.
+
+SystemLayers now uses its container width. Galaxy mounts it only for an expanded non-observation inspector. During every fleet-panel capture, the opaque construction-panel/fleet-panel covers that inspector (position absolute, inset 58px 0 0, z-index 6, background #06121a); the large responsive inset remains unchanged. All return captures occur after Back to system then Back to galaxy, collapsing the inspector, so SystemLayers is unmounted. Source steps and every reviewed composition confirm these states. Thus this unrelated corrected component does not change the candidate pixels being imported.
+
+The promoter rehashed every PNG, required an exact approved ledger hash, checked all twelve current spec hashes, passed manifests and exact pinned Linux renderer metadata, and preserved existing renderer metadata equality. Exactly 304 PNGs and twelve review.json records change, with no other baseline or executable changes. The report inspected-fleet-current-import.json records each old/new hash and original manifest identity.
+
+## Current integration boundary
+
+PR140 remains at 8eeea5e6315e309f9d883ed3ef3fcf50be2340fe while its sole application 41893586352 and strict 41893585935 jobs run. Documentation, publication and generation have passed. This reviewed fleet batch is prepared on the recovery branch; it is not yet integrated green and does not restart the active checks. Previous distinct failures remain available. No candidate ZIP was retained locally: memory-verified remote archives expire after fourteen days, and only useful review originals/manifests are retained.

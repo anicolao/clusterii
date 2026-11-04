@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr59-linux-promotion/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "live-fleet-cancellation",
   "renderer": {
@@ -27,5 +27,169 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+    "dirty": false,
+    "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+    "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "935e0abb3ac8bbbe5f4334ba37ec80379c35132da47f4e32601e0c52820e9049",
+      "previousSha256": "d42c6d680a23cbb2b2ac58d3ebc470afba007e8b2d33a89f26813f9646349387",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "b0c5d43c9c933018c1631b6f13c7d9c0d2cf6e3ce67764a183f2666fd81cb62b",
+      "previousSha256": "35c0539392835783539224698ce58cafa0dd24ac4e67192b675ff78c86bf33b3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "e0adac3dd318c0c9a5740088f395f4561daa426438cbe901c90f916505d69c30",
+      "previousSha256": "fa26da6e1199fcacc304182a9f1e43cbb3cc6b9e635f5b6828c35e4e6f66762d",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "f6818406ca55e970cac9cd79b73fc7e1089d8412bad32f7c1ce8d9aa2a298c8f",
+      "previousSha256": "4cde467190c4a01c4d159b6621a83e4a0a5cf2a3da429714ef91b4f848e18dec",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-review-cancellation-1-fleet-marshal.png",
+      "sha256": "a1051d2bea4fdcab10bf9b0e278e810d02e144809edca090adf13a7a8bcf69f6",
+      "previousSha256": "4e03296d72b7782963d5a3dfb517f17bac9abc4c8d4aeac550fe6127353e2410",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-review-cancellation-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-keep-order-1-fleet-marshal.png",
+      "sha256": "4cff0c434f56705a215200a9cc95ab8da0b0c7256bb5e12ece87f7ee4e549171",
+      "previousSha256": "97b04f84df30c92beb14718c730d06643cb4b254ce85b4eea7e00c89d3cc4fbf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-keep-order-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-cancel-formation-1-fleet-marshal.png",
+      "sha256": "4bb046289e8278a37f23643a4ea202f6c512184427108b65a0f70b4da005cc4a",
+      "previousSha256": "0f5da9ed1abdcea3661ed6b15111acd23a600155fadf12c3588542d51596ad81",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-cancel-formation-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-released-draft-1-fleet-marshal.png",
+      "sha256": "a12005905c1bcccf0d7938abf30e83404d234c3af82a8c4584058ea767c350f4",
+      "previousSha256": "2554e0276a97408f17b292ee8ad7b60b1dc8874936b4511384b96a8e99adff77",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-released-draft-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-reload-cancelled-1-fleet-marshal.png",
+      "sha256": "ff1cc36b2c579bbb88e4a9b2eb2fb46ac24487a7e76725af5512b63797929a4e",
+      "previousSha256": "e280f45acc19073fe220b38efa4c65b506ff3fe6055b1fe29f20142b7e9e6774",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-reload-cancelled-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": "b30c5e68ca27f2ababd817ccf4b12fc1fe4fbe5fb887b817a010d23713f2a45c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "sha256": "7f10bd347a3aa0ff235b42b421e8c16ccdb70702e5a14649f5544a636768c67e",
+      "previousSha256": "b3f0919ac500ae95f3260eed6624c743a4be2f8050da2bfffc10cac7eaad452d",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-cancelled-order-never-executes-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-return-to-system-1-fleet-marshal.png",
+      "sha256": "ae3bfcd7ab2ea0b96e0cb54a8b73003426c34763cfeec7ddf3e928fcb69c3ef0",
+      "previousSha256": "e197ec865c4a58987b074259d9ec323519f51b4513af919af703efccceb12d1b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-return-to-system-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": "15161d0944055c07c9c741c50b156007a11c7fe0b154a60cfe2a763022e096aa",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }
