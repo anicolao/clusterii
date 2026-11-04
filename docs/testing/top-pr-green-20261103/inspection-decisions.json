@@ -5884,5 +5884,311 @@
         "reference": "tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png"
       }
     ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "db20e6e7030b6f6a25953f6791c85ea745b877f0fc0c5547fca16afb2f099029",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/002-read-pending-forecast-1-developer-pending-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/002-read-pending-forecast-1-developer-pending-forecast.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "f8086568a5ffb13dfa3557992ba18c1fce09d1f83b1bb507854bae2bee303f86",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/003-read-pending-qualification-1-developer-pending-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/003-read-pending-qualification-1-developer-pending-qualification.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "1fcbeccbf57a453a84ca0b06e0b03ef3cf431f29cea347591d53a8163614c578",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/004-close-pending-forecast-1-developer-pending-collapsed.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "298bb486432c08acb36ddf4c66d2157976e9c9fe843ba52e3d38111f08ced0fc",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/005-read-disabled-forecast-1-developer-disabled-forecast.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "77c40bc9caa79b534b943376e4459536350d314077c428cdfa74486cd799d168",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/006-read-disabled-qualification-1-developer-disabled-qualification.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "7606413a1e7d5fbf2f3141404952d7eb866cd23df87b04f0250375ed174ce18d",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/007-close-disabled-forecast-1-developer-disabled-collapsed.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "80bcbf543b6b20ab605d3c7248a9bea67891c8d0a17331df9b16a6e6e7419174",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/008-read-applied-forecast-1-developer-applied-forecast.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/008-read-applied-forecast-1-developer-applied-forecast.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e25464e8329dc9511bf2426fa9d241cdba01653cbeb6a690053e59e2e93d7d79",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/009-read-applied-qualification-1-developer-applied-qualification.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/009-read-applied-qualification-1-developer-applied-qualification.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "535dc6b27c215e48b659611a1a696fbe2ee56333014e8b9730da0db313e971ac",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 image individually viewed. Selected Investing row is visible; pending and paused suppression, applied14 funded ticks with18.6remaining and1.4per-tick qualification, disclosure focus and queue/status controls are readable in the intentional reading positions. Unselected neighboring rows/content remain scrollable; this is scoped regression approval, not automatic all-content visibility or design/release signoff.",
+    "covered": [
+      {
+        "story": "research-forecast-gallery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-forecast-gallery/desktop/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png",
+        "reference": "tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/010-close-applied-forecast-1-developer-applied-collapsed.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "928504b14fdb9ba4dfe10fc768891afa3a151d3bef5c872752a48fb39a30b3f5",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-2-independent-investor.png"
+      },
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/019-close-without-order-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/019-close-without-order-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4d069ee16e3aac71ba0e750b1b6cf7030dc6e2c4b4b2ad6f5509965680475612",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "2ffcbb4560f4848617fdf35bbb817926d16a5597fa14367e82ecaf10876c80f2",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "db6f3304faef1061820c95405f64d1cd164ccf89f2283eeda39aed9356047168",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "5e9478b5e330de1b5665e03a002f739565983aa5b482cd644f18f1e8285511be",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "9d000702fe318609b5fddffbea1d7c9135fa0f46a9e95852f9246aa4ae529e2a",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "876ba8eafeb281f8603746be0d0f809e9829f798e75a27b2263cc5fc8e030aa3",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b9f411826359e15f1380d74de1ade9c5b486396229dee31ba3d8b3d253b6bd5f",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "f7cef7e64c8a6f295496494e69033ff586a07ca65212f09ec4944aa7bcdb1aee",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "141570858245144c7d9b0c377b7b54157f81c16c",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c28d2041d29b4fe79bd54ebb64bee6116bc7b01a3a69518778ee4a5fca08e21a",
+    "disposition": "approved-regression",
+    "inspection": "Original desktop1440x1000 individually viewed. All eight selected capabilities have readable explanation, cost, full Queue control and focus ring; owner/peer science and ownership remain distinct, closing restores focused Economy opener. Deliberate internal scrolling clips unselected neighboring rows. Background catalogue labels can be occluded by the opaque Economy panel; no foreground text contamination seen. Scoped regression approval, not full map/design fidelity or automatic whole-content visibility.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png"
+      }
+    ]
   }
 ]
