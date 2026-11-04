@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "mode": "generate",
+  "source": "b57b58cde92299fc9641e6976d6b7a933293f387",
+  "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+  "serviceGroups": [
+    "science-current"
+  ],
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "testsPerProject": {
+    "phone": 1,
+    "desktop": 1,
+    "large": 1,
+    "short": 1
+  },
+  "retries": 0,
+  "updateSnapshots": "none",
+  "inputs": {
+    "src": "768e08f2518332ce37cecf4305c2666030175a10",
+    "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+    "functions": "c116879153585f6c933dad28096563165fa23641",
+    "tests": "b3d30d5173cac11ae6c20a3ba1f590d7a09d0e04",
+    "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+    "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+    "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+    "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+    "playwright.stories.config.ts": "25440b492b962da9edeb8700ed0c18c9f062db3a",
+    "scripts/story-cohorts.mjs": "2032d7efeed8b914bc6d668594fd04581ccc65a7",
+    "scripts/story-service-groups.mjs": "9ee85e3deb132f318f80d8a9ef63fd2369f451f4",
+    "scripts/run-stories.mjs": "dbe7446f756baa8c11acc0444d5be813b9e4fe88"
+  }
+}
