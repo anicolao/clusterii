@@ -31325,5 +31325,275 @@
         "oldSha256": null
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7fd753c8a214bf6da070d46be790737e3a17172fc8334d5cbbdcf1a9278e434a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Owner after orbital loss: zero rate and delivered science, Navigation level3 progress151.6/160 visible; Return full. Neighboring row is partially above the deliberate reading viewport. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/022-lost-orbit-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/022-lost-orbit-1-fleet-marshal.png",
+        "sha256": "7fd753c8a214bf6da070d46be790737e3a17172fc8334d5cbbdcf1a9278e434a",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6b0b78b47fe22a95b82b7bcdfa0c22401280ea39ad9381fcc6136c2295e3391e",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Peer keeps2.4/tick and level3 progress158.8/160, clear separate authoritative state; Return full. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/022-lost-orbit-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/022-lost-orbit-2-independent-marshal.png",
+        "sha256": "6b0b78b47fe22a95b82b7bcdfa0c22401280ea39ad9381fcc6136c2295e3391e",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "eee37c8b3094ba378e6a66b62ad1f82f1641f4790c97aca597c965231855eb83",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Owner later tick still zero and151.6/160, no invented completion; Return full. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/024-still-unfunded-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/024-still-unfunded-1-fleet-marshal.png",
+        "sha256": "eee37c8b3094ba378e6a66b62ad1f82f1641f4790c97aca597c965231855eb83",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8d254ea19928a3a8dcb4f86f25630a06e3b3d8b322c602338f62664fc57a0c8c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Peer later level4 with1.2/320 and2.4 delivered, separate real progress visible. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/024-still-unfunded-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/024-still-unfunded-2-independent-marshal.png",
+        "sha256": "8d254ea19928a3a8dcb4f86f25630a06e3b3d8b322c602338f62664fc57a0c8c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "067355901d8db25f120414b532e802f076d9c13d3989ac900a7d99c46c9bc1bd",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. No-completion estimate explicitly says last completed tick produced no science and no completion at that rate. Cost160 and8.4 more required visible, Queue navigation full. Lower active-research paragraph continues in normal bounded scroller; not complete paragraph visibility approval. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+        "sha256": "067355901d8db25f120414b532e802f076d9c13d3989ac900a7d99c46c9bc1bd",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9db40a272fb29d34bf04102c2aa511f9fe9c5420d56c235a42282f9192201e12",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Return to chart exposes truthful Unknown orbit/You surface and Inspect control, Economy focus ring full. Existing map prominence/glow styling is not full concept-fidelity approval. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/026-close-economy-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/026-close-economy-1-fleet-marshal.png",
+        "sha256": "9db40a272fb29d34bf04102c2aa511f9fe9c5420d56c235a42282f9192201e12",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "48b670de471d036ac6255e20c3bad75b7a05e2f5d95d723684c61416cf5b4be5",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Owner orbital ledger zero rate, tick198 and Tupa zero stations/base/output visible, Return full. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+        "sha256": "48b670de471d036ac6255e20c3bad75b7a05e2f5d95d723684c61416cf5b4be5",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+        "sha256": "48b670de471d036ac6255e20c3bad75b7a05e2f5d95d723684c61416cf5b4be5",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f53a1b35fb7ea1aca0542b61232253592e1d46cd144c0a116415a4a51eb8083d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Peer orbital ledger2.4 rate, tick198 and first Chason zero source visible; other sources remain in normal scroll, Return full. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+        "sha256": "f53a1b35fb7ea1aca0542b61232253592e1d46cd144c0a116415a4a51eb8083d",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+        "sha256": "f53a1b35fb7ea1aca0542b61232253592e1d46cd144c0a116415a4a51eb8083d",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6aea4d7d0e03a2d317b9441f2869af9312bb02343919fbb4fd23287c61e40d9f",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Owner Empire total heading, zero before/after/last-delivered and full qualification paragraphs visible. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+        "sha256": "6aea4d7d0e03a2d317b9441f2869af9312bb02343919fbb4fd23287c61e40d9f",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+        "sha256": "6aea4d7d0e03a2d317b9441f2869af9312bb02343919fbb4fd23287c61e40d9f",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "bcd92147bbcce69bd0836b67d0dfae66e37f8248089a89ebe326c48998cdd94c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Peer Empire total2.4 before/after/last-delivered and full qualification paragraphs visible. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+        "sha256": "bcd92147bbcce69bd0836b67d0dfae66e37f8248089a89ebe326c48998cdd94c",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+        "sha256": "bcd92147bbcce69bd0836b67d0dfae66e37f8248089a89ebe326c48998cdd94c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b778d8e513920c70a8577dfff7b7e490bf4babf707f5849660a4cc60d9d1536c",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Owner chart return shows full science resource focus ring, Unknown orbit/You surface, Inspect visible. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+        "sha256": "b778d8e513920c70a8577dfff7b7e490bf4babf707f5849660a4cc60d9d1536c",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+        "sha256": "b778d8e513920c70a8577dfff7b7e490bf4babf707f5849660a4cc60d9d1536c",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "335611517299aa02bb5cb3662e872fe137362949472abba1ae239758b4413e76",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed at native393x852. Peer chart return shows full science resource focus ring, own orbit/surface and Inspect visible. Scoped regression approval only; no full design, motion or release claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+        "sha256": "335611517299aa02bb5cb3662e872fe137362949472abba1ae239758b4413e76",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-zero-science/phone/linux-arm64/story.json",
+        "story": "live-zero-science",
+        "viewport": "phone",
+        "reference": "tests/e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+        "sha256": "335611517299aa02bb5cb3662e872fe137362949472abba1ae239758b4413e76",
+        "oldSha256": null
+      }
+    ]
   }
 ]
