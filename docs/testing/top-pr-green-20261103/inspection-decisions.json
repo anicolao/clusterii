@@ -11343,5 +11343,140 @@
         "reference": "tests/browser/story-baselines/live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png"
       }
     ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+    "disposition": "approved-regression",
+    "inspection": "Actually viewed full original. Retained commander entry versus acknowledged session-ended entry are distinct and readable. Newer proposal retains typed name and focus; current missing-campaign denial and focused All campaigns control remain visible. Large3840x2160 viewed downscaled2048: scoped layout/content regression approval, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-cancelled-confirmation/large/linux-arm64/002-account-entry-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/002-account-entry-1-commander-first-device.png",
+        "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+        "existing": "2640ce4eb9c9342b7a7099883d1ef4a3d86e845bfe533ef4e9c29a480543239b",
+        "decision": null
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-cancelled-confirmation/large/linux-arm64/004-close-devices-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/004-close-devices-1-commander-first-device.png",
+        "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+        "existing": "2640ce4eb9c9342b7a7099883d1ef4a3d86e845bfe533ef4e9c29a480543239b",
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+    "disposition": "approved-regression",
+    "inspection": "Actually viewed full original. Retained commander entry versus acknowledged session-ended entry are distinct and readable. Newer proposal retains typed name and focus; current missing-campaign denial and focused All campaigns control remain visible. Large3840x2160 viewed downscaled2048: scoped layout/content regression approval, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-cancelled-confirmation/large/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/006-end-both-sessions-1-commander-first-device.png",
+        "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+        "existing": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+        "decision": null
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-cancelled-confirmation/large/linux-arm64/006-end-both-sessions-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/006-end-both-sessions-2-commander-second-device.png",
+        "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+        "existing": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+        "decision": null
+      },
+      {
+        "story": "session-cancelled-confirmation",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-cancelled-confirmation/large/linux-arm64/008-fresh-sign-in-2-commander-second-device.png",
+        "reference": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64/008-fresh-sign-in-2-commander-second-device.png",
+        "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+        "existing": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8fda90ea1a72eca16145f5a07a8aa89c5285aad072e43490bd8e82cb0dae465d",
+    "disposition": "approved-regression",
+    "inspection": "Actually viewed full original. Retained commander entry versus acknowledged session-ended entry are distinct and readable. Newer proposal retains typed name and focus; current missing-campaign denial and focused All campaigns control remain visible. Large3840x2160 viewed downscaled2048: scoped layout/content regression approval, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-selection-ownership/large/linux-arm64/003-keep-new-proposal-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/large/linux-arm64/003-keep-new-proposal-1-selection-envoy.png",
+        "sha256": "8fda90ea1a72eca16145f5a07a8aa89c5285aad072e43490bd8e82cb0dae465d",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5bc268907ea97d4e153f50e1415ea685aa01f6264709949a05a6661f9162aca7",
+    "disposition": "approved-regression",
+    "inspection": "Actually viewed full original. Retained commander entry versus acknowledged session-ended entry are distinct and readable. Newer proposal retains typed name and focus; current missing-campaign denial and focused All campaigns control remain visible. Large3840x2160 viewed downscaled2048: scoped layout/content regression approval, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-selection-ownership/large/linux-arm64/004-surface-current-denial-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/large/linux-arm64/004-surface-current-denial-1-selection-envoy.png",
+        "sha256": "5bc268907ea97d4e153f50e1415ea685aa01f6264709949a05a6661f9162aca7",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "83fa899440b0d597afe2b1c33115590a0bbf9d6c37c5f8602147ba172f59bb0a",
+    "disposition": "approved-regression",
+    "inspection": "Actually viewed full original. Retained commander entry versus acknowledged session-ended entry are distinct and readable. Newer proposal retains typed name and focus; current missing-campaign denial and focused All campaigns control remain visible. Large3840x2160 viewed downscaled2048: scoped layout/content regression approval, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-selection-ownership/desktop/linux-arm64/003-keep-new-proposal-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/desktop/linux-arm64/003-keep-new-proposal-1-selection-envoy.png",
+        "sha256": "83fa899440b0d597afe2b1c33115590a0bbf9d6c37c5f8602147ba172f59bb0a",
+        "existing": null,
+        "decision": null
+      }
+    ]
+  },
+  {
+    "target": "a027458eee7c90de097eb137182929d584a6d43c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2b099c6d33c37a171c3392e0fc38c4d23069090310ea7c4e262b99aee2b5737f",
+    "disposition": "approved-regression",
+    "inspection": "Actually viewed full original. Retained commander entry versus acknowledged session-ended entry are distinct and readable. Newer proposal retains typed name and focus; current missing-campaign denial and focused All campaigns control remain visible. Large3840x2160 viewed downscaled2048: scoped layout/content regression approval, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "story": "campaign-selection-ownership",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-selection-ownership/desktop/linux-arm64/004-surface-current-denial-1-selection-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-selection-ownership/desktop/linux-arm64/004-surface-current-denial-1-selection-envoy.png",
+        "sha256": "2b099c6d33c37a171c3392e0fc38c4d23069090310ea7c4e262b99aee2b5737f",
+        "existing": null,
+        "decision": null
+      }
+    ]
   }
 ]
