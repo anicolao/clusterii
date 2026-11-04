@@ -1,11 +1,7 @@
 {
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
   "story": "waiting-to-home",
-  "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
-    "dirty": false,
-    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
-    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
-  },
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -32,44 +28,70 @@
     "dpr": 1,
     "motion": "reduce"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/story.json",
-  "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+  "source": {
+    "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+    "dirty": false,
+    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
   "captures": [
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "image": "007-recover-waiting-seat-1-chart-envoy.png",
       "sha256": "ccc1fb983c24f4d1b8207b0603422bde3cc5ecd7d44f1a31a793fbcf2236e9ae",
-      "existing": null
+      "previousSha256": "ccc1fb983c24f4d1b8207b0603422bde3cc5ecd7d44f1a31a793fbcf2236e9ae",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "image": "011-read-scheduled-roster-1-chart-envoy.png",
       "sha256": "c03c7d17b5e308de638ed1981b83938b989dcfa9437ee098d280216b4c92bf43",
-      "existing": null
+      "previousSha256": "c03c7d17b5e308de638ed1981b83938b989dcfa9437ee098d280216b4c92bf43",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "image": "012-read-departure-policy-1-chart-envoy.png",
       "sha256": "7ed5ebd3133f878f9785d44cb52f03b382d536c5ab2804bfe441082f0b7062c8",
-      "existing": null
+      "previousSha256": "7ed5ebd3133f878f9785d44cb52f03b382d536c5ab2804bfe441082f0b7062c8",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "image": "013-read-rules-and-return-1-chart-envoy.png",
       "sha256": "3e102dd61e39327c3f74d627efbe6c11de216f23d4ad9e81082ed90a8a952a77",
-      "existing": null
+      "previousSha256": "3e102dd61e39327c3f74d627efbe6c11de216f23d4ad9e81082ed90a8a952a77",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
-      "sha256": "fc2b717574b2f31beac9b483b7bb7ea5b336a2d85816f718eefe5c913bca89d2",
-      "existing": null
+      "image": "015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "2f4fdecd22cc405052f3c4fc47d1a8db9cb76811f60aa793c164199b0d920743",
+      "previousSha256": "fc2b717574b2f31beac9b483b7bb7ea5b336a2d85816f718eefe5c913bca89d2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
-      "sha256": "de2ada993bac791ba2a38cda18b29b7bc12e239d57185a93ffc90929529fcf52",
-      "existing": null
+      "image": "016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "49a58d6ba643f8269e032c4ff808709675cf664e788eeca542ec912f813b98e3",
+      "previousSha256": "de2ada993bac791ba2a38cda18b29b7bc12e239d57185a93ffc90929529fcf52",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "7819fc0139ec1abcafeccbc6df5ce6f00121affc6c3d7730b1c239510f37666f",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "441a5126c42e2d7aca616f2b59e8131ee9329b34ea029f70827df981a90307f7",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
     }
   ]
 }

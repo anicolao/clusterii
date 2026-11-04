@@ -1,11 +1,7 @@
 {
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
   "story": "waiting-to-home",
-  "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
-    "dirty": false,
-    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
-    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
-  },
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -32,44 +28,70 @@
     "dpr": 1,
     "motion": "reduce"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/story.json",
-  "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+  "source": {
+    "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+    "dirty": false,
+    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large/test-results/stories/waiting-to-home/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
   "captures": [
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "image": "007-recover-waiting-seat-1-chart-envoy.png",
       "sha256": "e2b28b6c3dd2743fa8ddb4a2771dc6c7ad66b6dc5aa5201d9198ee1d60991996",
-      "existing": null
+      "previousSha256": "e2b28b6c3dd2743fa8ddb4a2771dc6c7ad66b6dc5aa5201d9198ee1d60991996",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "image": "011-read-scheduled-roster-1-chart-envoy.png",
       "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
-      "existing": null
+      "previousSha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "image": "012-read-departure-policy-1-chart-envoy.png",
       "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
-      "existing": null
+      "previousSha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "image": "013-read-rules-and-return-1-chart-envoy.png",
       "sha256": "5a192fe0b857156fb8bd129c253fff0f6844a285cba130e1745ff9ae07e76984",
-      "existing": null
+      "previousSha256": "5a192fe0b857156fb8bd129c253fff0f6844a285cba130e1745ff9ae07e76984",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
-      "sha256": "73ce69fb2f47dec6d9a598778051616fe0d2395eb75510b55aa42febba8d4674",
-      "existing": null
+      "image": "015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "4ccdf826ffe1709a3e5d1372c101c71fe3d6fb659321f84111db435d9dfd6648",
+      "previousSha256": "73ce69fb2f47dec6d9a598778051616fe0d2395eb75510b55aa42febba8d4674",
+      "changed": true,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
-      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
-      "sha256": "ef52c5001bdd2da7cdde5bef00702497e402563c9b4357f70ce248a06c640603",
-      "existing": null
+      "image": "016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "528c0a80c0f4de3c2a13dbbc06857674944a078ded81d453186e4b55be11c891",
+      "previousSha256": "ef52c5001bdd2da7cdde5bef00702497e402563c9b4357f70ce248a06c640603",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "6fb01d2870e3fcb1a2920486504379091fa60642f83ed9d9eb5f42d4dd13c74f",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "c1da4d7d23c3f85b56994deec66e2da91dd6d39c5a5210928def091fa0d83729",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
     }
   ]
 }
