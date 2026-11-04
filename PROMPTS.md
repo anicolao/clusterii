@@ -205,3 +205,137 @@ OK we like cinematic realism. In a level of detail and overall flow style simila
 ## Prompt 11: Prepare Approval
 
 this looks good, let;s make sure it is rebased on current main and ready for us to approve
+
+## Prompt 12: Define Step Zero
+
+pull hte latest main. Review the UX_DESIGN and IMPLEMENTATION_PLAN and put up a PR for step 0 of the implementation plan for us to review.
+
+## Prompt 13: Build Production Tracer
+
+let's put step 1 on the same PR. In general, we want to always implement "tracer-bullet" style; that is, do not implement anything that isn't visible in the UI, and always implement things that are meant to survive to prdouction, never temporary scaffolding or fallbacks or mocks. the UI should be final - matching in fidelity with the mockups as closely as possible - and reducers/actions/database code should implement the full mock encryption system. I'd like to see a pr preview on setp 1 that we can click on and interact with.
+
+## Prompt 14: Link Billing
+
+Link Firebase Payment
+
+## Prompt 15: List Projects
+
+list other projects linked to this and I'll tell you what to unlink
+
+## Prompt 16: Unlink Project
+
+mbgames-478115
+
+## Prompt 17: CLI Only
+
+don't use the browser, use the CLI only
+
+## Prompt 18: Autonomous Authentication
+
+Can't you set up authentication without my help?
+
+## Prompt 19: Reviewer Takeover
+
+Delegated instruction from the reviewer; human authorization: meta-prompts.md, “Supervisory takeover”.
+
+Reviewer handoff — supervisory takeover, 2026-10-20. Human authorization is recorded in meta-prompts.md under “Supervisory takeover”. Read AGENTS.md; log this delegated instruction in PROMPTS.md explicitly attributed to the reviewer, referring to that meta entry. Preserve direct human entries and use PROMPT_WORK.md continuations correctly. Include meta-prompts.md in the next related commit and push; never merge review PRs.
+
+You were idle after 6b23501 on PR #4. Resume implementation now. First correct/review the foundation on PR #4, then create small stacked successor PRs with each base set to the preceding branch. Preserve existing history; no destructive splitting of PR #4. Keep a dependency/acceptance table and preview links. Continue through IMPLEMENTATION_PLAN.md in final-quality vertical slices, with milestone 10 UX work alongside mechanics. Do not silently treat rules marked review as owner-approved; make material unresolved choices explicit while continuing unaffected work.
+
+Initial review findings at 6b23501:
+1. src/routes/+page.svelte renders Reconnect for every profile error using location.reload(). This can discard the explicitly preserved draft after a conflict or connection error. Implement state-preserving resubscription/recovery and distinguish validation, conflict and network remedies. Add browser evidence for two-device conflicts and retry/pending commands without duplicate writes or draft loss.
+2. open() always focuses the destination heading. Closing Learn/identity should restore focus to the opening control, per UX_DESIGN/CLUSTER_II_MVP. Test keyboard journeys, focus restoration and reduced motion. Existing geometry checks only check button size and horizontal document overflow; cover target overlap, viewport containment, radio targets and bounded scroll in phone/desktop/4K/short identity and error states.
+3. Compared actual entry-desktop baseline to docs/ux/concepts/01-entry.png: scenery broadly matches, but generic gold Play and plain Learn omit the large illustrated inset navigation treatments. Bring production controls closer to the approved composition, using semantic buttons and real labels, and retain separate phone composition. Omit Continue until campaigns exist. Do not regenerate baselines as a substitute for review. The phone identity is readable; preserve that legibility. Require independent actual rendered review at supported sizes.
+4. docs/design/STEP_0_REVIEW.md still says this PR does not start step 1 or provision/deploy anything, now false for combined PR #4. Correct implementation-status claims while retaining proposed-rule status. Hosted Google end-to-end login/persistence remains unverified; do not claim full hosted acceptance from the OAuth URL probe.
+
+Create a production-component gallery and interactive animation lab in a small stacked PR before advancing deep gameplay. Inspect /Users/anicolao/projects/games/pantheon/src/routes/dev/animations, src/routes/gallery and Gallery.svelte, and locate the comparable todo lab. Use actual shared production components, icons and animation code, not parallel mock implementations. Lab needs deterministic scenarios, replay/reset, pause/seek or frame inspection, speed control and reduced-motion comparison with outcomes unchanged; include pending/accepted/rejected/reconnect transitions as applicable and extend with gameplay. Gallery must cover every shipped reusable icon/control and real states (focus, selected, disabled, pending, error), sizes, semantic labels and asset provenance. Keep development tooling out of normal player navigation. Ship cinematic faction/ship/system assets as their real interactions arrive, never placeholders or generated lettering.
+
+After foundation corrections and lab/gallery, proceed into milestones 2/3 with authoritative campaign create/join/recover and actual galaxy interaction, real authorization, private views, persistence and shared versioned rules. No fake game state or unused service infrastructure. Public campaigns require real cryptography; development mock mode must remain explicitly scoped. Require relevant rule/service/browser tests and illustrated journeys with acknowledged outcomes, plus independent visual review for each PR. Send concise progress with commit/PR, evidence, remaining gaps and next step. A supervisor will check every ten minutes; continue useful work between checks instead of waiting for a new human prompt after each increment.
+
+### Verification and delivery checkpoint
+
+Supervisor independently ran npm run check successfully (zero Svelte errors/warnings; TypeScript functions check passed), all 10 prompt-hook tests passed, and step-zero validation passed. PR #4 documentation, publish and verify checks are green. Bun unit/service/browser suites were not rerun by the supervisor because bun is absent from this shell PATH; CI results and committed captures are evidence with that limitation. Exact handoff was pasted and submitted to clusterii:1.2; tmux shows Working, confirming the agent resumed (completion not yet claimed). Supervisor scratch handoff was moved outside the repository. Agent owns staging/committing this log with its attributed PROMPTS.md entry to avoid concurrent Git mutations. Local monitoring requires this Mac and desktop app available; ten-minute cadence is scheduled, not a guarantee of uninterrupted execution.
+
+## Prompt 20: Reviewer Privacy
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. Finding recorded under “Reviewer progress — 2026-10-20 16:15 Toronto”.
+
+Reviewer finding during campaign work: shared/campaign.ts campaignView filters systems where either layer is owned, then spreads the entire SystemState into holdings. That exposes opposing-layer fighters/infantry/developments when ownership is split; replacing only orbit/surface labels with Unknown does not redact those values. Before this slice is accepted, project fields explicitly by layer entitlement and authorized intelligence, and add a split-owner fixture proving hidden opposing values are absent from serialized views, not just unlabeled in the UI. Keep this in the current privacy review while continuing the slice; do not mark the two current reducer tests as complete authorization coverage. Also carry the latest main-worktree meta-prompts.md supervisory checkpoints into the stack without dropping entries. PRs #4/#5 are green, and the initial hosted gallery/lab interaction review passed with the limitations recorded there.
+
+## Prompt 21: Reviewer Composition
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. Finding recorded under “Reviewer progress — 2026-10-20 16:36 Toronto”.
+
+PR #6 supervisory review at bfc7520: visual acceptance is WITHHELD. Correct this slice before extending deeper gameplay. I inspected actual test-results galaxy-desktop.png, galaxy-phone.png and factions-phone.png. Galaxy is embedded below roughly 225–250px of persistent website-style branding/title/status chrome; phone faction capture shows neither briefing/portrait nor Claim your seat, and the galaxy places roster/Leave below the scene. This violates UX_DESIGN.md full-screen galaxy surface and persistent phone commitment rail. Recompose desktop around a slim integrated campaign rail and contextual inspector; phone needs one focal task, bounded scrolling details and a safe-area-aware commitment rail keeping Claim your seat visible while reviewing faction/portrait. Preserve explicit development/rules-review disclosure but place technical provider details in developer diagnostics rather than large player chrome. Do not invent unavailable gameplay actions. The uniform dotted spiral is also not yet the approved cinematic stellar presentation: improve visible stars, selective labels/class/ownership cues, depth and scene composition against 03-galaxy while preserving the actual authoritative catalogue and privacy. Keep this work in #6 and propagate safely to successors; no merge.
+
+The geometry helper scrollIntoViewIfNeeded makes every target reachable in sequence but does not prove the required primary action remains visible while selecting. Add assertions before automatic scrolling for the action rail at phone and short desktop, bounded-panel scroll and no document overflow, then retain exact rendered before/after evidence. Also test independent players filling a roster and seeing scheduled start/home assignment through ordinary UI (service-only invocation is not the browser journey); keep partial milestone status honest. Privacy projection fix and split-owner regression source look correct; service/browser execution evidence still requires review. Record this delegated finding attributed to reviewer in PROMPTS.md and carry main-worktree meta-prompts.md updates into the stack.
+
+## Prompt 22: Reviewer Layering
+
+Delegated instruction from the reviewer; human authority is recorded in meta-prompts.md under “Supervisory takeover”. Finding recorded under “Reviewer progress — 2026-10-20 16:56 Toronto”.
+
+Follow-up visual review of /tmp/cluster-composition-final3 captures:full-height galaxy, slim rail and fixed Claim your seat are substantially improved. One remaining concrete issue: galaxy-phone.png renders the map label “Taiyangshou · O” over the inspector near its stellar-class/title area. Clip map HTML labels to the map viewport or layer inspector/sheets above every map label (and keep decorative layers noninteractive); test labels at the inspector boundary. Full visual acceptance remains pending that correction and final captures. The four viewport failures in cluster-composition-final3.log are duplicate campaign-name selectors after reused emulator data: give each journey a unique campaign name/ID and recover that exact campaign; do not weaken to first() or last(). The current four-player test is legitimately waiting for the next quarter-hour; no restart needed. Independent prompt-hook suite passed all 12 tests, including historical continuation validation. Preserve this review in PROMPTS.md and the next related commit.
+
+## Prompt 23: Player Access
+
+there's some stupidity with this implementation where only developers can play the game. I am quite annoyed by this, but for now just tell me what needs to be done to fix it so that someone else can play (a specific person). Somehow my "Osric" identity works - perhaps I'd created it before this nonsense was added.
+
+## Prompt 24: Grant Developers
+
+go ahead and direclty add developer: true to all users, and tell me who you modified when done.
+
+## Prompt 25: Clarify Access
+
+you say I already had it, but you said "Osric" wasn't grandfathered in. WTF?
+
+## Prompt 26: New Account
+
+I just signed in with a new account that also needs fixing. please fix it
+
+## Prompt 27: Campaign Start
+
+we have filled out a campaign and it is supposed to start in 13m. Is that properly wired up? I assume this is a scheduled cloud function that kicks off the campaign?
+
+## Prompt 28: Start Immediately
+
+can we set the game start time to now so that it starts immediately thn?
+
+## Prompt 29: Start Campaign
+
+ok we made a new campaign, kick it off please
+
+## Prompt 30: Faster Ticks
+
+is there a way to make ticks happen more often, e.g. every 3 minutes?
+
+## Prompt 31: Cancellation Semantics
+
+when is the next tick for the game? I tried to build and cancel a space station, and it didn't give me my credits back--that was unexpected. what are the semantics?
+
+## Prompt 32: Review Main
+
+We're trying to decide whether or not to abort this project and start fresh so that it is under control, or whether it is repairable. To do that, we think the simplest thing is to walk through the project together starting at PR#1 and working all the way to PR#140, reviewing each one, the decisions made in it and the implementation up to that point, and recording those things we think were done correctly/as intended vs those things that were not. Let's begin at step 0: let's review what's on main already. Give us a summary, adn we'll go review the relevant files on github.
+
+## Prompt 33: Review PR1
+
+OK summarize what's in PR1 and suggest how we should review it.
+
+## Prompt 34: Oldest Unmerged
+
+sorry I don't mean PR1. I mean the oldest unmerged PR
+
+## Prompt 35: Ground Combat
+
+In the step 0 decisions table, for ground combat, it says "Preserves linear scaling and defender-first advantage. Equal forces leave one defender; some draft subtraction examples therefore changePreserves linear scaling and defender-first advantage. Equal forces leave one defender; some draft subtraction examples therefore change". This makes no sense to me. In fact how many defenders remain when the counts are equal depends on both the defender's and the attacker's melee levels. If the defender is at level 5 for example, then any nubmer of attackers <=5 is vanquished before they can do any damaage. So that means 5 vs 5 leaves 5 defenders, *not one*. Analyze how the code handles this case, explain why this statement is there, and stop.
+
+## Prompt 36: Market Formula
+
+explain what is meant by "Bounds construction-ring profits. Replaces unlimited per-focus-point generation; investing applies to normal income, not this bounded pool. This is a material change to the draft formula" for markets
+
+## Prompt 37: Fighter Normalization
+
+OK now explain the fighter combat line. How could the original spec "create units"?
+
+## Prompt 38: Simultaneous Combat
+
+OK explain the 'network timing' issue from 'Simultaneous combat'. this makes no sense to me

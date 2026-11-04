@@ -8,6 +8,10 @@ This document defines the intended experience. The illustrations are **generated
 
 Mockup names, costs, capacities, progress, dates and force counts are illustrative fixtures. Generated lettering and incidental symbols are not production assets. Render exact names, accessible labels and authoritative values as real interface elements. The mockups do not settle faction bonuses, starting assets, construction timing, allocation units, research costs, fleet speed, alliance eligibility or victory thresholds. Those values come from the game's versioned ruleset. An unavailable rule-dependent action never appears as an unexplained promise.
 
+## Versioned rules binding
+
+[RULES_SPEC.md](RULES_SPEC.md) defines the step 0 rule choices for review; [TECHNICAL_CONTRACT.md](TECHNICAL_CONTRACT.md#7-clientux-binding) binds those choices to the screen families and UX story IDs. Under v0.1.0, lobbies start automatically when full, scans are passive, hostile ground assault follows orbital resolution automatically, and traveling fleets cannot reroute mid-leg. Victory is shared territorial control or a deadline draw; the generic individual-winner variant is not reachable. Mockup values remain illustrative. No change to cinematic composition or exact visual acceptance is implied by these rules.
+
 ## The visual promise
 
 The galaxy feels vast; the next decision feels close. Deep navy space and nearly black gunmetal provide quiet ground for ivory text. Cyan marks selection, amber marks uncertainty, and restrained vermilion marks destructive consequences. These are interaction accents, not faction identity or stellar class colors. Shape, wording and position carry the same distinctions without color.
