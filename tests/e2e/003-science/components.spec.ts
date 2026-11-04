@@ -35,17 +35,24 @@ async function readDelivered(panel: import("@playwright/test").Locator) {
         return r.top >= p.top && r.bottom <= p.bottom;
       });
       if (fits) break;
-      await panel.page().keyboard.press("ArrowUp");
-      await panel
-        .page()
-        .evaluate(
+      const before = await reading.evaluate((element) => element.scrollTop);
+      await reading.press("ArrowUp");
+      // Native keyboard scrolling can outlive two animation frames. Do not
+      // decide whether another key is needed from an intermediate position.
+      // Observe movement and its completion; never set the reading position.
+      await expect
+        .poll(
           () =>
-            new Promise<void>((resolve) =>
-              requestAnimationFrame(() =>
-                requestAnimationFrame(() => resolve()),
-              ),
-            ),
-        );
+            reading.evaluate(async (element, previous) => {
+              const first = element.scrollTop;
+              await new Promise(requestAnimationFrame);
+              await new Promise(requestAnimationFrame);
+              const last = element.scrollTop;
+              return { moved: last < previous, stable: first === last };
+            }, before),
+          { message: "The actual ArrowUp reading scroll moves and settles" },
+        )
+        .toEqual({ moved: true, stable: true });
     }
   } finally {
     await headingNode!.dispose();

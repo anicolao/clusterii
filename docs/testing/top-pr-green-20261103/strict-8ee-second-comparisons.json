@@ -1,0 +1,365 @@
+{
+  "provenance": {
+    "artifact": {
+      "id": 13362694322,
+      "node_id": "MDg6QXJ0aWZhY3QxMzM2MjY5NDMyMg==",
+      "name": "illustrated-stories-verify-linux-arm64",
+      "size_in_bytes": 3470058384,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362694322",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362694322/zip",
+      "expired": false,
+      "digest": "sha256:bfd6e6cbc74430a841424b3190bb51209952725339bd972c3b8807f0145db3f9",
+      "created_at": "2026-11-04T21:09:39Z",
+      "updated_at": "2026-11-04T21:09:39Z",
+      "expires_at": "2027-02-02T19:05:43Z",
+      "workflow_run": {
+        "id": 41893585935,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "feat/admission-briefing-composition",
+        "head_sha": "8eeea5e6315e309f9d883ed3ef3fcf50be2340fe"
+      }
+    },
+    "etag": "\"0x8DF3AB7F042C638\"",
+    "rangeBytes": 3049454,
+    "ranges": [
+      [
+        3470058362,
+        3470058383
+      ],
+      [
+        3470058342,
+        3470058361
+      ],
+      [
+        3469293590,
+        3470058361
+      ],
+      [
+        450441354,
+        450441383
+      ],
+      [
+        450441384,
+        450441612
+      ],
+      [
+        450441613,
+        450473931
+      ],
+      [
+        450473948,
+        450473977
+      ],
+      [
+        450473978,
+        450474208
+      ],
+      [
+        450474209,
+        450522938
+      ],
+      [
+        450522955,
+        450522984
+      ],
+      [
+        450522985,
+        450523217
+      ],
+      [
+        450523218,
+        450569526
+      ],
+      [
+        767357346,
+        767357375
+      ],
+      [
+        767357376,
+        767357577
+      ],
+      [
+        767357578,
+        767754049
+      ],
+      [
+        767754066,
+        767754095
+      ],
+      [
+        767754096,
+        767754295
+      ],
+      [
+        767754296,
+        767868726
+      ],
+      [
+        767868743,
+        767868772
+      ],
+      [
+        767868773,
+        767868976
+      ],
+      [
+        767868977,
+        768257589
+      ],
+      [
+        1461841722,
+        1461841751
+      ],
+      [
+        1461841752,
+        1461841968
+      ],
+      [
+        1461841969,
+        1462046005
+      ],
+      [
+        1462046022,
+        1462046051
+      ],
+      [
+        1462046052,
+        1462046266
+      ],
+      [
+        1462046267,
+        1462084447
+      ],
+      [
+        1462084464,
+        1462084493
+      ],
+      [
+        1462084494,
+        1462084712
+      ],
+      [
+        1462084713,
+        1462295501
+      ],
+      [
+        1867671820,
+        1867671849
+      ],
+      [
+        1867671850,
+        1867672058
+      ],
+      [
+        1867672059,
+        1867728173
+      ],
+      [
+        1867728190,
+        1867728219
+      ],
+      [
+        1867728220,
+        1867728430
+      ],
+      [
+        1867728431,
+        1867775305
+      ],
+      [
+        1872592378,
+        1872592407
+      ],
+      [
+        1872592408,
+        1872592614
+      ],
+      [
+        1872592615,
+        1872620914
+      ],
+      [
+        1926760082,
+        1926760111
+      ],
+      [
+        1926760112,
+        1926760327
+      ],
+      [
+        1926760328,
+        1927030168
+      ],
+      [
+        1927030185,
+        1927030214
+      ],
+      [
+        1927030215,
+        1927030428
+      ],
+      [
+        1927030429,
+        1927168978
+      ],
+      [
+        1927168995,
+        1927169024
+      ],
+      [
+        1927169025,
+        1927169242
+      ],
+      [
+        1927169243,
+        1927430645
+      ]
+    ],
+    "entries": [
+      {
+        "path": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-diff.png",
+        "size": 43281,
+        "crc32": "847e3067",
+        "sha256": "3cc3202d9a14d8331d4d441bd8fe325120b6e2a2af8f385e2a8dc263b8a5a93a"
+      },
+      {
+        "path": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-actual.png",
+        "size": 51514,
+        "crc32": "8d531c82",
+        "sha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0"
+      },
+      {
+        "path": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-expected.png",
+        "size": 49276,
+        "crc32": "b0466b5b",
+        "sha256": "caadf93825af8a8ff69b506bcee8db4b496ed3974fc12e2564d1287049594975"
+      },
+      {
+        "path": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-actual.png",
+        "size": 396401,
+        "crc32": "6273fa7e",
+        "sha256": "fe1e222222997354f3e038f4de2ae1736689938bc9de36d5a23be3ba92f1a04d"
+      },
+      {
+        "path": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-diff.png",
+        "size": 158735,
+        "crc32": "cc4cfca8",
+        "sha256": "3bde9ae32f822a6c8a9d82b6300b5c944b09c0aa19648f77065e1c0001feb74c"
+      },
+      {
+        "path": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-expected.png",
+        "size": 388571,
+        "crc32": "7e130c67",
+        "sha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca"
+      },
+      {
+        "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison-actual.png",
+        "size": 205050,
+        "crc32": "4b1a97e4",
+        "sha256": "3008356ecca646178fa40f7c7657c5ed9647db34187272272fbb453bc399b34b"
+      },
+      {
+        "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison-diff.png",
+        "size": 47476,
+        "crc32": "00be5ed9",
+        "sha256": "9873459d672484794ebfef6a104fef1cba9b52f20cf021cd99bee8c47fc6c209"
+      },
+      {
+        "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison-expected.png",
+        "size": 211789,
+        "crc32": "bcff5e5e",
+        "sha256": "512a1d9d6a9d24afacf1a0664b1d79a2d087a3c92977fea221225e1c212a7806"
+      },
+      {
+        "path": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-actual.png",
+        "size": 58838,
+        "crc32": "eaed4596",
+        "sha256": "771356a943e13e5b600698ff439bb3a0bbe07e2a61a454d811ce29f32be89466"
+      },
+      {
+        "path": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-expected.png",
+        "size": 49663,
+        "crc32": "5414403a",
+        "sha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9"
+      },
+      {
+        "path": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-diff.png",
+        "size": 46020,
+        "crc32": "a885bf2d",
+        "sha256": "11ee965b245bca58119247fdd009745151b9a35b219542db07838c2b6c9b5023"
+      },
+      {
+        "path": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-actual.png",
+        "size": 270341,
+        "crc32": "864c8921",
+        "sha256": "35b7fe3ba1f961c7dabdecc797b7c35a9ad7ff4eeaaef0b4aae3ddc37871bcf2"
+      },
+      {
+        "path": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-diff.png",
+        "size": 184764,
+        "crc32": "b44d3176",
+        "sha256": "8ab30585bfff2754546a2e2ab715fac2dc5afc8225394e138c9efe7ba04d5263"
+      },
+      {
+        "path": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-expected.png",
+        "size": 262158,
+        "crc32": "4d3d7bcc",
+        "sha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1"
+      }
+    ],
+    "integrity": "Selected entries CRC/size/SHA256 verified against remote ZIP central directory. Every response exact206 Content-Range and immutable ETag. Whole archive SHA256 NOT verified; no full archive downloaded."
+  },
+  "comparisons": [
+    {
+      "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-diff.png",
+      "actualSha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0",
+      "expectedSha256": "caadf93825af8a8ff69b506bcee8db4b496ed3974fc12e2564d1287049594975",
+      "diffSha256": "3cc3202d9a14d8331d4d441bd8fe325120b6e2a2af8f385e2a8dc263b8a5a93a",
+      "viewed": "Implementation agent viewed actual/expected/diff native phone originals; no baseline promotion from this failure"
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-diff.png",
+      "actualSha256": "fe1e222222997354f3e038f4de2ae1736689938bc9de36d5a23be3ba92f1a04d",
+      "expectedSha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca",
+      "diffSha256": "3bde9ae32f822a6c8a9d82b6300b5c944b09c0aa19648f77065e1c0001feb74c",
+      "viewed": "Implementation agent viewed actual/expected/diff native phone originals; no baseline promotion from this failure"
+    },
+    {
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison-diff.png",
+      "actualSha256": "3008356ecca646178fa40f7c7657c5ed9647db34187272272fbb453bc399b34b",
+      "expectedSha256": "512a1d9d6a9d24afacf1a0664b1d79a2d087a3c92977fea221225e1c212a7806",
+      "diffSha256": "9873459d672484794ebfef6a104fef1cba9b52f20cf021cd99bee8c47fc6c209",
+      "viewed": "Implementation agent viewed actual/expected/diff native phone originals; no baseline promotion from this failure"
+    },
+    {
+      "reference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-diff.png",
+      "actualSha256": "771356a943e13e5b600698ff439bb3a0bbe07e2a61a454d811ce29f32be89466",
+      "expectedSha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9",
+      "diffSha256": "11ee965b245bca58119247fdd009745151b9a35b219542db07838c2b6c9b5023",
+      "viewed": "Implementation agent viewed actual/expected/diff native phone originals; no baseline promotion from this failure"
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "actual": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-actual.png",
+      "expected": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-expected.png",
+      "diff": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-strict-8ee-13362694322-second/selected/test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-diff.png",
+      "actualSha256": "35b7fe3ba1f961c7dabdecc797b7c35a9ad7ff4eeaaef0b4aae3ddc37871bcf2",
+      "expectedSha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1",
+      "diffSha256": "8ab30585bfff2754546a2e2ab715fac2dc5afc8225394e138c9efe7ba04d5263",
+      "viewed": "Implementation agent viewed actual/expected/diff native phone originals; no baseline promotion from this failure"
+    }
+  ]
+}
