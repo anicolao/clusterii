@@ -14297,5 +14297,446 @@
         "viewport": "large"
       }
     ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "47a6df1f403bf5e73c63d40fdf244fa3395fba5df862cbb1cfed8c2c337c7715",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/001-pending-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/001-pending-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2e4e37dbaf34c7fe0353397c52e8e843e158ceccfd80b4a03c0f1537f34f7574",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/002-stale-roster-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/002-stale-roster-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3bf516c7bfdd82f4eb5f1f245d280ffcb46cc2a870cdec9e67e71decbe7a2ea4",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/003-seat-confirmed-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b49c81b2b093dc6bebfd42f9a38bd3b17c58b1202cc1d4ef0b41d1ace6488a62",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/004-paused-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/004-paused-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/004-paused-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/004-paused-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b914bc4db6db2681eeb5aec939d0b2abd1b1abdc5a19dad8d1705ebc1dc24894",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/005-resume-interrupted-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b7999638101e527f85402449beb0228e9ccda57ca462712fe1b7796acc028567",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/006-resumed-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/006-resumed-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "31cd57a1901b1618886205beab4f7e66d1647b32c5472101990b9279ea50f693",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5be81fb3160caf0f69621e053986fc0b75b0e7b1605e8a4736093d23f3c04e68",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/001-pending-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/001-pending-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "33b72d541184316a1af09cdcaa6b10e1fdb795bb27dbb3e8d2890a5f09c700af",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/002-stale-roster-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/002-stale-roster-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ca680f859bf26cfb5b03ac2392fc520ae2a3557474fe0a7beca273586bcf675c",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/003-seat-confirmed-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cf506f27b407c515f12aad76c8b4389683ed7e2699490814308d3a9a7fbe232f",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/004-paused-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/004-paused-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/004-paused-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/004-paused-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c6426bb63f6029cffdd8a7153a403b57924902517c5bd7652f079a5f17a73336",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/005-resume-interrupted-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "06bc3ba546ba6bfc2baed52d3c79d87ab4745f9fb9735c3b385a007ce36e75c0",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/006-resumed-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/006-resumed-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "aca7ab2e30f59c06bd9b9cedcde94d0d69661cc18c51458cbdfd6b545bf4b880",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "98fae2570381e720c5f395a4dcd50677ec6c34331770e01efa996aff043743f7",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/001-pending-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/001-pending-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/001-pending-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e6f3fee3802beed236cefc17cbeca85aba88c45d02b8be3d3a98d84be4ee6fb9",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/002-stale-roster-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/002-stale-roster-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/002-stale-roster-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "41de8d9aedd631f69bcbca9d7b06d9ed87bd69d6ed12fed03364d5390e805521",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/003-seat-confirmed-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/003-seat-confirmed-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c2ed103f07e67f8f8e1ee84d4eb45a27e85107cbd99e14443672749afc61fecd",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/004-paused-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/004-paused-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/004-paused-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/004-paused-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7ed49349927617dc6c7b62bb763c6103170fdae6f341acbf322c26f570f051f2",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/005-resume-interrupted-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/005-resume-interrupted-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c48d8fca848d6e4f375b6455e3be20984802323237eafa59ff034f14967f0cf8",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/006-resumed-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/006-resumed-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/006-resumed-2-developer-reduced-campaign-motion.png"
+      }
+    ]
+  },
+  {
+    "target": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ccff04857a74c34ff2666c24276a6c52b29e81f93674fb2c261181adf45a5b4a",
+    "disposition": "approved-regression",
+    "inspection": "Original full image individually opened. Campaign pending/conflict/seat confirmation/pause/reconnect/resume/migration receipt and both labelled motion panels remain readable; playback controls and frame focus contained. Short deliberately scrolls the document to retain complete receipts; neighboring prose may be below fold. Large3840 originals displayed downscaled2048: layout/content scope only. Component presentation fixtures, not live authorization, encryption migration or full-animation/design certification. Relevant lab/Feedback/scenario/animation sources unchanged from retained passed source.",
+    "covered": [
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/007-migration-verified-1-developer-standard-campaign-motion.png"
+      },
+      {
+        "story": "campaign-feedback-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png",
+        "reference": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64/007-migration-verified-2-developer-reduced-campaign-motion.png"
+      }
+    ]
   }
 ]

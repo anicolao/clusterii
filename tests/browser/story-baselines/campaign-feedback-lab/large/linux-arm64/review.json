@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/FEEDBACK_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "campaign-feedback-lab",
   "renderer": {
@@ -27,5 +27,113 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/feedback-lab.story.spec.ts",
+    "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-pending-1-developer-standard-campaign-motion.png",
+      "sha256": "98fae2570381e720c5f395a4dcd50677ec6c34331770e01efa996aff043743f7",
+      "previousSha256": "0b0b17794ae11fa44410d42eeb1ea9199ba66c7d6bd9a694cd0a6c5fee55dabc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "001-pending-2-developer-reduced-campaign-motion.png",
+      "sha256": "98fae2570381e720c5f395a4dcd50677ec6c34331770e01efa996aff043743f7",
+      "previousSha256": "0b0b17794ae11fa44410d42eeb1ea9199ba66c7d6bd9a694cd0a6c5fee55dabc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-stale-roster-1-developer-standard-campaign-motion.png",
+      "sha256": "e6f3fee3802beed236cefc17cbeca85aba88c45d02b8be3d3a98d84be4ee6fb9",
+      "previousSha256": "ae6a67ab67ef866b6cb3d5ca81dd08b803429e752ee651fd7297bfcc885ac637",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-stale-roster-2-developer-reduced-campaign-motion.png",
+      "sha256": "e6f3fee3802beed236cefc17cbeca85aba88c45d02b8be3d3a98d84be4ee6fb9",
+      "previousSha256": "ae6a67ab67ef866b6cb3d5ca81dd08b803429e752ee651fd7297bfcc885ac637",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-seat-confirmed-1-developer-standard-campaign-motion.png",
+      "sha256": "41de8d9aedd631f69bcbca9d7b06d9ed87bd69d6ed12fed03364d5390e805521",
+      "previousSha256": "175cfd2a2ad733b4716345d29aa16eb71bf5986af456985533362b2c681bbe18",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+      "sha256": "41de8d9aedd631f69bcbca9d7b06d9ed87bd69d6ed12fed03364d5390e805521",
+      "previousSha256": "175cfd2a2ad733b4716345d29aa16eb71bf5986af456985533362b2c681bbe18",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-paused-1-developer-standard-campaign-motion.png",
+      "sha256": "c2ed103f07e67f8f8e1ee84d4eb45a27e85107cbd99e14443672749afc61fecd",
+      "previousSha256": "d92b4f66bac762cf0ecb6221fb72453f8b04d018cb683549f994f1d47158bf33",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-paused-2-developer-reduced-campaign-motion.png",
+      "sha256": "c2ed103f07e67f8f8e1ee84d4eb45a27e85107cbd99e14443672749afc61fecd",
+      "previousSha256": "d92b4f66bac762cf0ecb6221fb72453f8b04d018cb683549f994f1d47158bf33",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-resume-interrupted-1-developer-standard-campaign-motion.png",
+      "sha256": "7ed49349927617dc6c7b62bb763c6103170fdae6f341acbf322c26f570f051f2",
+      "previousSha256": "7465c244572b6a88da74699c1cbb636855b4c4622cae678c15286db76ef1c8bf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+      "sha256": "7ed49349927617dc6c7b62bb763c6103170fdae6f341acbf322c26f570f051f2",
+      "previousSha256": "7465c244572b6a88da74699c1cbb636855b4c4622cae678c15286db76ef1c8bf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-resumed-1-developer-standard-campaign-motion.png",
+      "sha256": "c48d8fca848d6e4f375b6455e3be20984802323237eafa59ff034f14967f0cf8",
+      "previousSha256": "3ea35f5ca570df03435e754fb1e60804c278533658a132d7dff9cf4d96e74117",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-resumed-2-developer-reduced-campaign-motion.png",
+      "sha256": "c48d8fca848d6e4f375b6455e3be20984802323237eafa59ff034f14967f0cf8",
+      "previousSha256": "3ea35f5ca570df03435e754fb1e60804c278533658a132d7dff9cf4d96e74117",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-migration-verified-1-developer-standard-campaign-motion.png",
+      "sha256": "ccff04857a74c34ff2666c24276a6c52b29e81f93674fb2c261181adf45a5b4a",
+      "previousSha256": "9a4a5ab916d76e873b6aba9ab0a9b2d8de7d2831d176e56c55e0555363216f44",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-migration-verified-2-developer-reduced-campaign-motion.png",
+      "sha256": "ccff04857a74c34ff2666c24276a6c52b29e81f93674fb2c261181adf45a5b4a",
+      "previousSha256": "9a4a5ab916d76e873b6aba9ab0a9b2d8de7d2831d176e56c55e0555363216f44",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }
