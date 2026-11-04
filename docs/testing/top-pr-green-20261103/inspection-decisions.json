@@ -34106,5 +34106,59 @@
         "oldSha256": null
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "02789f1fbb2a360ccddbccf6b899e0a75d0074395a83acea6c08d7435ae1cc67",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed complete desktop, large and short returning-entry chart originals. Tania Australis selected/home marker and label, owned orbit/surface facts, Inspect system and all navigation controls visible; full Roster focus outline visible. Existing commander ellipsis and chart composition are not full design acceptance. Large viewed2048x1152 from3840x2160, layout/content scope only. Remaining nine family images reused only by exact prior-approved/reference hashes.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/story.json",
+        "story": "cinematic-returning-entry",
+        "viewport": "desktop",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "sha256": "02789f1fbb2a360ccddbccf6b899e0a75d0074395a83acea6c08d7435ae1cc67",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f57baf11fa42df8a4639773636525199fbef6121df44c29e6a44b06209dfe0c7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed complete desktop, large and short returning-entry chart originals. Tania Australis selected/home marker and label, owned orbit/surface facts, Inspect system and all navigation controls visible; full Roster focus outline visible. Existing commander ellipsis and chart composition are not full design acceptance. Large viewed2048x1152 from3840x2160, layout/content scope only. Remaining nine family images reused only by exact prior-approved/reference hashes.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/cinematic-returning-entry/large/linux-arm64/story.json",
+        "story": "cinematic-returning-entry",
+        "viewport": "large",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "sha256": "f57baf11fa42df8a4639773636525199fbef6121df44c29e6a44b06209dfe0c7",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5089b7ba0c66a1b92760c59bda307d9d395fd86b299bd1d557dbb8cf1f7f8453",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed complete desktop, large and short returning-entry chart originals. Tania Australis selected/home marker and label, owned orbit/surface facts, Inspect system and all navigation controls visible; full Roster focus outline visible. Existing commander ellipsis and chart composition are not full design acceptance. Large viewed2048x1152 from3840x2160, layout/content scope only. Remaining nine family images reused only by exact prior-approved/reference hashes.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/story.json",
+        "story": "cinematic-returning-entry",
+        "viewport": "short",
+        "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/short/linux-arm64/012-continue-campaign-1-returning-envoy.png",
+        "sha256": "5089b7ba0c66a1b92760c59bda307d9d395fd86b299bd1d557dbb8cf1f7f8453",
+        "oldSha256": "54ba969f0967fcef65f9b7c8155643e6aa56df3678e2251afe1684ce720535dd"
+      }
+    ]
   }
 ]

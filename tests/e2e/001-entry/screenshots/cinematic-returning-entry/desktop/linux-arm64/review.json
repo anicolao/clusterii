@@ -1,10 +1,7 @@
 {
-  "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
-    "dirty": false,
-    "spec": "tests/e2e/001-entry/returning.spec.ts",
-    "specSha256": "67e6b4a94a13767b38dbf54638c343e5808b2239fc371edd262ed3da5fb0d372"
-  },
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "cinematic-returning-entry",
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -31,20 +28,35 @@
     "dpr": 1,
     "motion": "reduce"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/story.json",
+  "source": {
+    "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+    "dirty": false,
+    "spec": "tests/e2e/001-entry/returning.spec.ts",
+    "specSha256": "67e6b4a94a13767b38dbf54638c343e5808b2239fc371edd262ed3da5fb0d372"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
   "captures": [
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/010-return-to-entry-1-returning-envoy.png",
-      "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+      "image": "010-return-to-entry-1-returning-envoy.png",
       "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
-      "existing": null
+      "previousSha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
+      "changed": false,
+      "approval": "exact individually inspected hash"
     },
     {
-      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/cinematic-returning-entry/desktop/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
-      "reference": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+      "image": "011-reload-returning-entry-1-returning-envoy.png",
       "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
-      "existing": null
+      "previousSha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-continue-campaign-1-returning-envoy.png",
+      "sha256": "02789f1fbb2a360ccddbccf6b899e0a75d0074395a83acea6c08d7435ae1cc67",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
     }
-  ],
-  "scope": "Only inspected010/011 entry screens.012galaxy not promoted; current-source evidence still required."
+  ]
 }

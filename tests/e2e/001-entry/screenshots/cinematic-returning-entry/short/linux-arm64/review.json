@@ -29,32 +29,32 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
     "dirty": false,
     "spec": "tests/e2e/001-entry/returning.spec.ts",
     "specSha256": "67e6b4a94a13767b38dbf54638c343e5808b2239fc371edd262ed3da5fb0d372"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/story.json",
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/cinematic-returning-entry/short/linux-arm64/story.json",
   "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
   "captures": [
     {
       "image": "010-return-to-entry-1-returning-envoy.png",
       "sha256": "42e4102bf39d61d6db43d5a162a25c9f5e872023d6b5c0374a8fa874d088619f",
-      "previousSha256": null,
-      "changed": true,
+      "previousSha256": "42e4102bf39d61d6db43d5a162a25c9f5e872023d6b5c0374a8fa874d088619f",
+      "changed": false,
       "approval": "exact individually inspected hash"
     },
     {
       "image": "011-reload-returning-entry-1-returning-envoy.png",
       "sha256": "42e4102bf39d61d6db43d5a162a25c9f5e872023d6b5c0374a8fa874d088619f",
-      "previousSha256": null,
-      "changed": true,
+      "previousSha256": "42e4102bf39d61d6db43d5a162a25c9f5e872023d6b5c0374a8fa874d088619f",
+      "changed": false,
       "approval": "exact individually inspected hash"
     },
     {
       "image": "012-continue-campaign-1-returning-envoy.png",
-      "sha256": "54ba969f0967fcef65f9b7c8155643e6aa56df3678e2251afe1684ce720535dd",
-      "previousSha256": null,
+      "sha256": "5089b7ba0c66a1b92760c59bda307d9d395fd86b299bd1d557dbb8cf1f7f8453",
+      "previousSha256": "54ba969f0967fcef65f9b7c8155643e6aa56df3678e2251afe1684ce720535dd",
       "changed": true,
       "approval": "exact individually inspected hash"
     }
