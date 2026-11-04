@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/HISTORY_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "history-recovery-lab",
   "renderer": {
@@ -27,5 +27,99 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/history-lab.story.spec.ts",
+    "specSha256": "bf77182039838400bcb62ab688d49c86b462ddc46ef39af23374d72b942e4766"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/history-recovery-lab/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-loading-1-developer-standard-history-presentation.png",
+      "sha256": "18989f7568518e45c6b7c171e6c3f178894c0cbf898c7d7269058bbcbea3f0fe",
+      "previousSha256": "9931e919cc3ee024d8c168747efc12b0bcae54f219b203efdf0c3323e808e3c5",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-loading-2-developer-reduced-history-presentation.png",
+      "sha256": "18989f7568518e45c6b7c171e6c3f178894c0cbf898c7d7269058bbcbea3f0fe",
+      "previousSha256": "9931e919cc3ee024d8c168747efc12b0bcae54f219b203efdf0c3323e808e3c5",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-1-developer-standard-history-presentation.png",
+      "sha256": "dc70ca26e88478d25739ca2ce35c6062a7a4f327728cc6282ee45b249277ee59",
+      "previousSha256": "e1866d79cc786d29cc2cb0a0d9325056cfa243feb0def4a76d308f1118654036",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-2-developer-reduced-history-presentation.png",
+      "sha256": "dc70ca26e88478d25739ca2ce35c6062a7a4f327728cc6282ee45b249277ee59",
+      "previousSha256": "e1866d79cc786d29cc2cb0a0d9325056cfa243feb0def4a76d308f1118654036",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-retry-1-developer-standard-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+      "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-retry-2-developer-reduced-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+      "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-recovered-1-developer-standard-history-presentation.png",
+      "sha256": "6bff640afacf80e708b654477fe494d12275dcaf56c88749ab4aacf8f0f188dd",
+      "previousSha256": "b155b5fab4f85be36d166c1ad2e87bb6c0c3023c2d0f8c33a496591dfdc2c074",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-recovered-2-developer-reduced-history-presentation.png",
+      "sha256": "6bff640afacf80e708b654477fe494d12275dcaf56c88749ab4aacf8f0f188dd",
+      "previousSha256": "b155b5fab4f85be36d166c1ad2e87bb6c0c3023c2d0f8c33a496591dfdc2c074",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-read-records-1-developer-standard-history-presentation.png",
+      "sha256": "60b6ef12fd1cfaeb9f69ab6bb0cda477ac339161fabd18e76dee4f765994aae9",
+      "previousSha256": "9bc3a9d19ba98e6adc27b64133f693235faa53e2533480e5d422f7c16bf1ea72",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-read-records-2-developer-reduced-history-presentation.png",
+      "sha256": "60b6ef12fd1cfaeb9f69ab6bb0cda477ac339161fabd18e76dee4f765994aae9",
+      "previousSha256": "9bc3a9d19ba98e6adc27b64133f693235faa53e2533480e5d422f7c16bf1ea72",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-latest-1-developer-standard-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+      "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-latest-2-developer-reduced-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+      "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }
