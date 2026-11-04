@@ -763,3 +763,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect completed acknowledgement candidates and reproduce clipped short commitment focus before approving research references.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reuse guarded complete research Linux executor for corrected reading position, bounded retention and unchanged production.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete pinned Linux research reading family after measured helper-scroll repair and four local passes.
