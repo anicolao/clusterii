@@ -1,0 +1,1648 @@
+{
+  "run": 41932169199,
+  "target": "6732aa093b08f0778dbcf334dc490b1b4474299e",
+  "request": "57b802fb298476fbdc1f3675933c6b8326234193",
+  "archives": [
+    {
+      "artifact": {
+        "id": 13373585271,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM3MzU4NTI3MQ==",
+        "name": "top-pr140-contact-qualifier-candidates-desktop-57b802fb298476fbdc1f3675933c6b8326234193",
+        "size_in_bytes": 24478207,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13373585271",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13373585271/zip",
+        "expired": false,
+        "digest": "sha256:c2ac9333b0dc0a52203ef54d1b08ae47f2c97850a38b1e19f0aadf5e628492bf",
+        "created_at": "2026-11-04T23:26:29Z",
+        "updated_at": "2026-11-04T23:26:29Z",
+        "expires_at": "2026-11-18T23:26:27Z",
+        "workflow_run": {
+          "id": 41932169199,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-contact-qualifier-20261104",
+          "head_sha": "57b802fb298476fbdc1f3675933c6b8326234193"
+        }
+      },
+      "archiveSha256": "c2ac9333b0dc0a52203ef54d1b08ae47f2c97850a38b1e19f0aadf5e628492bf",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/desktop/contacts-qualifier/firestore-debug.log",
+          "size": 15926,
+          "crc32": "24a86678",
+          "sha256": "c27e1e3e3cb3e9e836d9006cbfce3788477a08aa2a8d71f0cde4c721e0da3564"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/contacts-qualifier/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/contacts-qualifier/result.json",
+          "size": 170,
+          "crc32": "5b1d51d0",
+          "sha256": "b206df3b41b395cbd0ca794e616e5770a27fd04ffc25e764b5166ff8654f8f3f"
+        },
+        {
+          "path": "test-results/stories/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-desktop/attachments/Illustrated-story-c2845b4b95f80c2c2e96c6a77500c30826e569b0.md",
+          "size": 18310,
+          "crc32": "a6ea0523",
+          "sha256": "061e6f0bd39cff475cfa8481735ae3b0d181ee01cb5c4c239df67b4a0e320c8b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "size": 1443120,
+          "crc32": "ee04f3fe",
+          "sha256": "ff1cc36b2c579bbb88e4a9b2eb2fb46ac24487a7e76725af5512b63797929a4e"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "size": 880149,
+          "crc32": "d0896fcc",
+          "sha256": "31bfe4e13340abdbd53ef337eefe6d64822366de754ae9c770f2bd8729efe039"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "size": 1454758,
+          "crc32": "0a6768cd",
+          "sha256": "6355e6e3ac094a6c0e1e36e27024585442320facb7b4e300df8224cf8454d993"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "size": 884099,
+          "crc32": "218a6b8b",
+          "sha256": "aa756af7e55dc8a4fdc9e1c4cf75e960efcda947e0f124062e7c0ca0dd0efc50"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "size": 1451335,
+          "crc32": "954e3b8f",
+          "sha256": "241af3c180938e08e659b08673d8d787721aa6cc43bd97714a55376c59451eff"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+          "size": 714928,
+          "crc32": "bae2c0de",
+          "sha256": "f0f10b74a67f8975cb601dd6a9d13346e43cd40ddb528a35a897a22887e87dcb"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "size": 1451335,
+          "crc32": "954e3b8f",
+          "sha256": "241af3c180938e08e659b08673d8d787721aa6cc43bd97714a55376c59451eff"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "size": 712947,
+          "crc32": "1bcbcf54",
+          "sha256": "0f1fb7224e6e1217aa5c177920f58203a84b28dd7adc069c1c7fbfd31678d68c"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "size": 1451335,
+          "crc32": "954e3b8f",
+          "sha256": "241af3c180938e08e659b08673d8d787721aa6cc43bd97714a55376c59451eff"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "size": 714928,
+          "crc32": "bae2c0de",
+          "sha256": "f0f10b74a67f8975cb601dd6a9d13346e43cd40ddb528a35a897a22887e87dcb"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 1451335,
+          "crc32": "954e3b8f",
+          "sha256": "241af3c180938e08e659b08673d8d787721aa6cc43bd97714a55376c59451eff"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "size": 714928,
+          "crc32": "bae2c0de",
+          "sha256": "f0f10b74a67f8975cb601dd6a9d13346e43cd40ddb528a35a897a22887e87dcb"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "size": 1450860,
+          "crc32": "8e6df279",
+          "sha256": "5e939a17f9022d60b2572da454f7ca2990ceb289d31e43a65265910ec405e4e2"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "size": 709288,
+          "crc32": "708fae75",
+          "sha256": "525664628ee74b8f1c3624b1bcf861474b134f5f994bc688e38cdd622fd39b20"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "size": 1450860,
+          "crc32": "8e6df279",
+          "sha256": "5e939a17f9022d60b2572da454f7ca2990ceb289d31e43a65265910ec405e4e2"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "size": 711875,
+          "crc32": "53890029",
+          "sha256": "51688cf027655c22b9ffe3f3dc39bd15415f331af3e3832cf59f8c67c90b2768"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 1450860,
+          "crc32": "8e6df279",
+          "sha256": "5e939a17f9022d60b2572da454f7ca2990ceb289d31e43a65265910ec405e4e2"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "size": 711875,
+          "crc32": "53890029",
+          "sha256": "51688cf027655c22b9ffe3f3dc39bd15415f331af3e3832cf59f8c67c90b2768"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "size": 1448575,
+          "crc32": "212518c1",
+          "sha256": "02e17be3723f7a03839c8c81cb7a4aafa3cdad9c467436b4f170e76f2184a2bf"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "size": 709288,
+          "crc32": "708fae75",
+          "sha256": "525664628ee74b8f1c3624b1bcf861474b134f5f994bc688e38cdd622fd39b20"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "size": 1261115,
+          "crc32": "65b8477c",
+          "sha256": "706affc21f81e39f04f37f0844acadeb7b6273623663ae266077fc4d97530e29"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "373b24ee",
+          "sha256": "8bc2d362c3e1578f2a82679ea9ba3dfd5b9f07cc6acfba051981ee05c716abd6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "size": 1260990,
+          "crc32": "e6212015",
+          "sha256": "bfffcbb3bf051b83adaacbc67e0797946930abd1931f98fb3e0ad6772d69955b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/README.md",
+          "size": 18310,
+          "crc32": "a6ea0523",
+          "sha256": "061e6f0bd39cff475cfa8481735ae3b0d181ee01cb5c4c239df67b4a0e320c8b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/desktop/linux-arm64/story.json",
+          "size": 20526,
+          "crc32": "cca098e6",
+          "sha256": "a815c33045899fc1b288a3a8b99f4ec477258a015f245b144cfd06aa6d3e9822"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "cdece507",
+          "sha256": "cebf4baaec3f668142ed1d2a2997a414cccfac46b0acb4e41559b4d23c13f37d"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "5c289f33",
+          "sha256": "dc618506b03fb94156698bc7517d3603d18193746fa588964b1244331ead6241"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2725,
+          "crc32": "fa6909d6",
+          "sha256": "d56d7a4e88dd9091c13d12be4dff55faec068cafd598a5105345b63e1e6d4966"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "a22957a8",
+          "sha256": "b089c2be42088b9d44788066e9b078065a4295ad1843dcea182d8b9e49d8c153"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "635cb8c3",
+          "sha256": "4366948e3d87c25f3c5e3522d8b1c196764970d61e817c2026bd1d81296b3526"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "9a9be921",
+          "sha256": "d520dbd0e991aea4e93d821a3ca0ce3e53d94772b4887c77d64f2e836e42850b"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-desktop.json",
+          "size": 4804,
+          "crc32": "a921f651",
+          "sha256": "b043944c2ca27299342d4ee9c0a9d355300928436b8fecacb69e4a3e9d54aac7"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-desktop.json",
+          "size": 365,
+          "crc32": "221525b1",
+          "sha256": "07d201e9e1edeac4d32ebffe1b42bbb0edf4f998428e51e1b91ad7caa205d647"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1289,
+          "crc32": "2086fe5a",
+          "sha256": "b8d41d647dca5d1dbea472f15c21e067dbd5a45914ea5e14fcd12ab7ace00c7e"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8505,
+          "crc32": "f5ec335e",
+          "sha256": "5dd95e2250a8aa95892c0fcff0f2acd7a67aa115f3eb53e4430c170f22f6e3ed"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13372213352,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM3MjIxMzM1Mg==",
+        "name": "top-pr140-contact-qualifier-candidates-large-57b802fb298476fbdc1f3675933c6b8326234193",
+        "size_in_bytes": 104708630,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13372213352",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13372213352/zip",
+        "expired": false,
+        "digest": "sha256:d1f5a83306ca06560dcb5be1537461029addc11d4b88651a88d4450676e0cf13",
+        "created_at": "2026-11-04T23:26:55Z",
+        "updated_at": "2026-11-04T23:26:55Z",
+        "expires_at": "2026-11-18T23:26:51Z",
+        "workflow_run": {
+          "id": 41932169199,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-contact-qualifier-20261104",
+          "head_sha": "57b802fb298476fbdc1f3675933c6b8326234193"
+        }
+      },
+      "archiveSha256": "d1f5a83306ca06560dcb5be1537461029addc11d4b88651a88d4450676e0cf13",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/large/contacts-qualifier/firestore-debug.log",
+          "size": 17412,
+          "crc32": "fd6ac10d",
+          "sha256": "56081825cd1034801d0a68a065b1e1326da3e32e4f25e5e515206e6af697f1b6"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/contacts-qualifier/result.json",
+          "size": 168,
+          "crc32": "06581ecd",
+          "sha256": "145c97187f8a52b9c42dcdd8bb5a967117027f15fb730af726d1003214b0d4e4"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/contacts-qualifier/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-large/attachments/Illustrated-story-85c57a6a58f4008aee278abe56f81724bc6dfbf3.md",
+          "size": 18308,
+          "crc32": "d4f57531",
+          "sha256": "60a7b603ca755f9d684b18161f6b319efc59af1117ac5f155c41c4e7f97f9983"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "size": 6556179,
+          "crc32": "fa3ad32f",
+          "sha256": "2e8cd95478bf737ef26737c079f9e66525886fc8e737c092520eabe7f89180f1"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "size": 3652313,
+          "crc32": "e116f494",
+          "sha256": "c849647acd7296370b94da87a8a856fe3c4b7e8a77576d446c63c3576e275f3d"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "size": 6567631,
+          "crc32": "378d5e60",
+          "sha256": "4ec58f74e05a892eae3ccbf5a1fc26833c55a2051ba540481b687f6e4eb0ece7"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "size": 3656728,
+          "crc32": "cb297c8e",
+          "sha256": "cb42d5a2b56b5bffb5e24f0b9139a4c5c57b081d96e14f40e7d3cbd99215f6fe"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "size": 6568575,
+          "crc32": "a5cd2737",
+          "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+          "size": 2538578,
+          "crc32": "b6d1e6a1",
+          "sha256": "d56d8a396e0ab4b1e0d086d4dec6b34e4ef9fa6692dfe2d2a9d3762d8f599d25"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "size": 6568575,
+          "crc32": "a5cd2737",
+          "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "size": 2535956,
+          "crc32": "3ed4c7ad",
+          "sha256": "d1cdb0d20f4430af6ed2bc3a7a178a71c3583e4d0d540d30f64b545bd2902e16"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "size": 6568575,
+          "crc32": "a5cd2737",
+          "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "size": 2538578,
+          "crc32": "b6d1e6a1",
+          "sha256": "d56d8a396e0ab4b1e0d086d4dec6b34e4ef9fa6692dfe2d2a9d3762d8f599d25"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 6568575,
+          "crc32": "a5cd2737",
+          "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "size": 2538578,
+          "crc32": "b6d1e6a1",
+          "sha256": "d56d8a396e0ab4b1e0d086d4dec6b34e4ef9fa6692dfe2d2a9d3762d8f599d25"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "size": 6568164,
+          "crc32": "314ccb3f",
+          "sha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "size": 2532569,
+          "crc32": "b2941cef",
+          "sha256": "0be014fd3af12c6cc58941c62e1480ff6688293a32abd74994655ef0dff664cb"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "size": 6568164,
+          "crc32": "314ccb3f",
+          "sha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "size": 2535745,
+          "crc32": "8bec23fa",
+          "sha256": "c15ad928510e77c7d8d42c85453d3ed8859f690ea3bbf773adea927a0a0951c3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 6568164,
+          "crc32": "314ccb3f",
+          "sha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "size": 2535745,
+          "crc32": "8bec23fa",
+          "sha256": "c15ad928510e77c7d8d42c85453d3ed8859f690ea3bbf773adea927a0a0951c3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "size": 6566176,
+          "crc32": "fe423050",
+          "sha256": "b22f3df7b519ab630f0677ae12927681b76c2bf8f17eb1f59d41abf804dd97e4"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "size": 2532569,
+          "crc32": "b2941cef",
+          "sha256": "0be014fd3af12c6cc58941c62e1480ff6688293a32abd74994655ef0dff664cb"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "size": 5926711,
+          "crc32": "70e11e0e",
+          "sha256": "183f65d35856fb9ab8b657470dc1ebf27ce976ffac9e8b00506c3a9ec1ef6bc5"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "69e099ed",
+          "sha256": "c58acf9a78bdadd14266c0e611c38e15b8c952bd5b7180d9fe8b7a26af18a6cc"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "size": 5926610,
+          "crc32": "2d1dac70",
+          "sha256": "48958d52ed7d8451767e37d9e94137568aded28f8a1830cad88fd9b1911850ca"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/README.md",
+          "size": 18308,
+          "crc32": "d4f57531",
+          "sha256": "60a7b603ca755f9d684b18161f6b319efc59af1117ac5f155c41c4e7f97f9983"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/large/linux-arm64/story.json",
+          "size": 20524,
+          "crc32": "d0605dd0",
+          "sha256": "a923c74c0ffe13401099a0d13fc655f4ccbdcf3ba50a59fa8dacb0c61b3e93fe"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "f228b3d0",
+          "sha256": "4e2e02a735037cfb67f727c786f9390213d58bef3f21eeb3d97a870b01220893"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "39c17126",
+          "sha256": "822010431ae85716df2a387e61c99e205811242f7b594e2edfecd238575c5905"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 3270,
+          "crc32": "0fea9c10",
+          "sha256": "bd27260e51ac74ca30444a972cc905caa3fc8254661375008b436c676e16df8c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "834aa013",
+          "sha256": "deb91b48951f206c2aae1f305032c78e32bc552d85bf72bf5e80c3679c112ce2"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "1f777f7c",
+          "sha256": "a1ab74b805aa642af7b76b49d928b57b20f6267a7aac3677a0ab30c2173f04ce"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "64614763",
+          "sha256": "7657f812528513aadd447d9ed8ccfe51e755053a3c715502651a44a720114504"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-large.json",
+          "size": 4788,
+          "crc32": "17d527be",
+          "sha256": "f3fc6e9008b0a185da24f3a49ce3da40093e892a89d298930b5c8a2c54cad096"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-large.json",
+          "size": 363,
+          "crc32": "81c4ba4d",
+          "sha256": "d296d99eaf4f995e458abf97d2bb73faf97c5109201e3431ff40e65ab20f8683"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1289,
+          "crc32": "2086fe5a",
+          "sha256": "b8d41d647dca5d1dbea472f15c21e067dbd5a45914ea5e14fcd12ab7ace00c7e"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8507,
+          "crc32": "f05b718a",
+          "sha256": "0dcdca106062591d2fa71d8db10bad3d3a4cb7f106b8a4f0c7ce2cdc3b5b0836"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13373575232,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM3MzU3NTIzMg==",
+        "name": "top-pr140-contact-qualifier-candidates-phone-57b802fb298476fbdc1f3675933c6b8326234193",
+        "size_in_bytes": 3643834,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13373575232",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13373575232/zip",
+        "expired": false,
+        "digest": "sha256:acdd53302fd05a6d449cc265af8451c0d3013eb741e5022454f4a75c96841f8e",
+        "created_at": "2026-11-04T23:26:00Z",
+        "updated_at": "2026-11-04T23:26:00Z",
+        "expires_at": "2026-11-18T23:25:59Z",
+        "workflow_run": {
+          "id": 41932169199,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-contact-qualifier-20261104",
+          "head_sha": "57b802fb298476fbdc1f3675933c6b8326234193"
+        }
+      },
+      "archiveSha256": "acdd53302fd05a6d449cc265af8451c0d3013eb741e5022454f4a75c96841f8e",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/phone/contacts-qualifier/firestore-debug.log",
+          "size": 16750,
+          "crc32": "50964dde",
+          "sha256": "5e2448dbf5ea26424895bea90f4a6e2657b3d9d8cff3177d16ccfd36cc743257"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/contacts-qualifier/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/contacts-qualifier/result.json",
+          "size": 168,
+          "crc32": "e89507c4",
+          "sha256": "63f03d9dce5955aeabf5d43685ad4d0c1ecb2ab149d756ad1277a60308cf9146"
+        },
+        {
+          "path": "test-results/stories/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-phone/attachments/Illustrated-story-e639e927bcb076a0073b7915bccac43de1098fcb.md",
+          "size": 18308,
+          "crc32": "03ac3de8",
+          "sha256": "ff78b909ff37288a3c0c982111994544b2f50e7be94bd7e142d39c432d4d9a55"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "size": 155052,
+          "crc32": "b2df677b",
+          "sha256": "d248cd5eb3309917e09275a06db5272ccda7d7419b0cf25e99e6ef11379df618"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "size": 111361,
+          "crc32": "26b0918a",
+          "sha256": "88275e4b392824c403de033f3100bc65c8085652ea4db9ab53e5b539046ff4e6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "size": 162306,
+          "crc32": "fcb9dc16",
+          "sha256": "5f9d6526cf925f4cc04e1d501c09895466d825a67d260afa1483e79ca057402b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "size": 115339,
+          "crc32": "b293bee7",
+          "sha256": "2919bfa6262985247add8e2b79da28b9655c64b0db8987d65b36c7911e72d22e"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+          "size": 180025,
+          "crc32": "08b38635",
+          "sha256": "51ed11ac9456b1770af699f2bb1c44bcb0d3c55f25b06626864e73fb9f5a0070"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "size": 162247,
+          "crc32": "139f0e1c",
+          "sha256": "cf0826a2c30809bf9cbd14f3cf9d7ab11d97ab7504609bfec6e6d1c6a2fb6597"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "size": 161459,
+          "crc32": "81a24ab4",
+          "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "size": 161459,
+          "crc32": "81a24ab4",
+          "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "size": 179589,
+          "crc32": "ca2588b0",
+          "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "size": 179261,
+          "crc32": "9ef6aeb7",
+          "sha256": "75520907faa700837d3dc47b1d27274be8f6b9219442053bbe77ac4ae9e3a62e"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 157024,
+          "crc32": "10598ee3",
+          "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "size": 126507,
+          "crc32": "b5a6b34a",
+          "sha256": "cffa710f24784ba4cca1d9fc8291c39cdf6838722af393a5e319846995294b83"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "size": 157990,
+          "crc32": "e2d7b620",
+          "sha256": "b2384915dfb27576e3b39bfa04f1a304eccbc71d5a59470b2a8c9615165c2b85"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "size": 179589,
+          "crc32": "ca2588b0",
+          "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "size": 255620,
+          "crc32": "f518e350",
+          "sha256": "1e80165b82e9c788bc8bb1c55ab67401f01c1de09d71e2028fa4cf5edf3defd1"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+          "size": 2067,
+          "crc32": "d74b347e",
+          "sha256": "40aff2383cc83d766979d18af2ba8256ffef98fa7b104298231a752baedbef03"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "size": 258641,
+          "crc32": "74a0ebfb",
+          "sha256": "dbf281f7a5b9e85ac08d2c2b5b5313451bae8783b3f4f8187b4b8f5050fdb3ad"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/README.md",
+          "size": 18308,
+          "crc32": "03ac3de8",
+          "sha256": "ff78b909ff37288a3c0c982111994544b2f50e7be94bd7e142d39c432d4d9a55"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+          "size": 20522,
+          "crc32": "002b6fed",
+          "sha256": "0972404713b2058015751503404974fb8bc3b26daa82d0f59cde40543a9a38a1"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "f48cdb49",
+          "sha256": "daa737ae0764e1e0e2edd517a405da72cd28a47a47fb7485f2b66295776c3839"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "caaf2cb9",
+          "sha256": "f03fbc8b18bb94a1863fd9449e34ca000d6b295d18410e58dd1df2b103bb7cf5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2723,
+          "crc32": "fe37de23",
+          "sha256": "2971b20c1fd1bc2fadd102d34a73dff2b71eb819a8badc1d353d1e7f578c725c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "53f22272",
+          "sha256": "e9c937356edddcdd6308602540cb681da35a8a5046468f5f78cab6a5b5db109c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "75d262a6",
+          "sha256": "3315403374d6e51c87d0a28b6d5e2041b88643a1ce6fda15ebb68049b003c2c5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "3448382e",
+          "sha256": "1976e62b6c27c7a7b2869c638b698b54eb308e1d06a8f128ddd86053e90c3998"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-phone.json",
+          "size": 4798,
+          "crc32": "68233369",
+          "sha256": "e3f1aa5769cef817142d4d43b461952466ae1676a6372d47f54f1fa429b3a3a7"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-phone.json",
+          "size": 363,
+          "crc32": "1148fa6e",
+          "sha256": "664d6de9e4cfd6ca649135d1f1587b526a26052114033f3d11f034dab5d63fb5"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1289,
+          "crc32": "2086fe5a",
+          "sha256": "b8d41d647dca5d1dbea472f15c21e067dbd5a45914ea5e14fcd12ab7ace00c7e"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8505,
+          "crc32": "411ed859",
+          "sha256": "d36db0318048096183c3e8cf8298840725290a0211bb0426607ab94c1ac70ac9"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13373415518,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM3MzQxNTUxOA==",
+        "name": "top-pr140-contact-qualifier-candidates-short-57b802fb298476fbdc1f3675933c6b8326234193",
+        "size_in_bytes": 16408329,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13373415518",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13373415518/zip",
+        "expired": false,
+        "digest": "sha256:1fd46a2b99f9bebc0abb91944619453a558a349970cf052319dbd8ccc87f4f8a",
+        "created_at": "2026-11-04T23:25:51Z",
+        "updated_at": "2026-11-04T23:25:51Z",
+        "expires_at": "2026-11-18T23:25:49Z",
+        "workflow_run": {
+          "id": 41932169199,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-contact-qualifier-20261104",
+          "head_sha": "57b802fb298476fbdc1f3675933c6b8326234193"
+        }
+      },
+      "archiveSha256": "1fd46a2b99f9bebc0abb91944619453a558a349970cf052319dbd8ccc87f4f8a",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/short/contacts-qualifier/firestore-debug.log",
+          "size": 15928,
+          "crc32": "39d476e3",
+          "sha256": "c0b7505c5545d1858c8184f6e6d07ddda15ec707aaffcf93fef222b449d21f42"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/contacts-qualifier/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/contacts-qualifier/result.json",
+          "size": 168,
+          "crc32": "448ffb5f",
+          "sha256": "112494d329dc4c6fe16f6aa1363e073374677922d420a9cecb802c4defd8df32"
+        },
+        {
+          "path": "test-results/stories/e2e-012-fleet-contacts-con-141ca-private-facts-across-reload-short/attachments/Illustrated-story-3f5d962a78384f25167b77e127558a8d3903eed0.md",
+          "size": 18308,
+          "crc32": "447d5e20",
+          "sha256": "7c420710b06e919e4f8ca1313a8465325700d666bb82ffdbc83045caf8ebc9da"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "size": 948627,
+          "crc32": "f41ed576",
+          "sha256": "37bec256c59180fabbfc0b0af39b4634d6e0f055a369a026ee98f5c361bd8785"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "size": 554261,
+          "crc32": "cd224413",
+          "sha256": "47747247b4cc5365100d23cf372c4dee18261dc6d0366f46db5f257a5870ea7b"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "size": 960334,
+          "crc32": "c9209c31",
+          "sha256": "0b7f05d8f38a503708137bc11f0ad8b6b36fcb4b97a2639333b9b2197670e8d9"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-2-contact-watcher.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "size": 558525,
+          "crc32": "b92d4352",
+          "sha256": "bdbd45f21cf2156b0dc43c683fa77d72ffc6afc903f91cc46a0783b34f858c8d"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "size": 953954,
+          "crc32": "79808d52",
+          "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-2-contact-watcher.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+          "size": 548596,
+          "crc32": "97ac624c",
+          "sha256": "8e5fa214b6cbca2f79c729e5c736c231f83a2345401e6b9d59c56744fe505e74"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "size": 953954,
+          "crc32": "79808d52",
+          "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "size": 522525,
+          "crc32": "c7dfe8b1",
+          "sha256": "02a6e2d74cab14113fd21f98764a382761e60d0b289986b64823cb9f7c313a03"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "size": 953954,
+          "crc32": "79808d52",
+          "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "size": 522797,
+          "crc32": "133dac27",
+          "sha256": "fcc01044cd3f2a9763aedf3c00931b9ce275847d415d37493d4dbb90cf29a413"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 953954,
+          "crc32": "79808d52",
+          "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "size": 522797,
+          "crc32": "133dac27",
+          "sha256": "fcc01044cd3f2a9763aedf3c00931b9ce275847d415d37493d4dbb90cf29a413"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "size": 953777,
+          "crc32": "b41c607d",
+          "sha256": "7b57ad04ecfb1ea69575d254f1980ce521ec8f822b38f8ed06a237f3dbe02dcd"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "size": 545819,
+          "crc32": "faf170d2",
+          "sha256": "a6b1e337428e3fed3e3b2d8d812346a73df4cb8693a9ed0205f145c4755145b1"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "size": 953777,
+          "crc32": "b41c607d",
+          "sha256": "7b57ad04ecfb1ea69575d254f1980ce521ec8f822b38f8ed06a237f3dbe02dcd"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "size": 548457,
+          "crc32": "16b51b60",
+          "sha256": "7b3a18a9cf6d0b9d3ab50107e47cc6d5ccfdf2cb2ff8870598d10d7d3a12a929"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "size": 953777,
+          "crc32": "b41c607d",
+          "sha256": "7b57ad04ecfb1ea69575d254f1980ce521ec8f822b38f8ed06a237f3dbe02dcd"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "size": 548410,
+          "crc32": "43dfe66f",
+          "sha256": "e5fc59fe31ac6107901a1100abc0fe3ac14d4d9c7b164b661711e07b39ab9fe2"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "size": 955412,
+          "crc32": "ec446585",
+          "sha256": "dfc89f82c5f39ef09387897ea3b98ab475533fa2f95c141ff026fd8b689f1ac5"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-2-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "size": 545819,
+          "crc32": "faf170d2",
+          "sha256": "a6b1e337428e3fed3e3b2d8d812346a73df4cb8693a9ed0205f145c4755145b1"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "size": 720168,
+          "crc32": "1128a1f7",
+          "sha256": "a1d942218638e46e4c55d24107123b8695b2c5bafad6059fc61f5e8daa9e78c2"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/024-review-galaxy-overview-1-contact-watcher.layout.json",
+          "size": 2068,
+          "crc32": "e05862b6",
+          "sha256": "70bfce32e814b8e380c2c6f0720b44180af044821fc6e800ad49d97950758ed7"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "size": 719857,
+          "crc32": "01d31592",
+          "sha256": "eb1a9006e32548d234a30e4a56dfbb071a4dc26b6e207f201df5d8cbb7c9bcb3"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/README.md",
+          "size": 18308,
+          "crc32": "447d5e20",
+          "sha256": "7c420710b06e919e4f8ca1313a8465325700d666bb82ffdbc83045caf8ebc9da"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/live-fleet-contacts/short/linux-arm64/story.json",
+          "size": 20523,
+          "crc32": "6b3db0b6",
+          "sha256": "e40f7eb04991d3a40fa3c6a2ab195d10ecb9cfe80c475a375ab4d5e7709def1c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "8b7e9484",
+          "sha256": "e1c9149731018baef5e85a8888e7e241d5cb5b205ab9baad47e7eb05809d69e3"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "022f7372",
+          "sha256": "56c0c204cddee4340dae6ae8d0dfc16f945ab99f56d521bb4d4423de2e58fe9e"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2724,
+          "crc32": "0a48b606",
+          "sha256": "18d727935d2396d898891fb6826a203217c2bd90af6972f1dabc981fe47e97ac"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "6d73df9f",
+          "sha256": "1c054dfcd396f75464f4249ea575cc115a39f206888682f5e456b5d1ec8eef6f"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "5e8fb502",
+          "sha256": "c885b56923a614d81766a0061393b0d260cb027c0c554e4458ef1d71bbee8eb4"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "d1a20b13",
+          "sha256": "42479cedbe97445a5cd271f94437e445f00ddc0b1f52f1cb5e7046d78e719eda"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-short.json",
+          "size": 4788,
+          "crc32": "c1d6e15d",
+          "sha256": "b1df3f4286537b63db0b5aaedc191e89aae9bc8ca6d646133deb404c3cae8855"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-short.json",
+          "size": 363,
+          "crc32": "5c88aac7",
+          "sha256": "65af783f76dfc025cd907668832821d3d72af38b6dbbd6248094b00d00feaf5d"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1289,
+          "crc32": "2086fe5a",
+          "sha256": "b8d41d647dca5d1dbea472f15c21e067dbd5a45914ea5e14fcd12ab7ace00c7e"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8506,
+          "crc32": "e2bedc14",
+          "sha256": "6f915d8f3e7357fe07076cea525805c4f7f7b2c4f442f40577b416993adfcd6d"
+        }
+      ]
+    }
+  ],
+  "storagePolicy": "Each ZIP downloaded once and verified in memory; only useful PNG/JSON/MD originals retained locally. No duplicate ZIP retained. Remote retention14days; API expiry and all entry hashes recorded."
+}

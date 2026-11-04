@@ -1,0 +1,195 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-fleet-contacts",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "57b802fb298476fbdc1f3675933c6b8326234193",
+    "dirty": false,
+    "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+    "specSha256": "eac7eaf98af6b2dc8814fd0a3084b646dfb60e113c0476482f8b29e1d808b4ec"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-contact-qualifier-41932169199/short/test-results/stories/live-fleet-contacts/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+      "sha256": "37bec256c59180fabbfc0b0af39b4634d6e0f055a369a026ee98f5c361bd8785",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-inspect-empty-contact-history-2-contact-watcher.png",
+      "sha256": "47747247b4cc5365100d23cf372c4dee18261dc6d0366f46db5f257a5870ea7b",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-commit-real-fleet-1-fleet-pathfinder.png",
+      "sha256": "0b7f05d8f38a503708137bc11f0ad8b6b36fcb4b97a2639333b9b2197670e8d9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-commit-real-fleet-2-contact-watcher.png",
+      "sha256": "bdbd45f21cf2156b0dc43c683fa77d72ffc6afc903f91cc46a0783b34f858c8d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-read-current-contact-1-fleet-pathfinder.png",
+      "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-read-current-contact-2-contact-watcher.png",
+      "sha256": "8e5fa214b6cbca2f79c729e5c736c231f83a2345401e6b9d59c56744fe505e74",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-select-and-resize-contact-1-fleet-pathfinder.png",
+      "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-select-and-resize-contact-2-contact-watcher.png",
+      "sha256": "02a6e2d74cab14113fd21f98764a382761e60d0b289986b64823cb9f7c313a03",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-read-current-coordinates-age-1-fleet-pathfinder.png",
+      "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-read-current-coordinates-age-2-contact-watcher.png",
+      "sha256": "fcc01044cd3f2a9763aedf3c00931b9ce275847d415d37493d4dbb90cf29a413",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+      "sha256": "db0a5ad8f2f59d7c3845dd9b96a43a609a4b6829fdcce6332e3b549a9a99b71a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-read-current-coordinates-facts-2-contact-watcher.png",
+      "sha256": "fcc01044cd3f2a9763aedf3c00931b9ce275847d415d37493d4dbb90cf29a413",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-last-seen-record-1-fleet-pathfinder.png",
+      "sha256": "7b57ad04ecfb1ea69575d254f1980ce521ec8f822b38f8ed06a237f3dbe02dcd",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-last-seen-record-2-contact-watcher.png",
+      "sha256": "a6b1e337428e3fed3e3b2d8d812346a73df4cb8693a9ed0205f145c4755145b1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+      "sha256": "7b57ad04ecfb1ea69575d254f1980ce521ec8f822b38f8ed06a237f3dbe02dcd",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-read-retained-coordinates-age-2-contact-watcher.png",
+      "sha256": "7b3a18a9cf6d0b9d3ab50107e47cc6d5ccfdf2cb2ff8870598d10d7d3a12a929",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+      "sha256": "7b57ad04ecfb1ea69575d254f1980ce521ec8f822b38f8ed06a237f3dbe02dcd",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-read-retained-coordinates-facts-2-contact-watcher.png",
+      "sha256": "e5fc59fe31ac6107901a1100abc0fe3ac14d4d9c7b164b661711e07b39ab9fe2",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-reload-private-contact-history-1-fleet-pathfinder.png",
+      "sha256": "dfc89f82c5f39ef09387897ea3b98ab475533fa2f95c141ff026fd8b689f1ac5",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-reload-private-contact-history-2-contact-watcher.png",
+      "sha256": "a6b1e337428e3fed3e3b2d8d812346a73df4cb8693a9ed0205f145c4755145b1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "023-return-to-chart-by-keyboard-1-contact-watcher.png",
+      "sha256": "a1d942218638e46e4c55d24107123b8695b2c5bafad6059fc61f5e8daa9e78c2",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "024-review-galaxy-overview-1-contact-watcher.png",
+      "sha256": "eb1a9006e32548d234a30e4a56dfbb071a4dc26b6e207f201df5d8cbb7c9bcb3",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}
