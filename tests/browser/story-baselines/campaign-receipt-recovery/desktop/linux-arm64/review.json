@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/RECEIPT_RECOVERY_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "campaign-receipt-recovery",
   "renderer": {
@@ -27,5 +27,57 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/receipt-recovery.story.spec.ts",
+    "specSha256": "fb976979fba3aacc57bfe6e43b4c4db19ad9393dd97beec00ffbaca809709f3c"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-receipt-recovery/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-original-proposal-1-receipt-envoy.png",
+      "sha256": "855fe4103723a430c348ef0cd9b3cd2c1bf05002f7e546f901179418ea371dce",
+      "previousSha256": "855fe4103723a430c348ef0cd9b3cd2c1bf05002f7e546f901179418ea371dce",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "003-original-created-1-receipt-envoy.png",
+      "sha256": "6dae645b493b4a722a83005c90c1943dfe5f6f093863d9edceeb4411e2c35add",
+      "previousSha256": "fb133060656a262c6f13381d471207752881fc1ef0437c110cf41b3ad76ab32f",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-replacement-proposal-1-receipt-envoy.png",
+      "sha256": "eb781db5d6c3a416842db3355ea890a8285dfccd307d383014e75e370bc19bee",
+      "previousSha256": "eb781db5d6c3a416842db3355ea890a8285dfccd307d383014e75e370bc19bee",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "005-mismatched-campaign-order-1-receipt-envoy.png",
+      "sha256": "4e71d20688423387b890ad0f73cf33f71661ea7c0fee21288bcc9cbe941961d0",
+      "previousSha256": "4e71d20688423387b890ad0f73cf33f71661ea7c0fee21288bcc9cbe941961d0",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "007-fresh-galaxy-created-1-receipt-envoy.png",
+      "sha256": "9587630354a6e8349c84b176e87d2cc39017b33dab92fffe4b2b57336cd4b4b3",
+      "previousSha256": "46918540031e8da8d49ebc4e9830a260547bc40f7dc6f0bbeb02a26015468dc3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "008-reload-new-galaxy-1-receipt-envoy.png",
+      "sha256": "7351aa2bf9fdb601da42b1e65902d1eab5ae8edfeb24eaf0c131389891d6364d",
+      "previousSha256": "76eda2d789ca216f081d5e01df7aafeb540ac34084ca793ee36bbc9d965377ac",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

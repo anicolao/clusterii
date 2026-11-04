@@ -1,0 +1,158 @@
+[
+  {
+    "viewport": "desktop",
+    "start": [
+      {
+        "at": 17419.605382,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "transactions": 51,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "batchCompleted": false,
+    "stats": {
+      "totalMs": {
+        "min": 15.394,
+        "median": 608.121,
+        "max": 703.506
+      },
+      "rpcMs": {
+        "min": 6.76,
+        "median": 554.607,
+        "max": 631.079
+      },
+      "rpcToServerMarkerMs": {
+        "min": 3.134,
+        "median": 4.019,
+        "max": 7.232
+      },
+      "serverMarkerToCallbackMs": {
+        "min": 2.913,
+        "median": 550.833,
+        "max": 627.174
+      }
+    }
+  },
+  {
+    "viewport": "large",
+    "start": [
+      {
+        "at": 21562.148422,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "transactions": 52,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "batchCompleted": false,
+    "stats": {
+      "totalMs": {
+        "min": 14.483,
+        "median": 595.72,
+        "max": 664.498
+      },
+      "rpcMs": {
+        "min": 5.209,
+        "median": 553.694,
+        "max": 624.351
+      },
+      "rpcToServerMarkerMs": {
+        "min": 2.846,
+        "median": 3.826,
+        "max": 6.184
+      },
+      "serverMarkerToCallbackMs": {
+        "min": 2.186,
+        "median": 549.747,
+        "max": 621.505
+      }
+    }
+  },
+  {
+    "viewport": "phone",
+    "start": [
+      {
+        "at": 16210.937473,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "transactions": 41,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "batchCompleted": false,
+    "stats": {
+      "totalMs": {
+        "min": 14.704,
+        "median": 681.717,
+        "max": 2229.618
+      },
+      "rpcMs": {
+        "min": 5.469,
+        "median": 633.401,
+        "max": 2151.518
+      },
+      "rpcToServerMarkerMs": {
+        "min": 3.66,
+        "median": 5.427,
+        "max": 36.169
+      },
+      "serverMarkerToCallbackMs": {
+        "min": 1.567,
+        "median": 628.514,
+        "max": 2115.349
+      }
+    }
+  },
+  {
+    "viewport": "short",
+    "start": [
+      {
+        "at": 17028.920744,
+        "event": "start",
+        "label": "batch",
+        "span": 4
+      }
+    ],
+    "transactions": 50,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "batchCompleted": false,
+    "stats": {
+      "totalMs": {
+        "min": 16.975,
+        "median": 615.78,
+        "max": 724.861
+      },
+      "rpcMs": {
+        "min": 6.11,
+        "median": 571.647,
+        "max": 681.658
+      },
+      "rpcToServerMarkerMs": {
+        "min": 3.178,
+        "median": 4.063,
+        "max": 6.456
+      },
+      "serverMarkerToCallbackMs": {
+        "min": 1.702,
+        "median": 566.83,
+        "max": 677.97
+      }
+    }
+  }
+]

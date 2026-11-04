@@ -1,0 +1,1740 @@
+{
+  "run": 41884219213,
+  "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+  "totalCaptures": 216,
+  "priorApprovedExact": 105,
+  "newUniqueInspectedAcrossCheckpoints": 76,
+  "additionalUniqueThisCheckpoint": 57,
+  "remainingUnreviewed": 0,
+  "inspectionScope": "Implementation-agent inspect-before-approval; bounded reading positions, not full design approval. Old clipped short compose hash stays held.",
+  "captures": [
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "75a437139d6ea3bfe4547fc8cfc7f031f89e81f833a79d09ec6aa1f68f5ede9a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "f299cc90340e94bfcfd32f414f23c6fa69515ae0720b409701ceed1e618c1c4a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "9d9d45815336b1e9d7c9ecec55264e8989359e6fc6c630374a6602193eca3654"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "118383435bf9c82ed6ed0d8fa3fba7f2b461f0476dbdfd1cbcd83ede114cea55"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "a9379af8baf44907c42666cf0aa032217e2d80b54231e9cec971df84f5f5465d"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "556e718442d080729f624ea377393a8ccedcbcbbe8b07e06f769f3df1b8ee366"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "b39c1f9de657e6e6371a4b64677726ad6aa85645cbb5502788e730a53cae2d45"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "f9c21117abfb967ac49fed7db52ca130167aed0bcda65e589647dd701f64af2c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "a933c6b3b9385dd9c0a9bbae68b75fb4061c361906d278fb01f8c7827a1d8f82"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "3a35c4376f716cf7ea45cedcd33d0e3a1363384e6311a15e42ba3b0b46ecf5d5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "a0a1af3a42785511e717930625ca5fd5798bd3ea8cd3fbfd150532b2976566fc"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "2eeff13b956f1b753cc9224953cbf95d724db6998ace0cdcbffbc769df36e997"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "718358578e30fdf335cf2de99636a3332abe2565afd892b3cf8cfc6ab98a642f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "a7938687472f7d6571f02a657fda83f248d926041b1253770973d987f2efd43f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "4b10b2987070909d9489e31791e4c8bc9d16886313c1a95530658ff28fa6996c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "3f52f868763c4d9f739c20bd1f41d76f3dc50d0b25d85dfafa43c6ee73979884"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "ddf0311bb54901a6779b12bfc113c2c2dcd51671254af253c2b88b56428bb624"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "ddf0311bb54901a6779b12bfc113c2c2dcd51671254af253c2b88b56428bb624"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "5734dbfc963396358657a2e7291435eca01c2103831d506c04909cdb93fc6710"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "5734dbfc963396358657a2e7291435eca01c2103831d506c04909cdb93fc6710"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "734da6629ba49e8442ed20808d448cce29dc01d4c752d6b50f9c43d416c2a6af"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "265d85e380037910a66fd8beaf20d51399e4f3dd6466d5d917f4197e1093ea70"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "deaeafd28deb58c9a1f2f7a9718dbe4b7dd3294150518bc538599da118984e7c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/017-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "63f08f540ad4b42c80bdab74fbc662bcba96257412c59406dcb119e3ed177e8d"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "e1c6b7e9463cb726097f64fd1392df4cfb1c067ace3e10f372226733d0f96352"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "74cfb79ba9224d8327e0d1ba267edea12cabfbe25058480ac8b5260ae3081f96"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "4499a63902af5c85f621b6acd7eb982a72185ffeaa734d8e8357c82361b92681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "fefc76e40e8c9c4cfb1fc35299eb58a71aa06315f0e4e49c70bc3758af34e712"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "fd397b8778c1fd97937b394c1f9fc8f0dc416fd830003e1fb98fe9db7e259a74"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/020-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "ce875083aaf8afd22fc2258356af5a7707524ba67dc3e6576ffef545e838856c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/020-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/020-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "7b524b8e83adf78314eb80d47e1de10abaff638ca42b5f1cf501e5cf89c7cdf2"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "large",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "e8d526548a40a617ee1c861c2096bad642a1a0f3aca3fbfaa143edc51b348ed9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "dc9d1778d31fa45285bb8176a445c9055b5f563b5eba94199c2a781f84b20017"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "4698126c5254e5df0180f6f0f7558059641f480c1302a8a0dc8f77ad794544ed"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "b29a0b1ef35efc29305582a9f0936d618cc1908d0c9ceef4801edca9e503e8cf"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "3b7bfc285eab2985dcfd5ca75b5b136d8577698166f62dcfe1ebed63be671589"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "deef6e944166341d60914f2f2c69ead1e691fa9edda4d0475dc726abed8e139b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/014-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "2e4f7fc928a2ae8638944ed47d71c96aa8c0f29bfb2cfdfff1996e7bc99ddd1b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "d45527ba2ba10e6511ae901599df373a291bd328d47aa7c0f297633515b7e202"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "028ba0f50c0956a637097a06691caa162185e07c9bdd6d93a9589f46f1956fa5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "deb205de19ba619708be3d5d7bdb59f45e4c512d99c85db27ac4e9f519444e48"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "d714e45b072853c2fddf29be3dc1af10e8ee54f4f35d2cf5dea75a82233d2b1a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "515f3f9924b6b69d3955c371164d4e0e75cdd788cd463775a81d6b34c886487c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "75f11ac500cbeee62f1dfde220fd1ecde20f6a8be29a612c9432e5de8cf521d6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/017-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "d5f6e247b35734e0f7da7e45042f5a39ee997b99a2d58a2fa069caef1d5dacf3"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/017-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "52ab17163019a5f0722d7e114a06e1a65eed1b185efd5c55d7532b337334c8c7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "52ab17163019a5f0722d7e114a06e1a65eed1b185efd5c55d7532b337334c8c7"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/017-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "74de6a8737d0e1b5d83d7dbe88fea80fba97a06cccabe0ae71791d8eb1b9d378"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/019-second-offer-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "74de6a8737d0e1b5d83d7dbe88fea80fba97a06cccabe0ae71791d8eb1b9d378"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/020-withdraw-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "74de6a8737d0e1b5d83d7dbe88fea80fba97a06cccabe0ae71791d8eb1b9d378"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "0d445f9aad03a36582e0948788045596f872aa6f795466f9b4428ee7e56fc3e3"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "6a0025f387cb5438cdda0fb27b59371a5d928f6a747f1e24f199390fa846ee7b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "50ca1f860a50ec77423be5f919e45ab53598a443a4b898ffb601500986aa9e0b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "ac5f48c9c28722f954650177514569d65a5897f17b14c9e3d03f875e23baf7e8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "9686e1da57b9706f7d6eab293ce4d4b7a40cdabd216dd6259b6f0e7c3e4b219c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "9686e1da57b9706f7d6eab293ce4d4b7a40cdabd216dd6259b6f0e7c3e4b219c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "652ba66f7758dd73339c0cae05d087dff482d9444cff467e0520219c49cda35c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "652ba66f7758dd73339c0cae05d087dff482d9444cff467e0520219c49cda35c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "5abc282979184cf7c6e264c4f758d073f9696e494f392f5f401498a340e7809f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-ordinary/short/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "f250d20788e5ceea5e7bf3d1d172f7429547cf9dfa25acb067eaa9bda5eb53e4"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "28a6d6360c45177cbedebe682b169a8b5c003cb1a50bc4ee901193dd36597f6e"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "0b50404d1b068e2a7d48d65ae7cd67ad9577fa27ea6bcffacfce4b33fc7e77f8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "0b50404d1b068e2a7d48d65ae7cd67ad9577fa27ea6bcffacfce4b33fc7e77f8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "0b50404d1b068e2a7d48d65ae7cd67ad9577fa27ea6bcffacfce4b33fc7e77f8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/017-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "bbd36381dc606d0ac4166acdca1b4aa220aeb3f4357ee27ec609bf10a2d736a9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "4c2fefd51a1148de57d4c3709f27ef05ca92ae21e5ad53dc99f0cb0aadcb602a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "5bc301e746e748406534649ef250638d5e456b80582b0fd955c82f116f866e04"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "5bc301e746e748406534649ef250638d5e456b80582b0fd955c82f116f866e04"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "ffb10558fab069698c2967c8e7c35cbf6716a1d332465e172ead117379c7def2"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "65c622e6a7a4d7918204491e2a3597667cff67e4977c71d10cb051edcf3dbaef"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "e54f41816b489032eeb8daa3b319041605c81f673a0128d890b6dd3da9f938c4"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "77c857dcb8983990be22a10006ce6b66d61e2fdc4f8a9289d6fb11827b602b1a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/020-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "94792cb49e34dad9a215afd87480d0763c0fad7b5ac25a77795950c35d01cc9e"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/020-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "45b17d3a1d32607a04e5a6bc92d2f57ad32ead6f2023e4e69f2006bc8f6c6149"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "45b17d3a1d32607a04e5a6bc92d2f57ad32ead6f2023e4e69f2006bc8f6c6149"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/020-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "b37654fb42c028060e1c51982ec725b85e41130f00f291a7d16996d5134d96dc"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "b37654fb42c028060e1c51982ec725b85e41130f00f291a7d16996d5134d96dc"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "ff8cb5e8e32e7a95a6ebe3a86f8369c7c9365ee4ab2e49a882270376ca9ada4a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/short/test-results/stories/credit-exchange-recovery/short/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "short",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "28ec518be7f1b55a4103e806685d220ea5c6636deba2fd0861394f3e8aafa486"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "e20e6bcc844adc78e23c53dbb03b76007d9b648d67e0faf502a33ccda85dafaf"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "f2f11616342b3a28094ffae2ebeec3b636eeda89debef86703706a76398295bd"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "e9439136fd66d37e32e1b7850bebc6db4020d0f83c80992f01bbcb93524eb523"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "b78ce043734054f16207353384879758a4bbbdde9e9931234cffb73e04e6077c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "6d1fa6ba0b77b75a40ea75a4202bd9faa0b64c26b5df70a8e331fde204484859"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "a45d78aae48dd66c5aae95a39204dd0ae341fcab1c9c1b7846bd714005f37859"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "6f0f4b31d8d14c3a11411f951105f3b4feafe30c9c4db532729c7d27a14e1ad2"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "0b2d34db1499e05d80867105abf6ba667ad81b357ccffc05b9b6ed993f79be94"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "8819f7eb122afb003a2d262be5ee4bdcff870d2beb0eb89110396eb74ca401cd"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/017-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "f398b647b40a2326329247590b71104c4131a253a3ace3ba2426d63ca8c895b4"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/017-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "f51a491ff2ec6b8ca4d0ac3f981889799050bba9521cd4a139bfcec960c57156"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/017-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "f23c96142abf34755c98acdb25a0dc881790d6fed61a21ff4c77dacedbe7aa81"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "3389f53dfaedc7ac97a4bb84b22803bbcdba308d72f61a121fdfe7ea4420318b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "46d58ac2f1bc2e6ca9d78c53af0bd73b2a8357c43e27d854fed34f70a49278f5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "f23c96142abf34755c98acdb25a0dc881790d6fed61a21ff4c77dacedbe7aa81"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "923464361d9a04b13c93e6847f007c6cb0804a2276ca8a0e2fb69a2f30c211c4"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "88e290516a29933a7874d37e5d903a63213b5293b8c2a806cc83c94d5428000a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "f23c96142abf34755c98acdb25a0dc881790d6fed61a21ff4c77dacedbe7aa81"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "3748eda921b58657a558dc04720c8167bd29e8263342cf99f0bdc6f78b40d540"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "c632822aa14c8ab9227404c96ea69adcad8f11f4795a32d8579d4a0db6613949"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "e7c471742b89db56610339bccf907ec0ed1b40960bca542919351f9291d6a293"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "e1cd921255a3b8e41ecfc700c0b48aa191a4c7bb0856203d91bdda4b9b8312d6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "c632822aa14c8ab9227404c96ea69adcad8f11f4795a32d8579d4a0db6613949"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "e7c471742b89db56610339bccf907ec0ed1b40960bca542919351f9291d6a293"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "a655126946259e7e69843aa9a53a7320ea3d1249f43ba46b1dcf6cf941c8db5e"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "38784db4c79f8ea9ab894e4f3e4030c72c074f6504264dc273b8603d26a36c7c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "4ffffbff824d460e1e5a965374d26ce0411c22d1679ef5aab0959af9bb33c298"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "428fd2c4cbe48dde0a30f35a7d757012fa04bf3649091675269dc16c4bfb7fcf"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "4ffffbff824d460e1e5a965374d26ce0411c22d1679ef5aab0959af9bb33c298"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "57f92c881e0c491bdb9992f6dbbc4b933c5e475393c6eca4168f8ba6105a07d9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "4ffffbff824d460e1e5a965374d26ce0411c22d1679ef5aab0959af9bb33c298"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "50bcd6041c00461764c76472f72aea0a02e1efed230acf193c827118bd9e4b53"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "4423c265c0f5b15d487702d8c355e700bd5151ea8a78780044fe0ef6684a5b67"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "50bcd6041c00461764c76472f72aea0a02e1efed230acf193c827118bd9e4b53"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "1995e2bf1e1bcef0effa39ae60e317b35dc2d2876f93a5b61c9b8ead01154ca6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "911c9c23bd25ca76e6e1cca19f937f47535345f895103ba8c7be63c51ea3ba0b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "1b5f27ef1dab9fe3837800db9da16c5f802e25930509921bb6d9918e7cad3423"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/020-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "3f2ca3d955e5c607563213ecd1d05e5af9d5fa8508ef025790847924261db6dc"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/020-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "9fb7e86c31bec873a3c1bfb10abb931b9b3afb5188ca0b562a3b3a608807f154"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/020-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "1e5b766e61932e486e8a67593121956021fce4247a89f1b542d524eef37537e6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "5e03a9dd4a9e28aa0c4e61547b4ea69dc3727503c5f4aae47a2c278bacfc7d9e"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "9fb7e86c31bec873a3c1bfb10abb931b9b3afb5188ca0b562a3b3a608807f154"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "1e5b766e61932e486e8a67593121956021fce4247a89f1b542d524eef37537e6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "desktop",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "5c497ac8c9b2b0ab62cdd3b5cd3b99ad500481cfd8584dbec6d776dcd7c0bfec"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "3991333534521e9292d64e262fd27598fe98c276020bc6b00cbbebd9123a87ab"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "8d6c5e4ed6580dae68f871a049bfe88b65ad8b230bd6404ecc662f837b537ff6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "c1e6130cccfcab8b86d8a47b8adbca7679d9fa2667a9243ad72b4d4cf822b687"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "b6b629a06eddda9ff4e23ac94ca3306325e5170c3c7ca4b932273f7a839e9246"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "d4e185db60e1ed5e9890eaf24da2afe6159c5bc3945262f51d73adae29c94bb5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "ffe683ecce07eaa13c57f2936cc835a70266059bd5de7aecb7da1c5a7d9b5669"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "bcee2e827025bd4e953f6b1b5371f12ac0499a700a0ae9b9ecdf3d4f7cf20a1a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/017-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "84bdd10672739ba18cb0faccd9df89a729f8147dcc80f198f8d31d116d269358"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/017-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/017-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "964c65facf23ea4069d118762291d414c85bf8c7438a2f78167f28d22670feae"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "bd478ab81b50b3cc9507d595d2cd5a647a4a3b09fb51261268af7634615e4c3c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "a5129ea6ea1b260cf08e401bca320caeab981a13827a7747566df0536f91bf6f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "eec8b8850b5bab2ad25981c175e15f8a02bc07e3f4e0a6812f3095a4cd19231e"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "45a4a939217fdb804246825708cf0ff751f6b08d4ccb4b001f742c815b1facf5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "a5129ea6ea1b260cf08e401bca320caeab981a13827a7747566df0536f91bf6f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "eec8b8850b5bab2ad25981c175e15f8a02bc07e3f4e0a6812f3095a4cd19231e"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/story.json",
+      "story": "credit-exchange-ordinary",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "90a151b82f215389361f60d783b206446c9ea1f3947893482bd9d29154012f29"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "e78fa4cc8c18d959dc674bb63e468a866b80cd8fa2a97150fdce2c29edbfe99f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "e02b254135345bb5b243af0de393015c51ac4af590cd4afedd55c540dcd65915"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "d4a59d38f1b4ff04efcb018e6cb91e68e4bb5f376ee685cc9d6c54c918322b88"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "8d6c5e4ed6580dae68f871a049bfe88b65ad8b230bd6404ecc662f837b537ff6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "d4a59d38f1b4ff04efcb018e6cb91e68e4bb5f376ee685cc9d6c54c918322b88"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "d4e185db60e1ed5e9890eaf24da2afe6159c5bc3945262f51d73adae29c94bb5"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "2aa5a99e524f66489a590f7c6a214b17d5880c79b75a6f9ff9162eb7c87db16a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "bcee2e827025bd4e953f6b1b5371f12ac0499a700a0ae9b9ecdf3d4f7cf20a1a"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "00b7922f9a614d0d7060b9d1b7b09ad5bd660616fe2e1aabd432b815307a0255"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "f424c3b2ecdf094b51485fd316af4a42a9b8f7c0cbfc70f6031d2710fbc144ce"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/story.json",
+      "story": "credit-exchange-recovery",
+      "viewport": "phone",
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "e42fdf953fe8d6ee21bb7fc5f9b63ba1f9de2b630e24470626c2928e55721ece"
+    }
+  ]
+}

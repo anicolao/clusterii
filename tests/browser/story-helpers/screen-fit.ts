@@ -1,18 +1,24 @@
 /** Read-only geometry audit: it never scrolls a primary action into view. */
-export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
+export function assertScreenFit({
+  surface,
+  focusedControl = false,
+}: {
+  surface: "game" | "document";
+  focusedControl?: boolean;
+}) {
   const failures: string[] = [];
   if (document.documentElement.scrollWidth > innerWidth)
     failures.push("Document overflows horizontally");
   if (surface === "game" && document.documentElement.scrollHeight > innerHeight)
     failures.push("Game document scrolls vertically");
   const rect = (e: Element) => e.getBoundingClientRect();
-  const painted = (e: HTMLElement) => {
+  const painted = (e: HTMLElement, outset = 0) => {
     const r = rect(e);
     const box = {
-      left: Math.max(0, r.left),
-      top: Math.max(0, r.top),
-      right: Math.min(innerWidth, r.right),
-      bottom: Math.min(innerHeight, r.bottom),
+      left: Math.max(0, r.left - outset),
+      top: Math.max(0, r.top - outset),
+      right: Math.min(innerWidth, r.right + outset),
+      bottom: Math.min(innerHeight, r.bottom + outset),
     };
     for (let parent = e.parentElement; parent; parent = parent.parentElement) {
       const style = getComputedStyle(parent),
@@ -61,6 +67,26 @@ export function assertScreenFit({ surface }: { surface: "game" | "document" }) {
   for (const target of targets) {
     if (target.closest("[inert]")) continue;
     const b = rect(target);
+    if (focusedControl && target === document.activeElement) {
+      const style = getComputedStyle(target);
+      const outset =
+        style.outlineStyle === "none"
+          ? 0
+          : Math.max(
+              0,
+              parseFloat(style.outlineWidth) + parseFloat(style.outlineOffset),
+            );
+      const available = painted(target, outset);
+      if (
+        b.left - outset < available.left ||
+        b.right + outset > available.right ||
+        b.top - outset < available.top ||
+        b.bottom + outset > available.bottom
+      )
+        failures.push(
+          `Focused control paint clipped: ${describe(target)} (${b.top - outset}..${b.bottom + outset}; clip ${available.top}..${available.bottom})`,
+        );
+    }
     // Radio inputs use their real labelled hit surface; never a 1px hidden box.
     const hit =
       (target instanceof HTMLInputElement &&

@@ -1,0 +1,7 @@
+# PR77 reviewed Linux reference import
+
+All four candidate sets from40298447973 reviewed. Individually inspected every changed/new full image and corresponding prior image: phone8 (one unrelated stellar hold),desktop8,short9 (one unrelated stellar hold),large8. Approve31 feature images only. Full archives SHA/size/CRC and source/executor/request/spec/pinnedARM renderer bindings independently verified. Large display retains existing sparse composition; no concept-fidelity approval.
+
+Import176 semantic references:31 inspected feature changes,143 byte-exact candidate/inherited images,2 original inherited stellar references retained. Rename downstream numbered filenames to follow two added story steps. Phone final peer six-pixel and short seven-pixel variants are not accepted. Preserve all Darwin references and unrelated readmission references. No product/test code changed.
+
+Discard is disabled for empty draft, confirmation distinguishes local discard from an order, keyboard focus returns to search, newly chosen route removes stale notice, and peer screens retain private state. Bounded detail scrolling is accessible in eight normal/reduced-motion component checks recorded in audit e6287d4e. Pending/busy interaction coverage remains outstanding; this is baseline approval, not full feature acceptance. Fresh strict176 verification required before publication, no snapshot updates/tolerance changes or GitHub merges.

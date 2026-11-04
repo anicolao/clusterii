@@ -1,8 +1,13 @@
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
-import { spawn } from "node:child_process";
+import { spawn, execFileSync } from "node:child_process";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { createConnection } from "node:net";
 import { runViewportCohorts } from "./story-cohorts.mjs";
+import {
+  storyServiceGroups,
+  verifyServicePartition,
+} from "./story-service-groups.mjs";
 const cohorts = process.env.CLUSTER_STORY_COHORTS;
 if (cohorts && cohorts !== "viewport")
   throw new Error("Use CLUSTER_STORY_COHORTS=viewport or omit it");
@@ -65,7 +70,7 @@ const run = (args, env = process.env) =>
 // Svelte's inherited aliases first, including on a clean first viewport cohort.
 await run(["x", "svelte-kit", "sync"]);
 await run(["run", "--cwd", "functions", "build"]);
-const runStory = (viewport) =>
+const runStory = (viewport, group) =>
   run(
     [
       "x",
@@ -75,7 +80,7 @@ const runStory = (viewport) =>
       "demo-clusterii",
       "--only",
       "auth,database,firestore,functions",
-      `bunx playwright test --config playwright.stories.config.ts${viewport ? ` --project=${viewport}` : ""}`,
+      `bunx playwright test --config playwright.stories.config.ts${viewport ? ` --project=${viewport}` : ""}${group ? ` '${storyServiceGroups.find((entry) => entry.id === group).filter}'` : ""}`,
     ],
     {
       ...process.env,
@@ -89,11 +94,48 @@ const runStory = (viewport) =>
 
 if (interrupted) throw new Error("Story cohorts interrupted");
 if (cohorts === "viewport") {
+  if (process.env.CLUSTER_STORY_FILTER)
+    throw new Error("Complete viewport cohorts cannot use a story filter");
+  // Check the actual installed Playwright collector, not a parallel file glob.
+  const collection = (viewport, filter) =>
+    JSON.parse(
+      execFileSync(
+        "bun",
+        [
+          "x",
+          "playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          `--project=${viewport}`,
+          "--list",
+          "--reporter=json",
+          ...(filter ? [filter] : []),
+        ],
+        { encoding: "utf8", maxBuffer: 16 * 1024 ** 2 },
+      ),
+    );
+  mkdirSync("ci-evidence/story-service-selection", { recursive: true });
+  for (const viewport of ["phone", "desktop", "large", "short"]) {
+    const complete = collection(viewport);
+    const selections = Object.fromEntries(
+      storyServiceGroups.map(({ id, filter }) => [
+        id,
+        collection(viewport, filter),
+      ]),
+    );
+    const tests = verifyServicePartition(complete, selections);
+    writeFileSync(
+      `ci-evidence/story-service-selection/${viewport}.json`,
+      JSON.stringify({ tests, complete, selections }, null, 2) + "\n",
+    );
+  }
   await runViewportCohorts({
     output: resolve("test-results/stories"),
     firestoreLog: resolve("firestore-debug.log"),
     run: runStory,
     beforeEach: assertPortsFree,
     shouldStop: () => interrupted,
+    groups: storyServiceGroups.map(({ id }) => id),
   });
 } else await runStory();

@@ -1,0 +1,20 @@
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.581292ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.869209ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (303.358666ms)
+✔ exact complete family, no whole-suite or filter fallback (0.553042ms)
+✔ all sizes and exact clean source required; failed partials never eligible (0.215625ms)
+✔ orchestration preserves setup/test exit and rejects invalid output (0.227833ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 382.947417
+Listing tests:
+  [phone] › e2e/003-science/components.spec.ts:37:1 › Read shared science ledger in gallery and lab
+  [desktop] › e2e/003-science/components.spec.ts:37:1 › Read shared science ledger in gallery and lab
+  [large] › e2e/003-science/components.spec.ts:37:1 › Read shared science ledger in gallery and lab
+  [short] › e2e/003-science/components.spec.ts:37:1 › Read shared science ledger in gallery and lab
+Total: 4 tests in 1 file

@@ -1,0 +1,17 @@
+{
+  "candidateSource": "015628c2a9b20cd365341fd468efb9d5465923ee",
+  "current": "c3dcf181",
+  "auditedPaths": [
+    "tests/e2e/003-science/components.spec.ts",
+    "src/lib/components/ScienceLedger.svelte",
+    "src/routes/gallery/+page.svelte",
+    "src/routes/dev/animations/+page.svelte",
+    "src/lib/components/galaxy/Scene.svelte",
+    "patches/@threlte%2Fextras@9.22.2.patch",
+    "package.json",
+    "bun.lock"
+  ],
+  "changedAuditedPaths": [],
+  "currentSpecSha256": "660e6a92bca84589b8c6524bda7f16ae29bdf91ee8bc6e64913c6ec6506ca529",
+  "scope": "Source audit only: FleetContacts and Galaxy changed outside these paths; fixed gallery contact containers retain outer dimensions. Science lab branch does not mount contacts. Independent visual review and current-source strict execution remain required."
+}

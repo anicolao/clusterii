@@ -1,0 +1,455 @@
+{
+  "ledgerSha256": "ce84cba4534b7df58703c0c5175b5c5c07c6c26f9ad2b58c712c03ef1053b8a9",
+  "targetBeforeImport": "068fbfd71db608bd4d4d7f608a9e334db1ff555f",
+  "families": [
+    {
+      "story": "campaign-feedback-lab",
+      "viewport": "desktop",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/feedback-lab.story.spec.ts",
+        "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-feedback-lab/desktop/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/campaign-feedback-lab/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "001-pending-1-developer-standard-campaign-motion.png",
+          "sha256": "47a6df1f403bf5e73c63d40fdf244fa3395fba5df862cbb1cfed8c2c337c7715",
+          "previousSha256": "49576ad2f3e7f9a584813d815879751704ef33f3012b280d5b0bf50d8d73ac9c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "001-pending-2-developer-reduced-campaign-motion.png",
+          "sha256": "47a6df1f403bf5e73c63d40fdf244fa3395fba5df862cbb1cfed8c2c337c7715",
+          "previousSha256": "49576ad2f3e7f9a584813d815879751704ef33f3012b280d5b0bf50d8d73ac9c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-1-developer-standard-campaign-motion.png",
+          "sha256": "2e4e37dbaf34c7fe0353397c52e8e843e158ceccfd80b4a03c0f1537f34f7574",
+          "previousSha256": "07d35dcff265c2deb2cc20bb105f660d739fecceb9114d95c6f2ab1bfffae6cf",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-2-developer-reduced-campaign-motion.png",
+          "sha256": "2e4e37dbaf34c7fe0353397c52e8e843e158ceccfd80b4a03c0f1537f34f7574",
+          "previousSha256": "07d35dcff265c2deb2cc20bb105f660d739fecceb9114d95c6f2ab1bfffae6cf",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-1-developer-standard-campaign-motion.png",
+          "sha256": "3bf516c7bfdd82f4eb5f1f245d280ffcb46cc2a870cdec9e67e71decbe7a2ea4",
+          "previousSha256": "7f63c5a8cf462870dfc30d6e93b29be231ff0fc305ea06c6dc1a8b22b65f4b86",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+          "sha256": "3bf516c7bfdd82f4eb5f1f245d280ffcb46cc2a870cdec9e67e71decbe7a2ea4",
+          "previousSha256": "7f63c5a8cf462870dfc30d6e93b29be231ff0fc305ea06c6dc1a8b22b65f4b86",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-1-developer-standard-campaign-motion.png",
+          "sha256": "b49c81b2b093dc6bebfd42f9a38bd3b17c58b1202cc1d4ef0b41d1ace6488a62",
+          "previousSha256": "5bc25db3158d6a8806334bfc8d4fe28a9096fdedb5bf3c0d0043e00d5afc59b5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-2-developer-reduced-campaign-motion.png",
+          "sha256": "b49c81b2b093dc6bebfd42f9a38bd3b17c58b1202cc1d4ef0b41d1ace6488a62",
+          "previousSha256": "5bc25db3158d6a8806334bfc8d4fe28a9096fdedb5bf3c0d0043e00d5afc59b5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-1-developer-standard-campaign-motion.png",
+          "sha256": "b914bc4db6db2681eeb5aec939d0b2abd1b1abdc5a19dad8d1705ebc1dc24894",
+          "previousSha256": "ce85bce0d361cc380c1ce1464276f9b90470b9b95b8fc4cfb92877994c805dfc",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+          "sha256": "b914bc4db6db2681eeb5aec939d0b2abd1b1abdc5a19dad8d1705ebc1dc24894",
+          "previousSha256": "ce85bce0d361cc380c1ce1464276f9b90470b9b95b8fc4cfb92877994c805dfc",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-1-developer-standard-campaign-motion.png",
+          "sha256": "b7999638101e527f85402449beb0228e9ccda57ca462712fe1b7796acc028567",
+          "previousSha256": "86e083b590aff885d1e90478535c8ccfd836cc6f6c6d891d90fdccd39cde582b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-2-developer-reduced-campaign-motion.png",
+          "sha256": "b7999638101e527f85402449beb0228e9ccda57ca462712fe1b7796acc028567",
+          "previousSha256": "86e083b590aff885d1e90478535c8ccfd836cc6f6c6d891d90fdccd39cde582b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-1-developer-standard-campaign-motion.png",
+          "sha256": "31cd57a1901b1618886205beab4f7e66d1647b32c5472101990b9279ea50f693",
+          "previousSha256": "32b477ecece37121300cdd87b5a64981341a552c3a784e46c0f41bf97d3a5445",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-2-developer-reduced-campaign-motion.png",
+          "sha256": "31cd57a1901b1618886205beab4f7e66d1647b32c5472101990b9279ea50f693",
+          "previousSha256": "32b477ecece37121300cdd87b5a64981341a552c3a784e46c0f41bf97d3a5445",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "campaign-feedback-lab",
+      "viewport": "large",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/feedback-lab.story.spec.ts",
+        "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-feedback-lab/large/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/campaign-feedback-lab/large/linux-arm64",
+      "captures": [
+        {
+          "image": "001-pending-1-developer-standard-campaign-motion.png",
+          "sha256": "98fae2570381e720c5f395a4dcd50677ec6c34331770e01efa996aff043743f7",
+          "previousSha256": "0b0b17794ae11fa44410d42eeb1ea9199ba66c7d6bd9a694cd0a6c5fee55dabc",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "001-pending-2-developer-reduced-campaign-motion.png",
+          "sha256": "98fae2570381e720c5f395a4dcd50677ec6c34331770e01efa996aff043743f7",
+          "previousSha256": "0b0b17794ae11fa44410d42eeb1ea9199ba66c7d6bd9a694cd0a6c5fee55dabc",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-1-developer-standard-campaign-motion.png",
+          "sha256": "e6f3fee3802beed236cefc17cbeca85aba88c45d02b8be3d3a98d84be4ee6fb9",
+          "previousSha256": "ae6a67ab67ef866b6cb3d5ca81dd08b803429e752ee651fd7297bfcc885ac637",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-2-developer-reduced-campaign-motion.png",
+          "sha256": "e6f3fee3802beed236cefc17cbeca85aba88c45d02b8be3d3a98d84be4ee6fb9",
+          "previousSha256": "ae6a67ab67ef866b6cb3d5ca81dd08b803429e752ee651fd7297bfcc885ac637",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-1-developer-standard-campaign-motion.png",
+          "sha256": "41de8d9aedd631f69bcbca9d7b06d9ed87bd69d6ed12fed03364d5390e805521",
+          "previousSha256": "175cfd2a2ad733b4716345d29aa16eb71bf5986af456985533362b2c681bbe18",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+          "sha256": "41de8d9aedd631f69bcbca9d7b06d9ed87bd69d6ed12fed03364d5390e805521",
+          "previousSha256": "175cfd2a2ad733b4716345d29aa16eb71bf5986af456985533362b2c681bbe18",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-1-developer-standard-campaign-motion.png",
+          "sha256": "c2ed103f07e67f8f8e1ee84d4eb45a27e85107cbd99e14443672749afc61fecd",
+          "previousSha256": "d92b4f66bac762cf0ecb6221fb72453f8b04d018cb683549f994f1d47158bf33",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-2-developer-reduced-campaign-motion.png",
+          "sha256": "c2ed103f07e67f8f8e1ee84d4eb45a27e85107cbd99e14443672749afc61fecd",
+          "previousSha256": "d92b4f66bac762cf0ecb6221fb72453f8b04d018cb683549f994f1d47158bf33",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-1-developer-standard-campaign-motion.png",
+          "sha256": "7ed49349927617dc6c7b62bb763c6103170fdae6f341acbf322c26f570f051f2",
+          "previousSha256": "7465c244572b6a88da74699c1cbb636855b4c4622cae678c15286db76ef1c8bf",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+          "sha256": "7ed49349927617dc6c7b62bb763c6103170fdae6f341acbf322c26f570f051f2",
+          "previousSha256": "7465c244572b6a88da74699c1cbb636855b4c4622cae678c15286db76ef1c8bf",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-1-developer-standard-campaign-motion.png",
+          "sha256": "c48d8fca848d6e4f375b6455e3be20984802323237eafa59ff034f14967f0cf8",
+          "previousSha256": "3ea35f5ca570df03435e754fb1e60804c278533658a132d7dff9cf4d96e74117",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-2-developer-reduced-campaign-motion.png",
+          "sha256": "c48d8fca848d6e4f375b6455e3be20984802323237eafa59ff034f14967f0cf8",
+          "previousSha256": "3ea35f5ca570df03435e754fb1e60804c278533658a132d7dff9cf4d96e74117",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-1-developer-standard-campaign-motion.png",
+          "sha256": "ccff04857a74c34ff2666c24276a6c52b29e81f93674fb2c261181adf45a5b4a",
+          "previousSha256": "9a4a5ab916d76e873b6aba9ab0a9b2d8de7d2831d176e56c55e0555363216f44",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-2-developer-reduced-campaign-motion.png",
+          "sha256": "ccff04857a74c34ff2666c24276a6c52b29e81f93674fb2c261181adf45a5b4a",
+          "previousSha256": "9a4a5ab916d76e873b6aba9ab0a9b2d8de7d2831d176e56c55e0555363216f44",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "campaign-feedback-lab",
+      "viewport": "phone",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/feedback-lab.story.spec.ts",
+        "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-feedback-lab/phone/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/campaign-feedback-lab/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "001-pending-1-developer-standard-campaign-motion.png",
+          "sha256": "3210300b6fc57fdec6888c7f778058cd9ccac4982fece938bf01c4b23b0d15ee",
+          "previousSha256": "64c46d7681d54fb5119f57c6ecaf1a82b3f492c27bec0a4eab6837d66cb9feca",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "001-pending-2-developer-reduced-campaign-motion.png",
+          "sha256": "e3d0cb52edb14d6b420035a1180b8ca154faa77a615001067bf25bff2985ad0b",
+          "previousSha256": "86f6eb37525f0bf92c9f9c3321e996f8cac896c564a67dbef421d26189a0a62c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-1-developer-standard-campaign-motion.png",
+          "sha256": "376cc550bf4c14808a892338555be150358fde3e8ea0537cc3d857aa95e8aefe",
+          "previousSha256": "4e2b94c36e62ca9fc9a3a57cb480d13c7dac361a2274fe91c311ffea0e831f4a",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-2-developer-reduced-campaign-motion.png",
+          "sha256": "376cc550bf4c14808a892338555be150358fde3e8ea0537cc3d857aa95e8aefe",
+          "previousSha256": "4e2b94c36e62ca9fc9a3a57cb480d13c7dac361a2274fe91c311ffea0e831f4a",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-1-developer-standard-campaign-motion.png",
+          "sha256": "99b04219a976c512375240ff0e908d0f65270ea5983d1739bae500322b6ad8d9",
+          "previousSha256": "6940b473049fa082505dced3340e9943d819529c5e02eab5e68e484b8006adc9",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+          "sha256": "99b04219a976c512375240ff0e908d0f65270ea5983d1739bae500322b6ad8d9",
+          "previousSha256": "6940b473049fa082505dced3340e9943d819529c5e02eab5e68e484b8006adc9",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-1-developer-standard-campaign-motion.png",
+          "sha256": "977d87e6d34c889c4757fdb8bba824ef4be5f4f21888c2f26773634322f70cd8",
+          "previousSha256": "58d83f14fb4e40b0278ec318124a624ea9728155e105578915b4eea359d42d8e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-2-developer-reduced-campaign-motion.png",
+          "sha256": "977d87e6d34c889c4757fdb8bba824ef4be5f4f21888c2f26773634322f70cd8",
+          "previousSha256": "58d83f14fb4e40b0278ec318124a624ea9728155e105578915b4eea359d42d8e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-1-developer-standard-campaign-motion.png",
+          "sha256": "3c6de7e212601280a846ee81954e99ac13cab0dabb74a2fc528add48ce3cd8e6",
+          "previousSha256": "28ca50ac437624ced3b1cf59ce546712fb5484be57b2512ac99e9e17d3b9d1b3",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+          "sha256": "3c6de7e212601280a846ee81954e99ac13cab0dabb74a2fc528add48ce3cd8e6",
+          "previousSha256": "28ca50ac437624ced3b1cf59ce546712fb5484be57b2512ac99e9e17d3b9d1b3",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-1-developer-standard-campaign-motion.png",
+          "sha256": "fb444317c07a5f993a88e0b68c9d2b31c48fa32e9228c9cf95513c2c6c8ea517",
+          "previousSha256": "5a5adbf9839c89660d9061e08903536c90b52fa4bf0d9c9bcc8fa290c3045ce2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-2-developer-reduced-campaign-motion.png",
+          "sha256": "fb444317c07a5f993a88e0b68c9d2b31c48fa32e9228c9cf95513c2c6c8ea517",
+          "previousSha256": "5a5adbf9839c89660d9061e08903536c90b52fa4bf0d9c9bcc8fa290c3045ce2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-1-developer-standard-campaign-motion.png",
+          "sha256": "35f399b47857621fe7cf2b17a96b02b4fd9dd12f011ab9b8bc0d1fdf7fdaf309",
+          "previousSha256": "749e346245fcdd55e717a6ab7850168933ca2f234c37cd81d413ba1e16f8ed32",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-2-developer-reduced-campaign-motion.png",
+          "sha256": "35f399b47857621fe7cf2b17a96b02b4fd9dd12f011ab9b8bc0d1fdf7fdaf309",
+          "previousSha256": "749e346245fcdd55e717a6ab7850168933ca2f234c37cd81d413ba1e16f8ed32",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "campaign-feedback-lab",
+      "viewport": "short",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/feedback-lab.story.spec.ts",
+        "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-feedback-lab/short/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/campaign-feedback-lab/short/linux-arm64",
+      "captures": [
+        {
+          "image": "001-pending-1-developer-standard-campaign-motion.png",
+          "sha256": "5be81fb3160caf0f69621e053986fc0b75b0e7b1605e8a4736093d23f3c04e68",
+          "previousSha256": "84fba430e62ca2cc549d643eef7a4bf85834383eb4cc092767a7ea909e9e2c91",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "001-pending-2-developer-reduced-campaign-motion.png",
+          "sha256": "5be81fb3160caf0f69621e053986fc0b75b0e7b1605e8a4736093d23f3c04e68",
+          "previousSha256": "84fba430e62ca2cc549d643eef7a4bf85834383eb4cc092767a7ea909e9e2c91",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-1-developer-standard-campaign-motion.png",
+          "sha256": "33b72d541184316a1af09cdcaa6b10e1fdb795bb27dbb3e8d2890a5f09c700af",
+          "previousSha256": "fb59c6aa3da15faf276c29cdf61f333372c716059fbd34103cad147e9ca070d2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-stale-roster-2-developer-reduced-campaign-motion.png",
+          "sha256": "33b72d541184316a1af09cdcaa6b10e1fdb795bb27dbb3e8d2890a5f09c700af",
+          "previousSha256": "fb59c6aa3da15faf276c29cdf61f333372c716059fbd34103cad147e9ca070d2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-1-developer-standard-campaign-motion.png",
+          "sha256": "ca680f859bf26cfb5b03ac2392fc520ae2a3557474fe0a7beca273586bcf675c",
+          "previousSha256": "72f9971b728e8ec305d84fdaeb330c21a5d07b7d879404d5e38aca687f1accee",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-seat-confirmed-2-developer-reduced-campaign-motion.png",
+          "sha256": "ca680f859bf26cfb5b03ac2392fc520ae2a3557474fe0a7beca273586bcf675c",
+          "previousSha256": "72f9971b728e8ec305d84fdaeb330c21a5d07b7d879404d5e38aca687f1accee",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-1-developer-standard-campaign-motion.png",
+          "sha256": "cf506f27b407c515f12aad76c8b4389683ed7e2699490814308d3a9a7fbe232f",
+          "previousSha256": "da725a6feab4ef58774bf62a1d6f6c6bbe3641441942d55be2acfee9c4d7ca22",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-paused-2-developer-reduced-campaign-motion.png",
+          "sha256": "cf506f27b407c515f12aad76c8b4389683ed7e2699490814308d3a9a7fbe232f",
+          "previousSha256": "da725a6feab4ef58774bf62a1d6f6c6bbe3641441942d55be2acfee9c4d7ca22",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-1-developer-standard-campaign-motion.png",
+          "sha256": "c6426bb63f6029cffdd8a7153a403b57924902517c5bd7652f079a5f17a73336",
+          "previousSha256": "264ca25c542c982d35b6cdd72fb10e1dcc7e756f583ab8c357329a4e4a2b6c94",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-resume-interrupted-2-developer-reduced-campaign-motion.png",
+          "sha256": "c6426bb63f6029cffdd8a7153a403b57924902517c5bd7652f079a5f17a73336",
+          "previousSha256": "264ca25c542c982d35b6cdd72fb10e1dcc7e756f583ab8c357329a4e4a2b6c94",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-1-developer-standard-campaign-motion.png",
+          "sha256": "06bc3ba546ba6bfc2baed52d3c79d87ab4745f9fb9735c3b385a007ce36e75c0",
+          "previousSha256": "ff07a7b9c8c949c31461f09ff255d744694c6b09ab3eb0cdd0d00b535d485798",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-resumed-2-developer-reduced-campaign-motion.png",
+          "sha256": "06bc3ba546ba6bfc2baed52d3c79d87ab4745f9fb9735c3b385a007ce36e75c0",
+          "previousSha256": "ff07a7b9c8c949c31461f09ff255d744694c6b09ab3eb0cdd0d00b535d485798",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-1-developer-standard-campaign-motion.png",
+          "sha256": "aca7ab2e30f59c06bd9b9cedcde94d0d69661cc18c51458cbdfd6b545bf4b880",
+          "previousSha256": "344d085f3a3216e7f1d9b801e23769dd3d8dfd495ef886ed981e76f410ed133e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-migration-verified-2-developer-reduced-campaign-motion.png",
+          "sha256": "aca7ab2e30f59c06bd9b9cedcde94d0d69661cc18c51458cbdfd6b545bf4b880",
+          "previousSha256": "344d085f3a3216e7f1d9b801e23769dd3d8dfd495ef886ed981e76f410ed133e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": []
+}

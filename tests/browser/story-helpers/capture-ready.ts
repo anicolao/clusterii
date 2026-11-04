@@ -22,6 +22,23 @@ export async function captureReady(inspection: MotionFrame[] = []) {
     );
   };
   const decoded = new Map<string, Promise<void>>();
+  // Retain the actual decoded background image for this document. Recreating
+  // it on every capture performs a new request with the no-cache test server,
+  // which fails during deliberate offline recovery despite already loaded art.
+  // New URLs and undecodable images must still pass the same decode boundary.
+  const state = window as unknown as Record<
+    symbol,
+    Map<
+      string,
+      {
+        image: HTMLImageElement;
+        ready: Promise<void>;
+      }
+    >
+  >;
+  const backgroundCache = (state[
+    Symbol.for("cluster.story.decoded-backgrounds")
+  ] ??= new Map());
   function decode(image: HTMLImageElement) {
     const source = image.currentSrc || image.src;
     if (!image.complete || !image.naturalWidth || !decoded.has(source))
@@ -44,9 +61,16 @@ export async function captureReady(inspection: MotionFrame[] = []) {
     ...images.map(decode),
     ...[...backgrounds].map((source) => {
       if (decoded.has(source)) return decoded.get(source)!;
+      const retained = backgroundCache.get(source);
+      if (retained) return retained.ready;
       const image = new Image();
       image.src = source;
-      return decode(image);
+      const ready = decode(image).catch((error) => {
+        backgroundCache.delete(source);
+        throw error;
+      });
+      backgroundCache.set(source, { image, ready });
+      return ready;
     }),
   ]);
   // A completion callback may schedule another finite effect. Reinspect rather

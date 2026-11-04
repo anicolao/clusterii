@@ -1,0 +1,125 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "research-capability-guidance",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+    "dirty": false,
+    "spec": "tests/browser/research-guidance.story.spec.ts",
+    "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+      "sha256": "8c7ec23aaa56ff621dfee3530008681c81033b5301e79ac288a2cffdfe45c290",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-open-authoritative-science-2-independent-investor.png",
+      "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-read-scanning-1-market-envoy-campaign-device.png",
+      "sha256": "3a3f8400710418311813d231be7e0dcaec1bae9bcee487006eabdd2a3fd5b6fb",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-read-navigation-1-market-envoy-campaign-device.png",
+      "sha256": "aae64e53f7c24646997495d1764f2f3596c909079ee6427866db88708de4a656",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
+      "sha256": "a9679ca086d57363cd37151d5d6a6bb24f2e8eea296fd806e2f557dc775974c3",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-read-investing-1-market-envoy-campaign-device.png",
+      "sha256": "8b9ea6b6e55e29d886bbf33e3ecdec4076686ec0cfb5adc7ccee34d224adb0e4",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-read-formations-1-market-envoy-campaign-device.png",
+      "sha256": "223a9e745eb2465e3e0071073735eace78646dfe4a584e7afc8fce2372e3a01f",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-read-melee-1-market-envoy-campaign-device.png",
+      "sha256": "249680bb47fafb8f031462648542efb8621c092e875c6c5f42f023d44d148096",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
+      "sha256": "b328cdefa2cde11729d80b18b3dd9761226210c80296a5fd9049b1e765e03954",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-read-innovation-1-market-envoy-campaign-device.png",
+      "sha256": "e0985b498f4b9d35639625bcb70f6eef104686122e20643154d3b696ec550bb9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-close-without-order-1-market-envoy-campaign-device.png",
+      "sha256": "8c2bd874ba38beafd87c8c27de23b789a63edd3a78ba4aeb0b77fe33f275fb09",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-close-without-order-2-independent-investor.png",
+      "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

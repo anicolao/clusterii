@@ -1,0 +1,97 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "waiting-to-home",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+    "dirty": false,
+    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short/test-results/stories/waiting-to-home/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "007-recover-waiting-seat-1-chart-envoy.png",
+      "sha256": "c22b3462e1311cd77d62de323754d5b2646e5dbf4c851a67321d4b171c3c1903",
+      "previousSha256": "c22b3462e1311cd77d62de323754d5b2646e5dbf4c851a67321d4b171c3c1903",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-read-scheduled-roster-1-chart-envoy.png",
+      "sha256": "80b54ff53bda6e9123002b84db4516de2e0b6938c97057effafbb3661b38449b",
+      "previousSha256": "80b54ff53bda6e9123002b84db4516de2e0b6938c97057effafbb3661b38449b",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-read-departure-policy-1-chart-envoy.png",
+      "sha256": "6881de9b376aa71e8dd46c252868fb5da043f1528f8d89ac2b46f1a70e78f87b",
+      "previousSha256": "6881de9b376aa71e8dd46c252868fb5da043f1528f8d89ac2b46f1a70e78f87b",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-read-rules-and-return-1-chart-envoy.png",
+      "sha256": "8f1e117097c9fe42e54bc433c9ef2a8b67df8ea3e1059a46b48037200d7e6560",
+      "previousSha256": "8f1e117097c9fe42e54bc433c9ef2a8b67df8ea3e1059a46b48037200d7e6560",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "f774bb24e8c21c16eaa4cbc87ad6275dc990189621c438ef18b269d73715379d",
+      "previousSha256": "9bd2db4a0664aff3fe0c095361269210056dd327d31bac151e63fd7833522f33",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "eaa4bd91465c5894a4bcf3601c835a2ff610618c1916c28a6591224a6bab06d2",
+      "previousSha256": "d82045e056245cfee7403837dce9439050c83a986be9213a9747301e9e3592a4",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "7e4cd92e416154fdeead2792ff1c4682b38d847ff99c08b702f2c9f17ba2d9d0",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "ae382adc1e58047ae2cac29a250ecbf3801d83deafae2e9252407e12b3d5cd0e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Existing PR72 private-draft recovery preparation
+
+Original5655ca32c7725b3c500ca5025fb9153ff21af56e follows original71b590be6a. Preparation starts from reviewed71 integration454d4185; immutable71 candidate request3f0a064e/run40261212475 remains untouched. No PR72 request/publication or baseline import is authorized before PR71 review and approved-parent carry-forward.
+
+The executable residual is only Conversations.svelte (17-line feedback condition delta) and249 added selected-history story lines. The component is byte-identical between original71 and current prepared71 before this delta: suppress only stale conversation.send / Message sent. success when a new nonempty draft exists; errors, pending text and accepted-send acknowledgement remain. No persistence, reducer, encryption, authorization, dependency, deadline or workflow change.
+
+The six appended steps save a durable unsent browser draft; reload/open two authenticated tabs; preserve a competing draft with disabled Send and both remedies visible; explicitly choose saved text with keyboard; commit exactly one message/revision/sequence; reload cleared draft and retained sent message. Canonical state stays exactly equal until send and removed-member/outsider projections exclude unsent/sent private text. These projection assertions are not authenticated unauthorized-read denial. Focus+Enter and preference assertions are not full Tab or motion approval.
+
+The story remains authoritative at tests/e2e/009-selected-history/selected-history.spec.ts. Original interaction/privacy/recovery bodies and300s/30s/10s budgets are preserved; only prior five import/package-path adaptations remain. Nine new views per size extend25 to34 (136 total); PR71's100 views are still awaiting candidate review. No historical Darwin captures imported, no current references changed. All6370 parent reference files must remain byte-identical.
+
+Historical strict39747681740/job119720129797:108passed64failed8skipped. Missing inherited018 on desktop/large/short; phone017, chart005, scheduled-start026 and short identity differences were historical parent states, not new evidence against prepared72. Generation119720129645 uploaded no files/artifacts. Earlier application/docs passed. Retained logs /tmp/cluster-pr72-failed.log and /tmp/cluster-pr72-generate.log remain original evidence; no stale rerun.
+
+Actual Pantheon numbered feature organization and Cluster E2E_GUIDE were re-read before this scoped source/layout integration. Feature009 README/FIDELITY will describe the complete draft extension; no duplicate helper/spec or whole-project compliance claim.

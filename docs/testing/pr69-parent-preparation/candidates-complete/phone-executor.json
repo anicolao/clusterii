@@ -1,0 +1,21 @@
+{
+  "requestId": "contact-candidates-20261025-01",
+  "sourceCommit": "cb8c9cba18ad9107142e913a2101fda58f76610a",
+  "executorCommit": "755f7760752d715b20438588e0525dfe6d7738b2",
+  "case": "contact-candidates",
+  "mode": "generate",
+  "target": "b89864b1160743f29aaeb4a3e275377391384b46",
+  "runId": "40245246719",
+  "attempt": 1,
+  "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+  "specs": {
+    "contacts": {
+      "file": "tests/browser/fleet-contacts.story.spec.ts",
+      "title": "Live fleet contacts preserve acquired and last-seen private facts across reload",
+      "story": "live-fleet-contacts",
+      "sha": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319",
+      "views": 19
+    }
+  },
+  "requestSha256": "e8ab300bdef3288030b24fcf5082106ecfc533283b21ebb98ee8181efa4d4c4c"
+}

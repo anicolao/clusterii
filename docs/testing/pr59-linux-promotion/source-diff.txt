@@ -1,0 +1,10 @@
+ .github/recovery/pr59-cancellation-01.json  |   8 +++
+ .github/workflows/recovery-cancellation.yml |  48 +++++++++++++
+ PROMPT_WORK.md                              |   2 +
+ nix/ci-renderer.sh                          |   1 +
+ scripts/cancellation-candidates.mjs         |  23 +++++++
+ scripts/cancellation-dispatch.test.mjs      |  23 +++++++
+ scripts/cancellation-request.mjs            | 102 ++++++++++++++++++++++++++++
+ scripts/cancellation-request.test.mjs       |   9 +++
+ scripts/ci-in-renderer.sh                   |   4 ++
+ 9 files changed, 220 insertions(+)

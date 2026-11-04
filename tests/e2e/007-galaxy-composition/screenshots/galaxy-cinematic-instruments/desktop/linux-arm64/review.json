@@ -1,0 +1,104 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "galaxy-cinematic-instruments",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "7ccef2e62ff1b0dbb4de21b8426880c2f5c6e2bb",
+    "dirty": false,
+    "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+    "specSha256": "b3a59a99682ed59bf74951f035c99fd867999c463e75c19dfd2c7fd11cce02ec"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-fit-41879938561/desktop/test-results/stories/galaxy-cinematic-instruments/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "004-read-commanders-and-home-1-deepseer-envoy.png",
+      "sha256": "a046b62ad3022c2c6e4ff145957d80fe58e485695d3d159a74521cdb83f1007d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-inspect-real-commanders-1-deepseer-envoy.png",
+      "sha256": "04478a078cfe13405dd9f5561ac173850bf458cdd934d27b77651b1102c2b339",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-return-to-portrait-1-deepseer-envoy.png",
+      "sha256": "b2268578aeaf3bd0cd37d902e1db4367a1451e6ef6c34dd7dce34e05246e4fe9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-choose-full-overview-1-deepseer-envoy.png",
+      "sha256": "9ef5b3196e0689a28c929d883e2e90ac3cdb89d516977fc8d591e9c9e3080ab4",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "008-inspect-home-layers-1-deepseer-envoy.png",
+      "sha256": "51c4da212fe3d64f242d533f65f287de703b3defd0be2a4489085b833df0f734",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-normal-motion-return-1-deepseer-envoy.png",
+      "sha256": "83e2fe48493b84aa98ddbea7b240222107d01a091612a84b9042674faafc750c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-contain-live-commander-menu-1-deepseer-envoy.png",
+      "sha256": "a0df49b0664ac7aa1498eafb1b4f12ce85894b7866a02c261fb92506e91657bf",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+      "sha256": "8fd5eeb8aec7f37b0f82a20df686e0da5b921effb2f30e0c0361da23c5e65ce2",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-recover-real-home-1-deepseer-envoy.png",
+      "sha256": "7cf65640b2093741ef054045dca13110f6194c86ccd162a10144f1b7b7fc5c8d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

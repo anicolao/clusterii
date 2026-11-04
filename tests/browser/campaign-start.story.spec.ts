@@ -1,3 +1,4 @@
+import { acknowledgeCampaignStart, inspectLayer } from "./galaxy-navigation";
 import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
@@ -329,57 +330,84 @@ test("Five commanders start two campaigns and recover their named active campaig
       views: pages.map((page, i) => activeView(page, aliases[i])),
     });
     const homes: string[] = [];
-    await story.step("homes-assigned", {
-      actor: "Four independent commanders",
-      description:
-        "Open the first campaign and inspect each commander's own authoritative home system.",
-      action: async () => {
-        for (let i = 0; i < 4; i++) await pages[i].goto(urls[0]);
-      },
-      acknowledgement: {
-        spec: "Four distinct homes show ownership of both layers and the recorded starting forces.",
-        check: async () => {
-          for (let i = 0; i < 4; i++) {
-            const page = pages[i];
-            // The phone rail deliberately omits campaign facts; every size
-            // has already captured the visible authoritative roster status.
-            if (info.project.name !== "phone")
-              await expect(
-                page.getByText("Campaign begun", { exact: true }),
-              ).toBeVisible();
-            const inspector = page.getByRole("complementary", {
-              name: "Selected system",
-            });
-            await expect(
-              inspector.getByText("You", { exact: true }),
-            ).toHaveCount(2);
-            await expect(
-              inspector.getByText("20", { exact: true }),
-            ).toHaveCount(2);
-            const details = inspector.getByRole("region", {
-              name: "System details",
-              exact: true,
-            });
-            const bounds = await details.boundingBox();
-            expect(bounds).not.toBeNull();
-            for (const fact of await inspector
-              .getByText(/^(You|20)$/, { exact: true })
-              .all()) {
-              const box = await fact.boundingBox();
-              expect(box).not.toBeNull();
-              expect(box!.y).toBeGreaterThanOrEqual(bounds!.y);
-              expect(box!.y + box!.height).toBeLessThanOrEqual(
-                bounds!.y + bounds!.height,
-              );
+    for (const layer of ["Orbit", "Surface"] as const) {
+      await story.step(
+        layer === "Orbit" ? "homes-assigned" : "home-surface-forces",
+        {
+          actor: "Four independent commanders",
+          description: `Open each commander's own authoritative home and read its ${layer.toLowerCase()} ownership and starting forces through the real layer disclosure.`,
+          action: async () => {
+            for (let i = 0; i < 4; i++) {
+              if (layer === "Orbit") {
+                await pages[i].goto(urls[0]);
+                await acknowledgeCampaignStart(pages[i]);
+              }
+              await inspectLayer(pages[i], layer);
+              await pages[i]
+                .getByRole("region", {
+                  name:
+                    layer === "Orbit" ? "Orbital control" : "Surface control",
+                  exact: true,
+                })
+                .getByText("20", { exact: true })
+                .scrollIntoViewIfNeeded();
             }
-            homes.push(await inspector.getByRole("heading").innerText());
-          }
-          expect(new Set(homes).size).toBe(4);
+          },
+          acknowledgement: {
+            spec: `Four distinct homes show the commander's own ${layer.toLowerCase()} and twenty ${layer === "Orbit" ? "fighters" : "infantry"}. Both original layer facts are read in separate complete views.`,
+            check: async () => {
+              for (let i = 0; i < 4; i++) {
+                const inspector = pages[i].getByRole("complementary", {
+                  name: "Selected system",
+                });
+                const region = inspector.getByRole("region", {
+                  name:
+                    layer === "Orbit" ? "Orbital control" : "Surface control",
+                  exact: true,
+                });
+                await expect(
+                  region.getByRole("button", {
+                    name: `Inspect ${layer} · owner You`,
+                    exact: true,
+                  }),
+                ).toHaveAttribute("aria-expanded", "true");
+                await expect(
+                  region.getByText("20", { exact: true }),
+                ).toHaveCount(1);
+                await expect(
+                  region.getByText("20", { exact: true }),
+                ).toBeInViewport({ ratio: 1 });
+                const details = inspector.getByRole("region", {
+                  name: "System details",
+                  exact: true,
+                });
+                const bounds = await details.boundingBox();
+                const box = await region
+                  .getByText("20", { exact: true })
+                  .boundingBox();
+                expect(bounds).not.toBeNull();
+                expect(box).not.toBeNull();
+                expect(box!.y).toBeGreaterThanOrEqual(bounds!.y);
+                expect(box!.y + box!.height).toBeLessThanOrEqual(
+                  bounds!.y + bounds!.height,
+                );
+                if (layer === "Orbit")
+                  homes.push(
+                    await inspector
+                      .getByRole("heading", { level: 2 })
+                      .innerText(),
+                  );
+              }
+              expect(new Set(homes).size).toBe(4);
+            },
+          },
+          verifications: [noErrors],
+          views: pages
+            .slice(0, 4)
+            .map((page, i) => activeView(page, aliases[i])),
         },
-      },
-      verifications: [noErrors],
-      views: pages.slice(0, 4).map((page, i) => activeView(page, aliases[i])),
-    });
+      );
+    }
     await story.step("single-membership-entry", {
       actor: aliases[3],
       description: "Return to entry with one accessible active campaign.",
@@ -402,14 +430,13 @@ test("Five commanders start two campaigns and recover their named active campaig
       actor: aliases[0],
       description:
         "Visit the second active campaign so it becomes the last accessible selection.",
-      action: async () => pages[0].goto(urls[1]).then(() => {}),
+      action: async () => {
+        await pages[0].goto(urls[1]);
+        await acknowledgeCampaignStart(pages[0]);
+      },
       acknowledgement: {
         spec: "The second authoritative galaxy has begun.",
         check: async () => {
-          if (info.project.name !== "phone")
-            await expect(
-              pages[0].getByText("Campaign begun", { exact: true }),
-            ).toBeVisible();
           await expect(
             pages[0]
               .getByRole("complementary", { name: "Selected system" })

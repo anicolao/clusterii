@@ -1,0 +1,382 @@
+{
+  "id": "live-fleet-formation",
+  "title": "Form, recover and disband a fleet",
+  "inventory": [
+    "UX-08",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent commanders enter through actual authenticated controls. Formation reserves forces, leased settlement moves them once, and disband returns them once. Owner and other-player views show private orders and outcomes. Fixed catalogue/domain clocks are explicit harness controls. Development transport capacity and tick rules remain under review; this does not certify travel, managed encryption or hosted scheduling.",
+  "source": {
+    "commit": "97661c2f20afac01d5d3550d31117c83f3c96420",
+    "dirty": true,
+    "spec": "tests/browser/fleet-formation.story.spec.ts",
+    "specSha256": "ebd68226fa2090476b4047efac4d766d6d00feee318b5a1a349d7099bd03751e"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-formation",
+      "description": "Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The actual capacity constraint disables formation without a command.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Invalid input does not change canonical state or reserve forces."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "010-inspect-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "010-inspect-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-complement",
+      "description": "Reduce infantry to the supported twenty and inspect the ready formation.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "Formation is enabled and focused for keyboard confirmation.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "011-choose-complement-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "011-choose-complement-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-formation",
+      "description": "Confirm formation with Enter. The authoritative receipt reserves two fighters and twenty infantry for tick one, without moving them yet.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The service acknowledges the formation and publishes its exact waiting complement.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One accepted receipt and revision reserve the original forces without creating a fleet or moving the garrison."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "012-reserve-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "012-reserve-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-formation",
+      "description": "Reload the owner account and reopen its exact campaign's home-system fleet panel.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same accepted order and reserved complement return from persistence.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload adds no revision, order or effect."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "013-reload-formation-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "013-reload-formation-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settle-formation",
+      "description": "Advance the explicit domain clock once and invoke the real leased tick service. Repeat delivery must do no work; no fleet or outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "formed-fleet",
+      "description": "Read the authoritative formation result and select the new fleet with the keyboard. The other commander still sees only their own forces.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The confirmed fleet contains two fighters and twenty infantry and can be disbanded.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Units move from garrison to exactly one fleet; only this tick's recorded production changes empire totals."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "015-formed-fleet-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "015-formed-fleet-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "map-presence",
+      "description": "Return to the actual galaxy and inspect the stationed fleet marker.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The galaxy reports one owned stationed fleet and restores the opener's focus.",
+      "verifications": [
+        "Navigation preserves canonical forces and the independent player's empty roster."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "016-map-presence-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "016-map-presence-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reserve-disband",
+      "description": "Reopen the stationed fleet and confirm disbanding with Enter. Forces stay aboard until tick two is acknowledged.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The actual disband receipt queues the unchanged complement for tick two.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Exactly one revision and order are added; no forces return before settlement."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "017-reserve-disband-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "017-reserve-disband-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-disband",
+      "description": "Reload the accepted disband order before settlement.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The same private disband order remains scheduled.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "Reload neither duplicates the command nor returns forces early."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "018-reload-disband-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "018-reload-disband-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settle-disband",
+      "description": "Deliver the second boundary through the real leased service, then repeat it. Production and disband are real reducer outcomes; this is not hosted cadence evidence.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "disbanded-fleet",
+      "description": "Read the confirmed disband result and returned home-system forces.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The fleet has disbanded, its order has cleared, and formation is available again.",
+      "verifications": [
+        "Both fixed action rails are visible before scrolling and no application error occurred.",
+        "Other commanders have no owner fleet, private order or ledger in their actual member projections.",
+        "One matching disband ledger returns the complete complement once, conserving total forces plus only recorded production."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "020-disbanded-fleet-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "020-disbanded-fleet-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "recover-final-forces",
+      "description": "Reload the settled result and return to the galaxy with the keyboard.",
+      "actor": "Fleet marshal",
+      "kind": "player",
+      "acknowledgement": "The map has no owned fleet marker and focus returns to Fleets · 0.",
+      "verifications": [
+        "Final reload and navigation preserve the exact settled state and no application errors occurred."
+      ],
+      "views": [
+        {
+          "player": "Fleet marshal",
+          "image": "021-recover-final-forces-1-fleet-marshal.png",
+          "verifications": []
+        },
+        {
+          "player": "Independent marshal",
+          "image": "021-recover-final-forces-2-independent-marshal.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

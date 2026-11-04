@@ -1,0 +1,13 @@
+{
+  "scope": "Task-owned recovery evidence only",
+  "measuredDirectory": "/Users/anicolao/projects/games/clusterii-recovery-evidence",
+  "allocatedKiB": 18813360,
+  "filesystemAvailableKiB": 249072168,
+  "policy": [
+    "Retain only evidence still needed for unresolved diagnosis, image review or source/hash provenance.",
+    "Verify archives in memory and retain selected entries, avoiding duplicate ZIPs.",
+    "Audit superseded task-owned copies before further large artifact retention. Remove redundant copies only after verified retained/recoverable identity; preserve compact hashes and inspection records.",
+    "Recovery workflow remote retention is 14 days. Do not assume expired remote artifacts are recoverable."
+  ],
+  "noDeletionPerformedThisCheckpoint": true
+}

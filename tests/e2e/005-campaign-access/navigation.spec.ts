@@ -261,7 +261,10 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
     actor: "Star envoy",
     description:
       "Read the campaign briefing and distinguish the shared-victory design from enabled development behavior.",
-    action: async () => button(page, "Briefing & roster").click(),
+    action: async () => {
+      await button(page, "Briefing & roster").focus();
+      await page.keyboard.press("Enter");
+    },
     acknowledgement: {
       spec: "The briefing explicitly says victory evaluation is not enabled.",
       check: async () =>
@@ -273,6 +276,59 @@ test("A commander reviews a faction, commits a seat, recovers the exact waiting 
       {
         spec: "Claim remains visible while reviewing the briefing.",
         check: async () => rail(page, "Claim your seat"),
+      },
+    ],
+    views: [view(page, "Star envoy", [button(page, "Claim your seat")])],
+  });
+  await story.step("read-full-briefing", {
+    actor: "Star envoy",
+    description:
+      "Open the actual rules with the keyboard, then read the last faction capacity inside the bounded campaign details. The selected faction and uncommitted seat remain unchanged.",
+    action: async () => {
+      await page
+        .getByText("Review this campaign’s rules", { exact: true })
+        .focus();
+      await page.keyboard.press("Enter");
+      await page
+        .getByRole("region", { name: "Campaign details", exact: true })
+        .focus();
+      await page.keyboard.press("End");
+    },
+    acknowledgement: {
+      spec: "The real rules disclosure remains open; no seat has been claimed.",
+      check: async () => {
+        await expect(
+          page
+            .getByRole("region", { name: "Admission briefing" })
+            .locator("details"),
+        ).toHaveAttribute("open", "");
+        await expect(
+          page.getByText("Your seat is confirmed.", { exact: true }),
+        ).toHaveCount(0);
+      },
+    },
+    verifications: [
+      {
+        spec: "The final faction and capacity are fully readable, with the commitment and document position preserved.",
+        check: async () => {
+          const row = page
+            .getByRole("region", { name: "Campaign roster", exact: true })
+            .getByRole("listitem")
+            .filter({ hasText: "Dracon League" });
+          await contained(row);
+          const tabs = await page
+            .getByRole("group", { name: "Join campaign details", exact: true })
+            .boundingBox();
+          const reading = await page
+            .getByRole("region", { name: "Campaign details", exact: true })
+            .boundingBox();
+          expect(tabs).not.toBeNull();
+          expect(reading).not.toBeNull();
+          expect(reading!.y).toBeGreaterThanOrEqual(tabs!.y + tabs!.height);
+          await expect(row).toContainText("1 seats open");
+          await rail(page, "Claim your seat");
+          expect(await page.evaluate(() => window.scrollY)).toBe(0);
+        },
       },
     ],
     views: [view(page, "Star envoy", [button(page, "Claim your seat")])],
@@ -588,7 +644,6 @@ test("An active commander filters stars, orbits by keyboard and inspects a clipp
     description:
       "Open Systems list and filter the authoritative catalogue to O-class stars.",
     action: async () => {
-      before = await page.locator(".star-label").boundingBox();
       await openGalaxyCommand(page, "Systems list", true);
       await page
         .getByRole("combobox", { name: "Stellar class", exact: true })
@@ -634,11 +689,21 @@ test("An active commander filters stars, orbits by keyboard and inspects a clipp
   await story.step("expand-camera-controls", {
     actor: "Star envoy",
     description:
-      "Restore all stellar classes and expand Camera controls using the keyboard.",
+      "Restore all stellar classes, frame Overview through the real camera control, then reopen Camera controls. The selected home is no longer the orbit pivot, so its movement measures the actual rotation at every viewport.",
     action: async () => {
       await page
         .getByRole("combobox", { name: "Stellar class", exact: true })
         .selectOption("all");
+      await page.getByText("Camera controls", { exact: true }).focus();
+      await page.keyboard.press("Enter");
+      await button(page, "Overview").focus();
+      await button(page, "Overview").press("Enter");
+      await expect(button(page, "Close list")).toHaveCount(0);
+      await expect(button(page, "Systems list")).toBeFocused();
+      await expect(page.locator(".star-label")).toBeVisible();
+      before = await page.locator(".star-label").boundingBox();
+      expect(before).not.toBeNull();
+      await openGalaxyCommand(page, "Systems list", true);
       await page.getByText("Camera controls", { exact: true }).focus();
       await page.keyboard.press("Enter");
     },
@@ -777,19 +842,24 @@ test("An active commander filters stars, orbits by keyboard and inspects a clipp
     await story.step("label-inspector-boundary", {
       actor: "Star envoy",
       description:
-        "Pan the real map toward the inspector boundary; map labels must not cover or intercept the system panel.",
+        "Pan within the real chart to its edge nearest the inspector; map labels remain readable and must not cover or intercept the system panel.",
       action: async () => {
         const marker = await page.locator(".star-label").boundingBox(),
           panel = await page
             .getByRole("complementary", { name: "Selected system" })
-            .boundingBox();
+            .boundingBox(),
+          viewport = await page.locator("[data-galaxy-viewport]").boundingBox();
         expect(marker).not.toBeNull();
         expect(panel).not.toBeNull();
+        expect(viewport).not.toBeNull();
         const x = marker!.x + marker!.width / 2,
-          y = marker!.y + marker!.height / 2;
+          y = marker!.y + marker!.height / 2,
+          boundary =
+            Math.min(panel!.y, viewport!.y + viewport!.height) - marker!.height;
+        expect(boundary).toBeGreaterThan(y);
         await page.mouse.move(x, y);
         await page.mouse.down({ button: "right" });
-        await page.mouse.move(x, panel!.y + 30, { steps: 8 });
+        await page.mouse.move(x, boundary, { steps: 8 });
         await page.mouse.up({ button: "right" });
       },
       acknowledgement: {

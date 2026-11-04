@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "learn-and-return",
   "renderer": {
@@ -27,5 +27,57 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/001-entry/entry.spec.ts",
+    "specSha256": "4f2b998a5e2d86b1409b018e0168fe8a9892b04b51d0dd71755ec83581890aed"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/learn-and-return/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-enter-1-visitor.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+      "previousSha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-open-guide-1-visitor.png",
+      "sha256": "afb7182d6695fc3efe3dd5dbbbc3e7cab6e9dc8e436ed676d9b869e104fc21ec",
+      "previousSha256": "afb7182d6695fc3efe3dd5dbbbc3e7cab6e9dc8e436ed676d9b869e104fc21ec",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "003-chapter-2-1-visitor.png",
+      "sha256": "0342f066867d353c6f47d738dfe8dce9bc0888820a12f9b28b09829881c86f7e",
+      "previousSha256": "0342f066867d353c6f47d738dfe8dce9bc0888820a12f9b28b09829881c86f7e",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "004-chapter-3-1-visitor.png",
+      "sha256": "ce1ebfe79610b677735f813e0cac5f31dc6a9dec40b8787304f0d5ea8a952398",
+      "previousSha256": "ce1ebfe79610b677735f813e0cac5f31dc6a9dec40b8787304f0d5ea8a952398",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "005-chapter-4-1-visitor.png",
+      "sha256": "f7e404b328aff149189f8e065b5d02723c16bf76a8a52e2fb2829eee961f0f0f",
+      "previousSha256": "f7e404b328aff149189f8e065b5d02723c16bf76a8a52e2fb2829eee961f0f0f",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "006-return-1-visitor.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+      "previousSha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

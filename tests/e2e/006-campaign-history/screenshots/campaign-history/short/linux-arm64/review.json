@@ -1,0 +1,80 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "campaign-history",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "44198cd8eeb2a31a2f02c770f29954ac89c43bb0",
+    "dirty": false,
+    "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+    "specSha256": "911800f202c321bee57177be451110b9622d32e3f9eca39d56cad50cc7742a10"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/short/test-results/stories/campaign-history/short/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "002-open-records-1-history-envoy-reading-device.png",
+      "sha256": "8a00521fbabd033cc68a2916a5ab270c66619d118c4ea35340131b5d5f790eb1"
+    },
+    {
+      "image": "003-keyboard-cycle-1-history-envoy-reading-device.png",
+      "sha256": "3db5e5447b161b524b701a40cbde4cd3b42c666e31fbf2280caa57372fe3e2e6"
+    },
+    {
+      "image": "004-inspect-record-1-history-envoy-reading-device.png",
+      "sha256": "ac56dc90453a18aeaa234f247d8217b928343c2a4897fb05bfc46642fba2e807"
+    },
+    {
+      "image": "005-earlier-records-1-history-envoy-reading-device.png",
+      "sha256": "81204b6048374c4dcc4d246f90db0eec0cdfe4a7eb1c854691c55621fa58d00b"
+    },
+    {
+      "image": "007-other-device-change-1-history-envoy-second-device.png",
+      "sha256": "332d5ab11b7046c0609f0d511079ad6d09196a85b69cbafe4cfb8c3e18e14671"
+    },
+    {
+      "image": "007-other-device-change-2-history-envoy-reading-device.png",
+      "sha256": "3e99d0e788718e3779792dea1d95437ffbceba167b8d5cfe0b673e9436637ed1"
+    },
+    {
+      "image": "008-recover-latest-1-history-envoy-reading-device.png",
+      "sha256": "e926fa23033bd7f7ffc504f07b35fa24fd0cc51bddbe1aec9d933f60f3586a1b"
+    },
+    {
+      "image": "009-return-to-galaxy-1-history-envoy.png",
+      "sha256": "7913bab82edc21546c0400bdfcfa14e9fe3a43e59f06be3d0c94242529bbb7ac"
+    },
+    {
+      "image": "010-reload-history-1-history-envoy-reading-device.png",
+      "sha256": "b605c60386ae777a8fdce630ebac15eda1e8345382133e370a053c8b791ef2d5"
+    },
+    {
+      "image": "011-finish-reading-1-history-envoy.png",
+      "sha256": "cbdee0c60372df2110de038ad7915ceaa52353e97160a3462e32bb577c5876c1"
+    }
+  ]
+}

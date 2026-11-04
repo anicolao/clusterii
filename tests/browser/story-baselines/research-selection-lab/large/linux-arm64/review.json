@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/RESEARCH_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "research-selection-lab",
   "renderer": {
@@ -27,5 +27,183 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "3f079e3bf5b6cc00e3543c0cd9a316559d7f6eaf",
+    "dirty": false,
+    "spec": "tests/browser/research-lab.story.spec.ts",
+    "specSha256": "11a4c47794e22262200f6b10594b9d73b0060bd97f767cf0ee3922294107e2b8"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-pending-1-developer-standard-research-selection.png",
+      "sha256": "584ee2741047bd6dbc30090c774383d718a97c77d04b1dc9f0815e5bf7beb46f",
+      "previousSha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-pending-2-developer-standard-research-outcome.png",
+      "sha256": "c30c08e5c127d84c624c24809a8fb5089f3453fdd7ebb524a28254e1106b0120",
+      "previousSha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-pending-3-developer-reduced-research-selection.png",
+      "sha256": "584ee2741047bd6dbc30090c774383d718a97c77d04b1dc9f0815e5bf7beb46f",
+      "previousSha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-pending-4-developer-reduced-research-outcome.png",
+      "sha256": "c30c08e5c127d84c624c24809a8fb5089f3453fdd7ebb524a28254e1106b0120",
+      "previousSha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-1-developer-standard-research-selection.png",
+      "sha256": "20df0d4d639c8332cfce9935e4fcfc60acf7b30230d6024d7639362db2bb26b2",
+      "previousSha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-2-developer-standard-research-outcome.png",
+      "sha256": "5922e76b6ebf4c1fc8d1838b2ef2999942704cc8e523925c313d1bc5f993c3f2",
+      "previousSha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-3-developer-reduced-research-selection.png",
+      "sha256": "20df0d4d639c8332cfce9935e4fcfc60acf7b30230d6024d7639362db2bb26b2",
+      "previousSha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-4-developer-reduced-research-outcome.png",
+      "sha256": "5922e76b6ebf4c1fc8d1838b2ef2999942704cc8e523925c313d1bc5f993c3f2",
+      "previousSha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-scheduled-1-developer-standard-research-selection.png",
+      "sha256": "d282809ff0d60bfe4d1a9bc77228594ffdfe09cafbf821cbec59d2c75efcb8e0",
+      "previousSha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-scheduled-2-developer-standard-research-outcome.png",
+      "sha256": "daab92188224822310a59fc06d79ef6af495a8cb7397a135653d478d70dc05a9",
+      "previousSha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-scheduled-3-developer-reduced-research-selection.png",
+      "sha256": "d282809ff0d60bfe4d1a9bc77228594ffdfe09cafbf821cbec59d2c75efcb8e0",
+      "previousSha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-scheduled-4-developer-reduced-research-outcome.png",
+      "sha256": "daab92188224822310a59fc06d79ef6af495a8cb7397a135653d478d70dc05a9",
+      "previousSha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-applied-1-developer-standard-research-selection.png",
+      "sha256": "400421c37ae60188dc7eb10d7dd49118c12d84d408d2793fc36a2e19065addd5",
+      "previousSha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-applied-2-developer-standard-research-outcome.png",
+      "sha256": "b6dd325f409b094a81da13ad79b640dcd46a28902c352525f948bb0e2e614588",
+      "previousSha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-applied-3-developer-reduced-research-selection.png",
+      "sha256": "400421c37ae60188dc7eb10d7dd49118c12d84d408d2793fc36a2e19065addd5",
+      "previousSha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-applied-4-developer-reduced-research-outcome.png",
+      "sha256": "b6dd325f409b094a81da13ad79b640dcd46a28902c352525f948bb0e2e614588",
+      "previousSha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-applied-history-1-developer-standard-research-selection.png",
+      "sha256": "7ca4c4ba71ccf411b8c77b4be2bc13b0b2a2c8b1bd41594ebb89d9aaacd793f8",
+      "previousSha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-applied-history-2-developer-standard-research-outcome.png",
+      "sha256": "f2262676136f30edab6c2999f0f055cc1282fc83b94756735413b924bd387005",
+      "previousSha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-applied-history-3-developer-reduced-research-selection.png",
+      "sha256": "7ca4c4ba71ccf411b8c77b4be2bc13b0b2a2c8b1bd41594ebb89d9aaacd793f8",
+      "previousSha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-applied-history-4-developer-reduced-research-outcome.png",
+      "sha256": "f2262676136f30edab6c2999f0f055cc1282fc83b94756735413b924bd387005",
+      "previousSha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-queue-preserved-choice-1-developer-standard-research-selection.png",
+      "sha256": "557e7401f451af79dd7c5c02a485f985e85470a6ec07763234cb044697b60a7b",
+      "previousSha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+      "sha256": "563f3c81a2040e9dac191b298885419cf31981d40782c37ca38d9ebfb0cf078b",
+      "previousSha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+      "sha256": "557e7401f451af79dd7c5c02a485f985e85470a6ec07763234cb044697b60a7b",
+      "previousSha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+      "sha256": "563f3c81a2040e9dac191b298885419cf31981d40782c37ca38d9ebfb0cf078b",
+      "previousSha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

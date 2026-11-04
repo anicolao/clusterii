@@ -1,0 +1,66 @@
+{
+  "reviewer": "supervisor",
+  "scope": "regression baseline only; not concept fidelity approval",
+  "viewport": "short",
+  "run": 40286771001,
+  "executor": "1d05fe938e9fffafc60736c8188897cee58357ce",
+  "inheritedExact": 50,
+  "newIndividuallyViewedAndApproved": [
+    {
+      "image": "041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "058f2f637e3b7467996267a3fae9c4b6d3d6311603d976bfae2e2aafab8052c5",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/041-save-account-private-draft-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+      "sha256": "90199c09b903246281b442f3ad965afeac239b15aa9d8a8312423a9a95122a95",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+      "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/043-other-account-on-same-browser-1-outer-witness-same-browser.png"
+    },
+    {
+      "image": "043-other-account-on-same-browser-2-outer-witness.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/043-other-account-on-same-browser-2-outer-witness.png",
+      "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/043-other-account-on-same-browser-2-outer-witness.png"
+    },
+    {
+      "image": "044-end-other-account-session-1-outer-witness-signed-out.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/044-end-other-account-session-1-outer-witness-signed-out.png",
+      "sha256": "90199c09b903246281b442f3ad965afeac239b15aa9d8a8312423a9a95122a95",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/044-end-other-account-session-1-outer-witness-signed-out.png"
+    },
+    {
+      "image": "045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "82728b028ff57e72d14aca0a7dc7d1f0352840ae8402436be7596b24613baa2b",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/045-restore-original-account-draft-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "045-restore-original-account-draft-2-outer-witness.png",
+      "path": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/045-restore-original-account-draft-2-outer-witness.png",
+      "sha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596",
+      "comparison": "new",
+      "viewport": "short",
+      "originalPath": "/tmp/cluster-pr75-candidate-review/short/test-results/stories/009-selected-history/stories/selected-history-consent/short/linux-arm64/045-restore-original-account-draft-2-outer-witness.png"
+    }
+  ]
+}

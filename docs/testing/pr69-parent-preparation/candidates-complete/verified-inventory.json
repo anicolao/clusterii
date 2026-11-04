@@ -1,0 +1,806 @@
+[
+  {
+    "artifact": {
+      "id": 12618960995,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODk2MDk5NQ==",
+      "name": "contact-candidates-contacts-desktop-755f7760752d715b20438588e0525dfe6d7738b2-1",
+      "size_in_bytes": 19924156,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618960995",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618960995/zip",
+      "expired": false,
+      "digest": "sha256:c32ed5641a072900b04a17e5b260d46672512d123892d128405abb2f0f5cf29b",
+      "created_at": "2026-10-25T23:38:33Z",
+      "updated_at": "2026-10-25T23:38:33Z",
+      "expires_at": "2026-11-24T23:38:32Z",
+      "workflow_run": {
+        "id": 40245246719,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr69-contact-candidates",
+        "head_sha": "755f7760752d715b20438588e0525dfe6d7738b2"
+      }
+    },
+    "outcome": {
+      "family": "contacts",
+      "viewport": "desktop",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 19
+    },
+    "executor": {
+      "requestId": "contact-candidates-20261025-01",
+      "sourceCommit": "cb8c9cba18ad9107142e913a2101fda58f76610a",
+      "executorCommit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "case": "contact-candidates",
+      "mode": "generate",
+      "target": "b89864b1160743f29aaeb4a3e275377391384b46",
+      "runId": "40245246719",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "contacts": {
+          "file": "tests/browser/fleet-contacts.story.spec.ts",
+          "title": "Live fleet contacts preserve acquired and last-seen private facts across reload",
+          "story": "live-fleet-contacts",
+          "sha": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319",
+          "views": 19
+        }
+      },
+      "requestSha256": "e8ab300bdef3288030b24fcf5082106ecfc533283b21ebb98ee8181efa4d4c4c"
+    },
+    "source": {
+      "commit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "dirty": true,
+      "spec": "tests/browser/fleet-contacts.story.spec.ts",
+      "specSha256": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+        "sha256": "7cca8e90196952cc25ed909b3678cb9c508591ed8f492b83077d8132f11ee5b5",
+        "bytes": 1438924,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+        "sha256": "973a31699ad234ad6b199d2eb4130fca068fade50ac416aad17caf2d41a6403d",
+        "bytes": 699075,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+        "sha256": "7ba40925c95c7b114c9824b813e4589648a143f914862a6c199ea0707f346d70",
+        "bytes": 1450558,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+        "sha256": "1a07045ec802f9e604f491915ad5edf2b5de69147e2960777ea47a81adc75d5e",
+        "bytes": 703574,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+        "sha256": "4795adf450a689a94c5a72899f44a631266481bb44b937d6ac0cf4784909da47",
+        "bytes": 1446684,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+        "sha256": "3cdef954ab4ffad9fe55b5b4302d6818b49315bb1461048e68a5ea57e4247f85",
+        "bytes": 630315,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/015-read-current-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "4795adf450a689a94c5a72899f44a631266481bb44b937d6ac0cf4784909da47",
+        "bytes": 1446684,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/015-read-current-coordinates-age-2-contact-watcher.png",
+        "sha256": "3cdef954ab4ffad9fe55b5b4302d6818b49315bb1461048e68a5ea57e4247f85",
+        "bytes": 630315,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "4795adf450a689a94c5a72899f44a631266481bb44b937d6ac0cf4784909da47",
+        "bytes": 1446684,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/016-read-current-coordinates-facts-2-contact-watcher.png",
+        "sha256": "3cdef954ab4ffad9fe55b5b4302d6818b49315bb1461048e68a5ea57e4247f85",
+        "bytes": 630315,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/018-recover-last-seen-record-1-fleet-pathfinder.png",
+        "sha256": "987c7705330eb652e939f219ecad1356876696603def5d31e4989e7d94d2a891",
+        "bytes": 1446540,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/018-recover-last-seen-record-2-contact-watcher.png",
+        "sha256": "2f1032633997e1ecab5ee88b7f072fb8d56782b2f19714772b7c122b64c096c6",
+        "bytes": 625613,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/019-read-retained-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "987c7705330eb652e939f219ecad1356876696603def5d31e4989e7d94d2a891",
+        "bytes": 1446540,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/019-read-retained-coordinates-age-2-contact-watcher.png",
+        "sha256": "42cf5ba29b0f7fa2e88e5582627f7d33b3fd410743cfb17e8019e10dd4481c72",
+        "bytes": 627520,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "987c7705330eb652e939f219ecad1356876696603def5d31e4989e7d94d2a891",
+        "bytes": 1446540,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/020-read-retained-coordinates-facts-2-contact-watcher.png",
+        "sha256": "42cf5ba29b0f7fa2e88e5582627f7d33b3fd410743cfb17e8019e10dd4481c72",
+        "bytes": 627520,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/021-reload-private-contact-history-1-fleet-pathfinder.png",
+        "sha256": "4742c2932446e31db1cddd036b8caf57b52424247a0b62abddf115136caaec18",
+        "bytes": 1444225,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/021-reload-private-contact-history-2-contact-watcher.png",
+        "sha256": "2f1032633997e1ecab5ee88b7f072fb8d56782b2f19714772b7c122b64c096c6",
+        "bytes": 625613,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/desktop/linux-arm64/022-return-to-chart-by-keyboard-1-contact-watcher.png",
+        "sha256": "7c4f41dfaf185ab43c2e1f0bf06f4d7795021ec94b34787fd34e2f4a901cb854",
+        "bytes": 1126648,
+        "approval": "pending reviewer disposition"
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618696839,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODY5NjgzOQ==",
+      "name": "contact-candidates-contacts-phone-755f7760752d715b20438588e0525dfe6d7738b2-1",
+      "size_in_bytes": 2663079,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618696839",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618696839/zip",
+      "expired": false,
+      "digest": "sha256:3774dc24e39a5cfa09a1f544c2b327d23cb27685823ee5886a95a9dc4b69e2ba",
+      "created_at": "2026-10-25T23:38:27Z",
+      "updated_at": "2026-10-25T23:38:27Z",
+      "expires_at": "2026-11-24T23:38:26Z",
+      "workflow_run": {
+        "id": 40245246719,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr69-contact-candidates",
+        "head_sha": "755f7760752d715b20438588e0525dfe6d7738b2"
+      }
+    },
+    "outcome": {
+      "family": "contacts",
+      "viewport": "phone",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 19
+    },
+    "executor": {
+      "requestId": "contact-candidates-20261025-01",
+      "sourceCommit": "cb8c9cba18ad9107142e913a2101fda58f76610a",
+      "executorCommit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "case": "contact-candidates",
+      "mode": "generate",
+      "target": "b89864b1160743f29aaeb4a3e275377391384b46",
+      "runId": "40245246719",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "contacts": {
+          "file": "tests/browser/fleet-contacts.story.spec.ts",
+          "title": "Live fleet contacts preserve acquired and last-seen private facts across reload",
+          "story": "live-fleet-contacts",
+          "sha": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319",
+          "views": 19
+        }
+      },
+      "requestSha256": "e8ab300bdef3288030b24fcf5082106ecfc533283b21ebb98ee8181efa4d4c4c"
+    },
+    "source": {
+      "commit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "dirty": true,
+      "spec": "tests/browser/fleet-contacts.story.spec.ts",
+      "specSha256": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+        "sha256": "d703caa9902b57e03fc8bb340c3dc256e90214ce8e5979cf135649a96eb26e18",
+        "bytes": 152772,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+        "sha256": "8a80b544d58890512e23b6352d3696762ebff1a5d24011f9c8c65fa3b96d7877",
+        "bytes": 73855,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+        "sha256": "68ac5763f749e4e01444c548f19bff34b04542bb3f5bea9ec05b16f1c65db974",
+        "bytes": 162854,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+        "sha256": "65f8c7242440a64410c807180ef29114bde27290b6a2b62861802832a510b4d9",
+        "bytes": 77381,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+        "sha256": "ab4a20a3327fac339b2d2a63aa42775bacd753f7998367520d7794ea8310e1ff",
+        "bytes": 154851,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+        "sha256": "9fc0eb255c5b86a4685c0fb755f8babbe5b45cc43acfbeea1ee8688f90633523",
+        "bytes": 154067,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/015-read-current-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "ab4a20a3327fac339b2d2a63aa42775bacd753f7998367520d7794ea8310e1ff",
+        "bytes": 154851,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/015-read-current-coordinates-age-2-contact-watcher.png",
+        "sha256": "9fc0eb255c5b86a4685c0fb755f8babbe5b45cc43acfbeea1ee8688f90633523",
+        "bytes": 154067,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "ab4a20a3327fac339b2d2a63aa42775bacd753f7998367520d7794ea8310e1ff",
+        "bytes": 154851,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-facts-2-contact-watcher.png",
+        "sha256": "ddf7079361e76b973b6147dea55c2154d21be5e0e97148ed8e3fe1e6373a473f",
+        "bytes": 102906,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/018-recover-last-seen-record-1-fleet-pathfinder.png",
+        "sha256": "ab4a20a3327fac339b2d2a63aa42775bacd753f7998367520d7794ea8310e1ff",
+        "bytes": 154851,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/018-recover-last-seen-record-2-contact-watcher.png",
+        "sha256": "350d6a936b39934f08cd756813b3d85896932f433aaaf09c0a23e40c1cfbc38b",
+        "bytes": 152137,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/019-read-retained-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "ab4a20a3327fac339b2d2a63aa42775bacd753f7998367520d7794ea8310e1ff",
+        "bytes": 154851,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/019-read-retained-coordinates-age-2-contact-watcher.png",
+        "sha256": "86c495c38c8bd97f149091c717f7da99af2ca4f628ff11944150aa78d5bc6d88",
+        "bytes": 151920,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "ab4a20a3327fac339b2d2a63aa42775bacd753f7998367520d7794ea8310e1ff",
+        "bytes": 154851,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-facts-2-contact-watcher.png",
+        "sha256": "91e7157f56c6f3004746c968d558e6933b42d29e13efff00b6088c9b64700c8f",
+        "bytes": 99859,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/021-reload-private-contact-history-1-fleet-pathfinder.png",
+        "sha256": "0e7d1a6ab92056369435ad85e4741b806b60517e79c48700065ef0ad512268d5",
+        "bytes": 159019,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/021-reload-private-contact-history-2-contact-watcher.png",
+        "sha256": "923162fff52c8a3b52a4b79d3c1ac467fe2f8fb02d2ca57861eff6a787026cc9",
+        "bytes": 152680,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/phone/linux-arm64/022-return-to-chart-by-keyboard-1-contact-watcher.png",
+        "sha256": "e0ce550d42d6e1aedfe485506c998a3d0da1d69572b44408fba4946ba4986557",
+        "bytes": 146677,
+        "approval": "pending reviewer disposition"
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618562849,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODU2Mjg0OQ==",
+      "name": "contact-candidates-contacts-large-755f7760752d715b20438588e0525dfe6d7738b2-1",
+      "size_in_bytes": 84381432,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618562849",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618562849/zip",
+      "expired": false,
+      "digest": "sha256:6619f93aa5a147e171b466cd6419f3d4cd3cc41fca3944bb9a9cc0aa65e59b6b",
+      "created_at": "2026-10-25T23:44:56Z",
+      "updated_at": "2026-10-25T23:44:56Z",
+      "expires_at": "2026-11-24T23:44:54Z",
+      "workflow_run": {
+        "id": 40245246719,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr69-contact-candidates",
+        "head_sha": "755f7760752d715b20438588e0525dfe6d7738b2"
+      }
+    },
+    "outcome": {
+      "family": "contacts",
+      "viewport": "large",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 19
+    },
+    "executor": {
+      "requestId": "contact-candidates-20261025-01",
+      "sourceCommit": "cb8c9cba18ad9107142e913a2101fda58f76610a",
+      "executorCommit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "case": "contact-candidates",
+      "mode": "generate",
+      "target": "b89864b1160743f29aaeb4a3e275377391384b46",
+      "runId": "40245246719",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "contacts": {
+          "file": "tests/browser/fleet-contacts.story.spec.ts",
+          "title": "Live fleet contacts preserve acquired and last-seen private facts across reload",
+          "story": "live-fleet-contacts",
+          "sha": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319",
+          "views": 19
+        }
+      },
+      "requestSha256": "e8ab300bdef3288030b24fcf5082106ecfc533283b21ebb98ee8181efa4d4c4c"
+    },
+    "source": {
+      "commit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "dirty": true,
+      "spec": "tests/browser/fleet-contacts.story.spec.ts",
+      "specSha256": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+        "sha256": "1ba9e9230e6f321a33dd17677d6c01a64141942da07131d5179a522f525f0c48",
+        "bytes": 6547162,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+        "sha256": "dcacc2ab8daed419e4711943541d74f5f47a8562e9517d2a7c41711c3af28633",
+        "bytes": 2682108,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+        "sha256": "67f9fe170717b884072cd2d297f1f5beb1cacda305bd02a48ee2158616ad7ea5",
+        "bytes": 6558474,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+        "sha256": "aee94540e2fe5fd33ead5f6ba53693fb1f44316d7df3685da1a0ff7eca2c4b73",
+        "bytes": 2686451,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+        "sha256": "bdc582143ccbbb79d1d98bd2ed4f963545f968b859b04a999040287344a3a86b",
+        "bytes": 6558658,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+        "sha256": "990b8872b57828e059cf51f8bd54e57f22db0078a15b474f157f8e921ce38efc",
+        "bytes": 2208061,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/015-read-current-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "bdc582143ccbbb79d1d98bd2ed4f963545f968b859b04a999040287344a3a86b",
+        "bytes": 6558658,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/015-read-current-coordinates-age-2-contact-watcher.png",
+        "sha256": "990b8872b57828e059cf51f8bd54e57f22db0078a15b474f157f8e921ce38efc",
+        "bytes": 2208061,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "bdc582143ccbbb79d1d98bd2ed4f963545f968b859b04a999040287344a3a86b",
+        "bytes": 6558658,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/016-read-current-coordinates-facts-2-contact-watcher.png",
+        "sha256": "990b8872b57828e059cf51f8bd54e57f22db0078a15b474f157f8e921ce38efc",
+        "bytes": 2208061,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/018-recover-last-seen-record-1-fleet-pathfinder.png",
+        "sha256": "0cb4e0b7d3a180147ceeb27d4eeea12a63004b5044e81a58d583be910d2aaffe",
+        "bytes": 6558044,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/018-recover-last-seen-record-2-contact-watcher.png",
+        "sha256": "ab0fc55bca9051bf1cf1697b3c82ffdef1cf049cb93a28fc832477a99319ffba",
+        "bytes": 2203924,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/019-read-retained-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "0cb4e0b7d3a180147ceeb27d4eeea12a63004b5044e81a58d583be910d2aaffe",
+        "bytes": 6558044,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/019-read-retained-coordinates-age-2-contact-watcher.png",
+        "sha256": "c60d0ad982eddcb63427c9e154b29c4b20c9afbfa972fb3dc1d65a5ca2b66626",
+        "bytes": 2205232,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "0cb4e0b7d3a180147ceeb27d4eeea12a63004b5044e81a58d583be910d2aaffe",
+        "bytes": 6558044,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/020-read-retained-coordinates-facts-2-contact-watcher.png",
+        "sha256": "c60d0ad982eddcb63427c9e154b29c4b20c9afbfa972fb3dc1d65a5ca2b66626",
+        "bytes": 2205232,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/021-reload-private-contact-history-1-fleet-pathfinder.png",
+        "sha256": "7666b1e6f35fe73c25586e9d81a40c5c515c5d0918a18371b4ba4da070cac08f",
+        "bytes": 6556110,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/021-reload-private-contact-history-2-contact-watcher.png",
+        "sha256": "a353d7576b2b0e6c99e41118234ba4a813023ce4a57a4bb76a63d1ad3b93be31",
+        "bytes": 2204974,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/large/linux-arm64/022-return-to-chart-by-keyboard-1-contact-watcher.png",
+        "sha256": "aae30e478584d844007efae89092e493fd8cefb307930d7ced1371a5e5654b19",
+        "bytes": 4921646,
+        "approval": "pending reviewer disposition"
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618134336,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODEzNDMzNg==",
+      "name": "contact-candidates-contacts-short-755f7760752d715b20438588e0525dfe6d7738b2-1",
+      "size_in_bytes": 13405924,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618134336",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618134336/zip",
+      "expired": false,
+      "digest": "sha256:5a67409a7b405edda246297590d40035f7c645efb8e4dd446c03807ad8be5d41",
+      "created_at": "2026-10-25T23:45:13Z",
+      "updated_at": "2026-10-25T23:45:13Z",
+      "expires_at": "2026-11-24T23:45:12Z",
+      "workflow_run": {
+        "id": 40245246719,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr69-contact-candidates",
+        "head_sha": "755f7760752d715b20438588e0525dfe6d7738b2"
+      }
+    },
+    "outcome": {
+      "family": "contacts",
+      "viewport": "short",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "generate",
+      "views": 19
+    },
+    "executor": {
+      "requestId": "contact-candidates-20261025-01",
+      "sourceCommit": "cb8c9cba18ad9107142e913a2101fda58f76610a",
+      "executorCommit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "case": "contact-candidates",
+      "mode": "generate",
+      "target": "b89864b1160743f29aaeb4a3e275377391384b46",
+      "runId": "40245246719",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "contacts": {
+          "file": "tests/browser/fleet-contacts.story.spec.ts",
+          "title": "Live fleet contacts preserve acquired and last-seen private facts across reload",
+          "story": "live-fleet-contacts",
+          "sha": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319",
+          "views": 19
+        }
+      },
+      "requestSha256": "e8ab300bdef3288030b24fcf5082106ecfc533283b21ebb98ee8181efa4d4c4c"
+    },
+    "source": {
+      "commit": "755f7760752d715b20438588e0525dfe6d7738b2",
+      "dirty": true,
+      "spec": "tests/browser/fleet-contacts.story.spec.ts",
+      "specSha256": "8f02859a98c1bba24ead05b82ceedf2464b5089ad8f42dd6c8b68a8a27fba319"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+        "sha256": "47557b692135f228db4f01d1c7cd1091afbfbc81f791e7eeebc8b75b1fbb1d5b",
+        "bytes": 943750,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+        "sha256": "ec575b0e011b554d2685db378fc823d0de7d7a505e98a98e30edd074199e68b1",
+        "bytes": 410532,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+        "sha256": "1047e7b1ed6c9dc0ed24c327b0e55b928130b8abad3983ea67e441b8333e47ca",
+        "bytes": 955427,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+        "sha256": "9d6393b7b24ec985c9693f76677994128e65415aeb2a38b9c3b77745d66e9165",
+        "bytes": 414684,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+        "sha256": "f6773d3ade5e141bbe1c3637c31c00adf7ee174e0ecee5bcd81de279fcfe50bf",
+        "bytes": 948679,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+        "sha256": "ed849e902ef02ca8274fe99c0970ed036b29b8404b49657c4bd3ecb9f1f35c0d",
+        "bytes": 484439,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/015-read-current-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "f6773d3ade5e141bbe1c3637c31c00adf7ee174e0ecee5bcd81de279fcfe50bf",
+        "bytes": 948679,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/015-read-current-coordinates-age-2-contact-watcher.png",
+        "sha256": "ed849e902ef02ca8274fe99c0970ed036b29b8404b49657c4bd3ecb9f1f35c0d",
+        "bytes": 484439,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "f6773d3ade5e141bbe1c3637c31c00adf7ee174e0ecee5bcd81de279fcfe50bf",
+        "bytes": 948679,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/016-read-current-coordinates-facts-2-contact-watcher.png",
+        "sha256": "ed849e902ef02ca8274fe99c0970ed036b29b8404b49657c4bd3ecb9f1f35c0d",
+        "bytes": 484439,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/018-recover-last-seen-record-1-fleet-pathfinder.png",
+        "sha256": "e6895a2f4fbdbed9eeb79f269ba62827a43dc71e4cad58e55abe4f497688450c",
+        "bytes": 948546,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/018-recover-last-seen-record-2-contact-watcher.png",
+        "sha256": "a69f920c4f51eb899029be115e183eccc9b9d62c506605a7382f9c8188d4b161",
+        "bytes": 482719,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/019-read-retained-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "e6895a2f4fbdbed9eeb79f269ba62827a43dc71e4cad58e55abe4f497688450c",
+        "bytes": 948546,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/019-read-retained-coordinates-age-2-contact-watcher.png",
+        "sha256": "d50f8eaf3d2c752e7223d42f88c80cd29bc6fff6f5a17ea007a40ab8b1806d6c",
+        "bytes": 484447,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "e6895a2f4fbdbed9eeb79f269ba62827a43dc71e4cad58e55abe4f497688450c",
+        "bytes": 948546,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/020-read-retained-coordinates-facts-2-contact-watcher.png",
+        "sha256": "d50f8eaf3d2c752e7223d42f88c80cd29bc6fff6f5a17ea007a40ab8b1806d6c",
+        "bytes": 484447,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/021-reload-private-contact-history-1-fleet-pathfinder.png",
+        "sha256": "89771747d95e8fdff088ee59db3f8cb412d7d81c383bcbfb81963e61405ceaf2",
+        "bytes": 950168,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/021-reload-private-contact-history-2-contact-watcher.png",
+        "sha256": "a69f920c4f51eb899029be115e183eccc9b9d62c506605a7382f9c8188d4b161",
+        "bytes": 482719,
+        "approval": "pending reviewer disposition"
+      },
+      {
+        "path": "/tmp/cluster-pr69-linux-candidates/test-results/stories/live-fleet-contacts/short/linux-arm64/022-return-to-chart-by-keyboard-1-contact-watcher.png",
+        "sha256": "5c98d3307a0e4a86b258417e25e7279d70ef0708b3bc8ceb963a6b832f882ffc",
+        "bytes": 648863,
+        "approval": "pending reviewer disposition"
+      }
+    ]
+  }
+]

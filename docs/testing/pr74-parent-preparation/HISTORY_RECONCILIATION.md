@@ -1,0 +1,5 @@
+# Exact history reconciliation
+
+Both initial unchanged-hook attempts failed. Two-LF metadata reaches incoming record71 but cannot recognize its formerly-final ancestor body followed by committed append separators; one-LF metadata instead rejects record60. Original73 record71 ends in one LF; original74 interior copy ends in two. Canonical335ad6c5 copied the former with two structural LF; append-only18a392c1 adds two more. Both original archives and all committed canonical bytes remain exact.
+
+A focused fixture reproduces this composition failure before the correction. The correction applies existing Git-proven append transitions to the existing retained-ancestor-separator form. It adds no normalization, arbitrary whitespace tolerance, reordered/omitted body acceptance, or archive bypass. Negative cases reject body edits, whitespace changes and omitted requests. This is an explicit prompt-checker correctness change, separate from the exact original74 story integration; no gameplay or screenshot comparator change.

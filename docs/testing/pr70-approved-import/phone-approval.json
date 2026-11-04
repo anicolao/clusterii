@@ -1,0 +1,281 @@
+{
+  "reviewer": "supervising Codex",
+  "artifactId": 12621959721,
+  "archiveSha256": "64b9bd938555f22d30c2ea51dcc5d08fea97fe889a2876e07f036a80eb13100a",
+  "wholeArchiveSizeSha256CRCVerified": true,
+  "executor": {
+    "requestId": "normal-focus-candidates-20261026-01",
+    "sourceCommit": "95497de455d6de9db2bc90f878a7f60e68f31ec9",
+    "executorCommit": "0bb2377bdfd4f82e188403be119da733abfb4028",
+    "case": "normal-focus-candidates",
+    "mode": "generate",
+    "target": "8b522244846dfd33a24beeaac54267f4c84de934",
+    "runId": "40255556296",
+    "attempt": 1,
+    "referenceTree": "b672fb1c5bb8253151ba9e5715d46e243aadc2a1",
+    "featureReferenceTree": "a094cba4acdf19e7c592bcde28c46dfad6ecc1f0",
+    "specs": {
+      "travel": {
+        "file": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+        "title": "Live fleet travel and arrival preserve private forces through recovery",
+        "story": "live-fleet-travel",
+        "sha": "3323d574aed7a700daf56103c20b49905886a715be62ff45991d3269ca58d0c8",
+        "views": 40
+      }
+    },
+    "requestSha256": "88c612cd58ec39294811a6c914c9c16eb7007aadad38d635828e7c582919c039"
+  },
+  "outcome": {
+    "family": "travel",
+    "viewport": "phone",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "generate",
+    "views": 40
+  },
+  "comparisons": [
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "previousSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "sha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+      "previousSha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "f2a1b05ed2860ed4a991a03d25511fd89fa00ea410b3529b169bf23b8106a082",
+      "previousSha256": "f2a1b05ed2860ed4a991a03d25511fd89fa00ea410b3529b169bf23b8106a082",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "sha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+      "previousSha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "sha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+      "previousSha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "sha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+      "previousSha256": "fc0d708c2bdad406a244de2c4b15f7362fb78cc67738683ccd99e0095c00d0d3",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "10778b1067e9726efab8231a619153c1f8b5c65cd3ec6480dfb99a013f3df747",
+      "previousSha256": "10778b1067e9726efab8231a619153c1f8b5c65cd3ec6480dfb99a013f3df747",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "26b76c0f7ada3c7a9855a3a66a6fc3216d8e0719430f0debdf760e3e5ce9b5d1",
+      "previousSha256": "26b76c0f7ada3c7a9855a3a66a6fc3216d8e0719430f0debdf760e3e5ce9b5d1",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "sha256": "1b872c5a85283c0d83e8d39f123eebcae36f5a2cad5bc554792aa8cef7cab3cf",
+      "previousSha256": "1b872c5a85283c0d83e8d39f123eebcae36f5a2cad5bc554792aa8cef7cab3cf",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-1-fleet-marshal.png",
+      "sha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+      "previousSha256": "3bfa4a8d7be8b6a93c77ec7d867d62c74f3d23d1b68720049243562a5768c365",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/020-accept-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-1-fleet-marshal.png",
+      "sha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+      "previousSha256": "ff432a1ef2d0573b19d7817d70868a215f2130a8e37e0239770d756491c9442b",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/021-recover-route-2-independent-marshal.png",
+      "sha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/023-traveling-1-fleet-marshal.png",
+      "sha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+      "previousSha256": "dd8545711bcae20d5901916e111118ba357275d85eda6a6d217bef9365b12c9d",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/023-traveling-2-independent-marshal.png",
+      "sha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+      "previousSha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-1-fleet-marshal.png",
+      "sha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+      "previousSha256": "2ae5d610bb4659be9c60503dc839705b71f3eb024cafd7fa208061f9920b320c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/025-arrival-report-2-independent-marshal.png",
+      "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-1-fleet-marshal.png",
+      "sha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+      "previousSha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/026-recover-arrival-2-independent-marshal.png",
+      "sha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/027-open-private-arrival-archives-1-fleet-marshal.png",
+      "sha256": "7be2549629e4bc2331a7550cd4e8b94b21fd09c1904faa0ad3d1b0059bf6334c",
+      "previousSha256": "7be2549629e4bc2331a7550cd4e8b94b21fd09c1904faa0ad3d1b0059bf6334c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/027-open-private-arrival-archives-2-independent-marshal.png",
+      "sha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/028-read-arrival-losses-1-fleet-marshal.png",
+      "sha256": "c6b7ba20f1a2befd964ea821772ba5b954a98b0afe5ac78978d05c86387e51ab",
+      "previousSha256": "c6b7ba20f1a2befd964ea821772ba5b954a98b0afe5ac78978d05c86387e51ab",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/028-read-arrival-losses-2-independent-marshal.png",
+      "sha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/029-read-arrival-control-1-fleet-marshal.png",
+      "sha256": "c6b7ba20f1a2befd964ea821772ba5b954a98b0afe5ac78978d05c86387e51ab",
+      "previousSha256": "c6b7ba20f1a2befd964ea821772ba5b954a98b0afe5ac78978d05c86387e51ab",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/029-read-arrival-control-2-independent-marshal.png",
+      "sha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/030-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+      "sha256": "36e615f87785bd9e6bdf1ebfe8ed709952ac778350d9ad4cd1b04415a8865291",
+      "previousSha256": "36e615f87785bd9e6bdf1ebfe8ed709952ac778350d9ad4cd1b04415a8865291",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/030-read-arrival-resolution-boundaries-2-independent-marshal.png",
+      "sha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/031-reload-private-arrival-archives-1-fleet-marshal.png",
+      "sha256": "7be2549629e4bc2331a7550cd4e8b94b21fd09c1904faa0ad3d1b0059bf6334c",
+      "previousSha256": "7be2549629e4bc2331a7550cd4e8b94b21fd09c1904faa0ad3d1b0059bf6334c",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/031-reload-private-arrival-archives-2-independent-marshal.png",
+      "sha256": "56029670c1f183312af6d83fe626d635ae794ae43c3270c5a745446f80b08a1f",
+      "previousSha256": "56029670c1f183312af6d83fe626d635ae794ae43c3270c5a745446f80b08a1f",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/032-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+      "sha256": "c80411d05af3d11385d897c733f13cbb4c572cbd9296f160c47998e6b550de55",
+      "previousSha256": "c80411d05af3d11385d897c733f13cbb4c572cbd9296f160c47998e6b550de55",
+      "changed": false
+    },
+    {
+      "entry": "test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/032-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "sha256": "ad8753d0302c86ce37524c791dc51dff2fcfdad72b729c08a85e070a5d1a9cd2",
+      "previousSha256": "8ae1d195e31f4480222ae158269895c24b5261f7b799fb2055867cf65b8966c8",
+      "changed": true
+    }
+  ],
+  "decision": "Approve normal phone candidates: 39 exact prior reviewed captures; independently viewed sole changed peer032 with clear gold Arrival reports opener focus outline, no clipping or new content change. Prior phone visual inspection covers unchanged images. This closes original phone focus baseline hold but does not establish causal explanation of prior missing ring or full CI success."
+}

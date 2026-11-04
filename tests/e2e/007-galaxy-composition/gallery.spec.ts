@@ -97,6 +97,48 @@ test("Shared commander and command instruments expose their real keyboard states
           ).toHaveCount(info.project.name === "phone" ? 0 : 3);
         },
       },
+      {
+        spec: "The adjacent shared system-layer specimen keeps owner labels and held-credit explanations inside their own instruments at its actual container width.",
+        check: async () => {
+          const overflow = await page
+            .locator(".system-world")
+            .evaluateAll((worlds) =>
+              worlds.flatMap((world) =>
+                Array.from(
+                  world.querySelectorAll(".layer-selector, .held-credits"),
+                ).flatMap((instrument) => {
+                  const bounds = instrument.getBoundingClientRect();
+                  return Array.from(instrument.children).flatMap((child) => {
+                    const box = child.getBoundingClientRect();
+                    return box.left < bounds.left ||
+                      box.right > bounds.right ||
+                      box.top < bounds.top ||
+                      box.bottom > bounds.bottom
+                      ? [
+                          {
+                            text: child.textContent?.trim(),
+                            parent: {
+                              left: bounds.left,
+                              right: bounds.right,
+                              top: bounds.top,
+                              bottom: bounds.bottom,
+                            },
+                            child: {
+                              left: box.left,
+                              right: box.right,
+                              top: box.top,
+                              bottom: box.bottom,
+                            },
+                          },
+                        ]
+                      : [];
+                  });
+                }),
+              ),
+            );
+          expect(overflow).toEqual([]);
+        },
+      },
     ],
     views: [
       {

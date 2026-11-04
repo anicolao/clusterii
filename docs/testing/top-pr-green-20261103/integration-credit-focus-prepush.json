@@ -1,0 +1,2684 @@
+{
+  "targetBefore": "1c5863496803368e04590f70ad01ce762c59aa8b",
+  "validatedRecovery": "879ad9f01244c5d11978f726222f893594a03fb0",
+  "changedPngCount": 666,
+  "allChangedHashesApproved": true,
+  "heldHashesExcluded": true,
+  "requiredWorkflowDiff": "empty",
+  "normalFastForward": true,
+  "actualParentPromptCheck": "passed against origin/feat/faction-briefing-composition",
+  "gates": "check 0 errors/1 existing warning; lint; 119 unit tests/4572 assertions; complete story-policy including four baseline-path browser checks passed",
+  "productionChanges": [
+    "Waiting footer confirmation clearance",
+    "SystemLayers responsive typography bounded by actual container width",
+    "Reuse existing focused-reader action in CreditOffers; identical MarketFocus behavior"
+  ],
+  "testChanges": "Add focused Roster/credit-control containment and SystemLayers child containment assertions; original checks and budgets retained",
+  "remaining": "Prior target strict is FAILURE. Full required CI must run on updated head. Other current fleet/reference families still require inspection; no promise of green.",
+  "images": [
+    {
+      "path": "tests/browser/story-baselines/commander-identity/large/linux-arm64/001-arrive-1-toile.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/browser/story-baselines/commander-identity/large/linux-arm64/005-sign-out-1-toile.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "e20e6bcc844adc78e23c53dbb03b76007d9b648d67e0faf502a33ccda85dafaf"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "f2f11616342b3a28094ffae2ebeec3b636eeda89debef86703706a76398295bd"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "e9439136fd66d37e32e1b7850bebc6db4020d0f83c80992f01bbcb93524eb523"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "b78ce043734054f16207353384879758a4bbbdde9e9931234cffb73e04e6077c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "6d1fa6ba0b77b75a40ea75a4202bd9faa0b64c26b5df70a8e331fde204484859"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "a45d78aae48dd66c5aae95a39204dd0ae341fcab1c9c1b7846bd714005f37859"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "6f0f4b31d8d14c3a11411f951105f3b4feafe30c9c4db532729c7d27a14e1ad2"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "0b2d34db1499e05d80867105abf6ba667ad81b357ccffc05b9b6ed993f79be94"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "8819f7eb122afb003a2d262be5ee4bdcff870d2beb0eb89110396eb74ca401cd"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "afd56af35bf5d3cb2b1419e721575e1bb4239f02d34e9c62d38831c2e0cf89c8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "f398b647b40a2326329247590b71104c4131a253a3ace3ba2426d63ca8c895b4"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "f51a491ff2ec6b8ca4d0ac3f981889799050bba9521cd4a139bfcec960c57156"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "f23c96142abf34755c98acdb25a0dc881790d6fed61a21ff4c77dacedbe7aa81"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "3389f53dfaedc7ac97a4bb84b22803bbcdba308d72f61a121fdfe7ea4420318b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "46d58ac2f1bc2e6ca9d78c53af0bd73b2a8357c43e27d854fed34f70a49278f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "f23c96142abf34755c98acdb25a0dc881790d6fed61a21ff4c77dacedbe7aa81"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "923464361d9a04b13c93e6847f007c6cb0804a2276ca8a0e2fb69a2f30c211c4"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "88e290516a29933a7874d37e5d903a63213b5293b8c2a806cc83c94d5428000a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "f23c96142abf34755c98acdb25a0dc881790d6fed61a21ff4c77dacedbe7aa81"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "3748eda921b58657a558dc04720c8167bd29e8263342cf99f0bdc6f78b40d540"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "c632822aa14c8ab9227404c96ea69adcad8f11f4795a32d8579d4a0db6613949"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "e7c471742b89db56610339bccf907ec0ed1b40960bca542919351f9291d6a293"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "e1cd921255a3b8e41ecfc700c0b48aa191a4c7bb0856203d91bdda4b9b8312d6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "c632822aa14c8ab9227404c96ea69adcad8f11f4795a32d8579d4a0db6613949"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "e7c471742b89db56610339bccf907ec0ed1b40960bca542919351f9291d6a293"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "a655126946259e7e69843aa9a53a7320ea3d1249f43ba46b1dcf6cf941c8db5e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "75a437139d6ea3bfe4547fc8cfc7f031f89e81f833a79d09ec6aa1f68f5ede9a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "f299cc90340e94bfcfd32f414f23c6fa69515ae0720b409701ceed1e618c1c4a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "9d9d45815336b1e9d7c9ecec55264e8989359e6fc6c630374a6602193eca3654"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "118383435bf9c82ed6ed0d8fa3fba7f2b461f0476dbdfd1cbcd83ede114cea55"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "a9379af8baf44907c42666cf0aa032217e2d80b54231e9cec971df84f5f5465d"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "556e718442d080729f624ea377393a8ccedcbcbbe8b07e06f769f3df1b8ee366"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "b39c1f9de657e6e6371a4b64677726ad6aa85645cbb5502788e730a53cae2d45"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "f9c21117abfb967ac49fed7db52ca130167aed0bcda65e589647dd701f64af2c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "a933c6b3b9385dd9c0a9bbae68b75fb4061c361906d278fb01f8c7827a1d8f82"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "18ef4f113c57230e8775423e0f031c613eac235fbe1f8063b3706095e4722d50"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "3a35c4376f716cf7ea45cedcd33d0e3a1363384e6311a15e42ba3b0b46ecf5d5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "a0a1af3a42785511e717930625ca5fd5798bd3ea8cd3fbfd150532b2976566fc"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "2eeff13b956f1b753cc9224953cbf95d724db6998ace0cdcbffbc769df36e997"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "718358578e30fdf335cf2de99636a3332abe2565afd892b3cf8cfc6ab98a642f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "a7938687472f7d6571f02a657fda83f248d926041b1253770973d987f2efd43f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "4b10b2987070909d9489e31791e4c8bc9d16886313c1a95530658ff28fa6996c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "3f52f868763c4d9f739c20bd1f41d76f3dc50d0b25d85dfafa43c6ee73979884"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "ddf0311bb54901a6779b12bfc113c2c2dcd51671254af253c2b88b56428bb624"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "5734dbfc963396358657a2e7291435eca01c2103831d506c04909cdb93fc6710"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "734da6629ba49e8442ed20808d448cce29dc01d4c752d6b50f9c43d416c2a6af"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "ddf0311bb54901a6779b12bfc113c2c2dcd51671254af253c2b88b56428bb624"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "5734dbfc963396358657a2e7291435eca01c2103831d506c04909cdb93fc6710"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "265d85e380037910a66fd8beaf20d51399e4f3dd6466d5d917f4197e1093ea70"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "3991333534521e9292d64e262fd27598fe98c276020bc6b00cbbebd9123a87ab"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "8d6c5e4ed6580dae68f871a049bfe88b65ad8b230bd6404ecc662f837b537ff6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "c1e6130cccfcab8b86d8a47b8adbca7679d9fa2667a9243ad72b4d4cf822b687"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "b6b629a06eddda9ff4e23ac94ca3306325e5170c3c7ca4b932273f7a839e9246"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "d4e185db60e1ed5e9890eaf24da2afe6159c5bc3945262f51d73adae29c94bb5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "ffe683ecce07eaa13c57f2936cc835a70266059bd5de7aecb7da1c5a7d9b5669"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "bcee2e827025bd4e953f6b1b5371f12ac0499a700a0ae9b9ecdf3d4f7cf20a1a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "84bdd10672739ba18cb0faccd9df89a729f8147dcc80f198f8d31d116d269358"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "dc9d1778d31fa45285bb8176a445c9055b5f563b5eba94199c2a781f84b20017"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "964c65facf23ea4069d118762291d414c85bf8c7438a2f78167f28d22670feae"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "4698126c5254e5df0180f6f0f7558059641f480c1302a8a0dc8f77ad794544ed"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "bd478ab81b50b3cc9507d595d2cd5a647a4a3b09fb51261268af7634615e4c3c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "b29a0b1ef35efc29305582a9f0936d618cc1908d0c9ceef4801edca9e503e8cf"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "a5129ea6ea1b260cf08e401bca320caeab981a13827a7747566df0536f91bf6f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "eec8b8850b5bab2ad25981c175e15f8a02bc07e3f4e0a6812f3095a4cd19231e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "45a4a939217fdb804246825708cf0ff751f6b08d4ccb4b001f742c815b1facf5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "a5129ea6ea1b260cf08e401bca320caeab981a13827a7747566df0536f91bf6f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "eec8b8850b5bab2ad25981c175e15f8a02bc07e3f4e0a6812f3095a4cd19231e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "90a151b82f215389361f60d783b206446c9ea1f3947893482bd9d29154012f29"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "3b7bfc285eab2985dcfd5ca75b5b136d8577698166f62dcfe1ebed63be671589"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "deef6e944166341d60914f2f2c69ead1e691fa9edda4d0475dc726abed8e139b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-1-exchange-sender.png",
+      "sha256": "2e4f7fc928a2ae8638944ed47d71c96aa8c0f29bfb2cfdfff1996e7bc99ddd1b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+      "sha256": "d45527ba2ba10e6511ae901599df373a291bd328d47aa7c0f297633515b7e202"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/012-offer-shared-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+      "sha256": "028ba0f50c0956a637097a06691caa162185e07c9bdd6d93a9589f46f1956fa5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/014-review-terms-1-exchange-sender.png",
+      "sha256": "deb205de19ba619708be3d5d7bdb59f45e4c512d99c85db27ac4e9f519444e48"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/014-review-terms-2-exchange-recipient.png",
+      "sha256": "d714e45b072853c2fddf29be3dc1af10e8ee54f4f35d2cf5dea75a82233d2b1a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/014-review-terms-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-1-exchange-sender.png",
+      "sha256": "515f3f9924b6b69d3955c371164d4e0e75cdd788cd463775a81d6b34c886487c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+      "sha256": "75f11ac500cbeee62f1dfde220fd1ecde20f6a8be29a612c9432e5de8cf521d6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/015-accept-terms-3-outer-witness.png",
+      "sha256": "08f82a22c290ffb3f08f9fe76c6f585ab773b2459c3cdf5cde2b1eaf8d39e61b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/017-settled-1-exchange-sender.png",
+      "sha256": "d5f6e247b35734e0f7da7e45042f5a39ee997b99a2d58a2fa069caef1d5dacf3"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/017-settled-2-exchange-recipient.png",
+      "sha256": "52ab17163019a5f0722d7e114a06e1a65eed1b185efd5c55d7532b337334c8c7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/017-settled-3-outer-witness.png",
+      "sha256": "74de6a8737d0e1b5d83d7dbe88fea80fba97a06cccabe0ae71791d8eb1b9d378"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/019-second-offer-1-exchange-sender.png",
+      "sha256": "0d445f9aad03a36582e0948788045596f872aa6f795466f9b4428ee7e56fc3e3"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/019-second-offer-2-exchange-recipient.png",
+      "sha256": "52ab17163019a5f0722d7e114a06e1a65eed1b185efd5c55d7532b337334c8c7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/019-second-offer-3-outer-witness.png",
+      "sha256": "74de6a8737d0e1b5d83d7dbe88fea80fba97a06cccabe0ae71791d8eb1b9d378"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/020-withdraw-1-exchange-sender.png",
+      "sha256": "6a0025f387cb5438cdda0fb27b59371a5d928f6a747f1e24f199390fa846ee7b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/020-withdraw-2-exchange-recipient.png",
+      "sha256": "50ca1f860a50ec77423be5f919e45ab53598a443a4b898ffb601500986aa9e0b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/020-withdraw-3-outer-witness.png",
+      "sha256": "74de6a8737d0e1b5d83d7dbe88fea80fba97a06cccabe0ae71791d8eb1b9d378"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-1-exchange-sender.png",
+      "sha256": "ac5f48c9c28722f954650177514569d65a5897f17b14c9e3d03f875e23baf7e8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+      "sha256": "9686e1da57b9706f7d6eab293ce4d4b7a40cdabd216dd6259b6f0e7c3e4b219c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/022-withdrawn-3-outer-witness.png",
+      "sha256": "652ba66f7758dd73339c0cae05d087dff482d9444cff467e0520219c49cda35c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+      "sha256": "5abc282979184cf7c6e264c4f758d073f9696e494f392f5f401498a340e7809f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+      "sha256": "9686e1da57b9706f7d6eab293ce4d4b7a40cdabd216dd6259b6f0e7c3e4b219c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/023-reload-outcome-3-outer-witness.png",
+      "sha256": "652ba66f7758dd73339c0cae05d087dff482d9444cff467e0520219c49cda35c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+      "sha256": "f250d20788e5ceea5e7bf3d1d172f7429547cf9dfa25acb067eaa9bda5eb53e4"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "38784db4c79f8ea9ab894e4f3e4030c72c074f6504264dc273b8603d26a36c7c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "4ffffbff824d460e1e5a965374d26ce0411c22d1679ef5aab0959af9bb33c298"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "428fd2c4cbe48dde0a30f35a7d757012fa04bf3649091675269dc16c4bfb7fcf"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "4ffffbff824d460e1e5a965374d26ce0411c22d1679ef5aab0959af9bb33c298"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "57f92c881e0c491bdb9992f6dbbc4b933c5e475393c6eca4168f8ba6105a07d9"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "4ffffbff824d460e1e5a965374d26ce0411c22d1679ef5aab0959af9bb33c298"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "50bcd6041c00461764c76472f72aea0a02e1efed230acf193c827118bd9e4b53"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "4423c265c0f5b15d487702d8c355e700bd5151ea8a78780044fe0ef6684a5b67"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "50bcd6041c00461764c76472f72aea0a02e1efed230acf193c827118bd9e4b53"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "1995e2bf1e1bcef0effa39ae60e317b35dc2d2876f93a5b61c9b8ead01154ca6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "911c9c23bd25ca76e6e1cca19f937f47535345f895103ba8c7be63c51ea3ba0b"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "1b5f27ef1dab9fe3837800db9da16c5f802e25930509921bb6d9918e7cad3423"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "952a6571491670fb0a4c4e093e40a573fdedc0fc40182790f759e1985910a681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "3f2ca3d955e5c607563213ecd1d05e5af9d5fa8508ef025790847924261db6dc"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "9fb7e86c31bec873a3c1bfb10abb931b9b3afb5188ca0b562a3b3a608807f154"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "1e5b766e61932e486e8a67593121956021fce4247a89f1b542d524eef37537e6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "5e03a9dd4a9e28aa0c4e61547b4ea69dc3727503c5f4aae47a2c278bacfc7d9e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "9fb7e86c31bec873a3c1bfb10abb931b9b3afb5188ca0b562a3b3a608807f154"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "1e5b766e61932e486e8a67593121956021fce4247a89f1b542d524eef37537e6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "5c497ac8c9b2b0ab62cdd3b5cd3b99ad500481cfd8584dbec6d776dcd7c0bfec"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "deaeafd28deb58c9a1f2f7a9718dbe4b7dd3294150518bc538599da118984e7c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "63f08f540ad4b42c80bdab74fbc662bcba96257412c59406dcb119e3ed177e8d"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "e1c6b7e9463cb726097f64fd1392df4cfb1c067ace3e10f372226733d0f96352"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "74cfb79ba9224d8327e0d1ba267edea12cabfbe25058480ac8b5260ae3081f96"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "4499a63902af5c85f621b6acd7eb982a72185ffeaa734d8e8357c82361b92681"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "fefc76e40e8c9c4cfb1fc35299eb58a71aa06315f0e4e49c70bc3758af34e712"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "fd397b8778c1fd97937b394c1f9fc8f0dc416fd830003e1fb98fe9db7e259a74"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "ce875083aaf8afd22fc2258356af5a7707524ba67dc3e6576ffef545e838856c"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "7b524b8e83adf78314eb80d47e1de10abaff638ca42b5f1cf501e5cf89c7cdf2"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "e8d526548a40a617ee1c861c2096bad642a1a0f3aca3fbfaa143edc51b348ed9"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "e78fa4cc8c18d959dc674bb63e468a866b80cd8fa2a97150fdce2c29edbfe99f"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "e02b254135345bb5b243af0de393015c51ac4af590cd4afedd55c540dcd65915"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "7882a9c1ea1d2a65ad255f69d57fe8dae18600f7db3943aa0a7154e4a2240817"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "d4a59d38f1b4ff04efcb018e6cb91e68e4bb5f376ee685cc9d6c54c918322b88"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "8d6c5e4ed6580dae68f871a049bfe88b65ad8b230bd6404ecc662f837b537ff6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "d4a59d38f1b4ff04efcb018e6cb91e68e4bb5f376ee685cc9d6c54c918322b88"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "d4e185db60e1ed5e9890eaf24da2afe6159c5bc3945262f51d73adae29c94bb5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "2aa5a99e524f66489a590f7c6a214b17d5880c79b75a6f9ff9162eb7c87db16a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "bcee2e827025bd4e953f6b1b5371f12ac0499a700a0ae9b9ecdf3d4f7cf20a1a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "2801f9ed8424a9f999059bf12bc0b1d034dcf5c90a85efa36062bbb1d136c6b6"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "00b7922f9a614d0d7060b9d1b7b09ad5bd660616fe2e1aabd432b815307a0255"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "f424c3b2ecdf094b51485fd316af4a42a9b8f7c0cbfc70f6031d2710fbc144ce"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "2acfdc7875ebf7adbaa40f9cb2e56b884fd298e0df096febce730e0899257186"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "291ef803fa6d3fb2214c8b1156ac81bc19cc09ce705ff4e0e753284e7323a081"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "e42fdf953fe8d6ee21bb7fc5f9b63ba1f9de2b630e24470626c2928e55721ece"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "sha256": "28a6d6360c45177cbedebe682b169a8b5c003cb1a50bc4ee901193dd36597f6e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-2-exchange-recipient.png",
+      "sha256": "0b50404d1b068e2a7d48d65ae7cd67ad9577fa27ea6bcffacfce4b33fc7e77f8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+      "sha256": "bbd36381dc606d0ac4166acdca1b4aa220aeb3f4357ee27ec609bf10a2d736a9"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+      "sha256": "0b50404d1b068e2a7d48d65ae7cd67ad9577fa27ea6bcffacfce4b33fc7e77f8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/014-reload-pending-1-exchange-sender.png",
+      "sha256": "4c2fefd51a1148de57d4c3709f27ef05ca92ae21e5ad53dc99f0cb0aadcb602a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+      "sha256": "0b50404d1b068e2a7d48d65ae7cd67ad9577fa27ea6bcffacfce4b33fc7e77f8"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/014-reload-pending-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/016-offer-shared-1-exchange-sender.png",
+      "sha256": "5bc301e746e748406534649ef250638d5e456b80582b0fd955c82f116f866e04"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+      "sha256": "ffb10558fab069698c2967c8e7c35cbf6716a1d332465e172ead117379c7def2"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/016-offer-shared-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/017-review-terms-1-exchange-sender.png",
+      "sha256": "5bc301e746e748406534649ef250638d5e456b80582b0fd955c82f116f866e04"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/017-review-terms-2-exchange-recipient.png",
+      "sha256": "65c622e6a7a4d7918204491e2a3597667cff67e4977c71d10cb051edcf3dbaef"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/017-review-terms-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/018-accept-terms-1-exchange-sender.png",
+      "sha256": "e54f41816b489032eeb8daa3b319041605c81f673a0128d890b6dd3da9f938c4"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+      "sha256": "77c857dcb8983990be22a10006ce6b66d61e2fdc4f8a9289d6fb11827b602b1a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/018-accept-terms-3-outer-witness.png",
+      "sha256": "f91372543306e970cd5bdce428f00f4e68460868cad4a54a4617a9aa9a48f7f5"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/020-settled-1-exchange-sender.png",
+      "sha256": "94792cb49e34dad9a215afd87480d0763c0fad7b5ac25a77795950c35d01cc9e"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/020-settled-2-exchange-recipient.png",
+      "sha256": "45b17d3a1d32607a04e5a6bc92d2f57ad32ead6f2023e4e69f2006bc8f6c6149"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/020-settled-3-outer-witness.png",
+      "sha256": "b37654fb42c028060e1c51982ec725b85e41130f00f291a7d16996d5134d96dc"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+      "sha256": "ff8cb5e8e32e7a95a6ebe3a86f8369c7c9365ee4ab2e49a882270376ca9ada4a"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+      "sha256": "45b17d3a1d32607a04e5a6bc92d2f57ad32ead6f2023e4e69f2006bc8f6c6149"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/022-reload-outcome-3-outer-witness.png",
+      "sha256": "b37654fb42c028060e1c51982ec725b85e41130f00f291a7d16996d5134d96dc"
+    },
+    {
+      "path": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+      "sha256": "28ec518be7f1b55a4103e806685d220ea5c6636deba2fd0861394f3e8aafa486"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/002-pending-1-developer-playback-controls.png",
+      "sha256": "356b7b5ca68fd01b36af84c469aab39e6c1afd00a22e198edae9502f045743d6"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/002-pending-2-developer-standard-motion.png",
+      "sha256": "15d2a098f01a9b77a0fd3b26b6e8cc587314a7739cb6286460b8c3010db4d0ec"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/002-pending-3-developer-reduced-motion.png",
+      "sha256": "15d2a098f01a9b77a0fd3b26b6e8cc587314a7739cb6286460b8c3010db4d0ec"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/003-interrupted-1-developer-standard-motion.png",
+      "sha256": "0ef30784f584c532ee3c92113e3e5ba0e41a8c7b9cdb1863000f616c17b9c1f1"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/003-interrupted-2-developer-reduced-motion.png",
+      "sha256": "0ef30784f584c532ee3c92113e3e5ba0e41a8c7b9cdb1863000f616c17b9c1f1"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/004-reconnected-1-developer-standard-motion.png",
+      "sha256": "08cb150fdfc2998d8a9715156fed521421f14805a348abb8bfdd532bec6b52ef"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/004-reconnected-2-developer-reduced-motion.png",
+      "sha256": "08cb150fdfc2998d8a9715156fed521421f14805a348abb8bfdd532bec6b52ef"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/005-conflict-1-developer-standard-motion.png",
+      "sha256": "798254c2831a915f2472744e985ec971fc7821915c3849d6220a5d7ada21a349"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/005-conflict-2-developer-reduced-motion.png",
+      "sha256": "798254c2831a915f2472744e985ec971fc7821915c3849d6220a5d7ada21a349"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/006-replay-pause-inspect-1-developer-standard-motion.png",
+      "sha256": "0c0e8bb38cc6b6c65b2b8b87b24154c2cbbf8254810bd793caf6f3364c95ac45"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/006-replay-pause-inspect-2-developer-reduced-motion.png",
+      "sha256": "0c0e8bb38cc6b6c65b2b8b87b24154c2cbbf8254810bd793caf6f3364c95ac45"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/007-reset-1-developer-standard-motion.png",
+      "sha256": "e007809a8b0182543e23c48a6b180f8444854d9f0467b7ca3e9b38d95e3ba568"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/desktop/linux-arm64/007-reset-2-developer-reduced-motion.png",
+      "sha256": "e007809a8b0182543e23c48a6b180f8444854d9f0467b7ca3e9b38d95e3ba568"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/002-pending-1-developer-playback-controls.png",
+      "sha256": "609c73beb3eedbbbcac9888d197e12d3345bde51d628bb7173b06d2321ec13e3"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/002-pending-2-developer-standard-motion.png",
+      "sha256": "609c73beb3eedbbbcac9888d197e12d3345bde51d628bb7173b06d2321ec13e3"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/002-pending-3-developer-reduced-motion.png",
+      "sha256": "609c73beb3eedbbbcac9888d197e12d3345bde51d628bb7173b06d2321ec13e3"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/003-interrupted-1-developer-standard-motion.png",
+      "sha256": "e0bb79f439c00739e6a241831cef3fffa054448a6ae62cf1de03f61567ab4431"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/003-interrupted-2-developer-reduced-motion.png",
+      "sha256": "e0bb79f439c00739e6a241831cef3fffa054448a6ae62cf1de03f61567ab4431"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/004-reconnected-1-developer-standard-motion.png",
+      "sha256": "f18de147f56b0d2fa9ad5b062a867cdaba0905d11f59d0c14e4f28ab1c770f86"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/004-reconnected-2-developer-reduced-motion.png",
+      "sha256": "f18de147f56b0d2fa9ad5b062a867cdaba0905d11f59d0c14e4f28ab1c770f86"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/005-conflict-1-developer-standard-motion.png",
+      "sha256": "9b9899e1a33bd3ff58bd462dc1c725a78ecbd634f8068641f8c7d17bf8fc34d6"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/005-conflict-2-developer-reduced-motion.png",
+      "sha256": "9b9899e1a33bd3ff58bd462dc1c725a78ecbd634f8068641f8c7d17bf8fc34d6"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/006-replay-pause-inspect-1-developer-standard-motion.png",
+      "sha256": "cd1b31ae142e4e98a0aaf7911dc75afbdfc4062e2d0430e684df644e73be7e89"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/006-replay-pause-inspect-2-developer-reduced-motion.png",
+      "sha256": "cd1b31ae142e4e98a0aaf7911dc75afbdfc4062e2d0430e684df644e73be7e89"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/007-reset-1-developer-standard-motion.png",
+      "sha256": "f215258a06e396c65c1361eacb7d66c4132071eb5c8b0e10bb9c230cf25ca08f"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/large/linux-arm64/007-reset-2-developer-reduced-motion.png",
+      "sha256": "f215258a06e396c65c1361eacb7d66c4132071eb5c8b0e10bb9c230cf25ca08f"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/002-pending-1-developer-playback-controls.png",
+      "sha256": "a84c16deaa12e87ab1790ef24c8c871a28614bee7c3d0451fbad0090625446bd"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/002-pending-2-developer-standard-motion.png",
+      "sha256": "a5ae2eedd6b51ae9a21ff9a140e87385d1bd22984d8294aa265bf6725771cd6f"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/002-pending-3-developer-reduced-motion.png",
+      "sha256": "19adb9fc421b793861179b0b71e2e6b28c20d5799291daf5332d1cf9df62d28b"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/003-interrupted-1-developer-standard-motion.png",
+      "sha256": "cc41b9ab68336f5685e8107716ba34e5bd3d628c0bde595e88a9f4a45f87799a"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/003-interrupted-2-developer-reduced-motion.png",
+      "sha256": "10203c9109bce562a13951b5eb99709725021e64c7d23da0f9cbb6d183ab79db"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/004-reconnected-1-developer-standard-motion.png",
+      "sha256": "b0fe3d00103134fa4ff7f94d3c5500a6238e351a2509dc631446bc93ca63b8c5"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/004-reconnected-2-developer-reduced-motion.png",
+      "sha256": "a1b78e46b7b4267b21412d36746d68d6dcf70835ebedbb207580cb8ab41c9ef8"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/005-conflict-1-developer-standard-motion.png",
+      "sha256": "339fdc34806ddace56056a5d6ffbdc72353bd6d475bb4e8379f57b54616b197c"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/005-conflict-2-developer-reduced-motion.png",
+      "sha256": "0832c68960ea8bb77bfe430c7b5a937c3e679fc49fc65b96f5f1055f21331ad8"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/006-replay-pause-inspect-1-developer-standard-motion.png",
+      "sha256": "a509e00a2b2d8af9cd75888f5ce51515b171e1177be67e12116b86993534ceda"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/006-replay-pause-inspect-2-developer-reduced-motion.png",
+      "sha256": "8b588dafaefea8004e7e1acd7070f2dc19498833afecd7f2baa0b5512d330063"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/007-reset-1-developer-standard-motion.png",
+      "sha256": "73fdfdd4051f120c993eecf64447ed5340bfc2fd947d15910d7bb9f5c6a107c8"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/phone/linux-arm64/007-reset-2-developer-reduced-motion.png",
+      "sha256": "6e7667a30c95613a64d0b0030261cf34aef145019e7c754464534c2d0e6ec8a1"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/002-pending-1-developer-playback-controls.png",
+      "sha256": "3526a4728c651c9784cf59f8f7ebded2a7cb2823930cd08f41175dd9feae5313"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/002-pending-2-developer-standard-motion.png",
+      "sha256": "4429290cd0befb49a297684c145feda9095a548eb521b1956046362b90699914"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/002-pending-3-developer-reduced-motion.png",
+      "sha256": "4429290cd0befb49a297684c145feda9095a548eb521b1956046362b90699914"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/003-interrupted-1-developer-standard-motion.png",
+      "sha256": "6ce2bc604bbf03ecb3bd4c6d9f252c8742f0ee46e7945f7cade8d97ba4475cee"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/003-interrupted-2-developer-reduced-motion.png",
+      "sha256": "6ce2bc604bbf03ecb3bd4c6d9f252c8742f0ee46e7945f7cade8d97ba4475cee"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/004-reconnected-1-developer-standard-motion.png",
+      "sha256": "371926ba19adc750764812e6546a5e36f3ede16bb5c277fd621e948ff2479961"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/004-reconnected-2-developer-reduced-motion.png",
+      "sha256": "371926ba19adc750764812e6546a5e36f3ede16bb5c277fd621e948ff2479961"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/005-conflict-1-developer-standard-motion.png",
+      "sha256": "32804f6d124b8ef41bebffc1eb6fed6e52eeed34d21e39e09ae5645385ac1773"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/005-conflict-2-developer-reduced-motion.png",
+      "sha256": "32804f6d124b8ef41bebffc1eb6fed6e52eeed34d21e39e09ae5645385ac1773"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/006-replay-pause-inspect-1-developer-standard-motion.png",
+      "sha256": "be2138820f548fb1f9aaa5849b5875819bf181e91a78f09236d2022ee7de8c06"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/006-replay-pause-inspect-2-developer-reduced-motion.png",
+      "sha256": "be2138820f548fb1f9aaa5849b5875819bf181e91a78f09236d2022ee7de8c06"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/007-reset-1-developer-standard-motion.png",
+      "sha256": "9032978feb6bc7c9fed41153ccc655d7de51aabb7cf798cea0800e89b0a3cdb1"
+    },
+    {
+      "path": "tests/browser/story-baselines/feedback-motion-lab/short/linux-arm64/007-reset-2-developer-reduced-motion.png",
+      "sha256": "9032978feb6bc7c9fed41153ccc655d7de51aabb7cf798cea0800e89b0a3cdb1"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/002-loading-1-developer-standard-history-presentation.png",
+      "sha256": "78119fbe60ff77bad36ceec397204feaeb2389c3295dfce5d41bbcb8938db235"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/002-loading-2-developer-reduced-history-presentation.png",
+      "sha256": "78119fbe60ff77bad36ceec397204feaeb2389c3295dfce5d41bbcb8938db235"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/003-interrupted-1-developer-standard-history-presentation.png",
+      "sha256": "a49b0117f7f60d779b7eae863afc2553ab33a6ea7a05939c1c9a3ddf6baab06b"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/003-interrupted-2-developer-reduced-history-presentation.png",
+      "sha256": "a49b0117f7f60d779b7eae863afc2553ab33a6ea7a05939c1c9a3ddf6baab06b"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/004-retry-1-developer-standard-history-presentation.png",
+      "sha256": "9801b4066a17fce4a637ab88c71741ed4338cc2969deffd34e63f52c45fdae65"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/004-retry-2-developer-reduced-history-presentation.png",
+      "sha256": "9801b4066a17fce4a637ab88c71741ed4338cc2969deffd34e63f52c45fdae65"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/005-recovered-1-developer-standard-history-presentation.png",
+      "sha256": "3406e91ba490ea1d5a03d6c20796365c799c2ba25015120a82615a6a2828db9d"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/005-recovered-2-developer-reduced-history-presentation.png",
+      "sha256": "3406e91ba490ea1d5a03d6c20796365c799c2ba25015120a82615a6a2828db9d"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/006-read-records-1-developer-standard-history-presentation.png",
+      "sha256": "69540eacfb74fc6b61328c0082d64220f137a991b8aa0b093bb2ef0066efa724"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/006-read-records-2-developer-reduced-history-presentation.png",
+      "sha256": "69540eacfb74fc6b61328c0082d64220f137a991b8aa0b093bb2ef0066efa724"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/007-latest-1-developer-standard-history-presentation.png",
+      "sha256": "23d9f26ca0398910666acf2e71e19803382f21595236990c6578015ac21991e2"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64/007-latest-2-developer-reduced-history-presentation.png",
+      "sha256": "23d9f26ca0398910666acf2e71e19803382f21595236990c6578015ac21991e2"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/002-loading-1-developer-standard-history-presentation.png",
+      "sha256": "a162c4a3637ea86c836444a2f46dd0940455b7d4d8fda4c68f545aa07b93e92d"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/002-loading-2-developer-reduced-history-presentation.png",
+      "sha256": "a162c4a3637ea86c836444a2f46dd0940455b7d4d8fda4c68f545aa07b93e92d"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/003-interrupted-1-developer-standard-history-presentation.png",
+      "sha256": "aef5e1d500773904d2c73854783a38cf993e3856c721892949c84e2f1954b17c"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/003-interrupted-2-developer-reduced-history-presentation.png",
+      "sha256": "aef5e1d500773904d2c73854783a38cf993e3856c721892949c84e2f1954b17c"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/004-retry-1-developer-standard-history-presentation.png",
+      "sha256": "81ba688020b3dac6cb00ba828c679c050ee60f284814f8c46bab959aa2522d0d"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/004-retry-2-developer-reduced-history-presentation.png",
+      "sha256": "81ba688020b3dac6cb00ba828c679c050ee60f284814f8c46bab959aa2522d0d"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/005-recovered-1-developer-standard-history-presentation.png",
+      "sha256": "b93673767629d333bde8baabcf72cac19ad2d5321a854cd23c3cefd5b32fe037"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/005-recovered-2-developer-reduced-history-presentation.png",
+      "sha256": "b93673767629d333bde8baabcf72cac19ad2d5321a854cd23c3cefd5b32fe037"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/006-read-records-1-developer-standard-history-presentation.png",
+      "sha256": "16a24a95e33ee109d495cce8c6f8c9b47f3372456639918a629cd9e97027afea"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/006-read-records-2-developer-reduced-history-presentation.png",
+      "sha256": "16a24a95e33ee109d495cce8c6f8c9b47f3372456639918a629cd9e97027afea"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/007-latest-1-developer-standard-history-presentation.png",
+      "sha256": "66bb5f57e37f325bfd6e358fa6cfa5073ef4a44867d821dcad5dad69a3293633"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64/007-latest-2-developer-reduced-history-presentation.png",
+      "sha256": "66bb5f57e37f325bfd6e358fa6cfa5073ef4a44867d821dcad5dad69a3293633"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/002-loading-1-developer-standard-history-presentation.png",
+      "sha256": "eff5603cb87694248b8a0e8a6bd52ea709784e09a15cc2bf4639d2a342f9bd04"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/002-loading-2-developer-reduced-history-presentation.png",
+      "sha256": "7b15b2244e85882e246936fc83fac47a4253839a7b54e33fbf625d006017e36a"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/003-interrupted-1-developer-standard-history-presentation.png",
+      "sha256": "2d3181caea5c8e62c3a1767d3c572e1fffbad682184de73a4a84bea868cd143f"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/003-interrupted-2-developer-reduced-history-presentation.png",
+      "sha256": "7d1634f00b48a72594457de838f11d84ec3feeaa6fc25d3c6e85c4b009708bde"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/004-retry-1-developer-standard-history-presentation.png",
+      "sha256": "f53b6d7cdc7bab354659bd518a56a2b9c9855cf77ccdad3e191e6b21a52ce19b"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/004-retry-2-developer-reduced-history-presentation.png",
+      "sha256": "7b15b2244e85882e246936fc83fac47a4253839a7b54e33fbf625d006017e36a"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/005-recovered-1-developer-standard-history-presentation.png",
+      "sha256": "3ff497ce16a1d644dddef4fceb5c01da241f6db2bf2cbf80861af76e9102cffa"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/005-recovered-2-developer-reduced-history-presentation.png",
+      "sha256": "c3a325d793a938ea0187ae9ce553b17d53d7d67ab753591d627c93e97782d4ff"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/006-read-records-1-developer-standard-history-presentation.png",
+      "sha256": "e2c1a1eef1b4d71f8ca18be4340f86302c5ac2798d33f1e72e9238a96188437b"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/006-read-records-2-developer-reduced-history-presentation.png",
+      "sha256": "5260224b6f4ca43c0b5d8651ddc141f9da48d71a5785d78439dd3fc8cc86c52b"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/007-latest-1-developer-standard-history-presentation.png",
+      "sha256": "bc51b222ec4b01fc5460a8ce15d2d3be9b836ebe43e6ab5348ac066d44d7848a"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64/007-latest-2-developer-reduced-history-presentation.png",
+      "sha256": "7b15b2244e85882e246936fc83fac47a4253839a7b54e33fbf625d006017e36a"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/002-loading-1-developer-standard-history-presentation.png",
+      "sha256": "18989f7568518e45c6b7c171e6c3f178894c0cbf898c7d7269058bbcbea3f0fe"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/002-loading-2-developer-reduced-history-presentation.png",
+      "sha256": "18989f7568518e45c6b7c171e6c3f178894c0cbf898c7d7269058bbcbea3f0fe"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/003-interrupted-1-developer-standard-history-presentation.png",
+      "sha256": "dc70ca26e88478d25739ca2ce35c6062a7a4f327728cc6282ee45b249277ee59"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/003-interrupted-2-developer-reduced-history-presentation.png",
+      "sha256": "dc70ca26e88478d25739ca2ce35c6062a7a4f327728cc6282ee45b249277ee59"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/004-retry-1-developer-standard-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/004-retry-2-developer-reduced-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/005-recovered-1-developer-standard-history-presentation.png",
+      "sha256": "6bff640afacf80e708b654477fe494d12275dcaf56c88749ab4aacf8f0f188dd"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/005-recovered-2-developer-reduced-history-presentation.png",
+      "sha256": "6bff640afacf80e708b654477fe494d12275dcaf56c88749ab4aacf8f0f188dd"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/006-read-records-1-developer-standard-history-presentation.png",
+      "sha256": "60b6ef12fd1cfaeb9f69ab6bb0cda477ac339161fabd18e76dee4f765994aae9"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/006-read-records-2-developer-reduced-history-presentation.png",
+      "sha256": "60b6ef12fd1cfaeb9f69ab6bb0cda477ac339161fabd18e76dee4f765994aae9"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/007-latest-1-developer-standard-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5"
+    },
+    {
+      "path": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64/007-latest-2-developer-reduced-history-presentation.png",
+      "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "d8ded65bc63888722c5e131ba148e769f691478365688caf1aa493fa82e51f2b"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+      "sha256": "b7351f44b785f6036486270c8785b6ed9bca8da12d9e0dd394f4b19510b5aa9d"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+      "sha256": "f3f9c3ec6a6950a4b6b3bd193e35c23917e17088ca1dadc4984588edbbaa81b0"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+      "sha256": "4cf84d56f52c300ad285023106b30f81a15c9b67c6fd8ae98e33b97ebde904e8"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+      "sha256": "77d9a4624a2cca41bf59e39c6fb83c89a66245dc723b9d4a5482cfe6bdcb0908"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+      "sha256": "64e4a0573dcd27cd807a1a90d98ac45594fabe2b1c28c2ec06c3d4fbfa018053"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+      "sha256": "a3d3797e66d9c8657150c5d4710b1507ec407b3069f0efd28cad71c228612e60"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+      "sha256": "d684f6e198ae383500503536d7939fcc73505e20e51cd3372282bc4968e781cc"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+      "sha256": "9df4a9cd42b14694c94170c262114d4914bee7691bd44e8f364061a28e59fc39"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+      "sha256": "ee3318fcee04185cdcdf4b1d55dc72817402d9528d5d60de1cbb2d685fac41d9"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+      "sha256": "ee3318fcee04185cdcdf4b1d55dc72817402d9528d5d60de1cbb2d685fac41d9"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+      "sha256": "b203cabf0a371222fdc54a2b5e2abbfb5a0d7df26df86e388bd442dd44bc8432"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+      "sha256": "4d16e478b4e9e27ceaf77af8d846784b8383c56ac85bae54b2436949bdee6199"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+      "sha256": "83b1fd111979707fd7834d6e00412f8a8311183e47fd22eff4ee51418f5709fb"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+      "sha256": "83b1fd111979707fd7834d6e00412f8a8311183e47fd22eff4ee51418f5709fb"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+      "sha256": "83b1fd111979707fd7834d6e00412f8a8311183e47fd22eff4ee51418f5709fb"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "sha256": "7b28e6fa390357e8449bbebcc370697833b2479b93b0d7c76813e55b2566c0fa"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+      "sha256": "16018cc739b8e29e557a4bb110d03de6866bd43e4cc10c806a5d685ffeb9f353"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+      "sha256": "0f6fdefc102afc66472ce3c8e9e5c0a7a04cb54591f84957dad84b5c7dfb8a63"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+      "sha256": "84f7254ea99ad9c3858a2818789479b3a8296c7219bc1b90147e743cd1b9c351"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-component-gallery/large/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+      "sha256": "84f7254ea99ad9c3858a2818789479b3a8296c7219bc1b90147e743cd1b9c351"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-keyboard-return/large/linux-arm64/001-arrive-1-visitor.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-keyboard-return/large/linux-arm64/003-return-from-learn-1-visitor.png",
+      "sha256": "531e02969d42ae130239855287e05363ff61f655d624ca0ebf6e410426e0396c"
+    },
+    {
+      "path": "tests/browser/story-baselines/identity-keyboard-return/large/linux-arm64/005-close-identity-1-commander.png",
+      "sha256": "b69dca5c4e812190512e85d381591073877a69b7cabe269a6c6538e29919e7f9"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+      "sha256": "ed154f8f91c0a995a7e52bde532a8f3e9d193d4a1f75cdea4c28341161b37681"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+      "sha256": "ed154f8f91c0a995a7e52bde532a8f3e9d193d4a1f75cdea4c28341161b37681"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/003-due-1-developer-standard-production-summary.png",
+      "sha256": "3693c1ba85c7e4bafa32cd823a65142ec63aec53f38a61fea5e3ab05784135a4"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+      "sha256": "3693c1ba85c7e4bafa32cd823a65142ec63aec53f38a61fea5e3ab05784135a4"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+      "sha256": "151c8adbf72059d6a9edb70ad22f88b168087e15d50034e00ac0eeadf57c7cf9"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+      "sha256": "151c8adbf72059d6a9edb70ad22f88b168087e15d50034e00ac0eeadf57c7cf9"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+      "sha256": "613e417d7bcf9e31863eb76e34a7f84b3cdfe15114fae978e1bf6d8ed85b3854"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+      "sha256": "3c219d12bafea519492f584300ae367bd3c17a4db4753c62e50ff83290923da9"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+      "sha256": "0d8615339daab2fd562053ef0de043fb1163e87af7c4f31231e90e5630b9224e"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+      "sha256": "0d8615339daab2fd562053ef0de043fb1163e87af7c4f31231e90e5630b9224e"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+      "sha256": "90b782fa5ee6d65b84a5bda0763ce175d15f99fc2f8f9deabb726a76a81e37c6"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/desktop/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+      "sha256": "90b782fa5ee6d65b84a5bda0763ce175d15f99fc2f8f9deabb726a76a81e37c6"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+      "sha256": "58b9108c858427461d3ce052fc99c839bba4c89033fedd240578cf1bfa5a6797"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+      "sha256": "58b9108c858427461d3ce052fc99c839bba4c89033fedd240578cf1bfa5a6797"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/003-due-1-developer-standard-production-summary.png",
+      "sha256": "6b4c7eb52812fe7dd05d5d8d0c4fa5f06b31ecd5e13221cf7726d8944101f26c"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+      "sha256": "6b4c7eb52812fe7dd05d5d8d0c4fa5f06b31ecd5e13221cf7726d8944101f26c"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+      "sha256": "94bad70bde0a720ca18905f917a70eea1d9972930e98e60f40e9aa639926ef24"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+      "sha256": "94bad70bde0a720ca18905f917a70eea1d9972930e98e60f40e9aa639926ef24"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+      "sha256": "b48d7584737124c5d8e079b1ed541e21be60763173377fa0a68f351222d34fb8"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+      "sha256": "460308f75811d75bab3a7b326c6208023870fbcc64e0193ae38c1746a8359b95"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+      "sha256": "c40553a666d409d3213a899a975e1eba1ef6273f958b81116a3a8101f49ee7a7"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+      "sha256": "c40553a666d409d3213a899a975e1eba1ef6273f958b81116a3a8101f49ee7a7"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+      "sha256": "670e331252a8fff4108c37300bd3b311deba199396bdee04ca78ed15a5f81096"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/large/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+      "sha256": "670e331252a8fff4108c37300bd3b311deba199396bdee04ca78ed15a5f81096"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+      "sha256": "069b934763b3cb708e14f2c770649464650e39e4318140ac28a9577cd25cc59c"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+      "sha256": "554f5a19488ba5b8c899f240dcfed2a3ca52018d993fe36a8e8a5499c58dc20b"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/003-due-1-developer-standard-production-summary.png",
+      "sha256": "fffc8d94493d410cd0ebf6239a12bfc158c999bf29a91cedce98dce38d447e01"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+      "sha256": "b28719419087cac833ff4ec2bd2adabdd890d499b5f818f2b9c96074a3cb31f1"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+      "sha256": "c73ba66da204ef487bfd47e4b3aea04f3fdd5d11d9b4fcfcd98f937f88b66de7"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+      "sha256": "9b92515ec619f93faf580500dd890588e2fb8e55c2d0f1aefbf59a06c4202fb2"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+      "sha256": "a8cfdc3f1a2845c94d84529db89353e430a9939fe0b1d7ca0443509531fc205b"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+      "sha256": "6f012a3186fdbadb4d0619f8701a7510b3efa7f91daa113a677f0c38393fb50b"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+      "sha256": "aad5f432a285bd53e3895b531ab56ae45483b7ab2022b29f025cbdf0c747f1da"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+      "sha256": "2040ee6a1ceccf865e37b10ea31588f67e727fb64be5eaac5c199c8418c536cc"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+      "sha256": "1e8daa33d55f56a48d1275c0d30ef45a1bd9a09ed18145915e7e230c4775bf24"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/phone/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+      "sha256": "554f5a19488ba5b8c899f240dcfed2a3ca52018d993fe36a8e8a5499c58dc20b"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+      "sha256": "8b84cba64ef46d532e15f2d01e0181502ef0868eac8c88027e20a18c9dc52046"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+      "sha256": "8b84cba64ef46d532e15f2d01e0181502ef0868eac8c88027e20a18c9dc52046"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/003-due-1-developer-standard-production-summary.png",
+      "sha256": "2f52ae1aaa52a78381d7ed8d8176be829214ce6625285406b4cacc4f58a5daa3"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+      "sha256": "2f52ae1aaa52a78381d7ed8d8176be829214ce6625285406b4cacc4f58a5daa3"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+      "sha256": "f130f6171430e965d15f1a8b81d027d09d0ead478a24533d450dc49a147baf92"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+      "sha256": "f130f6171430e965d15f1a8b81d027d09d0ead478a24533d450dc49a147baf92"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+      "sha256": "6afa5e2a47c908fe06988110385bbc3d69ea457b2774039118e9c70b6473edd6"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+      "sha256": "8d96d2b1938747d52bcda3c9662b13de8e4ddbb826fa50a19b1fb6e73b4819c5"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+      "sha256": "f41725d7d8862b7e5bea8a14bfcbc45b9aab2b5eea4a2981f0dcf5d359ad948d"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+      "sha256": "f41725d7d8862b7e5bea8a14bfcbc45b9aab2b5eea4a2981f0dcf5d359ad948d"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+      "sha256": "beb70fae7c3dc51397bfe77e3a1e2e806e997d45a95a7afdfcdda1bd911e85ea"
+    },
+    {
+      "path": "tests/browser/story-baselines/production-ledger-lab/short/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+      "sha256": "beb70fae7c3dc51397bfe77e3a1e2e806e997d45a95a7afdfcdda1bd911e85ea"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/002-scheduled-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "b6c44d147021d9433b565ada56e0a25e5488df27c2f3c6400836531877aa5c24"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/002-scheduled-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "b6c44d147021d9433b565ada56e0a25e5488df27c2f3c6400836531877aa5c24"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/003-delayed-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "b68798a55cd14b5fb1460b2193ee0a8f290a08baaf05432c66390cdfda75e0bb"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/003-delayed-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "b68798a55cd14b5fb1460b2193ee0a8f290a08baaf05432c66390cdfda75e0bb"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/004-assigned-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "ab9be2493887b918a52cd162796a7aeddcf3eae2552888f199c2fca6f89fef9d"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/004-assigned-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "ab9be2493887b918a52cd162796a7aeddcf3eae2552888f199c2fca6f89fef9d"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/005-reset-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "d41c2ebbf6fe99a7027b29c862cf00d8cc404700c8782d5603abb93e21c00ebc"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/desktop/linux-arm64/005-reset-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "d41c2ebbf6fe99a7027b29c862cf00d8cc404700c8782d5603abb93e21c00ebc"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/002-scheduled-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "81485f4798e8398f851dd10a7854731a1127394c9a597fc4f10e41e160a7aaef"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/002-scheduled-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "81485f4798e8398f851dd10a7854731a1127394c9a597fc4f10e41e160a7aaef"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/003-delayed-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "87f5ce023dae4787614cc31a11e2a1e458426361020ff9ac5ddf3e8a1094d741"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/003-delayed-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "87f5ce023dae4787614cc31a11e2a1e458426361020ff9ac5ddf3e8a1094d741"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/004-assigned-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "6f714be75eb881b273be79987d27a7e8cf0bcc45654cc4918a9e8e1b1cb9b325"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/004-assigned-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "6f714be75eb881b273be79987d27a7e8cf0bcc45654cc4918a9e8e1b1cb9b325"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/005-reset-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "9ec72fbff664cc9ec73f4d2baaa8568e48fa0bb508c84f651e0da2ca90073df5"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/large/linux-arm64/005-reset-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "9ec72fbff664cc9ec73f4d2baaa8568e48fa0bb508c84f651e0da2ca90073df5"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/002-scheduled-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "537b4d87539a3383f49dd07eec328ae8a152bede1cd1a3b9d8351cfb7ba98696"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/002-scheduled-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "b1a06febebaa094c71955a7012eef9bb52be1c7196c28b56aca545db3908fbf1"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/003-delayed-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "f5bd46b6bd568139f667b4ac931205c48095badc5561391ecad4048cbe3f4b02"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/003-delayed-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "c41f8098aa13f98de82e30bfde5cd69b2761ca75aba32c016bf2c75d8cfe056c"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/004-assigned-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "23f3bce5fa3e22f1d4262a8d425b32c88fa6d928d2e4e2c3ff0f5beb709cdf57"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/004-assigned-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "7d4acef5a5fdc59da1ff53bfc09ded157d15441c19089c9d1473508e5f42859b"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/005-reset-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "c3036307fa58e690dc0af8c319547651ea8842683da2c7315f8a720d5fffec30"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/phone/linux-arm64/005-reset-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "b1a06febebaa094c71955a7012eef9bb52be1c7196c28b56aca545db3908fbf1"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/002-scheduled-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "73c7bf0c8307a8cef1c5c80060d768d683923a7bd815d452f72e0174d0ad2e39"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/002-scheduled-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "73c7bf0c8307a8cef1c5c80060d768d683923a7bd815d452f72e0174d0ad2e39"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/003-delayed-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "b2e6fc320298ee00b2f9f52b9ee7d22eeacba7fe1a171782ee06bfe5f7dcfba3"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/003-delayed-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "b2e6fc320298ee00b2f9f52b9ee7d22eeacba7fe1a171782ee06bfe5f7dcfba3"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/004-assigned-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "7f2b2a242c2d91c23045012893017f9ae9c0e7fb797e653bf2f60cfde33314db"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/004-assigned-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "7f2b2a242c2d91c23045012893017f9ae9c0e7fb797e653bf2f60cfde33314db"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/005-reset-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "1d4d604b08e406e3f79fc2096c2e1122b6c8103366f62291764f0afa79802718"
+    },
+    {
+      "path": "tests/browser/story-baselines/scheduled-start-lab/short/linux-arm64/005-reset-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "1d4d604b08e406e3f79fc2096c2e1122b6c8103366f62291764f0afa79802718"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "aa514bc9604d2262201b02ab6083d5c0cb7e2bf1142a6888ba350cdfb651c49e"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "aa514bc9604d2262201b02ab6083d5c0cb7e2bf1142a6888ba350cdfb651c49e"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+      "sha256": "c08817d9e603870098c715391364d558bf838cb6586674f212dc5da19c3e7a4b"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "c08817d9e603870098c715391364d558bf838cb6586674f212dc5da19c3e7a4b"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "sha256": "cdb7d870559bf6edfa3ece45d26373ffcff080f9c855692f036b3e31d29c7468"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "cdb7d870559bf6edfa3ece45d26373ffcff080f9c855692f036b3e31d29c7468"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "sha256": "0c6541433f3ff3bc143aef217dd4f88463dec37286dba0913a89eaddb848e5ad"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "0c6541433f3ff3bc143aef217dd4f88463dec37286dba0913a89eaddb848e5ad"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "ff11581162f729d2704490df7bf100f3d9590ece1a13f4fe46551fc8bbfee8fb"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/desktop/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "ff11581162f729d2704490df7bf100f3d9590ece1a13f4fe46551fc8bbfee8fb"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "a78dfc6ac6281d7ae24c0e51ef03d84688de30895a14641091becb75b0152344"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "a78dfc6ac6281d7ae24c0e51ef03d84688de30895a14641091becb75b0152344"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+      "sha256": "9cdc404e784a8a3cd6c5454b451778f6dd0844b37032068b3b521d714bdc1b1d"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "9cdc404e784a8a3cd6c5454b451778f6dd0844b37032068b3b521d714bdc1b1d"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "sha256": "3da2364229f89a72864b5f6285934bd47a57e4efb28ca102eb393653150ebc53"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "3da2364229f89a72864b5f6285934bd47a57e4efb28ca102eb393653150ebc53"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "sha256": "3f38a91bf32239c70b222335205f8550d84fdadeb710daf27bab515f6aa2169c"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "3f38a91bf32239c70b222335205f8550d84fdadeb710daf27bab515f6aa2169c"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "6565dde262bfb42fb076e3e91608ac670811b47efd65333369fe6b61645f47a4"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/large/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "6565dde262bfb42fb076e3e91608ac670811b47efd65333369fe6b61645f47a4"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "25066316680ddba2767be1b9243b7c860422a37fae5c67db56cbe8f387f7bb91"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "49d93bf120839d4374a950d301f637dbb2835bf93356c82821463d6d2fbe3658"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+      "sha256": "25e6d55832cf55146c858369a62fa0f41a18e7371b0f936888be1fd0ea6c8a33"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "7ce9284dae6f18abea80716a30e1bea4e32d90565e2ec4807b02d5a928b4de52"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "sha256": "0d478c87d2f7ffea54636856661d4d02b2a632957e147c8edc257aab316fbc1e"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "2f82921e30a24991f4d23e6d3d00807c3733fcc61367151792148f96f2df5902"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "sha256": "26de263547d483076017c85454ad7ab8ac8a890f4a9dab0a170758aaf8af5fe3"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "2f82921e30a24991f4d23e6d3d00807c3733fcc61367151792148f96f2df5902"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "25066316680ddba2767be1b9243b7c860422a37fae5c67db56cbe8f387f7bb91"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/phone/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "c12eaffbe7b2e3e3bfaebbd506341a11dd782ea8e597bc1ec7279c44a935922b"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "9e126ec036beb49ba27ce26467d5865ff21b24c82f4df7da9dc48e4f012ff322"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "9e126ec036beb49ba27ce26467d5865ff21b24c82f4df7da9dc48e4f012ff322"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+      "sha256": "60c56ac6b256bc8f51c841db24121f1f1fbef5cdd2e0706c90a4bb53fc8d694a"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "60c56ac6b256bc8f51c841db24121f1f1fbef5cdd2e0706c90a4bb53fc8d694a"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "sha256": "430ea09683ceab570f4027ff62d14843f861e6bd273ed3868a6f96c719ab31ec"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "430ea09683ceab570f4027ff62d14843f861e6bd273ed3868a6f96c719ab31ec"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "sha256": "78c876e2a05673595e7a4ca7cb4686319d83de5bb88828921f56144e6999d926"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "78c876e2a05673595e7a4ca7cb4686319d83de5bb88828921f56144e6999d926"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "91819e88972f605494e0c07cae50e728782225129c807c2af7ab448f417faf15"
+    },
+    {
+      "path": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "91819e88972f605494e0c07cae50e728782225129c807c2af7ab448f417faf15"
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/002-account-entry-1-commander-first-device.png",
+      "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa"
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/004-close-devices-1-commander-first-device.png",
+      "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa"
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/010-end-both-sessions-1-commander-first-device.png",
+      "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54"
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/010-end-both-sessions-2-commander-second-device.png",
+      "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54"
+    },
+    {
+      "path": "tests/browser/story-baselines/session-interrupted-recovery/large/linux-arm64/012-fresh-sign-in-2-commander-second-device.png",
+      "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54"
+    },
+    {
+      "path": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+      "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9"
+    },
+    {
+      "path": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+      "sha256": "a862d57e4bf208b089cf890983ddc1a079de6062e529a4321f2fb7cd6fc6a3e9"
+    },
+    {
+      "path": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/010-return-to-entry-1-returning-envoy.png",
+      "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0"
+    },
+    {
+      "path": "tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/011-reload-returning-entry-1-returning-envoy.png",
+      "sha256": "5a0f3d6e3f763a2880465463395fe30c372f5ad930c98567c154b284806dddb0"
+    },
+    {
+      "path": "tests/e2e/001-entry/screenshots/learn-and-return/large/linux-arm64/001-enter-1-visitor.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/e2e/001-entry/screenshots/learn-and-return/large/linux-arm64/006-return-1-visitor.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "9d978815d0ce84c6a60cd9825d3d408bd6275fce1a5e2547bb3f2abd009edc10"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "6d5fba87669ac75cdbc1f91b3fc33293e2f06d832cfd16e6661255798f99b18e"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "98b187b514022f56963504e45826443d0fab592037713ab77fcb0ee3740c296c"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "576f34a5f537eb1f26057b63160cd7943a56108e50645d11cc95751151f80969"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "5706b8e8552f6f9152b50d8403a284699fc21617918e06832df86f1f352378e7"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "f7dd13ace2416eb6af665504065f8c20c1131c16117eee3e4f204281c5319f69"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "831f8ec52b3750ecba403631f17cd1b7782ce6b48c88e8dfc5098009cc7e3f5b"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "cf081ac602547c3891780846cbcdf25065586e278040b5f80c70f8312f66d4ca"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "f6626d8d614d54d7ed9cd472b03b6c855a9e5e4dff71df16eb066bb980b5c2d7"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "ed3c8d25e5daf32969f582bada2501d524e8328bcf6c50a7f2fb0df58ca777ed"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "8cc2e5fe52bee8ec705f39747183791d037fc4ee574ad12d2d8668c7bd1b914a"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "9ed1e9f991cc2abbf803830398cc55ecd6d531192d5dc6ff2513ca54a3c0a4b9"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "134b4a5a4795673c4480b693eb5390f4ef694474af40be2cfe3404f4b0447ceb"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "716373a8fa8c9709e2c32dee22e4c189a5ddeff3d00934f3669d9ed62c53911a"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "23088cf0659b4e1028186df15049a8d7b38a18f92c87eba1eabe3f54cc89c021"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "d20c4a9ed64bbaefb27bd9487d68b9708e4294589b6060b3a1b877a10c9dfbfd"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "c546f218d90d2254ac66f350a02d8b1fb73daf02478dd8088853eb761f89a5c6"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "ec1aeba49e682bc1e2c6a7cce8b88bf4551ba3e9c0d1bdd099083e5f490a987c"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "8c91f826b652c63e8c711e11f962c0f4d4ccc8f034b01f8106c0c77a0009f25c"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "58ff3ea807ddff41708919d116745a14706669c7db5b9c046bec3d559d7cf5ed"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "dd3a78bbbb9d216429fc3c0b078b08962b176cffc7dea7bb7fe509fefd67fac6"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "da5cd12a7db185bdb7c3c706f93d26c9542eeea2ca45a3fbeeb4d8b3a6c4cea0"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "9c7f2880d1107d16eb792ba8960ddc138b4204ac0c7a2f97eead8b57a73ed2fc"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "1b929d4d4e275cf1454d91afc6751c2a2631429a35376e4ffbf3248d72a8a23c"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "31ff56da8e5dbd8a42a68db5011d0083f115d547b09e676d472c6ada4c711a00"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "bbf0deaeed1cfe811a3c03e06d7961a83e5885ae5643a4387e14bde0c7847e10"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "26840ed4e2bac15924aa691663aaa0d30e36701629911aee0afc7c3c8e056537"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "9720c3498c2b39ac325518116c0a02cec08401940121a1a77df777646b28e50a"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "ce7244b9836f7f882790cba254fb417124eddd4acda1591ea4c0e1154cfcfbc7"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "d42882751bc5acde71ad01c0d58854e05f4d3d6243789c2dc7ae192ab052241c"
+    },
+    {
+      "path": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "fe56ea33ba1282618eb1e5ed0a409b7655f39ab25fb1056b2bb8c8e9179d5437"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "sha256": "ccc1fb983c24f4d1b8207b0603422bde3cc5ecd7d44f1a31a793fbcf2236e9ae"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "sha256": "c03c7d17b5e308de638ed1981b83938b989dcfa9437ee098d280216b4c92bf43"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "sha256": "7ed5ebd3133f878f9785d44cb52f03b382d536c5ab2804bfe441082f0b7062c8"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "sha256": "3e102dd61e39327c3f74d627efbe6c11de216f23d4ad9e81082ed90a8a952a77"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "2f4fdecd22cc405052f3c4fc47d1a8db9cb76811f60aa793c164199b0d920743"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "49a58d6ba643f8269e032c4ff808709675cf664e788eeca542ec912f813b98e3"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "7819fc0139ec1abcafeccbc6df5ce6f00121affc6c3d7730b1c239510f37666f"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "441a5126c42e2d7aca616f2b59e8131ee9329b34ea029f70827df981a90307f7"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "sha256": "e2b28b6c3dd2743fa8ddb4a2771dc6c7ad66b6dc5aa5201d9198ee1d60991996"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "sha256": "5a192fe0b857156fb8bd129c253fff0f6844a285cba130e1745ff9ae07e76984"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "4ccdf826ffe1709a3e5d1372c101c71fe3d6fb659321f84111db435d9dfd6648"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "528c0a80c0f4de3c2a13dbbc06857674944a078ded81d453186e4b55be11c891"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "6fb01d2870e3fcb1a2920486504379091fa60642f83ed9d9eb5f42d4dd13c74f"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "c1da4d7d23c3f85b56994deec66e2da91dd6d39c5a5210928def091fa0d83729"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "sha256": "ac12b47220e51bbf26dcf46fa377903f8331f8c25247382a167862e7d413886d"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "sha256": "96f7688487c49aeb168cdd02b26ecc02ee738c981b0b7bb5fb031c6177c09439"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "sha256": "37bead447a6a79377876d334c181993c9fe16063cc6101533ede34b3e2a49136"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "sha256": "3eba49f2e69fe96018ecb23b4cdd316b46f8fe6beb9f8d0f5cd196a34f78b11f"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "f6cdc802f331982fe324f2e84923be161f0f428ffac72495010a8c9c1c05620a"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "86e86e03cc1afd86e4b90dd5faca754e0510bf14da0299f74ed3caa93a12d1d0"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "907f09e86adfb751679827ce352ae929a644d561db699b79a977930c4532ae25"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "c323148878c65df193cb41faab9863675826ecf4a56256196bd06a0a8608445e"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "sha256": "c22b3462e1311cd77d62de323754d5b2646e5dbf4c851a67321d4b171c3c1903"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "sha256": "80b54ff53bda6e9123002b84db4516de2e0b6938c97057effafbb3661b38449b"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "sha256": "6881de9b376aa71e8dd46c252868fb5da043f1528f8d89ac2b46f1a70e78f87b"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "sha256": "8f1e117097c9fe42e54bc433c9ef2a8b67df8ea3e1059a46b48037200d7e6560"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "f774bb24e8c21c16eaa4cbc87ad6275dc990189621c438ef18b269d73715379d"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "eaa4bd91465c5894a4bcf3601c835a2ff610618c1916c28a6591224a6bab06d2"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/019-recover-assigned-home-1-chart-envoy.png",
+      "sha256": "7e4cd92e416154fdeead2792ff1c4682b38d847ff99c08b702f2c9f17ba2d9d0"
+    },
+    {
+      "path": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/019-recover-assigned-home-2-tidal-envoy.png",
+      "sha256": "ae382adc1e58047ae2cac29a250ecbf3801d83deafae2e9252407e12b3d5cd0e"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+      "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/003-preserve-destination-1-invited-envoy.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/004-sign-in-1-invited-envoy.png",
+      "sha256": "327a71ac5a4a2d2b306bf69a16f4fd3eb932692d436dbd9727e068ba3af7d515"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/006-draft-identity-1-invited-envoy.png",
+      "sha256": "f6c96ec6a12d7899b6f2f1ccbea954418cd8901a4d8ea91df2017be76ef5db45"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/007-save-and-resume-1-invited-envoy.png",
+      "sha256": "8d58baafd69398219120af380dc948662232afa44b43d225f98334ecb6e921cf"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/008-choose-faction-1-invited-envoy.png",
+      "sha256": "533c6fef4662109e15093790ed69ede310d0cc2b40fea9497f89700172fa6c1b"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.png",
+      "sha256": "3be53f56afcb4ed9a69f4a31d9a6d182e497dc5daa4346906108b8239f5ac7d7"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.png",
+      "sha256": "c07278b448cbcd47cbeaf1f9778a1d9393fcabf3f62190e57df723336df0e431"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/010-recover-seat-1-invited-envoy.png",
+      "sha256": "edb6de24a91d82d7a189793f1262807713d01949d30eb06c9e7089530ef2d67a"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+      "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/003-preserve-return-link-1-returning-envoy.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-1-returning-envoy.png",
+      "sha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+      "sha256": "6ac7887138b3cb06d42ccbed5f8de42394be5a25a238a5acf985fdb79aad173b"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/005-reload-return-1-returning-envoy.png",
+      "sha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/006-missing-invitation-1-returning-envoy.png",
+      "sha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/007-recover-directory-1-returning-envoy.png",
+      "sha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/009-denied-invitation-1-returning-envoy.png",
+      "sha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934"
+    },
+    {
+      "path": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/010-recover-entry-1-returning-envoy.png",
+      "sha256": "93d5ce9987e304a9b28acdf4fd3d14e1e6fdcd3e33b5b9771137b5b9fc1a1670"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png",
+      "sha256": "a046b62ad3022c2c6e4ff145957d80fe58e485695d3d159a74521cdb83f1007d"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png",
+      "sha256": "04478a078cfe13405dd9f5561ac173850bf458cdd934d27b77651b1102c2b339"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png",
+      "sha256": "b2268578aeaf3bd0cd37d902e1db4367a1451e6ef6c34dd7dce34e05246e4fe9"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png",
+      "sha256": "9ef5b3196e0689a28c929d883e2e90ac3cdb89d516977fc8d591e9c9e3080ab4"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png",
+      "sha256": "51c4da212fe3d64f242d533f65f287de703b3defd0be2a4489085b833df0f734"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png",
+      "sha256": "83e2fe48493b84aa98ddbea7b240222107d01a091612a84b9042674faafc750c"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png",
+      "sha256": "a0df49b0664ac7aa1498eafb1b4f12ce85894b7866a02c261fb92506e91657bf"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+      "sha256": "8fd5eeb8aec7f37b0f82a20df686e0da5b921effb2f30e0c0361da23c5e65ce2"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/012-recover-real-home-1-deepseer-envoy.png",
+      "sha256": "7cf65640b2093741ef054045dca13110f6194c86ccd162a10144f1b7b7fc5c8d"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png",
+      "sha256": "a10a0b86a648debbe6aa61dff23f25be5657b0e52d82250045c66ec75c07f8ec"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png",
+      "sha256": "0158cd6806b02952c1a8639f1efedc033948010b4fbb2379ce6410deccf021fd"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png",
+      "sha256": "c46d903675ea5fabc23930273729b7d2cf21bb726617c3ad233e226400c9283c"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png",
+      "sha256": "7ee11cab013d5d039ea875d58fb9047192d7b15c402b4ef5f140ed75f640ef44"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png",
+      "sha256": "bd30e038922a7eb5985e2e4067a3c3f7666930b9aa05c69b9cf54cd734151547"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png",
+      "sha256": "025ac80845fa674e55f992b55e2b9edfd1bd1af84416b78d4f302fd5e568b941"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png",
+      "sha256": "a9b977fff434e0e2bb521ed8d92d327aa8b08dbf5d6833138d636d043b31dacc"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+      "sha256": "93c7ef8d7de1748f55116ee37d1006734b775dd9334f1571599437b8d8bcba5b"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/012-recover-real-home-1-deepseer-envoy.png",
+      "sha256": "d27acfc05abd7f2d7fd7fce8b1e3d5efb890b3b5dddc1cc4f37109d6f7aca0a3"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png",
+      "sha256": "468224d0e5b10c80b33df54e4cfbbcb4d520d2258ec7e71e9ceacac2b45a653c"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png",
+      "sha256": "bae35c0fbd4b1c139a4568e1cb8a5c4223df14c66a79e4ec142018a9e2c54e45"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png",
+      "sha256": "6b19a3c291403581d5f33a044cd0d8d4664fcf156a7343951c99e39c74caabfe"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png",
+      "sha256": "c002f1620f6804daf874da2597ecf5b4e1437becc417339a8fc8111106700977"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png",
+      "sha256": "addda5874110c3f6540a72310288c9015b3a37f0734662c816b9e37c5ac7807a"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png",
+      "sha256": "b2cd9ca7d1bf56b24c42165274cd39ca65281f8262a6cc1f9ee4d5354d78fc34"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png",
+      "sha256": "35e39d5dfe2a51a2f54ddc1e53dcc3812f7d3245ac3455928511789d031041fe"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+      "sha256": "fdaf8b07b0876ac2806bb7aec4373f005a91adbb4a1a1b91d712b0daef3a0d38"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/012-recover-real-home-1-deepseer-envoy.png",
+      "sha256": "fdaf8b07b0876ac2806bb7aec4373f005a91adbb4a1a1b91d712b0daef3a0d38"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png",
+      "sha256": "4a765dec914b7af0db6c3badff37d3ca6b51083341abc527ed4de9c7dad2d811"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png",
+      "sha256": "9e88f1e214602fdb3c8b996983d29e0f230eace337c47bdb091f0f777e757c67"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png",
+      "sha256": "c6072dc99e1b93674d23b051985b7e3d986c6a58423787d3744ecee048873829"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png",
+      "sha256": "7459b740638cd1c62158e78d93303edb2362610388d7726fadc67ec21d7e548b"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png",
+      "sha256": "374bc4848dbb23c68bac6ce36c4ae61001af62141700103681531e2842ee1368"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png",
+      "sha256": "75afbf9d36e995249f0d69c573edd91dc1cad31d9b34fdc11620051f3b570a6f"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png",
+      "sha256": "36a90e9d352166b4ef96e343a40e6f1edc821f9feac5f755dbe62aebc3006737"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+      "sha256": "de7cb5c690709a81543208b51c2e15582f6259902143d2785684c04fcb185e47"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/012-recover-real-home-1-deepseer-envoy.png",
+      "sha256": "bd073fd7f12821d4aa5479a506274bf8713636349a7f2577d2e92b415fe3d280"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/desktop/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png",
+      "sha256": "444b8b7e56d3e0257c922fe446066ca48ce73db3f5efe94dd8d0c4693efcdeb6"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/desktop/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png",
+      "sha256": "dfdf51016ce00baef4162e6aa2a13954e2f8510d0d21f78cdb152e0aca066089"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/desktop/linux-arm64/003-request-roster-example-1-gallery-reviewer.png",
+      "sha256": "f26d5704469ed6f278671ff17ff1e63bf4bc38cda84f7c69b02d3847d983c80e"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/desktop/linux-arm64/004-select-shared-command-1-gallery-reviewer.png",
+      "sha256": "7f8153bbac74e38be0278abdfd79d75b03e4ff980cc17b713c391af643981ffd"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/desktop/linux-arm64/005-read-provenanced-portraits-1-gallery-reviewer.png",
+      "sha256": "006dee0067832ec6c204914e550d5a99a0ba099cd035da8f529ac1571e4cdebe"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png",
+      "sha256": "92287244f0b78d7855d8852f5cc8a78988b36f95ceaf1220d68f572a27492bf8"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png",
+      "sha256": "e179e3de77038477c1002ae4b8ec71114007a4dda6d7eeb12c9ad98a4a426ed7"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/003-request-roster-example-1-gallery-reviewer.png",
+      "sha256": "39ff39b8ba613666c4afe5a2518d25eaf373cc0c545b9fea290de57ef1a5c30a"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/004-select-shared-command-1-gallery-reviewer.png",
+      "sha256": "8da612385b94ca5aab0d3940b79cc04113075356f443b75fe58ae6367409f033"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/005-read-provenanced-portraits-1-gallery-reviewer.png",
+      "sha256": "36d95d56089f9623bfdbb93475d4a65172698c4d734b4aa55e253251f84f603c"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png",
+      "sha256": "da9241d2f66558ee4f77c4a589a3848e0e196b6168ada81fa604fd86546b59e4"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png",
+      "sha256": "001e69242f065ebe784ae5374150caa51bf5b65ef541f898aa9124b2eee4972d"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/003-select-shared-command-1-gallery-reviewer.png",
+      "sha256": "c3cbaadf0518d24d5d3db72e7ac6952fd5a0f527c09dacce5064ea5e21213cfd"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/004-read-provenanced-portraits-1-gallery-reviewer.png",
+      "sha256": "9e7f3728b1a2e36232363101531a61d2c41fc5d1e036d258173defc266d587bc"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/short/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png",
+      "sha256": "70c28c7c4b483254955b182fb37391a6c716dde8f0fb7f5f15258fb0bd8d0c48"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/short/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png",
+      "sha256": "6f6b18269b4393b54a92b1bfbb03d2d4b3ec1b62371762c0ec4cf4bf3ddaa2c4"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/short/linux-arm64/003-request-roster-example-1-gallery-reviewer.png",
+      "sha256": "f6d473d234b56a34899c365fb58f11a0b15277ee5c09582df594bcd544f97e75"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/short/linux-arm64/004-select-shared-command-1-gallery-reviewer.png",
+      "sha256": "e55f4d3116c2642256fd4f80fe1c83797073a6e4fa7266ae8806b0d1f8b6d0fc"
+    },
+    {
+      "path": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/short/linux-arm64/005-read-provenanced-portraits-1-gallery-reviewer.png",
+      "sha256": "6c1055a5462236f82b48e58d871ae80701d566c3a754ed25a563962079c0a364"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/desktop/linux-arm64/001-read-market-rules-1-reader.png",
+      "sha256": "7e2e29f03881b983e0d692c738a3cb44f67a60da38fcd6b08eb113dd7f83934d"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/desktop/linux-arm64/002-read-held-returns-1-reader-held-returns.png",
+      "sha256": "1f480938d4c233197346b48a2f6a00f5928c32d92675fc672711d9a085c45023"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/desktop/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "11897741ff33d3df8687eacdf71a1b4d36f50460e0d210ce9b97dd162c050973"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/desktop/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "179a7b1a869261a43208236f0dbdfbd60674e1bfb35731d8b9f97cbb6bec4dd3"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/desktop/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "e9585de591c3c2aac8476c62d7825253c49fbf224f545983b5d669da7499940a"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/large/linux-arm64/001-read-market-rules-1-reader.png",
+      "sha256": "31321db4b5f997b85bb6e83bfd6b88a71e94bda2638cc5afa3d2d3f255ece400"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/large/linux-arm64/002-read-held-returns-1-reader-held-returns.png",
+      "sha256": "6fcc64a720770cce09bf26951a211fbe862f3c160ec7d3fca178e82a760b8d6f"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/large/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "6fcc64a720770cce09bf26951a211fbe862f3c160ec7d3fca178e82a760b8d6f"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/large/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "b89709455f796f4542e51f4afb37355595b53b2566a410b9f590dc6cc340e573"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/large/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "50ed10a11bbbd458a7e4f29277d2cb2a42edf0737e633a335682f5cdfa2477a3"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/phone/linux-arm64/001-read-market-rules-1-reader.png",
+      "sha256": "0ca8dd4cc7f9304abba0a719242c6d34d138d1d8b4787e536c82ea669673dffb"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/phone/linux-arm64/002-read-held-returns-1-reader-held-returns.png",
+      "sha256": "2ed5bbddb07a0676a180739cbdf91082b19a675c12e1b98ca581b2fe96d8f8e8"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/phone/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "499b874df88b01dbba6b2161cdf86b57fdf50e045ea80cf0b4195d9c80387d59"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/phone/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "d79a493223fa1cd9053fb0be13bd0d8cdd63daf464900bdd89248ff790ec91bb"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/phone/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "68b19776289b391fd872a699b50f9c5f33e8faa904169a10f7e5f2129dd13d46"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/short/linux-arm64/001-read-market-rules-1-reader.png",
+      "sha256": "b34f161284bafeae3a35699429f9a5327865d20c217d96b29f1142516638d62e"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/short/linux-arm64/002-read-held-returns-1-reader-held-returns.png",
+      "sha256": "59a2c6e77594c1cf7de06d0783b662c66af417f9233dccbe70be73c40bac3cdd"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/short/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "49531b82f90aa217ffbf7b3c18a961ef14c4d8a5c42ce9aea56cae49551839d2"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/short/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "44f461ccb9c519788f6e00549635a6b264d68eb3cb61bb558b0d638d74f2a478"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-market-rules/short/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "818b2b99e25f6141acc0c6305db3c0c8055b629635cfcfe01078b649d0f3a558"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/desktop/linux-arm64/001-read-route-rules-1-reader.png",
+      "sha256": "c6bf93d855b2f35f7b96cb6ac6baca8bdf72de7ba25479be81874288a528d3e1"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/desktop/linux-arm64/002-read-arrival-uncertainty-1-reader-arrival-uncertainty.png",
+      "sha256": "fd375bb7f673e10a06e436a775f77b7553ce5e6c3793174ba88c1441803126c1"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/desktop/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "0fb961f6e626e926de3109fd4c7654d1343653862c9c03ed0f9dc805e532a5de"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/desktop/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "179a7b1a869261a43208236f0dbdfbd60674e1bfb35731d8b9f97cbb6bec4dd3"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/desktop/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "e9585de591c3c2aac8476c62d7825253c49fbf224f545983b5d669da7499940a"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/large/linux-arm64/001-read-route-rules-1-reader.png",
+      "sha256": "aec2de671d3460b0da1cf13d755763e50d065cc8f3705e4209f35195c9b49b96"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/large/linux-arm64/002-read-arrival-uncertainty-1-reader-arrival-uncertainty.png",
+      "sha256": "fc0d8913c9a7aecab805469a5b8848739a587a2932a9e358cf5fc9d342aba935"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/large/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "fc0d8913c9a7aecab805469a5b8848739a587a2932a9e358cf5fc9d342aba935"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/large/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "b89709455f796f4542e51f4afb37355595b53b2566a410b9f590dc6cc340e573"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/large/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "50ed10a11bbbd458a7e4f29277d2cb2a42edf0737e633a335682f5cdfa2477a3"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/phone/linux-arm64/001-read-route-rules-1-reader.png",
+      "sha256": "eea282fd871678518b06a756096e2bea8b38345d5ce4e462da6693083923a83e"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/phone/linux-arm64/002-read-arrival-uncertainty-1-reader-arrival-uncertainty.png",
+      "sha256": "b070536e900c525e04d741b12bb2998e44af42f89011f8ffa3f11f9de07d659a"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/phone/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "1d95dff81a271d369cd0ece11e5aaa920ed3d910ee535b5ff69ec383ad40f6e6"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/phone/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "d79a493223fa1cd9053fb0be13bd0d8cdd63daf464900bdd89248ff790ec91bb"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/phone/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "68b19776289b391fd872a699b50f9c5f33e8faa904169a10f7e5f2129dd13d46"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/short/linux-arm64/001-read-route-rules-1-reader.png",
+      "sha256": "d20ddeff00d67cbb5fd5b50c751e5cae20a6c9547b9f391dbcb855a55701bec2"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/short/linux-arm64/002-read-arrival-uncertainty-1-reader-arrival-uncertainty.png",
+      "sha256": "3fe1aa4ced1d957752ccd9b7ca48629389bd43aa8f623c3d9b40deddb40b5c9a"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/short/linux-arm64/003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "e855b4f4a084efaf6977e6ff69be3a034c49ed1f7bd470be26738dfe5ece654d"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/short/linux-arm64/004-return-within-menu-1-reader.png",
+      "sha256": "44f461ccb9c519788f6e00549635a6b264d68eb3cb61bb558b0d638d74f2a478"
+    },
+    {
+      "path": "tests/e2e/008-field-guide/screenshots/in-game-route-rules/short/linux-arm64/005-return-to-scene-1-reader.png",
+      "sha256": "818b2b99e25f6141acc0c6305db3c0c8055b629635cfcfe01078b649d0f3a558"
+    }
+  ]
+}

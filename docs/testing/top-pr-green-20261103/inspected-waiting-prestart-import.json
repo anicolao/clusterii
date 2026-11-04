@@ -1,0 +1,306 @@
+{
+  "target": "6137dce381165ae999ff859bb026f48fde5d509b",
+  "inspection": "All23 distinct originals individually opened, covering24 pre-start views. Waiting/scheduled seat counts, four faction assignments, departed seat and restored seat, declaration of start timing, departure-policy End reading and Rules modal/focus remain readable. Persistent Roster/Campaigns/Leave controls contained. Smaller readers intentionally clip neighboring policy/roster content; separate End view exposes departure text. Existing singular seat/place grammar recorded as copy gap, not new behavior defect. Large viewed2048 from3840: layout/content scope only. CampaignWaiting and shared menu/rules/assets/spec unchanged; changed Galaxy logic applies active branch only. Final019 active-home views explicitly withheld for current camera/label source qualification. Regression-only approval; not full design/rules/motion/privacy certification.",
+  "families": [
+    {
+      "story": "waiting-to-home",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/story.json",
+      "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "ac12b47220e51bbf26dcf46fa377903f8331f8c25247382a167862e7d413886d",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "96f7688487c49aeb168cdd02b26ecc02ee738c981b0b7bb5fb031c6177c09439",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "37bead447a6a79377876d334c181993c9fe16063cc6101533ede34b3e2a49136",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "3eba49f2e69fe96018ecb23b4cdd316b46f8fe6beb9f8d0f5cd196a34f78b11f",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "6fff78574c336cab32a943fc84ff6488af71f53f9510392722a2c3982e37674a",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "921a54c13c69222fef4e2fab7beded16c7f3ea768ea7c24924ffe9c741372d49",
+          "existing": null
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/story.json",
+      "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "ccc1fb983c24f4d1b8207b0603422bde3cc5ecd7d44f1a31a793fbcf2236e9ae",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "c03c7d17b5e308de638ed1981b83938b989dcfa9437ee098d280216b4c92bf43",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "7ed5ebd3133f878f9785d44cb52f03b382d536c5ab2804bfe441082f0b7062c8",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "3e102dd61e39327c3f74d627efbe6c11de216f23d4ad9e81082ed90a8a952a77",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "fc2b717574b2f31beac9b483b7bb7ea5b336a2d85816f718eefe5c913bca89d2",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "de2ada993bac791ba2a38cda18b29b7bc12e239d57185a93ffc90929529fcf52",
+          "existing": null
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/story.json",
+      "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "c22b3462e1311cd77d62de323754d5b2646e5dbf4c851a67321d4b171c3c1903",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "80b54ff53bda6e9123002b84db4516de2e0b6938c97057effafbb3661b38449b",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "6881de9b376aa71e8dd46c252868fb5da043f1528f8d89ac2b46f1a70e78f87b",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "8f1e117097c9fe42e54bc433c9ef2a8b67df8ea3e1059a46b48037200d7e6560",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "9bd2db4a0664aff3fe0c095361269210056dd327d31bac151e63fd7833522f33",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/waiting-to-home/short/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "d82045e056245cfee7403837dce9439050c83a986be9213a9747301e9e3592a4",
+          "existing": null
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/story.json",
+      "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "e2b28b6c3dd2743fa8ddb4a2771dc6c7ad66b6dc5aa5201d9198ee1d60991996",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "5a192fe0b857156fb8bd129c253fff0f6844a285cba130e1745ff9ae07e76984",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "73ce69fb2f47dec6d9a598778051616fe0d2395eb75510b55aa42febba8d4674",
+          "existing": null
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/waiting-to-home/large/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "ef52c5001bdd2da7cdde5bef00702497e402563c9b4357f70ce248a06c640603",
+          "existing": null
+        }
+      ]
+    }
+  ]
+}

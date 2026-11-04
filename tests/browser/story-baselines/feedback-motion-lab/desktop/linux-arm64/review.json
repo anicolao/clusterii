@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/FEEDBACK_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "feedback-motion-lab",
   "renderer": {
@@ -27,5 +27,106 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/feedback-lab.story.spec.ts",
+    "specSha256": "eca21b6d3a68b587773b1751c2fd2df1fdc5a4750ada4845dd8c810e36ea1b53"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/feedback-motion-lab/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-pending-1-developer-playback-controls.png",
+      "sha256": "356b7b5ca68fd01b36af84c469aab39e6c1afd00a22e198edae9502f045743d6",
+      "previousSha256": "815c139e1f78aa8ec5f7aa416ebc02eb9ec28e0393059e6d9a2ac188b3c11c76",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-pending-2-developer-standard-motion.png",
+      "sha256": "15d2a098f01a9b77a0fd3b26b6e8cc587314a7739cb6286460b8c3010db4d0ec",
+      "previousSha256": "fadb10bf3c056d5d3e5ec14a390386efb3b539d6480fa52dec86e9977464fe4e",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-pending-3-developer-reduced-motion.png",
+      "sha256": "15d2a098f01a9b77a0fd3b26b6e8cc587314a7739cb6286460b8c3010db4d0ec",
+      "previousSha256": "fadb10bf3c056d5d3e5ec14a390386efb3b539d6480fa52dec86e9977464fe4e",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-1-developer-standard-motion.png",
+      "sha256": "0ef30784f584c532ee3c92113e3e5ba0e41a8c7b9cdb1863000f616c17b9c1f1",
+      "previousSha256": "85bb27061a683c96da8ec0a28a355777250e7207cd2a5bb39334832f36bce9a8",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-interrupted-2-developer-reduced-motion.png",
+      "sha256": "0ef30784f584c532ee3c92113e3e5ba0e41a8c7b9cdb1863000f616c17b9c1f1",
+      "previousSha256": "85bb27061a683c96da8ec0a28a355777250e7207cd2a5bb39334832f36bce9a8",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-reconnected-1-developer-standard-motion.png",
+      "sha256": "08cb150fdfc2998d8a9715156fed521421f14805a348abb8bfdd532bec6b52ef",
+      "previousSha256": "b343a5861983e68ccc1121d14668149d26822f3fd91b463867b5f61a6ffe5526",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-reconnected-2-developer-reduced-motion.png",
+      "sha256": "08cb150fdfc2998d8a9715156fed521421f14805a348abb8bfdd532bec6b52ef",
+      "previousSha256": "b343a5861983e68ccc1121d14668149d26822f3fd91b463867b5f61a6ffe5526",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-conflict-1-developer-standard-motion.png",
+      "sha256": "798254c2831a915f2472744e985ec971fc7821915c3849d6220a5d7ada21a349",
+      "previousSha256": "2c369c34f372c87207f527c6003db41ad1eb9aa6345ddb72504fbcb17a64413b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-conflict-2-developer-reduced-motion.png",
+      "sha256": "798254c2831a915f2472744e985ec971fc7821915c3849d6220a5d7ada21a349",
+      "previousSha256": "2c369c34f372c87207f527c6003db41ad1eb9aa6345ddb72504fbcb17a64413b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-replay-pause-inspect-1-developer-standard-motion.png",
+      "sha256": "0c0e8bb38cc6b6c65b2b8b87b24154c2cbbf8254810bd793caf6f3364c95ac45",
+      "previousSha256": "f4525c405f26799dc9d48fb30b234424d14332f4c2dade253ef36334e40a8d9a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-replay-pause-inspect-2-developer-reduced-motion.png",
+      "sha256": "0c0e8bb38cc6b6c65b2b8b87b24154c2cbbf8254810bd793caf6f3364c95ac45",
+      "previousSha256": "f4525c405f26799dc9d48fb30b234424d14332f4c2dade253ef36334e40a8d9a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-reset-1-developer-standard-motion.png",
+      "sha256": "e007809a8b0182543e23c48a6b180f8444854d9f0467b7ca3e9b38d95e3ba568",
+      "previousSha256": "77cf484a5b8951a6c5d446206c4964d7b741d4b3f6b8e5dfad928adaddaae1d3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-reset-2-developer-reduced-motion.png",
+      "sha256": "e007809a8b0182543e23c48a6b180f8444854d9f0467b7ca3e9b38d95e3ba568",
+      "previousSha256": "77cf484a5b8951a6c5d446206c4964d7b741d4b3f6b8e5dfad928adaddaae1d3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

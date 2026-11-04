@@ -1,0 +1,104 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "invitation-returning-recovery",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "2cb11e3689ff293a6396b3d3dc75b7203295ea25",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+    "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-corrected-candidates-41724961025/desktop/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-return-to-invitation-1-returning-envoy.png",
+      "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-preserve-return-link-1-returning-envoy.png",
+      "sha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-authenticate-and-resume-1-returning-envoy.png",
+      "sha256": "7f43852b5f6191267f7a7628220bbf71484d412f057e580cbb524987692ff3ce",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-authenticate-and-resume-2-invitation-host.png",
+      "sha256": "09194c9ad2cbf16adadf4dc32e7c6115f57f003052bea395564efe4285bf7eba",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-reload-return-1-returning-envoy.png",
+      "sha256": "7f43852b5f6191267f7a7628220bbf71484d412f057e580cbb524987692ff3ce",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-missing-invitation-1-returning-envoy.png",
+      "sha256": "172819ff4f249c310250b1206f2fdac2fa3faecea754311696a6cd0a7bc01c97",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-recover-directory-1-returning-envoy.png",
+      "sha256": "a30008f2aab0e5fc96f5542aaa15eca05464bbd20a8a4c2348c1b04b9612a2a9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-denied-invitation-1-returning-envoy.png",
+      "sha256": "466cdeb63fbab8a9ef68d63ef925225b7a98a6a91ae429f01bcc02d0e9365a39",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-recover-entry-1-returning-envoy.png",
+      "sha256": "e2de63f51ffd2656858a718f478ba6569debd54c8022938adc4e322100d4c13f",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

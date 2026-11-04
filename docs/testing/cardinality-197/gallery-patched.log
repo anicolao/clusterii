@@ -1,0 +1,11 @@
+55 |   phase.cpu={durationUs:profile.endTime-profile.startTime,samples:profile.samples?.length??0,top:profile.nodes.map(n=>({function:n.callFrame.functionName,script:n.callFrame.url.split('/').pop(),line:n.callFrame.lineNumber,column:n.callFrame.columnNumber,samples:counts.get(n.id)??0})).sort((a,b)=>b.samples-a.samples).slice(0,24)};
+56 |   const allowed=new Set(['TaskDuration','ScriptDuration','LayoutDuration','RecalcStyleDuration','LayoutCount','RecalcStyleCount','Nodes','Documents','JSHeapUsedSize']);
+57 |   phase.metrics=(await cdp.send('Performance.getMetrics')).metrics.filter(m=>allowed.has(m.name));
+58 |   await panel.getByRole('button',{name:'Return to galaxy',exact:true}).press('Enter');await expect(open).toBeFocused();
+59 |  }
+60 |  if(result.pageErrors.length)throw Error('Gallery render errors');
+                                        ^
+error: Gallery render errors
+      at /Users/anicolao/projects/games/clusterii-conversation-history/scripts/recovery-gallery-workload.mjs:60:36
+
+Bun v1.3.13 (macOS arm64)

@@ -1,0 +1,13 @@
+{
+  "commit": "59d9ba374edbaaf23e423f5f3f4b0c360136f623",
+  "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+  "spec": "tests/browser/lab.spec.ts",
+  "specHash": "b2833ba48189368c7e0a91b166351ade20e4b486ed8f3d01503384b3aa403e6e",
+  "viewport": [
+    3840,
+    2160
+  ],
+  "testBudgetMs": 45000,
+  "fullPage": true,
+  "mode": "verify"
+}

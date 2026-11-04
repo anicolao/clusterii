@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "commander-identity",
   "renderer": {
@@ -27,5 +27,50 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "2cb11e3689ff293a6396b3d3dc75b7203295ea25",
+    "dirty": false,
+    "spec": "tests/browser/identity.story.spec.ts",
+    "specSha256": "d032bc410f11b0e949eeefdce0e06644d5996f924394e52ed239cfd7cd9a66c4"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-corrected-candidates-41724961025/desktop/test-results/stories/commander-identity/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-arrive-1-toile.png",
+      "sha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+      "previousSha256": "5310670bb36f7e86a4c5b642db9c9b945ea1d661aeecbe5ba05f574adac06759",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-sign-in-1-toile.png",
+      "sha256": "4a553ff4566a67749229173bef0d292e8e32d068d339b864755f34448af1ad11",
+      "previousSha256": "4a553ff4566a67749229173bef0d292e8e32d068d339b864755f34448af1ad11",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-save-identity-1-toile.png",
+      "sha256": "029d5a9c752d1e6dcbeba9bd5227aa19a0faa16fad01f97ef7a881a667430f9c",
+      "previousSha256": "029d5a9c752d1e6dcbeba9bd5227aa19a0faa16fad01f97ef7a881a667430f9c",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "004-reload-1-toile.png",
+      "sha256": "a28ec38568dea586df905893cf68870dfbdbfa66b5c6474d399583748b244853",
+      "previousSha256": "a28ec38568dea586df905893cf68870dfbdbfa66b5c6474d399583748b244853",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "005-sign-out-1-toile.png",
+      "sha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+      "previousSha256": "5310670bb36f7e86a4c5b642db9c9b945ea1d661aeecbe5ba05f574adac06759",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

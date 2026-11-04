@@ -1,0 +1,114 @@
+[
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-desktop",
+    "completedTransactions": 50,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 608.34,
+    "medianRequestMs": 561.28,
+    "medianRpcMs": 561.19,
+    "medianBeforeMarkerMs": 3.9,
+    "medianAfterMarkerMs": 557.47,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-large",
+    "completedTransactions": 50,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 617.07,
+    "medianRequestMs": 572.36,
+    "medianRpcMs": 572.22,
+    "medianBeforeMarkerMs": 4.18,
+    "medianAfterMarkerMs": 567.87,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-phone",
+    "completedTransactions": 44,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 661.12,
+    "medianRequestMs": 616.18,
+    "medianRpcMs": 616.06,
+    "medianBeforeMarkerMs": 5.09,
+    "medianAfterMarkerMs": 608.79,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-010-zero-science-zero--06679--preserves-private-research-short",
+    "completedTransactions": 52,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 589.2,
+    "medianRequestMs": 542.04,
+    "medianRpcMs": 541.92,
+    "medianBeforeMarkerMs": 3.83,
+    "medianAfterMarkerMs": 538.48,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-desktop",
+    "completedTransactions": 48,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 639.58,
+    "medianRequestMs": 593.27,
+    "medianRpcMs": 593.14,
+    "medianBeforeMarkerMs": 3.85,
+    "medianAfterMarkerMs": 589.11,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-large",
+    "completedTransactions": 47,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 654.23,
+    "medianRequestMs": 604.66,
+    "medianRpcMs": 604.52,
+    "medianBeforeMarkerMs": 3.77,
+    "medianAfterMarkerMs": 599.43,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-phone",
+    "completedTransactions": 46,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 665.93,
+    "medianRequestMs": 623.64,
+    "medianRpcMs": 623.52,
+    "medianBeforeMarkerMs": 3.94,
+    "medianAfterMarkerMs": 619.62,
+    "batchCompleted": false
+  },
+  {
+    "case": "e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-short",
+    "completedTransactions": 49,
+    "attempts": [
+      1
+    ],
+    "rpcFailures": 0,
+    "medianTotalMs": 616.56,
+    "medianRequestMs": 578.23,
+    "medianRpcMs": 578.1,
+    "medianBeforeMarkerMs": 3.78,
+    "medianAfterMarkerMs": 573.7,
+    "batchCompleted": false
+  }
+]

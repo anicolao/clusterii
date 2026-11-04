@@ -1,0 +1,76 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "in-game-route-rules",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/008-field-guide/routes.spec.ts",
+    "specSha256": "31b3c085af885f9af27a0606e3708c78d3dc5bd54adfbcdf4ffceee1a2509414"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/in-game-route-rules/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-read-route-rules-1-reader.png",
+      "sha256": "aec2de671d3460b0da1cf13d755763e50d065cc8f3705e4209f35195c9b49b96",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-read-arrival-uncertainty-1-reader-arrival-uncertainty.png",
+      "sha256": "fc0d8913c9a7aecab805469a5b8848739a587a2932a9e358cf5fc9d342aba935",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-read-rules-top-1-reader-rules-top.png",
+      "sha256": "fc0d8913c9a7aecab805469a5b8848739a587a2932a9e358cf5fc9d342aba935",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-return-within-menu-1-reader.png",
+      "sha256": "b89709455f796f4542e51f4afb37355595b53b2566a410b9f590dc6cc340e573",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-return-to-scene-1-reader.png",
+      "sha256": "50ed10a11bbbd458a7e4f29277d2cb2a42edf0737e633a335682f5cdfa2477a3",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

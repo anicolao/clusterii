@@ -1,0 +1,125 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "galaxy-command-surface",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+    "dirty": false,
+    "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+    "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short/test-results/stories/galaxy-command-surface/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "58ff3ea807ddff41708919d116745a14706669c7db5b9c046bec3d559d7cf5ed",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-read-galaxy-1-chart-envoy.png",
+      "sha256": "dd3a78bbbb9d216429fc3c0b078b08962b176cffc7dea7bb7fe509fefd67fac6",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "da5cd12a7db185bdb7c3c706f93d26c9542eeea2ca45a3fbeeb4d8b3a6c4cea0",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "9c7f2880d1107d16eb792ba8960ddc138b4204ac0c7a2f97eead8b57a73ed2fc",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "1b929d4d4e275cf1454d91afc6751c2a2631429a35376e4ffbf3248d72a8a23c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "31ff56da8e5dbd8a42a68db5011d0083f115d547b09e676d472c6ada4c711a00",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "bbf0deaeed1cfe811a3c03e06d7961a83e5885ae5643a4387e14bde0c7847e10",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-review-surface-development-1-chart-envoy.png",
+      "sha256": "26840ed4e2bac15924aa691663aaa0d30e36701629911aee0afc7c3c8e056537",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "9720c3498c2b39ac325518116c0a02cec08401940121a1a77df777646b28e50a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "ce7244b9836f7f882790cba254fb417124eddd4acda1591ea4c0e1154cfcfbc7",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "d42882751bc5acde71ad01c0d58854e05f4d3d6243789c2dc7ae192ab052241c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "fe56ea33ba1282618eb1e5ed0a409b7655f39ab25fb1056b2bb8c8e9179d5437",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "artifact": {
+    "id": 13270459508,
+    "node_id": "MDg6QXJ0aWZhY3QxMzI3MDQ1OTUwOA==",
+    "name": "top-pr140-candidates-large-b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "size_in_bytes": 4625992684,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13270459508",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13270459508/zip",
+    "expired": false,
+    "digest": "sha256:ab0e1e8d2f0dfc6b40723224c7013dad9b92245ab389ebf68b960e6f1f573c8a",
+    "created_at": "2026-11-03T21:11:15Z",
+    "updated_at": "2026-11-03T21:11:15Z",
+    "expires_at": "2027-02-01T19:11:53Z",
+    "workflow_run": {
+      "id": 41700997600,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr140-linux-candidates-20261103",
+      "head_sha": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c"
+    }
+  },
+  "archiveSha256": "ab0e1e8d2f0dfc6b40723224c7013dad9b92245ab389ebf68b960e6f1f573c8a",
+  "crc": "every entry verified by zipfile while extracting",
+  "entryCount": 2084,
+  "uncompressedBytes": 4693260157,
+  "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large-verified.json",
+  "archive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large.zip"
+}

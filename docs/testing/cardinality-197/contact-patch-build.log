@@ -1,0 +1,336 @@
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /Users/anicolao/projects/games/clusterii-conversation-history
+Getting Svelte diagnostics...
+
+/Users/anicolao/projects/games/clusterii-conversation-history/src/lib/components/FleetRoute.svelte:294:5
+Warn: Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions (svelte)
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+    <div
+      class="route-details"
+      onkeydown={readingKey}
+      inert={editing && !active && !completed}
+      role="region"
+      tabindex="0"
+      aria-label={editing && !active && !completed
+        ? "Force details"
+        : "Route details"}
+    >
+      <p class="overline">
+        Fleet {fleet?.number ?? "lost"} · {origin?.name ?? "Recorded outcome"}
+      </p>
+
+      {#if forces}<section
+          class="force-review"
+          aria-label="Confirmed route forces"
+        >
+          <section aria-label="Fleet transport manifest">
+            <h3>{active ? "Forces aboard" : "Forces to deploy"}</h3>
+            <dl>
+              <div>
+                <dt>Fighters aboard</dt>
+                <dd>{forces.fighters}</dd>
+              </div>
+              <div>
+                <dt>Infantry aboard</dt>
+                <dd>{forces.infantry}</dd>
+              </div>
+              <div class="capacity">
+                <dt>Transport capacity</dt>
+                <dd>{forces.infantry} / {forces.capacity} infantry</dd>
+                <meter
+                  min="0"
+                  max={Math.max(1, forces.capacity)}
+                  value={forces.infantry}
+                  aria-label="Infantry transport capacity"
+                ></meter>
+              </div>
+            </dl>
+          </section>
+          {#if !committed || committed.status !== "traveling"}<section
+              aria-label="Confirmed origin defense"
+            >
+              <h3>
+                Remaining at {origin?.name ?? "origin"}
+              </h3>
+              <dl>
+                <div>
+                  <dt>Orbit garrison</dt>
+                  <dd>
+                    {forces.orbit === null
+                      ? "Unknown"
+                      : forces.orbit + " fighters"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Surface garrison</dt>
+                  <dd>
+                    {forces.surface === null
+                      ? "Unknown"
+                      : forces.surface + " infantry"}
+                  </dd>
+                </div>
+                <div class="capacity">
+                  <dt>Other own stationed fleets</dt>
+                  <dd>
+                    {forces.otherFighters} fighters · {forces.otherInfantry} infantry
+                  </dd>
+                </div>
+              </dl>
+              <p>
+                Confirmed now; other orders and ticks can change these forces
+                before departure. Garrison counts already exclude this fleet.
+              </p>
+            </section>{/if}
+        </section>{/if}
+      {#if committed}<p class="outcome" role="status">
+          {committed.status === "traveling" ? "Traveling" : "At waypoint"} · {view.stars.find(
+            (s) => s.id === committed.to,
+          )?.name} · arrival tick {committed.arrivalTick}.
+        </p>{:else if accepted}<p class="outcome" role="status">
+          Route accepted · departure tick {accepted.effectiveTick} · first arrival
+          tick
+          {accepted.effectiveTick + (acceptedLegs[0]?.ticks ?? 0)}, subject to
+          execution validation.
+        </p>{/if}
+      {#each view.military?.ledger.filter((e) => e.fleetId === fleetId && ["arrived", "destroyed", "halted"].includes(e.result)) ?? [] as e}<p
+          class="outcome"
+          role="status"
+        >
+          {e.result === "arrived"
+            ? "Arrived"
+            : e.result === "destroyed"
+              ? "Fleet destroyed"
+              : "Route halted"} at {view.stars.find((s) => s.id === e.starId)
+            ?.name}. {e.fighters} fighters · {e.infantry} infantry aboard.
+        </p>{/each}
+      {#each view.military?.arrivals ?? [] as report}<article
+          aria-label="Arrival report"
+        >
+          <h3>
+            {view.stars.find((s) => s.id === report.starId)?.name} · tick {report.tick}
+          </h3>
+          <p>
+            {report.contested ? "Contested arrival" : "Arrival resolved"}. Your
+            forces: {report.fightersBefore} → {report.fightersAfter} fighters; {report.infantryBefore}
+            → {report.infantryAfter} infantry, including the surface.
+          </p>
+          <p>
+            Orbit: {view.roster[report.orbit]?.alias ?? "Unclaimed"}. Surface: {view
+              .roster[report.surface]?.alias ?? "Unclaimed"}.
+          </p>
+          {#if report.contested}<p>
+              Orbital order: {report.order
+                .map((i) => view.roster[i].alias)
+                .join(" → ")}. The incumbent defends first.
+            </p>{/if}
+        </article>{/each}
+      {#if active}<ol aria-label="Route waypoints">
+          {#each committed?.waypoints ?? accepted?.waypoints ?? [] as id}<li>
+              {view.stars.find((s) => s.id === id)?.name}
+            </li>{/each}
+        </ol>{/if}
+    </div>
+    <footer bind:offsetHeight={footerHeight}>
+
+====================================
+svelte-check found 0 errors and 1 warning in 1 file
+$ vite build
+vite v8.1.4 building ssr environment for production...
+[2Ktransforming...12:44:26 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+292:     </div>
+293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+294:     <div
+             ^
+295:       class="route-details"
+296:       onkeydown={readingKey}
+✓ 558 modules transformed.
+rendering chunks...
+vite v8.1.4 building client environment for production...
+[2Ktransforming...12:44:27 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+292:     </div>
+293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+294:     <div
+             ^
+295:       class="route-details"
+296:       onkeydown={readingKey}
+✓ 650 modules transformed.
+rendering chunks...
+computing gzip size...
+.svelte-kit/output/client/_app/version.json                                                                    0.02 kB │ gzip:   0.04 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.BZGLGj12.woff2        6.75 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.BoXdMtcr.woff2        6.79 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.Bbz-b3yf.woff       7.35 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.CKkU2Dpt.woff       7.35 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.DqXqCC0q.woff         9.33 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.BoVPHkS0.woff2      9.37 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.DRk46D-x.woff2      9.38 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.C4HEjEaf.woff         9.42 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.CyAY5ZLS.woff2         12.92 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.C2atO-64.woff2         13.01 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BbWidj28.woff          14.02 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.Yta7XZ9C.woff2     14.09 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.BMhMHfrj.woff2     14.18 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.BK6Glc0m.woff          14.29 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.DkJXBcIH.woff          15.76 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.FNmA3REe.woff          15.82 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BrHNak5F.woff2         17.20 kB
+.svelte-kit/output/client/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.GZI4o3u0.woff2         17.52 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.lsPpqi9g.woff      17.55 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.CsIYWmWK.woff      17.62 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.CH1kM7og.woff2        20.20 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.DaBc-lu7.woff2        20.30 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-500-normal.BsRWmXhO.woff2            23.31 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-600-normal.Co1r35X9.woff2            23.39 kB
+.svelte-kit/output/client/.vite/manifest.json                                                                 24.45 kB │ gzip:   2.39 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.Dk3-quAP.woff         28.26 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.DYeaGGzO.woff         28.28 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-600-normal.2CBVLo0M.woff             31.30 kB
+.svelte-kit/output/client/_app/immutable/assets/cormorant-garamond-latin-500-normal.zIXX3Q-H.woff             31.37 kB
+.svelte-kit/output/client/_app/immutable/assets/basis_transcoder.o4Hde_L7.js                                  57.52 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_wasm_wrapper.fZCQGLGb.js                                58.45 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_wasm_wrapper.DxJM36Ib.js                                58.76 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_decoder.Z1_iN-Ht.wasm                                  192.42 kB │ gzip:  64.11 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_decoder.C32yEggz.wasm                                  285.74 kB │ gzip:  89.66 kB
+.svelte-kit/output/client/_app/immutable/assets/basis_transcoder.VXdx5NbI.wasm                               527.33 kB │ gzip: 248.94 kB
+.svelte-kit/output/client/_app/immutable/assets/draco_decoder.fzg4nYZr.js                                    719.41 kB
+.svelte-kit/output/client/_app/immutable/assets/5.MP2YSySK.css                                                 0.08 kB │ gzip:   0.09 kB
+.svelte-kit/output/client/_app/immutable/assets/Feedback.BQ8jppjz.css                                          0.14 kB │ gzip:   0.13 kB
+.svelte-kit/output/client/_app/immutable/assets/SessionSecurity.ChAwtUwW.css                                   0.22 kB │ gzip:   0.19 kB
+.svelte-kit/output/client/_app/immutable/assets/6.D0B2W-6m.css                                                 1.31 kB │ gzip:   0.56 kB
+.svelte-kit/output/client/_app/immutable/assets/4.CGz5ET65.css                                                 1.41 kB │ gzip:   0.53 kB
+.svelte-kit/output/client/_app/immutable/assets/EntryButton.oDAbExO9.css                                       1.93 kB │ gzip:   0.76 kB
+.svelte-kit/output/client/_app/immutable/assets/2.DFUgJIug.css                                                 2.29 kB │ gzip:   0.77 kB
+.svelte-kit/output/client/_app/immutable/assets/0.q4AAvEAb.css                                                13.68 kB │ gzip:   3.59 kB
+.svelte-kit/output/client/_app/immutable/assets/CampaignMaintenance.T1A1jbQq.css                              15.51 kB │ gzip:   3.60 kB
+.svelte-kit/output/client/_app/immutable/assets/3.CKbq4ayj.css                                                37.87 kB │ gzip:   6.54 kB
+.svelte-kit/output/client/_app/immutable/assets/CampaignHistory.BaBu6ypI.css                                  62.05 kB │ gzip:  11.81 kB
+.svelte-kit/output/client/_app/immutable/chunks/r4jBqio1.js                                                    0.03 kB │ gzip:   0.05 kB
+.svelte-kit/output/client/_app/immutable/chunks/xihTtKlq.js                                                    0.06 kB │ gzip:   0.08 kB
+.svelte-kit/output/client/_app/immutable/entry/start.1l1dpWUl.js                                               0.08 kB │ gzip:   0.09 kB
+.svelte-kit/output/client/_app/immutable/chunks/BNbKjlhm.js                                                    0.58 kB │ gzip:   0.34 kB
+.svelte-kit/output/client/_app/immutable/nodes/0.BfoTgL0P.js                                                   0.59 kB │ gzip:   0.35 kB
+.svelte-kit/output/client/_app/immutable/chunks/zha9OUsy.js                                                    0.64 kB │ gzip:   0.37 kB
+.svelte-kit/output/client/_app/immutable/nodes/1.oXF9I1A0.js                                                   0.66 kB │ gzip:   0.43 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bl_mR1WF.js                                                    0.72 kB │ gzip:   0.40 kB
+.svelte-kit/output/client/_app/immutable/chunks/ClnxyQdj.js                                                    0.92 kB │ gzip:   0.49 kB
+.svelte-kit/output/client/_app/immutable/chunks/HclGiUj8.js                                                    1.21 kB │ gzip:   0.67 kB
+.svelte-kit/output/client/_app/immutable/chunks/Bjy-W4x2.js                                                    1.36 kB │ gzip:   0.65 kB
+.svelte-kit/output/client/_app/immutable/chunks/CFNUEdbi.js                                                    1.47 kB │ gzip:   0.84 kB
+.svelte-kit/output/client/_app/immutable/nodes/5.CuPq0hCu.js                                                   1.57 kB │ gzip:   0.90 kB
+.svelte-kit/output/client/_app/immutable/chunks/DKh7h_8J.js                                                    1.60 kB │ gzip:   0.86 kB
+.svelte-kit/output/client/_app/immutable/chunks/B2Gy6dNJ.js                                                    2.16 kB │ gzip:   1.02 kB
+.svelte-kit/output/client/_app/immutable/chunks/CgBWNW6L.js                                                    2.18 kB │ gzip:   0.99 kB
+.svelte-kit/output/client/_app/immutable/chunks/BBLk7ZJG.js                                                    2.39 kB │ gzip:   1.27 kB
+.svelte-kit/output/client/_app/immutable/chunks/EFEeB-0K.js                                                    3.60 kB │ gzip:   1.51 kB
+.svelte-kit/output/client/_app/immutable/entry/app.CX3fr_Zc.js                                                 4.22 kB │ gzip:   1.79 kB
+.svelte-kit/output/client/_app/immutable/chunks/CBqNxmtP.js                                                    4.42 kB │ gzip:   2.40 kB
+.svelte-kit/output/client/_app/immutable/nodes/4.C-D0WRlO.js                                                  13.07 kB │ gzip:   4.27 kB
+.svelte-kit/output/client/_app/immutable/nodes/2.DeiNjzSE.js                                                  15.30 kB │ gzip:   5.92 kB
+.svelte-kit/output/client/_app/immutable/chunks/CmpWV2vy.js                                                   15.71 kB │ gzip:   5.65 kB
+.svelte-kit/output/client/_app/immutable/nodes/6.Cyjayhv3.js                                                  26.29 kB │ gzip:   7.72 kB
+.svelte-kit/output/client/_app/immutable/chunks/CivjMsK6.js                                                   26.82 kB │ gzip:  10.38 kB
+.svelte-kit/output/client/_app/immutable/chunks/B-lueKED.js                                                   29.75 kB │ gzip:   7.88 kB
+.svelte-kit/output/client/_app/immutable/chunks/CwuwgWEa.js                                                   58.18 kB │ gzip:  22.05 kB
+.svelte-kit/output/client/_app/immutable/nodes/3.DKPcev-T.js                                                  64.40 kB │ gzip:  19.22 kB
+.svelte-kit/output/client/_app/immutable/chunks/CO-_lKS1.js                                                  198.06 kB │ gzip:  59.03 kB
+.svelte-kit/output/client/_app/immutable/chunks/TIIH7bLn.js                                                  483.85 kB │ gzip: 144.80 kB
+.svelte-kit/output/client/_app/immutable/chunks/C3WS9Rlx.js                                                1,044.80 kB │ gzip: 280.25 kB
+
+✓ built in 714ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+computing gzip size...
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.BZGLGj12.woff2      6.75 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.BoXdMtcr.woff2      6.79 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.Bbz-b3yf.woff     7.35 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.CKkU2Dpt.woff     7.35 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-500-normal.DqXqCC0q.woff       9.33 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-700-normal.BoVPHkS0.woff2    9.37 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-ext-400-normal.DRk46D-x.woff2    9.38 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-vietnamese-600-normal.C4HEjEaf.woff       9.42 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.CyAY5ZLS.woff2       12.92 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.C2atO-64.woff2       13.01 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BbWidj28.woff        14.02 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.Yta7XZ9C.woff2   14.09 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.BMhMHfrj.woff2   14.18 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.BK6Glc0m.woff        14.29 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-500-normal.DkJXBcIH.woff        15.76 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-600-normal.FNmA3REe.woff        15.82 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-400-normal.BrHNak5F.woff2       17.20 kB
+.svelte-kit/output/server/_app/immutable/assets/atkinson-hyperlegible-latin-700-normal.GZI4o3u0.woff2       17.52 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-500-normal.lsPpqi9g.woff    17.55 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-cyrillic-ext-600-normal.CsIYWmWK.woff    17.62 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.CH1kM7og.woff2      20.20 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.DaBc-lu7.woff2      20.30 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-500-normal.BsRWmXhO.woff2          23.31 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-600-normal.Co1r35X9.woff2          23.39 kB
+.svelte-kit/output/server/.vite/manifest.json                                                               23.49 kB │ gzip:  2.16 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-600-normal.Dk3-quAP.woff       28.26 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-ext-500-normal.DYeaGGzO.woff       28.28 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-600-normal.2CBVLo0M.woff           31.30 kB
+.svelte-kit/output/server/_app/immutable/assets/cormorant-garamond-latin-500-normal.zIXX3Q-H.woff           31.37 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.MP2YSySK.css                                           0.08 kB │ gzip:  0.09 kB
+.svelte-kit/output/server/_app/immutable/assets/Feedback.BQ8jppjz.css                                        0.14 kB │ gzip:  0.13 kB
+.svelte-kit/output/server/_app/immutable/assets/SessionSecurity.ChAwtUwW.css                                 0.22 kB │ gzip:  0.19 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.D0B2W-6m.css                                           1.31 kB │ gzip:  0.56 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.CGz5ET65.css                                           1.41 kB │ gzip:  0.53 kB
+.svelte-kit/output/server/_app/immutable/assets/EntryButton.oDAbExO9.css                                     1.93 kB │ gzip:  0.76 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.DFUgJIug.css                                           2.29 kB │ gzip:  0.77 kB
+.svelte-kit/output/server/_app/immutable/assets/_layout.BPihC1oX.css                                        13.64 kB │ gzip:  3.58 kB
+.svelte-kit/output/server/_app/immutable/assets/CampaignMaintenance.T1A1jbQq.css                            15.51 kB │ gzip:  3.60 kB
+.svelte-kit/output/server/_app/immutable/assets/_page.CKbq4ayj.css                                          37.87 kB │ gzip:  6.54 kB
+.svelte-kit/output/server/_app/immutable/assets/CampaignHistory.BU68bGGY.css                                61.95 kB │ gzip: 11.80 kB
+.svelte-kit/output/server/chunks/recovery-store.js                                                           0.07 kB │ gzip:  0.08 kB
+.svelte-kit/output/server/chunks/campaign-history.js                                                         0.09 kB │ gzip:  0.08 kB
+.svelte-kit/output/server/chunks/paths.js                                                                    0.12 kB │ gzip:  0.09 kB
+.svelte-kit/output/server/entries/pages/_layout.ts.js                                                        0.13 kB │ gzip:  0.12 kB
+.svelte-kit/output/server/env.js                                                                             0.22 kB │ gzip:  0.14 kB
+.svelte-kit/output/server/chunks/env.js                                                                      0.28 kB │ gzip:  0.17 kB
+.svelte-kit/output/server/entries/pages/_layout.svelte.js                                                    0.37 kB │ gzip:  0.23 kB
+.svelte-kit/output/server/internal.js                                                                        0.40 kB │ gzip:  0.19 kB
+.svelte-kit/output/server/chunks/campaign-session2.js                                                        0.43 kB │ gzip:  0.21 kB
+.svelte-kit/output/server/entries/pages/_error.svelte.js                                                     0.72 kB │ gzip:  0.42 kB
+.svelte-kit/output/server/chunks/internal.js                                                                 0.94 kB │ gzip:  0.41 kB
+.svelte-kit/output/server/entries/pages/diagnostics/_page.svelte.js                                          1.05 kB │ gzip:  0.55 kB
+.svelte-kit/output/server/chunks/command-receipt.js                                                          1.15 kB │ gzip:  0.66 kB
+.svelte-kit/output/server/chunks/detail-preference.js                                                        1.46 kB │ gzip:  0.57 kB
+.svelte-kit/output/server/chunks/motion-preference.js                                                        1.85 kB │ gzip:  0.70 kB
+.svelte-kit/output/server/chunks/index-server2.js                                                            1.87 kB │ gzip:  0.70 kB
+.svelte-kit/output/server/chunks/EntryButton.js                                                              2.05 kB │ gzip:  0.85 kB
+.svelte-kit/output/server/chunks/campaign-history2.js                                                        2.23 kB │ gzip:  1.02 kB
+.svelte-kit/output/server/chunks/SessionSecurity.js                                                          3.10 kB │ gzip:  1.32 kB
+.svelte-kit/output/server/chunks/conversation-drafts.js                                                      3.45 kB │ gzip:  1.29 kB
+.svelte-kit/output/server/chunks/recovery-store2.js                                                          3.64 kB │ gzip:  1.25 kB
+.svelte-kit/output/server/chunks/Feedback.js                                                                 4.30 kB │ gzip:  1.61 kB
+.svelte-kit/output/server/chunks/crypto.js                                                                   4.96 kB │ gzip:  1.69 kB
+.svelte-kit/output/server/chunks/exports.js                                                                  5.60 kB │ gzip:  1.75 kB
+.svelte-kit/output/server/chunks/routing.js                                                                  5.92 kB │ gzip:  2.12 kB
+.svelte-kit/output/server/chunks/campaign-session.js                                                         7.52 kB │ gzip:  2.45 kB
+.svelte-kit/output/server/chunks/shared.js                                                                  10.70 kB │ gzip:  3.41 kB
+.svelte-kit/output/server/entries/pages/_page.svelte.js                                                     11.72 kB │ gzip:  3.45 kB
+.svelte-kit/output/server/entries/pages/dev/animations/_page.svelte.js                                      17.80 kB │ gzip:  4.02 kB
+.svelte-kit/output/server/chunks/CampaignMaintenance.js                                                     19.23 kB │ gzip:  4.65 kB
+.svelte-kit/output/server/chunks/internal2.js                                                               23.94 kB │ gzip:  7.22 kB
+.svelte-kit/output/server/chunks/utils.js                                                                   31.90 kB │ gzip:  9.37 kB
+.svelte-kit/output/server/entries/pages/gallery/_page.svelte.js                                             38.89 kB │ gzip:  8.10 kB
+.svelte-kit/output/server/chunks/campaign-navigation.js                                                     51.02 kB │ gzip: 14.95 kB
+.svelte-kit/output/server/remote-entry.js                                                                   54.67 kB │ gzip: 12.04 kB
+.svelte-kit/output/server/chunks/scenarios.js                                                               59.97 kB │ gzip: 12.07 kB
+.svelte-kit/output/server/entries/pages/campaigns/_page.svelte.js                                           61.15 kB │ gzip: 12.65 kB
+.svelte-kit/output/server/index.js                                                                         124.63 kB │ gzip: 31.48 kB
+.svelte-kit/output/server/chunks/index-server.js                                                           141.36 kB │ gzip: 36.83 kB
+.svelte-kit/output/server/chunks/CampaignHistory.js                                                        355.53 kB │ gzip: 78.34 kB
+
+✓ built in 2.19s
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-static
+  Wrote site to "build"
+  ✔ done

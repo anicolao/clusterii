@@ -1,0 +1,99 @@
+{
+  "source": "181f93ca901b80556f7eb0c45776109ca04b9b8c",
+  "run": 40046830297,
+  "spans": [
+    {
+      "at": 21230.42807,
+      "event": "complete",
+      "label": "canonical",
+      "span": 1,
+      "elapsedMs": 13.600989999999001,
+      "transactions": 0
+    },
+    {
+      "at": 21233.73281,
+      "event": "complete",
+      "label": "clock",
+      "span": 2,
+      "elapsedMs": 3.1585890000023937,
+      "transactions": 0
+    },
+    {
+      "at": 21236.362451,
+      "event": "complete",
+      "label": "clock",
+      "span": 3,
+      "elapsedMs": 2.5677170000017213,
+      "transactions": 0
+    },
+    {
+      "at": 30404.350172,
+      "event": "complete",
+      "label": "batch",
+      "span": 4,
+      "elapsedMs": 9167.918948999999,
+      "transactions": 97,
+      "ticks": 96
+    },
+    {
+      "at": 30744.90782,
+      "event": "complete",
+      "label": "batch",
+      "span": 5,
+      "elapsedMs": 340.127540999998,
+      "transactions": 6,
+      "ticks": 4
+    },
+    {
+      "at": 30752.744907,
+      "event": "complete",
+      "label": "repeat",
+      "span": 6,
+      "elapsedMs": 6.8691149999976915,
+      "transactions": 1,
+      "ticks": 0
+    }
+  ],
+  "transactionCount": 104,
+  "attempts": 104,
+  "rpcFailures": 0,
+  "commitFailures": 0,
+  "validServerMarkers": 102,
+  "invalidServerMarkers": 2,
+  "median": {
+    "totalMs": 82.30805300000065,
+    "readMs": 29.422103500002777,
+    "callbackMs": 43.086113999999725,
+    "rpcMs": 38.012706999999864,
+    "commitMs": 38.31678550000106,
+    "commitRequestMs": 38.12561799999821,
+    "rpcToServerMarkerMs": 5.3170166015625,
+    "serverMarkerToCallbackMs": 33.25887575781235
+  },
+  "eventLoop": [
+    {
+      "at": 30404.641912,
+      "event": "event-loop",
+      "span": 4,
+      "samples": 410,
+      "maxMs": 40.730623,
+      "meanMs": 22.265276565853657
+    },
+    {
+      "at": 30745.120789,
+      "event": "event-loop",
+      "span": 5,
+      "samples": 13,
+      "maxMs": 39.518207,
+      "meanMs": 23.218648615384616
+    },
+    {
+      "at": 30752.805215,
+      "event": "event-loop",
+      "span": 6,
+      "samples": 0,
+      "maxMs": 0,
+      "meanMs": 0
+    }
+  ]
+}

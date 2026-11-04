@@ -1,0 +1,47 @@
+[WebServer] $ vite build
+[WebServer] (node:59827) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 12:46:02 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+[WebServer] https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+[WebServer] 292:     </div>
+[WebServer] 293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+[WebServer] 294:     <div
+[WebServer]              ^
+[WebServer] 295:       class="route-details"
+[WebServer] 296:       onkeydown={readingKey}
+[WebServer] (node:59827) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 12:46:03 AM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+[WebServer] https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+[WebServer] 292:     </div>
+[WebServer] 293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+[WebServer] 294:     <div
+[WebServer]              ^
+[WebServer] 295:       class="route-details"
+[WebServer] 296:       onkeydown={readingKey}
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:59827) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:59833) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:59834) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [phone] › tests/e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab (8.2s)
+(node:59899) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › tests/e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab (9.1s)
+(node:59938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [large] › tests/e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab (12.3s)
+(node:59985) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [short] › tests/e2e/003-science/components.spec.ts:58:1 › Read shared science ledger in gallery and lab (7.7s)
+
+  4 passed (42.8s)

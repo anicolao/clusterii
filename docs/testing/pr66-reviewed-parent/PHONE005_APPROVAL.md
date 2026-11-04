@@ -1,0 +1,5 @@
+# Exact inherited phone005 approval
+
+Reviewer phone chart005 correction approved in main meta independently viewed expected/actual/diff. Approved actual4986dc2113d0f63afe2d9f1523cc26583a7451a3190dbf4e6a3d9f753594322c replaces expectedc93f0b05691e8975456c0ed3511e1dcdf1788b82123bdeb54763e6087a21a0b0; diff9be80c48c1e13a5cc16734260ed645eb11eb866b66c9acd474c2ef658936376a. Only right-edge Gunibuu O label translates inward; other pixels outside measured label rectangle identical. Exact verified artifact12606552511/run40213612377 provenance and original triple retained. Copy only this PNG; all56 observation references and other inherited files unchanged. No source/assertion/deadline/renderer edits.
+
+One newly source/reference-bound complete phone chart strict request will expose later states masked by005. No healthy matrix or PR65 restart; active66 still held. Additional three redundant ZIPs reclaimed after full SHA/CRC/entry hashes, live remote expiry/digest and no-open-process checks; local originals retained,19 unextracted invitation entries recoverable from verified remote archive. Exact audit ../pr66-phone-disk-recovery.

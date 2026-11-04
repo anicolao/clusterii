@@ -1,0 +1,42 @@
+{
+  "gates": [
+    {
+      "gate": "check",
+      "exit": 0,
+      "log": "/tmp/cluster-top-current-check.log",
+      "bytes": 5568,
+      "retained": "docs/testing/top-pr-green-20261103/integration-credit-focus-check.log.gz",
+      "sha256": "62463bc8f4b575053a2de6cb44555d8b9372e0baa2a966d24dce30f29eb0fbaf"
+    },
+    {
+      "gate": "lint",
+      "exit": 0,
+      "log": "/tmp/cluster-top-current-lint.log",
+      "bytes": 206,
+      "retained": "docs/testing/top-pr-green-20261103/integration-credit-focus-lint.log.gz",
+      "sha256": "e0a17af0c1ec233485b4e0a8abc571bef6eee28efcb2960bce758f2fefd24f04"
+    },
+    {
+      "gate": "unit",
+      "exit": 0,
+      "log": "/tmp/cluster-top-current-unit.log",
+      "bytes": 13888,
+      "retained": "docs/testing/top-pr-green-20261103/integration-credit-focus-unit.log.gz",
+      "sha256": "02909d988014a885d1f31df0eaca37d85f4471cf6a7823741904f61e868cc12d"
+    },
+    {
+      "gate": "story-policy",
+      "exit": 0,
+      "log": "/tmp/cluster-top-current-story-policy.log",
+      "bytes": 11278,
+      "retained": "docs/testing/top-pr-green-20261103/integration-credit-focus-story-policy.log.gz",
+      "sha256": "6e1dd90aef2e4e355a4d016ed98a2c94fcdb140b076c77ea796102e911f93688"
+    }
+  ],
+  "unitTests": 119,
+  "unitAssertions": 4572,
+  "baselinePathBrowserTests": 4,
+  "typecheck": "0 errors, 1 existing FleetRoute warning",
+  "source": "2dac3e4faece988ab87b82108fa4b10d7d044c40",
+  "requiredWorkflowDiff": ""
+}

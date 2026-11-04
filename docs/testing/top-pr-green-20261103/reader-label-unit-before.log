@@ -1,0 +1,26 @@
+bun test v1.3.13 (bf2e2cec)
+
+../../../../../private/tmp/cluster-label-before/tests/galaxy-labels.test.ts:
+51 |       };
+52 |       const offset = placeGalaxyLabels([label], width, height, 1, [
+53 |         panel,
+54 |         otherPanel,
+55 |       ]).get("selected")!;
+56 |       expect(offset).toBeDefined();
+                          ^
+error: expect(received).toBeDefined()
+
+Received: undefined
+
+      at <anonymous> (/private/tmp/cluster-label-before/tests/galaxy-labels.test.ts:56:22)
+(fail) galaxy label cartography > selected name clears a tall reading panel without moving its anchor and restores on close [0.57ms]
+(pass) galaxy label cartography > selected label clears a real acknowledgement and returns when it closes
+(pass) galaxy label cartography > resize round-trip projection noise preserves the physical text origin without changing catalogue anchors
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars [0.33ms]
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.37ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes
+
+ 5 pass
+ 1 fail
+ 98 expect() calls
+Ran 6 tests across 1 file. [8.00ms]

@@ -1,0 +1,189 @@
+{
+  "ledgerSha256": "f39bc6ddc5149a255a1023b86000e48a1597fcc32a375b4d07226fb804f839dc",
+  "targetBeforeImport": "85c15a9f0b4b61e61d7b759cdea7bc365534a06b",
+  "families": [
+    {
+      "story": "research-capability-guidance",
+      "viewport": "large",
+      "source": {
+        "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+        "dirty": false,
+        "spec": "tests/browser/research-guidance.story.spec.ts",
+        "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/large/test-results/stories/research-capability-guidance/large/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64",
+      "captures": [
+        {
+          "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+          "sha256": "3447c9bc146a4e728ef90ba5763390940e46241509cf778d38f01c94dd456146",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-open-authoritative-science-2-independent-investor.png",
+          "sha256": "77ba9d3927dffa0a43a039ab189877988edf495ee209ea7eaf1b16858036f4c0",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scanning-1-market-envoy-campaign-device.png",
+          "sha256": "5da21dd14b247f6c34069e399cfbfaf8927f79d82f4746670d396c3728c4c815",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-navigation-1-market-envoy-campaign-device.png",
+          "sha256": "ae1e6970f75420f8fef85200df0b0beb028b004e505142455f293b796ce51bcf",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
+          "sha256": "4694357a1dd1dc45ed8d1e6313740411e5b843367f26a80c59c4421dc64a8762",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "014-read-investing-1-market-envoy-campaign-device.png",
+          "sha256": "75d7406d86d0057f01c458f9611e38bc0f7a1ae8c46858527685a98f404dfebd",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-read-formations-1-market-envoy-campaign-device.png",
+          "sha256": "e8b677d926438dc66b9b6c0729c4938dba3d441fe9eddee2a7af28d88002598b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-read-melee-1-market-envoy-campaign-device.png",
+          "sha256": "698934d302af5a0ebd2eb7fc5cdacc09f08bfeb89b252e3e26f7d38618081136",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
+          "sha256": "2f62b04b85cd96b05096451961ca9f85243844f9fb9f52eee9c5adc667c618da",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-read-innovation-1-market-envoy-campaign-device.png",
+          "sha256": "ffa7d89ae3c7116ad7f8c69b1540a56742c6062d59d7b7d9d0336a0d572c0552",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-1-market-envoy-campaign-device.png",
+          "sha256": "9b6f1513433a9a2ab5ea5ee86d889886d218cb86dcb45cc7ecb7db4c58eea815",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-2-independent-investor.png",
+          "sha256": "77ba9d3927dffa0a43a039ab189877988edf495ee209ea7eaf1b16858036f4c0",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "research-forecast-gallery",
+      "viewport": "large",
+      "source": {
+        "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+        "dirty": false,
+        "spec": "tests/browser/research-forecast.story.spec.ts",
+        "specSha256": "3629924ead2f768b0c4063a6fe4130186ef991bc77433eb3fb823a1f73eb23cd"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/large/test-results/stories/research-forecast-gallery/large/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/research-forecast-gallery/large/linux-arm64",
+      "captures": [
+        {
+          "image": "001-open-gallery-1-developer-gallery-scope.png",
+          "sha256": "d8ded65bc63888722c5e131ba148e769f691478365688caf1aa493fa82e51f2b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-read-pending-forecast-1-developer-pending-forecast.png",
+          "sha256": "04d28c692d5fc1109a892144ba5c7e57ffaf6c0ff4bfb7dcf8d5059013c2967c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-read-pending-qualification-1-developer-pending-qualification.png",
+          "sha256": "3281fa9a5b60e766987d8d1ef383c43972149295a0fec3702833d1f45e29fc65",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-close-pending-forecast-1-developer-pending-collapsed.png",
+          "sha256": "91603fd183087ffffdc28e9a95b2183a0f84bb721f2828e7d92090f8d790cb92",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-read-disabled-forecast-1-developer-disabled-forecast.png",
+          "sha256": "ec343cfe147d035d8926aeafdfd99e431a5ad354288410ed67892264ae80d704",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-disabled-qualification-1-developer-disabled-qualification.png",
+          "sha256": "de2d3d50ce62adcf4a502a055eed18413a20ac64bb04120897bd6616e34a2353",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+          "sha256": "092f33719c1679b8c53e0e37dce4d58e828034db85624dd9c9f558f218d7eaef",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-read-applied-forecast-1-developer-applied-forecast.png",
+          "sha256": "23768c71c685201c2f6926a29926be7176b89fdc2312ad50a7f1cbf5a36a13f2",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-read-applied-qualification-1-developer-applied-qualification.png",
+          "sha256": "561a7338f64c9ff942fbe489b4f3d88dbac4bd884cf4b6e921343ba7c3d75745",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-close-applied-forecast-1-developer-applied-collapsed.png",
+          "sha256": "563a6281b1dec0f9bbfd6f7a6cb68096619d5fc0ab50577dd64df31793ff301d",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": []
+}

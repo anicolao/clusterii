@@ -1,0 +1,83 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "local-presentation-settings",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/local-settings.story.spec.ts",
+    "specSha256": "deaad02dd5dbcb5566c7296ef2e906c6c782ffb35ac0f20c9e987fb5ec77b24d"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/local-presentation-settings/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-open-and-contain-1-developer-local-settings.png",
+      "sha256": "312d3b161a276cfc5d4516ff311db57b51e23ee2e7c8e75f8c173e8165c690c8",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-choose-local-reduction-1-developer-local-settings.png",
+      "sha256": "ffb50ac7e33abbda5e999fa5fa1a36e7ed64151514d032a476159d099d522a93",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-reload-and-respect-device-1-developer-local-settings.png",
+      "sha256": "fba03e294885fe1b2c4a18c4bff97315b24fe44add0dc48016596ae5cc3aca02",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-close-explicitly-1-developer-restored-opener.png",
+      "sha256": "e9585de591c3c2aac8476c62d7825253c49fbf224f545983b5d669da7499940a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-compare-shared-feedback-1-developer-standard-feedback.png",
+      "sha256": "a14f3c2574a50630f4277ad461574d03c88c2f60c6e56fb920a1d08ae8e85388",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-compare-shared-feedback-2-developer-reduced-feedback.png",
+      "sha256": "a14f3c2574a50630f4277ad461574d03c88c2f60c6e56fb920a1d08ae8e85388",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

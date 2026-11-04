@@ -6,6 +6,7 @@ import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -409,6 +410,22 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         name: "Accepted research orders",
       });
       await schedule.scrollIntoViewIfNeeded();
+      // This is an intentional list-reading position, not application scrolling.
+      // Keep the already-focused acknowledgement's complete inset outline in
+      // the same reading aperture rather than clipping it to reveal the list.
+      const commitment = research(owner).getByRole("group", {
+        name: "Research acknowledgement",
+        exact: true,
+      });
+      if (
+        await commitment.evaluate((node) => node === document.activeElement)
+      ) {
+        await commitment.evaluate((node) =>
+          node.scrollIntoView({ block: "nearest" }),
+        );
+        await containedReading(commitment);
+      }
+      await containedReading(schedule);
       const listBox = await schedule.boundingBox();
       const footerBox = await button(owner, "Return to galaxy").boundingBox();
       expect(listBox!.y).toBeGreaterThanOrEqual(0);
@@ -881,6 +898,33 @@ test("Live research orders preserve choices and acknowledge switches", async ({
             await expect(button(stale, "Retry acknowledgement")).toBeFocused();
             await containedReading(button(stale, "Awaiting acknowledgement…"));
             await containedReading(button(stale, "Retry acknowledgement"));
+            const statusBottom = await research(stale)
+              .getByRole("status")
+              .filter({ hasText: /^Awaiting acknowledgement/ })
+              .evaluate((status) => {
+                const text = document.createRange();
+                text.selectNodeContents(status);
+                return text.getBoundingClientRect().bottom;
+              });
+            const outlineTop = await button(
+              stale,
+              "Retry acknowledgement",
+            ).evaluate((button) => {
+              const style = getComputedStyle(button);
+              return (
+                button.getBoundingClientRect().top -
+                parseFloat(style.outlineWidth) -
+                parseFloat(style.outlineOffset)
+              );
+            });
+            expect(
+              statusBottom,
+              "The retry focus outline must not cover acknowledgement text",
+            ).toBeLessThanOrEqual(outlineTop);
+            await stale.evaluate(assertScreenFit, {
+              surface: "game" as const,
+              focusedControl: true,
+            });
           },
         },
       ],
@@ -929,7 +973,25 @@ test("Live research orders preserve choices and acknowledge switches", async ({
         },
       },
       verifications: [privacy],
-      views: [ownerView, peerView],
+      views: [
+        {
+          ...ownerView,
+          verifications: [
+            {
+              spec: "The focused research acknowledgement, including its inset outline, remains fully inside every reading ancestor after acceptance.",
+              check: async () => {
+                const commitment = research(owner).getByRole("group", {
+                  name: "Research acknowledgement",
+                  exact: true,
+                });
+                await expect(commitment).toBeFocused();
+                await containedReading(commitment);
+              },
+            },
+          ],
+        },
+        peerView,
+      ],
     });
     const beforeReconnect = await receipts(uid);
     await story.harness(
@@ -1034,6 +1096,55 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(stale.getByRole("alert")).toContainText(
             "Your research choice is preserved",
           );
+          await expect
+            .poll(
+              async () => {
+                const alert = await stale.getByRole("alert").boundingBox();
+                const commanders = await stale
+                  .getByRole("navigation", { name: "Campaign commanders" })
+                  .boundingBox();
+                return alert && commanders
+                  ? alert.y - (commanders.y + commanders.height)
+                  : Number.NEGATIVE_INFINITY;
+              },
+              {
+                message:
+                  "The complete conflict message remains below the painted commander deck",
+              },
+            )
+            .toBeGreaterThanOrEqual(0);
+          const selectedLabel = stale.locator(
+            "[data-map-label][data-label-placed='true'].star-label",
+          );
+          await expect(selectedLabel).toBeVisible();
+          await expect
+            .poll(
+              async () => {
+                const label = await selectedLabel.boundingBox();
+                const occupied = await Promise.all([
+                  stale.getByRole("alert").boundingBox(),
+                  stale
+                    .getByRole("navigation", { name: "Campaign commanders" })
+                    .boundingBox(),
+                ]);
+                return (
+                  !!label &&
+                  occupied.every(
+                    (box) =>
+                      !!box &&
+                      (label.x + label.width <= box.x ||
+                        box.x + box.width <= label.x ||
+                        label.y + label.height <= box.y ||
+                        box.y + box.height <= label.y),
+                  )
+                );
+              },
+              {
+                message:
+                  "The selected star label clears both the commander deck and conflict message",
+              },
+            )
+            .toBe(true);
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },

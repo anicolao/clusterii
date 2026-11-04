@@ -1,0 +1,21 @@
+$ node --test scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs && node scripts/check-story-policy.mjs
+✔ admission fixture changes only designated domain time inputs (0.351291ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.275583ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.115667ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.353125ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.23575ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.635917ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.3485ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.27425ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.793917ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.766458ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (2.989792ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 55.306417
+Illustrated-story policy passed; legacy migration gaps remain inventoried.

@@ -11,8 +11,12 @@ export function placeGalaxyLabels(
   labels: LabelBox[],
   width: number,
   height: number,
+  pixelRatio = 1,
+  exclusions: Pick<LabelBox, "x" | "y" | "width" | "height">[] = [],
 ): Map<string, { x: number; y: number }> {
-  const placed: LabelBox[] = [];
+  const placed: Pick<LabelBox, "x" | "y" | "width" | "height">[] = [
+    ...exclusions,
+  ];
   const result = new Map<string, { x: number; y: number }>();
   const gap = 6;
   for (const label of [...labels].sort(
@@ -32,18 +36,60 @@ export function placeGalaxyLabels(
     if (anchorX < 0 || anchorX > width || anchorY < 0 || anchorY > height)
       continue;
     const offsets = [0, -1, 1, -2, 2];
-    for (const row of offsets) {
+    const candidates = offsets.map((row) => ({
+      x: label.x,
+      y: label.y + row * (label.height + gap),
+    }));
+    // A tall reading panel cannot be cleared by changing text rows. Keep the
+    // selected name beside its nearest panel edge, without moving its star or
+    // changing the player's camera. Ordinary density labels may be omitted.
+    if (label.priority >= 3) {
+      candidates.push(
+        ...exclusions
+          .filter(
+            (p) =>
+              label.x < p.x + p.width + gap &&
+              label.x + label.width + gap > p.x &&
+              label.y < p.y + p.height + gap &&
+              label.y + label.height + gap > p.y,
+          )
+          .flatMap((p) => [
+            {
+              x: Math.ceil((p.x + p.width + gap) * pixelRatio) / pixelRatio,
+              y: label.y,
+            },
+            {
+              x:
+                Math.floor((p.x - label.width - gap) * pixelRatio) / pixelRatio,
+              y: label.y,
+            },
+          ])
+          .sort((a, b) => Math.abs(a.x - label.x) - Math.abs(b.x - label.x)),
+      );
+    }
+    for (const position of candidates) {
       const candidate = {
         ...label,
-        x: Math.max(gap, Math.min(width - gap - label.width, label.x)),
-        y: Math.max(
-          gap,
-          Math.min(
-            height - gap - label.height,
-            label.y + row * (label.height + gap),
-          ),
-        ),
+        x: Math.max(gap, Math.min(width - gap - label.width, position.x)),
+        y: Math.max(gap, Math.min(height - gap - label.height, position.y)),
       };
+      // Text sits on physical pixels, while stars retain their exact catalogue
+      // projection. Subpixel camera round trips must not leave labels at a
+      // slightly different paint origin after returning to the same viewport.
+      candidate.x = Math.max(
+        gap,
+        Math.min(
+          width - gap - label.width,
+          Math.round(candidate.x * pixelRatio) / pixelRatio,
+        ),
+      );
+      candidate.y = Math.max(
+        gap,
+        Math.min(
+          height - gap - label.height,
+          Math.round(candidate.y * pixelRatio) / pixelRatio,
+        ),
+      );
       if (
         placed.some(
           (p) =>
@@ -88,7 +134,33 @@ function createManager(root: HTMLElement) {
         height: box.height,
       };
     });
-    const placements = placeGalaxyLabels(labels, bounds.width, bounds.height);
+    // Foreground messages, commander cards and reading panels must not cut
+    // through map labels.
+    // Move text around their actual bounds, never the catalogue positions.
+    const surface = root.closest(".galaxy-surface");
+    const exclusions = [
+      ...(surface?.querySelectorAll<HTMLElement>(
+        ".acknowledgement:not([inert]), .command-rail:not([inert]) [aria-label='Campaign commanders'], .economy-panel, .campaign-records",
+      ) ?? []),
+    ]
+      .filter((node) => getComputedStyle(node).visibility !== "hidden")
+      .map((node) => {
+        const box = node.getBoundingClientRect();
+        return {
+          x: box.x - bounds.x,
+          y: box.y - bounds.y,
+          width: box.width,
+          height: box.height,
+        };
+      })
+      .filter((box) => box.width > 0 && box.height > 0);
+    const placements = placeGalaxyLabels(
+      labels,
+      bounds.width,
+      bounds.height,
+      window.devicePixelRatio || 1,
+      exclusions,
+    );
     for (const e of entries) {
       const p = placements.get(e.options.id);
       e.x = p?.x ?? 0;
@@ -112,11 +184,12 @@ function createManager(root: HTMLElement) {
   });
   // HTML's projected wrapper transforms change on camera orbit/zoom. Ignore
   // our own label style writes, avoiding continuous render/observer loops.
-  changes.observe(root, {
+  changes.observe(root.closest(".galaxy-surface") ?? root, {
     attributes: true,
-    attributeFilter: ["style"],
+    attributeFilter: ["style", "inert"],
     subtree: true,
     childList: true,
+    characterData: true,
   });
   void document.fonts.ready.then(schedule);
   return {

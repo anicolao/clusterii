@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-11-03T22:51:29.809244+00:00",
+  "action": "verified duplicate archive reclamation",
+  "entries": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone.zip",
+      "bytes": 217050463,
+      "sha256": "488dc382ee90261fe8587c0203646c7f511a135c799659ad42924b9f0d5ea0af",
+      "retainedOriginals": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone",
+      "verifiedEntryInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone-verified.json",
+      "entryCount": 1999,
+      "reason": "Redundant transport ZIP: all original entries retained byte-exact in verified extraction; no active user. Direct human Prompt390 requires useful lifetime limits."
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop.zip",
+      "bytes": 1020082063,
+      "sha256": "faf91ecafe0c68b0c9d4198556dac81d915a8f7247f6787a300a7df540418434",
+      "retainedOriginals": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop",
+      "verifiedEntryInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop-verified.json",
+      "entryCount": 2121,
+      "reason": "Redundant transport ZIP: all original entries retained byte-exact in verified extraction; no active user. Direct human Prompt390 requires useful lifetime limits."
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short.zip",
+      "bytes": 652223725,
+      "sha256": "7f1c33bb89d78818893676dbd5e7e6592b64643a69c4a3be1c8c3b98d87a203d",
+      "retainedOriginals": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short",
+      "verifiedEntryInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short-verified.json",
+      "entryCount": 2088,
+      "reason": "Redundant transport ZIP: all original entries retained byte-exact in verified extraction; no active user. Direct human Prompt390 requires useful lifetime limits."
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large.zip",
+      "bytes": 4625992684,
+      "sha256": "ab0e1e8d2f0dfc6b40723224c7013dad9b92245ab389ebf68b960e6f1f573c8a",
+      "retainedOriginals": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large",
+      "verifiedEntryInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large-verified.json",
+      "entryCount": 2084,
+      "reason": "Redundant transport ZIP: all original entries retained byte-exact in verified extraction; no active user. Direct human Prompt390 requires useful lifetime limits."
+    }
+  ],
+  "freedBytes": 6515348935,
+  "localOriginalsPreserved": true
+}

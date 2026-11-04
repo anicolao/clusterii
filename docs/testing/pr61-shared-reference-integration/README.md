@@ -1,0 +1,5 @@
+# PR61 inherited shared-reference recovery
+
+Reviewer independently classified strict run40168124903 atc87bd74014849e7dc746c240fde267ccfcdaa61c: seven inherited formation/reorganization012 feedback-spacing mismatches plus missing short reorganization010, other journeys37 passed per cohort. Retained original log: /tmp/cluster-pr61-current-strict-failed.log. No new travel defect established by this result.
+
+Integrate updated PR60 parent5db8df9bec3d61059dbb1dd1a8a877f1566e2dec with reviewed PR59 references and provenance. Preserve both histories, canonical prompt order, parent commit-addressed archive and inherited continuation records. All216 staged shared-family PNG hashes must equal independently inspected originals; existing112 travel references remain unchanged. No production/spec/helper/scripts/workflow/dependency changes, no regeneration or relaxed criteria. PR59 and PR62 live runs remain untouched. Merge and committed exact-parent checks run under established offline Nix before publication; required CI remains unchanged.

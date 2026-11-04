@@ -140,3 +140,44 @@ test("contact instrumentation refuses non-demo, non-loopback and changed or dupl
     /observationDraw\(\.\.\.__contactInputs\(current, next/,
   );
 });
+
+test("route story contact draws are stable across generated IDs and viewport names", () => {
+  let expected;
+  for (const viewport of ["phone", "desktop", "large", "short"]) {
+    const game = `random-game-${viewport}`;
+    const observer = `random-observer-${viewport}`;
+    const owner = `random-owner-${viewport}`;
+    const fleet = `random-fleet-${viewport}`;
+    const c = {
+      ...current,
+      id: game,
+      name: `Scheduled story fleet route ${viewport}`,
+    };
+    const n = {
+      ...c,
+      seats: [{ uid: owner }, { uid: observer }],
+      economy: { tick: 1 },
+      military: { fleets: { [fleet]: { uid: owner, number: 1 } } },
+    };
+    const before = structuredClone([c, n]);
+    const inputs = contactInputs(c, n, game, observer, `fleet:${fleet}`, 1);
+    expected ??= inputs;
+    assert.deepEqual(inputs, expected);
+    assert.equal(inputs[1], "illustrated-fleet-route");
+    assert.deepEqual([c, n], before);
+    assert.throws(
+      () => contactInputs(c, n, game, observer, `fleet:${fleet}`, 2),
+      /Invalid/,
+    );
+  }
+  for (const name of [
+    "Scheduled story fleet route phone extra",
+    "Scheduled story fleet route mobile",
+    "Ordinary campaign",
+  ]) {
+    assert.deepEqual(
+      contactInputs({ ...current, name }, {}, "game", "uid", "target", 9),
+      [current.seed, "game", "uid", "target", 9],
+    );
+  }
+});

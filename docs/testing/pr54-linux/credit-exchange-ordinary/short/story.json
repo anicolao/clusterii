@@ -1,0 +1,451 @@
+{
+  "id": "credit-exchange-ordinary",
+  "title": "Exchange exact credits and withdraw a second offer",
+  "inventory": [
+    "UX-11",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent authenticated commanders enter a real development campaign. Sender, recipient and outsider inspect private credit commitments, reservations and authoritative outcomes. The development mock provider exercises real encrypted ingress, canonical persistence and recipient grants. Fixed domain clocks and tick-service delivery are explicit harness controls. Eight-tick expiry and settlement ordering remain proposed rules, not owner approval. Managed-key and hosted acceptance remain separate.",
+  "source": {
+    "commit": "a40542c98c706cece9befc428836e772f5e76b5e",
+    "dirty": true,
+    "spec": "tests/browser/credit-exchange.story.spec.ts",
+    "specSha256": "033937437c2e14f5d8650a378d05c606f6d0e1d4d799f0ced4a43cb30f159a14"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "short",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "trade-domain-clock",
+      "description": "Only named credit-story campaigns admit exchange commands one millisecond after the latest confirmed tick boundary. Tick advancement below invokes the real settlement service; no balances, offers, receipts or outcomes are injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "compose",
+      "description": "Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument.",
+      "actor": "Exchange sender",
+      "kind": "player",
+      "acknowledgement": "The exact affordable terms are ready to share; no command has reserved funds yet.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "011-compose-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "011-compose-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "011-compose-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "offer-shared",
+      "description": "Share the exact offer using the keyboard and inspect its authoritative reservation.",
+      "actor": "Exchange sender",
+      "kind": "player",
+      "acknowledgement": "Offer shared acknowledges admitted terms and the recipient receives a private open offer.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "One receipt and one revision reserve exactly 10.001 credits, conserving all available plus reserved funds."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "012-offer-shared-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "012-offer-shared-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "012-offer-shared-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "review-terms",
+      "description": "Read the named counterpart and both exact amounts before accepting; the outsider remains excluded.",
+      "actor": "Exchange recipient",
+      "kind": "player",
+      "acknowledgement": "The recipient can accept these exact private terms.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "013-review-terms-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "013-review-terms-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "013-review-terms-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "accept-terms",
+      "description": "Accept the exact terms with Enter. Both reservations await the same confirmed tick; neither side has transferred yet.",
+      "actor": "Exchange recipient",
+      "kind": "player",
+      "acknowledgement": "Both players see settlement scheduled for tick 1.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "Acceptance reserves 2.002 once and conserves 800 credits across four wallets and reservations."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "014-accept-terms-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "014-accept-terms-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "014-accept-terms-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "settlement-tick",
+      "description": "Advance browser Date to the first tick and invoke the real leased tick service at that boundary. Delivery changes the clock, not the resolver or resulting balances.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "settled",
+      "description": "Read the confirmed atomic exchange. Matching acknowledgement replaces the earlier schedule, and the outsider sees only their own balance.",
+      "actor": "Sender and recipient",
+      "kind": "player",
+      "acknowledgement": "Both participants see Offer settled and Both sides transferred once, with no future-scheduled acknowledgement.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "Settlement transfers each reserved amount once; the only new credits are separately accounted production, with no trade dividend."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "016-settled-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "016-settled-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "016-settled-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "repeat-tick",
+      "description": "Redeliver the same tick boundary to the real service and require zero additional effects.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "second-offer",
+      "description": "Share a second exact offer, reserving only its offered amount.",
+      "actor": "Exchange sender",
+      "kind": "player",
+      "acknowledgement": "The second offer is acknowledged and can be withdrawn.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "The new identity reserves only another 10.001 and preserves total credits."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "018-second-offer-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "018-second-offer-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "018-second-offer-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "withdraw",
+      "description": "Withdraw before the recipient accepts; both parties inspect the scheduled refund.",
+      "actor": "Exchange sender",
+      "kind": "player",
+      "acknowledgement": "Withdrawal is authoritatively scheduled for tick 2.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "Scheduled withdrawal retains the reservation until the confirmed refund tick."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "019-withdraw-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "019-withdraw-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "019-withdraw-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "refund-tick",
+      "description": "Deliver tick 2 through the real service; withdrawal returns the issuer reservation and never transfers the requested side.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "withdrawn",
+      "description": "Inspect the confirmed refund and separate production increments in both wallets.",
+      "actor": "Sender and recipient",
+      "kind": "player",
+      "acknowledgement": "Both parties read Offer withdrawn and reservation return.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "Only the sender's exact reservation returns; production accounts for every other balance change."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "021-withdrawn-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "021-withdrawn-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "021-withdrawn-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "reload-outcome",
+      "description": "Reload, reopen private offers and inspect the exact recorded outcome without another transfer or reservation.",
+      "actor": "Exchange sender",
+      "kind": "player",
+      "acknowledgement": "The authoritative recorded outcome returns after reload.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The outsider receives no private offers, outcomes, identifiers or amounts in their actual serialized member projection.",
+        "Every illustrated available balance matches that player's authoritative wallet.",
+        "Reload preserves canonical revision, all wallets and private recipient grants without new effects."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "022-reload-outcome-1-exchange-sender.png",
+          "verifications": []
+        },
+        {
+          "player": "Exchange recipient",
+          "image": "022-reload-outcome-2-exchange-recipient.png",
+          "verifications": []
+        },
+        {
+          "player": "Outer witness",
+          "image": "022-reload-outcome-3-outer-witness.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "keyboard-return",
+      "description": "Escape closes the nested instrument and restores focus to Credit offers in the economy.",
+      "actor": "Exchange sender",
+      "kind": "player",
+      "acknowledgement": "Credit offers regains keyboard focus.",
+      "verifications": [
+        "No player viewpoint has an uncaught application error.",
+        "The exchange instrument closes without changing canonical balances."
+      ],
+      "views": [
+        {
+          "player": "Exchange sender",
+          "image": "023-keyboard-return-1-exchange-sender.png",
+          "verifications": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 43 files in 36ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!

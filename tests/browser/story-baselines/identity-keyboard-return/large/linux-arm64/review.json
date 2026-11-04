@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/PROFILE_RECOVERY_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "identity-keyboard-return",
   "renderer": {
@@ -27,5 +27,50 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/profile-recovery.story.spec.ts",
+    "specSha256": "2aaf2f70959a4efa7569b20895d1cd76dabe0479766580392688ca54ca3c8ac8"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/identity-keyboard-return/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-arrive-1-visitor.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+      "previousSha256": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-keyboard-learn-1-visitor.png",
+      "sha256": "afb7182d6695fc3efe3dd5dbbbc3e7cab6e9dc8e436ed676d9b869e104fc21ec",
+      "previousSha256": "afb7182d6695fc3efe3dd5dbbbc3e7cab6e9dc8e436ed676d9b869e104fc21ec",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "003-return-from-learn-1-visitor.png",
+      "sha256": "531e02969d42ae130239855287e05363ff61f655d624ca0ebf6e410426e0396c",
+      "previousSha256": "132e4a9896f7d27a8f5cd69285b11cfd9c26fc4a6593b8b2e1d3fc2f6449fb99",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-sign-in-1-commander.png",
+      "sha256": "327a71ac5a4a2d2b306bf69a16f4fd3eb932692d436dbd9727e068ba3af7d515",
+      "previousSha256": "327a71ac5a4a2d2b306bf69a16f4fd3eb932692d436dbd9727e068ba3af7d515",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "005-close-identity-1-commander.png",
+      "sha256": "b69dca5c4e812190512e85d381591073877a69b7cabe269a6c6538e29919e7f9",
+      "previousSha256": "4056c5bbc1a7ec7604880e1263c3047f54e2186d001183fd05fc843d21c06811",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

@@ -1,0 +1,13 @@
+{
+  "commit": "ae6f476309e846147bf902ab3de0746481275f46",
+  "renderer": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+  "feature": "tests/e2e/010-zero-science/zero-science.spec.ts",
+  "specHash": "5db9bbddbd13dac5b65c3da5dd0cada2c7359a8a65cc7fbc425d14f7002327b3",
+  "project": "phone",
+  "mode": "generate",
+  "expectedCaptures": 26,
+  "testBudgetMs": 240000,
+  "stepBudgetMs": 30000,
+  "assertionBudgetMs": 10000,
+  "maxTicks": 220
+}

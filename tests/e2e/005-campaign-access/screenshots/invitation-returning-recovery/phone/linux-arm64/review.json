@@ -1,0 +1,104 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "invitation-returning-recovery",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+    "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/invitation-returning-recovery/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-return-to-invitation-1-returning-envoy.png",
+      "sha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-preserve-return-link-1-returning-envoy.png",
+      "sha256": "e1c6347c3684c3dda7bfe58107d34bd0168b27e0e0aa917fd2aff68fe6f3b3c2",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-authenticate-and-resume-1-returning-envoy.png",
+      "sha256": "98edc5248339419d9b26837e67bdc5dd1c5b1ebffbc49a15e989d3d8da47f88d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-authenticate-and-resume-2-invitation-host.png",
+      "sha256": "a46d85a8675a34cb57b07a733eef41007edb34782832fbd620515fffb3bdbc07",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-reload-return-1-returning-envoy.png",
+      "sha256": "98edc5248339419d9b26837e67bdc5dd1c5b1ebffbc49a15e989d3d8da47f88d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-missing-invitation-1-returning-envoy.png",
+      "sha256": "01922527797701fd5dc931e3e762e56f740fc3a9e49b4683f574a7ab535ab9c7",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-recover-directory-1-returning-envoy.png",
+      "sha256": "b0f5415dff0e80a645de24098bab2057eaed5f878a4006678ff86d985bcb348d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-denied-invitation-1-returning-envoy.png",
+      "sha256": "8f7289e634ae7d216067f68e64228db235a03c88038b4df0ef207cfa205286b3",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-recover-entry-1-returning-envoy.png",
+      "sha256": "d38f6abc47e91d258506c3a5b8ac2187ec969716e6b85d55fa70210a9ef5f985",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

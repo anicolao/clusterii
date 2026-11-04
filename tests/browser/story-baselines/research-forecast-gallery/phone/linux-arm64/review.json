@@ -1,0 +1,111 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "research-forecast-gallery",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+    "dirty": false,
+    "spec": "tests/browser/research-forecast.story.spec.ts",
+    "specSha256": "3629924ead2f768b0c4063a6fe4130186ef991bc77433eb3fb823a1f73eb23cd"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-forecast-gallery/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "84f5d58df75a182af8c6b32fea7b3cc7ffd7f9587e38d98336eb8af342ca6a2d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-read-pending-forecast-1-developer-pending-forecast.png",
+      "sha256": "5e6a63b7ddf78c6d5ff817f2303e2f428f63a01f4ba8df7653440f5023d0cac1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-read-pending-qualification-1-developer-pending-qualification.png",
+      "sha256": "a2ba7c08300c372239af344c4892bfa099e0f4224ae162aa4d0200bd358bc395",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-close-pending-forecast-1-developer-pending-collapsed.png",
+      "sha256": "ffbf54f3541cc751d7fb3073c04ba79e5e55f8c7214adab63dce2194eddee05d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-read-disabled-forecast-1-developer-disabled-forecast.png",
+      "sha256": "d2515354d722f487c8d407ddb39f6163c0068954236a46048dfee0d486102932",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-read-disabled-qualification-1-developer-disabled-qualification.png",
+      "sha256": "b3bf6304d80277c0a59ee76a02bdfd3557f5cae232111749404184e80543f3ed",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-close-disabled-forecast-1-developer-disabled-collapsed.png",
+      "sha256": "1c7f4440c6771c96310b136232c21570647b1a5c484584e637f12d41cda5e784",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "008-read-applied-forecast-1-developer-applied-forecast.png",
+      "sha256": "b86c87062d40962f15e376e8249b90b02542ab12c1eadda182c27e905edebea8",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-read-applied-qualification-1-developer-applied-qualification.png",
+      "sha256": "c7659aede11cd0b6b41679e3f0f1710ee3b88da376a5ff3cc7312f58ed770ccc",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-close-applied-forecast-1-developer-applied-collapsed.png",
+      "sha256": "f177d2114e6011c50069b5422e46652e3b921699be7f580078a57fc10e029343",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

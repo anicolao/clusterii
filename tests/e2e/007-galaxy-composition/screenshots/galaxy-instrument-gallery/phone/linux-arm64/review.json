@@ -1,0 +1,69 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "galaxy-instrument-gallery",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "7ccef2e62ff1b0dbb4de21b8426880c2f5c6e2bb",
+    "dirty": false,
+    "spec": "tests/e2e/007-galaxy-composition/gallery.spec.ts",
+    "specSha256": "029c0cbba21dc19dffb6ac83eb1099ae4075db41171bfda297a35c31fbc5b24c"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-fit-41879938561/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-open-shared-portrait-menu-1-gallery-reviewer.png",
+      "sha256": "da9241d2f66558ee4f77c4a589a3848e0e196b6168ada81fa604fd86546b59e4",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-return-to-commander-deck-1-gallery-reviewer.png",
+      "sha256": "001e69242f065ebe784ae5374150caa51bf5b65ef541f898aa9124b2eee4972d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-select-shared-command-1-gallery-reviewer.png",
+      "sha256": "c3cbaadf0518d24d5d3db72e7ac6952fd5a0f527c09dacce5064ea5e21213cfd",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-read-provenanced-portraits-1-gallery-reviewer.png",
+      "sha256": "9e7f3728b1a2e36232363101531a61d2c41fc5d1e036d258173defc266d587bc",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

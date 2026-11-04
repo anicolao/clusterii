@@ -1,0 +1,76 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "encryption-unavailable",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
+    "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-review-provider-1-cipher-envoy.png",
+      "sha256": "52acc87fa7e1d763b9ed4d888194ab4a16070d1f5d4e32bfd5cf7a3f2e0044b9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-created-campaign-1-cipher-envoy.png",
+      "sha256": "acd28a0ad94a711be4e443be32392adfa48d8c698d9cd4d5f6b91dc45bd75292",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-claimed-seat-1-cipher-envoy.png",
+      "sha256": "696219bc206f09bb04cdb4b7c1f3ccf2f7cc796dd3bb4a5dec637c587b404cf9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-recovered-seat-1-cipher-envoy.png",
+      "sha256": "df25cf4d265add146f4dacafa68c2f04f1e33ad116bcd5c1e9beffc8bcc05b40",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-released-seat-1-cipher-envoy.png",
+      "sha256": "f98d814876cdcbfa79c1eb5562549da7f9277f88bbe63e339d3ee04cfd94ac5d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

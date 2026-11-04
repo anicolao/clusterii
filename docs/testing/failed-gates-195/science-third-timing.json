@@ -1,0 +1,1216 @@
+{
+  "calls": [
+    {
+      "start": 52530.8,
+      "durationMs": 0.2,
+      "type": "fixture",
+      "title": "Fixture \"illustratedStory\"",
+      "error": false
+    },
+    {
+      "start": 52534.1,
+      "durationMs": 103.9,
+      "type": "pw:api",
+      "title": "Launch browser",
+      "error": false
+    },
+    {
+      "start": 52531.9,
+      "durationMs": 106.2,
+      "type": "fixture",
+      "title": "Fixture \"browser\"",
+      "error": false
+    },
+    {
+      "start": 52640.9,
+      "durationMs": 8.2,
+      "type": "pw:api",
+      "title": "Create context",
+      "error": false
+    },
+    {
+      "start": 52639.3,
+      "durationMs": 13.9,
+      "type": "fixture",
+      "title": "Fixture \"context\"",
+      "error": false
+    },
+    {
+      "start": 52654.8,
+      "durationMs": 29.9,
+      "type": "pw:api",
+      "title": "Create page",
+      "error": false
+    },
+    {
+      "start": 52653.4,
+      "durationMs": 31.3,
+      "type": "fixture",
+      "title": "Fixture \"page\"",
+      "error": false
+    },
+    {
+      "start": 52522.1,
+      "durationMs": 162.7,
+      "type": "hook",
+      "title": "Before Hooks",
+      "error": false
+    },
+    {
+      "start": 52692.2,
+      "durationMs": 5.6,
+      "type": "pw:api",
+      "title": "Emulate media",
+      "error": false
+    },
+    {
+      "start": 52699.1,
+      "durationMs": 572.9,
+      "type": "pw:api",
+      "title": "Navigate to \"./gallery/\"",
+      "error": false
+    },
+    {
+      "start": 53275.2,
+      "durationMs": 1944.8,
+      "type": "pw:api",
+      "title": "Focus getByRole('button', { name: 'Open science source specimen', exact: true })",
+      "error": false
+    },
+    {
+      "start": 55224.9,
+      "durationMs": 194.0,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 55422.9,
+      "durationMs": 269.5,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('button', { name: 'Open science source specimen', exact: true })",
+      "error": false
+    },
+    {
+      "start": 55695.6,
+      "durationMs": 0.7,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 55420.9,
+      "durationMs": 275.6,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 55702.5,
+      "durationMs": 320.7,
+      "type": "pw:api",
+      "title": "Press \"Enter\" getByRole('button', { name: 'Open science source specimen', exact: true })",
+      "error": false
+    },
+    {
+      "start": 56025.4,
+      "durationMs": 618.6,
+      "type": "pw:api",
+      "title": "Scroll into view getByRole('region', { name: 'Science sources', exact: true })",
+      "error": false
+    },
+    {
+      "start": 56649.1,
+      "durationMs": 793.2,
+      "type": "pw:api",
+      "title": "Focus getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+      "error": false
+    },
+    {
+      "start": 57445.9,
+      "durationMs": 1198.8,
+      "type": "pw:api",
+      "title": "Press \"End\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+      "error": false
+    },
+    {
+      "start": 58646.4,
+      "durationMs": 379.5,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 59028.1,
+      "durationMs": 859.8,
+      "type": "pw:api",
+      "title": "Wait for selector getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+      "error": false
+    },
+    {
+      "start": 59889.2,
+      "durationMs": 0.2,
+      "type": "expect",
+      "title": "Expect \"not toBeNull\"",
+      "error": false
+    },
+    {
+      "start": 59892.7,
+      "durationMs": 367.3,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 60262.1,
+      "durationMs": 532.5,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 60796.0,
+      "durationMs": 477.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 61274.5,
+      "durationMs": 370.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 61645.9,
+      "durationMs": 486.6,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 62134.4,
+      "durationMs": 613.1,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 62748.6,
+      "durationMs": 379.9,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 63130.0,
+      "durationMs": 370.9,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 63502.7,
+      "durationMs": 626.4,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 64130.2,
+      "durationMs": 363.1,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 64494.4,
+      "durationMs": 561.3,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 65057.1,
+      "durationMs": 605.9,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 65664.1,
+      "durationMs": 369.1,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 66034.3,
+      "durationMs": 484.8,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 66522.8,
+      "durationMs": 497.8,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 67021.9,
+      "durationMs": 362.7,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 67386.1,
+      "durationMs": 493.1,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 67880.3,
+      "durationMs": 605.7,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 68487.1,
+      "durationMs": 365.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 68854.1,
+      "durationMs": 373.4,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 69230.4,
+      "durationMs": 917.6,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+      "error": false
+    },
+    {
+      "start": 70149.5,
+      "durationMs": 0.2,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 69228.5,
+      "durationMs": 921.3,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 70153.3,
+      "durationMs": 963.8,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).locator('dl > div').filter({ hasText: 'Last delivered science' })",
+      "error": false
+    },
+    {
+      "start": 71118.4,
+      "durationMs": 0.4,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 70150.6,
+      "durationMs": 968.3,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 52690.7,
+      "durationMs": 18428.3,
+      "type": "test.step",
+      "title": "Component reviewer: player action",
+      "error": false
+    },
+    {
+      "start": 71120.5,
+      "durationMs": 427.4,
+      "type": "expect",
+      "title": "Expect \"toContainText\"",
+      "error": false
+    },
+    {
+      "start": 71549.9,
+      "durationMs": 370.7,
+      "type": "expect",
+      "title": "Expect \"toHaveText\"",
+      "error": false
+    },
+    {
+      "start": 71119.4,
+      "durationMs": 801.3,
+      "type": "test.step",
+      "title": "The reducer-derived component distinguishes initial capacity from pending first delivery.",
+      "error": false
+    },
+    {
+      "start": 71922.9,
+      "durationMs": 373.1,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 72297.7,
+      "durationMs": 1.1,
+      "type": "expect",
+      "title": "Expect \"toBe\"",
+      "error": false
+    },
+    {
+      "start": 72302.4,
+      "durationMs": 894.1,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).locator('dl > div').filter({ hasText: 'Last delivered science' })",
+      "error": false
+    },
+    {
+      "start": 73199.9,
+      "durationMs": 0.2,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 72300.9,
+      "durationMs": 899.4,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 73205.0,
+      "durationMs": 949.6,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('button', { name: 'Return to galaxy', exact: true })",
+      "error": false
+    },
+    {
+      "start": 74155.6,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 73203.2,
+      "durationMs": 952.5,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 71921.3,
+      "durationMs": 2234.4,
+      "type": "test.step",
+      "title": "The actual delivered-total reading and Return remain usable inside the component.",
+      "error": false
+    },
+    {
+      "start": 74161.1,
+      "durationMs": 2.0,
+      "type": "pw:api",
+      "title": "Bring to front",
+      "error": false
+    },
+    {
+      "start": 74165.1,
+      "durationMs": 291.7,
+      "type": "pw:api",
+      "title": "Mouse move",
+      "error": false
+    },
+    {
+      "start": 74457.9,
+      "durationMs": 367.4,
+      "type": "expect",
+      "title": "Expect \"toBeVisible\"",
+      "error": false
+    },
+    {
+      "start": 74827.6,
+      "durationMs": 920.5,
+      "type": "pw:api",
+      "title": "Bounding box getByRole('region', { name: 'Science sources', exact: true }).getByRole('button', { name: 'Return to galaxy', exact: true })",
+      "error": false
+    },
+    {
+      "start": 75749.0,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "Expect \"not toBeNull\"",
+      "error": false
+    },
+    {
+      "start": 75749.7,
+      "durationMs": 0.2,
+      "type": "expect",
+      "title": "Expect \"toBeGreaterThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 75751.3,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "Expect \"toBeGreaterThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 75752.2,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "Expect \"toBeLessThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 75753.0,
+      "durationMs": 0.0,
+      "type": "expect",
+      "title": "Expect \"toBeLessThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 75753.9,
+      "durationMs": 545.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 76300.2,
+      "durationMs": 377.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 76678.5,
+      "durationMs": 367.7,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 77047.1,
+      "durationMs": 0.4,
+      "type": "expect",
+      "title": "Actual page renderer matches the declared capture environment",
+      "error": false
+    },
+    {
+      "start": 77053.6,
+      "durationMs": 1327.1,
+      "type": "pw:api",
+      "title": "Screenshot",
+      "error": false
+    },
+    {
+      "start": 78381.8,
+      "durationMs": 1213.3,
+      "type": "pw:api",
+      "title": "Screenshot",
+      "error": false
+    },
+    {
+      "start": 79667.6,
+      "durationMs": 335.1,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 80003.8,
+      "durationMs": 13.3,
+      "type": "test.attach",
+      "title": "Attach \"gallery-source-reduce \u2014 Component reviewer\"",
+      "error": false
+    },
+    {
+      "start": 74156.3,
+      "durationMs": 5861.1,
+      "type": "test.step",
+      "title": "Component reviewer: settled, contained, exact capture",
+      "error": false
+    },
+    {
+      "start": 52689.6,
+      "durationMs": 27327.8,
+      "type": "test.step",
+      "title": "Open the actual shared ledger with Enter and read its lower totals through End.",
+      "error": false
+    },
+    {
+      "start": 80018.4,
+      "durationMs": 1257.9,
+      "type": "pw:api",
+      "title": "Press \"Enter\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('button', { name: 'Return to galaxy', exact: true })",
+      "error": false
+    },
+    {
+      "start": 81277.1,
+      "durationMs": 481.1,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 81758.9,
+      "durationMs": 371.0,
+      "type": "expect",
+      "title": "Expect \"toHaveCount\"",
+      "error": false
+    },
+    {
+      "start": 82132.6,
+      "durationMs": 457.6,
+      "type": "pw:api",
+      "title": "Emulate media",
+      "error": false
+    },
+    {
+      "start": 82592.0,
+      "durationMs": 4415.4,
+      "type": "pw:api",
+      "title": "Navigate to \"./gallery/\"",
+      "error": false
+    },
+    {
+      "start": 87009.4,
+      "durationMs": 1960.7,
+      "type": "pw:api",
+      "title": "Focus getByRole('button', { name: 'Open science source specimen', exact: true })",
+      "error": false
+    },
+    {
+      "start": 88971.5,
+      "durationMs": 181.5,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 89154.9,
+      "durationMs": 224.1,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('button', { name: 'Open science source specimen', exact: true })",
+      "error": false
+    },
+    {
+      "start": 89379.9,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 89153.9,
+      "durationMs": 226.2,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 89381.1,
+      "durationMs": 323.5,
+      "type": "pw:api",
+      "title": "Press \"Enter\" getByRole('button', { name: 'Open science source specimen', exact: true })",
+      "error": false
+    },
+    {
+      "start": 89705.9,
+      "durationMs": 279.3,
+      "type": "pw:api",
+      "title": "Scroll into view getByRole('region', { name: 'Science sources', exact: true })",
+      "error": false
+    },
+    {
+      "start": 89986.6,
+      "durationMs": 208.8,
+      "type": "pw:api",
+      "title": "Focus getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+      "error": false
+    },
+    {
+      "start": 90197.6,
+      "durationMs": 1234.5,
+      "type": "pw:api",
+      "title": "Press \"End\" getByRole('region', { name: 'Science sources', exact: true }).getByRole('region', { name: 'Science source ledger', exact: true })",
+      "error": false
+    },
+    {
+      "start": 91433.2,
+      "durationMs": 389.6,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 91824.7,
+      "durationMs": 842.2,
+      "type": "pw:api",
+      "title": "Wait for selector getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+      "error": false
+    },
+    {
+      "start": 92668.8,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "Expect \"not toBeNull\"",
+      "error": false
+    },
+    {
+      "start": 92670.6,
+      "durationMs": 362.0,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 93033.8,
+      "durationMs": 376.5,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 93411.7,
+      "durationMs": 547.7,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 93960.6,
+      "durationMs": 328.4,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 94290.4,
+      "durationMs": 514.4,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 94805.9,
+      "durationMs": 596.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 95403.2,
+      "durationMs": 409.8,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 95814.2,
+      "durationMs": 474.4,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 96289.9,
+      "durationMs": 601.0,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 96892.4,
+      "durationMs": 369.6,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 97263.1,
+      "durationMs": 514.0,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 97778.4,
+      "durationMs": 477.7,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 98257.1,
+      "durationMs": 380.7,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 98638.8,
+      "durationMs": 488.4,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 99128.4,
+      "durationMs": 626.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 99756.1,
+      "durationMs": 356.3,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 100113.5,
+      "durationMs": 516.0,
+      "type": "pw:api",
+      "title": "Press \"ArrowUp\"",
+      "error": false
+    },
+    {
+      "start": 100631.2,
+      "durationMs": 614.6,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 101247.6,
+      "durationMs": 389.1,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 101638.3,
+      "durationMs": 380.9,
+      "type": "expect",
+      "title": "Expect \"toBeFocused\"",
+      "error": false
+    },
+    {
+      "start": 102021.9,
+      "durationMs": 891.9,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('heading', { name: 'Empire total', exact: true })",
+      "error": false
+    },
+    {
+      "start": 102916.5,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 102020.1,
+      "durationMs": 896.6,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 102919.2,
+      "durationMs": 963.9,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).locator('dl > div').filter({ hasText: 'Last delivered science' })",
+      "error": false
+    },
+    {
+      "start": 103883.8,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 102917.6,
+      "durationMs": 966.4,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 82130.8,
+      "durationMs": 21753.2,
+      "type": "test.step",
+      "title": "Component reviewer: player action",
+      "error": false
+    },
+    {
+      "start": 103885.8,
+      "durationMs": 432.6,
+      "type": "expect",
+      "title": "Expect \"toContainText\"",
+      "error": false
+    },
+    {
+      "start": 104319.6,
+      "durationMs": 558.6,
+      "type": "expect",
+      "title": "Expect \"toHaveText\"",
+      "error": false
+    },
+    {
+      "start": 103884.3,
+      "durationMs": 994.1,
+      "type": "test.step",
+      "title": "The reducer-derived component distinguishes initial capacity from pending first delivery.",
+      "error": false
+    },
+    {
+      "start": 104880.0,
+      "durationMs": 263.2,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 105144.1,
+      "durationMs": 0.2,
+      "type": "expect",
+      "title": "Expect \"toBe\"",
+      "error": false
+    },
+    {
+      "start": 105146.8,
+      "durationMs": 921.6,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).locator('dl > div').filter({ hasText: 'Last delivered science' })",
+      "error": false
+    },
+    {
+      "start": 106070.3,
+      "durationMs": 0.2,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 105145.0,
+      "durationMs": 925.8,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 106072.8,
+      "durationMs": 956.4,
+      "type": "pw:api",
+      "title": "Evaluate getByRole('region', { name: 'Science sources', exact: true }).getByRole('button', { name: 'Return to galaxy', exact: true })",
+      "error": false
+    },
+    {
+      "start": 107030.1,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 106071.7,
+      "durationMs": 958.5,
+      "type": "expect",
+      "title": "The entire reading target and both corners remain usable inside every clipping ancestor",
+      "error": false
+    },
+    {
+      "start": 104878.9,
+      "durationMs": 2151.4,
+      "type": "test.step",
+      "title": "The actual delivered-total reading and Return remain usable inside the component.",
+      "error": false
+    },
+    {
+      "start": 107032.3,
+      "durationMs": 1.5,
+      "type": "pw:api",
+      "title": "Bring to front",
+      "error": false
+    },
+    {
+      "start": 107034.7,
+      "durationMs": 427.6,
+      "type": "pw:api",
+      "title": "Mouse move",
+      "error": false
+    },
+    {
+      "start": 107463.7,
+      "durationMs": 369.2,
+      "type": "expect",
+      "title": "Expect \"toBeVisible\"",
+      "error": false
+    },
+    {
+      "start": 107834.2,
+      "durationMs": 900.6,
+      "type": "pw:api",
+      "title": "Bounding box getByRole('region', { name: 'Science sources', exact: true }).getByRole('button', { name: 'Return to galaxy', exact: true })",
+      "error": false
+    },
+    {
+      "start": 108735.7,
+      "durationMs": 0.0,
+      "type": "expect",
+      "title": "Expect \"not toBeNull\"",
+      "error": false
+    },
+    {
+      "start": 108736.3,
+      "durationMs": 0.9,
+      "type": "expect",
+      "title": "Expect \"toBeGreaterThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 108737.9,
+      "durationMs": 0.0,
+      "type": "expect",
+      "title": "Expect \"toBeGreaterThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 108738.6,
+      "durationMs": 0.1,
+      "type": "expect",
+      "title": "Expect \"toBeLessThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 108739.3,
+      "durationMs": 0.0,
+      "type": "expect",
+      "title": "Expect \"toBeLessThanOrEqual\"",
+      "error": false
+    },
+    {
+      "start": 108740.5,
+      "durationMs": 558.5,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 109299.9,
+      "durationMs": 386.6,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 109687.5,
+      "durationMs": 376.6,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": false
+    },
+    {
+      "start": 110064.9,
+      "durationMs": 0.3,
+      "type": "expect",
+      "title": "Actual page renderer matches the declared capture environment",
+      "error": false
+    },
+    {
+      "start": 110066.4,
+      "durationMs": 1299.0,
+      "type": "pw:api",
+      "title": "Screenshot",
+      "error": false
+    },
+    {
+      "start": 82130.5,
+      "durationMs": 30001.1,
+      "type": "test.step",
+      "title": "Open the actual shared ledger with Enter and read its lower totals through End.",
+      "error": true
+    },
+    {
+      "start": 112132.9,
+      "durationMs": 0.1,
+      "type": "fixture",
+      "title": "Fixture \"page\"",
+      "error": false
+    },
+    {
+      "start": 111366.4,
+      "durationMs": 1185.6,
+      "type": "pw:api",
+      "title": "Screenshot",
+      "error": false
+    },
+    {
+      "start": 112654.4,
+      "durationMs": 475.9,
+      "type": "pw:api",
+      "title": "Evaluate",
+      "error": true
+    },
+    {
+      "start": 107030.8,
+      "durationMs": 6099.7,
+      "type": "test.step",
+      "title": "Component reviewer: settled, contained, exact capture",
+      "error": true
+    },
+    {
+      "start": 113125.1,
+      "durationMs": 18.4,
+      "type": "pw:api",
+      "title": "Close context",
+      "error": false
+    },
+    {
+      "start": 112133.2,
+      "durationMs": 1010.4,
+      "type": "fixture",
+      "title": "Fixture \"context\"",
+      "error": false
+    },
+    {
+      "start": 113144.0,
+      "durationMs": 81.3,
+      "type": "fixture",
+      "title": "Fixture \"illustratedStory\"",
+      "error": false
+    },
+    {
+      "start": 113226.0,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"navigationTimeout\"",
+      "error": false
+    },
+    {
+      "start": 113226.7,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"actionTimeout\"",
+      "error": false
+    },
+    {
+      "start": 113230.0,
+      "durationMs": 0.0,
+      "type": "test.attach",
+      "title": "Attach \"error-context\"",
+      "error": false
+    },
+    {
+      "start": 113230.9,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"baseURL\"",
+      "error": false
+    },
+    {
+      "start": 113231.2,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"timezoneId\"",
+      "error": false
+    },
+    {
+      "start": 113231.3,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"viewport\"",
+      "error": false
+    },
+    {
+      "start": 113231.9,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"locale\"",
+      "error": false
+    },
+    {
+      "start": 113232.9,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"deviceScaleFactor\"",
+      "error": false
+    },
+    {
+      "start": 113233.0,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"colorScheme\"",
+      "error": false
+    },
+    {
+      "start": 113233.4,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"contextOptions\"",
+      "error": false
+    },
+    {
+      "start": 112132.1,
+      "durationMs": 1101.5,
+      "type": "hook",
+      "title": "After Hooks",
+      "error": false
+    },
+    {
+      "start": 113234.6,
+      "durationMs": 31.4,
+      "type": "fixture",
+      "title": "Fixture \"browser\"",
+      "error": false
+    },
+    {
+      "start": 113266.8,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"screenshot\"",
+      "error": false
+    },
+    {
+      "start": 113267.2,
+      "durationMs": 0.0,
+      "type": "fixture",
+      "title": "Fixture \"launchOptions\"",
+      "error": false
+    },
+    {
+      "start": 113233.9,
+      "durationMs": 33.6,
+      "type": "hook",
+      "title": "Worker Cleanup",
+      "error": false
+    }
+  ],
+  "unfinished": []
+}

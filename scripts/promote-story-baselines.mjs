@@ -9,6 +9,12 @@ import {
 import { resolve, join, dirname, relative } from "node:path";
 import { createHash } from "node:crypto";
 import sharp from "sharp";
+import {
+  featureRoot,
+  baselineDirectory,
+  archiveDirectory,
+} from "../tests/e2e/helpers/story-paths.mjs";
+import { featureNarratives } from "../tests/e2e/helpers/feature-narrative.mjs";
 const args = process.argv.slice(2),
   value = (name) => {
     const i = args.indexOf(name);
@@ -32,8 +38,18 @@ function* stories(folder) {
     else if (entry.name === "story.json") yield file;
   }
 }
+const files = [...stories(source)];
+const featureStories = files
+  .map((file) => JSON.parse(readFileSync(file, "utf8")))
+  .filter(
+    (s) =>
+      featureRoot(s.id) &&
+      s.status === "passed" &&
+      s.mode === (archive ? "verify" : "generate"),
+  );
+const narratives = archive ? featureNarratives(featureStories) : [];
 let count = 0;
-for (const file of stories(source)) {
+for (const file of files) {
   const story = JSON.parse(readFileSync(file, "utf8"));
   if (
     story.status !== "passed" ||
@@ -138,6 +154,11 @@ for (const file of stories(source)) {
     ) + "\n",
   );
   count++;
+}
+for (const {id, narrative} of narratives) {
+  const directory = resolve(featureRoot(id), "stories", id);
+  mkdirSync(directory, { recursive: true });
+  writeFileSync(join(directory, "README.md"), narrative);
 }
 if (!count)
   throw new Error(

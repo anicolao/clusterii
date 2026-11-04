@@ -1,4 +1,5 @@
 import { createRequire } from "node:module";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 import type { BrowserContext, Page } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
 import { test, expect } from "./story-helpers/fixtures";
@@ -366,6 +367,10 @@ test("Live research guidance follows the campaign capabilities without submittin
         check: async () => {
           await expect(button(owner, "Economy")).toBeFocused();
           await expect(research(owner)).toHaveCount(0);
+          await owner.evaluate(assertScreenFit, {
+            surface: "game" as const,
+            focusedControl: true,
+          });
         },
       },
       verifications: [unchanged],

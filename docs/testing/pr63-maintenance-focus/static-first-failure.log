@@ -1,0 +1,81 @@
+src/lib/components/CampaignMaintenance.svelte 95ms
+tests/story-tools.test.ts 21ms (unchanged)
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /private/tmp/cluster-pr54-credit-review
+Getting Svelte diagnostics...
+
+/private/tmp/cluster-pr54-credit-review/tests/story-tools.test.ts:271:27
+Error: No overload matches this call.
+  Overload 1 of 2, '(pageFunction: PageFunction<{ surface: string; focusedControl: boolean; }, void>, arg: { surface: string; focusedControl: boolean; }): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<{ surface: string; focusedControl: boolean; }, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: { surface: string; focusedControl: boolean; }) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type '{ surface: string; focusedControl: boolean; }' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'.
+            Types of property 'surface' are incompatible.
+              Type 'string' is not assignable to type '"document" | "game"'.
+  Overload 2 of 2, '(pageFunction: PageFunction<void, void>, arg?: any): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<void, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: void) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type 'void' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'. 
+          await expect(
+            page.evaluate(assertScreenFit, {
+              surface: "game",
+
+/private/tmp/cluster-pr54-credit-review/tests/story-tools.test.ts:277:31
+Error: No overload matches this call.
+  Overload 1 of 2, '(pageFunction: PageFunction<{ surface: string; focusedControl: boolean; }, void>, arg: { surface: string; focusedControl: boolean; }): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<{ surface: string; focusedControl: boolean; }, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: { surface: string; focusedControl: boolean; }) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type '{ surface: string; focusedControl: boolean; }' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'.
+            Types of property 'surface' are incompatible.
+              Type 'string' is not assignable to type '"document" | "game"'.
+  Overload 2 of 2, '(pageFunction: PageFunction<void, void>, arg?: any): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<void, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: void) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type 'void' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'. 
+        else
+          await page.evaluate(assertScreenFit, {
+            surface: "game",
+
+/private/tmp/cluster-pr54-credit-review/tests/browser/fleet-travel-catchup.story.spec.ts:850:34
+Error: No overload matches this call.
+  Overload 1 of 2, '(pageFunction: PageFunction<{ surface: string; focusedControl: boolean; }, void>, arg: { surface: string; focusedControl: boolean; }): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<{ surface: string; focusedControl: boolean; }, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: { surface: string; focusedControl: boolean; }) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type '{ surface: string; focusedControl: boolean; }' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'.
+            Types of property 'surface' are incompatible.
+              Type 'string' is not assignable to type '"document" | "game"'.
+  Overload 2 of 2, '(pageFunction: PageFunction<void, void>, arg?: any): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<void, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: void) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type 'void' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'. 
+            await expect(button(owner, "Resume campaign")).toBeFocused();
+            await owner.evaluate(assertScreenFit, {
+              surface: "game",
+
+/private/tmp/cluster-pr54-credit-review/tests/browser/fleet-travel-catchup.story.spec.ts:942:34
+Error: No overload matches this call.
+  Overload 1 of 2, '(pageFunction: PageFunction<{ surface: string; focusedControl: boolean; }, void>, arg: { surface: string; focusedControl: boolean; }): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<{ surface: string; focusedControl: boolean; }, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: { surface: string; focusedControl: boolean; }) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type '{ surface: string; focusedControl: boolean; }' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'.
+            Types of property 'surface' are incompatible.
+              Type 'string' is not assignable to type '"document" | "game"'.
+  Overload 2 of 2, '(pageFunction: PageFunction<void, void>, arg?: any): Promise<void>', gave the following error.
+    Argument of type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to parameter of type 'PageFunction<void, void>'.
+      Type '({ surface, focusedControl, }: { surface: "document" | "game"; focusedControl?: boolean | undefined; }) => void' is not assignable to type '(arg: void) => void | Promise<void>'.
+        Types of parameters '__0' and 'arg' are incompatible.
+          Type 'void' is not assignable to type '{ surface: "document" | "game"; focusedControl?: boolean | undefined; }'. 
+            await expect(button(owner, "Pause campaign")).toBeFocused();
+            await owner.evaluate(assertScreenFit, {
+              surface: "game",
+
+====================================
+svelte-check found 4 errors and 0 warnings in 2 files
+error: script "check" exited with code 1

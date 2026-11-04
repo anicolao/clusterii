@@ -1,0 +1,19 @@
+scripts/recovery-settlement.mjs 32ms (unchanged)
+scripts/check-recovery-settlement.test.mjs 9ms
+✔ entry permits exactly the frozen feature010 phone verification (1.089458ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (33.969209ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (0.938583ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.23025ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.127209ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (13.327666ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 95.108875

@@ -1,0 +1,65 @@
+{
+  "reviewer": "supervisor",
+  "scope": "regression baseline only",
+  "viewport": "phone",
+  "run": 40272329867,
+  "executor": "3ab169962d882d06e7a06f1153f617b8020f11f4",
+  "inheritedExact": 34,
+  "newIndividuallyViewedAndApproved": [
+    {
+      "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+      "sha256": "661ba9d188b0a05dc312b9143a8e9a4c17119107125f27d5c7549b49624e4bab",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/029-prepare-replacement-choice-1-nacre-envoy.png"
+    },
+    {
+      "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "sha256": "4c40b27ae1acb77e71acde5d71bb6defc57dcd2afc418597f1afe9ac95ef6eab",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/029-prepare-replacement-choice-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "030-review-competing-replacement-1-nacre-envoy.png",
+      "sha256": "d66ca4a4accd8baa3dd414fe4a4a01c7ab78a14cdf6e7e60fc9bc0de9ba346f1",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/030-review-competing-replacement-1-nacre-envoy.png"
+    },
+    {
+      "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "sha256": "cedb9b233b8e973b9985aee5b862796ad8e5c36b4f6af480e1250bf5b5452db2",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/030-review-competing-replacement-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "sha256": "5f25d8d5acb75cd89ecfaa7f60ead7051626ca6e78eb30cd63ae29cb8ad80568",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/031-replace-with-local-proposal-1-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "sha256": "5f25d8d5acb75cd89ecfaa7f60ead7051626ca6e78eb30cd63ae29cb8ad80568",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/032-recover-chosen-local-proposal-1-nacre-envoy.png"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "sha256": "5f25d8d5acb75cd89ecfaa7f60ead7051626ca6e78eb30cd63ae29cb8ad80568",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+      "sha256": "3b76d00e3013bb5b10342e605af446d46d7df309956816947f434267fed59dd7",
+      "comparison": "new",
+      "path": "/tmp/cluster-pr73-candidate-review/phone/032-recover-chosen-local-proposal-3-outer-witness.png"
+    }
+  ],
+  "notes": [
+    "029: Both tabs visibly recover the same unsent proposal; composer and return/send rails fit.",
+    "030: First tab preserves northern draft; second displays southern draft with clear conflict acknowledgement, both explicit choices, and disabled Send.",
+    "031: Explicit replacement acknowledges durable browser save and retains southern text.",
+    "032: Both reloads show chosen unsent text; outsider view contains no private draft or conversation.",
+    "Bounded older history clipping remains; focal interaction unobscured. Existing singular/plural wording and concept-composition gaps remain separately recorded; this is regression approval, not full production-fidelity approval."
+  ]
+}

@@ -1,0 +1,11 @@
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+Listing tests:
+  [phone] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [desktop] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [large] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [short] › e2e/012-fleet-contacts/contacts.spec.ts:35:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+Total: 4 tests in 1 file
+Listing tests:
+  fleet-contacts.spec.ts:5:1 › ordinary observers recover acquired and last-seen fleet contacts
+  fleet-contacts.spec.ts:217:1 › fleet contact lab preserves exact acquired facts under replay and reduced motion
+Total: 2 tests in 1 file

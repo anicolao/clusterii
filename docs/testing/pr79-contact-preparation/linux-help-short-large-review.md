@@ -1,0 +1,7 @@
+
+
+## Supervisor Linux short and large help review
+
+Previous turn fixed actual recovered-dialog outline, typechecked and dispatched40332542039; phone help review committed991e64c2. This turn individually viewed five unique1280x720 short captures and three unique large captures; SHA256 mapping covers20 captures. Large viewer scaled3840x2160 to2048x1152, so review covers composition/state rather than individual pixels. Short target paragraphs are legible at their respective scroll positions; following section may extend below footer but each targeted help section is shown by the ordered captures. Fixed action rail remains69/balance131, no debit from help. Closing rules restores gold disclosure focus; peer200credits/market106/balance94 unchanged. Large all four help sections fit together; scrolled card art is clipped above scroll region while labels remain. Closing restores all card art and visible gold disclosure focus. No unexplained rendering/action discrepancy observed. Approve these20 exact hashes for regression import, conditional on unchanged bytes in corrected-source run.
+
+All40 extracted Linux help captures now covered by individually inspected unique images and verified duplicate hashes. Remaining Linux ordinary/recovery state captures and corrected inset focus render still need review; no blanket acceptance or full design approval. PR71 exact verification and40332542039 remain running. No merges or restarts.

@@ -208,3 +208,139 @@ test("a later ownership guard failure retains completed evidence without launchi
     );
   });
 });
+
+test("independent service groups retain all failures and never overlap active emulators", async () => {
+  await fixture(async (_dir, output, firestoreLog) => {
+    let guards = 0,
+      active = false;
+    const visits = [];
+    await assert.rejects(
+      runViewportCohorts({
+        output,
+        firestoreLog,
+        groups: ["ordinary", "leased-ticks"],
+        beforeEach: async () => {
+          assert.equal(active, false);
+          guards++;
+        },
+        run: async (viewport, group) => {
+          assert.equal(active, false);
+          active = true;
+          assert.equal(existsSync(output), false);
+          visits.push(`${viewport}/${group}`);
+          const dest = join(output, group, viewport);
+          mkdirSync(dest, { recursive: true });
+          writeFileSync(join(dest, "original.png"), `${viewport}/${group}`);
+          writeFileSync(firestoreLog, `${viewport}/${group} original log`);
+          active = false;
+          if (viewport === "phone" && group === "ordinary")
+            throw new Error("first failure retained");
+        },
+      }),
+      /phone\/ordinary/,
+    );
+    assert.deepEqual(
+      visits,
+      storyViewports.flatMap((v) => [`${v}/ordinary`, `${v}/leased-ticks`]),
+    );
+    assert.equal(guards, 8);
+    for (const viewport of storyViewports)
+      for (const group of ["ordinary", "leased-ticks"]) {
+        assert.equal(
+          readFileSync(join(output, group, viewport, "original.png"), "utf8"),
+          `${viewport}/${group}`,
+        );
+        const metadata = join(output, "_cohorts", viewport, group);
+        assert.equal(
+          readFileSync(join(metadata, "firestore-debug.log"), "utf8"),
+          `${viewport}/${group} original log`,
+        );
+        assert.equal(
+          JSON.parse(readFileSync(join(metadata, "result.json"))).status,
+          viewport === "phone" && group === "ordinary" ? "failed" : "passed",
+        );
+      }
+  });
+});
+
+import {
+  storyServiceGroups,
+  verifyServicePartition,
+} from "./story-service-groups.mjs";
+test("an explicitly scoped candidate viewport cannot expand or silently accept invalid selections", async () => {
+  await fixture(async (_dir, output, firestoreLog) => {
+    const visits = [];
+    const options = {
+      output,
+      firestoreLog,
+      beforeEach: async () => {},
+      run: async (viewport, group) => {
+        visits.push([viewport, group]);
+      },
+      groups: ["ordinary", "leased-ticks"],
+    };
+    for (const viewports of [[], ["phone", "phone"], ["unknown"]])
+      await assert.rejects(
+        runViewportCohorts({ ...options, viewports }),
+        /Invalid or duplicate viewports/,
+      );
+    assert.deepEqual(visits, []);
+    await runViewportCohorts({ ...options, viewports: ["short"] });
+    assert.deepEqual(visits, [
+      ["short", "ordinary"],
+      ["short", "leased-ticks"],
+    ]);
+  });
+});
+function collectionFixture(files) {
+  return {
+    suites: files.map((file) => ({
+      title: file,
+      specs: [
+        {
+          file,
+          line: 1,
+          column: 1,
+          title: "complete original journey",
+          tests: [{ projectName: "phone" }],
+        },
+      ],
+    })),
+  };
+}
+test("service grouping keeps every actual test identity once and rejects omitted or duplicated journeys", () => {
+  const files = [
+    "/repo/tests/browser/identity.story.spec.ts",
+    ...[
+      "010-zero-science",
+      "011-contextual-aftermath",
+      "012-fleet-contacts",
+    ].map((f) => `/repo/tests/e2e/${f}/complete.spec.ts`),
+  ];
+  const complete = collectionFixture(files);
+  const groups = Object.fromEntries(
+    storyServiceGroups.map(({ id, filter }) => [
+      id,
+      collectionFixture(files.filter((f) => new RegExp(filter).test(f))),
+    ]),
+  );
+  assert.equal(verifyServicePartition(complete, groups), 4);
+  const omitted = structuredClone(groups);
+  omitted.ordinary.suites = [];
+  assert.throws(
+    () => verifyServicePartition(complete, omitted),
+    /Empty story selection/,
+  );
+  const duplicated = structuredClone(groups);
+  duplicated.ordinary.suites.push(groups["010-zero-science"].suites[0]);
+  assert.throws(
+    () => verifyServicePartition(complete, duplicated),
+    /multiple service groups/,
+  );
+  const changed = structuredClone(groups);
+  changed.ordinary.suites[0].specs[0].title = "different journey";
+  assert.throws(
+    () => verifyServicePartition(complete, changed),
+    /every original test/,
+  );
+});

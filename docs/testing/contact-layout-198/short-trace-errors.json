@@ -1,0 +1,70 @@
+[
+  {
+    "type": "after",
+    "callId": "expect@567",
+    "endTime": 120036.415,
+    "annotations": [],
+    "error": {
+      "name": "",
+      "message": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+      "stack": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at expectReadingTarget (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/reading-target.ts:70:6)\n    at action (/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts:588:15)\n    at test.step.timeout (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:187:9)\n    at TestStepHelper.step (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:184:5)\n    at /Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts:554:5"
+    }
+  },
+  {
+    "type": "after",
+    "callId": "test.step@543",
+    "endTime": 120036.458,
+    "annotations": [],
+    "error": {
+      "name": "",
+      "message": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+      "stack": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at expectReadingTarget (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/reading-target.ts:70:6)\n    at action (/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts:588:15)\n    at test.step.timeout (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:187:9)\n    at TestStepHelper.step (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:184:5)\n    at /Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts:554:5"
+    }
+  },
+  {
+    "type": "after",
+    "callId": "test.step@542",
+    "endTime": 120036.492,
+    "annotations": [],
+    "error": {
+      "name": "",
+      "message": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+      "stack": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n    at expectReadingTarget (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/reading-target.ts:70:6)\n    at action (/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts:588:15)\n    at test.step.timeout (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:187:9)\n    at TestStepHelper.step (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:184:5)\n    at /Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts:554:5"
+    }
+  },
+  {
+    "type": "error",
+    "message": "Error: The entire reading target and both corners remain usable inside every clipping ancestor\n\nThe entire reading target and both corners remain usable inside every clipping ancestor\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 2\u001b[39m\n\u001b[31m+ Received  + 2\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[32m-   \"contained\": true,\u001b[39m\n\u001b[32m-   \"hits\": true,\u001b[39m\n\u001b[31m+   \"contained\": false,\u001b[39m\n\u001b[31m+   \"hits\": false,\u001b[39m\n\u001b[2m  }\u001b[22m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate",
+    "stack": [
+      {
+        "file": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/reading-target.ts",
+        "line": 70,
+        "column": 6,
+        "function": "expectReadingTarget"
+      },
+      {
+        "file": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "line": 588,
+        "column": 15,
+        "function": "action"
+      },
+      {
+        "file": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts",
+        "line": 187,
+        "column": 9,
+        "function": "test.step.timeout"
+      },
+      {
+        "file": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts",
+        "line": 184,
+        "column": 5,
+        "function": "TestStepHelper.step"
+      },
+      {
+        "file": "/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "line": 554,
+        "column": 5
+      }
+    ]
+  }
+]

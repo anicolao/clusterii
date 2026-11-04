@@ -1,0 +1,63 @@
+{
+  "artifact": {
+    "id": 12653134568,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY1MzEzNDU2OA==",
+    "name": "construction-focus-d56516290d762f7ff9462ea7f7511d21bd41e345",
+    "size_in_bytes": 383788845,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12653134568",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12653134568/zip",
+    "expired": false,
+    "digest": "sha256:75f3cec1af7cb602d5e050add44f108656869c7a53fa394611d853ee816d2284",
+    "created_at": "2026-10-26T13:33:54Z",
+    "updated_at": "2026-10-26T13:33:54Z",
+    "expires_at": "2027-01-24T13:19:48Z",
+    "workflow_run": {
+      "id": 40329631350,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr79-construction-focus",
+      "head_sha": "d56516290d762f7ff9462ea7f7511d21bd41e345"
+    }
+  },
+  "downloadedRangeBytes": 336373,
+  "etag": "\"0x8DF3365C7868B97\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr79-focus-durable-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-desktop/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-desktop/recovered-construction-focus.json",
+      "sha256": "7d521c114aea6e9f93ade6397adff293a1a9b42f5f2a74449df518c9a619ffdb",
+      "bytes": 2314,
+      "crc32": "69fbf5be"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-durable-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-large/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-large/recovered-construction-focus.json",
+      "sha256": "7c0406e3ce927af63fc90747357491e56fe5a8b0bd8dc6d487cfb380953f7560",
+      "bytes": 2315,
+      "crc32": "47aa0c8f"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-durable-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-phone/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-phone/recovered-construction-focus.json",
+      "sha256": "08facfe208ec2a844e3fb7e634741a93f13a5f225cac18717f5102f2a39181c6",
+      "bytes": 2303,
+      "crc32": "b7621fa8"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-durable-review/test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-short/recovered-construction-focus.json",
+      "entry": "test-results/stories/browser-construction.story-3b712--an-interrupted-reservation-short/recovered-construction-focus.json",
+      "sha256": "ffe66d0a6b1217aefa58b8f1a514a418f32476f2904ddc6b0fe990a065e48216",
+      "bytes": 2309,
+      "crc32": "c0b9bc6d"
+    },
+    {
+      "path": "/tmp/cluster-pr79-focus-durable-review/test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "3f48b82de050f526a7f81eb6fb2fb86f9a0892b1938f5c833dfe10920ab825f0",
+      "bytes": 261869,
+      "crc32": "bc401b58"
+    }
+  ]
+}

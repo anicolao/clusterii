@@ -1,0 +1,9 @@
+# PR59 shared formation/reorganization review
+
+Reviewer independently completed before/after review of all 216 generated images, including 150 exact current-reference matches, 26 exact approved PR58 short matches, and 40 changed/new files covered by the four retained approval indexes (7 + 4 + 14 + 15). All eight manifests passed. Only these exact source-paired Linux ARM families are approved for regression promotion; no gameplay-rule or full-design approval. Large views were individually inspected downscaled to2048x1152, not native-pixel typography certification.
+
+Original root: /tmp/cluster-pr59-generated-shared-families/test-results/stories. Artifact12593591870, size3149129050, API SHA2565944aa12d602f18549919a9a3944de07054cc2d6c7293bf6861c5d708d76b0f2. Bounded selected retrieval transferred494134618 bytes across456 entries with exact Content-Range/size, CRC and path validation; full archive hash was not verified because archive was not fully downloaded.
+
+Generation source97661c2f20afac01d5d3550d31117c83f3c96420 has an entire tree identical to PR59 target2f96284be6ae9744fd858249394afa869d073248. Spec hashes and pinned renderer are preserved in all eight manifests. dirty:true is retained: launcher writes unignored ci-evidence/nix-renderer before tests. This known cause does not fabricate a complete postrun clean-working-tree attestation.
+
+Latest PR58 parent3352be3e is integrated by normal Git parent-to-child merge, not a GitHub PR merge. It adds only reviewed short references and provenance/logs. Production, story helpers/specs, renderer/dependencies and required workflow thresholds remain identical to the reviewed generation source. Exact prompt archive preserves parent bytes; canonical log remains child-prefix append-only. Required strict checks run unchanged on publication. All prior failures and originals remain retained.

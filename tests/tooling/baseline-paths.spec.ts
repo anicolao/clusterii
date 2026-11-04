@@ -1,9 +1,12 @@
 import { test, expect } from "@playwright/test";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { readdirSync, readFileSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-import { baselinePath } from "../browser/story-helpers/baseline-path";
+import {
+  baselinePath,
+  baselineSnapshotName,
+} from "../browser/story-helpers/baseline-path";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 test("real TestInfo resolves both baseline layouts without changing reviewed artifacts", async ({}, info) => {
@@ -43,6 +46,50 @@ test("real TestInfo resolves both baseline layouts without changing reviewed art
   expect(feature).toBe(
     join(root, "tests/e2e/001-entry/screenshots", ...featureName),
   );
+  for (const [file, name, expected] of [
+    [
+      join(root, "tests/browser/local-settings.story.spec.ts"),
+      legacyName,
+      legacy,
+    ],
+    [join(root, "tests/e2e/001-entry/entry.spec.ts"), featureName, feature],
+  ] as const) {
+    const comparisonName = baselineSnapshotName(
+      { file, snapshotPath: info.snapshotPath.bind(info) },
+      name,
+    );
+    // Playwright uses this same name for expected/actual/diff attachments.
+    // Resolving the expected file alone misses forbidden ../ output traversal.
+    expect(comparisonName).not.toContain("..");
+    expect(info.outputPath(...comparisonName)).toContain(info.outputDir);
+    expect(
+      info.snapshotPath(
+        ...comparisonName,
+      ),
+    ).toBe(expected);
+    const before = readFileSync(expected);
+    const deliberatelyDifferent = readFileSync(
+      expected === legacy ? feature : legacy,
+    );
+    let mismatch: unknown;
+    try {
+      expect(deliberatelyDifferent).toMatchSnapshot(comparisonName, {
+        maxDiffPixels: 0,
+        threshold: 0,
+      });
+    } catch (error) {
+      mismatch = error;
+    }
+    expect(String(mismatch)).toContain("pixels");
+    expect(String(mismatch)).not.toContain("outputPath is not allowed");
+    for (const suffix of ["actual", "expected", "diff"])
+      expect(
+        existsSync(
+          info.outputPath(...comparisonName).replace(/\.png$/, `-${suffix}.png`),
+        ),
+      ).toBe(true);
+    expect(readFileSync(expected).equals(before)).toBe(true);
+  }
   for (const path of [legacy, feature]) {
     expect(path).not.toMatch(/[{}]/);
     expect(readFileSync(path).length).toBeGreaterThan(0);

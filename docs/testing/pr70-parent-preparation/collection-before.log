@@ -1,0 +1,182 @@
+Listing tests:
+  [phone] › campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [phone] › campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
+  [phone] › campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
+  [phone] › campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [phone] › construction.story.spec.ts:67:3 › Live construction completes and cancels developments
+  [phone] › construction.story.spec.ts:67:3 › Live construction recovers an interrupted reservation
+  [phone] › credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [phone] › credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [phone] › encryption-choice.story.spec.ts:27:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [phone] › encryption-choice.story.spec.ts:27:3 › Encryption choice uses actual managed keys through admission and recovery
+  [phone] › entry.story.spec.ts:4:1 › Learn the campaign and return to entry
+  [phone] › feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [phone] › feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [phone] › fleet-cancellation.story.spec.ts:40:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [phone] › fleet-cargo.story.spec.ts:40:1 › Live fleet cargo transfers conserve private forces through reload
+  [phone] › fleet-contacts.story.spec.ts:34:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [phone] › fleet-formation.story.spec.ts:40:1 › Live fleet formation and disband conserve private forces
+  [phone] › fleet-reorganization.story.spec.ts:45:1 › Live fleet reorganization recovers one private split and conserves forces
+  [phone] › fleet-route-recovery.story.spec.ts:57:1 › Interrupted route commands retain their original choices and identity
+  [phone] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [phone] › fleet-travel.story.spec.ts:40:1 › Live fleet travel and arrival preserve private forces through recovery
+  [phone] › history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [phone] › history.story.spec.ts:5:1 › Recover saved campaign records without losing your place
+  [phone] › identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [phone] › identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [phone] › identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [phone] › invitation.story.spec.ts:37:1 › An invited new commander saves an identity and joins the preserved campaign
+  [phone] › invitation.story.spec.ts:262:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [phone] › lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [phone] › lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [phone] › maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [phone] › migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [phone] › observations.story.spec.ts:44:1 › Live stellar observations retain private current and historical facts after reload
+  [phone] › production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [phone] › profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [phone] › profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [phone] › profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [phone] › receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [phone] › receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [phone] › research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [phone] › return-briefing.story.spec.ts:31:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [phone] › selected-history.story.spec.ts:41:1 › Selected history reaches only a consenting commander and survives reload
+  [phone] › session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [phone] › session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [phone] › sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [desktop] › campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [desktop] › campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
+  [desktop] › campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
+  [desktop] › campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [desktop] › construction.story.spec.ts:67:3 › Live construction completes and cancels developments
+  [desktop] › construction.story.spec.ts:67:3 › Live construction recovers an interrupted reservation
+  [desktop] › credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [desktop] › credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [desktop] › encryption-choice.story.spec.ts:27:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [desktop] › encryption-choice.story.spec.ts:27:3 › Encryption choice uses actual managed keys through admission and recovery
+  [desktop] › entry.story.spec.ts:4:1 › Learn the campaign and return to entry
+  [desktop] › feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [desktop] › feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [desktop] › fleet-cancellation.story.spec.ts:40:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [desktop] › fleet-cargo.story.spec.ts:40:1 › Live fleet cargo transfers conserve private forces through reload
+  [desktop] › fleet-contacts.story.spec.ts:34:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [desktop] › fleet-formation.story.spec.ts:40:1 › Live fleet formation and disband conserve private forces
+  [desktop] › fleet-reorganization.story.spec.ts:45:1 › Live fleet reorganization recovers one private split and conserves forces
+  [desktop] › fleet-route-recovery.story.spec.ts:57:1 › Interrupted route commands retain their original choices and identity
+  [desktop] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [desktop] › fleet-travel.story.spec.ts:40:1 › Live fleet travel and arrival preserve private forces through recovery
+  [desktop] › history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [desktop] › history.story.spec.ts:5:1 › Recover saved campaign records without losing your place
+  [desktop] › identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [desktop] › identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [desktop] › identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [desktop] › invitation.story.spec.ts:37:1 › An invited new commander saves an identity and joins the preserved campaign
+  [desktop] › invitation.story.spec.ts:262:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [desktop] › lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [desktop] › lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [desktop] › maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [desktop] › migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [desktop] › observations.story.spec.ts:44:1 › Live stellar observations retain private current and historical facts after reload
+  [desktop] › production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [desktop] › profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [desktop] › profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [desktop] › profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [desktop] › receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [desktop] › receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [desktop] › research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [desktop] › return-briefing.story.spec.ts:31:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [desktop] › selected-history.story.spec.ts:41:1 › Selected history reaches only a consenting commander and survives reload
+  [desktop] › session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [desktop] › session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [desktop] › sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [large] › campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [large] › campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
+  [large] › campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
+  [large] › campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [large] › construction.story.spec.ts:67:3 › Live construction completes and cancels developments
+  [large] › construction.story.spec.ts:67:3 › Live construction recovers an interrupted reservation
+  [large] › credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [large] › credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [large] › encryption-choice.story.spec.ts:27:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [large] › encryption-choice.story.spec.ts:27:3 › Encryption choice uses actual managed keys through admission and recovery
+  [large] › entry.story.spec.ts:4:1 › Learn the campaign and return to entry
+  [large] › feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [large] › feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [large] › fleet-cancellation.story.spec.ts:40:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [large] › fleet-cargo.story.spec.ts:40:1 › Live fleet cargo transfers conserve private forces through reload
+  [large] › fleet-contacts.story.spec.ts:34:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [large] › fleet-formation.story.spec.ts:40:1 › Live fleet formation and disband conserve private forces
+  [large] › fleet-reorganization.story.spec.ts:45:1 › Live fleet reorganization recovers one private split and conserves forces
+  [large] › fleet-route-recovery.story.spec.ts:57:1 › Interrupted route commands retain their original choices and identity
+  [large] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [large] › fleet-travel.story.spec.ts:40:1 › Live fleet travel and arrival preserve private forces through recovery
+  [large] › history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [large] › history.story.spec.ts:5:1 › Recover saved campaign records without losing your place
+  [large] › identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [large] › identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [large] › identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [large] › invitation.story.spec.ts:37:1 › An invited new commander saves an identity and joins the preserved campaign
+  [large] › invitation.story.spec.ts:262:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [large] › lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [large] › lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [large] › maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [large] › migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [large] › observations.story.spec.ts:44:1 › Live stellar observations retain private current and historical facts after reload
+  [large] › production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [large] › profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [large] › profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [large] › profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [large] › receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [large] › receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [large] › research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [large] › return-briefing.story.spec.ts:31:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [large] › selected-history.story.spec.ts:41:1 › Selected history reaches only a consenting commander and survives reload
+  [large] › session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [large] › session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [large] › sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+  [short] › campaign-navigation.story.spec.ts:50:1 › A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves
+  [short] › campaign-navigation.story.spec.ts:406:1 › A waiting commander filters stars, orbits by keyboard and inspects a clipped map label
+  [short] › campaign-navigation.story.spec.ts:691:1 › A returning commander waits for authoritative identity readiness before Play
+  [short] › campaign-start.story.spec.ts:43:1 › Five commanders start two campaigns and recover their named active campaign
+  [short] › construction.story.spec.ts:67:3 › Live construction completes and cancels developments
+  [short] › construction.story.spec.ts:67:3 › Live construction recovers an interrupted reservation
+  [short] › credit-exchange.story.spec.ts:67:3 › Live credit exchange settles and withdraws exact terms
+  [short] › credit-exchange.story.spec.ts:67:3 › Live credit exchange recovers an interrupted offer
+  [short] › encryption-choice.story.spec.ts:27:3 › Encryption choice explains unavailable managed keys without silent substitution
+  [short] › encryption-choice.story.spec.ts:27:3 › Encryption choice uses actual managed keys through admission and recovery
+  [short] › entry.story.spec.ts:4:1 › Learn the campaign and return to entry
+  [short] › feedback-lab.story.spec.ts:7:1 › Feedback lab inspects reconnect, conflict and playback without changing outcomes
+  [short] › feedback-lab.story.spec.ts:251:1 › Campaign feedback lab compares authoritative receipt presentations across motion modes
+  [short] › fleet-cancellation.story.spec.ts:40:1 › Live fleet cancellation preserves drafts and releases private reservations
+  [short] › fleet-cargo.story.spec.ts:40:1 › Live fleet cargo transfers conserve private forces through reload
+  [short] › fleet-contacts.story.spec.ts:34:1 › Live fleet contacts preserve acquired and last-seen private facts across reload
+  [short] › fleet-formation.story.spec.ts:40:1 › Live fleet formation and disband conserve private forces
+  [short] › fleet-reorganization.story.spec.ts:45:1 › Live fleet reorganization recovers one private split and conserves forces
+  [short] › fleet-route-recovery.story.spec.ts:57:1 › Interrupted route commands retain their original choices and identity
+  [short] › fleet-travel-catchup.story.spec.ts:47:1 › Paused fleet travel catches up exactly once after concurrent delayed delivery
+  [short] › fleet-travel.story.spec.ts:40:1 › Live fleet travel and arrival preserve private forces through recovery
+  [short] › history-lab.story.spec.ts:7:1 › History lab retries loading and inspects recovered records without changing motion outcomes
+  [short] › history.story.spec.ts:5:1 › Recover saved campaign records without losing your place
+  [short] › identity-gallery.story.spec.ts:9:1 › Production gallery exposes identity, navigation and feedback control states
+  [short] › identity-validation.story.spec.ts:10:1 › Correct an invalid identity without losing the draft or submitting an invalid command
+  [short] › identity.story.spec.ts:5:1 › Save and recover a commander identity
+  [short] › invitation.story.spec.ts:37:1 › An invited new commander saves an identity and joins the preserved campaign
+  [short] › invitation.story.spec.ts:262:1 › A returning commander resumes an invitation without rewriting identity and recovers inaccessible links
+  [short] › lifecycle-lab.story.spec.ts:66:1 › Lifecycle lab distinguishes scheduled, delayed and assigned start presentations
+  [short] › lifecycle-lab.story.spec.ts:158:1 › Lifecycle lab preserves session-ending disclosure and inspects completed motion
+  [short] › maintenance.story.spec.ts:14:1 › The host pauses admission, recovers the pause and resumes a waiting commander
+  [short] › migration.story.spec.ts:17:1 › Encryption migration preserves two-device access across actual managed and inspectable epochs
+  [short] › observations.story.spec.ts:44:1 › Live stellar observations retain private current and historical facts after reload
+  [short] › production-lab.story.spec.ts:7:1 › Production lab distinguishes due time from confirmed output and preserves ledger outcomes
+  [short] › profile-recovery.story.spec.ts:21:1 › Resolve two-device identity conflict without losing either draft
+  [short] › profile-recovery.story.spec.ts:221:1 › Retry a pending identity command without duplicate effects or draft loss
+  [short] › profile-recovery.story.spec.ts:435:1 › Restore entry focus after keyboard learning and identity editing
+  [short] › receipt-recovery.story.spec.ts:52:1 › A mismatched receipt preserves the identity draft until a fresh acknowledged save
+  [short] › receipt-recovery.story.spec.ts:209:1 › A mismatched campaign receipt preserves the proposed galaxy for a fresh creation
+  [short] › research-lab.story.spec.ts:7:1 › Research lab preserves selection through pending, recovery, scheduling and application
+  [short] › return-briefing.story.spec.ts:31:1 › Live return briefing recovers authorized activity and saves only the reviewed private period
+  [short] › selected-history.story.spec.ts:41:1 › Selected history reaches only a consenting commander and survives reload
+  [short] › session-recovery.story.spec.ts:24:3 › Two devices recover a cancelled sign-out without losing saved identity
+  [short] › session-recovery.story.spec.ts:24:3 › Two devices recover an interrupted sign-out without losing saved identity
+  [short] › sharing-lab.story.spec.ts:7:1 › Sharing lab preserves selected-history consent and disclosure across motion modes
+Total: 180 tests in 33 files

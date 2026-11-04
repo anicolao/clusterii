@@ -10,6 +10,7 @@ import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 import { creditStoryPrefix } from "./story-helpers/credit-clock.mjs";
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -342,7 +343,21 @@ for (const interrupted of [false, true])
             expect((await canonical()).trades!.offers).toEqual([]);
           },
         },
-        verifications: checks(),
+        verifications: [
+          ...checks(),
+          {
+            spec: "The focused requested-credit input and its complete outline remain inside every clipping ancestor.",
+            check: async () => {
+              await expect(
+                panel(sender).getByLabel("Credits you request"),
+              ).toBeFocused();
+              await sender.evaluate(assertScreenFit, {
+                surface: "game" as const,
+                focusedControl: true,
+              });
+            },
+          },
+        ],
         views: [
           { ...view(0), primary: [button(sender, "Share credit offer")] },
           view(1),
@@ -371,25 +386,25 @@ for (const interrupted of [false, true])
             check: async () => {
               await expect.poll(() => writes.length).toBeGreaterThanOrEqual(1);
               await expect(ack(sender)).toBeFocused();
-              await expect(
-                button(sender, "Awaiting acknowledgement…"),
-              ).toBeDisabled();
+              await expect(button(sender, "Awaiting receipt")).toBeDisabled();
               expect(
-                await button(sender, "Awaiting acknowledgement…").evaluate(
-                  (element) => {
-                    const bounds = element.getBoundingClientRect();
-                    const range = document.createRange();
-                    range.selectNodeContents(element);
-                    return [...range.getClientRects()].every(
+                await button(sender, "Awaiting receipt").evaluate((element) => {
+                  const bounds = element.getBoundingClientRect();
+                  const range = document.createRange();
+                  range.selectNodeContents(element);
+                  const lines = [...range.getClientRects()];
+                  return (
+                    lines.length === 1 &&
+                    lines.every(
                       (rect) =>
                         rect.left >= bounds.left &&
                         rect.right <= bounds.right &&
                         rect.top >= bounds.top &&
                         rect.bottom <= bounds.bottom,
-                    );
-                  },
-                ),
-                "Pending commitment lettering stays inside its button",
+                    )
+                  );
+                }),
+                "Pending receipt label stays on one readable line inside its button",
               ).toBe(true);
             },
           },
@@ -423,25 +438,25 @@ for (const interrupted of [false, true])
               await expect(
                 panel(sender).getByLabel("Credits you request"),
               ).toHaveValue("2.002");
-              await expect(
-                button(sender, "Awaiting acknowledgement…"),
-              ).toBeDisabled();
+              await expect(button(sender, "Awaiting receipt")).toBeDisabled();
               expect(
-                await button(sender, "Awaiting acknowledgement…").evaluate(
-                  (element) => {
-                    const bounds = element.getBoundingClientRect();
-                    const range = document.createRange();
-                    range.selectNodeContents(element);
-                    return [...range.getClientRects()].every(
+                await button(sender, "Awaiting receipt").evaluate((element) => {
+                  const bounds = element.getBoundingClientRect();
+                  const range = document.createRange();
+                  range.selectNodeContents(element);
+                  const lines = [...range.getClientRects()];
+                  return (
+                    lines.length === 1 &&
+                    lines.every(
                       (rect) =>
                         rect.left >= bounds.left &&
                         rect.right <= bounds.right &&
                         rect.top >= bounds.top &&
                         rect.bottom <= bounds.bottom,
-                    );
-                  },
-                ),
-                "Pending commitment lettering stays inside its button",
+                    )
+                  );
+                }),
+                "Pending receipt label stays on one readable line inside its button",
               ).toBe(true);
               await expect.poll(() => writes.length).toBeGreaterThanOrEqual(2);
               await readTarget(

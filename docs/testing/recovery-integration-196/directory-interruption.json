@@ -1,0 +1,18 @@
+{
+  "source": "5ea359c8",
+  "status": "interrupted-disk-gate",
+  "freeKiBAtPreflight": 7776844,
+  "freeKiBAtShutdownRequest": 1951784,
+  "freeKiBAfterShutdown": 226480,
+  "timingEvents": 110,
+  "lastEvent": {
+    "at": 5497.242208,
+    "event": "event-loop",
+    "span": 2,
+    "samples": 0,
+    "maxMs": 0,
+    "meanMs": 0
+  },
+  "denseExecuted": false,
+  "comparisonConclusion": false
+}

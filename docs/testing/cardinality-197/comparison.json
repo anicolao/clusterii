@@ -1,0 +1,34 @@
+{
+  "scope": "Real development directory cardinality; local service only",
+  "budget": {
+    "totalMs": 180000,
+    "batchMs": 30000,
+    "ticks": 200,
+    "additionalCampaigns": 32
+  },
+  "phases": [
+    {
+      "label": "sparse",
+      "cardinality": 1,
+      "ticks": 100,
+      "elapsedMs": 1956.4033750000003,
+      "deliveries": 107,
+      "revision": 106,
+      "authorizedDelivery": true,
+      "foreignReadDenied": true,
+      "repeatUnchanged": true
+    },
+    {
+      "label": "dense",
+      "cardinality": 33,
+      "ticks": 100,
+      "elapsedMs": 1685.5704160000005,
+      "deliveries": 239,
+      "revision": 206,
+      "authorizedDelivery": true,
+      "foreignReadDenied": true,
+      "repeatUnchanged": true
+    }
+  ],
+  "status": "complete"
+}

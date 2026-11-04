@@ -1,0 +1,27 @@
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.622833ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (4.614959ms)
+✔ actual request CLI records exact checkout and refuses a second attempt (255.565083ms)
+✔ exact complete family, no whole-suite or filter fallback (0.516ms)
+✔ all sizes and exact clean source required; failed partials never eligible (0.231125ms)
+✔ orchestration preserves setup/test exit and rejects invalid output (0.217667ms)
+✔ entry permits exactly the frozen feature010 phone verification (0.947209ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (31.961ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.104291ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.238167ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.136041ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (13.2245ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 323.469958
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 57 files in 15ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!

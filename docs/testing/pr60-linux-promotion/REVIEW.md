@@ -1,0 +1,13 @@
+# Independently approved complete cargo Linux references
+
+Reviewer inspected all29 distinct changed/new originals covering41 files (including reopening the final2 after truncated output). Other87 originals exactly match prior independently inspected hashes. All128 references approved; exact paths/hashes/dispositions in hashes.json and independent source index /tmp/cluster-pr60-linux-new-review.json. Approval is scoped regression evidence, not full design/release acceptance; large images were displayed scaled.
+
+Run40162646504, artifact12587925653: full289629708 bytes/SHA2568a7c11e562621046f8403e2c3a90084fe4112cb309e5789ccf9e543a50f3562a and all ZIP CRC/path checks passed. Original archive and128 originals retained /tmp/cluster-pr60-linux-corrected. Four passed complete journeys,32 images per size. No failed verification output substituted.
+
+## Source/renderer and dirty evidence
+
+Requested targetdf86305fa1532e5f3b75d2a28fee9d38037e903b, source3483482fdafd30b3b51dcce58eb05bcc681b5b55, executore5f47ff55fc3637ec1c1d61b78b064a971a4f373. Git comparisons show unchanged production/assets/functions, cargo story/helpers, dependencies/lockfiles, Playwright/Svelte/Vite configuration and pinned Nix derivation between target, executor and currentd394a454. Current-head additions are reviewed inherited cancellation references/provenance/history. Generation-only nine-file delta retained: guarded branch request/workflow/scripts, exact outer/inner recovery dispatch and continuation logs. No required application/strict checks changed.
+
+The validator fails on dirty checkout, then writes unignored ci-evidence/recovery-request files before rendering; renderer emits additional unignored ci-evidence/nix-renderer outputs. This explains source.dirty:true without rewriting manifests or asserting unavailable post-run Git status. Frozen-lockfile installs/Svelte sync/Functions compilation only prepare existing source; runner does not mutate production/test source. Spec8b2200676367654b4bd6cda9185999ac29e27a9aca3539a2987a61adf8aed276 and exact executor match every manifest. Pinned Linux ARM Playwright image824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321, browser149.0.7827.0, fonts/args unchanged. Reduced-motion evidence only.
+
+Named accepted/reload views deliberately scroll the bounded manifest; preceding headings or secondary prose can lie outside that reading position. Accepted facts, footer acknowledgement and primary action state remain readable in reviewed originals. No new unsupported facts, changed thresholds or assertion relaxation. Promote via unchanged reviewed-baseline tool; strict integrated comparison remains required. Carry exact references normally through61/62, preserving their generation requests and source attribution.

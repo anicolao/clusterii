@@ -1,0 +1,56 @@
+{
+  "artifact": {
+    "id": 12625144036,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYyNTE0NDAzNg==",
+    "name": "history-strict-history-short-bc19c059119f23c20f96ea3658affdb4d8605beb-1",
+    "size_in_bytes": 7545699,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12625144036",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12625144036/zip",
+    "expired": false,
+    "digest": "sha256:dd779f402224fbed2b3ea19871613cb4e160cfa994e0a69c300655e12f8bb518",
+    "created_at": "2026-10-26T03:24:38Z",
+    "updated_at": "2026-10-26T03:24:38Z",
+    "expires_at": "2026-11-25T03:24:37Z",
+    "workflow_run": {
+      "id": 40262969648,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr71-history-strict",
+      "head_sha": "bc19c059119f23c20f96ea3658affdb4d8605beb"
+    }
+  },
+  "executor": {
+    "requestId": "history-strict-20261026-01",
+    "sourceCommit": "0a0392b2a52c083f1bcdf78c7d4f1160806fb5dc",
+    "executorCommit": "bc19c059119f23c20f96ea3658affdb4d8605beb",
+    "case": "history-strict",
+    "mode": "verify",
+    "target": "f5cfe1b0c83d8f9d8475fe498671c499d5467a73",
+    "runId": "40262969648",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "6de45f638d9990d25f4c4a65cdd89e403290f342",
+    "specs": {
+      "history": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "bd527340dc0ce81ebd17d12de30953fbb9323c4b5b16aee7a25b0836373c52c5",
+        "views": 25
+      }
+    },
+    "requestSha256": "9b7a0aa892dfcc78132eef115b918f69c620d9a28d3c8bec36fa761ba0429062"
+  },
+  "outcome": {
+    "family": "history",
+    "viewport": "short",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "verify",
+    "views": 25
+  },
+  "exactApprovedCaptures": 25
+}

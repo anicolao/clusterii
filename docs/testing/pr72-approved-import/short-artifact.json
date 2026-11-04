@@ -1,0 +1,55 @@
+{
+  "artifact": {
+    "id": 12626547340,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYyNjU0NzM0MA==",
+    "name": "draft-candidates-draft-short-3fed71ab7302795aae2f4086e958f8da860cf2ab-1",
+    "size_in_bytes": 10004775,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12626547340",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12626547340/zip",
+    "expired": false,
+    "digest": "sha256:e29e7af6ef4bf6f60591a477606e289c8901aedd9d041bc893ae03a45f4d11b3",
+    "created_at": "2026-10-26T03:52:29Z",
+    "updated_at": "2026-10-26T03:52:29Z",
+    "expires_at": "2026-11-25T03:52:28Z",
+    "workflow_run": {
+      "id": 40264675463,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr72-draft-candidates",
+      "head_sha": "3fed71ab7302795aae2f4086e958f8da860cf2ab"
+    }
+  },
+  "executor": {
+    "requestId": "draft-candidates-20261026-01",
+    "sourceCommit": "eb6960590a836dc394c5508dfe2c06dfc51f3b1e",
+    "executorCommit": "3fed71ab7302795aae2f4086e958f8da860cf2ab",
+    "case": "draft-candidates",
+    "mode": "generate",
+    "target": "4a8264453ad62788c454fe3f2b8e20829e3c804f",
+    "runId": "40264675463",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "6de45f638d9990d25f4c4a65cdd89e403290f342",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "9377847e19003504479cfe214115af7b1946a0ab536248839aa15a75a586e639",
+        "views": 34
+      }
+    },
+    "requestSha256": "670c0683d8106c60b2c0cc74796fe2d67ae223b5de17b68cd5815d802f80e878"
+  },
+  "outcome": {
+    "family": "draft",
+    "viewport": "short",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "generate",
+    "views": 34
+  }
+}

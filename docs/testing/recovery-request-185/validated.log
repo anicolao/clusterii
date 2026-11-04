@@ -1,0 +1,36 @@
+scripts/recovery-request.mjs 28ms
+scripts/check-recovery-request.test.mjs 11ms
+✔ request binds one source/checkout/case and rejects reruns or code mixed with request (0.5935ms)
+✔ parsed workflow is branch-and-request-only, least privilege and failure-retaining (5.073666ms)
+✖ actual request CLI records exact checkout and refuses a second attempt (161.584875ms)
+✔ entry permits exactly the frozen feature010 phone verification (1.262083ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (36.365333ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.134541ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.451ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.151667ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (14.763375ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 8
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 240.330583
+
+✖ failing tests:
+
+test at scripts/check-recovery-request.test.mjs:121:1
+✖ actual request CLI records exact checkout and refuses a second attempt (161.584875ms)
+  SyntaxError: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/check-recovery-request.test.mjs:150:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)

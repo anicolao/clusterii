@@ -1,0 +1,33 @@
+{
+  "requestId": "navigation-strict-20261025-01",
+  "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+  "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+  "case": "scene-strict",
+  "mode": "verify",
+  "target": "ef600330c78981b56b121e807f602933caafb8a7",
+  "runId": "40244192975",
+  "attempt": 1,
+  "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+  "specs": {
+    "observation": {
+      "file": "tests/browser/observations.story.spec.ts",
+      "title": "Live stellar observations retain private current and historical facts after reload",
+      "story": "live-stellar-observations",
+      "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+      "views": 18
+    },
+    "chart": {
+      "file": "tests/browser/campaign-navigation.story.spec.ts",
+      "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+      "story": "campaign-chart-navigation",
+      "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+      "views": {
+        "phone": 8,
+        "desktop": 7,
+        "large": 7,
+        "short": 7
+      }
+    }
+  },
+  "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+}

@@ -1,4 +1,8 @@
-import { openGalaxyCommand, selectedSystemName } from "./galaxy-navigation";
+import {
+  openGalaxyCommand,
+  selectedSystemName,
+  expectReadingPanelLabelClearance,
+} from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
@@ -90,7 +94,19 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
   const keyboard = async (page: Page, name: string) => {
     if (name === "Systems list" || name === "Economy")
       return openGalaxyCommand(page, name, true);
+    if (name === "Menu") {
+      const more = button(page, "More");
+      if (
+        (await more.isVisible()) &&
+        (await more.getAttribute("aria-expanded")) === "true"
+      ) {
+        await more.focus();
+        await page.keyboard.press("Escape");
+        await expect(more).toHaveAttribute("aria-expanded", "false");
+      }
+    }
     await button(page, name).focus();
+    await expect(button(page, name)).toBeFocused();
     await page.keyboard.press("Enter");
   };
   const openFocus = async (page: Page) => {
@@ -201,6 +217,13 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       page: owner,
       player: aliases[0],
       surface: "game" as const,
+      verifications: [
+        {
+          spec: "The Market reader does not cut through visible chart names; the selected name remains visible beside the reader on wider charts.",
+          check: () =>
+            expectReadingPanelLabelClearance(owner, ".economy-panel"),
+        },
+      ],
     };
     const peerView = {
       page: peer,
@@ -215,12 +238,13 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
         )
         .allTextContents();
     let originalLabels: string[] = [];
+    let expectedMarketFocus = initial.economy!.marketFocus;
     const noOrder = {
       spec: "Local reading and unsent edits leave owner receipt IDs and confirmed market allocations unchanged; this is not foreign-read denial or privacy acceptance.",
       check: async () => {
         expect(await receipts(uid)).toEqual(beforeReceipts);
         expect((await canonical()).economy!.marketFocus).toEqual(
-          initial.economy!.marketFocus,
+          expectedMarketFocus,
         );
         expect(errors).toEqual([]);
       },
@@ -291,14 +315,17 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
             .filter({ hasText: "Lower galaxy detail is on." }),
         ).toBeVisible();
         await keyboard(owner, "Rules");
-        await dialog.locator("summary").focus();
+        await dialog.getByText("Market focus rules", { exact: true }).focus();
         await owner.keyboard.press("Enter");
       },
       acknowledgement: {
         spec: "The single shared Rules dialog acknowledges the local preference and displays proposed-policy disclosure.",
         check: async () => {
           await expect(owner.locator("dialog[open]")).toHaveCount(1);
-          await expect(dialog.locator("details")).toHaveAttribute("open", "");
+          await expect(dialog.locator("details.market-rules")).toHaveAttribute(
+            "open",
+            "",
+          );
           await expect(dialog).toContainText(
             "Market dividend rules remain under review.",
           );
@@ -342,6 +369,17 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       },
     );
     const settled = await canonical();
+    // Settlement records an empty applied-order history even when nobody sends
+    // a focus command. Assert that exact schema transition and unchanged facts.
+    expect(settled.economy!.marketFocus).toEqual(
+      Object.fromEntries(
+        Object.entries(initial.economy!.marketFocus!).map(([seat, focus]) => [
+          seat,
+          { ...focus, appliedOrders: [] },
+        ]),
+      ),
+    );
+    expectedMarketFocus = settled.economy!.marketFocus;
     await story.step("acknowledge-while-reading", {
       actor: aliases[1],
       description:
@@ -356,7 +394,9 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
             peer.getByText("Confirmed tick 1", { exact: true }),
           ).toBeVisible();
           await expect(dialog).toBeVisible();
-          await expect(dialog.locator("summary")).toBeFocused();
+          await expect(
+            dialog.getByText("Market focus rules", { exact: true }),
+          ).toBeFocused();
         },
       },
       verifications: [

@@ -1,0 +1,970 @@
+{
+  "root": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104",
+  "mode": "local generation; no Linux promotion",
+  "sourceDirty": true,
+  "specSha256": "96f37162da5695295ea5aedb2b3358afe57c660714e4c6bd91006de972156ef2",
+  "viewports": {
+    "desktop": {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/story.json",
+      "sha256": "6c5957364a2518572309c7dfa1a147441b35b9de0e383eaa098fdd5f1569077d",
+      "source": {
+        "commit": "c7a1d49cd3ff7b30dc2ce0d790323cc0b797240e",
+        "dirty": true,
+        "spec": "tests/browser/research-orders.story.spec.ts",
+        "specSha256": "96f37162da5695295ea5aedb2b3358afe57c660714e4c6bd91006de972156ef2"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 29
+    },
+    "large": {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/story.json",
+      "sha256": "f08edc62626813b22128b6af62fbdd5393fd7b9590133738c52e4a2a7cd5f110",
+      "source": {
+        "commit": "c7a1d49cd3ff7b30dc2ce0d790323cc0b797240e",
+        "dirty": true,
+        "spec": "tests/browser/research-orders.story.spec.ts",
+        "specSha256": "96f37162da5695295ea5aedb2b3358afe57c660714e4c6bd91006de972156ef2"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 29
+    },
+    "phone": {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/story.json",
+      "sha256": "f22e44a1ffff88f6cd47d686757701c3cb3c9e945dba51ce271de5ed66294757",
+      "source": {
+        "commit": "c7a1d49cd3ff7b30dc2ce0d790323cc0b797240e",
+        "dirty": true,
+        "spec": "tests/browser/research-orders.story.spec.ts",
+        "specSha256": "96f37162da5695295ea5aedb2b3358afe57c660714e4c6bd91006de972156ef2"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 29
+    },
+    "short": {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/story.json",
+      "sha256": "45a17e9c63dbbb0fe92e26d1f67befdce29e7e7f176f97264d0f3c6b0ab0e172",
+      "source": {
+        "commit": "c7a1d49cd3ff7b30dc2ce0d790323cc0b797240e",
+        "dirty": true,
+        "spec": "tests/browser/research-orders.story.spec.ts",
+        "specSha256": "96f37162da5695295ea5aedb2b3358afe57c660714e4c6bd91006de972156ef2"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "views": 29
+    }
+  },
+  "images": [
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/010-choose-without-sending-1-market-envoy.png",
+      "sha256": "743819ad9ed33d2074dc3ada59f57004440d4c78dfdb8605b0a8e2d4580e998f",
+      "previousLocalSha256": "743819ad9ed33d2074dc3ada59f57004440d4c78dfdb8605b0a8e2d4580e998f",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/010-choose-without-sending-2-independent-investor.png",
+      "sha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "previousLocalSha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "sha256": "a6881ebd37762b33fe2626bbec7f1decdc1b09873e3d53211bd36785de850996",
+      "previousLocalSha256": "a6881ebd37762b33fe2626bbec7f1decdc1b09873e3d53211bd36785de850996",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "sha256": "89a47a04a0672c6668467ab873067b0790b761392f51b29f51815c88403d0418",
+      "previousLocalSha256": "89a47a04a0672c6668467ab873067b0790b761392f51b29f51815c88403d0418",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "sha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "previousLocalSha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "sha256": "cb52d385076f30bff7dac994193264f1670768b03873863d8c9175cdf835af50",
+      "previousLocalSha256": "cb52d385076f30bff7dac994193264f1670768b03873863d8c9175cdf835af50",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/014-queue-investing-1-market-envoy.png",
+      "sha256": "aba6aaa27c69ad29ce79d76d23327c0e0e324302f49f5310999f91dc5a985bbf",
+      "previousLocalSha256": "aba6aaa27c69ad29ce79d76d23327c0e0e324302f49f5310999f91dc5a985bbf",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/014-queue-investing-2-independent-investor.png",
+      "sha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "previousLocalSha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "sha256": "ceb91b14c1aff59c888c226f68bac4538c73401a9f820a6b5c55a8caf135660a",
+      "previousLocalSha256": "ceb91b14c1aff59c888c226f68bac4538c73401a9f820a6b5c55a8caf135660a",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "sha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "previousLocalSha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "sha256": "ef6c6be5b62e06ca7ae5379111488a37ab04a6a13535f57d137878636bba02f7",
+      "previousLocalSha256": "ef6c6be5b62e06ca7ae5379111488a37ab04a6a13535f57d137878636bba02f7",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "sha256": "3bfb7a40d998bd434a32d5ee27b66f404f1845e2c9e0967b7c5ef2b7b5eaa06d",
+      "previousLocalSha256": "3bfb7a40d998bd434a32d5ee27b66f404f1845e2c9e0967b7c5ef2b7b5eaa06d",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "sha256": "b38e93dcd11d2323583e88ee3f9f90aff3ddea0cf62a0b9e7fcef52750c78cbc",
+      "previousLocalSha256": "b38e93dcd11d2323583e88ee3f9f90aff3ddea0cf62a0b9e7fcef52750c78cbc",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "sha256": "53240853310bb3102c4409f0669608a54c6b4529a0edeffe805aa27a52a3bae1",
+      "previousLocalSha256": "53240853310bb3102c4409f0669608a54c6b4529a0edeffe805aa27a52a3bae1",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "sha256": "efa5d5b8f40c634b2e2976ee267d3602f79744855e93850f1744921569acc7fc",
+      "previousLocalSha256": "efa5d5b8f40c634b2e2976ee267d3602f79744855e93850f1744921569acc7fc",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/024-switch-current-device-1-market-envoy.png",
+      "sha256": "26022430d0cbe7b67827ffa7b4aa7cb646706d760f44723ff4f262ad9d3fc974",
+      "previousLocalSha256": "26022430d0cbe7b67827ffa7b4aa7cb646706d760f44723ff4f262ad9d3fc974",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/024-switch-current-device-2-independent-investor.png",
+      "sha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "previousLocalSha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "sha256": "9f72a8e783b2042cf6bd0e49369051945d74b5112bdd4efb308ba60f1222d14f",
+      "previousLocalSha256": "9f72a8e783b2042cf6bd0e49369051945d74b5112bdd4efb308ba60f1222d14f",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "sha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "previousLocalSha256": "2bb18273d8c4eed815e4d9a3add32af2efb08f168e7947513d6a79251fe33927",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "5c9624aecb95138ad74a5a063f02d0fa0e2ff5dc3858c5e7462792f4dfd0f59b",
+      "previousLocalSha256": "5c9624aecb95138ad74a5a063f02d0fa0e2ff5dc3858c5e7462792f4dfd0f59b",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "5e8aacd54339e8d2f0077e41ac3a552aaaae4cdabfd133aa3fbc282069b7a687",
+      "previousLocalSha256": "5e8aacd54339e8d2f0077e41ac3a552aaaae4cdabfd133aa3fbc282069b7a687",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "sha256": "a089a417a91047f723f93694078512c74ef4e9c54a590d17e9801916c462c735",
+      "previousLocalSha256": "a089a417a91047f723f93694078512c74ef4e9c54a590d17e9801916c462c735",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "sha256": "b18b50fbfb79a593653877043c7de80971495c97960536e9713ba1bd23c08c46",
+      "previousLocalSha256": "b18b50fbfb79a593653877043c7de80971495c97960536e9713ba1bd23c08c46",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "sha256": "13120f7d8bd330a04134f953729d81ec380de156908b4ad6fbe5a779ad0375dc",
+      "previousLocalSha256": "13120f7d8bd330a04134f953729d81ec380de156908b4ad6fbe5a779ad0375dc",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "sha256": "f1e73bb31ce719c986e133f2932b4898f0e29acee965a7f2323853255c7d1b55",
+      "previousLocalSha256": "f1e73bb31ce719c986e133f2932b4898f0e29acee965a7f2323853255c7d1b55",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "sha256": "dd2103af5456ec3579b73da205e1064ae92bd34533a95351edf597da0a162071",
+      "previousLocalSha256": "dd2103af5456ec3579b73da205e1064ae92bd34533a95351edf597da0a162071",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "sha256": "62a2426b6f8204f358056acc8479139ef6573fea0b33c58803f06bf3fadc6c10",
+      "previousLocalSha256": "62a2426b6f8204f358056acc8479139ef6573fea0b33c58803f06bf3fadc6c10",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "sha256": "8a3db907d98d300a34b0d5d5234dbfae9f0a32198a2837a40ade7ddc59a32124",
+      "previousLocalSha256": "8a3db907d98d300a34b0d5d5234dbfae9f0a32198a2837a40ade7ddc59a32124",
+      "unchanged": true
+    },
+    {
+      "viewport": "desktop",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/desktop/darwin-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "sha256": "442b11d6c782663b53c721d92704828fd8bf26d5d886310c2a2364e3a4edd139",
+      "previousLocalSha256": "442b11d6c782663b53c721d92704828fd8bf26d5d886310c2a2364e3a4edd139",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/010-choose-without-sending-1-market-envoy.png",
+      "sha256": "ac28fbb6172f848e0ab6cfd908d7fbdc18e3e80912067043196a46e406994aa9",
+      "previousLocalSha256": "ac28fbb6172f848e0ab6cfd908d7fbdc18e3e80912067043196a46e406994aa9",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/010-choose-without-sending-2-independent-investor.png",
+      "sha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "previousLocalSha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "sha256": "ac28fbb6172f848e0ab6cfd908d7fbdc18e3e80912067043196a46e406994aa9",
+      "previousLocalSha256": "ac28fbb6172f848e0ab6cfd908d7fbdc18e3e80912067043196a46e406994aa9",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "sha256": "e6e399aa32121123963013cd05ad1e2546d4c9bf455407ff1098b3e11240a3dc",
+      "previousLocalSha256": "e6e399aa32121123963013cd05ad1e2546d4c9bf455407ff1098b3e11240a3dc",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "sha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "previousLocalSha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "sha256": "bbbe124d6674e4e48be25095998efd84defc38b640dbbd46a6a9e7c0950437c6",
+      "previousLocalSha256": "bbbe124d6674e4e48be25095998efd84defc38b640dbbd46a6a9e7c0950437c6",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/014-queue-investing-1-market-envoy.png",
+      "sha256": "0766952402910f01b11227a0ad99988d447d074b44ba3de2023fbccbf0cc1e4e",
+      "previousLocalSha256": "0766952402910f01b11227a0ad99988d447d074b44ba3de2023fbccbf0cc1e4e",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/014-queue-investing-2-independent-investor.png",
+      "sha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "previousLocalSha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "sha256": "f98000f88d61a88f66f4b776d227adbf02cf4fc135de59282b132c381ed3c412",
+      "previousLocalSha256": "f98000f88d61a88f66f4b776d227adbf02cf4fc135de59282b132c381ed3c412",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "sha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "previousLocalSha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "sha256": "c61998c8bbdb2aec3e7ba5328c0c6b745e5e0e770e1416b825e7cf00d4b67e1f",
+      "previousLocalSha256": "c61998c8bbdb2aec3e7ba5328c0c6b745e5e0e770e1416b825e7cf00d4b67e1f",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "sha256": "6484d84114d516dbb2948aa4ef6c282cf05f1d4b9ab8108c2b125707f8b9bd47",
+      "previousLocalSha256": "6484d84114d516dbb2948aa4ef6c282cf05f1d4b9ab8108c2b125707f8b9bd47",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "sha256": "cad0588ae34b84ddd6c21f98ce6a7404b853dcab589a6591c9f5ac825bfdf511",
+      "previousLocalSha256": "cad0588ae34b84ddd6c21f98ce6a7404b853dcab589a6591c9f5ac825bfdf511",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "sha256": "a010344a46e95a8bbcae26bf1fa6d6f33d28c8419c0938783de001798f328ec4",
+      "previousLocalSha256": "a010344a46e95a8bbcae26bf1fa6d6f33d28c8419c0938783de001798f328ec4",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "sha256": "ef3a9356b75b0051182331cf4ddd712665f39e966fa6919e24f2d38937ba483c",
+      "previousLocalSha256": "ef3a9356b75b0051182331cf4ddd712665f39e966fa6919e24f2d38937ba483c",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/024-switch-current-device-1-market-envoy.png",
+      "sha256": "e7c89293b8ca1c81ae5bbbdbad8c7efa20b60357026e25ac9ed6468fd2b7c199",
+      "previousLocalSha256": "e7c89293b8ca1c81ae5bbbdbad8c7efa20b60357026e25ac9ed6468fd2b7c199",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/024-switch-current-device-2-independent-investor.png",
+      "sha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "previousLocalSha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "sha256": "d57b7459503586b9cb4415084c1cbd0c827a7bd46f4f3df2337b126bf0321201",
+      "previousLocalSha256": "d57b7459503586b9cb4415084c1cbd0c827a7bd46f4f3df2337b126bf0321201",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "sha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "previousLocalSha256": "7b5ecdacf85a29946c44627704eb67ac410c829d70df424a36681c97cf634641",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "3ea4aa546d66d1c6cddbb04d043b8a73039f008e676ce9dbca12ae9d22136518",
+      "previousLocalSha256": "3ea4aa546d66d1c6cddbb04d043b8a73039f008e676ce9dbca12ae9d22136518",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "611bd2156e85101b22a3eecea8828dc8efc8bfd5b3988bdd61cfd25f2564a780",
+      "previousLocalSha256": "611bd2156e85101b22a3eecea8828dc8efc8bfd5b3988bdd61cfd25f2564a780",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "sha256": "a464b6e1cacb4e170904ecd5c34a549a3c95e5844dfeb42a791ede92245bca71",
+      "previousLocalSha256": "a464b6e1cacb4e170904ecd5c34a549a3c95e5844dfeb42a791ede92245bca71",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "sha256": "c4bf992c7699f20588b3a272d454c35120dd8ba868801437be831d27973bb532",
+      "previousLocalSha256": "c4bf992c7699f20588b3a272d454c35120dd8ba868801437be831d27973bb532",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "sha256": "01885d719136a24100ce228b73872a669678f7cedb96310db3e6397046a7244c",
+      "previousLocalSha256": "01885d719136a24100ce228b73872a669678f7cedb96310db3e6397046a7244c",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "sha256": "b0f132a488839e603852079a476573c42eb4a98a03341f8c40f6c758c1499bd5",
+      "previousLocalSha256": "b0f132a488839e603852079a476573c42eb4a98a03341f8c40f6c758c1499bd5",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "sha256": "7683b322d5bd69da63946ef314b213b32ac6c8a68498030077be213862c6924b",
+      "previousLocalSha256": "7683b322d5bd69da63946ef314b213b32ac6c8a68498030077be213862c6924b",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "sha256": "cd7ee9457ce58bf19657bee4a98d1fd9af43c16d49023e21547f5eddcbc3aff6",
+      "previousLocalSha256": "cd7ee9457ce58bf19657bee4a98d1fd9af43c16d49023e21547f5eddcbc3aff6",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "sha256": "b28efedc9c5f72ab8439ea104cb51d23034dffe576bd98c2dbbf1ab16a72f9fb",
+      "previousLocalSha256": "b28efedc9c5f72ab8439ea104cb51d23034dffe576bd98c2dbbf1ab16a72f9fb",
+      "unchanged": true
+    },
+    {
+      "viewport": "large",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/large/darwin-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "sha256": "1c196783e3103a3959541757e4254ee71f1a5bf4ea02b91c384f098426b579f5",
+      "previousLocalSha256": "1c196783e3103a3959541757e4254ee71f1a5bf4ea02b91c384f098426b579f5",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/010-choose-without-sending-1-market-envoy.png",
+      "sha256": "c34cef6c8354ff315f599cfd8fee71df81cdc9efca8a71be48826114f5080215",
+      "previousLocalSha256": "c34cef6c8354ff315f599cfd8fee71df81cdc9efca8a71be48826114f5080215",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/010-choose-without-sending-2-independent-investor.png",
+      "sha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "previousLocalSha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "sha256": "81bd0ecfd1d40cee75283c090c23a44b66cbb88bcd15652c6ac6305ca027407e",
+      "previousLocalSha256": "81bd0ecfd1d40cee75283c090c23a44b66cbb88bcd15652c6ac6305ca027407e",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "sha256": "d87acc349db466f44e064733e6cfb28c4a5377a6dfa249499eb06433ba82af99",
+      "previousLocalSha256": "d87acc349db466f44e064733e6cfb28c4a5377a6dfa249499eb06433ba82af99",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "sha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "previousLocalSha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "sha256": "c4982a12ce8e188cd514160bd5b7f861f70bbade80c868653dab14d8f075d4f7",
+      "previousLocalSha256": "c4982a12ce8e188cd514160bd5b7f861f70bbade80c868653dab14d8f075d4f7",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/014-queue-investing-1-market-envoy.png",
+      "sha256": "8cc1a9c36ae00215ee67fa1f301a3792e65a8fc53f08fd1bd8efebf5a59fff4d",
+      "previousLocalSha256": "8cc1a9c36ae00215ee67fa1f301a3792e65a8fc53f08fd1bd8efebf5a59fff4d",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/014-queue-investing-2-independent-investor.png",
+      "sha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "previousLocalSha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "sha256": "ac6add24455b40bd3693544c3df1fc8a9fc0227e902232aa6430799611b646ba",
+      "previousLocalSha256": "ac6add24455b40bd3693544c3df1fc8a9fc0227e902232aa6430799611b646ba",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "sha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "previousLocalSha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "sha256": "2a18445fe59e5253f97116bc1266d1d20503ba622fe9e93ee309b24f557a75f4",
+      "previousLocalSha256": "2a18445fe59e5253f97116bc1266d1d20503ba622fe9e93ee309b24f557a75f4",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "sha256": "d960dca25e5c21c2a4441c4821c794564ec7b3e646329fb56ac55e6b33ada628",
+      "previousLocalSha256": "d960dca25e5c21c2a4441c4821c794564ec7b3e646329fb56ac55e6b33ada628",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "sha256": "c7cb59cb8fd342478f589d3ffb5bab9ea982519a0fd370ece947017b9a37b487",
+      "previousLocalSha256": "c7cb59cb8fd342478f589d3ffb5bab9ea982519a0fd370ece947017b9a37b487",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "sha256": "4b8255fed7f1c9fe569486213ada32b3e839d020136277c4a7e6b4beb7387933",
+      "previousLocalSha256": "4b8255fed7f1c9fe569486213ada32b3e839d020136277c4a7e6b4beb7387933",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "sha256": "fd693422ee154c5cf4380f1c06bcc2e4d93d0b5ca678e4557da84cfd34b5e96d",
+      "previousLocalSha256": "fd693422ee154c5cf4380f1c06bcc2e4d93d0b5ca678e4557da84cfd34b5e96d",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/024-switch-current-device-1-market-envoy.png",
+      "sha256": "d00ec194d400ead1e1a3653fe8ecc2f1eb70a2dc9f48670e0702b82215289cb0",
+      "previousLocalSha256": "d00ec194d400ead1e1a3653fe8ecc2f1eb70a2dc9f48670e0702b82215289cb0",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/024-switch-current-device-2-independent-investor.png",
+      "sha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "previousLocalSha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "sha256": "31aa187eeded87e2f40cf721c62c26746fbf182300bdaf5425370aacfb31c0f9",
+      "previousLocalSha256": "31aa187eeded87e2f40cf721c62c26746fbf182300bdaf5425370aacfb31c0f9",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "sha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "previousLocalSha256": "18d449cb159d36946adcd1bb716f80e697d652cfcadf3c7b1f2083e58e01f616",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "6ba8195fedfb2134cf054e25de50c4ec52d021bc12f4c21b3eea44e79f5a77fd",
+      "previousLocalSha256": "6ba8195fedfb2134cf054e25de50c4ec52d021bc12f4c21b3eea44e79f5a77fd",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "98d2185257c79743e1ff057300d2e80b6dfa979f02a3af62c734d4f66d8da602",
+      "previousLocalSha256": "98d2185257c79743e1ff057300d2e80b6dfa979f02a3af62c734d4f66d8da602",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "sha256": "586ddda0167ab6773c82ee13162f5d89438c373b23a5836bc13038d463fd88ad",
+      "previousLocalSha256": "586ddda0167ab6773c82ee13162f5d89438c373b23a5836bc13038d463fd88ad",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "sha256": "67038aef2afd4bc8c67ad5e9ce984cf435eee478f57291c7d0511860adcc3dc3",
+      "previousLocalSha256": "67038aef2afd4bc8c67ad5e9ce984cf435eee478f57291c7d0511860adcc3dc3",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "sha256": "0dfe2026c6db40cd0dcf75d40ba1c37a1eb53f01e0bb93e0f09ab4778d5ac294",
+      "previousLocalSha256": "0dfe2026c6db40cd0dcf75d40ba1c37a1eb53f01e0bb93e0f09ab4778d5ac294",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "sha256": "9a0e6c6698f9b1e032bb1a6fc79d32fa9db6a4bb30e1b6425051f971cc1b3f9e",
+      "previousLocalSha256": "9a0e6c6698f9b1e032bb1a6fc79d32fa9db6a4bb30e1b6425051f971cc1b3f9e",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "sha256": "558a4ca946bbb6d8e5b2bff0cde07abdef8adc41fd2809ff423ef77a07639dec",
+      "previousLocalSha256": "558a4ca946bbb6d8e5b2bff0cde07abdef8adc41fd2809ff423ef77a07639dec",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "sha256": "1b203cf66bebf0d61af57770dd7bf41e98781ae34108b2df3636bb6003804b8a",
+      "previousLocalSha256": "1b203cf66bebf0d61af57770dd7bf41e98781ae34108b2df3636bb6003804b8a",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "sha256": "a82986bc9ea375933ce4bdf114155f6c3f7f70dd44e0b71ed3cd152037dadf69",
+      "previousLocalSha256": "a82986bc9ea375933ce4bdf114155f6c3f7f70dd44e0b71ed3cd152037dadf69",
+      "unchanged": true
+    },
+    {
+      "viewport": "phone",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/phone/darwin-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "sha256": "3a517bf6170b66e184ca2740e3e942b42d366bc8421bbfc6ae69dcbb14307c22",
+      "previousLocalSha256": "3a517bf6170b66e184ca2740e3e942b42d366bc8421bbfc6ae69dcbb14307c22",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/010-choose-without-sending-1-market-envoy.png",
+      "sha256": "966962a10b829bdb0ff6a135b2dd1d6e0456c830d082104f200c71d39b3437e3",
+      "previousLocalSha256": "966962a10b829bdb0ff6a135b2dd1d6e0456c830d082104f200c71d39b3437e3",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/010-choose-without-sending-2-independent-investor.png",
+      "sha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "previousLocalSha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "sha256": "09746dd67751fe5e0cf102c77b20e93d964b9484363aa4e63b4bef425ba47401",
+      "previousLocalSha256": "09746dd67751fe5e0cf102c77b20e93d964b9484363aa4e63b4bef425ba47401",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "sha256": "be4e7e109e7c3b3a40b99769e723ae12eca00850a5e91c867489555b8feef137",
+      "previousLocalSha256": "be4e7e109e7c3b3a40b99769e723ae12eca00850a5e91c867489555b8feef137",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "sha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "previousLocalSha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "sha256": "ad64aee4be1c9dd6b4bc813f1a505fb1b41d2aff2e9c02207474554115b2fd6e",
+      "previousLocalSha256": "ad64aee4be1c9dd6b4bc813f1a505fb1b41d2aff2e9c02207474554115b2fd6e",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/014-queue-investing-1-market-envoy.png",
+      "sha256": "2c037becee4c5cd82f5f4fdb5e0c6a3134dea1eccc1aa007403eff16cc7a6a86",
+      "previousLocalSha256": "2c037becee4c5cd82f5f4fdb5e0c6a3134dea1eccc1aa007403eff16cc7a6a86",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/014-queue-investing-2-independent-investor.png",
+      "sha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "previousLocalSha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "sha256": "572ae8e52e059a9febc2a747d27b0a71534a33bcd54cf67290551201e572e834",
+      "previousLocalSha256": "572ae8e52e059a9febc2a747d27b0a71534a33bcd54cf67290551201e572e834",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "sha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "previousLocalSha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "sha256": "2a767748ec98ea9f92cf68ce52637cd120d8508bd2c58d192a8a8be526b0bea1",
+      "previousLocalSha256": "2a767748ec98ea9f92cf68ce52637cd120d8508bd2c58d192a8a8be526b0bea1",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "sha256": "48ac89f4d2d878a9ad22000d3d5779ef22df4140e2821daec795ef9dc149f3ec",
+      "previousLocalSha256": "48ac89f4d2d878a9ad22000d3d5779ef22df4140e2821daec795ef9dc149f3ec",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "sha256": "4a05d502fa9cfca36d0e09bb9ff3a53b286cfbbdb61ac3232c982ce6ef317e6c",
+      "previousLocalSha256": "4a05d502fa9cfca36d0e09bb9ff3a53b286cfbbdb61ac3232c982ce6ef317e6c",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "sha256": "358171bbdf23e9b051416487326828ab5ba8aa7e1f9c6884d4fcfca2d2fed450",
+      "previousLocalSha256": "358171bbdf23e9b051416487326828ab5ba8aa7e1f9c6884d4fcfca2d2fed450",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "sha256": "f253fef77c5941b301066231464bafabb1cf3b462bfefa5c375fc7f03a396fef",
+      "previousLocalSha256": "f253fef77c5941b301066231464bafabb1cf3b462bfefa5c375fc7f03a396fef",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/024-switch-current-device-1-market-envoy.png",
+      "sha256": "317065e06ea7188e775f61262a8d224ba33860320663cb15dd2d38da9e1c8cd7",
+      "previousLocalSha256": "2724c1155c5f68b2c23135c60947f68d9a6ead6a62beef6738efaadc9aeddbeb",
+      "unchanged": false
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/024-switch-current-device-2-independent-investor.png",
+      "sha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "previousLocalSha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "sha256": "97cbe2057b1ae9aedfc2c8ed9a9c52716a103cafbe5686e476417ebf54fbad8f",
+      "previousLocalSha256": "97cbe2057b1ae9aedfc2c8ed9a9c52716a103cafbe5686e476417ebf54fbad8f",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "sha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "previousLocalSha256": "b250e2aa4515525e781c0e79d89a1290f4bd607307134af83d9654e7a50e4cd4",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "1e7756f253fe1230d06dccb2be236a07f10a100e3b56922572ad9f509c6308e8",
+      "previousLocalSha256": "1e7756f253fe1230d06dccb2be236a07f10a100e3b56922572ad9f509c6308e8",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "f23bc8c6ca35a856eafb596aff9ed6b56b6b2a9862af4e5b61a8ac4b150357ad",
+      "previousLocalSha256": "f23bc8c6ca35a856eafb596aff9ed6b56b6b2a9862af4e5b61a8ac4b150357ad",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "sha256": "52aff45942928479522f84f4b14962261aa14c59f6f1d8d511f696fa8f5bd564",
+      "previousLocalSha256": "52aff45942928479522f84f4b14962261aa14c59f6f1d8d511f696fa8f5bd564",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "sha256": "50a890ae703c9aa7520ec39285fa7354226620d41265f62d34e2d8c8eaf56b38",
+      "previousLocalSha256": "50a890ae703c9aa7520ec39285fa7354226620d41265f62d34e2d8c8eaf56b38",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "sha256": "3a0002b5a8d577fc827d1b84207b5dbb9ff3c95140bce9671b3995bccfea2c50",
+      "previousLocalSha256": "3a0002b5a8d577fc827d1b84207b5dbb9ff3c95140bce9671b3995bccfea2c50",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "sha256": "731b6b23c3733ecc219362db0eb67a260af259515cf1a9ebf19e15ca8b832af8",
+      "previousLocalSha256": "731b6b23c3733ecc219362db0eb67a260af259515cf1a9ebf19e15ca8b832af8",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "sha256": "6a0e801d11ff75c0308f5c3d234cb13d2073130fb487ac8835fe8e935c585d7c",
+      "previousLocalSha256": "6a0e801d11ff75c0308f5c3d234cb13d2073130fb487ac8835fe8e935c585d7c",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "sha256": "6240e0ccf30cc307c3315a61edc41692be1229d7ff6d65b91722d3365786dbc7",
+      "previousLocalSha256": "6240e0ccf30cc307c3315a61edc41692be1229d7ff6d65b91722d3365786dbc7",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "sha256": "c7c9ffa586f93c450b8b151d1d2ef48c88f44fedf2052005defb557338e2acd6",
+      "previousLocalSha256": "c7c9ffa586f93c450b8b151d1d2ef48c88f44fedf2052005defb557338e2acd6",
+      "unchanged": true
+    },
+    {
+      "viewport": "short",
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-reading-local-20261104/live-research-orders/short/darwin-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "sha256": "d849fd35a59bd9e7c811ceef563c9ab427485752c5fdc96e5a63d4771393e813",
+      "previousLocalSha256": "d849fd35a59bd9e7c811ceef563c9ab427485752c5fdc96e5a63d4771393e813",
+      "unchanged": true
+    }
+  ]
+}

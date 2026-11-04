@@ -1,0 +1,11 @@
+# PR62 forward integration
+
+Integrate latest reviewed PR61 e060a1f3d689e6a0db9058b4e4b710be95fb66c6 into existing PR62 ff1d616183df97aaa4fcc71d2e5c59cb32444711, preserving both histories. Parent inherited exact identity rendering/reference corrections, approved credit/construction/formation/reorganization/cancellation references, explicit story-policy exception and Nix renderer/check workflows. The current cancellation88 PNG bytes remain unchanged. No regeneration or approval is inferred for interrupted routes.
+
+PR62 production recovery code remains as reviewed: restore only the matching authorized campaign/fleet, preserve newer or empty local route choices, retain submitted route context when receipt precedes view, clear context for a new command. Merge retained the reviewed SystemFleets descendant feedback margin correction; no semantic conflict. Its route-specific behavior does not relabel cancellation as travel. Required exact comparison and gameplay/privacy/recovery assertions are unchanged.
+
+The existing1224-line recovery story is byte-identical to original ff1d6161; SHA2561005a83d7147e5493216aa7eb977b4fdd8e2bdbcfed4bb7abea432f08eb98d5c. Read current E2E_GUIDE and actual Pantheon tests/e2e/README before considering changes; no test migration/reorganization or new browser assertion was needed for this merge. Existing feature layouts are preserved rather than manufacturing a new duplicate journey.
+
+Nix validation: check0errors/0warnings; illustrated policy passes;54 travel/campaign unit cases with1175 assertions pass. Exact parent prompt guard and preserved histories required before publication. No checker change.
+
+Historical PR62 generation run39708780947 had no generated files/artifacts; successful job is not Linux evidence. Existing160 Darwin captures are not Linux approval. Plan one bounded complete current-source interrupted-route Linux generation,40 images per size, all real ordinary authentication and withheld/replayed transport/private facts unchanged. No partial-success shortcut, baseline update, deadline extension or full-suite duplicate. Review all generated originals before promotion. Preserve earlier53/57/60/61 runs and prioritize their terminal results.

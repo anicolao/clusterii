@@ -1,0 +1,90 @@
+[
+  {
+    "relative": "invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-desktop/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy-actual.png",
+    "actualSha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-desktop/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy-expected.png",
+    "expectedSha256": "ee514c4e698c261ccb98913682967fe23cc6b55f46623609ed4f069aac22c203",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-desktop/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy-diff.png",
+    "diffSha256": "acf9cfc9f5c2d88410e69750dd424c4683445d808f077bb7db715d1283e9190c",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-large/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy-actual.png",
+    "actualSha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-large/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy-expected.png",
+    "expectedSha256": "b1f86413b9f8758e62da7364d0c0913660077cd82f452fe95f08ae522a946ddb",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-large/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy-diff.png",
+    "diffSha256": "8736ec2cea73c58bdcce6f062a68751b8f1f701763289038dcc84bae292c901f",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-phone/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy-actual.png",
+    "actualSha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-phone/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy-expected.png",
+    "expectedSha256": "9098892948a14dad77d4d76f136e7b062d8448d2ef7aa8b0f9e0aa0672a71b99",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-phone/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy-diff.png",
+    "diffSha256": "bb97eda3eca15a3bccfb432071333186b85f183b9b951d4d755b9447f683346b",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-short/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy-actual.png",
+    "actualSha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-short/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy-expected.png",
+    "expectedSha256": "650e8bd1716adf6499828684bf479c2d7102e4e90157ee7e929cf3a66b466bd3",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-A-returni-80318-recovers-inaccessible-links-short/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy-diff.png",
+    "diffSha256": "dbe90052f08335f817b6e644def035585d4c0866892f349321ff7ea9a6b211e4",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-desktop/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy-actual.png",
+    "actualSha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-desktop/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy-expected.png",
+    "expectedSha256": "ee514c4e698c261ccb98913682967fe23cc6b55f46623609ed4f069aac22c203",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-desktop/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy-diff.png",
+    "diffSha256": "acf9cfc9f5c2d88410e69750dd424c4683445d808f077bb7db715d1283e9190c",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-large/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy-actual.png",
+    "actualSha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-large/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy-expected.png",
+    "expectedSha256": "b1f86413b9f8758e62da7364d0c0913660077cd82f452fe95f08ae522a946ddb",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-large/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy-diff.png",
+    "diffSha256": "8736ec2cea73c58bdcce6f062a68751b8f1f701763289038dcc84bae292c901f",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-phone/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy-actual.png",
+    "actualSha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-phone/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy-expected.png",
+    "expectedSha256": "9098892948a14dad77d4d76f136e7b062d8448d2ef7aa8b0f9e0aa0672a71b99",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-phone/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy-diff.png",
+    "diffSha256": "bb97eda3eca15a3bccfb432071333186b85f183b9b951d4d755b9447f683346b",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  },
+  {
+    "relative": "invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "baseline": "tests/browser/story-baselines/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png",
+    "actual": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy-actual.png",
+    "actualSha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+    "expected": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy-expected.png",
+    "expectedSha256": "650e8bd1716adf6499828684bf479c2d7102e4e90157ee7e929cf3a66b466bd3",
+    "diff": "/tmp/cluster-pr62-invitation-failures/test-results/stories/invitation.story-An-invite-497a4-oins-the-preserved-campaign-short/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy-diff.png",
+    "diffSha256": "dbe90052f08335f817b6e644def035585d4c0866892f349321ff7ea9a6b211e4",
+    "disposition": "Reviewer approved exact actual after expected/actual/diff inspection; large downscaled layout/content review."
+  }
+]

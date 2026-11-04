@@ -49,6 +49,7 @@
   } from "$lib/campaign-history";
   import { Canvas } from "@threlte/core";
   import Scene from "./Scene.svelte";
+  import { unobscuredChartCenter, type ChartCenter } from "$lib/galaxy-camera";
   import type { CampaignView } from "@shared/campaign";
   import ChartControls from "./ChartControls.svelte";
   import type { StarClass } from "@shared/rules";
@@ -220,6 +221,27 @@
   }
   let more = $state(false);
   let commandRailHeight = $state(0);
+  let commanderPresenceBottom = $state(0);
+  function measureCommanderPresence(node: HTMLDivElement) {
+    const deck = node.firstElementChild as HTMLElement;
+    const surface = node.closest(".galaxy-surface") as HTMLElement;
+    const measure = () => {
+      commanderPresenceBottom =
+        deck.getBoundingClientRect().bottom -
+        surface.getBoundingClientRect().top;
+    };
+    const observer = new ResizeObserver(measure);
+    observer.observe(deck);
+    observer.observe(node.closest("header") as HTMLElement);
+    window.addEventListener("resize", measure);
+    measure();
+    return {
+      destroy() {
+        observer.disconnect();
+        window.removeEventListener("resize", measure);
+      },
+    };
+  }
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
   let resumedConstruction = "";
@@ -351,7 +373,16 @@
     historySerial++;
     historyLoading = false;
     await tick();
-    document.querySelector<HTMLElement>('[data-focus="history"]')?.focus();
+    const historyControl = document.querySelector<HTMLElement>(
+      '[data-focus="history"]',
+    );
+    // Automatically opened return briefings have no previously open phone tray.
+    // Reveal the real History destination before restoring keyboard focus.
+    if (historyControl && !historyControl.checkVisibility()) {
+      more = true;
+      await tick();
+    }
+    historyControl?.focus();
   }
   async function inspectBriefing(event: BriefingEvent) {
     briefingOpen = false;
@@ -802,7 +833,14 @@
   let roster = $state(false);
   let selected = $state("");
   let stellarClass = $state<StarClass | "all">("all");
-  let cameraRequest = $state({ action: "overview", starId: "", sequence: 0 });
+  let chartElement = $state<HTMLDivElement>();
+  let inspectorElement = $state<HTMLElement>();
+  let cameraRequest = $state<{
+    action: string;
+    starId: string;
+    sequence: number;
+    focusCenter?: ChartCenter;
+  }>({ action: "overview", starId: "", sequence: 0 });
   let framedCampaign = "";
   $effect(() => {
     if (view.phase !== "active" || !view.own.home || framedCampaign === view.id)
@@ -817,16 +855,30 @@
         };
       });
   });
-  function move(
+  async function move(
     action: "selected" | "home" | "overview" | "in" | "out" | "left" | "right",
   ) {
-    if (action === "home" && view.own.home) selected = view.own.home;
+    if (action === "home" && view.own.home) {
+      selected = view.own.home;
+      // A full-width inspector can leave no label-sized chart aperture.
+      // Center home returns to the compact overview before measuring framing.
+      expanded = false;
+    }
+    // Measure after selection and list closure, when the real inspector has settled.
+    if (action === "home") await closeList();
     cameraRequest = {
       action,
       starId: action === "home" ? (view.own.home ?? "") : star.id,
       sequence: cameraRequest.sequence + 1,
+      focusCenter:
+        action === "home" && chartElement && inspectorElement
+          ? unobscuredChartCenter(
+              chartElement.getBoundingClientRect(),
+              inspectorElement.getBoundingClientRect(),
+            )
+          : undefined,
     };
-    void closeList();
+    if (action !== "home") void closeList();
   }
   const filtered = $derived(
     view.stars.filter(
@@ -926,6 +978,8 @@
     const opener = scienceOpen ? "science" : "economy";
     economy = false;
     scienceOpen = false;
+    // Return to the chart, where the accepted order acknowledgement is readable.
+    expanded = false;
     await tick();
     document.querySelector<HTMLElement>(`[data-focus="${opener}"]`)?.focus();
   }
@@ -1032,6 +1086,7 @@
   class="galaxy-surface"
   class:before-start={view.phase !== "active"}
   style:--command-rail-height={`${commandRailHeight}px`}
+  style:--commander-presence-bottom={`${commanderPresenceBottom}px`}
 >
   {#if view.phase === "waiting" || view.phase === "scheduled"}
     <div inert={roster}>
@@ -1064,7 +1119,7 @@
         construction ||
         military}
     >
-      <div class="commander-presence">
+      <div class="commander-presence" use:measureCommanderPresence>
         <CommanderDeck
           roster={view.roster}
           own={view.own}
@@ -1170,7 +1225,11 @@
             ? "Recovering contact records…"
             : "Contact markers show acquired positions from loaded records."}
         </p>{/if}
-      <div class="stellar-viewport" data-galaxy-viewport>
+      <div
+        class="stellar-viewport"
+        data-galaxy-viewport
+        bind:this={chartElement}
+      >
         <Canvas renderMode="on-demand"
           ><Scene
             fleets={Object.fromEntries(
@@ -1205,6 +1264,7 @@
       </div>
     </div>
     <aside
+      bind:this={inspectorElement}
       inert={more ||
         roster ||
         listing ||
@@ -1227,7 +1287,7 @@
         <Icon kind="star" />
         {star.name}
       </h2>
-      {#if expanded}<div class="observation-access">
+      {#if expanded || observation}<div class="observation-access">
           <ActionButton
             class="quiet"
             aria-pressed={observation}
@@ -1482,7 +1542,7 @@
         />
       </div>{/if}
     {#if contactsOpen}<div
-        class="construction-panel contact-panel history-panel"
+        class="construction-panel contact-panel history-panel fleet-contacts-panel"
         role="dialog"
         aria-modal="true"
         tabindex="-1"
@@ -1749,6 +1809,19 @@
     z-index: 6;
     background: #06121a;
     overflow: hidden;
+  }
+  .construction-panel[aria-label="System construction panel"]:focus-visible {
+    outline: 2px solid #91dcec;
+    outline-offset: -2px;
+  }
+  .construction-panel[aria-label="System construction panel"]:focus-visible::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 2px solid #91dcec;
+    pointer-events: none;
   }
   @media (min-width: 2500px) {
     .construction-panel {
@@ -2793,7 +2866,7 @@
     max-height: calc(100% - var(--command-rail-height) - 128px);
     padding: 20px;
     border-color: #9eb9c077;
-    background: linear-gradient(145deg, #182b36ef, #07131cf5);
+    background: linear-gradient(145deg, #182b36ef, #07131cf5), #07131c;
   }
   .system-inspector:not(.expanded) .system-details :global(.world-art) {
     aspect-ratio: 1.45;
@@ -2938,6 +3011,13 @@
     }
   }
   @media (min-width: 701px) {
+    .acknowledgement,
+    .system-inspector.expanded,
+    .system-inspector.active.expanded {
+      top: calc(
+        max(var(--command-rail-height), var(--commander-presence-bottom)) + 8px
+      );
+    }
     .command-rail {
       grid-template-columns: minmax(0, 1fr) auto auto;
       padding: 12px 24px 10px 480px;
@@ -3017,6 +3097,9 @@
     .system-inspector:not(.expanded) dl > div {
       padding: 4px 0;
     }
+  }
+  .fleet-contacts-panel.contact-panel.history-panel {
+    top: var(--command-rail-height);
   }
   .arrival-panel.contact-panel.history-panel {
     inset: 0;
