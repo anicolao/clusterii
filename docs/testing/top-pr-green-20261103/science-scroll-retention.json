@@ -1,0 +1,1035 @@
+{
+  "run": 41924486083,
+  "archives": [
+    {
+      "artifact": {
+        "id": 13368299348,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2ODI5OTM0OA==",
+        "name": "top-pr140-science-scroll-candidates-desktop-9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "size_in_bytes": 2953159,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13368299348",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13368299348/zip",
+        "expired": false,
+        "digest": "sha256:6a8506174a0b6ccf2ca7ed52beda60393cc8bdf38a54e0cfac1dd84dfb499d3a",
+        "created_at": "2026-11-04T22:31:43Z",
+        "updated_at": "2026-11-04T22:31:43Z",
+        "expires_at": "2026-11-18T22:31:41Z",
+        "workflow_run": {
+          "id": 41924486083,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-scroll-20261104",
+          "head_sha": "9b464bcac8918c7eb2260b5d1d03bbe13488456a"
+        }
+      },
+      "archiveSha256": "6a8506174a0b6ccf2ca7ed52beda60393cc8bdf38a54e0cfac1dd84dfb499d3a",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/desktop/science-current/firestore-debug.log",
+          "size": 1014,
+          "crc32": "7215ffad",
+          "sha256": "286c626ecd58ac081b66c05f0c9d32359c8d8562469f9504686cab620fee87cb"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/science-current/result.json",
+          "size": 167,
+          "crc32": "e1a0667e",
+          "sha256": "666c83111c4d56a17dda3294acfc1bb6da178a68916ab1878308ec307fa90550"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-desktop/attachments/Illustrated-story-bad3c98fbd102db405ddec2f3d797a0706abafd2.md",
+          "size": 4268,
+          "crc32": "d98d035b",
+          "sha256": "9a9d60e4677a3d675658d40c989043ce9310ec6b8bc41576232628b2a8ffae61"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 584570,
+          "crc32": "7dacb1b0",
+          "sha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 584570,
+          "crc32": "7dacb1b0",
+          "sha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 481844,
+          "crc32": "e371da80",
+          "sha256": "469f4cbb838a9f90af82234240dfdd9e6bdc6a5b6699de6626875b15eab1dc45"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 420894,
+          "crc32": "03509939",
+          "sha256": "e2c799846c657ee42f73b5935df3842abcec21c663d8ecea472b062404c58813"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 475909,
+          "crc32": "e10954c4",
+          "sha256": "873d2b9317e185c2598d24edeb50ae3e3fca5ec5a1dfc956cdd4fd8dede0568a"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 418517,
+          "crc32": "d9dea400",
+          "sha256": "541f34b422f7ee3dda134baccb08a8f0d59e988bff4e0d970739189b02a07f78"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/README.md",
+          "size": 4268,
+          "crc32": "d98d035b",
+          "sha256": "9a9d60e4677a3d675658d40c989043ce9310ec6b8bc41576232628b2a8ffae61"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+          "size": 5361,
+          "crc32": "65ac8624",
+          "sha256": "4f232069bc8f805cbbba9e6d0be0684ce20eb7cb30202542783b38963eb7c644"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "bdd7f0e5",
+          "sha256": "5b9aef91065f076a571a734dcc711c8770b85af6ab40e613aad5369c6f4d7ffa"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "b2e8b49d",
+          "sha256": "3484d6b528a5d5d7e641ecf9de47a7c9f307b92d42129bc6fad479d0d745ca06"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2383,
+          "crc32": "b79cb4eb",
+          "sha256": "9e6d0e707cfb44a0053c37d75414128f58ae03c157f0280dbce2d0b33b31ca68"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "56270dd1",
+          "sha256": "eaf490e70d51faf7ae1c233124f3e414c90bd3e184fd7756aff20c33bb991ccb"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "3298a87b",
+          "sha256": "d80982c6cd6f34a6f4822e9ed3ecf622ae27c64f8cd634aaa564f9af18d3603d"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "3075b51f",
+          "sha256": "0962f48ba0ec465f18e547e09db8ea6b1510122c9e3f28c7e5a92c2e6afab876"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-desktop.json",
+          "size": 4678,
+          "crc32": "4eca2c33",
+          "sha256": "6c8594a65611fb633939ef03bf6d56c2c4a0ffda4a126c4904b815db5b2f0f41"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-desktop.json",
+          "size": 362,
+          "crc32": "8b99384f",
+          "sha256": "6581756826eeb720a969140000ee2751f5a9265504c7571363300429fbfa9306"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "2c4db878",
+          "sha256": "24c92d93a20dec253169e6fff0362a6da5c01e038a54135e0749e52363300000"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 2550,
+          "crc32": "bb30975d",
+          "sha256": "1b44e1a276c3ec6eaf4a9049f3c0d6826bcb9a3e2a31e15fb96ee9c3c3409b11"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13368154875,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2ODE1NDg3NQ==",
+        "name": "top-pr140-science-scroll-candidates-large-9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "size_in_bytes": 5010386,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13368154875",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13368154875/zip",
+        "expired": false,
+        "digest": "sha256:f99ecddcd216ddd9adce7db130f3f10debb8c06c202af38affd1343c528e0189",
+        "created_at": "2026-11-04T22:32:04Z",
+        "updated_at": "2026-11-04T22:32:04Z",
+        "expires_at": "2026-11-18T22:32:03Z",
+        "workflow_run": {
+          "id": 41924486083,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-scroll-20261104",
+          "head_sha": "9b464bcac8918c7eb2260b5d1d03bbe13488456a"
+        }
+      },
+      "archiveSha256": "f99ecddcd216ddd9adce7db130f3f10debb8c06c202af38affd1343c528e0189",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/large/science-current/firestore-debug.log",
+          "size": 1014,
+          "crc32": "94bef15f",
+          "sha256": "4dc51bb63da70493e22ee22b876a6737ea73a11ee6a94ac410f358ddceba7e17"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/science-current/result.json",
+          "size": 165,
+          "crc32": "2505ecc3",
+          "sha256": "c9c9bdb925e380541030caf2c22b64819ee5a469b3f87d5b861190857a5d435b"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-large/attachments/Illustrated-story-1000fa4f3a96cdc4152d10827df35c68f5232770.md",
+          "size": 4266,
+          "crc32": "3818a2a6",
+          "sha256": "c8d37c365cd78d2cd378fd2a60628898d7a416434067ed31ab32c19153191e17"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 1219196,
+          "crc32": "33ef45cc",
+          "sha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 1219196,
+          "crc32": "33ef45cc",
+          "sha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 738927,
+          "crc32": "c43fecca",
+          "sha256": "3e116427ca1d10b4ee49b06d187e65b5dd94d000d79fc3b3022f04f365d07f74"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 651469,
+          "crc32": "84d58773",
+          "sha256": "a6f4f60621d82b8de08d0560e4cfd4fac7f4475015ee7d79347542e6d1e61edf"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 735531,
+          "crc32": "2b7e5a6a",
+          "sha256": "408e37d82fb04d090570b29874ee3cf964693f1c741205035026885449107a70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 652357,
+          "crc32": "f0467785",
+          "sha256": "4be1920077d749cea2daa486399653b783ff62b27bb1da64eea3a5738697611b"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/README.md",
+          "size": 4266,
+          "crc32": "3818a2a6",
+          "sha256": "c8d37c365cd78d2cd378fd2a60628898d7a416434067ed31ab32c19153191e17"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+          "size": 5359,
+          "crc32": "7f908b01",
+          "sha256": "b111fda4cb8fdc80468405460aa3aab873c4d8076c25c58c4760471e9f2ae415"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "5991993a",
+          "sha256": "94df3a7ebeb2f540a4b23be9d380d2f21df8546c7615a7871e777baf60fdad06"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "1b320f44",
+          "sha256": "9289ce5515bbd5cdbbcb43ecc6feb95099798649c8479fd76dd35db8f6cd8c21"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2728,
+          "crc32": "8dfa11cb",
+          "sha256": "c8b8fc1ad122c2864de1bc56c5a2da7a2615a79becb64df610a85e2fe599ec93"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "f3c5045d",
+          "sha256": "027ad1fa6b8905d19f8b4050718c3b15f627cfe89b5ba474e44afc7d2e577d48"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "867ce55d",
+          "sha256": "f04aec566697ffeedea278faca725976811d480177bb8fc8883f5a7d4b2df030"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "cceb859e",
+          "sha256": "9026ec265b0a0d1d2ce4da1a56f8dfd815aa07038663e07c5f00598f66a0af56"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-large.json",
+          "size": 4661,
+          "crc32": "efaf4890",
+          "sha256": "7eed25cca67344fe20eb6410535dc0a7f646fcb6c285459870172b4cbe46d24b"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-large.json",
+          "size": 360,
+          "crc32": "ceff5d6b",
+          "sha256": "5cbe3907dd6962135dc87b8d401dc44710236b750fe1e30fee359e0381a4779d"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "2c4db878",
+          "sha256": "24c92d93a20dec253169e6fff0362a6da5c01e038a54135e0749e52363300000"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 2549,
+          "crc32": "9a5ad77f",
+          "sha256": "1e2faf52044f45d3861da374510e630de9221e6e31ae7a06014aa9787797759f"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13368339288,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2ODMzOTI4OA==",
+        "name": "top-pr140-science-scroll-candidates-phone-9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "size_in_bytes": 1377873,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13368339288",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13368339288/zip",
+        "expired": false,
+        "digest": "sha256:59ebb5f6012a8bd7335445f7e5699e0ae5aca413ce4a96a1211c253c948e4f52",
+        "created_at": "2026-11-04T22:32:05Z",
+        "updated_at": "2026-11-04T22:32:05Z",
+        "expires_at": "2026-11-18T22:32:04Z",
+        "workflow_run": {
+          "id": 41924486083,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-scroll-20261104",
+          "head_sha": "9b464bcac8918c7eb2260b5d1d03bbe13488456a"
+        }
+      },
+      "archiveSha256": "59ebb5f6012a8bd7335445f7e5699e0ae5aca413ce4a96a1211c253c948e4f52",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/phone/science-current/firestore-debug.log",
+          "size": 1014,
+          "crc32": "c6e46ea5",
+          "sha256": "529bb43082105c11a36ed244809e63a197e8c278295d75cffeaec29dc7e1dd7c"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/science-current/result.json",
+          "size": 165,
+          "crc32": "b28d0349",
+          "sha256": "31204866352c826d359e28aeba4e893e7f06a42e528b01228089e8b563f31e44"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/attachments/Illustrated-story-71711ee27ec11b07815c12a7f07f622cce8c52d4.md",
+          "size": 4266,
+          "crc32": "396711db",
+          "sha256": "6b58ee710fc266b2851f09bf78c1bdf6f54376f3c305510f5b2202eea372f3fd"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 235847,
+          "crc32": "ed610cf6",
+          "sha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 235847,
+          "crc32": "ed610cf6",
+          "sha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 217267,
+          "crc32": "2c2f97d2",
+          "sha256": "5a8be39f85bb501119e60de62232fc25af60ba4623ed79dd91dc13ff5d251c10"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 223996,
+          "crc32": "68a33a6c",
+          "sha256": "b7ebec3e0d2145b6b2ef5e2a28d753b3e721bfbc576b034d7ecc12be5c76d697"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 220608,
+          "crc32": "28d5efb9",
+          "sha256": "ee99e3b83301dc248628dbde0d1312d021e654717cb9e66344caa2bb145f278a"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 227304,
+          "crc32": "82817423",
+          "sha256": "1b1ceb960b93b19ccc2c8cc67fa1b23724759f3d07acc71fbac167d1034bdaed"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/README.md",
+          "size": 4266,
+          "crc32": "396711db",
+          "sha256": "6b58ee710fc266b2851f09bf78c1bdf6f54376f3c305510f5b2202eea372f3fd"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+          "size": 5357,
+          "crc32": "4812ba09",
+          "sha256": "afc11491ce337192b6d001a5c415143049e75dc55c5335c12d769171fc294ffe"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "5db214f4",
+          "sha256": "422686a2e7297bb8098d1824a55a71c79878b387d155b5b61510eeeaa0ca72de"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "fb118959",
+          "sha256": "bce926e6cb7bbefab09d21ecab27d6566880e7298a50cbea8bd88c4dbe2865ad"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2726,
+          "crc32": "95b3c03d",
+          "sha256": "ab8c7571e4f1b60283251de52c05b05877e6b4f67ce4769f9313099e85d94f86"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "6afb7d5d",
+          "sha256": "5837a277a5e48b3205e706c019652afe413a9a93d326e3a61518b7b1eae44d79"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "5a6062c6",
+          "sha256": "7bc481612dd968a95245948c3ab6835f2e7745359cd082f26ea60a7eef60e5c6"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "085c2bad",
+          "sha256": "8ca5bfd3e362a725aaa386906e6d2de57cb4693f2893c2c2aba6125b7493087f"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-phone.json",
+          "size": 4672,
+          "crc32": "56fb879c",
+          "sha256": "84a7e153af2513208e25ee508ecbcdec16bb7ccce552e029e50d1fda4ec41aa8"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-phone.json",
+          "size": 360,
+          "crc32": "695b52f5",
+          "sha256": "5a0cf62397345b2c6686a5d33c766ef8bdb83d6e30e688d354dd6b180726b25d"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "2c4db878",
+          "sha256": "24c92d93a20dec253169e6fff0362a6da5c01e038a54135e0749e52363300000"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 2549,
+          "crc32": "91572b30",
+          "sha256": "1c45188edf684c6be9a7782fa3b9d179cdd9f0549a64ade8bc88ec38cccbef9e"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13369247671,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2OTI0NzY3MQ==",
+        "name": "top-pr140-science-scroll-candidates-short-9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "size_in_bytes": 2680065,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13369247671",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13369247671/zip",
+        "expired": false,
+        "digest": "sha256:32724d5ddb356e9e3064b17441ff00200f7f52ac646970f7d528c1aee9ff09c1",
+        "created_at": "2026-11-04T22:31:50Z",
+        "updated_at": "2026-11-04T22:31:50Z",
+        "expires_at": "2026-11-18T22:31:49Z",
+        "workflow_run": {
+          "id": 41924486083,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-scroll-20261104",
+          "head_sha": "9b464bcac8918c7eb2260b5d1d03bbe13488456a"
+        }
+      },
+      "archiveSha256": "32724d5ddb356e9e3064b17441ff00200f7f52ac646970f7d528c1aee9ff09c1",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/short/science-current/firestore-debug.log",
+          "size": 1014,
+          "crc32": "b6c77563",
+          "sha256": "4499a98382cf2a47056b0e7da6535a0f1777e248c5f21e0a9c0e58502de00d3f"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/science-current/result.json",
+          "size": 165,
+          "crc32": "33c80b03",
+          "sha256": "6b4fa93b753bc9e1ad21e2df1bb9ca1f5f8ef708e6aadd98ca793047d2ea73e2"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-short/attachments/Illustrated-story-19cff401fa30a52edb3326a216f821f132753bce.md",
+          "size": 4266,
+          "crc32": "24988593",
+          "sha256": "cb96aa2a7e3cb73be73c218ecad40fab45150b6648c1cf44515c5ba5cfbca5f8"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 540988,
+          "crc32": "5d62351c",
+          "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 540988,
+          "crc32": "5d62351c",
+          "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 397658,
+          "crc32": "7c9f1425",
+          "sha256": "f20721a000c03c3d74387dea3a8c986910c27ef9f1e864902081d9020569b68b"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 397061,
+          "crc32": "2765439d",
+          "sha256": "118c0acd6c0a76bd192bd14554cf23ba6b443ec52a18d575972255954136478b"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 397835,
+          "crc32": "ff792736",
+          "sha256": "e475bbacfaad92e5c4328091723b0adfb73d206c2e291856d1717093110a4cc9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 397269,
+          "crc32": "8ff8e717",
+          "sha256": "35958d48114baa09c2d4621f1d866a7a986be62aa4b326d3e95d2693b75d738d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/README.md",
+          "size": 4266,
+          "crc32": "24988593",
+          "sha256": "cb96aa2a7e3cb73be73c218ecad40fab45150b6648c1cf44515c5ba5cfbca5f8"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+          "size": 5358,
+          "crc32": "78376960",
+          "sha256": "213950260d6ef9ddbdf6eceb7562dba0477e942546007fbef82d982dbca73cf5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "d99df847",
+          "sha256": "38d889ef8e2db2e15dd4e9dc15de11b8ca01c1a8d78143693145726fe4d876cf"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "2b49fa18",
+          "sha256": "e6887d1ce875ef5fe340e0714b9cedfeebd4a9f356b5f41baa93c28999edb746"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2728,
+          "crc32": "794c993b",
+          "sha256": "9bc21da09fb954a9f8727f49d1698d60163eeb4b7f8154466cdc10f18decabaf"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "9d944eaa",
+          "sha256": "78f5be5ddbbfd4814096183f213385664ce5309184576d8028a93900037e4c31"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "9c4a8fc2",
+          "sha256": "63dca72704b4aecc6b69c8b3300782fec3f6f13d98f803b5936b8aab09ee2638"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "d1dbaddc",
+          "sha256": "7b58c3ba5f9acccb60453620c83bc7a1296b1ed740417f76f0b78d777b9cb92c"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-short.json",
+          "size": 4660,
+          "crc32": "82832e73",
+          "sha256": "97f7b2b0117ecf06ddcf5426f99e455a51d9b1402cb5935fbd801576f8405d60"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-short.json",
+          "size": 360,
+          "crc32": "6689fa56",
+          "sha256": "e9f053f768d53c65ca2d336130f4bb9fea5499367159991f9f697c20d52edfa2"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "2c4db878",
+          "sha256": "24c92d93a20dec253169e6fff0362a6da5c01e038a54135e0749e52363300000"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 2549,
+          "crc32": "0b606010",
+          "sha256": "1af65857f5de0442bfd3a85f9f59a14a4efe4e075fd124ae2805678792852742"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "source": {
+        "commit": "9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-ledger-components",
+      "viewport": "large",
+      "source": {
+        "commit": "9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "source": {
+        "commit": "9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "source": {
+        "commit": "9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "views": 6
+    }
+  ],
+  "images": 24,
+  "unchanged": 12,
+  "individuallyViewedAndApproved": 12,
+  "scope": "Actual keyboard-scroll readiness fix; all four original complete component journeys passed. Original integrated failing offset retained. No strict integrated green claim."
+}

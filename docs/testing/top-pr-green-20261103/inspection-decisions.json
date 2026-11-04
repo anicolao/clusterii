@@ -31775,5 +31775,527 @@
         "oldSha256": "fcce0d6076a6470bf47e49527e97837be82fc38af2e0a31ede514fa1041652f4"
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "596eb5ca875558b339fe339c213b963f9a5b975b544a28a68558de4a1ba7c0f4",
+    "disposition": "held-visible-defect",
+    "inspection": "HOLD: actual Tup\u00e3 label overlaps the explicit contact uncertainty qualifier in the empty chart. Preserve original; do not import. Live geometry assertion also finds Rana at the unchanged reading boundary. Minimal measured exclusion correction required.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+        "sha256": "596eb5ca875558b339fe339c213b963f9a5b975b544a28a68558de4a1ba7c0f4",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5f9d6526cf925f4cc04e1d501c09895466d825a67d260afa1483e79ca057402b",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+        "sha256": "5f9d6526cf925f4cc04e1d501c09895466d825a67d260afa1483e79ca057402b",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a7b6abf69c74c69c1f6dc5193475232fa6b0d56e9766253bd6472ddbb1328598",
+    "disposition": "held-visible-defect",
+    "inspection": "HOLD: actual Tup\u00e3 label overlaps the explicit contact uncertainty qualifier in the empty chart. Preserve original; do not import. Live geometry assertion also finds Rana at the unchanged reading boundary. Minimal measured exclusion correction required.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+        "sha256": "a7b6abf69c74c69c1f6dc5193475232fa6b0d56e9766253bd6472ddbb1328598",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+        "sha256": "3fa4fd31cb8bcbf3eaeb48285c405151edeb065112dde6083d48caa6a35d1dd8",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "51ed11ac9456b1770af699f2bb1c44bcb0d3c55f25b06626864e73fb9f5a0070",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/014-read-current-contact-2-contact-watcher.png",
+        "sha256": "51ed11ac9456b1770af699f2bb1c44bcb0d3c55f25b06626864e73fb9f5a0070",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cf0826a2c30809bf9cbd14f3cf9d7ab11d97ab7504609bfec6e6d1c6a2fb6597",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+        "sha256": "cf0826a2c30809bf9cbd14f3cf9d7ab11d97ab7504609bfec6e6d1c6a2fb6597",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+        "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+        "sha256": "704dc48c4fb95c108ccc5b7778f0e131d7edb1a0974f1335f86f208a8cb19c75",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+        "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+        "sha256": "08ed958224bd012cbbcff971c7489d197662aae3e140be78833dc50c79c05d9b",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "75520907faa700837d3dc47b1d27274be8f6b9219442053bbe77ac4ae9e3a62e",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+        "sha256": "75520907faa700837d3dc47b1d27274be8f6b9219442053bbe77ac4ae9e3a62e",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cffa710f24784ba4cca1d9fc8291c39cdf6838722af393a5e319846995294b83",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+        "sha256": "cffa710f24784ba4cca1d9fc8291c39cdf6838722af393a5e319846995294b83",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b2384915dfb27576e3b39bfa04f1a304eccbc71d5a59470b2a8c9615165c2b85",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+        "sha256": "b2384915dfb27576e3b39bfa04f1a304eccbc71d5a59470b2a8c9615165c2b85",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1e80165b82e9c788bc8bb1c55ab67401f01c1de09d71e2028fa4cf5edf3defd1",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+        "sha256": "1e80165b82e9c788bc8bb1c55ab67401f01c1de09d71e2028fa4cf5edf3defd1",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "dbf281f7a5b9e85ac08d2c2b5b5313451bae8783b3f4f8187b4b8f5050fdb3ad",
+    "disposition": "approved-regression",
+    "inspection": "Native phone original individually viewed: real4fighters6infantry/40capacity, current tick13 versus retained tick14/observed13, coordinates and route privacy are readable in their deliberate reading positions. Return/refresh/earlier and keyboard opener focus are visible. Open More menu intentionally covers lower selected-system content; subsequent overview is an intentional open-menu state, not default panel acceptance. Neighboring content is scrollable, not all automatically visible. Scoped regression approval only, not concept fidelity, animation or independent authorization proof.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+        "story": "live-fleet-contacts",
+        "viewport": "phone",
+        "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+        "sha256": "dbf281f7a5b9e85ac08d2c2b5b5313451bae8783b3f4f8187b4b8f5050fdb3ad",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "469f4cbb838a9f90af82234240dfdd9e6bdc6a5b6699de6626875b15eab1dc45",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "desktop",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+        "sha256": "469f4cbb838a9f90af82234240dfdd9e6bdc6a5b6699de6626875b15eab1dc45",
+        "oldSha256": "3ced53ef690ebe7df35d3ff829cce15ddb28c6b1ffb23e85c470d2749253836d"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e2c799846c657ee42f73b5935df3842abcec21c663d8ecea472b062404c58813",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "desktop",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+        "sha256": "e2c799846c657ee42f73b5935df3842abcec21c663d8ecea472b062404c58813",
+        "oldSha256": "a613992f76d633c3252b6b1b3f301136a49230d6f4703c0314dcdd99593fdef3"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "873d2b9317e185c2598d24edeb50ae3e3fca5ec5a1dfc956cdd4fd8dede0568a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "desktop",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+        "sha256": "873d2b9317e185c2598d24edeb50ae3e3fca5ec5a1dfc956cdd4fd8dede0568a",
+        "oldSha256": "49e79be2dce9e284d844067720b05e5a64637006eca1dcccf75e354fc33f022f"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "541f34b422f7ee3dda134baccb08a8f0d59e988bff4e0d970739189b02a07f78",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "desktop",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+        "sha256": "541f34b422f7ee3dda134baccb08a8f0d59e988bff4e0d970739189b02a07f78",
+        "oldSha256": "a0e34d0e1397194b324ebcf8f4c2a78878e68bc4d6c0ffd079d0a197a0c18cfb"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3e116427ca1d10b4ee49b06d187e65b5dd94d000d79fc3b3022f04f365d07f74",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "large",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+        "sha256": "3e116427ca1d10b4ee49b06d187e65b5dd94d000d79fc3b3022f04f365d07f74",
+        "oldSha256": "c265994e95f9f1fbed232932143a05ac88397de773d53c054e1f9909bae676d4"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a6f4f60621d82b8de08d0560e4cfd4fac7f4475015ee7d79347542e6d1e61edf",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "large",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+        "sha256": "a6f4f60621d82b8de08d0560e4cfd4fac7f4475015ee7d79347542e6d1e61edf",
+        "oldSha256": "563424774e52bbec377a9442a6e34b76f935454a4cb86e21fca5f5e4eabd0a87"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "408e37d82fb04d090570b29874ee3cf964693f1c741205035026885449107a70",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "large",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+        "sha256": "408e37d82fb04d090570b29874ee3cf964693f1c741205035026885449107a70",
+        "oldSha256": "70fa48451221caacf293d38bdb77928e7916b166d8e234abdd66abd09481a9fa"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4be1920077d749cea2daa486399653b783ff62b27bb1da64eea3a5738697611b",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "large",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+        "sha256": "4be1920077d749cea2daa486399653b783ff62b27bb1da64eea3a5738697611b",
+        "oldSha256": "b23f3f3c8fe66d6522e0d338ce3a9e915c1d953101edbeebd48e05b2071bbec9"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5a8be39f85bb501119e60de62232fc25af60ba4623ed79dd91dc13ff5d251c10",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "phone",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+        "sha256": "5a8be39f85bb501119e60de62232fc25af60ba4623ed79dd91dc13ff5d251c10",
+        "oldSha256": "a02125e14abce3c300dff6e112e751c9c20eed27d9ab26e5388582d2802fcdf6"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b7ebec3e0d2145b6b2ef5e2a28d753b3e721bfbc576b034d7ecc12be5c76d697",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "phone",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+        "sha256": "b7ebec3e0d2145b6b2ef5e2a28d753b3e721bfbc576b034d7ecc12be5c76d697",
+        "oldSha256": "2be4543eaa477e50a77738841660a3d9d79a1c6aa05a7f968f81656e1f31376c"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ee99e3b83301dc248628dbde0d1312d021e654717cb9e66344caa2bb145f278a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "phone",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+        "sha256": "ee99e3b83301dc248628dbde0d1312d021e654717cb9e66344caa2bb145f278a",
+        "oldSha256": "512a1d9d6a9d24afacf1a0664b1d79a2d087a3c92977fea221225e1c212a7806"
+      }
+    ]
+  },
+  {
+    "target": "b94f247daf42dcc2353be9621b56e6e9702aa77c",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1b1ceb960b93b19ccc2c8cc67fa1b23724759f3d07acc71fbac167d1034bdaed",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed after actual keyboard-scroll settlement. Focused standard/reduced reader shows complete Empire total heading, truthful1.4 capacity and first-production-pending versus1.4 delivered row, complete Return control. Only the focused reader is positioned in each view; neighboring inactive reader can retain its prior partial heading until its own subsequent view. Lower development/qualification prose remains naturally scrollable. No automatic all-content or animation fidelity claim. Native viewport viewed.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+        "story": "science-ledger-components",
+        "viewport": "phone",
+        "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+        "sha256": "1b1ceb960b93b19ccc2c8cc67fa1b23724759f3d07acc71fbac167d1034bdaed",
+        "oldSha256": "1e4f81e4bb9fb9f34e03eade3a9e81fb045d16f743b8bdfe96b828cc13e2aa74"
+      }
+    ]
   }
 ]

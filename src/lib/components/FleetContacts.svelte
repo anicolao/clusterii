@@ -54,7 +54,7 @@
           cameraRequest={{ action: "overview", starId: "", sequence: 0 }}
         /></Canvas
       >
-      <p>
+      <p data-map-label-exclusion>
         Observed positions · tick {view.production?.tick ?? 0}<br />Contacts do
         not track hidden movement.
       </p>

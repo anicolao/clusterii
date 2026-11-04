@@ -139,6 +139,7 @@ function createManager(root: HTMLElement) {
     // Move text around their actual bounds, never the catalogue positions.
     const surface = root.closest(".galaxy-surface");
     const exclusions = [
+      ...root.querySelectorAll<HTMLElement>("[data-map-label-exclusion]"),
       ...(surface?.querySelectorAll<HTMLElement>(
         ".acknowledgement:not([inert]), .command-rail:not([inert]) [aria-label='Campaign commanders'], .economy-panel, .campaign-records",
       ) ?? []),

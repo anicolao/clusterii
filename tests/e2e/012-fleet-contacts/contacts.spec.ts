@@ -160,6 +160,34 @@ test("Live fleet contacts preserve acquired and last-seen private facts across r
               expect(panel!.y).toBeGreaterThanOrEqual(
                 header!.y + header!.height,
               );
+              await expect
+                .poll(() =>
+                  page.locator(".contact-chart").evaluate((chart) => {
+                    const qualifier = chart.querySelector("p");
+                    if (!qualifier)
+                      throw new Error("Contact qualifier missing");
+                    const q = qualifier.getBoundingClientRect();
+                    return [
+                      ...chart.querySelectorAll<HTMLElement>(
+                        "[data-map-label]",
+                      ),
+                    ]
+                      .filter((label) => {
+                        const b = label.getBoundingClientRect();
+                        return (
+                          getComputedStyle(label).visibility !== "hidden" &&
+                          b.width > 0 &&
+                          b.height > 0 &&
+                          b.left < q.right &&
+                          b.right > q.left &&
+                          b.top < q.bottom &&
+                          b.bottom > q.top
+                        );
+                      })
+                      .map((label) => label.textContent);
+                  }),
+                )
+                .toEqual([]);
               const interceptions = await page
                 .locator(".contact-label")
                 .evaluateAll((nodes) =>
