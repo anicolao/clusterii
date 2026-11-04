@@ -283,3 +283,7 @@ there's some stupidity with this implementation where only developers can play t
 ## Prompt 24: Grant Developers
 
 go ahead and direclty add developer: true to all users, and tell me who you modified when done.
+
+## Prompt 25: Clarify Access
+
+you say I already had it, but you said "Osric" wasn't grandfathered in. WTF?
