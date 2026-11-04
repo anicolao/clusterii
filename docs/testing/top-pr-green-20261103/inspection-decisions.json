@@ -20377,5 +20377,421 @@
         "existing": null
       }
     ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "468224d0e5b10c80b33df54e4cfbbcb4d520d2258ec7e71e9ceacac2b45a653c",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "bae35c0fbd4b1c139a4568e1cb8a5c4223df14c66a79e4ec142018a9e2c54e45",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6b19a3c291403581d5f33a044cd0d8d4664fcf156a7343951c99e39c74caabfe",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c002f1620f6804daf874da2597ecf5b4e1437becc417339a8fc8111106700977",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "addda5874110c3f6540a72310288c9015b3a37f0734662c816b9e37c5ac7807a",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b2cd9ca7d1bf56b24c42165274cd39ca65281f8262a6cc1f9ee4d5354d78fc34",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "35e39d5dfe2a51a2f54ddc1e53dcc3812f7d3245ac3455928511789d031041fe",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fdaf8b07b0876ac2806bb7aec4373f005a91adbb4a1a1b91d712b0daef3a0d38",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/012-recover-real-home-1-deepseer-envoy.png",
+        "story": "galaxy-cinematic-instruments",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-cinematic-instruments/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/composition.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/012-recover-real-home-1-deepseer-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "addf7281aa6c591fe31cafbaa02914287a191a0358f8274dd03fd18e09daa30e",
+    "disposition": "held-focus-overlap",
+    "inspection": "Native393x852 original inspected. Focused Roster outline overlaps seat confirmation; subsequent geometry assertion reproduced outline709 versus message bottom717. Must fix actual footer spacing; this image cannot be promoted.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/011-read-galaxy-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c546f218d90d2254ac66f350a02d8b1fb73daf02478dd8088853eb761f89a5c6",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ec1aeba49e682bc1e2c6a7cce8b88bf4551ba3e9c0d1bdd099083e5f490a987c",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8c91f826b652c63e8c711e11f962c0f4d4ccc8f034b01f8106c0c77a0009f25c",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/018-review-surface-development-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/020-return-to-selected-system-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+        "story": "galaxy-command-surface",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "da9241d2f66558ee4f77c4a589a3848e0e196b6168ada81fa604fd86546b59e4",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png",
+        "story": "galaxy-instrument-gallery",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/gallery.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "001e69242f065ebe784ae5374150caa51bf5b65ef541f898aa9124b2eee4972d",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png",
+        "story": "galaxy-instrument-gallery",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/gallery.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c3cbaadf0518d24d5d3db72e7ac6952fd5a0f527c09dacce5064ea5e21213cfd",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/003-select-shared-command-1-gallery-reviewer.png",
+        "story": "galaxy-instrument-gallery",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/gallery.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/003-select-shared-command-1-gallery-reviewer.png"
+      }
+    ]
+  },
+  {
+    "target": "5e77413fcc9ddce0dc3993cdca382e9ad5a3f7b5",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9e7f3728b1a2e36232363101531a61d2c41fc5d1e036d258173defc266d587bc",
+    "disposition": "approved-regression",
+    "inspection": "Native393x852 original individually inspected, with exact duplicate coverage. Real owned/unknown facts, navigation, resource/order or gallery states remain readable; focus and controls contained. Intentional bounded neighboring content and open menus are not full-reading or concept-fidelity acceptance. Normal-motion still image is not animation proof. Scope is these exact current-source pixels only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/004-read-provenanced-portraits-1-gallery-reviewer.png",
+        "story": "galaxy-instrument-gallery",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-galaxy-current-41867551971/phone/test-results/stories/galaxy-instrument-gallery/phone/linux-arm64/story.json",
+        "spec": "tests/e2e/007-galaxy-composition/gallery.spec.ts",
+        "viewport": "phone",
+        "reference": "tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/004-read-provenanced-portraits-1-gallery-reviewer.png"
+      }
+    ]
   }
 ]
