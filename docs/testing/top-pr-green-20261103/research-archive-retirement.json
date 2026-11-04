@@ -1,0 +1,95 @@
+{
+  "reason": "Archive transport copies redundant after every extracted original entry reverified; no unique images, traces, logs or manifests removed. Original ZIP bytes remain remotely recoverable through recorded expiry; no claim of local archive retention after removal.",
+  "records": [
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/phone.zip",
+      "bytes": 2463367,
+      "sha256": "d9ac8c6694bd6793362da033524a89058366d152f08e2614f78ab1167a8e2588",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/phone",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/phone-verified.json",
+      "inventorySha256": "aae09f2aec330adedee541a2dab1612551ff139a6d500d8884986c469c77c4fa",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13299027311,
+      "remoteExpiresAt": "2026-11-18T05:43:42Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/desktop.zip",
+      "bytes": 23144096,
+      "sha256": "2b54d5fc8710adb3bf9699ad9fb10022fdfae72606be50a5b77084d6d6cf8281",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/desktop",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/desktop-verified.json",
+      "inventorySha256": "a36a5089ee35dcb82f0ed72269e408f51c89a25983a7afcd4ce7c213c6cf832e",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13298674122,
+      "remoteExpiresAt": "2026-11-18T05:43:44Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short.zip",
+      "bytes": 12104499,
+      "sha256": "9ffd2db46bf9c85b4079b0dcc666a21c9fb7ceaf9671c9df3c67af5514032068",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short-verified.json",
+      "inventorySha256": "9aaedce88cad3e90e57c7a7ce4f5285a8a086f13d69c4dd46fbcbc50b488e5f3",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13298664117,
+      "remoteExpiresAt": "2026-11-18T05:43:23Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large.zip",
+      "bytes": 146863024,
+      "sha256": "fc400a5a3b79f42fc07a57adc2fd424ca5a18f09d7ec303f5cf507fa0c21f421",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large-verified.json",
+      "inventorySha256": "1331eb2f51e8df6894f9b2db33e449ec54513d25928014ae0e8b4863cb4e9a74",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13299560724,
+      "remoteExpiresAt": "2026-11-18T05:44:47Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/phone.zip",
+      "bytes": 2463872,
+      "sha256": "ade452de08910aff8785485fb7fba8a3c85a7b369692aa22ba3c6820d5fa75f6",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/phone",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/phone-verified.json",
+      "inventorySha256": "ec038ff2145bb3e6615a579908c312ca933d3771f94e3cc2c112e411f2d7e9dc",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13316465666,
+      "remoteExpiresAt": "2026-11-18T11:10:21Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/desktop.zip",
+      "bytes": 23144296,
+      "sha256": "5301da08bbfe47a39f2988668c136fc9ac59311e09cda0eb7b70d256c8dfcc49",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/desktop",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/desktop-verified.json",
+      "inventorySha256": "0ddb451f6417298de82356a6ec670405865367d97c2dd5ab4c52960a111d482c",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13315619290,
+      "remoteExpiresAt": "2026-11-18T11:10:08Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/short.zip",
+      "bytes": 12100781,
+      "sha256": "72f8b84bc8f969dc713f551a4b7a280cfb33d7cb54de26b5d590d9d384614631",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/short",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/short-verified.json",
+      "inventorySha256": "2a8d42abcb103bf1d3d90e7bff77fb4d5e17fac48276313d72565f3fd9d2b39e",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13315713987,
+      "remoteExpiresAt": "2026-11-18T11:10:05Z"
+    },
+    {
+      "removedArchive": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/large.zip",
+      "bytes": 146862912,
+      "sha256": "0cac6ab2448d48cf47529fe21c32ebf6525be2d23583a13b05220f161997ff98",
+      "retainedOriginalRoot": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/large",
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-commitment-candidates-41818110378/large-verified.json",
+      "inventorySha256": "75806061ee861381cf7ce332da12cd86dd70b4d88d5e434a6ab43e45cf75585d",
+      "verifiedEntries": 78,
+      "remoteArtifactId": 13315718186,
+      "remoteExpiresAt": "2026-11-18T11:12:08Z"
+    }
+  ],
+  "removedBytes": 369146847,
+  "completed": true
+}
