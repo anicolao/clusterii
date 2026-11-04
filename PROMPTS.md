@@ -311,3 +311,7 @@ is there a way to make ticks happen more often, e.g. every 3 minutes?
 ## Prompt 31: Cancellation Semantics
 
 when is the next tick for the game? I tried to build and cancel a space station, and it didn't give me my credits back--that was unexpected. what are the semantics?
+
+## Prompt 32: Review Main
+
+We're trying to decide whether or not to abort this project and start fresh so that it is under control, or whether it is repairable. To do that, we think the simplest thing is to walk through the project together starting at PR#1 and working all the way to PR#140, reviewing each one, the decisions made in it and the implementation up to that point, and recording those things we think were done correctly/as intended vs those things that were not. Let's begin at step 0: let's review what's on main already. Give us a summary, adn we'll go review the relevant files on github.
