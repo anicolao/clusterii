@@ -799,3 +799,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review retained campaign-feedback lab references against current component source while the single Linux reader-label run completes.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Validate the consolidated recovery source and unchanged required checks before publishing the reviewed batch to existing PR140.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Commit the inspected campaign-history references in their numbered feature namespace and verify the complete 78-image import.
