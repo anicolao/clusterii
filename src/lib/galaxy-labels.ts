@@ -36,17 +36,42 @@ export function placeGalaxyLabels(
     if (anchorX < 0 || anchorX > width || anchorY < 0 || anchorY > height)
       continue;
     const offsets = [0, -1, 1, -2, 2];
-    for (const row of offsets) {
+    const candidates = offsets.map((row) => ({
+      x: label.x,
+      y: label.y + row * (label.height + gap),
+    }));
+    // A tall reading panel cannot be cleared by changing text rows. Keep the
+    // selected name beside its nearest panel edge, without moving its star or
+    // changing the player's camera. Ordinary density labels may be omitted.
+    if (label.priority >= 3) {
+      candidates.push(
+        ...exclusions
+          .filter(
+            (p) =>
+              label.x < p.x + p.width + gap &&
+              label.x + label.width + gap > p.x &&
+              label.y < p.y + p.height + gap &&
+              label.y + label.height + gap > p.y,
+          )
+          .flatMap((p) => [
+            {
+              x: Math.ceil((p.x + p.width + gap) * pixelRatio) / pixelRatio,
+              y: label.y,
+            },
+            {
+              x:
+                Math.floor((p.x - label.width - gap) * pixelRatio) / pixelRatio,
+              y: label.y,
+            },
+          ])
+          .sort((a, b) => Math.abs(a.x - label.x) - Math.abs(b.x - label.x)),
+      );
+    }
+    for (const position of candidates) {
       const candidate = {
         ...label,
-        x: Math.max(gap, Math.min(width - gap - label.width, label.x)),
-        y: Math.max(
-          gap,
-          Math.min(
-            height - gap - label.height,
-            label.y + row * (label.height + gap),
-          ),
-        ),
+        x: Math.max(gap, Math.min(width - gap - label.width, position.x)),
+        y: Math.max(gap, Math.min(height - gap - label.height, position.y)),
       };
       // Text sits on physical pixels, while stars retain their exact catalogue
       // projection. Subpixel camera round trips must not leave labels at a
@@ -109,12 +134,13 @@ function createManager(root: HTMLElement) {
         height: box.height,
       };
     });
-    // Foreground messages and commander cards must not cover map labels.
+    // Foreground messages, commander cards and reading panels must not cut
+    // through map labels.
     // Move text around their actual bounds, never the catalogue positions.
     const surface = root.closest(".galaxy-surface");
     const exclusions = [
       ...(surface?.querySelectorAll<HTMLElement>(
-        ".acknowledgement:not([inert]), .command-rail:not([inert]) [aria-label='Campaign commanders']",
+        ".acknowledgement:not([inert]), .command-rail:not([inert]) [aria-label='Campaign commanders'], .economy-panel, .campaign-records",
       ) ?? []),
     ]
       .filter((node) => getComputedStyle(node).visibility !== "hidden")

@@ -3,6 +3,40 @@ import { expect, type Page } from "@playwright/test";
 const selectedSystem = (page: Page) =>
   page.getByRole("complementary", { name: "Selected system", exact: true });
 
+/** Visible chart text must not emerge as a fragment from an opaque reader. */
+export async function expectReadingPanelLabelClearance(
+  page: Page,
+  selector: string,
+) {
+  const panel = page.locator(selector);
+  if (!(await panel.isVisible())) return;
+  if ((page.viewportSize()?.width ?? 0) >= 1024)
+    await expect(
+      page.locator("[data-galaxy-viewport] .star-label"),
+    ).toBeVisible();
+  await expect
+    .poll(() =>
+      panel.evaluate((node) => {
+        const panelBox = node.getBoundingClientRect();
+        return [...document.querySelectorAll<HTMLElement>("[data-map-label]")]
+          .filter((label) => getComputedStyle(label).visibility === "visible")
+          .filter((label) => {
+            const box = label.getBoundingClientRect();
+            return (
+              box.width > 0 &&
+              box.height > 0 &&
+              box.left < panelBox.right &&
+              box.right > panelBox.left &&
+              box.top < panelBox.bottom &&
+              box.bottom > panelBox.top
+            );
+          })
+          .map((label) => label.textContent);
+      }),
+    )
+    .toEqual([]);
+}
+
 /** Read the displayed name, excluding the aria-hidden decorative icon. */
 export async function selectedSystemName(page: Page) {
   return selectedSystem(page)

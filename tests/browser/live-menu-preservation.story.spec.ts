@@ -1,4 +1,8 @@
-import { openGalaxyCommand, selectedSystemName } from "./galaxy-navigation";
+import {
+  openGalaxyCommand,
+  selectedSystemName,
+  expectReadingPanelLabelClearance,
+} from "./galaxy-navigation";
 import { createRequire } from "node:module";
 import type { BrowserContext, Page } from "@playwright/test";
 import type { Campaign, CampaignView } from "../../shared/campaign";
@@ -213,6 +217,13 @@ test("Live galaxy menu preserves selection and unsent allocation across a confir
       page: owner,
       player: aliases[0],
       surface: "game" as const,
+      verifications: [
+        {
+          spec: "The Market reader does not cut through visible chart names; the selected name remains visible beside the reader on wider charts.",
+          check: () =>
+            expectReadingPanelLabelClearance(owner, ".economy-panel"),
+        },
+      ],
     };
     const peerView = {
       page: peer,

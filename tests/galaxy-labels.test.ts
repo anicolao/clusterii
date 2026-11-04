@@ -33,6 +33,40 @@ function readable(labels: LabelBox[], width: number, height: number) {
   return placed;
 }
 describe("galaxy label cartography", () => {
+  test("selected name clears a tall reading panel without moving its anchor and restores on close", () => {
+    for (const [width, height] of [
+      [393, 852],
+      [1440, 1000],
+      [1280, 720],
+      [3840, 2160],
+    ]) {
+      const panel = { x: 12, y: 100, width: width / 3, height: height - 120 };
+      const label = box("selected", panel.x + panel.width - 70, 300, 3);
+      const original = structuredClone(label);
+      const otherPanel = {
+        x: width - 110,
+        y: 100,
+        width: 100,
+        height: height - 120,
+      };
+      const offset = placeGalaxyLabels([label], width, height, 1, [
+        panel,
+        otherPanel,
+      ]).get("selected")!;
+      expect(offset).toBeDefined();
+      expect(label.x + offset.x).toBeGreaterThanOrEqual(
+        panel.x + panel.width + 6,
+      );
+      expect(label.x + offset.x + label.width + 6).toBeLessThanOrEqual(
+        otherPanel.x,
+      );
+      expect(label.y + offset.y).toBe(label.y);
+      expect(label).toEqual(original);
+      expect(placeGalaxyLabels([label], width, height).get("selected")).toEqual(
+        { x: Math.round(label.x) - label.x, y: 0 },
+      );
+    }
+  });
   test("selected label clears a real acknowledgement and returns when it closes", () => {
     const label = box("selected", 260, 100, 3);
     const original = structuredClone(label);
