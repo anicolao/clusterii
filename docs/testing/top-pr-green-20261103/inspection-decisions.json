@@ -12864,5 +12864,413 @@
         "reference": "tests/browser/story-baselines/live-stellar-observations/large/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png"
       }
     ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6dae645b493b4a722a83005c90c1943dfe5f6f093863d9edceeb4411e2c35add",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-receipt-recovery/desktop/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "sha256": "6dae645b493b4a722a83005c90c1943dfe5f6f093863d9edceeb4411e2c35add",
+        "existing": "fb133060656a262c6f13381d471207752881fc1ef0437c110cf41b3ad76ab32f",
+        "story": "campaign-receipt-recovery",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9587630354a6e8349c84b176e87d2cc39017b33dab92fffe4b2b57336cd4b4b3",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-receipt-recovery/desktop/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "sha256": "9587630354a6e8349c84b176e87d2cc39017b33dab92fffe4b2b57336cd4b4b3",
+        "existing": "46918540031e8da8d49ebc4e9830a260547bc40f7dc6f0bbeb02a26015468dc3",
+        "story": "campaign-receipt-recovery",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7351aa2bf9fdb601da42b1e65902d1eab5ae8edfeb24eaf0c131389891d6364d",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-receipt-recovery/desktop/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/desktop/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "sha256": "7351aa2bf9fdb601da42b1e65902d1eab5ae8edfeb24eaf0c131389891d6364d",
+        "existing": "76eda2d789ca216f081d5e01df7aafeb540ac34084ca793ee36bbc9d965377ac",
+        "story": "campaign-receipt-recovery",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7f6b19f2725fe2c2f396cd1b852a76ffc356c2c328761b81fe0e9eebef0cbad3",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/002-review-provider-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/002-review-provider-1-cipher-envoy.png",
+        "sha256": "7f6b19f2725fe2c2f396cd1b852a76ffc356c2c328761b81fe0e9eebef0cbad3",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "aaecaa79eadcd8cefb994a229274b84c79fb369567ac5e6fc255e4e5ce9a5c1e",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+        "sha256": "aaecaa79eadcd8cefb994a229274b84c79fb369567ac5e6fc255e4e5ce9a5c1e",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cc4ee31971f8684d9e1f4e6fa28571b47f7f0133dfa25f2eb9bb6fec2808df9d",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+        "sha256": "cc4ee31971f8684d9e1f4e6fa28571b47f7f0133dfa25f2eb9bb6fec2808df9d",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e869387940ead810fd3face97204807813dbce8b1b4c64ef285dd431f6c3aa8b",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+        "sha256": "e869387940ead810fd3face97204807813dbce8b1b4c64ef285dd431f6c3aa8b",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f56d5555a2b993f19ac135338dcffc2db3f475e34c7d883cfcb5d9ade9cf7da0",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/006-released-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/006-released-seat-1-cipher-envoy.png",
+        "sha256": "f56d5555a2b993f19ac135338dcffc2db3f475e34c7d883cfcb5d9ade9cf7da0",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "desktop"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e2c5f8dd6264db247d1749838975769f0343390d135f385487e2eaa99983d372",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-receipt-recovery/short/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/short/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "sha256": "e2c5f8dd6264db247d1749838975769f0343390d135f385487e2eaa99983d372",
+        "existing": "4aeba457b7a25f442d49aca7570aa9662dcdbcbb56d181be2049a60c41502719",
+        "story": "campaign-receipt-recovery",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9da74bf70796c126478fb334deaea97356daf76285961153b4002f18625a7030",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-receipt-recovery/short/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/short/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "sha256": "9da74bf70796c126478fb334deaea97356daf76285961153b4002f18625a7030",
+        "existing": "2f6ddd162587bbdbab750a047973c92516b98e27f9b4240c01c885e222935fde",
+        "story": "campaign-receipt-recovery",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2c93f4b5081684ca7261045eb8c60ab1466d8dcc4c59fd553fce3705897d1a5a",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-receipt-recovery/short/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/short/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "sha256": "2c93f4b5081684ca7261045eb8c60ab1466d8dcc4c59fd553fce3705897d1a5a",
+        "existing": "6385f4ec77ff615f503497f2620c3bff103b00b0a21f42745d1e2f29f896b786",
+        "story": "campaign-receipt-recovery",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "051d3216d1502f89106ee40fdffcb27e3a5b765ed792946356123a8e01081ca6",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/encryption-unavailable/short/linux-arm64/002-review-provider-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/002-review-provider-1-cipher-envoy.png",
+        "sha256": "051d3216d1502f89106ee40fdffcb27e3a5b765ed792946356123a8e01081ca6",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3a49f05cf70c444298b68e8f5729a0a4450fb6d059c55c659b8cefc1e31eb6ee",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/encryption-unavailable/short/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+        "sha256": "3a49f05cf70c444298b68e8f5729a0a4450fb6d059c55c659b8cefc1e31eb6ee",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "72a2e08e6bce0eff0102070a69f1204d01c53956896c2705d11e682087009804",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/encryption-unavailable/short/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+        "sha256": "72a2e08e6bce0eff0102070a69f1204d01c53956896c2705d11e682087009804",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "97c461014ba6dad63526f57e39c7d3c2d295c17025f238383b761da60c1e6379",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/encryption-unavailable/short/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+        "sha256": "97c461014ba6dad63526f57e39c7d3c2d295c17025f238383b761da60c1e6379",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ab64adad86e6283e06f5909e85a38b043ecc49c00825e5209f4b3483ea5c50ad",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/encryption-unavailable/short/linux-arm64/006-released-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/006-released-seat-1-cipher-envoy.png",
+        "sha256": "ab64adad86e6283e06f5909e85a38b043ecc49c00825e5209f4b3483ea5c50ad",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "short"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2dbbccd99f2c0900f67a9ccd0dd129bcf5711d0817d97549e61efd06d36e4f04",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-receipt-recovery/large/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/large/linux-arm64/003-original-created-1-receipt-envoy.png",
+        "sha256": "2dbbccd99f2c0900f67a9ccd0dd129bcf5711d0817d97549e61efd06d36e4f04",
+        "existing": "0d528ea4ee9580a80e0bf02093cd371c886e94c36de401dd0e52ead0ea8e452a",
+        "story": "campaign-receipt-recovery",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "dbb4dd8da2aaf7d373fb63401f4688915404d4ec65f43043897acc4e4d48d8c6",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-receipt-recovery/large/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/large/linux-arm64/007-fresh-galaxy-created-1-receipt-envoy.png",
+        "sha256": "dbb4dd8da2aaf7d373fb63401f4688915404d4ec65f43043897acc4e4d48d8c6",
+        "existing": "21e75fe352f1dac0095a6f28a3ce31360ec7b3182bbc4ff2f4e72db3090e79aa",
+        "story": "campaign-receipt-recovery",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "45dfd104cd3ced450c226e18a950480ff1f732e977e1e25a9cc85fc7c0e7bea4",
+    "disposition": "approved-regression",
+    "inspection": "Real original/new campaign names, faction selection, creation acknowledgement and recovered campaign are readable; original receipt collision assertions remain unchanged. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-receipt-recovery/large/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "reference": "tests/browser/story-baselines/campaign-receipt-recovery/large/linux-arm64/008-reload-new-galaxy-1-receipt-envoy.png",
+        "sha256": "45dfd104cd3ced450c226e18a950480ff1f732e977e1e25a9cc85fc7c0e7bea4",
+        "existing": "f5f55759ea7658cb31b7278c3aad41b7f18cd59874da940a0d831a64116df0b5",
+        "story": "campaign-receipt-recovery",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "496371d7b5d607a46dbc2b35b4e77e3630624195eb275b9f421823a22c289859",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/encryption-unavailable/large/linux-arm64/002-review-provider-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/002-review-provider-1-cipher-envoy.png",
+        "sha256": "496371d7b5d607a46dbc2b35b4e77e3630624195eb275b9f421823a22c289859",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "26b3671eba40626e1c6ebac730e4621400086457fc50ee1598e2c3bc7385695e",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/encryption-unavailable/large/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+        "sha256": "26b3671eba40626e1c6ebac730e4621400086457fc50ee1598e2c3bc7385695e",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4a28bd0528a072e947d3400247092359b8ad578f79ef9ff9e697f541feba1d41",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/encryption-unavailable/large/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+        "sha256": "4a28bd0528a072e947d3400247092359b8ad578f79ef9ff9e697f541feba1d41",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "00531694c83179542856dae856f3e90db76c0fae1d3e22a232f7f190e03feaac",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/encryption-unavailable/large/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+        "sha256": "00531694c83179542856dae856f3e90db76c0fae1d3e22a232f7f190e03feaac",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "5a2a2bc0",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "aaca525e160511e4a19ec171265658e654a80a6bfdb2a6e169e238edc418876b",
+    "disposition": "approved-regression",
+    "inspection": "Unavailable managed provider disclosure, selected development codec, actual creation/claim/reload/release states and their controls remain readable. Small waiting views use bounded scrolling; no managed-key or authenticated foreign-read claim. Original full image viewed. Large originals viewed downscaled to 2048 pixels: layout/content approval only. No full design or release certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/encryption-unavailable/large/linux-arm64/006-released-seat-1-cipher-envoy.png",
+        "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/006-released-seat-1-cipher-envoy.png",
+        "sha256": "aaca525e160511e4a19ec171265658e654a80a6bfdb2a6e169e238edc418876b",
+        "existing": null,
+        "story": "encryption-unavailable",
+        "viewport": "large"
+      }
+    ]
   }
 ]
