@@ -879,3 +879,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reproduce and fix ordinary Economy rail overlap; verify four real-service journeys and classify terminal strict failures from compact logs.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one corrected science candidate request to the locally validated measured-rail repair with unchanged limits and renderer.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete four-size Linux science review batch after demonstrated measured-rail correction; no reference updates.
