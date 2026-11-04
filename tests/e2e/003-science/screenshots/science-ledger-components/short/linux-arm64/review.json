@@ -1,0 +1,83 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "science-ledger-components",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/003-science/components.spec.ts",
+    "specSha256": "660e6a92bca84589b8c6524bda7f16ae29bdf91ee8bc6e64913c6ec6506ca529"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "001-gallery-source-reduce-1-component-reviewer.png",
+      "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-gallery-source-no-preference-1-component-reviewer.png",
+      "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-lab-capacity-1-standard-motion-comparison.png",
+      "sha256": "f20721a000c03c3d74387dea3a8c986910c27ef9f1e864902081d9020569b68b",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-lab-capacity-2-reduced-motion-comparison.png",
+      "sha256": "118c0acd6c0a76bd192bd14554cf23ba6b443ec52a18d575972255954136478b",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-lab-delivered-1-standard-motion-comparison.png",
+      "sha256": "e475bbacfaad92e5c4328091723b0adfb73d206c2e291856d1717093110a4cc9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-lab-delivered-2-reduced-motion-comparison.png",
+      "sha256": "35958d48114baa09c2d4621f1d866a7a986be62aa4b326d3e95d2693b75d738d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}
