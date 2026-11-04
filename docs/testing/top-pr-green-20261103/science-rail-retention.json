@@ -1,0 +1,2147 @@
+{
+  "run": 41915747313,
+  "archives": [
+    {
+      "artifact": {
+        "id": 13366140704,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2NjE0MDcwNA==",
+        "name": "top-pr140-science-current-candidates-desktop-9e548d949320b437609a67fd9cefffb0a1afb592",
+        "size_in_bytes": 22614214,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13366140704",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13366140704/zip",
+        "expired": false,
+        "digest": "sha256:3feb4eb4824db4b30ea661b5995127fb28ff8027ef6dd0d868f6fae30cdb387c",
+        "created_at": "2026-11-04T21:38:30Z",
+        "updated_at": "2026-11-04T21:38:30Z",
+        "expires_at": "2026-11-18T21:38:28Z",
+        "workflow_run": {
+          "id": 41915747313,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-rail-20261104",
+          "head_sha": "9e548d949320b437609a67fd9cefffb0a1afb592"
+        }
+      },
+      "archiveSha256": "3feb4eb4824db4b30ea661b5995127fb28ff8027ef6dd0d868f6fae30cdb387c",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/desktop/science-current/firestore-debug.log",
+          "size": 31460,
+          "crc32": "5528631f",
+          "sha256": "292c868be7c4855a150e50ddeebb18c971dc96fdb37cd2bad986d0fecd9ea02e"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/science-current/result.json",
+          "size": 167,
+          "crc32": "19082bbb",
+          "sha256": "aa406f87725000563c37b4432b144e49cd5a55e830c33027e927c2213a56ed5a"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-desktop/attachments/Illustrated-story-bad3c98fbd102db405ddec2f3d797a0706abafd2.md",
+          "size": 4268,
+          "crc32": "d98d035b",
+          "sha256": "9a9d60e4677a3d675658d40c989043ce9310ec6b8bc41576232628b2a8ffae61"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-desktop/attachments/Illustrated-story-99d78e78823325d067f13832d170264a09ff951d.md",
+          "size": 14054,
+          "crc32": "a0b9d8e7",
+          "sha256": "a452c00858f283289673b3b462f444e42f841f2a2b5e98010f2042273a663e5c"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 584570,
+          "crc32": "7dacb1b0",
+          "sha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 584570,
+          "crc32": "7dacb1b0",
+          "sha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 481112,
+          "crc32": "0bdcfc7b",
+          "sha256": "3ced53ef690ebe7df35d3ff829cce15ddb28c6b1ffb23e85c470d2749253836d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 406749,
+          "crc32": "2ca02b49",
+          "sha256": "a613992f76d633c3252b6b1b3f301136a49230d6f4703c0314dcdd99593fdef3"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 474966,
+          "crc32": "02c0d3da",
+          "sha256": "49e79be2dce9e284d844067720b05e5a64637006eca1dcccf75e354fc33f022f"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 404196,
+          "crc32": "42fe4878",
+          "sha256": "a0e34d0e1397194b324ebcf8f4c2a78878e68bc4d6c0ffd079d0a197a0c18cfb"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/README.md",
+          "size": 4268,
+          "crc32": "d98d035b",
+          "sha256": "9a9d60e4677a3d675658d40c989043ce9310ec6b8bc41576232628b2a8ffae61"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+          "size": 5361,
+          "crc32": "2e21acc7",
+          "sha256": "5dde87d2bc71406d03440eb8d91b6e70e1345948c1cd59afed5ecf67d7046c1a"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "size": 1052636,
+          "crc32": "04964857",
+          "sha256": "30b99e9f2896c3895a9bbe45d63444fa06336d38f21455beef371fff8bea89fa"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "size": 1053150,
+          "crc32": "db3cca75",
+          "sha256": "99fe0e1ba74002ae42095ebf5cee3a7539eeee4a4544e5691c1798c515303bc2"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/011-commit-innovation-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "size": 800038,
+          "crc32": "c19a756b",
+          "sha256": "92f3357a45eddc2382a70d384f088bd1d33b43a2cc586a8826a61c770cdb1dd4"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "size": 1074445,
+          "crc32": "2c084633",
+          "sha256": "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "size": 1073263,
+          "crc32": "91090ff0",
+          "sha256": "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "size": 1053014,
+          "crc32": "9ac781f3",
+          "sha256": "b721b3f01adb5f53277ac77c276081ca94555b8c271833b46fd13f9e4f4cbf22"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "size": 1052480,
+          "crc32": "a9fb9166",
+          "sha256": "bb97f3c989665e377a2fd97a82f7fb95193e4dc8af988c3621de5aee107379fe"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "size": 1074445,
+          "crc32": "2c084633",
+          "sha256": "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "size": 1073263,
+          "crc32": "91090ff0",
+          "sha256": "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "size": 1259393,
+          "crc32": "1b8856f2",
+          "sha256": "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "size": 1260748,
+          "crc32": "e2e48f8c",
+          "sha256": "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "size": 1053014,
+          "crc32": "9ac781f3",
+          "sha256": "b721b3f01adb5f53277ac77c276081ca94555b8c271833b46fd13f9e4f4cbf22"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "size": 1052480,
+          "crc32": "a9fb9166",
+          "sha256": "bb97f3c989665e377a2fd97a82f7fb95193e4dc8af988c3621de5aee107379fe"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "size": 1074445,
+          "crc32": "2c084633",
+          "sha256": "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "size": 1073263,
+          "crc32": "91090ff0",
+          "sha256": "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "size": 1259393,
+          "crc32": "1b8856f2",
+          "sha256": "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "size": 1260748,
+          "crc32": "e2e48f8c",
+          "sha256": "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/021-recover-delivered-rate-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "size": 1075346,
+          "crc32": "d1ce4e93",
+          "sha256": "a18b5dea9880de038cf996cebcf19731d450620fcee99384260097a32c3aad32"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/README.md",
+          "size": 14054,
+          "crc32": "a0b9d8e7",
+          "sha256": "a452c00858f283289673b3b462f444e42f841f2a2b5e98010f2042273a663e5c"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/desktop/linux-arm64/story.json",
+          "size": 15845,
+          "crc32": "0d32af64",
+          "sha256": "319007ca1e75a82eadf80bb776869cc645c8de2a9f472a4c0070bd86a1013c82"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "e3ee3253",
+          "sha256": "88c37e2d5217a690ea92c931128e14b2e4ae50da52ea082be3a3c20d52e82e0f"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "bba92635",
+          "sha256": "879561b2e04dc4a6e571330d08093bd082bac91eef93a7292f3bb1803c6a0cb9"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2557,
+          "crc32": "06256d7b",
+          "sha256": "8fc2fdee9350329a8d75043804a4a1496f99e1f3c617555a0fe8f0d7ee8ebf4c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "97af03e7",
+          "sha256": "b7ffe586a03da1add9454df1ab11f49853d017e7ac52299eb9234ef5d484246d"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "fe484af6",
+          "sha256": "98dd9e917701e6923ac020a4b14713365e5774fe25d5d60a5b48f4b035c3565a"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "cf78455d",
+          "sha256": "52e455788fc44bbd533974d851059a091577ef535508c8672308616976132347"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-desktop.json",
+          "size": 5695,
+          "crc32": "4c39d88d",
+          "sha256": "f615ef41c878bf9f67c0be3eee0f5a43a38f34a057972443399819ca251e05ce"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-desktop.json",
+          "size": 362,
+          "crc32": "2bf45c8a",
+          "sha256": "d3baed8feb7e94cf515dbfd292c4908a4051ce2d0abe771ff9a60d6d2c287be1"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "781956bd",
+          "sha256": "e3f3f5c6bbdfd98a68b5da76726117b57e5e15d36ec6f416c3acd2a82f8dddf6"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8500,
+          "crc32": "b4885616",
+          "sha256": "80f69bd8e72cb071353cc4a14ca16e804a30cf84ebf500df48037f4e2e55f29a"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13365417624,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2NTQxNzYyNA==",
+        "name": "top-pr140-science-current-candidates-large-9e548d949320b437609a67fd9cefffb0a1afb592",
+        "size_in_bytes": 109973506,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13365417624",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13365417624/zip",
+        "expired": false,
+        "digest": "sha256:e9aae21c0e5f8e65bbff24a621e099b8a72ebf76b0778fb54d258d7afbe655ea",
+        "created_at": "2026-11-04T21:37:45Z",
+        "updated_at": "2026-11-04T21:37:45Z",
+        "expires_at": "2026-11-18T21:37:41Z",
+        "workflow_run": {
+          "id": 41915747313,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-rail-20261104",
+          "head_sha": "9e548d949320b437609a67fd9cefffb0a1afb592"
+        }
+      },
+      "archiveSha256": "e9aae21c0e5f8e65bbff24a621e099b8a72ebf76b0778fb54d258d7afbe655ea",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/large/science-current/firestore-debug.log",
+          "size": 25825,
+          "crc32": "d012048e",
+          "sha256": "dd40fe3cb53c64ccf793235e45123218cfab4f777d98c7dbef4bac2ea9721aa9"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/science-current/result.json",
+          "size": 165,
+          "crc32": "c56f5b8f",
+          "sha256": "44bb12bb9064d94654feca512e17d4a58de65fb0a250d5a3fc033950f731c171"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-large/attachments/Illustrated-story-1000fa4f3a96cdc4152d10827df35c68f5232770.md",
+          "size": 4266,
+          "crc32": "3818a2a6",
+          "sha256": "c8d37c365cd78d2cd378fd2a60628898d7a416434067ed31ab32c19153191e17"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-large/attachments/Illustrated-story-ba0ca74f3d36baa13959c184c7e83b3a70333bdf.md",
+          "size": 14052,
+          "crc32": "e9eb7c19",
+          "sha256": "6d295626dd5806d257b9d52f0a6c4bdedfd286c222c330c04015987ee037bcb5"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 1219196,
+          "crc32": "33ef45cc",
+          "sha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 1219196,
+          "crc32": "33ef45cc",
+          "sha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 736557,
+          "crc32": "affd4ad4",
+          "sha256": "c265994e95f9f1fbed232932143a05ac88397de773d53c054e1f9909bae676d4"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 634217,
+          "crc32": "f931e9e3",
+          "sha256": "563424774e52bbec377a9442a6e34b76f935454a4cb86e21fca5f5e4eabd0a87"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 734196,
+          "crc32": "673be396",
+          "sha256": "70fa48451221caacf293d38bdb77928e7916b166d8e234abdd66abd09481a9fa"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 636454,
+          "crc32": "d2984a19",
+          "sha256": "b23f3f3c8fe66d6522e0d338ce3a9e915c1d953101edbeebd48e05b2071bbec9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/README.md",
+          "size": 4266,
+          "crc32": "3818a2a6",
+          "sha256": "c8d37c365cd78d2cd378fd2a60628898d7a416434067ed31ab32c19153191e17"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+          "size": 5359,
+          "crc32": "521f4e98",
+          "sha256": "c100926dea935475b5e801629baac2834ea7dbd603e876c970309934cbd298cd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/010-inspect-private-sources-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "size": 5836624,
+          "crc32": "7607037c",
+          "sha256": "a562ef9dcaef0c8a644b049e5cd88d906484d88ddb67e8d961555e5924525675"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/010-inspect-private-sources-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "size": 5840084,
+          "crc32": "b3a76f12",
+          "sha256": "1dd1d2cc2bf7a694a3e25ee860730ab5539cc5445a03cdaa7ea40777ef33cdb9"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/011-commit-innovation-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "size": 5055824,
+          "crc32": "7fd9ed11",
+          "sha256": "f692f4169bf05a37a0b3671a94454d558f8a0ed8d5143406b3d3ff5d907b4d0b"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/013-read-earned-capacity-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "size": 5879547,
+          "crc32": "2ee72ab3",
+          "sha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/013-read-earned-capacity-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "size": 5877550,
+          "crc32": "4e3328cd",
+          "sha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "size": 5879547,
+          "crc32": "2ee72ab3",
+          "sha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "size": 5877550,
+          "crc32": "4e3328cd",
+          "sha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/015-earned-normal-totals-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/015-earned-normal-totals-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "size": 5877550,
+          "crc32": "4e3328cd",
+          "sha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "size": 5879547,
+          "crc32": "2ee72ab3",
+          "sha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/016-earned-normal-return-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "size": 5918825,
+          "crc32": "1180485e",
+          "sha256": "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/016-earned-normal-return-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "size": 5925017,
+          "crc32": "d3712275",
+          "sha256": "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "size": 5879547,
+          "crc32": "2ee72ab3",
+          "sha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "size": 5877550,
+          "crc32": "4e3328cd",
+          "sha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "size": 5879547,
+          "crc32": "2ee72ab3",
+          "sha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "size": 5877550,
+          "crc32": "4e3328cd",
+          "sha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/019-earned-reduced-return-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "size": 5918825,
+          "crc32": "1180485e",
+          "sha256": "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/019-earned-reduced-return-2-tidal-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "size": 5925017,
+          "crc32": "d3712275",
+          "sha256": "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/021-recover-delivered-rate-1-chart-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "size": 5881168,
+          "crc32": "7077736a",
+          "sha256": "b982d597b0810541040647c40dc550be59efe377a16da82554dce7dc06fba52a"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/README.md",
+          "size": 14052,
+          "crc32": "e9eb7c19",
+          "sha256": "6d295626dd5806d257b9d52f0a6c4bdedfd286c222c330c04015987ee037bcb5"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/large/linux-arm64/story.json",
+          "size": 15843,
+          "crc32": "77274a93",
+          "sha256": "608f0213d93e6d71b63026bc59eb0c9683d32fc632d2beeedf40de6b68b01a12"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "69f98d47",
+          "sha256": "9f933d99f7f142c955bc766bc87d7c0ff3f69feafef570560010f9899bdd3227"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "b986ca09",
+          "sha256": "09d55247fbb4cb96c10e091153cf551bbbf2207937b2fbde803ffdbb11cc95c6"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 3423,
+          "crc32": "0bb12ed1",
+          "sha256": "8a47f948dc3a26aa31694719363130987eab20fcafd3e20ffbf72cc838727515"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "976176b3",
+          "sha256": "e5d934df2942b639cd896a896b4938f68254441cfba9cecca855f6635cb52542"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "70ed2dab",
+          "sha256": "4372c11abc030f9f5faed0d76b9a97969fcd046fd86e7c89209147ed071e6c54"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "e6279bfe",
+          "sha256": "90976dc80ae6d40de34e9d1bceb62d780fb4d79b4781970ff6d53ea0e9fb7b55"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-large.json",
+          "size": 5674,
+          "crc32": "2a27cfc4",
+          "sha256": "81341d6d33e2cfba42e01e1cfa3f8eaa362e737728172f7f064005c12c58ffcb"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-large.json",
+          "size": 360,
+          "crc32": "ae986c18",
+          "sha256": "6c4931bad5f9f8649affa769045cb7da7f21a8eb7c82ca0bbcd2014eae5a695c"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "781956bd",
+          "sha256": "e3f3f5c6bbdfd98a68b5da76726117b57e5e15d36ec6f416c3acd2a82f8dddf6"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8505,
+          "crc32": "4b88ec3e",
+          "sha256": "19e63e33ee3630272e4508875768cdc8d98ee92e26dd48e7243858565694a06c"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13366100416,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2NjEwMDQxNg==",
+        "name": "top-pr140-science-current-candidates-phone-9e548d949320b437609a67fd9cefffb0a1afb592",
+        "size_in_bytes": 5757810,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13366100416",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13366100416/zip",
+        "expired": false,
+        "digest": "sha256:194d07f865d697c6869f068885295019677ec51097e9cb6175bf7f97801101b5",
+        "created_at": "2026-11-04T21:35:34Z",
+        "updated_at": "2026-11-04T21:35:34Z",
+        "expires_at": "2026-11-18T21:35:33Z",
+        "workflow_run": {
+          "id": 41915747313,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-rail-20261104",
+          "head_sha": "9e548d949320b437609a67fd9cefffb0a1afb592"
+        }
+      },
+      "archiveSha256": "194d07f865d697c6869f068885295019677ec51097e9cb6175bf7f97801101b5",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/phone/science-current/firestore-debug.log",
+          "size": 26531,
+          "crc32": "a9e0f6ac",
+          "sha256": "99fc728b6b88ed115aa8ffd0a356adf21f0462088e9758c9e6c207e3a517205a"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/science-current/result.json",
+          "size": 165,
+          "crc32": "1b059927",
+          "sha256": "2b3fa9e0f04b80b9c8937f288797d895037ae8411ceb5eaac99154eaf66e47f1"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-phone/attachments/Illustrated-story-71711ee27ec11b07815c12a7f07f622cce8c52d4.md",
+          "size": 4266,
+          "crc32": "396711db",
+          "sha256": "6b58ee710fc266b2851f09bf78c1bdf6f54376f3c305510f5b2202eea372f3fd"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/attachments/Illustrated-story-c2991519f844f236f1361bbb7c02bcd0d29437df.md",
+          "size": 14052,
+          "crc32": "7588f0dd",
+          "sha256": "c6421d5bafc4e091788b5b538596cc426750a84724d28efcc2fb8380a5944afb"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 235847,
+          "crc32": "ed610cf6",
+          "sha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 235847,
+          "crc32": "ed610cf6",
+          "sha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 211018,
+          "crc32": "def0958a",
+          "sha256": "a02125e14abce3c300dff6e112e751c9c20eed27d9ab26e5388582d2802fcdf6"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 217533,
+          "crc32": "24192310",
+          "sha256": "2be4543eaa477e50a77738841660a3d9d79a1c6aa05a7f968f81656e1f31376c"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 218472,
+          "crc32": "8849fd31",
+          "sha256": "1e4f81e4bb9fb9f34e03eade3a9e81fb045d16f743b8bdfe96b828cc13e2aa74"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 211789,
+          "crc32": "bcff5e5e",
+          "sha256": "512a1d9d6a9d24afacf1a0664b1d79a2d087a3c92977fea221225e1c212a7806"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/README.md",
+          "size": 4266,
+          "crc32": "396711db",
+          "sha256": "6b58ee710fc266b2851f09bf78c1bdf6f54376f3c305510f5b2202eea372f3fd"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+          "size": 5357,
+          "crc32": "6a0bb016",
+          "sha256": "58fedb38dc053357e8a02123f0dc9789a14d99ba3d31ec7ef2f5fe46b964180a"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "size": 219737,
+          "crc32": "ea07d73d",
+          "sha256": "af930d4052a22f527defb683291cae237dd419d46492a24cda0c8bd3de4f92c6"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "size": 221843,
+          "crc32": "090cedc2",
+          "sha256": "c1414ba89d4dc49d9acc1a835c7a61d79e5e055cc4a8ca6332330a6e297ab10c"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/011-commit-innovation-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "size": 85561,
+          "crc32": "c782707d",
+          "sha256": "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "size": 258561,
+          "crc32": "7a191138",
+          "sha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "size": 259537,
+          "crc32": "c7d17095",
+          "sha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "size": 218996,
+          "crc32": "7e5f98c4",
+          "sha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "size": 220435,
+          "crc32": "6093fdf3",
+          "sha256": "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "size": 258561,
+          "crc32": "7a191138",
+          "sha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "size": 259537,
+          "crc32": "c7d17095",
+          "sha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/016-earned-normal-return-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "size": 289758,
+          "crc32": "71c70b40",
+          "sha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/016-earned-normal-return-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "size": 292101,
+          "crc32": "d902bf9a",
+          "sha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "size": 218996,
+          "crc32": "7e5f98c4",
+          "sha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "size": 220435,
+          "crc32": "6093fdf3",
+          "sha256": "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "size": 258561,
+          "crc32": "7a191138",
+          "sha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "size": 259537,
+          "crc32": "c7d17095",
+          "sha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-2-tidal-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "size": 289758,
+          "crc32": "71c70b40",
+          "sha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "size": 292101,
+          "crc32": "d902bf9a",
+          "sha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/021-recover-delivered-rate-1-chart-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "size": 259466,
+          "crc32": "c3c9e462",
+          "sha256": "7cc9dedabeee7a82d0e92bd45daf0f7094e426f9dd20e04f714a587ae03b295a"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/README.md",
+          "size": 14052,
+          "crc32": "7588f0dd",
+          "sha256": "c6421d5bafc4e091788b5b538596cc426750a84724d28efcc2fb8380a5944afb"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/phone/linux-arm64/story.json",
+          "size": 15841,
+          "crc32": "4295063f",
+          "sha256": "1e4832a7570a389fcea647b6f6b7b3bcd50a72a5c0fbfdc6a68e39cf0742bee8"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "b8780c11",
+          "sha256": "61e861cdc03a93b9941b4154924ef4667f6b2e7dbe59257570b6aa6e95b1f77f"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "cd76c542",
+          "sha256": "4ec5ebf7761d1cba85f2beca56e81f1ca22f012fabd52f37f17b483e740c32a2"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2727,
+          "crc32": "af3ff3f7",
+          "sha256": "69f3f6b01a8381f5df5c7c2defd35e73fd4866bccbca8b87829ef7f196cf421c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "bca5d802",
+          "sha256": "9c003cf222a4beaa2a284ce3a3f4557e0a0a9a54ca8e14cf31b655c9959dbdd3"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "b3d57410",
+          "sha256": "b9b4708ccc872b67fbb5d0eed9cc30ae6a68579ed4c80d122433d8c6b640f367"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "072beb4a",
+          "sha256": "9d21c2276a66ec87d6329bc2481fb4f859052a195b5c887409e0311143808f7a"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-phone.json",
+          "size": 5674,
+          "crc32": "cdd58360",
+          "sha256": "fa3844f17271e7a7d6688ff6b1ae879c2ec1ba3870466fbc5bf83e4faf7d33df"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-phone.json",
+          "size": 360,
+          "crc32": "d85f2c86",
+          "sha256": "2c4655f0d028a6dae6c1cfdb36b6f0d5d96d0f4ac8dfac08abedcc8ea0efa462"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "781956bd",
+          "sha256": "e3f3f5c6bbdfd98a68b5da76726117b57e5e15d36ec6f416c3acd2a82f8dddf6"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8500,
+          "crc32": "893ddf7b",
+          "sha256": "915e2f69b17c7a3149bace9e0b0084b760d0f2b65a6a5e7bf26aa2dc0a9d5541"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13365552050,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2NTU1MjA1MA==",
+        "name": "top-pr140-science-current-candidates-short-9e548d949320b437609a67fd9cefffb0a1afb592",
+        "size_in_bytes": 14185530,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13365552050",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13365552050/zip",
+        "expired": false,
+        "digest": "sha256:211b058c02b71d83dce44743abb95ab6c0e00cb6d7a087e2b2d0039e98d1597a",
+        "created_at": "2026-11-04T21:36:03Z",
+        "updated_at": "2026-11-04T21:36:03Z",
+        "expires_at": "2026-11-18T21:36:02Z",
+        "workflow_run": {
+          "id": 41915747313,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-rail-20261104",
+          "head_sha": "9e548d949320b437609a67fd9cefffb0a1afb592"
+        }
+      },
+      "archiveSha256": "211b058c02b71d83dce44743abb95ab6c0e00cb6d7a087e2b2d0039e98d1597a",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/short/science-current/firestore-debug.log",
+          "size": 23992,
+          "crc32": "967d387f",
+          "sha256": "50f9bc4a56b33bc30433f7d1f5974d54fce25f5d4bfb400185272552d269ba32"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/science-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/science-current/result.json",
+          "size": 165,
+          "crc32": "2bb389cb",
+          "sha256": "e3172fbfa095b83de3a63290c5814b8ddf166f25a89b9beb397d6556575282db"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-short/attachments/Illustrated-story-19cff401fa30a52edb3326a216f821f132753bce.md",
+          "size": 4266,
+          "crc32": "24988593",
+          "sha256": "cb96aa2a7e3cb73be73c218ecad40fab45150b6648c1cf44515c5ba5cfbca5f8"
+        },
+        {
+          "path": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-short/attachments/Illustrated-story-1540f6db788f2585c5463bd5f11eecb57956bf85.md",
+          "size": 14052,
+          "crc32": "6f251e02",
+          "sha256": "75b54eeab2057f53f53a0c7ff15e8aa0d09ebdf5a22886f571aac05c4017036d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "size": 540988,
+          "crc32": "5d62351c",
+          "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "size": 540988,
+          "crc32": "5d62351c",
+          "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "size": 397658,
+          "crc32": "7c9f1425",
+          "sha256": "f20721a000c03c3d74387dea3a8c986910c27ef9f1e864902081d9020569b68b"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "size": 397061,
+          "crc32": "2765439d",
+          "sha256": "118c0acd6c0a76bd192bd14554cf23ba6b443ec52a18d575972255954136478b"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "size": 397835,
+          "crc32": "ff792736",
+          "sha256": "e475bbacfaad92e5c4328091723b0adfb73d206c2e291856d1717093110a4cc9"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "size": 397269,
+          "crc32": "8ff8e717",
+          "sha256": "35958d48114baa09c2d4621f1d866a7a986be62aa4b326d3e95d2693b75d738d"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/README.md",
+          "size": 4266,
+          "crc32": "24988593",
+          "sha256": "cb96aa2a7e3cb73be73c218ecad40fab45150b6648c1cf44515c5ba5cfbca5f8"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+          "size": 5358,
+          "crc32": "f51d7d9f",
+          "sha256": "93ad9f7a8c1a7efd5e1127ffd72c5bd2effff1314ad69a79bfb695ebfad7c5fd"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/010-inspect-private-sources-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "size": 604115,
+          "crc32": "dc8ee43e",
+          "sha256": "c2d8adbaf536921457a2f724fad76d8c60e5f18604cf1db3a9a34c16b00d28f3"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/010-inspect-private-sources-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "size": 604679,
+          "crc32": "ffb12c14",
+          "sha256": "cd80cd94a59032d128a8d132e6ec6ed09a4849abc048db435f661fe000397a0f"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/011-commit-innovation-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "size": 425905,
+          "crc32": "33c0d14e",
+          "sha256": "69b44dfdd95f9c87c8cb2e1ad27873cd1ecf410f7d99e28bb1d6b7a05bffce84"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/013-read-earned-capacity-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "size": 651364,
+          "crc32": "3a6b2068",
+          "sha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/013-read-earned-capacity-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "size": 649690,
+          "crc32": "ad69eb5a",
+          "sha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "size": 605023,
+          "crc32": "4206b7e1",
+          "sha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "size": 604401,
+          "crc32": "4f639c2a",
+          "sha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/015-earned-normal-totals-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "size": 651364,
+          "crc32": "3a6b2068",
+          "sha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/015-earned-normal-totals-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "size": 649690,
+          "crc32": "ad69eb5a",
+          "sha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/016-earned-normal-return-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "size": 719482,
+          "crc32": "7a02a08a",
+          "sha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/016-earned-normal-return-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "size": 720247,
+          "crc32": "58c0cf41",
+          "sha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "size": 605023,
+          "crc32": "4206b7e1",
+          "sha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "size": 604401,
+          "crc32": "4f639c2a",
+          "sha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "size": 651364,
+          "crc32": "3a6b2068",
+          "sha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "size": 649690,
+          "crc32": "ad69eb5a",
+          "sha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/019-earned-reduced-return-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "size": 719482,
+          "crc32": "7a02a08a",
+          "sha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/019-earned-reduced-return-2-tidal-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "size": 720247,
+          "crc32": "58c0cf41",
+          "sha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/021-recover-delivered-rate-1-chart-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "size": 652267,
+          "crc32": "4d56c554",
+          "sha256": "25c5f4400cb7681649c5726102f36a0fdba5077cf71a254a3a97ec27a0a16d17"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/README.md",
+          "size": 14052,
+          "crc32": "6f251e02",
+          "sha256": "75b54eeab2057f53f53a0c7ff15e8aa0d09ebdf5a22886f571aac05c4017036d"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/science-rate-sources/short/linux-arm64/story.json",
+          "size": 15842,
+          "crc32": "ae186d55",
+          "sha256": "6dc686ac6505586680d6bd4e88f4ebf40682a83422e7994980196781c90f445a"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "ef013409",
+          "sha256": "a564abc9de301a0609cc1e855e70dd2ca70b5a2f0e824cd714662b70240598a9"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "8ce1c81f",
+          "sha256": "7d9afdcdcf68ae079f762a87117ea006fdaadcd50c7f61a4fc4540edf1ce5ddc"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2729,
+          "crc32": "c13ed2c0",
+          "sha256": "ca239a4a246df14d4c5c1189b64a597c6cf58b795618b6767cee0bdf4b1cc542"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "ca5a4fb3",
+          "sha256": "350c306605f31cf269fc176e33b22c9ea3d9a917569ac2089d73b459c007ae91"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "4f2334a2",
+          "sha256": "1930022eba2f1c4667a87be55a4cebb8d480c1e7754f728716f586b2fbaa9171"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "7d26e77b",
+          "sha256": "fed93b90ae7a1d5490d4fc4eeb98fe2cef6addc3e4a62f8da3dd8683bdb8a847"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-short.json",
+          "size": 5685,
+          "crc32": "99821ad8",
+          "sha256": "ba8008379dcb2544e8739f9b7552eb4beaa973c7626fb2ad9b1bd5d9f9f6e4f4"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-short.json",
+          "size": 360,
+          "crc32": "6adc9070",
+          "sha256": "389fa6f7c3865fdfc812fad0e3fd54e3ee2545b659f6d304d814b0ecef2ae4a0"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1286,
+          "crc32": "781956bd",
+          "sha256": "e3f3f5c6bbdfd98a68b5da76726117b57e5e15d36ec6f416c3acd2a82f8dddf6"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 8505,
+          "crc32": "2fec2a9e",
+          "sha256": "f8642948e6cb65736fcdf509ab7384ec81246bcfcfbf68251dab8fceeab2fac4"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "660e6a92bca84589b8c6524bda7f16ae29bdf91ee8bc6e64913c6ec6506ca529"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-rate-sources",
+      "viewport": "desktop",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/science.spec.ts",
+        "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/story.json",
+      "views": 18
+    },
+    {
+      "story": "science-ledger-components",
+      "viewport": "large",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "660e6a92bca84589b8c6524bda7f16ae29bdf91ee8bc6e64913c6ec6506ca529"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-rate-sources",
+      "viewport": "large",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/science.spec.ts",
+        "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-rate-sources/large/linux-arm64/story.json",
+      "views": 18
+    },
+    {
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "660e6a92bca84589b8c6524bda7f16ae29bdf91ee8bc6e64913c6ec6506ca529"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-rate-sources",
+      "viewport": "phone",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/science.spec.ts",
+        "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-rate-sources/phone/linux-arm64/story.json",
+      "views": 18
+    },
+    {
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/components.spec.ts",
+        "specSha256": "660e6a92bca84589b8c6524bda7f16ae29bdf91ee8bc6e64913c6ec6506ca529"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "views": 6
+    },
+    {
+      "story": "science-rate-sources",
+      "viewport": "short",
+      "source": {
+        "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+        "dirty": false,
+        "spec": "tests/e2e/003-science/science.spec.ts",
+        "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-rate-sources/short/linux-arm64/story.json",
+      "views": 18
+    }
+  ],
+  "images": 96,
+  "reused": 22,
+  "unreviewedImages": 74,
+  "unreviewedHashes": 39
+}

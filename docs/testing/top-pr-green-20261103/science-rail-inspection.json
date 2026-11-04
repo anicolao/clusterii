@@ -1,0 +1,253 @@
+{
+  "run": 41915747313,
+  "target": "547f8947a571b9b6e49b9e33451d2154a400ccf9",
+  "reviewer": "Implementation agent",
+  "individuallyViewedHashes": [
+    "30b99e9f2896c3895a9bbe45d63444fa06336d38f21455beef371fff8bea89fa",
+    "99fe0e1ba74002ae42095ebf5cee3a7539eeee4a4544e5691c1798c515303bc2",
+    "92f3357a45eddc2382a70d384f088bd1d33b43a2cc586a8826a61c770cdb1dd4",
+    "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc",
+    "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1",
+    "b721b3f01adb5f53277ac77c276081ca94555b8c271833b46fd13f9e4f4cbf22",
+    "bb97f3c989665e377a2fd97a82f7fb95193e4dc8af988c3621de5aee107379fe",
+    "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306",
+    "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558",
+    "a18b5dea9880de038cf996cebcf19731d450620fcee99384260097a32c3aad32",
+    "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
+    "a562ef9dcaef0c8a644b049e5cd88d906484d88ddb67e8d961555e5924525675",
+    "1dd1d2cc2bf7a694a3e25ee860730ab5539cc5445a03cdaa7ea40777ef33cdb9",
+    "f692f4169bf05a37a0b3671a94454d558f8a0ed8d5143406b3d3ff5d907b4d0b",
+    "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86",
+    "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd",
+    "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0",
+    "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d",
+    "b982d597b0810541040647c40dc550be59efe377a16da82554dce7dc06fba52a",
+    "af930d4052a22f527defb683291cae237dd419d46492a24cda0c8bd3de4f92c6",
+    "c1414ba89d4dc49d9acc1a835c7a61d79e5e055cc4a8ca6332330a6e297ab10c",
+    "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6",
+    "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+    "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+    "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672",
+    "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac",
+    "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+    "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+    "7cc9dedabeee7a82d0e92bd45daf0f7094e426f9dd20e04f714a587ae03b295a",
+    "c2d8adbaf536921457a2f724fad76d8c60e5f18604cf1db3a9a34c16b00d28f3",
+    "cd80cd94a59032d128a8d132e6ec6ed09a4849abc048db435f661fe000397a0f",
+    "69b44dfdd95f9c87c8cb2e1ad27873cd1ecf410f7d99e28bb1d6b7a05bffce84",
+    "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
+    "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
+    "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
+    "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
+    "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+    "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+    "25c5f4400cb7681649c5726102f36a0fdba5077cf71a254a3a97ec27a0a16d17"
+  ],
+  "coveredFiles": 74,
+  "exactPreviouslyApprovedOrInherited": [
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+      "sha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d",
+      "oldSha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+      "sha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d",
+      "oldSha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "sha256": "3ced53ef690ebe7df35d3ff829cce15ddb28c6b1ffb23e85c470d2749253836d",
+      "oldSha256": "3ced53ef690ebe7df35d3ff829cce15ddb28c6b1ffb23e85c470d2749253836d"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "sha256": "a613992f76d633c3252b6b1b3f301136a49230d6f4703c0314dcdd99593fdef3",
+      "oldSha256": "a613992f76d633c3252b6b1b3f301136a49230d6f4703c0314dcdd99593fdef3"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "sha256": "49e79be2dce9e284d844067720b05e5a64637006eca1dcccf75e354fc33f022f",
+      "oldSha256": "49e79be2dce9e284d844067720b05e5a64637006eca1dcccf75e354fc33f022f"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "desktop",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "sha256": "a0e34d0e1397194b324ebcf8f4c2a78878e68bc4d6c0ffd079d0a197a0c18cfb",
+      "oldSha256": "a0e34d0e1397194b324ebcf8f4c2a78878e68bc4d6c0ffd079d0a197a0c18cfb"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "large",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "sha256": "c265994e95f9f1fbed232932143a05ac88397de773d53c054e1f9909bae676d4",
+      "oldSha256": "c265994e95f9f1fbed232932143a05ac88397de773d53c054e1f9909bae676d4"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "large",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "sha256": "563424774e52bbec377a9442a6e34b76f935454a4cb86e21fca5f5e4eabd0a87",
+      "oldSha256": "563424774e52bbec377a9442a6e34b76f935454a4cb86e21fca5f5e4eabd0a87"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "large",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "sha256": "70fa48451221caacf293d38bdb77928e7916b166d8e234abdd66abd09481a9fa",
+      "oldSha256": "70fa48451221caacf293d38bdb77928e7916b166d8e234abdd66abd09481a9fa"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "large",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "sha256": "b23f3f3c8fe66d6522e0d338ce3a9e915c1d953101edbeebd48e05b2071bbec9",
+      "oldSha256": "b23f3f3c8fe66d6522e0d338ce3a9e915c1d953101edbeebd48e05b2071bbec9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+      "sha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9",
+      "oldSha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+      "sha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9",
+      "oldSha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "sha256": "a02125e14abce3c300dff6e112e751c9c20eed27d9ab26e5388582d2802fcdf6",
+      "oldSha256": "a02125e14abce3c300dff6e112e751c9c20eed27d9ab26e5388582d2802fcdf6"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "sha256": "2be4543eaa477e50a77738841660a3d9d79a1c6aa05a7f968f81656e1f31376c",
+      "oldSha256": "2be4543eaa477e50a77738841660a3d9d79a1c6aa05a7f968f81656e1f31376c"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "sha256": "512a1d9d6a9d24afacf1a0664b1d79a2d087a3c92977fea221225e1c212a7806",
+      "oldSha256": "512a1d9d6a9d24afacf1a0664b1d79a2d087a3c92977fea221225e1c212a7806"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "phone",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "sha256": "1e4f81e4bb9fb9f34e03eade3a9e81fb045d16f743b8bdfe96b828cc13e2aa74",
+      "oldSha256": "1e4f81e4bb9fb9f34e03eade3a9e81fb045d16f743b8bdfe96b828cc13e2aa74"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+      "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386",
+      "oldSha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+      "sha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386",
+      "oldSha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+      "sha256": "f20721a000c03c3d74387dea3a8c986910c27ef9f1e864902081d9020569b68b",
+      "oldSha256": "f20721a000c03c3d74387dea3a8c986910c27ef9f1e864902081d9020569b68b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+      "sha256": "118c0acd6c0a76bd192bd14554cf23ba6b443ec52a18d575972255954136478b",
+      "oldSha256": "118c0acd6c0a76bd192bd14554cf23ba6b443ec52a18d575972255954136478b"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+      "sha256": "e475bbacfaad92e5c4328091723b0adfb73d206c2e291856d1717093110a4cc9",
+      "oldSha256": "e475bbacfaad92e5c4328091723b0adfb73d206c2e291856d1717093110a4cc9"
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-ledger-components/short/linux-arm64/story.json",
+      "story": "science-ledger-components",
+      "viewport": "short",
+      "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+      "sha256": "35958d48114baa09c2d4621f1d866a7a986be62aa4b326d3e95d2693b75d738d",
+      "oldSha256": "35958d48114baa09c2d4621f1d866a7a986be62aa4b326d3e95d2693b75d738d"
+    }
+  ],
+  "resolvedHold": {
+    "originalSha256": "4d2ff540d4c2f29e7209d1d36382fa786599335c42b67a6f0ed647ce2d48653f",
+    "correctedSha256": "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6",
+    "finding": "Ordinary Economy no longer covers campaign/resource rail; real ordinary-route clearance assertion passed all sizes."
+  },
+  "limits": "Bounded reading positions are not simultaneous full-content visibility; large viewed downscaled. Original failed image remains held, never promoted."
+}
