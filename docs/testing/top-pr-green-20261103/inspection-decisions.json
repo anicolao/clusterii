@@ -6973,5 +6973,509 @@
         "reference": "tests/browser/story-baselines/research-selection-lab/desktop/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png"
       }
     ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "a48a0f9d620d64b33dafd146fb457256dc88f691aef43195169408bc37b0afab",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/002-pending-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/002-pending-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "3772bdc012bea03af75eb7de25b0cad52486fea1ea66cddec25fa72ddc05eebb",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/002-pending-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/002-pending-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "ed8c76e395175484e362973c2dab2b25ed466e63220ec5cd028749e3d477181a",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/003-interrupted-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "bd2b48770b9874a9ce38de4c56217defcf951623fb7aeac8ca0075da8a7acdbe",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "e67b33652bee1733f7daadbc4b1f34c51796334a3ade6dfc994a5163df9ca40f",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/004-scheduled-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "93e5e9e5d9c57b3036cf38b8740db7871db48bbbd8d473580e7ee76c39e52230",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "f017cc5280d7ed0e2b9298fb68644d22c62a7ed370207fbbce821bc36a80ec25",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/005-applied-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/005-applied-3-developer-reduced-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/006-applied-history-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b64943fc04e871f42b1abed41584e1abc03b0b89ba90d8fe40d5fbbc7ed1b6f1",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/005-applied-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/005-applied-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "619606012ec83012bb6e45bac6630ee8a854100abb921901c3ffe1b8efcd38ae",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "4dd6a692708573268a6bcc8bd16f8cf80b4836cf4ed3e31ba00e3f835072c6b9",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "842605178fd20825460a3ed1fcb6e645fe1ad863d066d813abd61f53f6f54e5d",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "eb3c50ac78e03683aa5997e9ce46bd47836350ccf5252bdec4095e08fddd2f0a",
+    "disposition": "approved-regression",
+    "inspection": "Native1280x720 individually viewed; paired reading views preserve selected row, Queue control, complete retry/status, scheduled/applied tick1 and history/focus. Some adjacent explanatory content is intentionally below fold. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/short/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "584ee2741047bd6dbc30090c774383d718a97c77d04b1dc9f0815e5bf7beb46f",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/002-pending-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/002-pending-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "c30c08e5c127d84c624c24809a8fb5089f3453fdd7ebb524a28254e1106b0120",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/002-pending-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/002-pending-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "20df0d4d639c8332cfce9935e4fcfc60acf7b30230d6024d7639362db2bb26b2",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/003-interrupted-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "5922e76b6ebf4c1fc8d1838b2ef2999942704cc8e523925c313d1bc5f993c3f2",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "d282809ff0d60bfe4d1a9bc77228594ffdfe09cafbf821cbec59d2c75efcb8e0",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/004-scheduled-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "daab92188224822310a59fc06d79ef6af495a8cb7397a135653d478d70dc05a9",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "400421c37ae60188dc7eb10d7dd49118c12d84d408d2793fc36a2e19065addd5",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/005-applied-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/005-applied-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "b6dd325f409b094a81da13ad79b640dcd46a28902c352525f948bb0e2e614588",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/005-applied-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/005-applied-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "7ca4c4ba71ccf411b8c77b4be2bc13b0b2a2c8b1bd41594ebb89d9aaacd793f8",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/006-applied-history-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "f2262676136f30edab6c2999f0f055cc1282fc83b94756735413b924bd387005",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "557e7401f451af79dd7c5c02a485f985e85470a6ec07763234cb044697b60a7b",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png"
+      }
+    ]
+  },
+  {
+    "target": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+    "reviewer": "Implementation agent, direct human inspect-before-approval authorization",
+    "sha256": "563f3c81a2040e9dac191b298885419cf31981d40782c37ca38d9ebfb0cf078b",
+    "disposition": "approved-regression",
+    "inspection": "Original3840x2160 individually viewed at2048x1152 display. Complete selected rows, Queue/retry controls, scheduled/applied tick1,1.4 retained science and keyboard history outlines fit. Approval covers visible layout/content, not native-pixel certification. Standard/reduced specimens are not full animation/design/release approval.",
+    "covered": [
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png"
+      },
+      {
+        "story": "research-selection-lab",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/large/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+        "reference": "tests/browser/story-baselines/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png"
+      }
+    ]
   }
 ]
