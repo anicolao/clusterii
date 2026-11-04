@@ -335,3 +335,7 @@ explain what is meant by "Bounds construction-ring profits. Replaces unlimited p
 ## Prompt 37: Fighter Normalization
 
 OK now explain the fighter combat line. How could the original spec "create units"?
+
+## Prompt 38: Simultaneous Combat
+
+OK explain the 'network timing' issue from 'Simultaneous combat'. this makes no sense to me
