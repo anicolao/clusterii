@@ -859,3 +859,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Measure retained evidence, bound further artifact retention, and record twelve inspected large credit exchange groups.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Finish all corrected Linux credit image inspections and import only approved hashes with exact source, spec and renderer guards.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit approved image hashes and unchanged required workflows, then publish validated client repairs to existing PR140 by normal fast-forward.
