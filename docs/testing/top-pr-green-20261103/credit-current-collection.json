@@ -1,0 +1,706 @@
+[
+  {
+    "project": "phone",
+    "count": 2,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=phone",
+          "--list",
+          "--reporter=json",
+          "credit-exchange[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live credit exchange settles and withdraws exact terms|Live credit exchange recovers an interrupted offer)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/credit-exchange.story.spec.ts",
+          "file": "browser/credit-exchange.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live credit exchange settles and withdraws exact terms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "phone",
+                  "projectName": "phone",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-bfe09caf7ce0eb977f00",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "Live credit exchange recovers an interrupted offer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "phone",
+                  "projectName": "phone",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-3335d50777c433d257db",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:32:16.830Z",
+        "duration": 191.30100000000002,
+        "expected": 0,
+        "skipped": 2,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  {
+    "project": "desktop",
+    "count": 2,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=desktop",
+          "--list",
+          "--reporter=json",
+          "credit-exchange[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live credit exchange settles and withdraws exact terms|Live credit exchange recovers an interrupted offer)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/credit-exchange.story.spec.ts",
+          "file": "browser/credit-exchange.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live credit exchange settles and withdraws exact terms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-a0f4b9232cfe7f14118b",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "Live credit exchange recovers an interrupted offer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-88fed5e872d96d3db4c2",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:32:17.235Z",
+        "duration": 77.83499999999998,
+        "expected": 0,
+        "skipped": 2,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  {
+    "project": "large",
+    "count": 2,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=large",
+          "--list",
+          "--reporter=json",
+          "credit-exchange[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live credit exchange settles and withdraws exact terms|Live credit exchange recovers an interrupted offer)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/credit-exchange.story.spec.ts",
+          "file": "browser/credit-exchange.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live credit exchange settles and withdraws exact terms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "large",
+                  "projectName": "large",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-ce1d156e9813fc3cdbed",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "Live credit exchange recovers an interrupted offer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "large",
+                  "projectName": "large",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-918684190b8d02d4d6be",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:32:17.526Z",
+        "duration": 76.274,
+        "expected": 0,
+        "skipped": 2,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  {
+    "project": "short",
+    "count": 2,
+    "report": {
+      "config": {
+        "argv": [
+          "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+          "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+          "test",
+          "--config",
+          "playwright.stories.config.ts",
+          "--project=short",
+          "--list",
+          "--reporter=json",
+          "credit-exchange[.]story[.]spec[.]ts$",
+          "--grep",
+          "(Live credit exchange settles and withdraws exact terms|Live credit exchange recovers an interrupted offer)$"
+        ],
+        "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+        "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "failOnFlakyTests": false,
+        "forbidOnly": false,
+        "fullyParallel": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "metadata": {},
+        "preserveOutput": "always",
+        "projects": [
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "phone",
+            "name": "phone",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "desktop",
+            "name": "desktop",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "large",
+            "name": "large",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          },
+          {
+            "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+            "repeatEach": 1,
+            "retries": 0,
+            "metadata": {},
+            "id": "short",
+            "name": "short",
+            "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+            "testIgnore": [],
+            "testMatch": [
+              "browser/**/*.story.spec.ts",
+              "e2e/**/*.spec.ts"
+            ],
+            "timeout": 90000
+          }
+        ],
+        "quiet": false,
+        "reporter": [
+          [
+            "json"
+          ]
+        ],
+        "reportSlowTests": {
+          "max": 5,
+          "threshold": 300000
+        },
+        "shard": null,
+        "tags": [],
+        "updateSnapshots": "none",
+        "updateSourceMethod": "patch",
+        "version": "1.61.1",
+        "workers": 1,
+        "webServer": {
+          "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+          "url": "http://127.0.0.1:4173/clusterii/pr4/",
+          "reuseExistingServer": false
+        }
+      },
+      "suites": [
+        {
+          "title": "browser/credit-exchange.story.spec.ts",
+          "file": "browser/credit-exchange.story.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Live credit exchange settles and withdraws exact terms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "short",
+                  "projectName": "short",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-300172ad17071dc0eb1a",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "Live credit exchange recovers an interrupted offer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "short",
+                  "projectName": "short",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "072d99a086c4247718d2-81b43c9c76fffabd6919",
+              "file": "browser/credit-exchange.story.spec.ts",
+              "line": 67,
+              "column": 3
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "stats": {
+        "startTime": "2026-11-04T16:32:17.814Z",
+        "duration": 76.71199999999999,
+        "expected": 0,
+        "skipped": 2,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  }
+]
