@@ -1,0 +1,7 @@
+# Complete current-source invitation review
+
+Run41921642165 completed both original invitation stories at all four viewports,9captures each,72total. Source request9ed511a2a944121c8e752874072e424ae5213b8c targets0a415b89. Source/spec/helpers match the present recovery for these stories; only unrelated science component scroll readiness changed since generation. All four original archives were API size/SHA256/CRC/path verified in memory; useful PNG/JSON/MD retained, no duplicate ZIP persisted. Complete entry hashes and remote expiry are in waiting-followup-retention.json.
+
+Ten new invitation images were individually viewed by the implementation agent under the human inspect-before-approval authorization. Waiting footer spacing is the same diagnosed CampaignWaiting notice margin repair. Named seats,2/4 assembly, roster controls and confirmed status remain readable; no gameplay fact changes. Large originals displayed downscaled2048x1152, scoped layout/content approval. Existing singular-seat grammar and underlying bounded prose are not full concept-fidelity acceptance. Remaining62 capture hashes are previously approved or unchanged references. No first-failure-only update: both complete journeys passed original functional assertions in generation, with no missing later-state evidence. Exact strict integrated acceptance remains outstanding.
+
+The rest of the waiting-followup run is retained and unapproved pending its own complete image review. No other family is imported by this review.

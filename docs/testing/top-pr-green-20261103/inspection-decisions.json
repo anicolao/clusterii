@@ -31595,5 +31595,185 @@
         "oldSha256": null
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9bd6c1c719f46bd21b697113cf0f3a9e10e38071d917c65fcd0e66b8562c39a7",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-first-admission/desktop/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "sha256": "9bd6c1c719f46bd21b697113cf0f3a9e10e38071d917c65fcd0e66b8562c39a7",
+        "oldSha256": "6f71b92024737e7fa260d0a1d1e44a66e01d2ae784a0c668a04e7c23231c614c"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "43eb4d549e0d7120bcc15f98798a374a6a8fbf28566fc560910cabbd1253fc3d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-first-admission/desktop/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-first-admission/desktop/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "sha256": "43eb4d549e0d7120bcc15f98798a374a6a8fbf28566fc560910cabbd1253fc3d",
+        "oldSha256": "80c962d77cdbf6550b4e01a0f452e559b818c506397b9127472e1791def6f68b"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "79b23d27fdc3e99c11dbad98393243bfa76cb5fc5ff7f6f601bc7a2822facc93",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/story.json",
+        "story": "invitation-returning-recovery",
+        "viewport": "desktop",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "sha256": "79b23d27fdc3e99c11dbad98393243bfa76cb5fc5ff7f6f601bc7a2822facc93",
+        "oldSha256": "09194c9ad2cbf16adadf4dc32e7c6115f57f003052bea395564efe4285bf7eba"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e4e9071760064be6fe73232acaf80eeb782e5897cb2f5fe6b5937aa2e0a173b4",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-first-admission/large/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "sha256": "e4e9071760064be6fe73232acaf80eeb782e5897cb2f5fe6b5937aa2e0a173b4",
+        "oldSha256": "3be53f56afcb4ed9a69f4a31d9a6d182e497dc5daa4346906108b8239f5ac7d7"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ecd6f6381cd8ea07ef25783c7832f38c9b026a59fe20eb2df66c2820a04082cf",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-first-admission/large/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "sha256": "ecd6f6381cd8ea07ef25783c7832f38c9b026a59fe20eb2df66c2820a04082cf",
+        "oldSha256": "c07278b448cbcd47cbeaf1f9778a1d9393fcabf3f62190e57df723336df0e431"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "507e964228fb08ce474b7fb427603248b6b1ed1f565ac89463069c1f843eb95d",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Large3840x2160 viewed at2048x1152, layout/content scope only.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-returning-recovery/large/linux-arm64/story.json",
+        "story": "invitation-returning-recovery",
+        "viewport": "large",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "sha256": "507e964228fb08ce474b7fb427603248b6b1ed1f565ac89463069c1f843eb95d",
+        "oldSha256": "6ac7887138b3cb06d42ccbed5f8de42394be5a25a238a5acf985fdb79aad173b"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b083db9ac9dd24bb8982aa8572609e2e407028b4393d2bd7eb6ef733c6311878",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "phone",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "sha256": "b083db9ac9dd24bb8982aa8572609e2e407028b4393d2bd7eb6ef733c6311878",
+        "oldSha256": "3c3b9ee2e8ef24d14e3aa96eb38d32e5394f537b668b6342fe2c2d13ea74b00f"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3100deb754bfdacf31dd0517e5482a0cec1e856c32c4ba8b5f3071e6afb8573a",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-1-invited-envoy.png",
+        "sha256": "3100deb754bfdacf31dd0517e5482a0cec1e856c32c4ba8b5f3071e6afb8573a",
+        "oldSha256": "b0434e2c458a407bc174406bbf60351fb3613cdde053419d64f071817d39a67a"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "57ace449cabc976bc8865901e88d641d71a43da166b2c18a12c02fe32a51a9f4",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+        "story": "invitation-first-admission",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/009-claim-seat-2-invitation-host.png",
+        "sha256": "57ace449cabc976bc8865901e88d641d71a43da166b2c18a12c02fe32a51a9f4",
+        "oldSha256": "39ce8a54d6692f8297b59068b9c69c7bff5f33e6830af29f8968d1440ef71e26"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ed5500c8e210978c1cd99f17a6cec6c60a6721f712f5347a2a133bcfabee5f96",
+    "disposition": "approved-regression",
+    "inspection": "Original individually viewed. Waiting-room footer now reserves repaired notice spacing; named invited/returning seat, host roster,2/4 assembly and confirmations/actions are readable. No changed identity or campaign facts. Existing singular-seat copy and bounded underlying campaign prose remain explicitly outside this spacing regression approval. Viewed at native viewport.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/story.json",
+        "story": "invitation-returning-recovery",
+        "viewport": "short",
+        "reference": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/004-authenticate-and-resume-2-invitation-host.png",
+        "sha256": "ed5500c8e210978c1cd99f17a6cec6c60a6721f712f5347a2a133bcfabee5f96",
+        "oldSha256": "fcce0d6076a6470bf47e49527e97837be82fc38af2e0a31ede514fa1041652f4"
+      }
+    ]
   }
 ]
