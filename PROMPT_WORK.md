@@ -873,3 +873,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Finish large fleet visual inspection and validate complete source-bound candidate eligibility without duplicating live required CI.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind existing guarded Linux candidate executor to the complete current science ledger and real science-rate journeys across four sizes.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one source-bound science candidate run with two original journeys per viewport and no snapshot updates or assertion changes.
