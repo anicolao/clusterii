@@ -1,0 +1,476 @@
+{
+  "ledgerSha256": "cde96793d5c1bf7f256818a0ee507847b9fdc6b3da62aadf173ed8816927a2d0",
+  "targetBeforeImport": "85c15a9f0b4b61e61d7b759cdea7bc365534a06b",
+  "families": [
+    {
+      "story": "campaign-chart-navigation",
+      "viewport": "phone",
+      "source": {
+        "commit": "3f079e3bf5b6cc00e3543c0cd9a316559d7f6eaf",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/phone/test-results/stories/campaign-chart-navigation/phone/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "002-assigned-chart-1-star-envoy.png",
+          "sha256": "321afe851a9ffdc4e2301d8019bf443a282a2c94aba50cd88ce790c1ca63ded9",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-filter-o-stars-1-star-envoy.png",
+          "sha256": "f0c7ea8388cb735bf258bcc6128a3b1693ed5446525d1abb8e7ecaf2e461a755",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-expand-camera-controls-1-star-envoy.png",
+          "sha256": "5315cfe9ecd7e5dea2bb233fb6da2a34177cc51b0c12282550ad62767ef07a87",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-keyboard-orbit-1-star-envoy.png",
+          "sha256": "59025fd442e397ea3f5ea4964222a496a8497cfffc1d3d54584078978b1ad196",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-overview-1-star-envoy.png",
+          "sha256": "3d153dee6d26cef98eb444e7e94eaaee08cd3d5d717a4be8dc0dadecf5e7606c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-select-rana-1-star-envoy.png",
+          "sha256": "9d70879a2cd56cacca9850a7c9b5ffc6c5601928496dd7f5ef177958e11726c0",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-label-inspector-boundary-1-star-envoy.png",
+          "sha256": "31dc15fdd122abaadba839e6843d9c98f6583142bcc40b20c11f18cdedda34b1",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-reload-chart-1-star-envoy.png",
+          "sha256": "321afe851a9ffdc4e2301d8019bf443a282a2c94aba50cd88ce790c1ca63ded9",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "live-research-orders",
+      "viewport": "phone",
+      "source": {
+        "commit": "3f079e3bf5b6cc00e3543c0cd9a316559d7f6eaf",
+        "dirty": false,
+        "spec": "tests/browser/research-orders.story.spec.ts",
+        "specSha256": "13ecb0e7c269034c54661297cb48bc4d4d0a1ffa0d8254f5c5842f645eff45a6"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/phone/test-results/stories/live-research-orders/phone/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/live-research-orders/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "010-choose-without-sending-1-market-envoy.png",
+          "sha256": "542827a0bd2915052c3512eb1db2135750d35376789b9634bd3d724fd640848f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-choose-without-sending-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-restore-panel-choice-1-market-envoy.png",
+          "sha256": "a89c2e3a01edce0c15a3691a745047c08f2f5c113e336776536177d02c930b40",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-unfunded-forecast-1-market-envoy.png",
+          "sha256": "d33a3737d2aa48d7f2f095aae6ae3be28c86174018c186ee802c7378741c1897",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-unfunded-forecast-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-unfunded-assumptions-1-market-envoy.png",
+          "sha256": "2809713eef9fe1fbdc42e1bbffbcc02794ef48bf7c93335947be3ca9fbf21086",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "014-queue-investing-1-market-envoy.png",
+          "sha256": "0794710ad31af19886adff07e391cfccd9324b454f3afb7a1145169a27ab4079",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "014-queue-investing-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-read-queued-forecast-1-market-envoy.png",
+          "sha256": "ffc102baf9e8ceeabf492cd0f8af513049327da16e5544ad2c58271811dcdf3e",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-read-queued-forecast-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-read-queued-assumptions-1-market-envoy.png",
+          "sha256": "724f6654c985eb63cba7342b78cd4320f66e2360a9db7d3ab7256b929fa45085",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-reload-accepted-order-1-market-envoy.png",
+          "sha256": "86f602abc6d14d14cfdf9ff7d1a3b10d504825a4d09af8bd8beb789b18d16e8b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "020-submit-held-choice-1-market-envoy-second-device.png",
+          "sha256": "9ae06f6822c3d29c5a4cdb24e209caf3df4c08d0368bb1091c6c07f91649d3f3",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+          "sha256": "14a889503f4d80b33d42d8b02ec04c6e9da1a0f7ef94bed223430c25712ef95c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+          "sha256": "1a6c260d0671cc71f9b92d77e058fd376ade1581367573e460c76cc1f1cc9810",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "024-switch-current-device-1-market-envoy.png",
+          "sha256": "454241c7f24233d7b738dc27502ffefd73b051b62e3bdbb506c4110ef7b17856",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "024-switch-current-device-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "026-review-stale-rejection-1-market-envoy-second-device.png",
+          "sha256": "049a90a5286d9ff50bfee07d3eddc24dc4a7f738451ce9891017d5bafa5699d2",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "026-review-stale-rejection-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "027-close-conflict-panel-1-market-envoy-second-device.png",
+          "sha256": "34d92f73764e0073d226a011016571be92d6a35d10f10909d7a67356e89c1737",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "028-reopen-conflict-panel-1-market-envoy-second-device.png",
+          "sha256": "19e67f4a6514ca39d64de799f3fe5f0cfbe1ad682cbf10e9193242ea88d25d2f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+          "sha256": "4db03efbe95892ecbca3a0b71b95d2484ab5d749e0fb1d17c024987a7f1ccc75",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "031-recover-science-tick-14-1-market-envoy.png",
+          "sha256": "4845b0eee4b4ad68d6ff90169be7e6c555d4728f574d25a14dd88d74ea1ef3aa",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "031-recover-science-tick-14-2-independent-investor.png",
+          "sha256": "53a9f9537e314b7cff83ec35e21fafa480034c075913544371309e2a7a21e6c3",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "033-recover-science-tick-15-1-market-envoy.png",
+          "sha256": "6baa894988ebda6ac3f16c674a629d79b606c347a62b6496ef927ae875090e5b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "033-recover-science-tick-15-2-independent-investor.png",
+          "sha256": "49d6d308b89319e7c8c0ccafe5cdcfdd3f13a5ff757f4b0b7fb061d1c1b79196",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "035-recover-science-tick-16-1-market-envoy.png",
+          "sha256": "c63d7539e151dcf2e35680795924887962fa3ba40ad2140b74ac4150edfae905",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "035-recover-science-tick-16-2-independent-investor.png",
+          "sha256": "0ec8de61fd803bbf4cd5adce10ac7b51242782c8fbac41306066b937ee384dc5",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+          "sha256": "c6469b1164ccfd758316232b22d8b88d1a1d71b157bb0c1ee5e05ab18327413a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "research-selection-lab",
+      "viewport": "phone",
+      "source": {
+        "commit": "3f079e3bf5b6cc00e3543c0cd9a316559d7f6eaf",
+        "dirty": false,
+        "spec": "tests/browser/research-lab.story.spec.ts",
+        "specSha256": "11a4c47794e22262200f6b10594b9d73b0060bd97f767cf0ee3922294107e2b8"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-retry-chart-candidates-41739433811/phone/test-results/stories/research-selection-lab/phone/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/research-selection-lab/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "002-pending-1-developer-standard-research-selection.png",
+          "sha256": "88ae4a56aae4e25f999ab1a18c77e606bbb340ea420ea453d3ff75aa8cf092a1",
+          "previousSha256": "9bdec6e35b5fc61b6a141483419bbe9ae994764e19af32611c8731b8ce3d257f",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-pending-2-developer-standard-research-outcome.png",
+          "sha256": "7279da8b2d9204ed7ee722164b27376f20831422374aae5424cafc52d4f38c2b",
+          "previousSha256": "1407ab1333182a04e3c6faf1f0a1700c8225df6e4a18764427f34a6a796eb824",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-pending-3-developer-reduced-research-selection.png",
+          "sha256": "c8833b85ae993409d02f773ef2ef599822a4e6b2bbeed68e42b3894e27d2c531",
+          "previousSha256": "97874f9a5f6bf0c253cd60da1ac161dfde8a2fe64a15d3b0f5f9dbe160df5032",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-pending-4-developer-reduced-research-outcome.png",
+          "sha256": "ce983802bb020123cb4a06004471f3f4257952d4f5fa43b79261ec1006bd69de",
+          "previousSha256": "3945beae0dbf0d4cbaa523f4b938f8cd7390cd857c99b8c56255ceaedec79c3a",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-1-developer-standard-research-selection.png",
+          "sha256": "78e1ed24b5720b32820d846c2c0582e1b23d85be688bf707b86582d5da939000",
+          "previousSha256": "ee4c1ca710f58d4c11acc3f94965d208105ca55eeecbe6b142cb0df1f75025b8",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-2-developer-standard-research-outcome.png",
+          "sha256": "004c60fd510bda824e007c8951fd6671f9be16726564684f7ac7ef857604f825",
+          "previousSha256": "2fd46b148b4dbfec81ed0b49f1bf500997969927f33a4b9249c7ba327eb2ab47",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-3-developer-reduced-research-selection.png",
+          "sha256": "501696bf22a8d10ab56ef496ebcdfade8093c20d1f16d4960f502e63e96c400a",
+          "previousSha256": "37d9cce7fe72667775f3c8f2ab479a7339b43ad2bbd0a81693986f937ed8f5ae",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-4-developer-reduced-research-outcome.png",
+          "sha256": "f76f9591730e8d1c273a07265651a8ddc4ef11e80f29efd0694c92284cdf7398",
+          "previousSha256": "ca230509c3e978e348df63adf1e744b8c2cacc95a523ce8ecb458b0f3ece6c69",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-scheduled-1-developer-standard-research-selection.png",
+          "sha256": "149373070ecb20a42ea4a9dd758a47caa5966ff7ec2565c9039a80527ad3e985",
+          "previousSha256": "8edf318a75760552340ef5bfa2d29115f21648b2d97e18ac918c6224d304dd42",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-scheduled-2-developer-standard-research-outcome.png",
+          "sha256": "cad3d62164da301d0f29b34162c091085b5d7dd377a232083db1df97c4eacdff",
+          "previousSha256": "de70b0598200090705d91dc865c5fab2caccf337e026e3a05528509eeab7433b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-scheduled-3-developer-reduced-research-selection.png",
+          "sha256": "56515cfa968351dc5552e88eab0c2ee802d88157f4a9fce08c5d9dbd3c6096d1",
+          "previousSha256": "002d6195f9981cb5cadfe477b812e803bd0353405da55534eef8f217e74a1a73",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-scheduled-4-developer-reduced-research-outcome.png",
+          "sha256": "3fed98e87ea77d7bf96352d1834f296971c588fac1e6fd2af401be8261601a56",
+          "previousSha256": "bdbcc483fb3349a617b8d4111fe773e73eb0cfa9de6625a77c3fa6d8b93df5c5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-applied-1-developer-standard-research-selection.png",
+          "sha256": "4250791cc7a888f4c037d04be4b869f0c2a53f20cf011590e15b140d90770491",
+          "previousSha256": "90e0c0ba929e72ac78898847bc8811c7dd0950dff3fd8327bea018e23eaf92d4",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-applied-2-developer-standard-research-outcome.png",
+          "sha256": "8f23b25feed460aa7fa420e68c756ee16fc6f01b6fa0b06d3daa7eb77512b8e5",
+          "previousSha256": "88e8979a3112f950b1020ebeaf6d8444b614c775f28f90d524eab3c703a6cd88",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-applied-3-developer-reduced-research-selection.png",
+          "sha256": "ca798fd98a4f4833bb1650f51dc1a7861141a45525457ea48c7883e7b4f00eaa",
+          "previousSha256": "95806e6c79d656c59af2568c53828009cf913ea664e8893d6db417639f64b739",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-applied-4-developer-reduced-research-outcome.png",
+          "sha256": "f5e42f54b3416cbd5feb545d7be70796595248f3397b971d00243a6aa8720243",
+          "previousSha256": "dfeb7e5f4cafc52146c9327e47b30626673aa27f8ceae33cb32b0ab9f20da385",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-applied-history-1-developer-standard-research-selection.png",
+          "sha256": "4250791cc7a888f4c037d04be4b869f0c2a53f20cf011590e15b140d90770491",
+          "previousSha256": "4f721f9cd2d0c972beecacd1a01336536a43da674fca9ec603e2b14954e3ffc0",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-applied-history-2-developer-standard-research-outcome.png",
+          "sha256": "ae3c91348ce367340ad3ea7cc190c4f30a5576d21b432933751cebf675c6bf49",
+          "previousSha256": "6f97261a3f0ef1d0890ab3138a878578598a07037e4e6777bdfc70a31175292f",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-applied-history-3-developer-reduced-research-selection.png",
+          "sha256": "35aee68a20cae88d5fcb5af3778745f7d1e9080241b2cb34ecd2d71d3c74375e",
+          "previousSha256": "c3f7e9fa3ca9cf4f84baa3c0630efdcbe37aa740a40c216377d84ba299ba3855",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-applied-history-4-developer-reduced-research-outcome.png",
+          "sha256": "88331c436422832fadec757af5203b401dc0df21994243bd4f5e1b79f4f36be3",
+          "previousSha256": "63d785e285fd0dc7c5f683fa0fec13c9c9443db7e0e9db566b0c64ba8a2d3e03",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-queue-preserved-choice-1-developer-standard-research-selection.png",
+          "sha256": "4c2e2de2accf25a8c3c628cbfe1d1e21cb6b07baf5f753c3208690f9014dc9d3",
+          "previousSha256": "4f6aa020288448a6ebf8affa414a4f3e6705cb1b000b4894097ba03bd62206d0",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+          "sha256": "a2f7fa43a8ed4d5530d37daaa1f331e690ceb38347836b3ab44c5c4d97222302",
+          "previousSha256": "43df6703b804584ef6f13064ddb09e2d8ff6cfc20f8fd28cfced996c842221df",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+          "sha256": "c1cb386e0492729f24526a4c9a4843c0df6296f18b51cf1e4bce1a54191821b6",
+          "previousSha256": "97874f9a5f6bf0c253cd60da1ac161dfde8a2fe64a15d3b0f5f9dbe160df5032",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+          "sha256": "226b2f154ba55e037b77df04ff3c56d2ad893bbc7d918ba5a773aa6039bea125",
+          "previousSha256": "3945beae0dbf0d4cbaa523f4b938f8cd7390cd857c99b8c56255ceaedec79c3a",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": []
+}
