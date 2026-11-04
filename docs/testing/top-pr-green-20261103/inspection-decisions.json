@@ -24287,5 +24287,211 @@
         "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png"
       }
     ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9d9d45815336b1e9d7c9ecec55264e8989359e6fc6c630374a6602193eca3654",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "118383435bf9c82ed6ed0d8fa3fba7f2b461f0476dbdfd1cbcd83ede114cea55",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a9379af8baf44907c42666cf0aa032217e2d80b54231e9cec971df84f5f5465d",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/013-close-offer-feedback-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/013-close-offer-feedback-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "556e718442d080729f624ea377393a8ccedcbcbbe8b07e06f769f3df1b8ee366",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b39c1f9de657e6e6371a4b64677726ad6aa85645cbb5502788e730a53cae2d45",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f9c21117abfb967ac49fed7db52ca130167aed0bcda65e589647dd701f64af2c",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a933c6b3b9385dd9c0a9bbae68b75fb4061c361906d278fb01f8c7827a1d8f82",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3a35c4376f716cf7ea45cedcd33d0e3a1363384e6311a15e42ba3b0b46ecf5d5",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a0a1af3a42785511e717930625ca5fd5798bd3ea8cd3fbfd150532b2976566fc",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "400b779709c0938740fa2de72832ce4688e7ca9943d4984bc06734a42253359f",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2eeff13b956f1b753cc9224953cbf95d724db6998ace0cdcbffbc769df36e997",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "e0c69eeeab746ddcae2de8c15152af0763641487",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "718358578e30fdf335cf2de99636a3332abe2565afd892b3cf8cfc6ab98a642f",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed large ordinary exchange original: offer terms, reservation, acceptance, settlement and second-offer states remain readable with contained controls. Own balances and tick/amount labels visible; no new clipping defect observed. Large displayed at 2048x1152 from 3840x2160; layout/content regression scope, not native-pixel fidelity or authorization certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/story.json",
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png"
+      }
+    ]
   }
 ]
