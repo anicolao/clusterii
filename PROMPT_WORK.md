@@ -871,3 +871,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete desktop fleet image inspection with exact-hash dispositions while preserving current top-PR execution and bounded artifact retention.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Finish large fleet visual inspection and validate complete source-bound candidate eligibility without duplicating live required CI.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reconcile remaining strict backlog against retained source-compatible evidence while preserving the sole live PR140 verification.

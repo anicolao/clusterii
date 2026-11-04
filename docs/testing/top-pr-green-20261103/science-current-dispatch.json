@@ -1,0 +1,52 @@
+{
+  "target": "e6f5fd31d6ee820eb3fdb9a8144480e3f9a6cab8",
+  "executor": "fd7d39d07b1cd4e7ea1bb3aea94d828c402f20b5",
+  "request": "e388a9211062fb638176bc12476f6292f888e37d",
+  "run": 41909174034,
+  "branch": "investigate/pr140-science-current-20261104",
+  "scope": {
+    "science-rate-sources": 18,
+    "science-ledger-components": 6
+  },
+  "expectedTotalViews": 96,
+  "guardTests": "6 passed under established offline Nix",
+  "actualCollection": {
+    "phone": {
+      "sha256": "704ed0c43924f8034be5f0118bbe4bac9eb9d7d09b49da6af5917e3146fbe4a5",
+      "tests": 2
+    },
+    "desktop": {
+      "sha256": "5dcc47bc596050ca478f518dd69cbe4fc059b63b1c0785259a366877f2644544",
+      "tests": 2
+    },
+    "large": {
+      "sha256": "6ffd4f9912d01a1ddd5015fb19c958afe2d3f72a56ee1eeeb6b3e7a65d797660",
+      "tests": 2
+    },
+    "short": {
+      "sha256": "f1048c5f7945332f10a24bcce87712514c669d47f980f103541eb3642b6dabd7",
+      "tests": 2
+    }
+  },
+  "originalLimits": "Unchanged complete original stories, retries 0, snapshot updates none; real authenticated actions and original per-step/whole-story deadlines.",
+  "whyFreshEvidence": "Retained older science candidates precede shared CampaignResearch/Galaxy/SystemLayers corrections; no assumption that old pixels apply. This generates review evidence, not automatic baseline acceptance.",
+  "retention": "Remote14days; no local download yet. Verify archive in memory where safe and retain useful PNG/JSON/MD only.",
+  "requiredCI": {
+    "head": "8eeea5e6315e309f9d883ed3ef3fcf50be2340fe",
+    "application": {
+      "run": 41893586352,
+      "state": "SUCCESS"
+    },
+    "strict": {
+      "run": 41893585935,
+      "job": 126797060512,
+      "state": "IN_PROGRESS",
+      "step": "Exact verification",
+      "stepStartedAt": "2026-11-04T19:29:26Z"
+    },
+    "documentation": "SUCCESS",
+    "publication": "SUCCESS",
+    "generation": "SUCCESS"
+  },
+  "unchangedRequiredCI": true
+}
