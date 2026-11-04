@@ -18,103 +18,110 @@
   const id = $props.id();
 </script>
 
-<section
-  class="system-world"
-  aria-label="System layers"
-  style={`--world: url('${base}/art/system-orbit.webp')`}
->
-  {#each ["orbit", "surface"] as area}
-    {@const orbital = area === "orbit"}
-    <section
-      class="layer-instrument"
-      class:orbital
-      class:surface={!orbital}
-      class:chosen={selected === area}
-      aria-label={orbital ? "Orbital control" : "Surface control"}
-    >
-      <div class="layer-scene" aria-hidden="true">
-        <img src={`${base}/art/system-orbit.webp`} alt="" />
+<div class="system-layer-frame">
+  <section
+    class="system-world"
+    aria-label="System layers"
+    style={`--world: url('${base}/art/system-orbit.webp')`}
+  >
+    {#each ["orbit", "surface"] as area}
+      {@const orbital = area === "orbit"}
+      <section
+        class="layer-instrument"
+        class:orbital
+        class:surface={!orbital}
+        class:chosen={selected === area}
+        aria-label={orbital ? "Orbital control" : "Surface control"}
+      >
+        <div class="layer-scene" aria-hidden="true">
+          <img src={`${base}/art/system-orbit.webp`} alt="" />
+        </div>
+        <ActionButton
+          class="layer-selector"
+          aria-label={`Inspect ${orbital ? "Orbit" : "Surface"} · owner ${holding?.[area as Layer] ?? "Unknown"}`}
+          aria-expanded={selected === area}
+          aria-controls={`${id}-${area}`}
+          data-focus={`layer-${area}`}
+          onclick={() =>
+            (selected = selected === area ? null : (area as Layer))}
+        >
+          <DevelopmentIcon type={orbital ? "station" : "base"} />
+          <span
+            ><strong>{orbital ? "Orbit" : "Surface"}</strong><small
+              >{orbital ? "Orbital control" : "Planetary control"}</small
+            ></span
+          >
+          <span class="owner">{holding?.[area as Layer] ?? "Unknown"}</span
+          ><span aria-hidden="true">›</span>
+        </ActionButton>
+        {#if selected === area}<div id={`${id}-${area}`} class="layer-facts">
+            <dl>
+              {#if orbital}
+                <div>
+                  <dt>Fighters</dt>
+                  <dd>{holding?.fighters ?? "Unknown"}</dd>
+                </div>
+                <div>
+                  <dt>Training camps</dt>
+                  <dd>{holding?.camps ?? "Unknown"}</dd>
+                </div>
+                <div>
+                  <dt>Space stations</dt>
+                  <dd>{holding?.stations ?? "Unknown"}</dd>
+                </div>
+              {:else}
+                <div>
+                  <dt>Infantry</dt>
+                  <dd>{holding?.infantry ?? "Unknown"}</dd>
+                </div>
+                <div>
+                  <dt>Markets</dt>
+                  <dd>{holding?.markets ?? "Unknown"}</dd>
+                </div>
+                <div>
+                  <dt>Bases</dt>
+                  <dd>{holding?.bases ?? "Unknown"}</dd>
+                </div>
+              {/if}
+            </dl>
+            <p>
+              {orbital
+                ? "Fighters and science go to the orbital owner."
+                : "Infantry go to the surface owner. Market credits remain held while control is split."}
+            </p>
+            {#if holding?.[area as Layer] === "You" && onbuild}<ActionButton
+                class="layer-build"
+                data-focus="construction"
+                disabled={pending}
+                onclick={() => onbuild?.(area as Layer)}
+                >{orbital ? "Build in orbit" : "Build on surface"}</ActionButton
+              >{/if}
+          </div>{/if}
+      </section>
+    {/each}
+    <section class="held-credits" aria-label="Held credits">
+      <div>
+        <h3>Held credits</h3>
+        <strong
+          >{holding?.escrowMilli === undefined
+            ? "Unknown"
+            : (holding.escrowMilli / 1000).toLocaleString("en-US")}</strong
+        >
       </div>
-      <ActionButton
-        class="layer-selector"
-        aria-label={`Inspect ${orbital ? "Orbit" : "Surface"} · owner ${holding?.[area as Layer] ?? "Unknown"}`}
-        aria-expanded={selected === area}
-        aria-controls={`${id}-${area}`}
-        data-focus={`layer-${area}`}
-        onclick={() => (selected = selected === area ? null : (area as Layer))}
-      >
-        <DevelopmentIcon type={orbital ? "station" : "base"} />
-        <span
-          ><strong>{orbital ? "Orbit" : "Surface"}</strong><small
-            >{orbital ? "Orbital control" : "Planetary control"}</small
-          ></span
-        >
-        <span class="owner">{holding?.[area as Layer] ?? "Unknown"}</span><span
-          aria-hidden="true">›</span
-        >
-      </ActionButton>
-      {#if selected === area}<div id={`${id}-${area}`} class="layer-facts">
-          <dl>
-            {#if orbital}
-              <div>
-                <dt>Fighters</dt>
-                <dd>{holding?.fighters ?? "Unknown"}</dd>
-              </div>
-              <div>
-                <dt>Training camps</dt>
-                <dd>{holding?.camps ?? "Unknown"}</dd>
-              </div>
-              <div>
-                <dt>Space stations</dt>
-                <dd>{holding?.stations ?? "Unknown"}</dd>
-              </div>
-            {:else}
-              <div>
-                <dt>Infantry</dt>
-                <dd>{holding?.infantry ?? "Unknown"}</dd>
-              </div>
-              <div>
-                <dt>Markets</dt>
-                <dd>{holding?.markets ?? "Unknown"}</dd>
-              </div>
-              <div>
-                <dt>Bases</dt>
-                <dd>{holding?.bases ?? "Unknown"}</dd>
-              </div>
-            {/if}
-          </dl>
-          <p>
-            {orbital
-              ? "Fighters and science go to the orbital owner."
-              : "Infantry go to the surface owner. Market credits remain held while control is split."}
-          </p>
-          {#if holding?.[area as Layer] === "You" && onbuild}<ActionButton
-              class="layer-build"
-              data-focus="construction"
-              disabled={pending}
-              onclick={() => onbuild?.(area as Layer)}
-              >{orbital ? "Build in orbit" : "Build on surface"}</ActionButton
-            >{/if}
-        </div>{/if}
+      <p>Securing both layers releases held credits.</p>
     </section>
-  {/each}
-  <section class="held-credits" aria-label="Held credits">
-    <div>
-      <h3>Held credits</h3>
-      <strong
-        >{holding?.escrowMilli === undefined
-          ? "Unknown"
-          : (holding.escrowMilli / 1000).toLocaleString("en-US")}</strong
-      >
-    </div>
-    <p>Securing both layers releases held credits.</p>
+    <p class="art-caption">
+      World and orbit illustration · not sensor intelligence
+    </p>
   </section>
-  <p class="art-caption">
-    World and orbit illustration · not sensor intelligence
-  </p>
-</section>
+</div>
 
 <style>
+  .system-layer-frame {
+    container-type: inline-size;
+    height: 100%;
+    width: 100%;
+  }
   .system-world {
     min-height: 100%;
     position: relative;
@@ -254,7 +261,7 @@
     background: #03101ab8;
     pointer-events: none;
   }
-  @media (min-width: 2500px) {
+  @container (min-width: 2500px) {
     .system-world {
       padding: 60px;
       gap: 50px;
@@ -346,7 +353,7 @@
       padding: 12px;
     }
   }
-  @media (max-width: 700px) {
+  @container (max-width: 700px) {
     .system-world {
       display: flex;
       flex-direction: column;

@@ -1,0 +1,110 @@
+{
+  "run": 41868598577,
+  "verification": [
+    {
+      "artifact": {
+        "id": 13344174879,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NDE3NDg3OQ==",
+        "name": "top-pr140-credit-current-candidates-phone-f93eb8d007a813413dd271efa7068992f663ddb0",
+        "size_in_bytes": 11673197,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344174879",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344174879/zip",
+        "expired": false,
+        "digest": "sha256:275cd3ab577fe2dcf13b4b4a3e21040f61e17ff2a95ce4f923fce7d372fd227d",
+        "created_at": "2026-11-04T16:56:28Z",
+        "updated_at": "2026-11-04T16:56:28Z",
+        "expires_at": "2026-11-18T16:56:26Z",
+        "workflow_run": {
+          "id": 41868598577,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-credit-current-20261104",
+          "head_sha": "f93eb8d007a813413dd271efa7068992f663ddb0"
+        }
+      },
+      "archiveSha256": "275cd3ab577fe2dcf13b4b4a3e21040f61e17ff2a95ce4f923fce7d372fd227d",
+      "verifiedInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/phone-verified.json",
+      "pngs": 54,
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded."
+    },
+    {
+      "artifact": {
+        "id": 13345730789,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NTczMDc4OQ==",
+        "name": "top-pr140-credit-current-candidates-desktop-f93eb8d007a813413dd271efa7068992f663ddb0",
+        "size_in_bytes": 57028461,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13345730789",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13345730789/zip",
+        "expired": false,
+        "digest": "sha256:0f19712a22b3a25b138f7446c92eebe1c6d025d890735747ddbd567e5c368a3d",
+        "created_at": "2026-11-04T16:59:51Z",
+        "updated_at": "2026-11-04T16:59:51Z",
+        "expires_at": "2026-11-18T16:59:49Z",
+        "workflow_run": {
+          "id": 41868598577,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-credit-current-20261104",
+          "head_sha": "f93eb8d007a813413dd271efa7068992f663ddb0"
+        }
+      },
+      "archiveSha256": "0f19712a22b3a25b138f7446c92eebe1c6d025d890735747ddbd567e5c368a3d",
+      "verifiedInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/desktop-verified.json",
+      "pngs": 54,
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded."
+    },
+    {
+      "artifact": {
+        "id": 13344472565,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NDQ3MjU2NQ==",
+        "name": "top-pr140-credit-current-candidates-large-f93eb8d007a813413dd271efa7068992f663ddb0",
+        "size_in_bytes": 314403165,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344472565",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344472565/zip",
+        "expired": false,
+        "digest": "sha256:dd9eea5466e4700dee01babf5e3851ce0ca40fac01cf665bc053f33a7149fa86",
+        "created_at": "2026-11-04T16:52:32Z",
+        "updated_at": "2026-11-04T16:52:32Z",
+        "expires_at": "2026-11-18T16:52:23Z",
+        "workflow_run": {
+          "id": 41868598577,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-credit-current-20261104",
+          "head_sha": "f93eb8d007a813413dd271efa7068992f663ddb0"
+        }
+      },
+      "archiveSha256": "dd9eea5466e4700dee01babf5e3851ce0ca40fac01cf665bc053f33a7149fa86",
+      "verifiedInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/large-verified.json",
+      "pngs": 54,
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded."
+    },
+    {
+      "artifact": {
+        "id": 13344667430,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NDY2NzQzMA==",
+        "name": "top-pr140-credit-current-candidates-short-f93eb8d007a813413dd271efa7068992f663ddb0",
+        "size_in_bytes": 32347865,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344667430",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344667430/zip",
+        "expired": false,
+        "digest": "sha256:72f2e834373eb706d44336ba9ae132de750ecc2efda2d4617bd5603c08d16a8a",
+        "created_at": "2026-11-04T16:53:04Z",
+        "updated_at": "2026-11-04T16:53:04Z",
+        "expires_at": "2026-11-18T16:53:02Z",
+        "workflow_run": {
+          "id": 41868598577,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-credit-current-20261104",
+          "head_sha": "f93eb8d007a813413dd271efa7068992f663ddb0"
+        }
+      },
+      "archiveSha256": "72f2e834373eb706d44336ba9ae132de750ecc2efda2d4617bd5603c08d16a8a",
+      "verifiedInventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-41868598577/short-verified.json",
+      "pngs": 54,
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded."
+    }
+  ],
+  "inspection": "Not yet visually approved; full archives verified in memory, only useful originals/JSON/MD retained, no local ZIP copy."
+}
