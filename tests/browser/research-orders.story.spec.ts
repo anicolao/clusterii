@@ -1062,6 +1062,55 @@ test("Live research orders preserve choices and acknowledge switches", async ({
           await expect(stale.getByRole("alert")).toContainText(
             "Your research choice is preserved",
           );
+          await expect
+            .poll(
+              async () => {
+                const alert = await stale.getByRole("alert").boundingBox();
+                const commanders = await stale
+                  .getByRole("navigation", { name: "Campaign commanders" })
+                  .boundingBox();
+                return alert && commanders
+                  ? alert.y - (commanders.y + commanders.height)
+                  : Number.NEGATIVE_INFINITY;
+              },
+              {
+                message:
+                  "The complete conflict message remains below the painted commander deck",
+              },
+            )
+            .toBeGreaterThanOrEqual(0);
+          const selectedLabel = stale.locator(
+            "[data-map-label][data-label-placed='true'].star-label",
+          );
+          await expect(selectedLabel).toBeVisible();
+          await expect
+            .poll(
+              async () => {
+                const label = await selectedLabel.boundingBox();
+                const occupied = await Promise.all([
+                  stale.getByRole("alert").boundingBox(),
+                  stale
+                    .getByRole("navigation", { name: "Campaign commanders" })
+                    .boundingBox(),
+                ]);
+                return (
+                  !!label &&
+                  occupied.every(
+                    (box) =>
+                      !!box &&
+                      (label.x + label.width <= box.x ||
+                        box.x + box.width <= label.x ||
+                        label.y + label.height <= box.y ||
+                        box.y + box.height <= label.y),
+                  )
+                );
+              },
+              {
+                message:
+                  "The selected star label clears both the commander deck and conflict message",
+              },
+            )
+            .toBe(true);
           expect((await receipts(uid)).length).toBe(beforeReconnect.length + 1);
         },
       },

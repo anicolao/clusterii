@@ -12,8 +12,11 @@ export function placeGalaxyLabels(
   width: number,
   height: number,
   pixelRatio = 1,
+  exclusions: Pick<LabelBox, "x" | "y" | "width" | "height">[] = [],
 ): Map<string, { x: number; y: number }> {
-  const placed: LabelBox[] = [];
+  const placed: Pick<LabelBox, "x" | "y" | "width" | "height">[] = [
+    ...exclusions,
+  ];
   const result = new Map<string, { x: number; y: number }>();
   const gap = 6;
   for (const label of [...labels].sort(
@@ -106,11 +109,31 @@ function createManager(root: HTMLElement) {
         height: box.height,
       };
     });
+    // Foreground messages and commander cards must not cover map labels.
+    // Move text around their actual bounds, never the catalogue positions.
+    const surface = root.closest(".galaxy-surface");
+    const exclusions = [
+      ...(surface?.querySelectorAll<HTMLElement>(
+        ".acknowledgement:not([inert]), .command-rail:not([inert]) [aria-label='Campaign commanders']",
+      ) ?? []),
+    ]
+      .filter((node) => getComputedStyle(node).visibility !== "hidden")
+      .map((node) => {
+        const box = node.getBoundingClientRect();
+        return {
+          x: box.x - bounds.x,
+          y: box.y - bounds.y,
+          width: box.width,
+          height: box.height,
+        };
+      })
+      .filter((box) => box.width > 0 && box.height > 0);
     const placements = placeGalaxyLabels(
       labels,
       bounds.width,
       bounds.height,
       window.devicePixelRatio || 1,
+      exclusions,
     );
     for (const e of entries) {
       const p = placements.get(e.options.id);
@@ -135,11 +158,12 @@ function createManager(root: HTMLElement) {
   });
   // HTML's projected wrapper transforms change on camera orbit/zoom. Ignore
   // our own label style writes, avoiding continuous render/observer loops.
-  changes.observe(root, {
+  changes.observe(root.closest(".galaxy-surface") ?? root, {
     attributes: true,
-    attributeFilter: ["style"],
+    attributeFilter: ["style", "inert"],
     subtree: true,
     childList: true,
+    characterData: true,
   });
   void document.fonts.ready.then(schedule);
   return {

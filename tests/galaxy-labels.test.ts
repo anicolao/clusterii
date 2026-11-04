@@ -33,6 +33,25 @@ function readable(labels: LabelBox[], width: number, height: number) {
   return placed;
 }
 describe("galaxy label cartography", () => {
+  test("selected label clears a real acknowledgement and returns when it closes", () => {
+    const label = box("selected", 260, 100, 3);
+    const original = structuredClone(label);
+    const message = { x: 20, y: 112, width: 760, height: 24 };
+    const deck = { x: 0, y: 0, width: 400, height: 90 };
+    const offset = placeGalaxyLabels([label], 900, 600, 1, [message, deck]).get(
+      "selected",
+    )!;
+    expect(offset).toBeDefined();
+    expect(label.y + offset.y).toBeGreaterThanOrEqual(
+      message.y + message.height + 6,
+    );
+    expect(label.y + offset.y).toBeGreaterThanOrEqual(deck.y + deck.height + 6);
+    expect(label).toEqual(original);
+    expect(placeGalaxyLabels([label], 900, 600).get("selected")).toEqual({
+      x: 0,
+      y: 0,
+    });
+  });
   test("resize round-trip projection noise preserves the physical text origin without changing catalogue anchors", () => {
     for (const pixelRatio of [1, 2]) {
       const positions = [133.35598754882812, 133.35597229003906].map((y) => {

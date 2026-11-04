@@ -221,6 +221,27 @@
   }
   let more = $state(false);
   let commandRailHeight = $state(0);
+  let commanderPresenceBottom = $state(0);
+  function measureCommanderPresence(node: HTMLDivElement) {
+    const deck = node.firstElementChild as HTMLElement;
+    const surface = node.closest(".galaxy-surface") as HTMLElement;
+    const measure = () => {
+      commanderPresenceBottom =
+        deck.getBoundingClientRect().bottom -
+        surface.getBoundingClientRect().top;
+    };
+    const observer = new ResizeObserver(measure);
+    observer.observe(deck);
+    observer.observe(node.closest("header") as HTMLElement);
+    window.addEventListener("resize", measure);
+    measure();
+    return {
+      destroy() {
+        observer.disconnect();
+        window.removeEventListener("resize", measure);
+      },
+    };
+  }
   let construction = $state(false);
   let constructionChoice = $state<Development>("market");
   let resumedConstruction = "";
@@ -1065,6 +1086,7 @@
   class="galaxy-surface"
   class:before-start={view.phase !== "active"}
   style:--command-rail-height={`${commandRailHeight}px`}
+  style:--commander-presence-bottom={`${commanderPresenceBottom}px`}
 >
   {#if view.phase === "waiting" || view.phase === "scheduled"}
     <div inert={roster}>
@@ -1097,7 +1119,7 @@
         construction ||
         military}
     >
-      <div class="commander-presence">
+      <div class="commander-presence" use:measureCommanderPresence>
         <CommanderDeck
           roster={view.roster}
           own={view.own}
@@ -2989,6 +3011,11 @@
     }
   }
   @media (min-width: 701px) {
+    .acknowledgement {
+      top: calc(
+        max(var(--command-rail-height), var(--commander-presence-bottom)) + 8px
+      );
+    }
     .command-rail {
       grid-template-columns: minmax(0, 1fr) auto auto;
       padding: 12px 24px 10px 480px;

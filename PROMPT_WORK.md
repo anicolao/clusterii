@@ -751,3 +751,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect complete desktop research lab originals and import only exact approved hashes from the corrected Linux run.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review remaining short and large research lab originals against the corrected selection and retry behavior before exact import.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Withhold the occluded desktop research conflict image and reproduce commander-deck overlap with a real reading geometry assertion.
