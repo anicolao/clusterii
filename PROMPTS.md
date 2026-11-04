@@ -287,3 +287,7 @@ go ahead and direclty add developer: true to all users, and tell me who you modi
 ## Prompt 25: Clarify Access
 
 you say I already had it, but you said "Osric" wasn't grandfathered in. WTF?
+
+## Prompt 26: New Account
+
+I just signed in with a new account that also needs fixing. please fix it
