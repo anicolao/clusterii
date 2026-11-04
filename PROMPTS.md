@@ -303,3 +303,7 @@ can we set the game start time to now so that it starts immediately thn?
 ## Prompt 29: Start Campaign
 
 ok we made a new campaign, kick it off please
+
+## Prompt 30: Faster Ticks
+
+is there a way to make ticks happen more often, e.g. every 3 minutes?
