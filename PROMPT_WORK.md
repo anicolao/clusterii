@@ -809,3 +809,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review retained feedback-motion references against current source while preserving the five live integrated PR140 checks.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect retained history recovery lab evidence and verify source compatibility while required PR140 application and strict checks execute.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review source-compatible scheduled-start lab originals and their exact hashes while preserving live integrated verification jobs.
