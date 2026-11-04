@@ -813,3 +813,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review source-compatible scheduled-start lab originals and their exact hashes while preserving live integrated verification jobs.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit retained selected-history lab source and inspect its complete Linux reference family without downloading duplicate evidence.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect production ledger lab references against current components and record authoritative integrated CI step progress.
