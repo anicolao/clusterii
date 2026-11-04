@@ -1,0 +1,297 @@
+{
+  "config": {
+    "argv": [
+      "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+      "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.stories.config.ts",
+      "e2e/(002-galaxy/galaxy|004-waiting/waiting)[.]spec[.]ts$",
+      "--list",
+      "--reporter=json"
+    ],
+    "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+    "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "phone",
+        "name": "phone",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "large",
+        "name": "large",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "short",
+        "name": "short",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "none",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+      "url": "http://127.0.0.1:4173/clusterii/pr4/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "e2e/002-galaxy/galaxy.spec.ts",
+      "file": "e2e/002-galaxy/galaxy.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Inspect and navigate a real galaxy through its command dock",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "cacb7df40c28e3aae773-f6f128fed29a6b53636b",
+          "file": "e2e/002-galaxy/galaxy.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "Inspect and navigate a real galaxy through its command dock",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "cacb7df40c28e3aae773-f7b2dba8f8b7462124a4",
+          "file": "e2e/002-galaxy/galaxy.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "Inspect and navigate a real galaxy through its command dock",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "large",
+              "projectName": "large",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "cacb7df40c28e3aae773-3fad870d256f03249288",
+          "file": "e2e/002-galaxy/galaxy.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "Inspect and navigate a real galaxy through its command dock",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "short",
+              "projectName": "short",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "cacb7df40c28e3aae773-24b96eb3536320df6603",
+          "file": "e2e/002-galaxy/galaxy.spec.ts",
+          "line": 11,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e/004-waiting/waiting.spec.ts",
+      "file": "e2e/004-waiting/waiting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Recover a waiting seat and enter the assigned home",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "70144525ad43594af82c-dbba37c364835159985d",
+          "file": "e2e/004-waiting/waiting.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "Recover a waiting seat and enter the assigned home",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "70144525ad43594af82c-0c7bb918a2cfbf4e00dd",
+          "file": "e2e/004-waiting/waiting.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "Recover a waiting seat and enter the assigned home",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "large",
+              "projectName": "large",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "70144525ad43594af82c-dfd6688dbd82626d5411",
+          "file": "e2e/004-waiting/waiting.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "Recover a waiting seat and enter the assigned home",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "short",
+              "projectName": "short",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "70144525ad43594af82c-4abff7b4224233224c8c",
+          "file": "e2e/004-waiting/waiting.spec.ts",
+          "line": 33,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T17:19:39.880Z",
+    "duration": 245.42399999999998,
+    "expected": 0,
+    "skipped": 8,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
