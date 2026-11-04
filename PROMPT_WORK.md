@@ -757,3 +757,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the sole corrected research-order Linux request and passing local gates, with scoped artifact lifetime and no reference approval.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect retained complete session-ending lab evidence and verify source applicability while the sole acknowledgement request executes.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record inspected large market states and terminal acknowledgement run with verified remote expiry and one bounded retrieval.
