@@ -8782,5 +8782,839 @@
         "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
       }
     ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3d9a3ad19e97380ff86cb739eb2b4d85a8ce8afd835f10c59fee6af9240bc198",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1782387c518f6a3fe2a3e59ebd509d993e3d06b725eb06d648639f4697dc6073",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/010-choose-without-sending-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9dbfc3ee0b12086ca52cfa40c5b3de7a7e0ba3ff9b5ebb68793d160f36a2a8b2",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/010-choose-without-sending-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/014-queue-investing-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/014-queue-investing-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/015-read-queued-forecast-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/024-switch-current-device-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/024-switch-current-device-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/026-review-stale-rejection-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3b6c2c9f4f8b1b1fed9462c56d3d9be403c95a1fd1632f32629bd795a7913f55",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/011-restore-panel-choice-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "30bbbc6b9da014177ad73d439685cb5f7fe0396a1071c85c9eeddafb5382b6d2",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6861fb027c7f1f83e1816f796146dc2ab05983f63f2ed114c93fd9d45a5fd384",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8211c5672c794577540adb2da67a31a41be9c3acd2ca393e9198b9e1c2fe8b71",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/014-queue-investing-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/014-queue-investing-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ffcea11c8cbc36c293d5bac8be8a324f1576e86db30133e9d20ccc4d73b23047",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/015-read-queued-forecast-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d7c85b2fdb29fdb351b43af54d1a984ca95661c91b7e1bdc3968b4179149d690",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/016-read-queued-assumptions-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "63f9d9a37945a40ba554a22159ed2794513a74be6b0f7369282db923639787f6",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/017-reload-accepted-order-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "67b62d4e7ef7a73f873a689c1e15017ab871b6a9b0ab5b794c5a871009df4313",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "21597342a95a5f5353048844c0c333e5fa74747d9876bc4f26e196adb2ea2b3d",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6da5e2a6472a37c7bd5581894034024d1e4e9eaa4a741fa62a2118c51e55b5d5",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "50ae87980911532877a48b814c5a261f682f268ddfea95f849a1a85ca08f7b93",
+    "disposition": "held-focus-clipping",
+    "inspection": "Short024 focused Research acknowledgement group top outline clipped by Economy reader; reproduced by whole-control clipping-ancestor assertion. Not approved.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/024-switch-current-device-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/024-switch-current-device-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7411b182995f240be0d7c5236635529436c6c52c08770785d44f5acdc82e78ce",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2ee3de2b18439d2818de1f2e773873f6ff16dd14d6f3473568308aa4dfb6af4a",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "91a7720a56a83e917de8a89f002d4a293db358bbbea5c875cb0198e682f4e095",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5308e8e7ecb5832b2861877fc2c20b0f79d0656e8e8e2630ab2409e906fd6543",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6bd1659d5d1336dbb62f380a427dc4547296d4afe55c6622b0a32bf33babf558",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/031-recover-science-tick-14-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "179224b31280bd98b301be138ff56281650de4a699c44307dd727909d3accb42",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/031-recover-science-tick-14-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f266100121e78ce9931a343631e32380da9beb4cf6a01fab0e5ff603d8f8532c",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/033-recover-science-tick-15-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6a3487ce512e32d5232167c8b2f0261c4609ce73a7099eaca5a3736e4093acb9",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/033-recover-science-tick-15-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "be2bbb08d5acccb7dec4530d143e44aa90981d8884d1d05ce82fbabea1193d4f",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/035-recover-science-tick-16-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "526c17d90b4ea93a41f66922f41f2f81a34b6ec7b32b6146e74902de3f4a0648",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/035-recover-science-tick-16-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "83c829a20dd149b967facfeb728287dff4f0b2478f2f7a71179264e3c1d06938",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/short/test-results/stories/live-research-orders/short/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/short/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "119e8f3a86ae0db9ed657b4ad5b2fcf6681ba01155d7936dfa80ef941456128f",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/011-restore-panel-choice-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/014-queue-investing-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/014-queue-investing-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/015-read-queued-forecast-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/024-switch-current-device-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/024-switch-current-device-2-independent-investor.png"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/026-review-stale-rejection-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c425c71515dadd70e94d1247ad4e55b695d6059d12a1bd7d7be056b1eca9c502",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "803092a24507a7dac47931a9090cf2a3e56233aca90a967ac59b298e0d004a82",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5099e2a5e17b65e4670ec01a47a9811e21deb152502fb0291f52d1b9c6d5a080",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/014-queue-investing-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/014-queue-investing-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d1381c74081a621e5716b47c217f997f6131ea54006afeba1d011a3ffdb58d52",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/015-read-queued-forecast-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "97ca9d69150713189509acbfa346a16322582f9f33cf38a1477b2e486e9643d9",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/016-read-queued-assumptions-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0d64f6101820af7ba3bca230ca48824751504c31436ffdccbcf96fe117ee60bd",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/017-reload-accepted-order-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "489d96d2269fef395559e64f697c52d3bb9250610ebe0ff002dcd246994a5d08",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0f7dc8a0b5a7cf32a0fe04f168548bed53ca019a88d460b585a57a98d12d80b1",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "61072ff6db50673b4db01dbf13e1f0ed41b1b2fabb81045d5d833376d01e4d00",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cb0649847f6800d4dc19b1b35710caa260deef6311ef9095d00f1d052ba1968d",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/024-switch-current-device-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/024-switch-current-device-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "37ee6cbb57e959243bea39fa83f1ab53cde6b0d3790615315404896d522d5bb0",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b0360551351063200d0d1e1d3586f4b9c1174c8a1de2e10521f025f565481fdb",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e16c2e4ade286d39f8ce25dec025d69457346c6866306aca23b66de78dfd60e4",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "23c240259c182e7090a810115606007e28cc3ddeced9aa49f1c711c8e915f543",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d5cac0dd9a42fa83803f7fb04bbba8d1460e52913711407aeace482a794cb0ab",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/031-recover-science-tick-14-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4777f261a694643ed92763c4d2fa7b2985c1864c99a2bfa381d3a993419d7922",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/031-recover-science-tick-14-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "11d1c1209fa8b7fde05ca35c69d10e03862584d86f579b3684f322c9ef26fcbf",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/033-recover-science-tick-15-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a7226132d699a9acae2caa67b8ec989c950dd5287a70e84acf4095b1e9e3d849",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/033-recover-science-tick-15-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "20f8502df9fe2fdc1aeb9aa060efcebd45ebbc2870b754e698f65e90c9e91889",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/035-recover-science-tick-16-1-market-envoy.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "cfdb8760c99c9e814f796b0d3c76502d9d828002e9188e0c6df43b8a0c9e9692",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/035-recover-science-tick-16-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "5f22330c489221be774b87d4ece1e49051559fd8",
+    "run": 41780187762,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b0a8b7b21b2ca8021fc881a249c26bc24bf0d25bbe20984d6e9baa7939b9610b",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed. Research selection, acknowledgements, pending/retry/conflict and scheduled orders readable at intended reading positions; corrected027 alert and selected label clear commander deck. Neighboring offscreen prose remains scrollable. Large viewed downscaled2048x1152 from3840x2160, layout/content scope only. Regression approval, not complete design/normal-motion/privacy certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-acknowledgement-candidates-41780187762/large/test-results/stories/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
+      }
+    ]
   }
 ]
