@@ -895,3 +895,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Correct reproduced contact qualifier-label overlap, preserve original capture failure, and retain four-size verification plus inspected science references.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one complete contact journey per viewport to reproduced qualifier clearance correction with original real-service assertions.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request corrected complete contact candidates once at all four sizes with original real services and capture budgets.
