@@ -1,0 +1,16 @@
+{
+  "target": "5e77413f",
+  "executor": "047a5aa4da6ccf598ddbef2ca3029eacb83d5fc1",
+  "request": "bb7694a2d5075aeb3543179eb15d266f03a15a47",
+  "run": 41864888414,
+  "status": "queued",
+  "expectedImages": 103,
+  "mode": "generate; not acceptance",
+  "retentionDays": 14,
+  "tests": "five guard tests passed; actual collection exactly three complete journeys per viewport",
+  "requiredStrictRun": 41852381575,
+  "requiredStrictStatus": "in_progress",
+  "requiredStrictHead": "1c5863496803368e04590f70ad01ce762c59aa8b",
+  "diskFreeBytes": 260228194304,
+  "artifactPolicy": "No duplicate downloads. Retrieve outcomes and metadata first; retain only evidence needed for diagnosis or review. Verify reconstructability before reclaiming redundant copies. No new artifact downloaded for this checkpoint."
+}
