@@ -819,3 +819,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit remaining returning-entry reference compatibility and inspect retained originals while monitoring existing PR140 verification.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect remaining large identity and keyboard-return mismatches using retained source-compatible Linux originals and exact renderer checks.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review remaining large Learn and interrupted-session entry images against unchanged source, exact retained manifests and renderer.

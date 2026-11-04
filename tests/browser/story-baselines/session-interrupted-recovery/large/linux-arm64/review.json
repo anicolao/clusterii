@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/SESSION_RECOVERY_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "session-interrupted-recovery",
   "renderer": {
@@ -27,5 +27,120 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/session-recovery.story.spec.ts",
+    "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-interrupted-recovery/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-account-entry-1-commander-first-device.png",
+      "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+      "previousSha256": "2640ce4eb9c9342b7a7099883d1ef4a3d86e845bfe533ef4e9c29a480543239b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-account-entry-2-commander-second-device.png",
+      "sha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "previousSha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "003-open-devices-1-commander-first-device.png",
+      "sha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+      "previousSha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-close-devices-1-commander-first-device.png",
+      "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+      "previousSha256": "2640ce4eb9c9342b7a7099883d1ef4a3d86e845bfe533ef4e9c29a480543239b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-cancel-confirmation-1-commander-first-device.png",
+      "sha256": "ab4bd1cf4aec45688a85cd087c32fb27b088b43d3eb0aebb2fe405fd2685b2d1",
+      "previousSha256": "ab4bd1cf4aec45688a85cd087c32fb27b088b43d3eb0aebb2fe405fd2685b2d1",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "005-cancel-confirmation-2-commander-second-device.png",
+      "sha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "previousSha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "007-interrupted-confirmation-1-commander-first-device.png",
+      "sha256": "ab4bd1cf4aec45688a85cd087c32fb27b088b43d3eb0aebb2fe405fd2685b2d1",
+      "previousSha256": "ab4bd1cf4aec45688a85cd087c32fb27b088b43d3eb0aebb2fe405fd2685b2d1",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "007-interrupted-confirmation-2-commander-second-device.png",
+      "sha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "previousSha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "009-reload-recovery-1-commander-first-device.png",
+      "sha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+      "previousSha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-reload-recovery-2-commander-second-device.png",
+      "sha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "previousSha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "010-end-both-sessions-1-commander-first-device.png",
+      "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+      "previousSha256": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-end-both-sessions-2-commander-second-device.png",
+      "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+      "previousSha256": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-fresh-sign-in-1-commander-first-device.png",
+      "sha256": "9413978b34504223ddb51a17903ef8e89b69ddbf5f56f867091e5478e3d2cf67",
+      "previousSha256": "9413978b34504223ddb51a17903ef8e89b69ddbf5f56f867091e5478e3d2cf67",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    },
+    {
+      "image": "012-fresh-sign-in-2-commander-second-device.png",
+      "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+      "previousSha256": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-reload-identity-1-commander-first-device.png",
+      "sha256": "598aab68832980c6fb41c5984d687ff9f1eed2bc243b904409770d533a17ff29",
+      "previousSha256": "598aab68832980c6fb41c5984d687ff9f1eed2bc243b904409770d533a17ff29",
+      "changed": false,
+      "approval": "unchanged inherited reference"
+    }
+  ]
 }
