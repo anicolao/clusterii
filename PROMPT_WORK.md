@@ -803,3 +803,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Commit the inspected campaign-history references in their numbered feature namespace and verify the complete 78-image import.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record exact approval, required-workflow, parent-history and clean fast-forward audit before the consolidated PR140 update.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the actual PR140 fast-forward and five live required-check handles without restarting the integrated target.
