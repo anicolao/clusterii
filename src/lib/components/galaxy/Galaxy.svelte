@@ -3011,7 +3011,9 @@
     }
   }
   @media (min-width: 701px) {
-    .acknowledgement {
+    .acknowledgement,
+    .system-inspector.expanded,
+    .system-inspector.active.expanded {
       top: calc(
         max(var(--command-rail-height), var(--commander-presence-bottom)) + 8px
       );

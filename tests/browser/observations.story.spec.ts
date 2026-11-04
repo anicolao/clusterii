@@ -109,6 +109,34 @@ test("Live stellar observations retain private current and historical facts afte
       primary: [button(page, "Return to system")],
       verifications: [
         {
+          spec: "The expanded observation heading clears the complete commander cards.",
+          check: async () => {
+            await expect
+              .poll(async () =>
+                page.evaluate(() => {
+                  const panel = document.querySelector(
+                    ".system-inspector.expanded",
+                  );
+                  const cards = document.querySelector(
+                    '[aria-label="Campaign commanders"]',
+                  );
+                  if (!panel || !cards) return true;
+                  const heading = panel
+                    .querySelector("h2")!
+                    .getBoundingClientRect();
+                  const deck = cards.getBoundingClientRect();
+                  return (
+                    heading.right <= deck.left ||
+                    heading.left >= deck.right ||
+                    heading.bottom <= deck.top ||
+                    heading.top >= deck.bottom
+                  );
+                }),
+              )
+              .toBe(true);
+          },
+        },
+        {
           spec: "Projected system labels remain separated and contained within the chart.",
           check: () => readableLabels(page),
         },
