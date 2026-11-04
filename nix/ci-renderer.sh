@@ -3,7 +3,7 @@
 : "${containerd:?}" "${rootShell:?}" "${engine:?}" "${imageArchive:?}" "${imageTag:?}" "${imageConfig:?}" "${imageDigest:?}" "${nixCommand:?}"
 case "${1:-}:${2:-}" in
   stories:verify|stories:generate|application:) ;;
-  recovery:feature010-phone|recovery:gallery-large|recovery:feature010-phone-candidates|recovery:science-components-candidates|recovery:feature012-contacts-candidates) [ "$#" -eq 2 ] || { echo "Recovery accepts no additional arguments" >&2; exit 2; } ;;
+  recovery:top-candidates-phone|recovery:top-candidates-desktop|recovery:top-candidates-large|recovery:top-candidates-short|recovery:feature010-phone|recovery:gallery-large|recovery:feature010-phone-candidates|recovery:science-components-candidates|recovery:feature012-contacts-candidates) [ "$#" -eq 2 ] || { echo "Recovery accepts no additional arguments" >&2; exit 2; } ;;
   *) echo "Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone" >&2; exit 2 ;;
 esac
 : "${RUNNER_TEMP:?GitHub runner scratch directory required}"
@@ -83,6 +83,6 @@ docker run --rm --ipc=host --network=host \
   --env CI=true --env NIX_REMOTE=daemon \
   --env 'NIX_CONFIG=experimental-features = nix-command flakes' \
   --env "CLUSTER_NIX_RENDERER_DIGEST=$imageDigest" \
-  --env CLUSTER_PINNED_RENDERER --env CLUSTER_STORY_COHORTS --env CLUSTER_SETTLEMENT_TIMING --env CLUSTER_SETTLEMENT_RPC_TIMING --env CLUSTER_EMULATOR_POST_MARKER \
+  --env GITHUB_REF_NAME --env GITHUB_RUN_ATTEMPT --env CLUSTER_PINNED_RENDERER --env CLUSTER_STORY_COHORTS --env CLUSTER_SETTLEMENT_TIMING --env CLUSTER_SETTLEMENT_RPC_TIMING --env CLUSTER_EMULATOR_POST_MARKER \
   --entrypoint "$nixCommand" "$imageTag" \
   develop path:./nix#renderer --command bash scripts/ci-in-renderer.sh "$@"
