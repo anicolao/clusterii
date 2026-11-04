@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/SHARING_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "selected-history-lab",
   "renderer": {
@@ -27,5 +27,85 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/sharing-lab.story.spec.ts",
+    "specSha256": "da75c94ab03635ab464653095d5c820f029f73754e812228e65702fd763e4397"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/selected-history-lab/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "a78dfc6ac6281d7ae24c0e51ef03d84688de30895a14641091becb75b0152344",
+      "previousSha256": "8046e7d368a4ed383e338a4aaebc8d8698e1bc6d6f415d3c4981285040941f28",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "a78dfc6ac6281d7ae24c0e51ef03d84688de30895a14641091becb75b0152344",
+      "previousSha256": "8046e7d368a4ed383e338a4aaebc8d8698e1bc6d6f415d3c4981285040941f28",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-pending-1-developer-recipient-in-standard-motion.png",
+      "sha256": "9cdc404e784a8a3cd6c5454b451778f6dd0844b37032068b3b521d714bdc1b1d",
+      "previousSha256": "131d1309696fb05282a3d5dbeece0dd87642a2b26b2df9442bff44542cff382e",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-pending-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "9cdc404e784a8a3cd6c5454b451778f6dd0844b37032068b3b521d714bdc1b1d",
+      "previousSha256": "131d1309696fb05282a3d5dbeece0dd87642a2b26b2df9442bff44542cff382e",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "sha256": "3da2364229f89a72864b5f6285934bd47a57e4efb28ca102eb393653150ebc53",
+      "previousSha256": "8ddf8afd736d6607abf6d8898b23d554d8a2f5ee041681612b78340deac19afc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "3da2364229f89a72864b5f6285934bd47a57e4efb28ca102eb393653150ebc53",
+      "previousSha256": "8ddf8afd736d6607abf6d8898b23d554d8a2f5ee041681612b78340deac19afc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "sha256": "3f38a91bf32239c70b222335205f8550d84fdadeb710daf27bab515f6aa2169c",
+      "previousSha256": "32b1cb6e73a09b8640a36ebfdef5e3b847ec96391677ed8d3b8f0e654c0f00ef",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "3f38a91bf32239c70b222335205f8550d84fdadeb710daf27bab515f6aa2169c",
+      "previousSha256": "32b1cb6e73a09b8640a36ebfdef5e3b847ec96391677ed8d3b8f0e654c0f00ef",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "6565dde262bfb42fb076e3e91608ac670811b47efd65333369fe6b61645f47a4",
+      "previousSha256": "5c139a980e86b0501d9da9c408d4d8ab921bd07d22c6fc6a16747a6339945d29",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "6565dde262bfb42fb076e3e91608ac670811b47efd65333369fe6b61645f47a4",
+      "previousSha256": "5c139a980e86b0501d9da9c408d4d8ab921bd07d22c6fc6a16747a6339945d29",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

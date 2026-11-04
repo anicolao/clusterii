@@ -811,3 +811,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect retained history recovery lab evidence and verify source compatibility while required PR140 application and strict checks execute.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review source-compatible scheduled-start lab originals and their exact hashes while preserving live integrated verification jobs.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit retained selected-history lab source and inspect its complete Linux reference family without downloading duplicate evidence.
