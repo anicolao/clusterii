@@ -837,3 +837,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record bounded current credit request, verified collection and sole live galaxy/required strict handles without new artifact downloads.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Classify terminal strict failures and fix measured waiting-footer focus overlap, retaining bounded evidence and four-size complete validation.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record sole corrected waiting Linux request and explicit useful-lifetime retention limits without duplicating large artifacts or restarting required CI.
