@@ -18891,5 +18891,72 @@
         "viewport": "large"
       }
     ]
+  },
+  {
+    "target": "227d0200",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+    "disposition": "approved-regression",
+    "inspection": "Each distinct original opened individually; duplicate captures covered by exact SHA. Cinematic entry Play/Learn, tagline and utility text readable and contained. Keyboard Learn-return ring visible; identity Close is pointer action with DOM focus assertion, not keyboard focus-visible parity. Identity/entry components, assets and exact story specs unchanged since retained candidate. Large3840 displayed2048: scoped layout/content, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/commander-identity/large/linux-arm64/001-arrive-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/large/linux-arm64/001-arrive-1-toile.png",
+        "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+        "existing": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+        "story": "commander-identity",
+        "viewport": "large"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/commander-identity/large/linux-arm64/005-sign-out-1-toile.png",
+        "reference": "tests/browser/story-baselines/commander-identity/large/linux-arm64/005-sign-out-1-toile.png",
+        "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+        "existing": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+        "story": "commander-identity",
+        "viewport": "large"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/identity-keyboard-return/large/linux-arm64/001-arrive-1-visitor.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/large/linux-arm64/001-arrive-1-visitor.png",
+        "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+        "existing": "1e0351cde5435f4c28efe5166b5fc5d04b51788f7060ac385c85cd68a72fe1ca",
+        "story": "identity-keyboard-return",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "227d0200",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "531e02969d42ae130239855287e05363ff61f655d624ca0ebf6e410426e0396c",
+    "disposition": "approved-regression",
+    "inspection": "Each distinct original opened individually; duplicate captures covered by exact SHA. Cinematic entry Play/Learn, tagline and utility text readable and contained. Keyboard Learn-return ring visible; identity Close is pointer action with DOM focus assertion, not keyboard focus-visible parity. Identity/entry components, assets and exact story specs unchanged since retained candidate. Large3840 displayed2048: scoped layout/content, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/identity-keyboard-return/large/linux-arm64/003-return-from-learn-1-visitor.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/large/linux-arm64/003-return-from-learn-1-visitor.png",
+        "sha256": "531e02969d42ae130239855287e05363ff61f655d624ca0ebf6e410426e0396c",
+        "existing": "132e4a9896f7d27a8f5cd69285b11cfd9c26fc4a6593b8b2e1d3fc2f6449fb99",
+        "story": "identity-keyboard-return",
+        "viewport": "large"
+      }
+    ]
+  },
+  {
+    "target": "227d0200",
+    "reviewer": "implementation agent; not independent supervisor review",
+    "sha256": "b69dca5c4e812190512e85d381591073877a69b7cabe269a6c6538e29919e7f9",
+    "disposition": "approved-regression",
+    "inspection": "Each distinct original opened individually; duplicate captures covered by exact SHA. Cinematic entry Play/Learn, tagline and utility text readable and contained. Keyboard Learn-return ring visible; identity Close is pointer action with DOM focus assertion, not keyboard focus-visible parity. Identity/entry components, assets and exact story specs unchanged since retained candidate. Large3840 displayed2048: scoped layout/content, not full design or native-pixel certification.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/identity-keyboard-return/large/linux-arm64/005-close-identity-1-commander.png",
+        "reference": "tests/browser/story-baselines/identity-keyboard-return/large/linux-arm64/005-close-identity-1-commander.png",
+        "sha256": "b69dca5c4e812190512e85d381591073877a69b7cabe269a6c6538e29919e7f9",
+        "existing": "4056c5bbc1a7ec7604880e1263c3047f54e2186d001183fd05fc843d21c06811",
+        "story": "identity-keyboard-return",
+        "viewport": "large"
+      }
+    ]
   }
 ]
