@@ -9616,5 +9616,1045 @@
         "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
       }
     ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0b719b72be36ceeb7c407736b35dfe0fa861d67e86ffb4fc5ff7d0606d652b8c",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "607dc674edfbe3a30009f67cb8ccd9e1e233bd8d64f81cd67a1cdbb6d0ee701a",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-3-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-3-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-3-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e149978d03f959f3c38cbfdae455377db0f7e227b1071f52ecfea8b84ede9a0b",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2dbcf8c1802e8f2e1c595bbc9e910405021a6f97774185c24f90a93583476c82",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2b76317dba1054df21856017e98b5f3a326abae4a2deba85920a46b12e6d293c",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof. Specifically inspected corrected focused Space station61 and full cyan ring above footer; prior clipped image stays held.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e61e8e35443bd9262d432bf073f8fe6e0d0bd3ba2721a370cf9e75d8b09faaa5",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1732754e527a60392e6b941ea5339e14bde8b61d26a1f0f424c81981a2c3d11b",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6020c717d5dcff330dc8d973dc467e904c49d02c54743afb073646fd6f16c455",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f4708b9d682908aa71bb9c62ccca905b34391c1fe444d95cdba1ef10f535fe4b",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "351cb7e2c586d74d01bb05840588dde90c597704c110873c91ff16cb3ad1ebd9",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e883bba7da23d07459c225fede29808a569142ed9f81bcec92f93e6b00ab1f89",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "28ed26d7376fa1065d50602ae9eec295078bf182c9308471ec2e9aa7d99feee8",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b120c893d62ce948994826af61ce56f8b3c634003312f82e48b315f9009a71ac",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "920488ee3313b7cfdcd2cbfcf1f408a9c516111a5685e4c58be0b5b48c41c2a7",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fce164a1551be14fa9a075c29bb16fe807f25ad774b7c99c081c8a5619d8589e",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f54c557601e0883999331d775adf0e7fb234e18716107ba5017d85bffbdf3140",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof. Recovering campaign is deliberate held-read fault state, not an accepted final loaded campaign.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a8b0da4aceec6219c3c45fef46355d903a0094229a3ad54c33fb40f6c7dc5431",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0959ef3d7783e7b810c2ef36d0799544ccaff9864cfd36575893269d6ad82aac",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a80a71b938d36c419b8f15f2352366f0473bbe7b4bf8c3581e66f4b0b3d942ec",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3db086d89298eaa801f773d11768ea094d6f637ec253191e4fd10a2d9e0509ae",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e4de263ce0fcdc65adea8da1af2dd3add5c8d36f0065f3dac22c1664628bc41c",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "11febdd069aaefac7b95986f8a374c9d04afe65a3538157df6745bba66e0dd2f",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d27190f11484f854de1a174f8982aa08052a635380fb514d9f828c890290c366",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6219ecce3515c6f8e13983648d32855e5c803fd32b198e8d0ff0e726caa1e13f",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof. Specifically inspected corrected focused Space station61 and full cyan ring above footer; prior clipped image stays held.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a579f1a31bf70029cf3d778f18cb412fa58b2ab4dc629ed26c425ebab4924619",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9ca0657a6757c73491548cc258ecb0ac737d5c5aaa299cac579fadcebfeab739",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "aed93d76ab16e765ec1e3cd1340010421d045d3d2618f462e2927350b0ce8914",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "239bc0ed875060f96b2cc9372fcc6f2b35e0e2bd44529d620f755cdb75c48599",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ed9bbc9b7a85bf4fc3fe0790945755fe50a4ecc7916cd22aa4cd3c01f7a5e1e0",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof. Recovering campaign is deliberate held-read fault state, not an accepted final loaded campaign.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "5c8a79f35198a2d1a20bf2d5f3dc9ffdb4b8bb5cc04d34d2412e3afab2a26359",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "73c7ddc4dfc8f0c8e59b9e7823f1be69be21b8d1a7148056d31b50658e43d579",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "741fcbd7caf5a5abf68959b698f6d5e1915f9bf52e89f46be20900608100b8d6",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fdb9329576dc5d73b52d2c1be69ee24e77d73ac0ddc5c6ce6d65bd56caab28c0",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/014-open-session-control-3-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/014-open-session-control-3-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-3-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3b20347cf2b6edb45112800ed17506d7a101a6d67fb9d4a482d8a8cb50f9ba4c",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a7d05bc909852de2f2ce834cc443dba14aece5e56bdc364bd7cc92adc29085b1",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a4c8e2ce2a111ff5ecd84c98b01da1091bc7cda3ae7115e6d56de949959d72b7",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png"
+      }
+    ]
+  },
+  {
+    "target": "ae4f70018a41175e1c5e7cd4eef748faf31d7222",
+    "run": 41731285520,
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e18b20bc05d4ca1ec09985d059bf868b56cbd72b15ca47ed3baa40bdbb240adb",
+    "disposition": "approved-regression",
+    "inspection": "Original actually viewed at native phone/desktop/short resolution. Draft versus configured25 values, blank/73 allocation123 and blank/61 allocation111, validation and disabled Apply remain readable; focused field/outline fully visible. Navigating retains draft; membership/session/account transitions clear it and restore authoritative allocation. Smaller readers intentionally scroll offscreen neighboring controls. Closed/loading/denied states show only their intended state. UX07 allocation and acknowledgement contract; scoped regression approval, not full concept fidelity or authenticated foreign-read proof.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "short",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png"
+      }
+    ]
   }
 ]

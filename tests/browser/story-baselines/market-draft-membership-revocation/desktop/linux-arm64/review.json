@@ -1,0 +1,125 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "market-draft-membership-revocation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "cb4dda0aff2ea9c930206ba3f9b5595ab03f9202",
+    "dirty": false,
+    "spec": "tests/browser/market-membership-revocation.story.spec.ts",
+    "specSha256": "f9045b8872531a189b8efbeb8fdc870a8a76b507f3befe00825016ac7fe8e90a"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact inspected regression references; current shared-renderer compatibility requires strict verification. No game rules/design/release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "sha256": "b120c893d62ce948994826af61ce56f8b3c634003312f82e48b315f9009a71ac",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "010-inspect-owned-focus-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "sha256": "920488ee3313b7cfdcd2cbfcf1f408a9c516111a5685e4c58be0b5b48c41c2a7",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "011-edit-partial-allocation-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "sha256": "fce164a1551be14fa9a075c29bb16fe807f25ad774b7c99c081c8a5619d8589e",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "012-navigate-with-intent-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+      "sha256": "f54c557601e0883999331d775adf0e7fb234e18716107ba5017d85bffbdf3140",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "014-recover-with-inflight-view-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "016-observe-revoked-access-1-market-envoy-campaign-device.png",
+      "sha256": "a8b0da4aceec6219c3c45fef46355d903a0094229a3ad54c33fb40f6c7dc5431",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "016-observe-revoked-access-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "018-reject-late-private-view-1-market-envoy-campaign-device.png",
+      "sha256": "a8b0da4aceec6219c3c45fef46355d903a0094229a3ad54c33fb40f6c7dc5431",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "018-reject-late-private-view-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "020-recover-restored-membership-1-market-envoy-campaign-device.png",
+      "sha256": "0959ef3d7783e7b810c2ef36d0799544ccaff9864cfd36575893269d6ad82aac",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "020-recover-restored-membership-2-independent-investor.png",
+      "sha256": "d1b7116f2338eb81028ef2eab6b13505800176d21a3744b98d57d1bbb777e8b4",
+      "previousSha256": null,
+      "changed": true
+    }
+  ]
+}
