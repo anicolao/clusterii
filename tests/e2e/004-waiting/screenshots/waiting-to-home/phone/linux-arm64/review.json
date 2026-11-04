@@ -1,0 +1,75 @@
+{
+  "story": "waiting-to-home",
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+    "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/story.json",
+  "scope": "Only six inspected pre-start views. Final two active-home images not approved/imported.",
+  "captures": [
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png",
+      "sha256": "ac12b47220e51bbf26dcf46fa377903f8331f8c25247382a167862e7d413886d",
+      "existing": null
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/011-read-scheduled-roster-1-chart-envoy.png",
+      "sha256": "96f7688487c49aeb168cdd02b26ecc02ee738c981b0b7bb5fb031c6177c09439",
+      "existing": null
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/012-read-departure-policy-1-chart-envoy.png",
+      "sha256": "37bead447a6a79377876d334c181993c9fe16063cc6101533ede34b3e2a49136",
+      "existing": null
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/013-read-rules-and-return-1-chart-envoy.png",
+      "sha256": "3eba49f2e69fe96018ecb23b4cdd316b46f8fe6beb9f8d0f5cd196a34f78b11f",
+      "existing": null
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/015-release-saved-seat-1-tidal-envoy.png",
+      "sha256": "6fff78574c336cab32a943fc84ff6488af71f53f9510392722a2c3982e37674a",
+      "existing": null
+    },
+    {
+      "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+      "reference": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/016-rejoin-departure-1-chart-envoy.png",
+      "sha256": "921a54c13c69222fef4e2fab7beded16c7f3ea768ea7c24924ffe9c741372d49",
+      "existing": null
+    }
+  ]
+}
