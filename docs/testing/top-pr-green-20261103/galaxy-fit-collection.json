@@ -1,0 +1,297 @@
+{
+  "config": {
+    "argv": [
+      "/nix/store/xr117l8hx39m623qlprxb7rdsjr8d69j-nodejs-slim-24.18.0/bin/node",
+      "/Users/anicolao/projects/games/clusterii-top/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.stories.config.ts",
+      "e2e/007-galaxy-composition/(composition|gallery)[.]spec[.]ts$",
+      "--list",
+      "--reporter=json"
+    ],
+    "configFile": "/Users/anicolao/projects/games/clusterii-top/playwright.stories.config.ts",
+    "rootDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "phone",
+        "name": "phone",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "large",
+        "name": "large",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/anicolao/projects/games/clusterii-top/test-results/stories",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "short",
+        "name": "short",
+        "testDir": "/Users/anicolao/projects/games/clusterii-top/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "browser/**/*.story.spec.ts",
+          "e2e/**/*.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "none",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "PUBLIC_BASE_PATH=/clusterii/pr4 PUBLIC_EMULATORS=true bun run build && node scripts/serve-pages.mjs /clusterii/pr4 4173",
+      "url": "http://127.0.0.1:4173/clusterii/pr4/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "e2e/007-galaxy-composition/composition.spec.ts",
+      "file": "e2e/007-galaxy-composition/composition.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Read the cinematic galaxy through real commander and system instruments",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "907e2b76dcefd9677f85-2c17b0983298a7d39324",
+          "file": "e2e/007-galaxy-composition/composition.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Read the cinematic galaxy through real commander and system instruments",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "907e2b76dcefd9677f85-8e965b42465bedd0b27e",
+          "file": "e2e/007-galaxy-composition/composition.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Read the cinematic galaxy through real commander and system instruments",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "large",
+              "projectName": "large",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "907e2b76dcefd9677f85-d55a17b8164949a9fc6f",
+          "file": "e2e/007-galaxy-composition/composition.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Read the cinematic galaxy through real commander and system instruments",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "short",
+              "projectName": "short",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "907e2b76dcefd9677f85-85579958aab9614bebc9",
+          "file": "e2e/007-galaxy-composition/composition.spec.ts",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e/007-galaxy-composition/gallery.spec.ts",
+      "file": "e2e/007-galaxy-composition/gallery.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Shared commander and command instruments expose their real keyboard states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d228c70b6118ea6f321b-e9cb1b9bb31e75c78adf",
+          "file": "e2e/007-galaxy-composition/gallery.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Shared commander and command instruments expose their real keyboard states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d228c70b6118ea6f321b-c9c47a08bc89a3344752",
+          "file": "e2e/007-galaxy-composition/gallery.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Shared commander and command instruments expose their real keyboard states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "large",
+              "projectName": "large",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d228c70b6118ea6f321b-4bf300243b387aee802f",
+          "file": "e2e/007-galaxy-composition/gallery.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Shared commander and command instruments expose their real keyboard states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "short",
+              "projectName": "short",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d228c70b6118ea6f321b-35e96a981c9407567232",
+          "file": "e2e/007-galaxy-composition/gallery.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-04T17:39:35.471Z",
+    "duration": 179.478,
+    "expected": 0,
+    "skipped": 8,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

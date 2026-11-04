@@ -1,0 +1,7 @@
+# System-layer container correction: exact Linux evidence
+
+Target39bcb0be changes SystemLayers width breakpoints to its allocated inline-size container and strengthens existing gallery containment assertions. The original large gallery failed with owner/prose outside their own instruments; corrected four-size gallery passes. All48 local complete live galaxy PNGs are byte-identical before/after this source change; original gameplay assertions pass. Original five large gallery Linux images remain held, not promoted.
+
+Generate exactly two existing complete journeys per viewport: composition9views and gallery4phone/5other,55total. Preserve all original assertions/deadlines, retries0, no snapshot updates, no telemetry. Six request/launcher tests passed; actual Playwright collection2eachviewport verified. Only branch/path-specific recovery workflow, no required workflow changes. Source-bound first-attempt request-only child; fresh ports/output,3GiB reserve, pinned existing Playwright1.61.1 Linux renderer,120minjob,14dayartifact retention.
+
+Every image must match an exact inspected hash or receive actual visual review. Compare all36 composition originals to the current inspected family; new gallery pixels require inspection. No Darwin-to-Linux approval transfer. Preserve the existing waiting-clearance request without restarting it. Runtime/generator success does not establish strict acceptance.
