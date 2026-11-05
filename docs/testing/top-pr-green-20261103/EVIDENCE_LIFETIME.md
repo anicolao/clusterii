@@ -12,3 +12,5 @@ Useful-lifetime rules for this recovery:
 - Reuse byte-identical approved images and retained metadata instead of downloading or rendering duplicates. Existing remote90-day artifact retention is not extended by this task.
 
 The current large market transfer is still needed for a new completed result; it is not duplicated. Future cleanup is limited to explicitly owned, verified redundant material and will record actual reclaimed bytes. Local source fixes and required CI failures remain actionable regardless of whether their transport archive still exists.
+
+Later checkpoint: that transfer statement describes the earlier checkpoint, not an ongoing download. New bounded recovery uploads use14-day retention; current artifact verification uses memory and saves only selected needed originals/metadata. The zero-science label diagnosis reused existing retained originals. Its small before/after local evidence is needed until the correction is reviewed and integrated; no duplicate remote ZIP was downloaded. Fresh preflight found252664066048bytes available. Free capacity does not justify retaining evidence indefinitely: the useful-lifetime rules above still apply.

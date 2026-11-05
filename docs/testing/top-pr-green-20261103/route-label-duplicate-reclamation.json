@@ -1,0 +1,771 @@
+{
+  "scope": "Only byte-identical task-owned temporary PNG copies; all unique originals/traces/manifests/logs preserved",
+  "verification": "SHA256 and complete byte equality, no active lsof users; final104 originals retained",
+  "freeBefore": 252227653632,
+  "freeAfter": 252432035840,
+  "reclaimedFileBytes": 204249943,
+  "files": [
+    {
+      "removed": "/tmp/cluster-zero-label-before/stories/live-zero-science/phone/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "sha256": "10471b122c137d2540f56838a358c8da8c410d3ca0c62d299aa9aed5be0f3a09",
+      "bytes": 181290
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-before/stories/live-zero-science/phone/darwin-arm64/017-preview-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/017-preview-route-0-1-fleet-marshal.png",
+      "sha256": "410f61d7ae6c5216172e80d7690dbf30fd7bde1822c88f046b4047fd477f9307",
+      "bytes": 216103
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-before/stories/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "sha256": "bda60e7ee97a6a65e7a2045ce73b5c7d54e2cbe960eafc807002bf47c0f065f5",
+      "bytes": 181269
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-before/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "sha256": "0036d9f0b70e9b133c87b0e15235f084eae45832d8e433d759c5fb3cfd24506f",
+      "bytes": 170244
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-before/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "960c54d0d22fb021fc499205401a37968d37a004387d49f92360285cac462fac",
+      "bytes": 169975
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-before/stories/live-zero-science/phone/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "9c0cf9421ebd45bdd164f8c794dadbcc3db79356625f48f04f467f6b4b374ac0",
+      "bytes": 305801
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "sha256": "f87ea5f6a31d0956a328e9d03e5169e09cb615fd58c497212af81db961d0dec8",
+      "bytes": 94468
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "sha256": "10471b122c137d2540f56838a358c8da8c410d3ca0c62d299aa9aed5be0f3a09",
+      "bytes": 181290
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "sha256": "838e22440f0697d05e0ba030fdcd3176752763a4c3d134da7aa317f7880544d2",
+      "bytes": 94528
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "sha256": "7b7a7c159b9cb10c2613f4147f2617b045c5a157640e09d15592ab6a99d7132c",
+      "bytes": 95753
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "cf055dfeb2c181c5012db11f34a810b3e357c909e8393814166e22cdf4b628d0",
+      "bytes": 222009
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "7fcfb1ea1212a5ee8abcdc88aa336cef5c274897c776a44584e125f2edd4a514",
+      "bytes": 224241
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "7fcfb1ea1212a5ee8abcdc88aa336cef5c274897c776a44584e125f2edd4a514",
+      "bytes": 224241
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "6b9b578b9e725a5e3796051fc86b0f0053129aabfef4a363e7948f0484be7cc7",
+      "bytes": 293366
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "sha256": "bda60e7ee97a6a65e7a2045ce73b5c7d54e2cbe960eafc807002bf47c0f065f5",
+      "bytes": 181269
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "c92b7bfc858fcc862486e0e930a9d630344a0442a67eecd60e232425b4e51aba",
+      "bytes": 296500
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "sha256": "0036d9f0b70e9b133c87b0e15235f084eae45832d8e433d759c5fb3cfd24506f",
+      "bytes": 170244
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "c92b7bfc858fcc862486e0e930a9d630344a0442a67eecd60e232425b4e51aba",
+      "bytes": 296500
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "cf055dfeb2c181c5012db11f34a810b3e357c909e8393814166e22cdf4b628d0",
+      "bytes": 222009
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "sha256": "16adbd74b6a590545121783e6b7c67adee2ee5bd2dee6cf520ca6d085807cbcb",
+      "bytes": 293273
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "960c54d0d22fb021fc499205401a37968d37a004387d49f92360285cac462fac",
+      "bytes": 169975
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "6b9b578b9e725a5e3796051fc86b0f0053129aabfef4a363e7948f0484be7cc7",
+      "bytes": 293366
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "38ab2b3ed995f32d0ca860464d922e23842ffddb8ff3419ea934a68de6ea81fe",
+      "bytes": 265646
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "sha256": "e8029596bf971c1c02694112496a10fc673b9da873035839c6afa7b69307c57a",
+      "bytes": 109001
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "b767bf3a94f023c090dd0fc70beb7efe008dde71209724bb3e3c984328b9d127",
+      "bytes": 263856
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "38ab2b3ed995f32d0ca860464d922e23842ffddb8ff3419ea934a68de6ea81fe",
+      "bytes": 265646
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "b767bf3a94f023c090dd0fc70beb7efe008dde71209724bb3e3c984328b9d127",
+      "bytes": 263856
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-after/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "sha256": "e65f8292ddff154d53fa1cea4db562d7e370059e28d98b7b99cbab9e387ed1a3",
+      "bytes": 95609
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "sha256": "15e8f3e93bc9c3880b2010b849c7cbb3310433a85165ed612c66e24b0db65f44",
+      "bytes": 5148044
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "sha256": "8bec616c9279d7851963e0c544590f448310619b383cfa09ce2b1dfe9abba382",
+      "bytes": 6605559
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "sha256": "29bf9badd8af7fc8ce001935af2346326c3f7103ef98dd4715355fba17273220",
+      "bytes": 5148250
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "sha256": "2edb3ec8b32bd946620ca81e85e505bdf2aee1a88114677db5bf2fd5b8aa932d",
+      "bytes": 6646440
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "sha256": "0b3ad76891fd65a2c0e8469dc94ebc426454a96d30a6a74c9638f59905ed52f2",
+      "bytes": 5155654
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+      "bytes": 5905042
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "b2dcb057cb4e7395d09706615191f7d0ff4e106761532c2fe2c71cd2bed2fec8",
+      "bytes": 5639276
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "b2dcb057cb4e7395d09706615191f7d0ff4e106761532c2fe2c71cd2bed2fec8",
+      "bytes": 5639276
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "ba2deedc69b64d0b3f333a83c758cfdf70b4d699f06b856d1b8dd83b0968ff19",
+      "bytes": 5945660
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "sha256": "573dac06e4d526836a26579e52f55dea0770a0da285b879614baa8e73d969b10",
+      "bytes": 6605555
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "742c9d0ea329c2734cd9ea535b4a75586a85f1b8eccef2f2e46f3bf25e74f287",
+      "bytes": 5977346
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/019-preview-route-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/019-preview-route-1-1-independent-marshal.png",
+      "sha256": "15ee3d77e58c875a5995d712ec1f1ed8b9a8c564f66e34c40589ba0f53d25438",
+      "bytes": 6076725
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "sha256": "3f53afa1ae114c97b4f4e88afcf532e97473837b63c82ee5f856bfcf3d528aa7",
+      "bytes": 6600786
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "742c9d0ea329c2734cd9ea535b4a75586a85f1b8eccef2f2e46f3bf25e74f287",
+      "bytes": 5977346
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+      "bytes": 5905042
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "sha256": "ca7e917008f621c0cec136fe5c7ed260670d3057a07ab30aa694fbc89f3494e9",
+      "bytes": 5944923
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "1f4c7da52834b2098dc9eaea6e7e38f12ef4b04f6713f868c6ac9d4910cacae9",
+      "bytes": 6598348
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "ba2deedc69b64d0b3f333a83c758cfdf70b4d699f06b856d1b8dd83b0968ff19",
+      "bytes": 5945660
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "ac7cde7b1e980134e5197fb2e9db0e1d7a782ba7ba4cc7d35138035e87c5608a",
+      "bytes": 6530411
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "6ca991777ca2f6cfa9d971ef50f90dd064888ed81e5b8dc899bfb36124b57e40",
+      "bytes": 5724173
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "sha256": "c0948edf8057b0f4e6e3ca0ce0b4c34b91b7e0add438e8d9e729364c3d2cd30d",
+      "bytes": 5191998
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+      "bytes": 5905042
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "6ca991777ca2f6cfa9d971ef50f90dd064888ed81e5b8dc899bfb36124b57e40",
+      "bytes": 5724173
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+      "bytes": 5905042
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/large/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "sha256": "382780d2f810a372a5aa6c692720f1e90b864bbb506d580d7dce846409967e73",
+      "bytes": 5154300
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "sha256": "2fa831d57767f1304c0c61221597bd688b2f27f8b8c513030df623743bc2a502",
+      "bytes": 432903
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "sha256": "752e5715d2b2f4e4f30ce1c336a51e3a4eb0ed7d029abf4e1062dd759a3781be",
+      "bytes": 979592
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "sha256": "54e1ea6658effbf2c8cfe73b79cf13764ed6398ad68b075e05a44c7081627a9e",
+      "bytes": 433133
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "sha256": "1a86469e502266bafbb8f0dc61994f6bf35aa7eb41b7a25117d9cf73a9b39baa",
+      "bytes": 1063109
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "sha256": "35f294b1cff39ae6379facf517ada74fae01e26aefac4142eefae706175cd056",
+      "bytes": 432382
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "f5406dd9facf25cf6661723dfa7e9fade5af3614db76a442a97aa92be9ab4635",
+      "bytes": 611985
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "b1ed7c4cfbf484f2713f698c7b79137a003d1694eaffaf00b062a17fdddda6e9",
+      "bytes": 612424
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "b1ed7c4cfbf484f2713f698c7b79137a003d1694eaffaf00b062a17fdddda6e9",
+      "bytes": 612424
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "30919dc30e6c7e50501e3b6771c73cba5f8e36480466652a610dbf966b541659",
+      "bytes": 732110
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "sha256": "ee33e3d7981f6327705289fb53dd10040673e59894c2563113cbf4bcfbf31e0d",
+      "bytes": 979667
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "7f190badfadc5b5c71996b31968e2dc8fa5680e2b411b6df25a5d756101ff805",
+      "bytes": 741129
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "sha256": "84de3e773175331afd8b6dbfbcde7253f06ab17ea80eb8f1e1edf07af01408ed",
+      "bytes": 971611
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "7f190badfadc5b5c71996b31968e2dc8fa5680e2b411b6df25a5d756101ff805",
+      "bytes": 741129
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "f5406dd9facf25cf6661723dfa7e9fade5af3614db76a442a97aa92be9ab4635",
+      "bytes": 611985
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "sha256": "0a74d44d38bccc8b316576ac5b86b165c0d67a4d9a2f7418905fa6fa84c22d07",
+      "bytes": 731758
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "c9824bb9cc45ab7fee755ed5637541c166226662133b6aacbe5eb79c8f86f479",
+      "bytes": 971899
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "30919dc30e6c7e50501e3b6771c73cba5f8e36480466652a610dbf966b541659",
+      "bytes": 732110
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "0e840b22f19c0f04436fa320cb7cca43f8aea04c05396494159871809d210c80",
+      "bytes": 1035140
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "ac99eda13c5c8427868751ef11b078e315968289443c2bb66fa71ad0e569e92c",
+      "bytes": 662621
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "sha256": "71e91c0476d9182f265bf42910c2b770168d003f85bdeb1434009be12cd42bc6",
+      "bytes": 456693
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "8767999169d1da74eb8885f63a1fac7c794171bcb5b57aeaae478fa1e22f7c28",
+      "bytes": 662902
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "ac99eda13c5c8427868751ef11b078e315968289443c2bb66fa71ad0e569e92c",
+      "bytes": 662621
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "8767999169d1da74eb8885f63a1fac7c794171bcb5b57aeaae478fa1e22f7c28",
+      "bytes": 662902
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/short/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "sha256": "831b02f9b712725e91934b2f64a08de3a68fb4cba78356b5c7d0b65ae09c7f09",
+      "bytes": 432589
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "sha256": "7fb65adc59cf23c7d16a1ae6868c668ca80312d9932e420e33f62d2e143e9ad0",
+      "bytes": 813826
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "sha256": "dadeb6ff158b94db6d6f19f9a3bfe0111442102522a9ec17dfada97bb3a272f7",
+      "bytes": 1476467
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "sha256": "54d8a3a2fe8bad2d6db98f999a3486503423608f3d406a738d17f56f023c012f",
+      "bytes": 814033
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "sha256": "2adb972dbf8a946be699dba491cd8acf4fb0a4e4cfb6f9410ae818273d7297dc",
+      "bytes": 1623779
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "sha256": "6a0e0adbc0dc7680fb392ece99f81e68bc8f29557066e3962e86d4c7284e9c83",
+      "bytes": 813074
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "b46e368d9d2a0c1e449bb08d7e45f1ce5970dda741d1cf739b8a17d8cf2532ee",
+      "bytes": 1064888
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "a9f4904e8eba10dc51034d32c9878eb873a3c31c1ec6235a9c07be4877271f2e",
+      "bytes": 1029966
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "a9f4904e8eba10dc51034d32c9878eb873a3c31c1ec6235a9c07be4877271f2e",
+      "bytes": 1029966
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "8819f10f1ec7c9cc955a6511737df0d9af254c076449ed90a27834104af23d0c",
+      "bytes": 1273193
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "sha256": "2699b0c22ce52c5e45559ac0a8d86b6d1c49f65ad48dcbefdd9e21ad9900c348",
+      "bytes": 1476535
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "1a7939060264e494d6fb4caec77ac5270f304cbc175538855034cd84322eecc9",
+      "bytes": 1282815
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "sha256": "24cd02a12240b92490216ac3b59814338a56dd883fdd48a0ea413a133684c127",
+      "bytes": 1469543
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "1a7939060264e494d6fb4caec77ac5270f304cbc175538855034cd84322eecc9",
+      "bytes": 1282815
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "b46e368d9d2a0c1e449bb08d7e45f1ce5970dda741d1cf739b8a17d8cf2532ee",
+      "bytes": 1064888
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "sha256": "e7a97cf59464f21704f32cb6768fb27fafb4fefb2041549e69b0fd9325a9c9cf",
+      "bytes": 1273110
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "935dcd200ed1f6387a2190ef53af021aa9e9d097022689c4eda493a79d287791",
+      "bytes": 1469716
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "8819f10f1ec7c9cc955a6511737df0d9af254c076449ed90a27834104af23d0c",
+      "bytes": 1273193
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "dbd273c742d675b71a6991b0da201891af3333aba1a1789180a7818c4ad11715",
+      "bytes": 1594790
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "c3cee476da16c0f35cf54aa0c5786581931d5d148fdf3e276f83ad40d4ce4d31",
+      "bytes": 1091758
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "sha256": "2251220f02778cfcda570ee3b9ac5ab072a980d0b58dd51fad3d86a7c5f639df",
+      "bytes": 853188
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "9c801c200ebc3e822fbebee69e14edcb326cf7729d46011760005b5ba552b85d",
+      "bytes": 1094107
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "c3cee476da16c0f35cf54aa0c5786581931d5d148fdf3e276f83ad40d4ce4d31",
+      "bytes": 1091758
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "9c801c200ebc3e822fbebee69e14edcb326cf7729d46011760005b5ba552b85d",
+      "bytes": 1094107
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/desktop/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "sha256": "5b96045584feb0f7dfd5eec5033b1ab84a79a915f4b6b712d129532ecaaf73cd",
+      "bytes": 813338
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-1-fleet-marshal.png",
+      "sha256": "f87ea5f6a31d0956a328e9d03e5169e09cb615fd58c497212af81db961d0dec8",
+      "bytes": 94468
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/014-form-1-1-independent-marshal.png",
+      "sha256": "10471b122c137d2540f56838a358c8da8c410d3ca0c62d299aa9aed5be0f3a09",
+      "bytes": 181290
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-1-fleet-marshal.png",
+      "sha256": "838e22440f0697d05e0ba030fdcd3176752763a4c3d134da7aa317f7880544d2",
+      "bytes": 94528
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/020-commit-route-1-1-independent-marshal.png",
+      "sha256": "67a5d3e24cee9f9b23a04f79cd989f109ae3bec9a369959de4ea374bba4f0be4",
+      "bytes": 312613
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/022-lost-orbit-2-independent-marshal.png",
+      "sha256": "7b7a7c159b9cb10c2613f4147f2617b045c5a157640e09d15592ab6a99d7132c",
+      "bytes": 95753
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "cf055dfeb2c181c5012db11f34a810b3e357c909e8393814166e22cdf4b628d0",
+      "bytes": 222009
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "7fcfb1ea1212a5ee8abcdc88aa336cef5c274897c776a44584e125f2edd4a514",
+      "bytes": 224241
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/017-preview-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/017-preview-route-0-1-fleet-marshal.png",
+      "sha256": "410f61d7ae6c5216172e80d7690dbf30fd7bde1822c88f046b4047fd477f9307",
+      "bytes": 216103
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "7fcfb1ea1212a5ee8abcdc88aa336cef5c274897c776a44584e125f2edd4a514",
+      "bytes": 224241
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/029-zero-rate-normal-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "6b9b578b9e725a5e3796051fc86b0f0053129aabfef4a363e7948f0484be7cc7",
+      "bytes": 293366
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/013-form-0-1-fleet-marshal.png",
+      "sha256": "bda60e7ee97a6a65e7a2045ce73b5c7d54e2cbe960eafc807002bf47c0f065f5",
+      "bytes": 181269
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/029-zero-rate-normal-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "c92b7bfc858fcc862486e0e930a9d630344a0442a67eecd60e232425b4e51aba",
+      "bytes": 296500
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/019-preview-route-1-1-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/019-preview-route-1-1-independent-marshal.png",
+      "sha256": "861ea7ea24cdc8d50638b980e7fb3e35de5e1102bdf7994d36d537bc6306513a",
+      "bytes": 225710
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-2-independent-marshal.png",
+      "sha256": "0036d9f0b70e9b133c87b0e15235f084eae45832d8e433d759c5fb3cfd24506f",
+      "bytes": 170244
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "c92b7bfc858fcc862486e0e930a9d630344a0442a67eecd60e232425b4e51aba",
+      "bytes": 296500
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "cf055dfeb2c181c5012db11f34a810b3e357c909e8393814166e22cdf4b628d0",
+      "bytes": 222009
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/026-close-economy-1-fleet-marshal.png",
+      "sha256": "16adbd74b6a590545121783e6b7c67adee2ee5bd2dee6cf520ca6d085807cbcb",
+      "bytes": 293273
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "960c54d0d22fb021fc499205401a37968d37a004387d49f92360285cac462fac",
+      "bytes": 169975
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "6b9b578b9e725a5e3796051fc86b0f0053129aabfef4a363e7948f0484be7cc7",
+      "bytes": 293366
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "9c0cf9421ebd45bdd164f8c794dadbcc3db79356625f48f04f467f6b4b374ac0",
+      "bytes": 305801
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "38ab2b3ed995f32d0ca860464d922e23842ffddb8ff3419ea934a68de6ea81fe",
+      "bytes": 265646
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/025-no-completion-estimate-1-fleet-marshal.png",
+      "sha256": "e8029596bf971c1c02694112496a10fc673b9da873035839c6afa7b69307c57a",
+      "bytes": 109001
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "b767bf3a94f023c090dd0fc70beb7efe008dde71209724bb3e3c984328b9d127",
+      "bytes": 263856
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "38ab2b3ed995f32d0ca860464d922e23842ffddb8ff3419ea934a68de6ea81fe",
+      "bytes": 265646
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "b767bf3a94f023c090dd0fc70beb7efe008dde71209724bb3e3c984328b9d127",
+      "bytes": 263856
+    },
+    {
+      "removed": "/tmp/cluster-zero-label-final/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "retained": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64/024-still-unfunded-2-independent-marshal.png",
+      "sha256": "e65f8292ddff154d53fa1cea4db562d7e370059e28d98b7b99cbab9e387ed1a3",
+      "bytes": 95609
+    }
+  ]
+}

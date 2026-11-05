@@ -1,0 +1,13 @@
+# Zero-science review: route-label collision blocks promotion
+
+Run41919956624 produced complete real-service four-size26-view stories at source0a415b89. Existing retained images were used without another generation or download. Phone12 distinct late-state images were already inspected and recorded; this checkpoint individually inspected the remaining35 distinct desktop/large/short late-state images. Earlier frames are reusable only by exact previously approved hash. The importer verifies current spec identity, passed complete manifests, pinned renderer and every image disposition before copying.
+
+The owner loses orbital science: research remains151.6 of160 and explicit no completion at the last zero-science rate; the other player advances from158.8 to level4 with1.2 retained and2.4 income. Owner OrbitUnknown/SurfaceYou is distinct from the peer owned state. The no-estimate explanation, queue action, real sources, delivered totals and return focus remain readable in the named viewing states.
+
+Bounded top/bottom readings do not imply simultaneous whole-content visibility. Short bottom ledger views show all totals and qualification but preceding Empire total heading is offscreen; source names are shown in the separate top views. Existing selected map-label overglow, commander ellipses and concept-composition gaps are not accepted as full design fidelity. Large originals3840x2160 were viewed at2048x1152, layout/content scope. Normal/reduced static equality is not full animation approval. Admin projections are not authenticated foreign-read-denial evidence.
+
+The import guard rejected the family: an earlier inventory had omitted32 early frames without establishing prior approval. All32 were subsequently individually inspected. Twenty-four formation/owner-route frames are readable; eight peer route-preview/accepted frames (019/020 at every size) are held because Origin/Rigil Kentaurus and waypoint1/Bibhā overlap. No zero-science PNG was imported. The generated result is not visual acceptance.
+
+Source diagnosis: Scene route-node spans use projected HTML anchors but bypass the existing collision-aware galaxyLabel action used by ordinary/selected labels. Fix label placement without moving stars or suppressing route nodes, and assert every origin/waypoint label is contained and pairwise nonoverlapping in the real journey. Preserve original service assertions and deadlines.
+
+Live API still reports PR1408eeea5e6 application success and strict failure; no green claim. Existing retained originals suffice for diagnosis; no duplicate archive was created. Retain these held originals through correction review, then reclaim verified redundant intermediates rather than accumulating archives indefinitely.
