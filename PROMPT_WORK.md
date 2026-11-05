@@ -907,3 +907,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Finish retained zero-science four-size review and import source-bound references; reuse verified originals without new generation or archive copies.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Fix demonstrated route-label collisions and editor occlusion; validate four real journeys and cheap gates, reclaim127 verified duplicate temporary images.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record sole Linux route-label run41943637871, exact target/request and200-view scope; preserve14-day upload retention and required target checks.
