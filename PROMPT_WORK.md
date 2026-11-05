@@ -911,3 +911,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one pinned Linux candidate request to corrected zero-science and contextual-aftermath route labels, preserving original limits and 14-day retention.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record bounded route-label Linux scope and installed-runner collection evidence in the sparse executor audit before its single request.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete four-size Linux route-label evidence run for two measured affected families; no baseline writes or repeated requests.
