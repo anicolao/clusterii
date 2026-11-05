@@ -33,6 +33,29 @@ function readable(labels: LabelBox[], width: number, height: number) {
   return placed;
 }
 describe("galaxy label cartography", () => {
+  test("route labels preserve clear projected paint origins while separating collisions", () => {
+    const origin = { ...box("origin", 24.25, 145.375, 4), snap: false };
+    expect(placeGalaxyLabels([origin], 393, 256).get(origin.id)).toEqual({
+      x: 0,
+      y: 0,
+    });
+    const waypoint = { ...box("waypoint", 40.125, 145.375, 4), snap: false };
+    const original = structuredClone([origin, waypoint]);
+    const placements = readable([origin, waypoint], 393, 256);
+    expect(placements.size).toBe(2);
+    expect(placements.get(origin.id)).toEqual({ x: 0, y: 0 });
+    expect(placements.get(waypoint.id)!.y).not.toBe(0);
+    expect([origin, waypoint]).toEqual(original);
+    const covered = { ...box("route-end", 1100.25, 210.375, 4), snap: false };
+    const editor = { x: 964, y: 12, width: 460, height: 540 };
+    const offset = placeGalaxyLabels([covered], 1440, 566, 1, [editor]).get(
+      covered.id,
+    )!;
+    expect(offset).toBeDefined();
+    expect(covered.x + offset.x + covered.width + 6).toBeLessThanOrEqual(
+      editor.x,
+    );
+  });
   test("selected name clears a tall reading panel without moving its anchor and restores on close", () => {
     for (const [width, height] of [
       [393, 852],

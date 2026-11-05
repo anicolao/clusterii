@@ -381,7 +381,10 @@
           side={DoubleSide}
         /></T.Mesh
       ><HTML position={[0, 0.015, 0]} style="pointer-events: none" center
-        ><span class="route-node" style="margin-top:22px"
+        ><span
+          use:galaxyLabel={{ id: `route-${star.id}`, priority: 4, snap: false }}
+          class="route-node"
+          style="margin-top:22px"
           >{routeIds.indexOf(star.id) === 0
             ? "Origin"
             : routeIds.indexOf(star.id)} · {star.name}</span

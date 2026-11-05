@@ -6,6 +6,7 @@ export type LabelBox = {
   width: number;
   height: number;
   priority: number;
+  snap?: boolean;
 };
 export function placeGalaxyLabels(
   labels: LabelBox[],
@@ -76,20 +77,22 @@ export function placeGalaxyLabels(
       // Text sits on physical pixels, while stars retain their exact catalogue
       // projection. Subpixel camera round trips must not leave labels at a
       // slightly different paint origin after returning to the same viewport.
-      candidate.x = Math.max(
-        gap,
-        Math.min(
-          width - gap - label.width,
-          Math.round(candidate.x * pixelRatio) / pixelRatio,
-        ),
-      );
-      candidate.y = Math.max(
-        gap,
-        Math.min(
-          height - gap - label.height,
-          Math.round(candidate.y * pixelRatio) / pixelRatio,
-        ),
-      );
+      if (label.snap !== false) {
+        candidate.x = Math.max(
+          gap,
+          Math.min(
+            width - gap - label.width,
+            Math.round(candidate.x * pixelRatio) / pixelRatio,
+          ),
+        );
+        candidate.y = Math.max(
+          gap,
+          Math.min(
+            height - gap - label.height,
+            Math.round(candidate.y * pixelRatio) / pixelRatio,
+          ),
+        );
+      }
       if (
         placed.some(
           (p) =>
@@ -111,7 +114,7 @@ export function placeGalaxyLabels(
   return result;
 }
 
-type Options = { id: string; priority: number };
+type Options = { id: string; priority: number; snap?: boolean };
 type Entry = { node: HTMLElement; options: Options; x: number; y: number };
 const managers = new WeakMap<HTMLElement, ReturnType<typeof createManager>>();
 function createManager(root: HTMLElement) {
@@ -140,6 +143,9 @@ function createManager(root: HTMLElement) {
     const surface = root.closest(".galaxy-surface");
     const exclusions = [
       ...root.querySelectorAll<HTMLElement>("[data-map-label-exclusion]"),
+      ...(root
+        .closest(".route-planner")
+        ?.querySelectorAll<HTMLElement>(".route-editor") ?? []),
       ...(surface?.querySelectorAll<HTMLElement>(
         ".acknowledgement:not([inert]), .command-rail:not([inert]) [aria-label='Campaign commanders'], .economy-panel, .campaign-records",
       ) ?? []),

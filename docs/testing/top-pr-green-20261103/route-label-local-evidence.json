@@ -1,0 +1,276 @@
+{
+  "parent": "38ff67be7ab6a241a4e2fee43b2df659d419adc4",
+  "localPlatform": "darwin-arm64",
+  "sourceDirty": true,
+  "sourceFiles": {
+    "src/lib/galaxy-labels.ts": "989882476a74e11c700c686c4c31cf06d81cf0160d25e010df22957b0245cb6b",
+    "src/lib/components/galaxy/Scene.svelte": "c9c8c102ee5c42e681b06929196b7902b4c269fd6eb4c925edf6304cc57305f9",
+    "src/lib/components/FleetRoute.svelte": "e361321a62a02c6985ff9e384e5d488ec77d527d6a1df91d73f9db6346e6e124",
+    "tests/e2e/010-zero-science/zero-science.spec.ts": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+  },
+  "viewports": {
+    "phone": {
+      "root": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/phone/darwin-arm64",
+      "manifestSha256": "d5028232be276b136b8d2f268345834341cae09a4cc946c1256531b507cbe8d1",
+      "source": {
+        "commit": "38ff67be7ab6a241a4e2fee43b2df659d419adc4",
+        "dirty": true,
+        "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+        "specSha256": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "pngs": {
+        "013-form-0-1-fleet-marshal.png": "bda60e7ee97a6a65e7a2045ce73b5c7d54e2cbe960eafc807002bf47c0f065f5",
+        "014-form-1-1-independent-marshal.png": "10471b122c137d2540f56838a358c8da8c410d3ca0c62d299aa9aed5be0f3a09",
+        "016-formed-fleets-1-fleet-marshal.png": "960c54d0d22fb021fc499205401a37968d37a004387d49f92360285cac462fac",
+        "016-formed-fleets-2-independent-marshal.png": "0036d9f0b70e9b133c87b0e15235f084eae45832d8e433d759c5fb3cfd24506f",
+        "017-preview-route-0-1-fleet-marshal.png": "410f61d7ae6c5216172e80d7690dbf30fd7bde1822c88f046b4047fd477f9307",
+        "018-commit-route-0-1-fleet-marshal.png": "9c0cf9421ebd45bdd164f8c794dadbcc3db79356625f48f04f467f6b4b374ac0",
+        "019-preview-route-1-1-independent-marshal.png": "861ea7ea24cdc8d50638b980e7fb3e35de5e1102bdf7994d36d537bc6306513a",
+        "020-commit-route-1-1-independent-marshal.png": "67a5d3e24cee9f9b23a04f79cd989f109ae3bec9a369959de4ea374bba4f0be4",
+        "022-lost-orbit-1-fleet-marshal.png": "f87ea5f6a31d0956a328e9d03e5169e09cb615fd58c497212af81db961d0dec8",
+        "022-lost-orbit-2-independent-marshal.png": "7b7a7c159b9cb10c2613f4147f2617b045c5a157640e09d15592ab6a99d7132c",
+        "024-still-unfunded-1-fleet-marshal.png": "838e22440f0697d05e0ba030fdcd3176752763a4c3d134da7aa317f7880544d2",
+        "024-still-unfunded-2-independent-marshal.png": "e65f8292ddff154d53fa1cea4db562d7e370059e28d98b7b99cbab9e387ed1a3",
+        "025-no-completion-estimate-1-fleet-marshal.png": "e8029596bf971c1c02694112496a10fc673b9da873035839c6afa7b69307c57a",
+        "026-close-economy-1-fleet-marshal.png": "16adbd74b6a590545121783e6b7c67adee2ee5bd2dee6cf520ca6d085807cbcb",
+        "027-zero-rate-normal-ledger-1-fleet-marshal.png": "cf055dfeb2c181c5012db11f34a810b3e357c909e8393814166e22cdf4b628d0",
+        "027-zero-rate-normal-ledger-2-independent-marshal.png": "7fcfb1ea1212a5ee8abcdc88aa336cef5c274897c776a44584e125f2edd4a514",
+        "028-zero-rate-normal-totals-1-fleet-marshal.png": "b767bf3a94f023c090dd0fc70beb7efe008dde71209724bb3e3c984328b9d127",
+        "028-zero-rate-normal-totals-2-independent-marshal.png": "38ab2b3ed995f32d0ca860464d922e23842ffddb8ff3419ea934a68de6ea81fe",
+        "029-zero-rate-normal-return-1-fleet-marshal.png": "6b9b578b9e725a5e3796051fc86b0f0053129aabfef4a363e7948f0484be7cc7",
+        "029-zero-rate-normal-return-2-independent-marshal.png": "c92b7bfc858fcc862486e0e930a9d630344a0442a67eecd60e232425b4e51aba",
+        "030-zero-rate-reduced-ledger-1-fleet-marshal.png": "cf055dfeb2c181c5012db11f34a810b3e357c909e8393814166e22cdf4b628d0",
+        "030-zero-rate-reduced-ledger-2-independent-marshal.png": "7fcfb1ea1212a5ee8abcdc88aa336cef5c274897c776a44584e125f2edd4a514",
+        "031-zero-rate-reduced-totals-1-fleet-marshal.png": "b767bf3a94f023c090dd0fc70beb7efe008dde71209724bb3e3c984328b9d127",
+        "031-zero-rate-reduced-totals-2-independent-marshal.png": "38ab2b3ed995f32d0ca860464d922e23842ffddb8ff3419ea934a68de6ea81fe",
+        "032-zero-rate-reduced-return-1-fleet-marshal.png": "6b9b578b9e725a5e3796051fc86b0f0053129aabfef4a363e7948f0484be7cc7",
+        "032-zero-rate-reduced-return-2-independent-marshal.png": "c92b7bfc858fcc862486e0e930a9d630344a0442a67eecd60e232425b4e51aba"
+      },
+      "bytes": 5676873
+    },
+    "desktop": {
+      "root": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/desktop/darwin-arm64",
+      "manifestSha256": "d85d971906362a7617c6a108619344a55db4ecf2fcfdcb932515b7fd97833d0e",
+      "source": {
+        "commit": "38ff67be7ab6a241a4e2fee43b2df659d419adc4",
+        "dirty": true,
+        "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+        "specSha256": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "pngs": {
+        "013-form-0-1-fleet-marshal.png": "2699b0c22ce52c5e45559ac0a8d86b6d1c49f65ad48dcbefdd9e21ad9900c348",
+        "014-form-1-1-independent-marshal.png": "dadeb6ff158b94db6d6f19f9a3bfe0111442102522a9ec17dfada97bb3a272f7",
+        "016-formed-fleets-1-fleet-marshal.png": "935dcd200ed1f6387a2190ef53af021aa9e9d097022689c4eda493a79d287791",
+        "016-formed-fleets-2-independent-marshal.png": "24cd02a12240b92490216ac3b59814338a56dd883fdd48a0ea413a133684c127",
+        "017-preview-route-0-1-fleet-marshal.png": "50dc60469965f137c60b6b15e726c12662e0ffe3dc761c647129585aa1091592",
+        "018-commit-route-0-1-fleet-marshal.png": "dbd273c742d675b71a6991b0da201891af3333aba1a1789180a7818c4ad11715",
+        "019-preview-route-1-1-independent-marshal.png": "b5fe597cf8163a31257aa89602e014148267e1705ccde746ff35584d5af88e59",
+        "020-commit-route-1-1-independent-marshal.png": "2adb972dbf8a946be699dba491cd8acf4fb0a4e4cfb6f9410ae818273d7297dc",
+        "022-lost-orbit-1-fleet-marshal.png": "7fb65adc59cf23c7d16a1ae6868c668ca80312d9932e420e33f62d2e143e9ad0",
+        "022-lost-orbit-2-independent-marshal.png": "6a0e0adbc0dc7680fb392ece99f81e68bc8f29557066e3962e86d4c7284e9c83",
+        "024-still-unfunded-1-fleet-marshal.png": "54d8a3a2fe8bad2d6db98f999a3486503423608f3d406a738d17f56f023c012f",
+        "024-still-unfunded-2-independent-marshal.png": "5b96045584feb0f7dfd5eec5033b1ab84a79a915f4b6b712d129532ecaaf73cd",
+        "025-no-completion-estimate-1-fleet-marshal.png": "2251220f02778cfcda570ee3b9ac5ab072a980d0b58dd51fad3d86a7c5f639df",
+        "026-close-economy-1-fleet-marshal.png": "e7a97cf59464f21704f32cb6768fb27fafb4fefb2041549e69b0fd9325a9c9cf",
+        "027-zero-rate-normal-ledger-1-fleet-marshal.png": "b46e368d9d2a0c1e449bb08d7e45f1ce5970dda741d1cf739b8a17d8cf2532ee",
+        "027-zero-rate-normal-ledger-2-independent-marshal.png": "a9f4904e8eba10dc51034d32c9878eb873a3c31c1ec6235a9c07be4877271f2e",
+        "028-zero-rate-normal-totals-1-fleet-marshal.png": "9c801c200ebc3e822fbebee69e14edcb326cf7729d46011760005b5ba552b85d",
+        "028-zero-rate-normal-totals-2-independent-marshal.png": "c3cee476da16c0f35cf54aa0c5786581931d5d148fdf3e276f83ad40d4ce4d31",
+        "029-zero-rate-normal-return-1-fleet-marshal.png": "8819f10f1ec7c9cc955a6511737df0d9af254c076449ed90a27834104af23d0c",
+        "029-zero-rate-normal-return-2-independent-marshal.png": "1a7939060264e494d6fb4caec77ac5270f304cbc175538855034cd84322eecc9",
+        "030-zero-rate-reduced-ledger-1-fleet-marshal.png": "b46e368d9d2a0c1e449bb08d7e45f1ce5970dda741d1cf739b8a17d8cf2532ee",
+        "030-zero-rate-reduced-ledger-2-independent-marshal.png": "a9f4904e8eba10dc51034d32c9878eb873a3c31c1ec6235a9c07be4877271f2e",
+        "031-zero-rate-reduced-totals-1-fleet-marshal.png": "9c801c200ebc3e822fbebee69e14edcb326cf7729d46011760005b5ba552b85d",
+        "031-zero-rate-reduced-totals-2-independent-marshal.png": "c3cee476da16c0f35cf54aa0c5786581931d5d148fdf3e276f83ad40d4ce4d31",
+        "032-zero-rate-reduced-return-1-fleet-marshal.png": "8819f10f1ec7c9cc955a6511737df0d9af254c076449ed90a27834104af23d0c",
+        "032-zero-rate-reduced-return-2-independent-marshal.png": "1a7939060264e494d6fb4caec77ac5270f304cbc175538855034cd84322eecc9"
+      },
+      "bytes": 30902939
+    },
+    "large": {
+      "root": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/large/darwin-arm64",
+      "manifestSha256": "c4ba2473398913790648246ba839e34e9773dbaa37b4f0f53325df7cdeae5aed",
+      "source": {
+        "commit": "38ff67be7ab6a241a4e2fee43b2df659d419adc4",
+        "dirty": true,
+        "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+        "specSha256": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "pngs": {
+        "013-form-0-1-fleet-marshal.png": "573dac06e4d526836a26579e52f55dea0770a0da285b879614baa8e73d969b10",
+        "014-form-1-1-independent-marshal.png": "8bec616c9279d7851963e0c544590f448310619b383cfa09ce2b1dfe9abba382",
+        "016-formed-fleets-1-fleet-marshal.png": "1f4c7da52834b2098dc9eaea6e7e38f12ef4b04f6713f868c6ac9d4910cacae9",
+        "016-formed-fleets-2-independent-marshal.png": "3f53afa1ae114c97b4f4e88afcf532e97473837b63c82ee5f856bfcf3d528aa7",
+        "017-preview-route-0-1-fleet-marshal.png": "d2011063cb3fbee539651bdea6f8da42d2aa0a5056123c408f81bdb1f6b9a88e",
+        "018-commit-route-0-1-fleet-marshal.png": "ac7cde7b1e980134e5197fb2e9db0e1d7a782ba7ba4cc7d35138035e87c5608a",
+        "019-preview-route-1-1-independent-marshal.png": "15ee3d77e58c875a5995d712ec1f1ed8b9a8c564f66e34c40589ba0f53d25438",
+        "020-commit-route-1-1-independent-marshal.png": "2edb3ec8b32bd946620ca81e85e505bdf2aee1a88114677db5bf2fd5b8aa932d",
+        "022-lost-orbit-1-fleet-marshal.png": "15e8f3e93bc9c3880b2010b849c7cbb3310433a85165ed612c66e24b0db65f44",
+        "022-lost-orbit-2-independent-marshal.png": "0b3ad76891fd65a2c0e8469dc94ebc426454a96d30a6a74c9638f59905ed52f2",
+        "024-still-unfunded-1-fleet-marshal.png": "29bf9badd8af7fc8ce001935af2346326c3f7103ef98dd4715355fba17273220",
+        "024-still-unfunded-2-independent-marshal.png": "382780d2f810a372a5aa6c692720f1e90b864bbb506d580d7dce846409967e73",
+        "025-no-completion-estimate-1-fleet-marshal.png": "c0948edf8057b0f4e6e3ca0ce0b4c34b91b7e0add438e8d9e729364c3d2cd30d",
+        "026-close-economy-1-fleet-marshal.png": "ca7e917008f621c0cec136fe5c7ed260670d3057a07ab30aa694fbc89f3494e9",
+        "027-zero-rate-normal-ledger-1-fleet-marshal.png": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+        "027-zero-rate-normal-ledger-2-independent-marshal.png": "b2dcb057cb4e7395d09706615191f7d0ff4e106761532c2fe2c71cd2bed2fec8",
+        "028-zero-rate-normal-totals-1-fleet-marshal.png": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+        "028-zero-rate-normal-totals-2-independent-marshal.png": "6ca991777ca2f6cfa9d971ef50f90dd064888ed81e5b8dc899bfb36124b57e40",
+        "029-zero-rate-normal-return-1-fleet-marshal.png": "ba2deedc69b64d0b3f333a83c758cfdf70b4d699f06b856d1b8dd83b0968ff19",
+        "029-zero-rate-normal-return-2-independent-marshal.png": "742c9d0ea329c2734cd9ea535b4a75586a85f1b8eccef2f2e46f3bf25e74f287",
+        "030-zero-rate-reduced-ledger-1-fleet-marshal.png": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+        "030-zero-rate-reduced-ledger-2-independent-marshal.png": "b2dcb057cb4e7395d09706615191f7d0ff4e106761532c2fe2c71cd2bed2fec8",
+        "031-zero-rate-reduced-totals-1-fleet-marshal.png": "5080a794f6e6522a34a10c1a011f92e53f4e6fa0ba98e6190e53cc53549a6b30",
+        "031-zero-rate-reduced-totals-2-independent-marshal.png": "6ca991777ca2f6cfa9d971ef50f90dd064888ed81e5b8dc899bfb36124b57e40",
+        "032-zero-rate-reduced-return-1-fleet-marshal.png": "ba2deedc69b64d0b3f333a83c758cfdf70b4d699f06b856d1b8dd83b0968ff19",
+        "032-zero-rate-reduced-return-2-independent-marshal.png": "742c9d0ea329c2734cd9ea535b4a75586a85f1b8eccef2f2e46f3bf25e74f287"
+      },
+      "bytes": 153625860
+    },
+    "short": {
+      "root": "/tmp/cluster-zero-label-overlay/stories/live-zero-science/short/darwin-arm64",
+      "manifestSha256": "88abeba8af21aa49c2c9c0fb994748a8867feb1a2f13fbcbb4a3c8b6a37315a5",
+      "source": {
+        "commit": "38ff67be7ab6a241a4e2fee43b2df659d419adc4",
+        "dirty": true,
+        "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+        "specSha256": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "pngs": {
+        "013-form-0-1-fleet-marshal.png": "ee33e3d7981f6327705289fb53dd10040673e59894c2563113cbf4bcfbf31e0d",
+        "014-form-1-1-independent-marshal.png": "752e5715d2b2f4e4f30ce1c336a51e3a4eb0ed7d029abf4e1062dd759a3781be",
+        "016-formed-fleets-1-fleet-marshal.png": "c9824bb9cc45ab7fee755ed5637541c166226662133b6aacbe5eb79c8f86f479",
+        "016-formed-fleets-2-independent-marshal.png": "84de3e773175331afd8b6dbfbcde7253f06ab17ea80eb8f1e1edf07af01408ed",
+        "017-preview-route-0-1-fleet-marshal.png": "71abef397cc017fd82eb831816818f6fc27568a85334e54f7c6dd4735984f2f0",
+        "018-commit-route-0-1-fleet-marshal.png": "0e840b22f19c0f04436fa320cb7cca43f8aea04c05396494159871809d210c80",
+        "019-preview-route-1-1-independent-marshal.png": "71d4e4be291310ee774e47a15e4af5ba5c55ccc6330ccc602470ec7c74db7ed1",
+        "020-commit-route-1-1-independent-marshal.png": "1a86469e502266bafbb8f0dc61994f6bf35aa7eb41b7a25117d9cf73a9b39baa",
+        "022-lost-orbit-1-fleet-marshal.png": "2fa831d57767f1304c0c61221597bd688b2f27f8b8c513030df623743bc2a502",
+        "022-lost-orbit-2-independent-marshal.png": "35f294b1cff39ae6379facf517ada74fae01e26aefac4142eefae706175cd056",
+        "024-still-unfunded-1-fleet-marshal.png": "54e1ea6658effbf2c8cfe73b79cf13764ed6398ad68b075e05a44c7081627a9e",
+        "024-still-unfunded-2-independent-marshal.png": "831b02f9b712725e91934b2f64a08de3a68fb4cba78356b5c7d0b65ae09c7f09",
+        "025-no-completion-estimate-1-fleet-marshal.png": "71e91c0476d9182f265bf42910c2b770168d003f85bdeb1434009be12cd42bc6",
+        "026-close-economy-1-fleet-marshal.png": "0a74d44d38bccc8b316576ac5b86b165c0d67a4d9a2f7418905fa6fa84c22d07",
+        "027-zero-rate-normal-ledger-1-fleet-marshal.png": "f5406dd9facf25cf6661723dfa7e9fade5af3614db76a442a97aa92be9ab4635",
+        "027-zero-rate-normal-ledger-2-independent-marshal.png": "b1ed7c4cfbf484f2713f698c7b79137a003d1694eaffaf00b062a17fdddda6e9",
+        "028-zero-rate-normal-totals-1-fleet-marshal.png": "8767999169d1da74eb8885f63a1fac7c794171bcb5b57aeaae478fa1e22f7c28",
+        "028-zero-rate-normal-totals-2-independent-marshal.png": "ac99eda13c5c8427868751ef11b078e315968289443c2bb66fa71ad0e569e92c",
+        "029-zero-rate-normal-return-1-fleet-marshal.png": "30919dc30e6c7e50501e3b6771c73cba5f8e36480466652a610dbf966b541659",
+        "029-zero-rate-normal-return-2-independent-marshal.png": "7f190badfadc5b5c71996b31968e2dc8fa5680e2b411b6df25a5d756101ff805",
+        "030-zero-rate-reduced-ledger-1-fleet-marshal.png": "f5406dd9facf25cf6661723dfa7e9fade5af3614db76a442a97aa92be9ab4635",
+        "030-zero-rate-reduced-ledger-2-independent-marshal.png": "b1ed7c4cfbf484f2713f698c7b79137a003d1694eaffaf00b062a17fdddda6e9",
+        "031-zero-rate-reduced-totals-1-fleet-marshal.png": "8767999169d1da74eb8885f63a1fac7c794171bcb5b57aeaae478fa1e22f7c28",
+        "031-zero-rate-reduced-totals-2-independent-marshal.png": "ac99eda13c5c8427868751ef11b078e315968289443c2bb66fa71ad0e569e92c",
+        "032-zero-rate-reduced-return-1-fleet-marshal.png": "30919dc30e6c7e50501e3b6771c73cba5f8e36480466652a610dbf966b541659",
+        "032-zero-rate-reduced-return-2-independent-marshal.png": "7f190badfadc5b5c71996b31968e2dc8fa5680e2b411b6df25a5d756101ff805"
+      },
+      "bytes": 18704918
+    }
+  },
+  "initialFailure": "/tmp/cluster-zero-label-before",
+  "intermediateCollisionOnly": "/tmp/cluster-zero-label-final",
+  "approval": "Local diagnostic evidence only; no Linux baseline promotion"
+}

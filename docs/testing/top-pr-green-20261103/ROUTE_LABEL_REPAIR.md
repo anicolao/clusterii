@@ -1,0 +1,17 @@
+# Route labels must not overlap
+
+Review of retained run41919956624 found real Origin/Rigil Kentaurus and waypoint1/Bibhā label collisions in zero-science019/020 at all four sizes. These eight originals are held in the inspection ledger. The import guard refused the incomplete review inventory; no zero-science family was imported.
+
+The new assertion exercises both preview and accepted routes through ordinary actions. It checks the expected number of origin/waypoint labels, every label's visible painted rectangle inside the actual chart and pairwise separation. Existing private reads, route receipts, canonical orders, conservation,220-tick ceiling,240-second story,30-second steps and10-second assertions are unchanged. The assertion fails on original production source at the seven-leg phone preview after its original10-second budget. Failure log/trace: /tmp/cluster-zero-label-before.
+
+Scene's route labels bypassed the existing collision-aware label action. They now use that action, retaining exact catalogue/star positions and existing route numbering. Route labels retain their existing subpixel paint origins when already clear; ordinary map labels keep their existing pixel-snapping behavior. This avoids gratuitous changes to otherwise correct route images. A unit case verifies both unchanged clear anchors and separation without changing the input coordinates. No labels are removed to satisfy the assertion.
+
+The initial corrected phone story passes,26 views, with the full origin/waypoint names separated. The collision-only source then passed all four local journeys and preserved all six pre-failure phone images byte-for-byte, including the already-clear owner route. However, actual desktop image review found waypoint7 behind the overlaid route editor: chart containment alone was insufficient. The final correction includes the actual editor and caption as label exclusions, and the story also checks non-overlap with those foreground rectangles. Seven label unit tests/136 assertions pass. Final four-size execution and source-bound Linux evidence remain required; local Darwin images are not Linux references.
+
+The contextual-aftermath story contains byte-identical copies of the held multi-leg route frames. Its complete source-bound Linux generation must accompany zero-science so both affected families receive a changed-image comparison; this is a measured shared rendering dependency, not speculative full-suite generation.
+
+Only current diagnostic originals are retained. No new remote archive was downloaded for this diagnosis; reuse existing verified images and reclaim redundant transport/extraction copies after integrated acceptance under EVIDENCE_LIFETIME.md.
+
+Final overlay-aware source completes all four local journeys,104 captures, with original limits; exact source hashes and every image hash are in route-label-local-evidence.json. The before failure and final logs are compact gzip records. Local inspection confirms separated origin/waypoint labels and editor clearance; Linux output must still be reviewed before promotion.
+
+Final integration gates pass: typecheck0errors/one existing FleetRoute warning, lint,120unit tests/4589assertions,77policy tests and4baseline-path cases. Local label tests7/138 assertions. Reclaimed127 byte-identical intermediate PNGs (204249943bytes) after full-byte/SHA comparison and no-active-user checks; all104 final originals and unique earlier evidence remain. Reconstruction paths/digests are recorded in route-label-duplicate-reclamation.json.

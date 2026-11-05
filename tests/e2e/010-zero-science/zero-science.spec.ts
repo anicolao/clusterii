@@ -483,6 +483,61 @@ test("Live zero science after orbital loss preserves private research", async ({
         name: "Send fleet",
         exact: true,
       });
+      const routeLabels = {
+        spec: "Every origin and waypoint label remains fully readable without overlapping another route label.",
+        check: async () => {
+          await expect
+            .poll(async () =>
+              planner.locator(".route-node").evaluateAll((nodes) => {
+                const chart = nodes[0]
+                  ?.closest("[data-galaxy-viewport]")
+                  ?.getBoundingClientRect();
+                if (!chart) return false;
+                const boxes = nodes.map((node) => node.getBoundingClientRect());
+                const exclusions = [
+                  ...(nodes[0]
+                    .closest(".route-planner")
+                    ?.querySelectorAll(".route-editor, .chart-caption") ?? []),
+                ]
+                  .filter(
+                    (node) => getComputedStyle(node).visibility !== "hidden",
+                  )
+                  .map((node) => node.getBoundingClientRect());
+                return nodes.every((node, i) => {
+                  const box = boxes[i];
+                  return (
+                    getComputedStyle(node).visibility === "visible" &&
+                    box.width > 0 &&
+                    box.height > 0 &&
+                    box.left >= chart.left &&
+                    box.right <= chart.right &&
+                    box.top >= chart.top &&
+                    box.bottom <= chart.bottom &&
+                    exclusions.every(
+                      (other) =>
+                        box.right <= other.left ||
+                        box.left >= other.right ||
+                        box.bottom <= other.top ||
+                        box.top >= other.bottom,
+                    ) &&
+                    boxes.every(
+                      (other, j) =>
+                        i === j ||
+                        box.right <= other.left ||
+                        box.left >= other.right ||
+                        box.bottom <= other.top ||
+                        box.top >= other.bottom,
+                    )
+                  );
+                });
+              }),
+            )
+            .toBe(true);
+          await expect(planner.locator(".route-node")).toHaveCount(
+            waypoints.length + 1,
+          );
+        },
+      };
       await story.step(`preview-route-${seat}`, {
         actor: aliases[seat],
         description:
@@ -516,7 +571,7 @@ test("Live zero science after orbital loss preserves private research", async ({
             await expectReadingTarget(send);
           },
         },
-        verifications: [privateCheck],
+        verifications: [privateCheck, routeLabels],
         views: [{ page: p, player: aliases[seat], surface: "game" }],
       });
       await story.step(`commit-route-${seat}`, {
@@ -551,7 +606,7 @@ test("Live zero science after orbital loss preserves private research", async ({
             ).toBe("accepted");
           },
         },
-        verifications: [privateCheck],
+        verifications: [privateCheck, routeLabels],
         views: [{ page: p, player: aliases[seat], surface: "game" }],
       });
     }

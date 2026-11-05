@@ -258,7 +258,7 @@
           onselect={add}
         /></Canvas
       >
-      <div class="chart-caption">
+      <div class="chart-caption" data-map-label-exclusion>
         <p>
           {committed?.status === "traveling"
             ? "Traveling"
