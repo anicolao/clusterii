@@ -901,3 +901,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect complete corrected Linux contact candidates and import exact approved references with bounded retention provenance.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete retained returning-entry image review and import only approved Linux hashes without rerunning generation.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete retained route-force visual review with bounded-reader limitations; import exact inspected hashes without downloading or rerunning candidates.

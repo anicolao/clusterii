@@ -1,0 +1,195 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "route-force-review",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "004ae8f1abb78d570d739f60ca93344f0434df7c",
+    "dirty": false,
+    "spec": "tests/e2e/009-route-forces/forces.spec.ts",
+    "specSha256": "f019a866493843ec65f953f1dadefdbcd3f953c3f155d5850ffba2b9fb4a5758"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/desktop/test-results/stories/route-force-review/desktop/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-reserve-real-complement-1-route-marshal.png",
+      "sha256": "b31577ea8b4676e0cbc9b514b6b84957ebd91ef58e29b848be9f90bf8c3b6153",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-reserve-real-complement-2-independent-marshal.png",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-review-confirmed-forces-1-route-marshal.png",
+      "sha256": "efbeff993da1481343f2bae8b9302f501e7abd7f7daed7c609b35831ac9ef4e1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-review-confirmed-forces-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-read-origin-defense-1-route-marshal.png",
+      "sha256": "fc2d4fcfb0c6b3d72aae51200853f637b10c728f1267243b79f61508610188bc",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-read-origin-defense-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-choose-real-waypoint-1-route-marshal.png",
+      "sha256": "046df6aecdcaca888f7ce8597d17f9fd36dde7e7cda4d79a61f6ab88eba57392",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-choose-real-waypoint-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-edit-multiple-waypoints-1-route-marshal.png",
+      "sha256": "2dc4b9f1acb3a4600960268dc9689f17d2de5fc071148bca42ccf30524128ce5",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-edit-multiple-waypoints-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-read-earlier-focus-1-route-marshal.png",
+      "sha256": "2dc4b9f1acb3a4600960268dc9689f17d2de5fc071148bca42ccf30524128ce5",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-read-later-focus-1-route-marshal.png",
+      "sha256": "a2b99377ac409f7180114327a8c1fbdf62c3fd928bfca127fe004efb95ec0945",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-read-remove-focus-1-route-marshal.png",
+      "sha256": "d98c2bec71bcbbd0653cecc83f343f9c0ba1ed0337eebc6589a6d47b223d73f4",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-reorder-remove-waypoint-1-route-marshal.png",
+      "sha256": "046df6aecdcaca888f7ce8597d17f9fd36dde7e7cda4d79a61f6ab88eba57392",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-reorder-remove-waypoint-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-review-normal-motion-1-route-marshal.png",
+      "sha256": "046df6aecdcaca888f7ce8597d17f9fd36dde7e7cda4d79a61f6ab88eba57392",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-acknowledge-dispatch-1-route-marshal.png",
+      "sha256": "7f8fd20006ef26390930a07119cdc8983f6dfaacdd6e515a699a12a25f14bca1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-acknowledge-dispatch-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "022-read-accepted-top-1-route-marshal.png",
+      "sha256": "559f309c3be0a7e754cba7e2bc93242cfcd0fea7d0d500504116b4dc89588a61",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "023-read-accepted-bottom-1-route-marshal.png",
+      "sha256": "e80b822cab1271336197a30483906b81310fdc17e55d0ff5c26fdce19bbdc05d",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "024-recover-same-dispatch-1-route-marshal.png",
+      "sha256": "069d95c80538cf8d2b52fba0df3d28e3c60727420769b2d9960753bd420453d1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "024-recover-same-dispatch-2-independent-marshal.png",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}
