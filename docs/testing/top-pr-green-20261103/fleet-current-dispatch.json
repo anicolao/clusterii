@@ -1,10 +1,35 @@
 {
-  "target": "ee56db9c",
-  "executor": "5b731871",
-  "request": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
-  "run": 41870610515,
-  "branch": "investigate/pr140-fleet-current-20261104",
-  "scope": "Complete formation20, reorganization34, cancellation22 views per viewport;304expected; original240s and real receipts/conservation/privacy unchanged",
-  "guardTests": "six passed, actual collection3 eachviewport",
-  "retention": "14day remote artifacts; no download yet; images unapproved"
+  "target": "456a0ece123133018ef0a878732804c44044a771",
+  "executor": "463ddc275d8643c3c764867e07e443164b3a7ffe",
+  "request": "d267d7dbc38ae7cf4493050ffdd85bdd3ce73abe",
+  "run": 43119625703,
+  "branch": "investigate/pr140-fleet-current-20261111",
+  "mode": "generate",
+  "testsPerViewport": 3,
+  "viewports": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "expectedCaptures": 424,
+  "capturesByStory": {
+    "live-fleet-cargo": 32,
+    "interrupted-fleet-route": 40,
+    "paused-fleet-travel": 34
+  },
+  "validation": {
+    "guardTests": 7,
+    "guardTestsPassed": 7,
+    "actualCollectedTests": 12,
+    "originalTestDeadlineMs": 240000,
+    "retries": 0,
+    "updateSnapshots": "none",
+    "sourceGeometryAssertion": "Fleet panel starts at or below full measured command rail; campaign heading remains inside that rail."
+  },
+  "artifactRetentionDays": 14,
+  "referenceApproval": false,
+  "requiredRunPreserved": 43104256802,
+  "applicationRunSuccess": 43104256749,
+  "limits": "Candidate execution is neither strict acceptance nor visual approval. Shared fleet-travel and other families remain separate backlog work; no whole-suite claim."
 }
