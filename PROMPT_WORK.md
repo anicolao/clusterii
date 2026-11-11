@@ -917,3 +917,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete retained contextual aftermath image review against real outcomes and source provenance without new downloads or execution.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind existing isolated candidate runner to the complete four-size contextual focus repair; retain original limits and fourteen-day artifacts.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one exact-source four-size contextual aftermath candidate run for full keyboard-outline review, with no reference updates or retries.
