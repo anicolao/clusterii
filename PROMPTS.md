@@ -339,3 +339,7 @@ OK now explain the fighter combat line. How could the original spec "create unit
 ## Prompt 38: Simultaneous Combat
 
 OK explain the 'network timing' issue from 'Simultaneous combat'. this makes no sense to me
+
+## Prompt 39: Multiway Combat
+
+We were thinking more along the lines of generalizing these combat laws to handle multiple hostile participants instead of two opposing factions, so taht if multiple arrive and fight we could simulate that directly. Generalize and formalize your generalization for both land and space combat, and write MULTIWAY_COMBAT_SYSTEM.md explaining the approach
