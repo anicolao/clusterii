@@ -1,7 +1,12 @@
 {
-  "review": "docs/testing/CAMPAIGN_START_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
-  "story": "campaign-scheduled-start",
+  "source": {
+    "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+    "dirty": false,
+    "spec": "tests/browser/campaign-start.story.spec.ts",
+    "specSha256": "9fae79e1b1d964a7405a699264270914619d6456d79456b0331d09d864ca0d06"
+  },
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -27,5 +32,333 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/campaign-scheduled-start/short/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "002-propose-1-1-dawn-envoy-1.png",
+      "sha256": "195ad806788699e727818b12a7443c84845e60d834bcb0dcd2fd8c6f9cd84ace",
+      "previousSha256": "195ad806788699e727818b12a7443c84845e60d834bcb0dcd2fd8c6f9cd84ace",
+      "changed": false
+    },
+    {
+      "image": "003-create-1-1-dawn-envoy-1.png",
+      "sha256": "d8c5a4f062df4395c523891383574dc81dc32a89cef058a0e27da2032d40c245",
+      "previousSha256": "db81836566aa0838e7925c02acf679264b0de563bf2d5dc17a408dbcd8244bbb",
+      "changed": true
+    },
+    {
+      "image": "004-choose-1-1-1-dawn-envoy-1.png",
+      "sha256": "d8c5a4f062df4395c523891383574dc81dc32a89cef058a0e27da2032d40c245",
+      "previousSha256": "db81836566aa0838e7925c02acf679264b0de563bf2d5dc17a408dbcd8244bbb",
+      "changed": true
+    },
+    {
+      "image": "005-join-1-1-1-dawn-envoy-1.png",
+      "sha256": "5db3af5bf50b6467598a84c1d22a62726e94957c6b49be0281d4074dae9fc438",
+      "previousSha256": "c13c9597313a3ec1588c3a65437aa2dadaa2f1a18ba2c023da55413770f2ec7d",
+      "changed": true
+    },
+    {
+      "image": "006-choose-1-2-1-dawn-envoy-2.png",
+      "sha256": "eed7e924e6f9b97d3c06198a903a869f49313bf1b4c83f189ff9e440e5c45836",
+      "previousSha256": "2f0abb719fc35a856aefa9ee1c465e73de1f7c425ae761d17a72e2949148f89d",
+      "changed": true
+    },
+    {
+      "image": "007-join-1-2-1-dawn-envoy-2.png",
+      "sha256": "30f43ff1318cfb6dd2be3250e84ed74798a4fc317e881580ef7ce6278eaaeaab",
+      "previousSha256": "e3d7251a0ed096350b40b746d310dc2992b21839353611c718f50ac259931524",
+      "changed": true
+    },
+    {
+      "image": "007-join-1-2-2-dawn-envoy-1.png",
+      "sha256": "30f43ff1318cfb6dd2be3250e84ed74798a4fc317e881580ef7ce6278eaaeaab",
+      "previousSha256": "e3d7251a0ed096350b40b746d310dc2992b21839353611c718f50ac259931524",
+      "changed": true
+    },
+    {
+      "image": "008-choose-1-3-1-dawn-envoy-3.png",
+      "sha256": "ebc4fe3ec3d93158ab3a94e5278ba8016b6f0c203e471e31659dd244e209024c",
+      "previousSha256": "73eaa3c858ae10ebf81f7d5411b2091fee94dc9e950a459695c4a2e64dc65974",
+      "changed": true
+    },
+    {
+      "image": "009-join-1-3-1-dawn-envoy-3.png",
+      "sha256": "36ee71772952326de34a813bca01af3466e17820914b8e189a0a2457afa8bdfc",
+      "previousSha256": "2a02dfa6ed9705916ffcfc32d6198e8108e4e2256775bd427d414bb86448482d",
+      "changed": true
+    },
+    {
+      "image": "009-join-1-3-2-dawn-envoy-1.png",
+      "sha256": "36ee71772952326de34a813bca01af3466e17820914b8e189a0a2457afa8bdfc",
+      "previousSha256": "2a02dfa6ed9705916ffcfc32d6198e8108e4e2256775bd427d414bb86448482d",
+      "changed": true
+    },
+    {
+      "image": "010-choose-1-4-1-dawn-envoy-4.png",
+      "sha256": "360900827101d613470a1ea7e79de6525fd708805aa1e60a2d15287a030bb357",
+      "previousSha256": "5cc096679a3282878b82679f13b9e38af631c05463547b83e4d5d6a36432983c",
+      "changed": true
+    },
+    {
+      "image": "011-join-1-4-1-dawn-envoy-4.png",
+      "sha256": "52899d9e9e9f9358448c15f0b8f1d1660e5cb1a235093ad1183ea951ee539c52",
+      "previousSha256": "d11b2471ac604c00e151590e5b9f2e26ea829a028b4b64b5f514cb560b4f6681",
+      "changed": true
+    },
+    {
+      "image": "011-join-1-4-2-dawn-envoy-1.png",
+      "sha256": "52899d9e9e9f9358448c15f0b8f1d1660e5cb1a235093ad1183ea951ee539c52",
+      "previousSha256": "d11b2471ac604c00e151590e5b9f2e26ea829a028b4b64b5f514cb560b4f6681",
+      "changed": true
+    },
+    {
+      "image": "012-propose-2-1-dawn-envoy-1.png",
+      "sha256": "c709edea6f16e9a7ef4b9b330b12ebacb90324b6e524e9fc2078f66637f6cfee",
+      "previousSha256": "c709edea6f16e9a7ef4b9b330b12ebacb90324b6e524e9fc2078f66637f6cfee",
+      "changed": false
+    },
+    {
+      "image": "013-create-2-1-dawn-envoy-1.png",
+      "sha256": "6dc3dcdf9d8ca83c868ea02347a354195fc20b9cfe129bcc75c2c52fa1fc3a04",
+      "previousSha256": "ee57360847d522be58d8e9ef2df86ad1cc64b473a8060800e1e3a617c760eb87",
+      "changed": true
+    },
+    {
+      "image": "014-choose-2-1-1-dawn-envoy-1.png",
+      "sha256": "6dc3dcdf9d8ca83c868ea02347a354195fc20b9cfe129bcc75c2c52fa1fc3a04",
+      "previousSha256": "ee57360847d522be58d8e9ef2df86ad1cc64b473a8060800e1e3a617c760eb87",
+      "changed": true
+    },
+    {
+      "image": "015-join-2-1-1-dawn-envoy-1.png",
+      "sha256": "5db3af5bf50b6467598a84c1d22a62726e94957c6b49be0281d4074dae9fc438",
+      "previousSha256": "c7d7ac451222f2d54bf87e2adac513df32c33cb59c767b2b7c0c20a948a2cb5f",
+      "changed": true
+    },
+    {
+      "image": "016-choose-2-2-1-dawn-envoy-2.png",
+      "sha256": "c3e9f251c719753902cc128bc693c48520f4a970ac01e31d522fd7aec11f6245",
+      "previousSha256": "1f26b8a70ec1a22d18e0a44c47405473e4a7311a4b6682a5f77d33afdb5527ac",
+      "changed": true
+    },
+    {
+      "image": "017-join-2-2-1-dawn-envoy-2.png",
+      "sha256": "30f43ff1318cfb6dd2be3250e84ed74798a4fc317e881580ef7ce6278eaaeaab",
+      "previousSha256": "9507dcb1ff78dd0fa8d1418d7aae5c44e10dd741e10813c363d7d08fed6fafb5",
+      "changed": true
+    },
+    {
+      "image": "017-join-2-2-2-dawn-envoy-1.png",
+      "sha256": "30f43ff1318cfb6dd2be3250e84ed74798a4fc317e881580ef7ce6278eaaeaab",
+      "previousSha256": "9507dcb1ff78dd0fa8d1418d7aae5c44e10dd741e10813c363d7d08fed6fafb5",
+      "changed": true
+    },
+    {
+      "image": "018-choose-2-3-1-dawn-envoy-3.png",
+      "sha256": "97422a36603181da4d8bdc76ffcb85df3c501660c7e85b16941d27c6fc46ddd3",
+      "previousSha256": "4901bd3ceec0168eceba994263e91fb7f9d48938e8a2f36e74c1a0d92054d15a",
+      "changed": true
+    },
+    {
+      "image": "019-join-2-3-1-dawn-envoy-3.png",
+      "sha256": "36ee71772952326de34a813bca01af3466e17820914b8e189a0a2457afa8bdfc",
+      "previousSha256": "efa15881b0abd93a7bad8be68725cf7f23a945ea58a8d153e1ab538a987d8e4e",
+      "changed": true
+    },
+    {
+      "image": "019-join-2-3-2-dawn-envoy-1.png",
+      "sha256": "36ee71772952326de34a813bca01af3466e17820914b8e189a0a2457afa8bdfc",
+      "previousSha256": "efa15881b0abd93a7bad8be68725cf7f23a945ea58a8d153e1ab538a987d8e4e",
+      "changed": true
+    },
+    {
+      "image": "020-choose-2-4-1-dawn-envoy-5.png",
+      "sha256": "80e636106d91b571a1a5371673ce2066eac949b4971fd483af3c548bfde99230",
+      "previousSha256": "f8cc365c62d52257691f38a0ee6c44160607c37e148d36d8ae55fa2f6aea4ad6",
+      "changed": true
+    },
+    {
+      "image": "021-join-2-4-1-dawn-envoy-5.png",
+      "sha256": "5a0849f817ea6c1381096c7ce471381bc49fd90a6c6c719413c154033df8045c",
+      "previousSha256": "9163894c629bef38f2758c060602fe893221bca2f71b2c72fa16cce64b8a30eb",
+      "changed": true
+    },
+    {
+      "image": "021-join-2-4-2-dawn-envoy-1.png",
+      "sha256": "5a0849f817ea6c1381096c7ce471381bc49fd90a6c6c719413c154033df8045c",
+      "previousSha256": "9163894c629bef38f2758c060602fe893221bca2f71b2c72fa16cce64b8a30eb",
+      "changed": true
+    },
+    {
+      "image": "022-scheduled-rosters-1-dawn-envoy-1.png",
+      "sha256": "5a0849f817ea6c1381096c7ce471381bc49fd90a6c6c719413c154033df8045c",
+      "previousSha256": "9163894c629bef38f2758c060602fe893221bca2f71b2c72fa16cce64b8a30eb",
+      "changed": true
+    },
+    {
+      "image": "022-scheduled-rosters-2-dawn-envoy-2.png",
+      "sha256": "5a0849f817ea6c1381096c7ce471381bc49fd90a6c6c719413c154033df8045c",
+      "previousSha256": "9163894c629bef38f2758c060602fe893221bca2f71b2c72fa16cce64b8a30eb",
+      "changed": true
+    },
+    {
+      "image": "022-scheduled-rosters-3-dawn-envoy-3.png",
+      "sha256": "5a0849f817ea6c1381096c7ce471381bc49fd90a6c6c719413c154033df8045c",
+      "previousSha256": "9163894c629bef38f2758c060602fe893221bca2f71b2c72fa16cce64b8a30eb",
+      "changed": true
+    },
+    {
+      "image": "022-scheduled-rosters-4-dawn-envoy-4.png",
+      "sha256": "52899d9e9e9f9358448c15f0b8f1d1660e5cb1a235093ad1183ea951ee539c52",
+      "previousSha256": "d11b2471ac604c00e151590e5b9f2e26ea829a028b4b64b5f514cb560b4f6681",
+      "changed": true
+    },
+    {
+      "image": "022-scheduled-rosters-5-dawn-envoy-5.png",
+      "sha256": "5a0849f817ea6c1381096c7ce471381bc49fd90a6c6c719413c154033df8045c",
+      "previousSha256": "9163894c629bef38f2758c060602fe893221bca2f71b2c72fa16cce64b8a30eb",
+      "changed": true
+    },
+    {
+      "image": "024-awaiting-assignment-1-dawn-envoy-1.png",
+      "sha256": "3ecac726788993f754f8f5ca22ddb4ef2592412f6306c6f2f7b81b10468ab120",
+      "previousSha256": "63d296ce39791f3b0a3e9ca56b2284355ed705ae7d6bfd41ebc2164461221828",
+      "changed": true
+    },
+    {
+      "image": "024-awaiting-assignment-2-dawn-envoy-2.png",
+      "sha256": "3ecac726788993f754f8f5ca22ddb4ef2592412f6306c6f2f7b81b10468ab120",
+      "previousSha256": "63d296ce39791f3b0a3e9ca56b2284355ed705ae7d6bfd41ebc2164461221828",
+      "changed": true
+    },
+    {
+      "image": "024-awaiting-assignment-3-dawn-envoy-3.png",
+      "sha256": "3ecac726788993f754f8f5ca22ddb4ef2592412f6306c6f2f7b81b10468ab120",
+      "previousSha256": "63d296ce39791f3b0a3e9ca56b2284355ed705ae7d6bfd41ebc2164461221828",
+      "changed": true
+    },
+    {
+      "image": "024-awaiting-assignment-4-dawn-envoy-4.png",
+      "sha256": "dd00c31460f2e1338ee4f09c8271bb1e846801bb1145d7a72814cffdab5af154",
+      "previousSha256": "c8e17e88fab3d76b4ce5b11d939b491f43efd429cb4ac2a36405d7a4409c5c3b",
+      "changed": true
+    },
+    {
+      "image": "024-awaiting-assignment-5-dawn-envoy-5.png",
+      "sha256": "3ecac726788993f754f8f5ca22ddb4ef2592412f6306c6f2f7b81b10468ab120",
+      "previousSha256": "63d296ce39791f3b0a3e9ca56b2284355ed705ae7d6bfd41ebc2164461221828",
+      "changed": true
+    },
+    {
+      "image": "026-started-rosters-1-dawn-envoy-1.png",
+      "sha256": "5bef324b8cdf1c3dd4d95ae2b24ab3ba7ef59d5561b623e72a04eecae73dd65a",
+      "previousSha256": "362f0a78b192d96ad4c06eebdf03d3db513c12369785744f2cbe4a6c08ee0dce",
+      "changed": true
+    },
+    {
+      "image": "026-started-rosters-2-dawn-envoy-2.png",
+      "sha256": "6ce96592ab28d219554e965a972fe7f5dfaa39a4a6342b88157b324f6f4bdf9c",
+      "previousSha256": "615c32bc98971782eacd179d6ff253228d83cbb05c81bdec61e864280265541d",
+      "changed": true
+    },
+    {
+      "image": "026-started-rosters-3-dawn-envoy-3.png",
+      "sha256": "d4bc735c2d6eeccd46b835af381d67f4d559f4dfa22c3fc02e16444575d31871",
+      "previousSha256": "022c92932227eb0ba9e8d1a038fdd24d2d5bb0d7ffc0790938c7f60a5b2c5d1b",
+      "changed": true
+    },
+    {
+      "image": "026-started-rosters-4-dawn-envoy-4.png",
+      "sha256": "cce4ba9441a4dd400d42daaf750e7b064a67e231af1ab07fc5d760bb6418916f",
+      "previousSha256": "c125d9b5dbccfd6b6654f8bd349b52cf87e8058f0292715cadbe2f7ca69a5713",
+      "changed": true
+    },
+    {
+      "image": "026-started-rosters-5-dawn-envoy-5.png",
+      "sha256": "f639004c638045ee2a240c7a83496d1ef1fa6375dde249e4b2a0559fd09c45d4",
+      "previousSha256": "9b1d044de4c6bfec44abf586b5096e71894df3bce8948ccdc4295801848a18a0",
+      "changed": true
+    },
+    {
+      "image": "027-homes-assigned-1-dawn-envoy-1.png",
+      "sha256": "e964d9437176ab1402cd0e723a5f6bd2a32db9a490553a977603621b3cc12b34",
+      "previousSha256": "8bca1fabef18d6bc7c8ed3a66613b00eb12a06e559979735c824bda46170af1a",
+      "changed": true
+    },
+    {
+      "image": "027-homes-assigned-2-dawn-envoy-2.png",
+      "sha256": "0a31698bf9303f18e509c2126ee2453923a2cc0983060d7ca6230468d0726cce",
+      "previousSha256": "fdca443270287e432c77e59fde341f0f76aa8d7a6ab2948c9fb3b3ef64ffb62b",
+      "changed": true
+    },
+    {
+      "image": "027-homes-assigned-3-dawn-envoy-3.png",
+      "sha256": "e602e8fa66573cbcfd805a265e39318145dc4154a2d4183426b8ada24b88e241",
+      "previousSha256": "2c71634696c992dddba08669988f100ccc55e47767ce2e54483162dc3aeb1c71",
+      "changed": true
+    },
+    {
+      "image": "027-homes-assigned-4-dawn-envoy-4.png",
+      "sha256": "bb4a86e00ec2528a4c340fc169ac0f2aa21f4620558efa39838a6b9a4e1a553e",
+      "previousSha256": "16c82b7adb57459bbbab495194b18b3876239e9d5f800e9db950c819d74fd927",
+      "changed": true
+    },
+    {
+      "image": "028-home-surface-forces-1-dawn-envoy-1.png",
+      "sha256": "5968c83fe06fda3427a712a39b3bc3fb00b321b06236a119318bc4ea6a4b3be6",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-home-surface-forces-2-dawn-envoy-2.png",
+      "sha256": "9b538b45ed9d0c9b80c1289be1ebda029b1f45404ad9de896ad1bbb02f8ee3f3",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-home-surface-forces-3-dawn-envoy-3.png",
+      "sha256": "5e55347461f7fa8d4dd6361b8040cc43ec58afaf55a0ddaa8c44258c1a344d4a",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-home-surface-forces-4-dawn-envoy-4.png",
+      "sha256": "7540c4af236e3d12fa942d1750d12739aab07a242db7d46c4220b541ca7ce458",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "029-single-membership-entry-1-dawn-envoy-4.png",
+      "sha256": "c21f54f399314e308fb92b6453ae4b997aa009c239489b07dbfa69a95abbe309",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "030-choose-last-campaign-1-dawn-envoy-1.png",
+      "sha256": "5f4aa957c192a01c13a33fe14a2ef557c88d6f3c3803991f97174410ca70e9e0",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "031-multiple-membership-entry-1-dawn-envoy-1.png",
+      "sha256": "3b5e4203b0ea8f293bb8a793b9c1b21b2e7a48b19af5414ff4263a4634b949a8",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "032-reload-last-selection-1-dawn-envoy-1.png",
+      "sha256": "3b5e4203b0ea8f293bb8a793b9c1b21b2e7a48b19af5414ff4263a4634b949a8",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "033-continue-exact-campaign-1-dawn-envoy-1.png",
+      "sha256": "5f4aa957c192a01c13a33fe14a2ef557c88d6f3c3803991f97174410ca70e9e0",
+      "previousSha256": null,
+      "changed": true
+    }
+  ],
+  "scope": "Exact inspected short regression hashes; not full design/hosted cadence approval"
 }
