@@ -39498,5 +39498,779 @@
         "oldSha256": null
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "a4ebe0baa0b1439e44b872b00fade2db2669157a9dd0f459603cf484ad9909ff",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/003-create-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/003-create-1-1-dawn-envoy-1.png",
+        "sha256": "a4ebe0baa0b1439e44b872b00fade2db2669157a9dd0f459603cf484ad9909ff",
+        "oldSha256": "13f40bfd390a5b0cb2f3ca6626750097cf3264d2e6a3be8f7572c45b5feca046"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/004-choose-1-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/004-choose-1-1-1-dawn-envoy-1.png",
+        "sha256": "a4ebe0baa0b1439e44b872b00fade2db2669157a9dd0f459603cf484ad9909ff",
+        "oldSha256": "13f40bfd390a5b0cb2f3ca6626750097cf3264d2e6a3be8f7572c45b5feca046"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "f39bf4b2a698e617dfb1c02bf2623ec3132c5e99fc517d3d745a36b6f7372de3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/005-join-1-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/005-join-1-1-1-dawn-envoy-1.png",
+        "sha256": "f39bf4b2a698e617dfb1c02bf2623ec3132c5e99fc517d3d745a36b6f7372de3",
+        "oldSha256": "ef1e8a72deb1c045d990d19e8770dde6ffe6ccfa804a3ceb27a69c4b0b6a5727"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "6f1efae66e0d93a5a2c9bace2f924ee985b608f07f3e1d1dfbed2a4b04db7338",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/006-choose-1-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/006-choose-1-2-1-dawn-envoy-2.png",
+        "sha256": "6f1efae66e0d93a5a2c9bace2f924ee985b608f07f3e1d1dfbed2a4b04db7338",
+        "oldSha256": "1ea7d4da2f4af95e0763531ffcd40588ac93eb46d5362fedfa5c71b8ec10eac2"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "5af998268275089be0b1a056345e443f22d43ca7b6729c24f6670a8bdf6e0c02",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/007-join-1-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/007-join-1-2-1-dawn-envoy-2.png",
+        "sha256": "5af998268275089be0b1a056345e443f22d43ca7b6729c24f6670a8bdf6e0c02",
+        "oldSha256": "f704f77ccc3190090035e89a973548a399c243b72994119013219f199f826b88"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/007-join-1-2-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/007-join-1-2-2-dawn-envoy-1.png",
+        "sha256": "5af998268275089be0b1a056345e443f22d43ca7b6729c24f6670a8bdf6e0c02",
+        "oldSha256": "f704f77ccc3190090035e89a973548a399c243b72994119013219f199f826b88"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "f18ecbd49b9d50e54022b48bb4902b4258f96b0226bf2e306459a66877d81de8",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/008-choose-1-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/008-choose-1-3-1-dawn-envoy-3.png",
+        "sha256": "f18ecbd49b9d50e54022b48bb4902b4258f96b0226bf2e306459a66877d81de8",
+        "oldSha256": "59c8950ecb4e1f3c9b2426252f9a0723a4f1cd514465099de0ae0d158e5925e0"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "af67eab9d1525e22b976aab5c9ae1d2c2e881b9660834ee263b8b2f7a6d65e1b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/009-join-1-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/009-join-1-3-1-dawn-envoy-3.png",
+        "sha256": "af67eab9d1525e22b976aab5c9ae1d2c2e881b9660834ee263b8b2f7a6d65e1b",
+        "oldSha256": "5537a03a6bd1cf3ff641d75968d2e7130b5a4c3d11549d3485bf60ab603905f0"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/009-join-1-3-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/009-join-1-3-2-dawn-envoy-1.png",
+        "sha256": "af67eab9d1525e22b976aab5c9ae1d2c2e881b9660834ee263b8b2f7a6d65e1b",
+        "oldSha256": "5537a03a6bd1cf3ff641d75968d2e7130b5a4c3d11549d3485bf60ab603905f0"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2308144242e31363b47f887f53046c998a8474576e977d7609d5862389398a84",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/010-choose-1-4-1-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/010-choose-1-4-1-dawn-envoy-4.png",
+        "sha256": "2308144242e31363b47f887f53046c998a8474576e977d7609d5862389398a84",
+        "oldSha256": "730f60c8ee6a4f4567cbf1f3d89b8c5072c79d3916b87330a7a8eed4a8172782"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "5f453c80eeefe2cabd9501de40fb72038cffaa3fa1ae21f043d67d9d41314b8a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/011-join-1-4-1-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/011-join-1-4-1-dawn-envoy-4.png",
+        "sha256": "5f453c80eeefe2cabd9501de40fb72038cffaa3fa1ae21f043d67d9d41314b8a",
+        "oldSha256": "e98079cfa242c4d7df5b0ab2cb800c23980084999dec085dc6a4ea50cd921f4f"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/011-join-1-4-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/011-join-1-4-2-dawn-envoy-1.png",
+        "sha256": "5f453c80eeefe2cabd9501de40fb72038cffaa3fa1ae21f043d67d9d41314b8a",
+        "oldSha256": "e98079cfa242c4d7df5b0ab2cb800c23980084999dec085dc6a4ea50cd921f4f"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-4-dawn-envoy-4.png",
+        "sha256": "5f453c80eeefe2cabd9501de40fb72038cffaa3fa1ae21f043d67d9d41314b8a",
+        "oldSha256": "e98079cfa242c4d7df5b0ab2cb800c23980084999dec085dc6a4ea50cd921f4f"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "e16741039aaa7954abb2c6d7d788c0cd5193206ea84d690342c658aabd02b16a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/013-create-2-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/013-create-2-1-dawn-envoy-1.png",
+        "sha256": "e16741039aaa7954abb2c6d7d788c0cd5193206ea84d690342c658aabd02b16a",
+        "oldSha256": "842fbeac9891d41f0a747556abcf4cdfd291e631886c38d0a530502e7494ee22"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/014-choose-2-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/014-choose-2-1-1-dawn-envoy-1.png",
+        "sha256": "e16741039aaa7954abb2c6d7d788c0cd5193206ea84d690342c658aabd02b16a",
+        "oldSha256": "842fbeac9891d41f0a747556abcf4cdfd291e631886c38d0a530502e7494ee22"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3e6721a60fdbd4e2c521ad14b7dce506f52e16aa4c3790f61867c437ad36bce0",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/015-join-2-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/015-join-2-1-1-dawn-envoy-1.png",
+        "sha256": "3e6721a60fdbd4e2c521ad14b7dce506f52e16aa4c3790f61867c437ad36bce0",
+        "oldSha256": "23af3b173df7c6f77fb01af96871824ab02187148c4f2173746e82cf50a5f71d"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2fa02cfb6cf7d48617b3744b5f58c518e4ca65273506b0a9ce5ea4a276d6c38b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/016-choose-2-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/016-choose-2-2-1-dawn-envoy-2.png",
+        "sha256": "2fa02cfb6cf7d48617b3744b5f58c518e4ca65273506b0a9ce5ea4a276d6c38b",
+        "oldSha256": "da3096b1cc97552c6eaff4fd49c711148922cbc52b97a10f00f9cdd921a2c4a3"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "19f00992d582efa6065cac867a251276af9759915345d345ed45eeb0975964e3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/017-join-2-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/017-join-2-2-1-dawn-envoy-2.png",
+        "sha256": "19f00992d582efa6065cac867a251276af9759915345d345ed45eeb0975964e3",
+        "oldSha256": "4af08b69d4fbcb4324a7f344dae7f32973500bc10d1f9baa333d5923028691db"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/017-join-2-2-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/017-join-2-2-2-dawn-envoy-1.png",
+        "sha256": "19f00992d582efa6065cac867a251276af9759915345d345ed45eeb0975964e3",
+        "oldSha256": "4af08b69d4fbcb4324a7f344dae7f32973500bc10d1f9baa333d5923028691db"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "458eecd54475e87ddbe34463dc6b95bf25a9d8a8e7bb168ed30a1e69ef7ffe12",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/018-choose-2-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/018-choose-2-3-1-dawn-envoy-3.png",
+        "sha256": "458eecd54475e87ddbe34463dc6b95bf25a9d8a8e7bb168ed30a1e69ef7ffe12",
+        "oldSha256": "f150ebaa7da90257c121e19aae335b985b26aeafe73d0911af24aa9382f1993b"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "300d0263ab47242f7809021a4a5e20a922f269c2b0b174694c114a95276bed91",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/019-join-2-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/019-join-2-3-1-dawn-envoy-3.png",
+        "sha256": "300d0263ab47242f7809021a4a5e20a922f269c2b0b174694c114a95276bed91",
+        "oldSha256": "3df02be89fd473f1b30acfecc6ed8ca64ba2d47cd28e217d74794b3766e85bdd"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/019-join-2-3-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/019-join-2-3-2-dawn-envoy-1.png",
+        "sha256": "300d0263ab47242f7809021a4a5e20a922f269c2b0b174694c114a95276bed91",
+        "oldSha256": "3df02be89fd473f1b30acfecc6ed8ca64ba2d47cd28e217d74794b3766e85bdd"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "dc131b35a8208b583fbc35713e02bd0774505c71e188420be11a10687c1c75b3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/020-choose-2-4-1-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/020-choose-2-4-1-dawn-envoy-5.png",
+        "sha256": "dc131b35a8208b583fbc35713e02bd0774505c71e188420be11a10687c1c75b3",
+        "oldSha256": "853434a8ec75ca62a420ba1bda7427fb61e030575c56ca83f8aa1e611f95a04a"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/021-join-2-4-1-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/021-join-2-4-1-dawn-envoy-5.png",
+        "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+        "oldSha256": "00e12920cdbf13e4b0f3c4d235ad38398e8fa2aa34c376292603ead845ed59b3"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/021-join-2-4-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/021-join-2-4-2-dawn-envoy-1.png",
+        "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+        "oldSha256": "00e12920cdbf13e4b0f3c4d235ad38398e8fa2aa34c376292603ead845ed59b3"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-1-dawn-envoy-1.png",
+        "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+        "oldSha256": "00e12920cdbf13e4b0f3c4d235ad38398e8fa2aa34c376292603ead845ed59b3"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-2-dawn-envoy-2.png",
+        "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+        "oldSha256": "00e12920cdbf13e4b0f3c4d235ad38398e8fa2aa34c376292603ead845ed59b3"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-3-dawn-envoy-3.png",
+        "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+        "oldSha256": "00e12920cdbf13e4b0f3c4d235ad38398e8fa2aa34c376292603ead845ed59b3"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-5-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/022-scheduled-rosters-5-dawn-envoy-5.png",
+        "sha256": "1f8b96f5282a36e9f7bbab2a87babfced7d207d2c854884b4af8dd6b49912ebb",
+        "oldSha256": "00e12920cdbf13e4b0f3c4d235ad38398e8fa2aa34c376292603ead845ed59b3"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "21f8aa01f39094ca8f454993ad3e2f5800889bb9860caa831277cfe3be348da0",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png",
+        "sha256": "21f8aa01f39094ca8f454993ad3e2f5800889bb9860caa831277cfe3be348da0",
+        "oldSha256": "f6e54fadb0604ffc68a50b345074b6e2e1d085557a0e355e20ac43d6532ff6f2"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-2-dawn-envoy-2.png",
+        "sha256": "21f8aa01f39094ca8f454993ad3e2f5800889bb9860caa831277cfe3be348da0",
+        "oldSha256": "f6e54fadb0604ffc68a50b345074b6e2e1d085557a0e355e20ac43d6532ff6f2"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-3-dawn-envoy-3.png",
+        "sha256": "21f8aa01f39094ca8f454993ad3e2f5800889bb9860caa831277cfe3be348da0",
+        "oldSha256": "f6e54fadb0604ffc68a50b345074b6e2e1d085557a0e355e20ac43d6532ff6f2"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-5-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-5-dawn-envoy-5.png",
+        "sha256": "21f8aa01f39094ca8f454993ad3e2f5800889bb9860caa831277cfe3be348da0",
+        "oldSha256": "f6e54fadb0604ffc68a50b345074b6e2e1d085557a0e355e20ac43d6532ff6f2"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3860b152706d092771fd6962d6b20a085a5791bc8fd585568984b65964a09f71",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/024-awaiting-assignment-4-dawn-envoy-4.png",
+        "sha256": "3860b152706d092771fd6962d6b20a085a5791bc8fd585568984b65964a09f71",
+        "oldSha256": "2e12a67444e9ad39ab835b7a950acab95cbf04e728bc742835e18f6977164d17"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "dd85aef5c9678121fe6236f1045b63f6b8f270afa56a83fa7e7b2c0153312ecb",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/026-started-rosters-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/026-started-rosters-1-dawn-envoy-1.png",
+        "sha256": "dd85aef5c9678121fe6236f1045b63f6b8f270afa56a83fa7e7b2c0153312ecb",
+        "oldSha256": "8071db6c7471c698ecf860d8532dadda419b61db4a2d79d2d919dcdac482343f"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "c6e8d590ec69f6c49ba0898b79210992aecf0608afb371b547b16c09d7bbd525",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/026-started-rosters-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/026-started-rosters-2-dawn-envoy-2.png",
+        "sha256": "c6e8d590ec69f6c49ba0898b79210992aecf0608afb371b547b16c09d7bbd525",
+        "oldSha256": "f0174b400d369b54fb2a9bb8b793c2fe3aa7394ff0219ad8d590f1a9c8d52bea"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2ef96627ac729dc830829e925338e9902269e7d43e898e81f002f11cd1708d0f",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/026-started-rosters-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/026-started-rosters-3-dawn-envoy-3.png",
+        "sha256": "2ef96627ac729dc830829e925338e9902269e7d43e898e81f002f11cd1708d0f",
+        "oldSha256": "4149231e1b9d42b154ccf1ba14bf6836f90c4d73be0525b08a2588e296bf69d3"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "43c0c916e639200b7715a957b10481fa80929f997eafcf7af22a1fc15e4dfca7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+        "sha256": "43c0c916e639200b7715a957b10481fa80929f997eafcf7af22a1fc15e4dfca7",
+        "oldSha256": "00de85363b4955eb74690597f060cbbd54b567e26df38d7b468a023350c1d16c"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "70ab00a5d1829c8a728986f5f754c97347b477858ec5637fa7f4538ef3b6202c",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+        "sha256": "70ab00a5d1829c8a728986f5f754c97347b477858ec5637fa7f4538ef3b6202c",
+        "oldSha256": "a2952945ccdb69386f2604d50eff85fe3c4ec9a2c72a3b4be9a8e9ccac1b1086"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "506fd72b3b9b17229386d4cddfaacfba512bc2c29189a912e3921bacfef04ebf",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-1-dawn-envoy-1.png",
+        "sha256": "506fd72b3b9b17229386d4cddfaacfba512bc2c29189a912e3921bacfef04ebf",
+        "oldSha256": "49761f4575fa3d0a3b0f493a055f6f3f3879428da0e7c1eae5763964d0173beb"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "bca8a3a002c619a2583ecc26882cd73895b8ca1850f1dedb27eb296a43e2e52a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+        "sha256": "bca8a3a002c619a2583ecc26882cd73895b8ca1850f1dedb27eb296a43e2e52a",
+        "oldSha256": "74af498227245842571d662b153df8da818c27c22d6f0ea0267380d70e14af04"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "4198268f1253ed7e0be8244bed3841340d1b334592d600c64647b94fa18adff2",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-3-dawn-envoy-3.png",
+        "sha256": "4198268f1253ed7e0be8244bed3841340d1b334592d600c64647b94fa18adff2",
+        "oldSha256": "8ee79a8596dbf39a088caafdd2fefd9effa84aa0ba4ab2061ebf48adef5c35ec"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "97c20b290cbb13deb5c2525a773cc4f70a70522372c2dfa556efdab425adc06a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+        "sha256": "97c20b290cbb13deb5c2525a773cc4f70a70522372c2dfa556efdab425adc06a",
+        "oldSha256": "88ffed5febb985ad8ab2610e81f1f96767ef0d95307b4bbd2aa84f60cc4f4eb1"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "e0614df01ef1e092834f65fd0c117d569492cef69da04899fdfc537f5cf38164",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-1-dawn-envoy-1.png",
+        "sha256": "e0614df01ef1e092834f65fd0c117d569492cef69da04899fdfc537f5cf38164",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "48c523f7f651fcb0a5877f9a15a69137f14fc99f462c68a148e3e25d11e19e08",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-2-dawn-envoy-2.png",
+        "sha256": "48c523f7f651fcb0a5877f9a15a69137f14fc99f462c68a148e3e25d11e19e08",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "9d7de0c5d27a3bc30a45d2ff10f5bf9aa58c2773b8c5f8aaf6ba70e523a19907",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-3-dawn-envoy-3.png",
+        "sha256": "9d7de0c5d27a3bc30a45d2ff10f5bf9aa58c2773b8c5f8aaf6ba70e523a19907",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "5f27b02b73884e427391ce8a3c6c469a070abf1da6c823f4c7d846ca98dff8d0",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/028-home-surface-forces-4-dawn-envoy-4.png",
+        "sha256": "5f27b02b73884e427391ce8a3c6c469a070abf1da6c823f4c7d846ca98dff8d0",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "5f9642a6a809ccf4ad60e0df00a62fdb34f604693cf0f189f9cdf5e106aebb1a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/029-single-membership-entry-1-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/029-single-membership-entry-1-dawn-envoy-4.png",
+        "sha256": "5f9642a6a809ccf4ad60e0df00a62fdb34f604693cf0f189f9cdf5e106aebb1a",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "96fc2ed89e21d7595f2e2df5b07d648d2558a1b63a319a5f61701054709019e4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/030-choose-last-campaign-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/030-choose-last-campaign-1-dawn-envoy-1.png",
+        "sha256": "96fc2ed89e21d7595f2e2df5b07d648d2558a1b63a319a5f61701054709019e4",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/033-continue-exact-campaign-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/033-continue-exact-campaign-1-dawn-envoy-1.png",
+        "sha256": "96fc2ed89e21d7595f2e2df5b07d648d2558a1b63a319a5f61701054709019e4",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "a860846a7b8c8c7e3c334bfcdc2cc6ef84d40fc00fb3dc774737ce3d9baa5674",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all34 distinct large campaign originals, displayed at2048x1152 from3840x2160; layout/content review, not native-pixel fidelity certification. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/031-multiple-membership-entry-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/031-multiple-membership-entry-1-dawn-envoy-1.png",
+        "sha256": "a860846a7b8c8c7e3c334bfcdc2cc6ef84d40fc00fb3dc774737ce3d9baa5674",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/032-reload-last-selection-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "large",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/large/linux-arm64/032-reload-last-selection-1-dawn-envoy-1.png",
+        "sha256": "a860846a7b8c8c7e3c334bfcdc2cc6ef84d40fc00fb3dc774737ce3d9baa5674",
+        "oldSha256": null
+      }
+    ]
   }
 ]

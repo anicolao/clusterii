@@ -17,3 +17,17 @@ This is scoped regression approval. Background briefing prose outside the roster
 ## Short retained-family inspection
 
 All31 distinct short originals were individually viewed at native1280x720, covering the complete54-view family through exact-hash grouping and existing identical references. Actual roster names/counts, scheduled/awaiting-home/began wording, four assigned home names,20orbital fighters and20surface infantry, and correct dawn/dusk Continue choices are readable. Primary Back/Viewforces controls remain complete. Lower Surface fields, held-credit detail and build controls require scrolling inside the bounded system reader; these frames do not demonstrate simultaneous complete reading access. Ellipsized commander cards, inherited grammar/background presentation and map glare retain the previously stated fidelity limits. Only exact inspected hashes are imported; no runtime, assertion, deadline or tolerance changes.
+
+## Large review completed 2026-11-11
+
+Individually inspected all34 distinct large originals covering54 captures. The
+3840x2160 originals were displayed at2048x1152: scoped content/layout review,
+not native-pixel fidelity certification. Faction affinities and claim actions,
+actual Dawn/Dusk membership, scheduled/awaiting/began states, Orbit20 fighters,
+Surface20 infantry/two markets/one base, held credits0, and matching Continue
+campaign/commander remain readable. The open roster deliberately overlays part
+of the system inspector; closing it exposes the inspector. Existing singular
+seat grammar and bright selected-star glow remain recorded fidelity limits.
+The exact-hash importer verifies source spec and renderer and preserves all
+unchanged images. All216 campaign captures now have inspected/hash-bound coverage.
+No new rendering or archive download was performed for this review.
