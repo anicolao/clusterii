@@ -7,3 +7,19 @@ The scoped production correction preserves the global3px gold focus outline and 
 Local Nix type checking reports0errors/one pre-existing FleetRoute warning; lint passes. Local service execution is unavailable because PID7923 in the unrelated antigravity/admin2 checkout owns19099/15001 and its Java child8169 owns18080. These processes were not stopped or reused. Existing isolated pinned-Linux execution will validate the complete four-size aftermath journey and retain all96 original views for comparison before promotion. No local reproduction pass or corrected image approval is claimed yet.
 
 Review progress on retained family: phone later views36–49 and short53–62 were individually opened. Recorded tick195, own losses131/69, remaining0/91fighters and291/0infantry are readable; current projection advances independently. Lower casualty/history views use deliberate bounded scrolling, not all-content visibility. The keyboard opener ring defect holds step028; the family is not imported. An unrelated853-pixel large normal-motion illustration variation remains documented separately and unproven.
+
+## Completed Linux evidence, 2026-11-11
+
+Run43087376550 completed all four real journeys successfully at original limits.
+Request c064f32e and executor280e689a executed target55774982; all manifests
+are passed/generate,24views each, exact current spec SHA7102655c. All four
+archives were verified once in memory against API size/SHA256, ZIP CRC and
+safe paths; only PNG/JSON/Markdown evidence was retained locally, no ZIP copy.
+The96 originals compare88 byte-identical and exactly8 step028 focus-ring changes
+against41943637871. Each of the8 was individually inspected: the gold outline
+is complete inside the opener and above the artwork, with unchanged facts,
+control position and navigation. Large views were displayed downscaled2048.
+Every other exact hash now has individually inspected or identical prior review
+coverage. Old clipped-outline hashes remain held, never imported. The complete
+96-image family is imported with exact spec/renderer and review ledger checks.
+This closes the demonstrated outline clipping; it is not full PR strict success.
