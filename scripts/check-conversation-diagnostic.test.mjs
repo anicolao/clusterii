@@ -28,3 +28,8 @@ test('both launchers retain narrow recovery routing and reject invalid outer sel
   assert.equal(exact.status, 1);
   assert.match(exact.stderr, /RUNNER_TEMP/);
 });
+
+test('container forwards guarded request identity unchanged', () => {
+  const source = readFileSync('nix/ci-renderer.sh', 'utf8');
+  for (const name of ['GITHUB_REF_NAME', 'GITHUB_RUN_ATTEMPT', 'CLUSTER_PINNED_RENDERER']) assert.ok(source.includes(`--env ${name}`), name);
+});
