@@ -3112,6 +3112,11 @@
     align-items: center;
     gap: 8px;
   }
+  .observation-access :global(button:focus-visible) {
+    /* Keep the complete keyboard ring inside the control: the adjacent
+       system artwork owns a separate clipped reader immediately below it. */
+    outline-offset: -6px;
+  }
   .system-inspector.expanded h2 {
     padding-right: 0;
   }
