@@ -46671,5 +46671,1289 @@
         "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/023-keyboard-return-1-exchange-sender.png"
       }
     ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fd7411a600bfa528809d6b55adcc6b0cb92c731b2a1ac479b1079b026a6970e0",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3e37c75298f02f4729d37ed31eb7249e2e26e719f4eedc5ab9fec59c26e3fa15",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "84ce4dd7a15c618b7c50b8292c329acb6cffdecfe09f2f4084b73ce72d8c2dd2",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/011-compose-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3d07be7b826b5205053f67d84d5bb42b4d5ae9168529b6357383e4025d104680",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "14581bf5476853de1d63cb9b7362d21f5cb97d0f82db6e0c5ebb56c720ec8f39",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/012-offer-shared-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a7ef5e2465a9395599a46898a5c46622cde6ad098145eb460ddb3bb99f2b4bcd",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2a0ea319f1ff3dd39e65f64eb54f579a856fe31fef2bd6e8e7a362b6404e8602",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/014-review-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b0369e456d4aaf932f48b492f2207a482fae04be98ee5a6579c8247a56f59556",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "00fc8473eb0fb075bc318885dba124c7aa989b4a51c9e90e3a83e9749255f835",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/015-accept-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "33b028459065e43bca5b87dfd3e23e4b005c32b131b595d8ec6c36ab059c5417",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/017-settled-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "395a30436065b8ed3f686e82890422ba365f27fc8510ad8f989aaa6962839cbf",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/017-settled-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6344ee0bbd5ecdae6adaf270da559ddba90845c14d15019b8e27b398c66ef3a3",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/017-settled-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/017-settled-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9b0318182f7ddb02b7029add66cd10e2a7483d83c5640596fec31dcb39a0a528",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e2a992b706049ad5f2af083feea729310772b4ee0916c9fdb049c7c03334b005",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/019-second-offer-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9ffc1f7eda02bee3dd3ee76c635b806ec7e88d95691fd61af35937fda0b892ae",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3db156feacd7bf38aa2a4e1e9ee900a1643f631b56be149a03cd36fc450cec24",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/020-withdraw-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "59d6c8cfce08447c6cdad017bf23843f12acb6f189e02602156d19bd170d5088",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "03725ceba0732069584e8e4f753b2124170e7a535193082ea3bfebbca5b73208",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fb73765b699e1acea07553b279f1e20d9c46914e205c0ae84124c29e98610715",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/022-withdrawn-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9f129883f8c4ee0af4f88090687968ff16227333e5669db62a7b4aed824e15fd",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/023-reload-outcome-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "82507681356b0c2e3627cbc5e7b6f8c008c58a40499fd78a0eef2213a0ef3197",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-ordinary/desktop/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/024-keyboard-return-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1ca84e8f4d9700d9a5f05dee4184c9ba4f25f0987457332f646b869af94a4c61",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8554c955651a2a6e36c4fddc452019d437c737640f2c646501059240d5974bfb",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/011-compose-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b45f6183a80c0ca7611b35ed57515bfcebbfd17a30010a6976bd8f1cf90b9da5",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/011-compose-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e4bbd84b3128ddfbe75f675e9088faf4d217ba8cfd744042a6312339a31b0a92",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/013-uncertain-commitment-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "bc801cd3c1efce4b0d14c9dc7df53cf24124196705f2db1ca863d14b2dfb7752",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/014-reload-pending-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "4c7c98bba5dfd4cdd586c7d4e2a39904c69c808e4b5d0a395535fe52ec4fee6f",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-1-exchange-sender.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "dd0989f8981273c0c713687061946705742710556ca72772d3e182e55750b977",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/016-offer-shared-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "99144ce432c5adeb4ca7f6bfa5cb6ccfffcb7fdd11c8ae67f2386de405a66100",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/017-review-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "abd0ec70e2c9dc62af58dfdb441ac63a29edb23bd81ba318c8563fa9a99bda87",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "502a398f5fa01ebd7b884bd2c0deb484dc7559d5ae483b01b06db66bad75708c",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/018-accept-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e2d4b1447f6504534dc8794cd25fd473e043a57ccdf7092d88a3937206472216",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/020-settled-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d35923b2909a2934330349de41171b8166302b90f089c2c40be608ab4e1e9b34",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/020-settled-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "23d642748fe7b71edf234feb4b6c3beebf58d3f323d01b23cfc876c8dc15b8fc",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/020-settled-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/020-settled-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e46b847d3f37f2ec4d62ab6fd3d6516d960121d8c22eb1e691e57b4eb17e7c39",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/022-reload-outcome-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a38e303c5fe42e41786640f2d5ec80b0aa2a5de65f005e2fb0b974b91663b4a9",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "desktop",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/desktop/test-results/stories/credit-exchange-recovery/desktop/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/023-keyboard-return-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "86b91555034e870e8547a69e12a7543d676ff3f449eeff427996d7a042c083f4",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "033510126ec08b33285b5fb7ca8603f7f61d47783ce5b889b171b6a78575787b",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "43d2ff31359e1ea5188aa6b2645ce659a6c153e7a06914cf76a5d3af781a3322",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1cb2544b2791526aaaa96ba1bb6c1aa0da81d0c9ba87819cf11e3803408ade77",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "69f6d198a804a21bb51440fb31362eeba770486aab40283f1250917889d81193",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/012-offer-shared-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f2271bcdc581acbb2ed9b62183e12ab8fef5574b75278981dbe61cf18401e689",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3b3466436f83a547a4a999ab0d361871206859e2df2e7c8c9d0c6630373b5c6b",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/014-review-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "abe36e00e96bb7f600537ebb71b4786b029d6f5421c2e1c81e8cbebfc46256c8",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "51006a7a79407e212ad3e219adb293463a9b0c3e5107c61a92e30fa543dec913",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/015-accept-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1b35f3babc5098f0169a2489f5daccd0c1200736a6013a5c45e7d8d1595fe7ce",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "2f156a322a65e15e216ec6becc5d5ebdac2717d5edd5458dbd2f67eb63447f29",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d08f84e1791269c2281e771b29498dc1bd5b9b038231e4a08e3473475690c7d8",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/017-settled-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0e42c829f75f8cecda139d30dce0d3a8c76f2e9fda454296b70d3ebcadfab499",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6f20397b3122d1cfc10b8441879c2b68a48ebf1db2b9391843ab8dae10d28698",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/019-second-offer-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a3f3ab60267b9391f46d98d806a8545b83a8126343ee48bed3387514a7563c8a",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "295d52e906dff472130ad1863e630c9d3264ff9e5fb3dbeadc7f76ee70e397a7",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/020-withdraw-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/020-withdraw-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "897cfd7207c35abffc8f5844faa94e374dca70edb03d15d7d8b130a7936bc04d",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ae675a4e76ff5a37ef2f135a21d8213d7fffa3dea612670235e1239a3eb37942",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "203fa4dbab84b869e9eaa0b13cb88b68b71bb6613246b653a336e39669110cc0",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/022-withdrawn-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "07f3b2ab5bcdc7b569366c62a81643d4d25fa50d78fb3c6d4bb6b5cd1373496c",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/023-reload-outcome-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a2a16fc6371c4bbeec711120bd0e1aa36dfc11e559c71b65d8f6c45426b8d448",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-ordinary/large/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/024-keyboard-return-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d4ae3ef11d650af374fbd1842c4f63f951a7b0a4b5c944f1383d70beabe09d36",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "45e811ae914d9bffc371ffd2ccf2bce8a235ff65826d7ebe3b21959adddbaec6",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/011-compose-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/011-compose-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/014-reload-pending-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/016-offer-shared-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/017-review-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/018-accept-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "852035e47ee64ded0f3ad1436201d629b76a981123b5d6c2ffb08378db23a7e6",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/013-uncertain-commitment-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c216931a47ac4d9c0688b1a00ae9ed25e9fd59513e74305668ce9dd84af32680",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/014-reload-pending-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/014-reload-pending-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8ccf9cbc71e84473035842de591a5e9b67cac88d554dd3a2e1cb04fb32776025",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/016-offer-shared-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-1-exchange-sender.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/017-review-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c4242b38ab8251a1c320306bf938a813b2543f02550cc4c6805849f5ae97cc6e",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/016-offer-shared-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a30693ab73147922b5d7f75d7a430fcf9f502bdbade9f6d62c1864a0513cc287",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/017-review-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/017-review-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "22d2181250fefdab7a5e4ab820369fce88f9a5a79f4b364e02e0a7a57abe12bd",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/018-accept-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7dfd5e1ab9f5cf07d550d27d02e90c7cb9a06df2cd7077c30e096ff66e452309",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/018-accept-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "8231689ac49631f23d1460a7a31c1df636b1f45b333451cc301c0c2d8b298d18",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/020-settled-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e1d6b9197e64686a82b5801eeef31effcc2b038cecf2c2f0ba53bd36b3b35595",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/020-settled-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "f554319d905cbafff01492cfdec73ae2bbda077258f5c297c95d16bf2b5b1365",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/020-settled-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/020-settled-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "288a5e1198364f5913b22bd1a7f2203834c0ac2f1887e2630011249033906666",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/022-reload-outcome-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "da451365808b3da450610fe074c6af125f4ca242a847f01df3494638ea492571",
+    "disposition": "approved-regression",
+    "inspection": "Complete original individually viewed for this exact SHA group, desktop at native 1440x1000; large at tool-downscaled 2048x1152 from 3840x2160. Original compose baseline separately viewed: old panel covered lower commander portraits; current measured inset exposes them. Terms 10.001/2.002, reservations, tick settlement/withdrawal, real balances, pending disabled Awaiting receipt and focus/return controls remain readable. Bounded reading can hide neighboring secondary prose; no automatic all-content visibility, full concept-fidelity, normal-motion or native large-pixel certification is claimed.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "large",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/023-keyboard-return-1-exchange-sender.png"
+      }
+    ]
   }
 ]

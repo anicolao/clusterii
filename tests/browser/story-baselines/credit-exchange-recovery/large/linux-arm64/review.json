@@ -29,188 +29,190 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "e1b75b35db94436689f8323fae50c523f8d86427",
+    "commit": "45dde0047cf2eed1e7c8751414439d4940382464",
     "dirty": false,
     "spec": "tests/browser/credit-exchange.story.spec.ts",
     "specSha256": "1942532a88d6ad193854ed57d7dfd91a59f7dfd2351a6a2067662f05b9bf20a6"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-focus-41884219213/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/large/test-results/stories/credit-exchange-recovery/large/linux-arm64/story.json",
+  "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "run": 43106912579,
+  "inspectionScope": "Exact inspected hashes; unchanged inherited bytes retained. Large review downscaled; not full design or release approval.",
   "captures": [
     {
       "image": "011-compose-1-exchange-sender.png",
-      "sha256": "deaeafd28deb58c9a1f2f7a9718dbe4b7dd3294150518bc538599da118984e7c",
-      "previousSha256": "0a6ce4901d65755459e637bda61b26e62743c14493efe252a6818bb8d888b05e",
+      "sha256": "d4ae3ef11d650af374fbd1842c4f63f951a7b0a4b5c944f1383d70beabe09d36",
+      "previousSha256": "deaeafd28deb58c9a1f2f7a9718dbe4b7dd3294150518bc538599da118984e7c",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "011-compose-2-exchange-recipient.png",
-      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55",
-      "previousSha256": "dbeab39a59b39c10c937282fe0d0525c256657b6547bbd9339a076e23670970c",
+      "sha256": "45e811ae914d9bffc371ffd2ccf2bce8a235ff65826d7ebe3b21959adddbaec6",
+      "previousSha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "011-compose-3-outer-witness.png",
-      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
-      "previousSha256": "26c224049cc15b295fa57eb3f122baf4ec70334d7e07c44bad684efcb5144725",
+      "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+      "previousSha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "013-uncertain-commitment-1-exchange-sender.png",
-      "sha256": "63f08f540ad4b42c80bdab74fbc662bcba96257412c59406dcb119e3ed177e8d",
-      "previousSha256": "b306bc09db61e5682d0b8ee11df63da137de666c4bf695f9f76ac285ac727885",
+      "sha256": "852035e47ee64ded0f3ad1436201d629b76a981123b5d6c2ffb08378db23a7e6",
+      "previousSha256": "63f08f540ad4b42c80bdab74fbc662bcba96257412c59406dcb119e3ed177e8d",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "013-uncertain-commitment-2-exchange-recipient.png",
-      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55",
-      "previousSha256": "dbeab39a59b39c10c937282fe0d0525c256657b6547bbd9339a076e23670970c",
+      "sha256": "45e811ae914d9bffc371ffd2ccf2bce8a235ff65826d7ebe3b21959adddbaec6",
+      "previousSha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "013-uncertain-commitment-3-outer-witness.png",
-      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
-      "previousSha256": "26c224049cc15b295fa57eb3f122baf4ec70334d7e07c44bad684efcb5144725",
+      "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+      "previousSha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "014-reload-pending-1-exchange-sender.png",
-      "sha256": "e1c6b7e9463cb726097f64fd1392df4cfb1c067ace3e10f372226733d0f96352",
-      "previousSha256": "da318a7fe71c31c9e0cc4bfe55cb854da174d08a524a639f4d625f4272dd4069",
+      "sha256": "c216931a47ac4d9c0688b1a00ae9ed25e9fd59513e74305668ce9dd84af32680",
+      "previousSha256": "e1c6b7e9463cb726097f64fd1392df4cfb1c067ace3e10f372226733d0f96352",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "014-reload-pending-2-exchange-recipient.png",
-      "sha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55",
-      "previousSha256": "dbeab39a59b39c10c937282fe0d0525c256657b6547bbd9339a076e23670970c",
+      "sha256": "45e811ae914d9bffc371ffd2ccf2bce8a235ff65826d7ebe3b21959adddbaec6",
+      "previousSha256": "eabf8bcd286e45b9d83b39517ebd416b608ee79dd8379cf5f77e680fa0506a55",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "014-reload-pending-3-outer-witness.png",
-      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
-      "previousSha256": "26c224049cc15b295fa57eb3f122baf4ec70334d7e07c44bad684efcb5144725",
+      "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+      "previousSha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "016-offer-shared-1-exchange-sender.png",
-      "sha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f",
-      "previousSha256": "5d1df637887be88f5076778d2f335234d9830f850d500eaea056affb16055f40",
+      "sha256": "8ccf9cbc71e84473035842de591a5e9b67cac88d554dd3a2e1cb04fb32776025",
+      "previousSha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "016-offer-shared-2-exchange-recipient.png",
-      "sha256": "74cfb79ba9224d8327e0d1ba267edea12cabfbe25058480ac8b5260ae3081f96",
-      "previousSha256": "660581fb951839b727ea46b6a3a2d322d3caa799e76c82641d5cc860191c2133",
+      "sha256": "c4242b38ab8251a1c320306bf938a813b2543f02550cc4c6805849f5ae97cc6e",
+      "previousSha256": "74cfb79ba9224d8327e0d1ba267edea12cabfbe25058480ac8b5260ae3081f96",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "016-offer-shared-3-outer-witness.png",
-      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
-      "previousSha256": "26c224049cc15b295fa57eb3f122baf4ec70334d7e07c44bad684efcb5144725",
+      "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+      "previousSha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "017-review-terms-1-exchange-sender.png",
-      "sha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f",
-      "previousSha256": "5d1df637887be88f5076778d2f335234d9830f850d500eaea056affb16055f40",
+      "sha256": "8ccf9cbc71e84473035842de591a5e9b67cac88d554dd3a2e1cb04fb32776025",
+      "previousSha256": "97b38bb976af3bce70e50537fe73bf53c957e3999a286feb80ecf3a2b8cbf92f",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "017-review-terms-2-exchange-recipient.png",
-      "sha256": "4499a63902af5c85f621b6acd7eb982a72185ffeaa734d8e8357c82361b92681",
-      "previousSha256": "81cfec7041f212e536fca520dc85ba7bebfe5cb07e2e907a8b9237052bf577e4",
+      "sha256": "a30693ab73147922b5d7f75d7a430fcf9f502bdbade9f6d62c1864a0513cc287",
+      "previousSha256": "4499a63902af5c85f621b6acd7eb982a72185ffeaa734d8e8357c82361b92681",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "017-review-terms-3-outer-witness.png",
-      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
-      "previousSha256": "26c224049cc15b295fa57eb3f122baf4ec70334d7e07c44bad684efcb5144725",
+      "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+      "previousSha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "018-accept-terms-1-exchange-sender.png",
-      "sha256": "fefc76e40e8c9c4cfb1fc35299eb58a71aa06315f0e4e49c70bc3758af34e712",
-      "previousSha256": "4e2ed5e88bffcacf1131883e07bbb72545df9cb010e76ee80316594b67ebe2c0",
+      "sha256": "22d2181250fefdab7a5e4ab820369fce88f9a5a79f4b364e02e0a7a57abe12bd",
+      "previousSha256": "fefc76e40e8c9c4cfb1fc35299eb58a71aa06315f0e4e49c70bc3758af34e712",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "018-accept-terms-2-exchange-recipient.png",
-      "sha256": "fd397b8778c1fd97937b394c1f9fc8f0dc416fd830003e1fb98fe9db7e259a74",
-      "previousSha256": "e66ee5c19d5773e5214e9327369762e6c9c0b654b4431034327236e6d6a52786",
+      "sha256": "7dfd5e1ab9f5cf07d550d27d02e90c7cb9a06df2cd7077c30e096ff66e452309",
+      "previousSha256": "fd397b8778c1fd97937b394c1f9fc8f0dc416fd830003e1fb98fe9db7e259a74",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "018-accept-terms-3-outer-witness.png",
-      "sha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
-      "previousSha256": "26c224049cc15b295fa57eb3f122baf4ec70334d7e07c44bad684efcb5144725",
+      "sha256": "6a577a2dcda2be648fe476de36c40134211c092c1f81526ae381ef277e35f0f1",
+      "previousSha256": "16e8a9bc3580c2076abf967a4ae05704da298103b6b05cf542fcea31110480d7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "020-settled-1-exchange-sender.png",
-      "sha256": "ce875083aaf8afd22fc2258356af5a7707524ba67dc3e6576ffef545e838856c",
-      "previousSha256": "8c03abf599399cd298e1f5e98656fcf526a036e3b3f54b54fb596fd6759dc85b",
+      "sha256": "8231689ac49631f23d1460a7a31c1df636b1f45b333451cc301c0c2d8b298d18",
+      "previousSha256": "ce875083aaf8afd22fc2258356af5a7707524ba67dc3e6576ffef545e838856c",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "020-settled-2-exchange-recipient.png",
-      "sha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223",
-      "previousSha256": "799d87812ca02b4af517e915976b81944f19059ca7165a237d07b5e01e949623",
+      "sha256": "e1d6b9197e64686a82b5801eeef31effcc2b038cecf2c2f0ba53bd36b3b35595",
+      "previousSha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "020-settled-3-outer-witness.png",
-      "sha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3",
-      "previousSha256": "c0be3eda8d31ef364cbd91a389a7b26ef25c31d324f7be0fd47ebdb46aecd183",
+      "sha256": "f554319d905cbafff01492cfdec73ae2bbda077258f5c297c95d16bf2b5b1365",
+      "previousSha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "022-reload-outcome-1-exchange-sender.png",
-      "sha256": "7b524b8e83adf78314eb80d47e1de10abaff638ca42b5f1cf501e5cf89c7cdf2",
-      "previousSha256": "3810ff3a4565030bc61222441d190bc2d81303f48dc9c11c502fa7043c6d277f",
+      "sha256": "288a5e1198364f5913b22bd1a7f2203834c0ac2f1887e2630011249033906666",
+      "previousSha256": "7b524b8e83adf78314eb80d47e1de10abaff638ca42b5f1cf501e5cf89c7cdf2",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "022-reload-outcome-2-exchange-recipient.png",
-      "sha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223",
-      "previousSha256": "799d87812ca02b4af517e915976b81944f19059ca7165a237d07b5e01e949623",
+      "sha256": "e1d6b9197e64686a82b5801eeef31effcc2b038cecf2c2f0ba53bd36b3b35595",
+      "previousSha256": "d9a02ee27696eaf634b437edd661c2fdd4bce4b10298f2dc1ecff7e3b55b2223",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "022-reload-outcome-3-outer-witness.png",
-      "sha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3",
-      "previousSha256": "c0be3eda8d31ef364cbd91a389a7b26ef25c31d324f7be0fd47ebdb46aecd183",
+      "sha256": "f554319d905cbafff01492cfdec73ae2bbda077258f5c297c95d16bf2b5b1365",
+      "previousSha256": "041d938fb75c51bd66ba76d4b200e1f9021dc3c39325a9768f3f01b0d611c0e3",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     },
     {
       "image": "023-keyboard-return-1-exchange-sender.png",
-      "sha256": "e8d526548a40a617ee1c861c2096bad642a1a0f3aca3fbfaa143edc51b348ed9",
-      "previousSha256": "eb68b182029d870e5f71ae0b2cb1d59ad409a220bf2dfb0729043580b1f4ed23",
+      "sha256": "da451365808b3da450610fe074c6af125f4ca242a847f01df3494638ea492571",
+      "previousSha256": "e8d526548a40a617ee1c861c2096bad642a1a0f3aca3fbfaa143edc51b348ed9",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "exact inspected SHA group"
     }
   ]
 }
