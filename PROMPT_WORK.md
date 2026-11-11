@@ -923,3 +923,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect the remaining large campaign originals and complete exact-hash family review without re-rendering or retaining duplicate archives.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Review remaining contextual aftermath evidence and record the live focus-repair outcome without duplicating retained artifacts.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Validate the combined recovery batch and publish it by normal fast-forward to existing PR140 with required workflows unchanged.
