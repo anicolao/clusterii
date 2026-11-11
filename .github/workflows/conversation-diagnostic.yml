@@ -1,0 +1,45 @@
+name: Unchanged conversation acknowledgement diagnostic
+on:
+  push:
+    branches: [investigate/pr140-conversation-20261111]
+    paths: [.github/recovery/conversation-diagnostic.json]
+permissions:
+  contents: read
+concurrency:
+  group: pr140-conversation-original-20261111
+  cancel-in-progress: false
+jobs:
+  diagnostic:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 8
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate exact first request
+        run: node scripts/conversation-diagnostic-request.mjs
+      - name: Original complete conversation mock application case
+        run: nix run path:./nix#ci-renderer -- recovery conversation-original
+      - name: Retain diagnostic and original failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr140-conversation-original-${{ github.sha }}
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            test-results/
+            ci-evidence/
+            firestore-debug.log
+            firebase-debug.log
+            database-debug.log
