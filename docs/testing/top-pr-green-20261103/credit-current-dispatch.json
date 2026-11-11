@@ -1,14 +1,37 @@
 {
-  "target": "936b3239a3ce7024685e04889ba0d2c5c5ea29fa",
-  "executor": "e49e91412c87825156881a4f529c373c356a1509",
-  "request": "f93eb8d007a813413dd271efa7068992f663ddb0",
-  "branch": "investigate/pr140-credit-current-20261104",
-  "tests": "Two complete existing credit-exchange stories per viewport; original300s and all real-service assertions retained",
-  "expectedImages": 216,
-  "guards": "Six tests PASS including exact selection, replay/source/scope rejection, both launcher validation and bounded checkout target availability; actual Playwright collection2perviewport",
-  "source": "Production/spec/helpers/runtime/reference trees identical target936b3239; source same active1c586349",
-  "approval": "No resulting images approved; each changed original must be inspected",
-  "liveGalaxyRun": 41867551971,
-  "liveRequiredStrictRun": 41852381575,
-  "retention": "14day remote artifacts, metadata first; no new download this checkpoint"
+  "run": 43106912579,
+  "request": "45dde0047cf2eed1e7c8751414439d4940382464",
+  "executor": "b2edad109ff446658a20b7ac3a83bfb59ea880d7",
+  "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "branch": "investigate/pr140-credit-current-20261111",
+  "basis": "Completed phone and desktop cohorts at unchanged production source730297e7 each failed credit-exchange ordinary/recovery at sender compose011. Four failures require current output inspection; original full job remains live and its artifact unavailable.",
+  "scope": {
+    "credit-exchange-ordinary": 29,
+    "credit-exchange-recovery": 25,
+    "viewports": [
+      "phone",
+      "desktop",
+      "large",
+      "short"
+    ],
+    "totalCaptures": 216
+  },
+  "checks": {
+    "guardTestsPassed": 7,
+    "actualCollectionPerViewport": 2,
+    "productionSpecHelpersReferenceTreeDelta": 0,
+    "retries": 0,
+    "snapshotUpdates": "none",
+    "deadlines": "original",
+    "renderer": "pinned existing Linux arm64"
+  },
+  "implementation": "Reuse established current-economy candidate executor; change only exact case/request selection, branch trigger and expected full-manifest capture counts. Both launchers preserve request identity.",
+  "acceptance": "Generation only. Compare every output against current references and inspect all changed images before promotion. No production, test, threshold or required workflow change on PR140.",
+  "retentionDays": 14,
+  "preservedRuns": [
+    43090488602,
+    43104256802,
+    43104256749
+  ],
+  "statusAtRecording": "in_progress"
 }
