@@ -45477,5 +45477,566 @@
         "classification": "changed"
       }
     ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "0b4a08136910f3c6612fc6d4ca51f4e741ccbbb6633dfbd138d513f66a146023",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "02452f2cceb64c1b8799b351ee7ee0770cf6d889f98dc73b8ec25d9afe13201e",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "33a1dfcc9a60d1b4e84d7ec3da60a5c692ba18ede581cbfcad229b44d2c047c3",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ef873b4a0cdd9ad1ba1f2395e6c414d38a6cdbb282fc0e4cbfe3ff958d8534e7",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e144769fd53451e84e9582503deb3b1b25c162ca60530eb8ec49b111f671c818",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/012-offer-shared-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "448695e990d04071e633fa5d32c447695fe8979ad5e0e4f023167f748e676abd",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "d45100d37dc620ba0621678a3a04235324c288efcac12d3a1717d3541420f3dc",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/014-review-terms-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7c340b81b4f558eafece045865952c124cad6530b45335abbd73047e1b09b14e",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "3a91bb0f6948c597f1eed387a4ffdf34958916f9c91aa491b4d141e89336870b",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/015-accept-terms-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "1fe5722564a1095f1987b3d8eaba8ccbd2173a39ec562231c139e3623715ea77",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/017-settled-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "ce3bf7ef1e3d98a84d3183c17e64c4e88fa3f9da9d07c9a3eead3fa3cb8dc8de",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/017-settled-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "52d4f4d79fc2e224032b3f359391e36b134e131d34e9630d59984b69cf22d74d",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/017-settled-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/017-settled-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "54cac0789d93f7d786e8e51a530f12421d30b68afbd81829566faa3b0c21f310",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/019-second-offer-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "fa5ebd994e8721f482f3ed5c03d114bab862d83e9b46a3f762faef7ba855fd3c",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e98d95c37bdb98e620ae8233cb7a68dee13d1db9d6fc34baeeb53fd9605a90bd",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/020-withdraw-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9abd766b6233d7baa8265330d51245e548f2ba49086d791cb7438d8e36992d41",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "06f22ae35c1a562d234d57bfbc864428db1769670ceb0deb45b077bdcc4e536f",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-2-exchange-recipient.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-2-exchange-recipient.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-2-exchange-recipient.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "b971dd3255ffaa2a1131c2856a8ce809655195fdf8946cf074ad48f635591f4d",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/022-withdrawn-3-outer-witness.png"
+      },
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-3-outer-witness.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-3-outer-witness.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c24bdcbaecf34cf560abe6017b9aabdddfdc8b9d7358f223814e07d9a7cf2d9a",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/023-reload-outcome-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "e9e42643b2a4d2e1c17d11226eec518e417de16dd73e712f40aa04154e2a66b7",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-ordinary",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-ordinary/phone/linux-arm64/024-keyboard-return-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/024-keyboard-return-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "7ac31f6ea270bfc51267315b36b31314b3cbbebaf66b77e612bf98793f810cf4",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/013-uncertain-commitment-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "32b9677f609130694001eac5ff0201c26f7fa096c4474da11f96f3154684fb44",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/014-reload-pending-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "a7d0d51eb92682cb220fa9fc50138e305c1f79ae3fa0be3424fd97ba8931bee5",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/016-offer-shared-1-exchange-sender.png"
+      },
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/017-review-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "9a7282e41fdcfb5b9f28edcbfdfd2b05a18fc0c3a63ec9974e14f28084f63fef",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/018-accept-terms-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "c42a739b3c6dda8dbb1f675aaa8ca318e5d6125dab37746d109ee52241d952b4",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/020-settled-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "dcdede2a1b4791edf6450d58d9cc24ae8d1134c395aa10cb74aa48d7ba00e9dd",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/022-reload-outcome-1-exchange-sender.png"
+      }
+    ]
+  },
+  {
+    "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+    "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+    "sha256": "25bc721bf64c644a176ec8e32b3d29105ebd56a31316048456e4ce7fc3834648",
+    "disposition": "approved-regression",
+    "inspection": "Native 393x852 complete phone original individually viewed for this exact SHA group. Real 10.001/2.002 terms, reserved/settled/withdrawn balances, pending/reload status, disabled Awaiting receipt and keyboard return focus remain readable in their deliberate reader positions. Current shared campaign resource rail remains visible above the instrument; original compose baseline was separately viewed and omitted that rail. Neighboring tabs/fields outside the bounded reader are intentionally offscreen; this is not automatic full-content visibility or concept-fidelity approval. No unviewed short/desktop/large approval.",
+    "covered": [
+      {
+        "story": "credit-exchange-recovery",
+        "viewport": "phone",
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-credit-current-43106912579/phone/test-results/stories/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png",
+        "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/023-keyboard-return-1-exchange-sender.png"
+      }
+    ]
   }
 ]

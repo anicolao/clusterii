@@ -963,3 +963,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Preserve the original November 4 credit dispatch record and give the November 11 request a unique run-bound evidence filename.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit remaining current fleet first-failure coverage and exact complete-journey selection while sole credit and required PR140 jobs execute.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain final older strict results and verify current credit candidate originals once for complete image-by-image review before any promotion.
