@@ -937,3 +937,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain the completed large economy artifact without a ZIP copy and inspect desktop originals before any exact-reference promotion.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete all desktop economy image inspections and import exact approved hashes while preserving production and strict-check inputs.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect short market and research guidance originals from retained evidence without duplicate downloads or premature whole-family promotion.
