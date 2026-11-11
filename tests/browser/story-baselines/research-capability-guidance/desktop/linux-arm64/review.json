@@ -1,7 +1,12 @@
 {
   "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
-  "story": "research-capability-guidance",
+  "source": {
+    "commit": "bcede878538d0f237a8f6a2885e62add59b46a21",
+    "dirty": false,
+    "spec": "tests/browser/research-guidance.story.spec.ts",
+    "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
+  },
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -28,98 +33,80 @@
     "dpr": 1,
     "motion": "reduce"
   },
-  "source": {
-    "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
-    "dirty": false,
-    "spec": "tests/browser/research-guidance.story.spec.ts",
-    "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
-  },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "manifest": "../clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/story.json",
   "captures": [
     {
       "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
-      "sha256": "928504b14fdb9ba4dfe10fc768891afa3a151d3bef5c872752a48fb39a30b3f5",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "e822eedefde67f3626a9cbaf220bda949bafaeb48ef40d6b8405e97266eb384f",
+      "previousSha256": "928504b14fdb9ba4dfe10fc768891afa3a151d3bef5c872752a48fb39a30b3f5",
+      "changed": true
     },
     {
       "image": "010-open-authoritative-science-2-independent-investor.png",
-      "sha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "67ef4b1888bc5d2f3f45f04c731dbc61d73f924d48a01cfd21b4448bab1e9b57",
+      "previousSha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
+      "changed": true
     },
     {
       "image": "011-read-scanning-1-market-envoy-campaign-device.png",
-      "sha256": "4d069ee16e3aac71ba0e750b1b6cf7030dc6e2c4b4b2ad6f5509965680475612",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "de3b4b879c1d6080431179ba2fbb770cc1d3bb3e9e90305bfbeda5d1ea6d3149",
+      "previousSha256": "4d069ee16e3aac71ba0e750b1b6cf7030dc6e2c4b4b2ad6f5509965680475612",
+      "changed": true
     },
     {
       "image": "012-read-navigation-1-market-envoy-campaign-device.png",
-      "sha256": "2ffcbb4560f4848617fdf35bbb817926d16a5597fa14367e82ecaf10876c80f2",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "52d452977c6df6a18cf54e03ce36e6c47d51ad90e7fcdbb9cc56a2c045d6fca3",
+      "previousSha256": "2ffcbb4560f4848617fdf35bbb817926d16a5597fa14367e82ecaf10876c80f2",
+      "changed": true
     },
     {
       "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
-      "sha256": "db6f3304faef1061820c95405f64d1cd164ccf89f2283eeda39aed9356047168",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "73422e2cb222a2be29c76f37a46f453a60213154d1a14df56dc10be5f183e96d",
+      "previousSha256": "db6f3304faef1061820c95405f64d1cd164ccf89f2283eeda39aed9356047168",
+      "changed": true
     },
     {
       "image": "014-read-investing-1-market-envoy-campaign-device.png",
-      "sha256": "5e9478b5e330de1b5665e03a002f739565983aa5b482cd644f18f1e8285511be",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "8199f5c6ccc4cb11a2202745be19b5ae9c45dd3c8b013c107c33f20c68b5cdd8",
+      "previousSha256": "5e9478b5e330de1b5665e03a002f739565983aa5b482cd644f18f1e8285511be",
+      "changed": true
     },
     {
       "image": "015-read-formations-1-market-envoy-campaign-device.png",
-      "sha256": "9d000702fe318609b5fddffbea1d7c9135fa0f46a9e95852f9246aa4ae529e2a",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "9610a18f880af23cc8c3ee1284ea005cc8a18001b8a9ca22c207f7cbc86253a3",
+      "previousSha256": "9d000702fe318609b5fddffbea1d7c9135fa0f46a9e95852f9246aa4ae529e2a",
+      "changed": true
     },
     {
       "image": "016-read-melee-1-market-envoy-campaign-device.png",
-      "sha256": "876ba8eafeb281f8603746be0d0f809e9829f798e75a27b2263cc5fc8e030aa3",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "1713f2cbf514a75616282077de1db43b78a70b0ded7484f2867a67e56926fd70",
+      "previousSha256": "876ba8eafeb281f8603746be0d0f809e9829f798e75a27b2263cc5fc8e030aa3",
+      "changed": true
     },
     {
       "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
-      "sha256": "b9f411826359e15f1380d74de1ade9c5b486396229dee31ba3d8b3d253b6bd5f",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "e6eed2ef9ce2cb40789fa7135869f114d1d755e874653e19183b0a45e4e3342e",
+      "previousSha256": "b9f411826359e15f1380d74de1ade9c5b486396229dee31ba3d8b3d253b6bd5f",
+      "changed": true
     },
     {
       "image": "018-read-innovation-1-market-envoy-campaign-device.png",
-      "sha256": "f7cef7e64c8a6f295496494e69033ff586a07ca65212f09ec4944aa7bcdb1aee",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "7cc14b6de3c06d138342b932f8d40e9c0b3f5e2eb439ad86fdae10f317540699",
+      "previousSha256": "f7cef7e64c8a6f295496494e69033ff586a07ca65212f09ec4944aa7bcdb1aee",
+      "changed": true
     },
     {
       "image": "019-close-without-order-1-market-envoy-campaign-device.png",
       "sha256": "c28d2041d29b4fe79bd54ebb64bee6116bc7b01a3a69518778ee4a5fca08e21a",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "c28d2041d29b4fe79bd54ebb64bee6116bc7b01a3a69518778ee4a5fca08e21a",
+      "changed": false
     },
     {
       "image": "019-close-without-order-2-independent-investor.png",
-      "sha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "67ef4b1888bc5d2f3f45f04c731dbc61d73f924d48a01cfd21b4448bab1e9b57",
+      "previousSha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
+      "changed": true
     }
-  ]
+  ],
+  "scope": "Individually viewed all48 distinct changed desktop originals:15 market states previously recorded and33 research guidance/order states now inspected. Four allocation controls, invalid123/100 and111/100, complete focus outlines, disabled Apply, reset25 and private peer context readable. All eight research choices show full selected row, effect, cost and queue button. Held/reloaded Recruiting, gold retry focus, preserved stale conflict and exact scheduled Investing/Innovation tick1 lists remain readable. Actual science19.6 then completion1 then2.404 and earned1.4/1.404, independent Navigation19.6/21/22.4 match shown state. Economy panel clears rail. Bounded readers intentionally clip neighboring unselected rows/prose; deliberate outcome readings do not claim automatic simultaneous all-content visibility. Scoped regression approval only, not whole design or motion certification."
 }
