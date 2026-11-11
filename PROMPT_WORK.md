@@ -969,3 +969,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete native short credit image inspection and retain all four verified current-source candidate artifacts without duplicate archives.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect remaining desktop and large exact credit candidate images and prepare only reviewed source-compatible references for integration.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reclaim reviewed credit extraction duplicates after verifying every byte against pushed Git originals; preserve compact reconstruction provenance.
