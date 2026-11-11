@@ -1,0 +1,20 @@
+{
+  "previousTarget": "730297e72db62967d28db609a788fb06edb9d1d5",
+  "reviewedBatchHead": "d420fda5",
+  "candidateRun": 43090793266,
+  "captures": 348,
+  "changedInspectedPngs": 306,
+  "unchangedCaptures": 42,
+  "reviewMetadataUpdates": 20,
+  "productionStoryRendererWorkflowChanges": 0,
+  "localValidation": "Complete 348-byte hash/spec/renderer verification, actual prompt base check, diff whitespace checks, normal ancestor verification. Existing check/lint/unit/story-policy gates at unchanged executable inputs passed; no unnecessary repeat.",
+  "conversationFailure": "Original integrated acknowledgement failed. Complete unchanged pinned-Linux case passed in 1.8m; failing-point assertion completed in 1118.559ms. Root cause remains unproven; no product fix claimed.",
+  "preservedStrict": {
+    "run": 43090488602,
+    "job": 130765926848,
+    "status": "in_progress"
+  },
+  "publicationDecision": "Publish complete reviewed batch while original strict runs, rather than park validated changes. Application and story workflows contain no concurrency cancellation, so original failure evidence will remain available. New required CI is mandatory for changed references.",
+  "scope": "Inspected regression references, not full design, managed-provider or release approval. No merge, force, assertion, tolerance or deadline change.",
+  "retention": "348 duplicate extracts reclaimed only after exact equality to pushed Git blobs. Original candidate ZIPs verified in RAM; compact manifests/indices and Git originals retained."
+}
