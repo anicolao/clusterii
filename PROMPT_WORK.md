@@ -957,3 +957,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Consolidate the complete inspected economy reference batch into PR140 by normal fast-forward, preserving the live original strict run and all required gates.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind existing candidate runner to the two complete current credit-exchange journeys after confirmed first pixel failures, preserving original assertions and limits.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one current-source credit candidate batch after seven guard tests and exact two-case collection at all four viewports.
