@@ -1,7 +1,12 @@
 {
   "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
-  "story": "market-draft-membership-revocation",
+  "source": {
+    "commit": "bcede878538d0f237a8f6a2885e62add59b46a21",
+    "dirty": false,
+    "spec": "tests/browser/market-membership-revocation.story.spec.ts",
+    "specSha256": "f9045b8872531a189b8efbeb8fdc870a8a76b507f3befe00825016ac7fe8e90a"
+  },
   "renderer": {
     "platform": "linux-arm64",
     "rendererArgs": [
@@ -28,98 +33,92 @@
     "dpr": 1,
     "motion": "reduce"
   },
-  "source": {
-    "commit": "cb4dda0aff2ea9c930206ba3f9b5595ab03f9202",
-    "dirty": false,
-    "spec": "tests/browser/market-membership-revocation.story.spec.ts",
-    "specSha256": "f9045b8872531a189b8efbeb8fdc870a8a76b507f3befe00825016ac7fe8e90a"
-  },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-market-candidates-41731285520/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/story.json",
-  "inspectionScope": "Exact inspected regression references; current shared-renderer compatibility requires strict verification. No game rules/design/release approval.",
+  "manifest": "../clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/story.json",
   "captures": [
     {
       "image": "010-inspect-owned-focus-1-market-envoy-campaign-device.png",
-      "sha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
-      "previousSha256": null,
+      "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+      "previousSha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
       "changed": true
     },
     {
       "image": "010-inspect-owned-focus-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     },
     {
       "image": "011-edit-partial-allocation-1-market-envoy-campaign-device.png",
-      "sha256": "fde422ea9627f792c4132b4a3c1911988bf97a38d8fbc242e4b6f6d7f80c2f0e",
-      "previousSha256": null,
+      "sha256": "4c633a023f0f7444eeb13c2bcaf606cfb77971cbbb29e3ae41ba4633fe241b08",
+      "previousSha256": "fde422ea9627f792c4132b4a3c1911988bf97a38d8fbc242e4b6f6d7f80c2f0e",
       "changed": true
     },
     {
       "image": "011-edit-partial-allocation-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     },
     {
       "image": "012-navigate-with-intent-1-market-envoy-campaign-device.png",
-      "sha256": "c3c32a9b3e7aa90b3a83a2630971c2e14f440a6dc754b969e2ba6b940fc90ac6",
-      "previousSha256": null,
+      "sha256": "35b12caaa8b0a6b009808b6744ca058071441ffaef215da95aa6f5dd0bc86fed",
+      "previousSha256": "c3c32a9b3e7aa90b3a83a2630971c2e14f440a6dc754b969e2ba6b940fc90ac6",
       "changed": true
     },
     {
       "image": "012-navigate-with-intent-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     },
     {
       "image": "014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
       "sha256": "9c2c1a47c58d9cdd565dfd3e9756079191eafeed8a2865e20670858e55a3d02f",
-      "previousSha256": null,
-      "changed": true
+      "previousSha256": "9c2c1a47c58d9cdd565dfd3e9756079191eafeed8a2865e20670858e55a3d02f",
+      "changed": false
     },
     {
       "image": "014-recover-with-inflight-view-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     },
     {
       "image": "016-observe-revoked-access-1-market-envoy-campaign-device.png",
       "sha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
-      "previousSha256": null,
-      "changed": true
+      "previousSha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "changed": false
     },
     {
       "image": "016-observe-revoked-access-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     },
     {
       "image": "018-reject-late-private-view-1-market-envoy-campaign-device.png",
       "sha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
-      "previousSha256": null,
-      "changed": true
+      "previousSha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "changed": false
     },
     {
       "image": "018-reject-late-private-view-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     },
     {
       "image": "020-recover-restored-membership-1-market-envoy-campaign-device.png",
-      "sha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
-      "previousSha256": null,
+      "sha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+      "previousSha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
       "changed": true
     },
     {
       "image": "020-recover-restored-membership-2-independent-investor.png",
-      "sha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
-      "previousSha256": null,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
       "changed": true
     }
-  ]
+  ],
+  "scope": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification."
 }

@@ -44370,5 +44370,1112 @@
         "classification": "changed"
       }
     ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "9e974efde95f4209b75d1a2db5d236bd670c355a03e4c6cac42010f4c326d7f5",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+        "sha256": "9e974efde95f4209b75d1a2db5d236bd670c355a03e4c6cac42010f4c326d7f5",
+        "previousSha256": "119e8f3a86ae0db9ed657b4ad5b2fcf6681ba01155d7936dfa80ef941456128f",
+        "classification": "changed"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+        "sha256": "9e974efde95f4209b75d1a2db5d236bd670c355a03e4c6cac42010f4c326d7f5",
+        "previousSha256": "119e8f3a86ae0db9ed657b4ad5b2fcf6681ba01155d7936dfa80ef941456128f",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+        "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+        "previousSha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+        "classification": "changed"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+        "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+        "previousSha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+        "classification": "changed"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/014-queue-investing-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/014-queue-investing-2-independent-investor.png",
+        "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+        "previousSha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+        "classification": "changed"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+        "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+        "previousSha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+        "classification": "changed"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/024-switch-current-device-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/024-switch-current-device-2-independent-investor.png",
+        "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+        "previousSha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+        "classification": "changed"
+      },
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+        "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+        "previousSha256": "7ddebf180f8a1c1d35f15a5dfe512aed1e2bfaf247af31361a96931b39a722e3",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "5f790cd367767612762ea4350e065cd9b4c5faa2ae2d3bbb7376fe9b9fcf0960",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+        "sha256": "5f790cd367767612762ea4350e065cd9b4c5faa2ae2d3bbb7376fe9b9fcf0960",
+        "previousSha256": "c425c71515dadd70e94d1247ad4e55b695d6059d12a1bd7d7be056b1eca9c502",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "72ef13d4b760763d932c33f9e12b4dfa43bc8fce804e7b4c0ecc8d57a5c132c8",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+        "sha256": "72ef13d4b760763d932c33f9e12b4dfa43bc8fce804e7b4c0ecc8d57a5c132c8",
+        "previousSha256": "803092a24507a7dac47931a9090cf2a3e56233aca90a967ac59b298e0d004a82",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "b52a4922172254235833c2207d9bc464fe4ed36f6023821cfb1c0c47e93ec545",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/014-queue-investing-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/014-queue-investing-1-market-envoy.png",
+        "sha256": "b52a4922172254235833c2207d9bc464fe4ed36f6023821cfb1c0c47e93ec545",
+        "previousSha256": "5099e2a5e17b65e4670ec01a47a9811e21deb152502fb0291f52d1b9c6d5a080",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "e4c7db37ec877aa2ddeb152fcf92e3d745111d6a930d7c0ed3c6dcff162471b8",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+        "sha256": "e4c7db37ec877aa2ddeb152fcf92e3d745111d6a930d7c0ed3c6dcff162471b8",
+        "previousSha256": "d1381c74081a621e5716b47c217f997f6131ea54006afeba1d011a3ffdb58d52",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "d61ef42093d28f3a316fb32ce72d4ab16b4c6446bae3886b01eeefe4c6de0d66",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+        "sha256": "d61ef42093d28f3a316fb32ce72d4ab16b4c6446bae3886b01eeefe4c6de0d66",
+        "previousSha256": "97ca9d69150713189509acbfa346a16322582f9f33cf38a1477b2e486e9643d9",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "5fc7aea831c8c40729654fb0408927d39a01759bad6f464be7374429a995029a",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+        "sha256": "5fc7aea831c8c40729654fb0408927d39a01759bad6f464be7374429a995029a",
+        "previousSha256": "0d64f6101820af7ba3bca230ca48824751504c31436ffdccbcf96fe117ee60bd",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "a538e0fecc0edd5ffabd512435458a72bf7a9e363d4bb22e354beaa495b30c5d",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+        "sha256": "a538e0fecc0edd5ffabd512435458a72bf7a9e363d4bb22e354beaa495b30c5d",
+        "previousSha256": "489d96d2269fef395559e64f697c52d3bb9250610ebe0ff002dcd246994a5d08",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "ec85107f3ddd4dede268a55b514771757dcb4d7ca7350eba8a379ee990c3b42b",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+        "sha256": "ec85107f3ddd4dede268a55b514771757dcb4d7ca7350eba8a379ee990c3b42b",
+        "previousSha256": "0f7dc8a0b5a7cf32a0fe04f168548bed53ca019a88d460b585a57a98d12d80b1",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "8804b5fd1fa0215903cec34ba383133244937d17924280326ffe37cf94e327a5",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+        "sha256": "8804b5fd1fa0215903cec34ba383133244937d17924280326ffe37cf94e327a5",
+        "previousSha256": "61072ff6db50673b4db01dbf13e1f0ed41b1b2fabb81045d5d833376d01e4d00",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "b0665aefb1d4aca8eaa6ff3adc0aae197ffeab4c2ead623911c702ee9bc82dc0",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/024-switch-current-device-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/024-switch-current-device-1-market-envoy.png",
+        "sha256": "b0665aefb1d4aca8eaa6ff3adc0aae197ffeab4c2ead623911c702ee9bc82dc0",
+        "previousSha256": "cb0649847f6800d4dc19b1b35710caa260deef6311ef9095d00f1d052ba1968d",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1f0cd0fe224e8bf3a8c63a7742f9d504bc9c160ff1b504261209c8c94ca2d941",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+        "sha256": "1f0cd0fe224e8bf3a8c63a7742f9d504bc9c160ff1b504261209c8c94ca2d941",
+        "previousSha256": "37ee6cbb57e959243bea39fa83f1ab53cde6b0d3790615315404896d522d5bb0",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "885a90971630ca3de6b194b0e08de4c3e59a796414fc77a1bc9e0a802b0bdce1",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+        "sha256": "885a90971630ca3de6b194b0e08de4c3e59a796414fc77a1bc9e0a802b0bdce1",
+        "previousSha256": "e16c2e4ade286d39f8ce25dec025d69457346c6866306aca23b66de78dfd60e4",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2da51f6d8ac3e31da8285466ca4fe58c27f7930825faab814d6bad4102db952a",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+        "sha256": "2da51f6d8ac3e31da8285466ca4fe58c27f7930825faab814d6bad4102db952a",
+        "previousSha256": "23c240259c182e7090a810115606007e28cc3ddeced9aa49f1c711c8e915f543",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1246b67467a50748ef5fb9b48088c1e6924fb72749d59c388edbff1251597096",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+        "sha256": "1246b67467a50748ef5fb9b48088c1e6924fb72749d59c388edbff1251597096",
+        "previousSha256": "d5cac0dd9a42fa83803f7fb04bbba8d1460e52913711407aeace482a794cb0ab",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2417496d52309a1e00af4381265ce2b9c753baaa63549c9af9eb7a789d2946af",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+        "sha256": "2417496d52309a1e00af4381265ce2b9c753baaa63549c9af9eb7a789d2946af",
+        "previousSha256": "4777f261a694643ed92763c4d2fa7b2985c1864c99a2bfa381d3a993419d7922",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "dfb038f33fa2fba95405d7c82b8dcdb5e7e2c8c0733540bac06e248242615929",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+        "sha256": "dfb038f33fa2fba95405d7c82b8dcdb5e7e2c8c0733540bac06e248242615929",
+        "previousSha256": "11d1c1209fa8b7fde05ca35c69d10e03862584d86f579b3684f322c9ef26fcbf",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "d66a8536172c74f4799e3dc0c665fc7abf6cbba3463c39b25b224283a6cfc2a3",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+        "sha256": "d66a8536172c74f4799e3dc0c665fc7abf6cbba3463c39b25b224283a6cfc2a3",
+        "previousSha256": "a7226132d699a9acae2caa67b8ec989c950dd5287a70e84acf4095b1e9e3d849",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "4fc1396cfd544c2865578b28aaa959e07bf5c05c604ee4fe1bac2c435eeac32d",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+        "sha256": "4fc1396cfd544c2865578b28aaa959e07bf5c05c604ee4fe1bac2c435eeac32d",
+        "previousSha256": "20f8502df9fe2fdc1aeb9aa060efcebd45ebbc2870b754e698f65e90c9e91889",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3c0dedd2306d4e81c36cd1f1883725117be078bc37fe9d02d5f9ecf902b1582c",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+        "sha256": "3c0dedd2306d4e81c36cd1f1883725117be078bc37fe9d02d5f9ecf902b1582c",
+        "previousSha256": "cfdb8760c99c9e814f796b0d3c76502d9d828002e9188e0c6df43b8a0c9e9692",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "f345c70434edf1d99b08076c3a299e534e662de90b4d831c2e361ee6e5523b3c",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "live-research-orders",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+        "reference": "tests/browser/story-baselines/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+        "sha256": "f345c70434edf1d99b08076c3a299e534e662de90b4d831c2e361ee6e5523b3c",
+        "previousSha256": "b0a8b7b21b2ca8021fc881a249c26bc24bf0d25bbe20984d6e9baa7939b9610b",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "00c7ece1dd7bccf0b0ae0bebc8341a8f648e887caba1688041fb09bff92f4eb7",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "sha256": "00c7ece1dd7bccf0b0ae0bebc8341a8f648e887caba1688041fb09bff92f4eb7",
+        "previousSha256": "250f055519c8353bdee7cd769e9deb49e5417cbf3c087a56b91ed0495483eb48",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+        "sha256": "00c7ece1dd7bccf0b0ae0bebc8341a8f648e887caba1688041fb09bff92f4eb7",
+        "previousSha256": "250f055519c8353bdee7cd769e9deb49e5417cbf3c087a56b91ed0495483eb48",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+        "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+        "previousSha256": "c102c6111027f727f33eb680be0cacbcc89f5be21afc2383827a1d5386ce204a",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "8750205973e955e0232b74306908f1de96b80fb7a5abdb9413a2b06495b0d13c",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "sha256": "8750205973e955e0232b74306908f1de96b80fb7a5abdb9413a2b06495b0d13c",
+        "previousSha256": "0cce6b74fbd22f80ef8902b85f3a596090b477a44f018bac064e9a57c49a04b2",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "8b3532056c0f0b6c4ee1389e6d7012e48829c458a9bf3edd75270dfdf8aa6825",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "sha256": "8b3532056c0f0b6c4ee1389e6d7012e48829c458a9bf3edd75270dfdf8aa6825",
+        "previousSha256": "29ce87fc3086fa751ea9e946f9db150df47a520172fd19728540128da2777277",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "315e0b17908365b16ddb4f042a60d84a35831906506d7463dd13d875e314a076",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-account-isolation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "reference": "tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+        "sha256": "315e0b17908365b16ddb4f042a60d84a35831906506d7463dd13d875e314a076",
+        "previousSha256": "2b90d63b53950f1cd532712f78f9070fa981e134b8cbc1ca3226841e1f4bfad0",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+        "previousSha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+        "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+        "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "4c633a023f0f7444eeb13c2bcaf606cfb77971cbbb29e3ae41ba4633fe241b08",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "sha256": "4c633a023f0f7444eeb13c2bcaf606cfb77971cbbb29e3ae41ba4633fe241b08",
+        "previousSha256": "fde422ea9627f792c4132b4a3c1911988bf97a38d8fbc242e4b6f6d7f80c2f0e",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "35b12caaa8b0a6b009808b6744ca058071441ffaef215da95aa6f5dd0bc86fed",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "sha256": "35b12caaa8b0a6b009808b6744ca058071441ffaef215da95aa6f5dd0bc86fed",
+        "previousSha256": "c3c32a9b3e7aa90b3a83a2630971c2e14f440a6dc754b969e2ba6b940fc90ac6",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-membership-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+        "sha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+        "previousSha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3778c8f80e90ff1ef85b71b0acb645b6c32da565c9b29c0695fa73ac64d04090",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+        "sha256": "3778c8f80e90ff1ef85b71b0acb645b6c32da565c9b29c0695fa73ac64d04090",
+        "previousSha256": "94c35a7d17136b55276f478e0fcb4f1f5c9368a59fe27744af2971aa2c669dc5",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/014-open-session-control-3-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/014-open-session-control-3-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+        "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+        "previousSha256": "4dc5aeb4210362b2d7585eb88e6ae46c8b2559c45afdcd7903f122f133c8c41c",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "bf8ec364026cbd5c27cbdef1d9d1e1c18b009598f82e445e7abc09e5f903a706",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+        "sha256": "bf8ec364026cbd5c27cbdef1d9d1e1c18b009598f82e445e7abc09e5f903a706",
+        "previousSha256": "d4ea0d97b68e94cc18b565089eb6ceb51977d82162d2e0047541ca0c2b5d6ecf",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "8a2e51afcc6cb22a9ce65d5f7ac96d38aea0045b36597732ee3c3c3559964b1e",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+        "sha256": "8a2e51afcc6cb22a9ce65d5f7ac96d38aea0045b36597732ee3c3c3559964b1e",
+        "previousSha256": "9b2a5735255d717eead13e0355f8a7b0b91f0efc838cc7dfb09dc894ae9f34ce",
+        "classification": "changed"
+      },
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+        "sha256": "8a2e51afcc6cb22a9ce65d5f7ac96d38aea0045b36597732ee3c3c3559964b1e",
+        "previousSha256": "9b2a5735255d717eead13e0355f8a7b0b91f0efc838cc7dfb09dc894ae9f34ce",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "c3614397b015afe4c34366e19b52accc207c9e3c8f37e2cd2653ddfe3535f18f",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "market-draft-session-revocation",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+        "sha256": "c3614397b015afe4c34366e19b52accc207c9e3c8f37e2cd2653ddfe3535f18f",
+        "previousSha256": "68d01fa362609790f944a71156f16574c45d4d72e26eacac0230676c5bc24fc5",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "c1584bcba84053a157ef674ba3931bdb82ea737d82ad71a3f2fa1f4137495162",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "sha256": "c1584bcba84053a157ef674ba3931bdb82ea737d82ad71a3f2fa1f4137495162",
+        "previousSha256": "3447c9bc146a4e728ef90ba5763390940e46241509cf778d38f01c94dd456146",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "033d40eefc2dde353e28a979e0b7958268d6ab458b731eb3934b395a6508db01",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+        "sha256": "033d40eefc2dde353e28a979e0b7958268d6ab458b731eb3934b395a6508db01",
+        "previousSha256": "77ba9d3927dffa0a43a039ab189877988edf495ee209ea7eaf1b16858036f4c0",
+        "classification": "changed"
+      },
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/019-close-without-order-2-independent-investor.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/019-close-without-order-2-independent-investor.png",
+        "sha256": "033d40eefc2dde353e28a979e0b7958268d6ab458b731eb3934b395a6508db01",
+        "previousSha256": "77ba9d3927dffa0a43a039ab189877988edf495ee209ea7eaf1b16858036f4c0",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "ea8ab3a8865774bfcd53939f45226d97894ae8963acd412f43f6944ce44b1a85",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+        "sha256": "ea8ab3a8865774bfcd53939f45226d97894ae8963acd412f43f6944ce44b1a85",
+        "previousSha256": "5da21dd14b247f6c34069e399cfbfaf8927f79d82f4746670d396c3728c4c815",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2b00cc02a8f82958c3dc287d202a8a2c3deafe1646827f0a120efbbff20d3efe",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+        "sha256": "2b00cc02a8f82958c3dc287d202a8a2c3deafe1646827f0a120efbbff20d3efe",
+        "previousSha256": "ae1e6970f75420f8fef85200df0b0beb028b004e505142455f293b796ce51bcf",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "87f34c5633137a8be3c05c138773e2c2c82db3f1a4b8e1f303216b55ef7e7e21",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+        "sha256": "87f34c5633137a8be3c05c138773e2c2c82db3f1a4b8e1f303216b55ef7e7e21",
+        "previousSha256": "4694357a1dd1dc45ed8d1e6313740411e5b843367f26a80c59c4421dc64a8762",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "0321de70a2d0603d5da81c0d281c5eb01b74a43b2b6c43124a325b153454d5c5",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+        "sha256": "0321de70a2d0603d5da81c0d281c5eb01b74a43b2b6c43124a325b153454d5c5",
+        "previousSha256": "75d7406d86d0057f01c458f9611e38bc0f7a1ae8c46858527685a98f404dfebd",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1e7730bf3ee3f788f3c175bfc2084b354a00f46daef88725b882a97f78282050",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+        "sha256": "1e7730bf3ee3f788f3c175bfc2084b354a00f46daef88725b882a97f78282050",
+        "previousSha256": "e8b677d926438dc66b9b6c0729c4938dba3d441fe9eddee2a7af28d88002598b",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3d7f0ef799b29ac4ab6a2db1efee9f86c186c398659edf750432395d9394f6b4",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+        "sha256": "3d7f0ef799b29ac4ab6a2db1efee9f86c186c398659edf750432395d9394f6b4",
+        "previousSha256": "698934d302af5a0ebd2eb7fc5cdacc09f08bfeb89b252e3e26f7d38618081136",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "58b5427a9b963967bb1f1a1b1a5496d75285d84643613e4d44f2018aa4343f09",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+        "sha256": "58b5427a9b963967bb1f1a1b1a5496d75285d84643613e4d44f2018aa4343f09",
+        "previousSha256": "2f62b04b85cd96b05096451961ca9f85243844f9fb9f52eee9c5adc667c618da",
+        "classification": "changed"
+      }
+    ]
+  },
+  {
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "879b7066ccf29d0e0de62a452000ed8b1f260ae1385d1389ecc9aff311d9a242",
+    "disposition": "approved-regression",
+    "inspection": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+    "covered": [
+      {
+        "story": "research-capability-guidance",
+        "viewport": "large",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+        "reference": "tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+        "sha256": "879b7066ccf29d0e0de62a452000ed8b1f260ae1385d1389ecc9aff311d9a242",
+        "previousSha256": "ffa7d89ae3c7116ad7f8c69b1540a56742c6062d59d7b7d9d0336a0d572c0552",
+        "classification": "changed"
+      }
+    ]
   }
 ]
