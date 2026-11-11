@@ -929,3 +929,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Confirm PR140 fast-forward and classify remaining retained first-failure families against inspected exact-source evidence while required CI runs.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect retained cargo header comparison and establish source applicability while the exact-head application and visual jobs execute.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify completed current-source economy artifacts once in memory and compare retained images to exact target references before visual review.
