@@ -1,0 +1,204 @@
+{
+  "classification": "Unchanged isolated pinned-Linux non-reproduction; no production fix established.",
+  "run": 43101524495,
+  "job": 130793921125,
+  "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+  "executor": "9da1b898670aec8ef831c1e207d702dc92bb316a",
+  "request": "e0757413942123e852b48565093f0012f2c2d082",
+  "testSummary": "1 passed (1.8m); complete original mock conversation journey",
+  "previousFailingAcknowledgementMilliseconds": 1118.559,
+  "originalAssertionLimitMilliseconds": 5000,
+  "traceCalls": {
+    "pw:api@405": {
+      "before": {
+        "type": "before",
+        "callId": "pw:api@405",
+        "stepId": "pw:api@405",
+        "startTime": 41681.791,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Fill \"One more point before our reply.\" getByRole('region', { name: 'Private conversations', exact: true }).getByLabel('Message', { exact: true })",
+        "params": {
+          "selector": "internal:role=region[name=\"Private conversations\"s] >> internal:label=\"Message\"s",
+          "value": "One more point before our reply.",
+          "strict": "true",
+          "timeout": "0"
+        },
+        "stack": [
+          {
+            "file": "/home/runner/work/clusterii/clusterii/tests/browser/conversations.spec.ts",
+            "line": 149,
+            "column": 59,
+            "function": "post"
+          }
+        ]
+      },
+      "after": {
+        "type": "after",
+        "callId": "pw:api@405",
+        "endTime": 41706.946,
+        "annotations": []
+      }
+    },
+    "pw:api@406": {
+      "before": {
+        "type": "before",
+        "callId": "pw:api@406",
+        "stepId": "pw:api@406",
+        "startTime": 41707.805,
+        "class": "Test",
+        "method": "pw:api",
+        "title": "Click getByRole('region', { name: 'Private conversations', exact: true }).getByRole('button', { name: 'Send message', exact: true })",
+        "params": {
+          "selector": "internal:role=region[name=\"Private conversations\"s] >> internal:role=button[name=\"Send message\"s]",
+          "strict": "true",
+          "timeout": "0"
+        },
+        "stack": [
+          {
+            "file": "/home/runner/work/clusterii/clusterii/tests/browser/conversations.spec.ts",
+            "line": 152,
+            "column": 12,
+            "function": "post"
+          }
+        ]
+      },
+      "after": {
+        "type": "after",
+        "callId": "pw:api@406",
+        "endTime": 41993.05,
+        "annotations": []
+      }
+    },
+    "expect@407": {
+      "before": {
+        "type": "before",
+        "callId": "expect@407",
+        "stepId": "expect@407",
+        "startTime": 41993.889,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveText\"",
+        "params": {
+          "expected": "Message sent."
+        },
+        "stack": [
+          {
+            "file": "/home/runner/work/clusterii/clusterii/tests/browser/conversations.spec.ts",
+            "line": 157,
+            "column": 11,
+            "function": "post"
+          }
+        ]
+      },
+      "after": {
+        "type": "after",
+        "callId": "expect@407",
+        "endTime": 43112.448,
+        "annotations": []
+      }
+    },
+    "expect@408": {
+      "before": {
+        "type": "before",
+        "callId": "expect@408",
+        "stepId": "expect@408",
+        "startTime": 43113.159,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toHaveValue\"",
+        "params": {},
+        "stack": [
+          {
+            "file": "/home/runner/work/clusterii/clusterii/tests/browser/conversations.spec.ts",
+            "line": 158,
+            "column": 67,
+            "function": "post"
+          }
+        ]
+      },
+      "after": {
+        "type": "after",
+        "callId": "expect@408",
+        "endTime": 43126.918,
+        "annotations": []
+      }
+    },
+    "expect@409": {
+      "before": {
+        "type": "before",
+        "callId": "expect@409",
+        "stepId": "expect@409",
+        "startTime": 43127.533,
+        "class": "Test",
+        "method": "expect",
+        "title": "Expect \"toContainText\"",
+        "params": {
+          "expected": "One more point before our reply."
+        },
+        "stack": [
+          {
+            "file": "/home/runner/work/clusterii/clusterii/tests/browser/conversations.spec.ts",
+            "line": 163,
+            "column": 11,
+            "function": "post"
+          }
+        ]
+      },
+      "after": {
+        "type": "after",
+        "callId": "expect@409",
+        "endTime": 43143.076,
+        "annotations": []
+      }
+    }
+  },
+  "outcome": {
+    "source": "9da1b898670aec8ef831c1e207d702dc92bb316a",
+    "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+    "spec": "tests/browser/conversations.spec.ts",
+    "title": "ordinary commanders negotiate through invitation, retry, revocation and recovery mock$",
+    "tests": 1,
+    "retries": 0,
+    "updates": "none",
+    "mode": "unchanged-application-diagnostic",
+    "startedAt": "2026-11-11T21:24:17.577Z",
+    "finishedAt": "2026-11-11T21:26:22.759Z",
+    "exit": 0,
+    "sourceDiffExit": 0,
+    "assertions": "Original 180-second mock test and 5-second acknowledgement assertions unchanged; no snapshot comparisons changed."
+  },
+  "artifact": {
+    "id": 13892848083,
+    "node_id": "MDg6QXJ0aWZhY3QxMzg5Mjg0ODA4Mw==",
+    "name": "pr140-conversation-original-e0757413942123e852b48565093f0012f2c2d082",
+    "size_in_bytes": 66246400,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13892848083",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13892848083/zip",
+    "expired": false,
+    "digest": "sha256:06cb392657a7d963d8d2d070ee6fedfc9da04841dd612a43d5711e3f1eb1a8b6",
+    "created_at": "2026-11-11T21:26:26Z",
+    "updated_at": "2026-11-11T21:26:26Z",
+    "expires_at": "2026-11-25T21:26:23Z",
+    "workflow_run": {
+      "id": 43101524495,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr140-conversation-20261111",
+      "head_sha": "e0757413942123e852b48565093f0012f2c2d082"
+    }
+  },
+  "archiveVerified": {
+    "bytes": 66246400,
+    "sha256": "06cb392657a7d963d8d2d070ee6fedfc9da04841dd612a43d5711e3f1eb1a8b6",
+    "crcAndPathSafety": "passed all entries"
+  },
+  "retainedTrace": {
+    "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-conversation-43101524495/test-results/conversations-ordinary-com-e00ac-evocation-and-recovery-mock/trace.zip",
+    "bytes": 61258638,
+    "sha256": "d3008633e20a2bffb8bc68d50b60838e6bc937cb1896a45c86f5449d7daf12d4"
+  },
+  "retention": "No outer archive copy saved; original nested trace plus compact manifests retained. Artifact expires on recorded date.",
+  "limitation": "The integrated failure trace was lost to CreateArtifact infrastructure failure. The successful trace cannot establish why the original write/receipt stalled. No loop of isolated retries or deadline changes justified.",
+  "next": "Preserve running full strict CI; classify its terminal failures, then publish the inspected reference batch and any demonstrated fixes as one normal PR140 update."
+}
