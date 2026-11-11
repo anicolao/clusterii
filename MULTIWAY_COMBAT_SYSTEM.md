@@ -1,10 +1,10 @@
 # Multiway combat system
 
-**Status: proposed design for owner review; no gameplay implementation or active campaign changes.**
+**Status: owners selected proportional space targeting and the ground model below. Documentation only; gameplay implementation and active campaigns are unchanged.**
 
-This proposal replaces the sequential multi-party duels in [RULES_SPEC.md §7](RULES_SPEC.md#7-combat-and-ownership) with one simultaneous engagement per layer. It preserves normalized two-party square-law fighter combat and defender-first, constrained-frontage infantry combat. All eligible participants fight from the start; nobody waits for two enemies to finish fighting.
+This design replaces the sequential multi-party duels in [RULES_SPEC.md §7](RULES_SPEC.md#7-combat-and-ownership) with one simultaneous engagement per layer. It preserves normalized two-party square-law fighter combat and defender-first, constrained-frontage infantry combat. All eligible participants fight from the start; nobody waits for two enemies to finish fighting.
 
-The two-party laws do not uniquely determine a multiway model. They leave unanswered how a force divides its offensive capacity among several enemies. This document selects that policy explicitly, derives the resulting equations, and distinguishes mathematical consequences from new game decisions. Approval would require a new combat ruleset version; this document does not amend the existing contract by itself.
+The two-party laws do not uniquely determine a multiway model. They leave unanswered how a force divides its offensive capacity among several enemies. This document selects that policy explicitly, derives the resulting equations, and distinguishes mathematical consequences from new game decisions. The owners selected the space and ground models described here. Implementation requires a new combat ruleset version and reconciliation with RULES_SPEC.md; editing this document does not change existing campaign rules.
 
 ## 1. Participants and boundaries
 
@@ -29,34 +29,49 @@ Zero-force coalitions do not shoot, absorb fire, or affect target shares. A titl
 
 Combat time and ground rounds are mathematical resolution steps inside one authoritative arrival phase. They are not additional game ticks. Player latency, command sequence, UID order, and database iteration order do not select combat priority.
 
-## 2. Proposed targeting policy
+## 2. Selected targeting policies
 
-**Each coalition shares its total offensive capacity equally among its live hostile coalitions.** It does not receive a full extra offensive budget for every enemy.
+**Space: distribute each coalition's fire in proportion to its enemies' current fighter counts.** A target twice as large receives twice the fire allocation. Recompute the proportions continuously as casualties change those counts. Use fighter counts, not formation-weighted strength, for targeting shares; the firing coalition's formations coefficient determines its own firepower.
 
-This is a game-design choice, not a theorem of Lanchester's laws. It gives a neutral, reproducible default without introducing player targeting orders or combat randomness. A small hostile coalition initially receives the same attention as a large one. That distraction effect is a balance consideration, not an implementation accident.
+**Ground: retain capped equal-share frontage allocation and defender-first rounds.** Each strike subphase caps allocations to available target strength and redistributes that attacker's excess allocation equally among its other targets. Incoming attacks from different shooters then combine simultaneously. Section 4 defines this model in full; proportional space targeting does not change ground targeting.
 
-Allied members count as one coalition. Breaking an alliance can change targeting and create mutual hostility; merely splitting fleets cannot. The model does not promise that adding an enemy, or reorganizing alliances, leaves existing participants' outcomes unchanged.
+These are explicit game-design selections, not unique consequences of the two-party laws. Neither model gives a coalition a full extra offensive budget for every enemy. Both avoid player targeting orders and combat randomness.
 
-For space, targeting shares update continuously as coalitions are eliminated. For ground, each strike subphase caps allocations to available target strength and redistributes that attacker's excess allocation equally among its other targets. Incoming attacks from different shooters then combine simultaneously.
+Allied members count as one coalition. Breaking an alliance can change targeting and create mutual hostility; merely splitting fleets cannot. The model does not promise that adding an enemy, or reorganizing alliances, leaves existing participants' outcomes unchanged. In space, a small enemy attracts only its proportional share of fire, rather than the equal attention it received in the earlier draft. Ground retains its distinct constrained-frontage policy.
 
-Do not replace this policy with any of the following without a new rules decision:
+Do not replace these policies with any of the following without a new rules decision:
 
 - Full offensive capacity against every opponent: duplicates firepower as enemies are added.
 - Seeded or UID-ordered duels: reintroduces the participant waiting advantage.
 - Focus fire on the weakest or strongest opponent: introduces a different targeting strategy.
 - Damage proportional to the opponent's coefficient: rewards the wrong side's technology.
 
-## 3. Space: simultaneous aimed-fire equations
+## 3. Space: proportional simultaneous aimed-fire equations
 
-Every surviving fighter contributes fire. If `k >= 2` coalitions remain, the total fire from coalition `j` is `f_j N_j`, divided among its `k - 1` enemies:
+Every surviving fighter contributes fire. For each firing coalition `j`, let `H_j` be its total live hostile fighter strength:
 
 ```text
-fire(j → i) = f_j N_j / (k - 1),  i ≠ j
+H_j = Σ[l ≠ j] N_l
 
-dN_i/dt = -Σ[j ≠ i] f_j N_j / (k - 1)
+p(j → i) = N_i / H_j,  i ≠ j and H_j > 0
+fire(j → i) = f_j N_j p(j → i)
+
+dN_i/dt = -Σ[j ≠ i] f_j N_j N_i / H_j
 ```
 
-All derivatives use the same current force vector. Every coalition fires and suffers losses concurrently. An incumbent has no space first-strike bonus.
+If `H_j=0`, coalition j has no target and emits no fire. Zero-strength targets receive zero allocation. For a coalition with enemies, its targeting fractions sum to 1 and its total outgoing fire remains exactly `f_j N_j`.
+
+All derivatives use the same current force vector. Every coalition fires and suffers losses concurrently. An incumbent has no space first-strike bonus. The equations are nonlinear because target shares depend on current force ratios; the earlier draft's constant-matrix solution no longer applies.
+
+For three hostile coalitions, using `a`, `b`, and `c` as their formations coefficients:
+
+```text
+A' = -b B A/(A+C) - c C A/(A+B)
+B' = -a A B/(B+C) - c C B/(A+B)
+C' = -a A C/(B+C) - b B C/(A+C)
+```
+
+These are the proportional aimed-fire equations selected in the owners' comparison with Gemini. They do not adopt Gemini's area-fire ground model or its suggested early removal of sub-unit forces.
 
 ### 3.1 Exact reduction to the existing two-party law
 
@@ -80,36 +95,32 @@ Reverse the expression for a B victory. Equal weighted strength eliminates both.
 
 There is no general multiway shortcut that compares each coalition's square strength to the sum of every enemy's square strength. Its enemies also shoot one another. The coupled equations account for that interaction.
 
-### 3.2 Extinction events, ties, and termination
+### 3.2 Final outcomes, joint extinctions, and ties
 
-While the live set is unchanged, write `N' = M N`, with:
+Resolve the nonnegative solution until only one positive-strength coalition remains, or take its asymptotic limit if the engagement never reaches that boundary at finite mathematical time. Every strength decreases monotonically, so its limiting value exists. Commit the final limit vector, not a vector truncated by an arbitrary elapsed time or casualty threshold.
 
-```text
-M_ii = 0
-M_ij = -f_j / (k - 1),  i ≠ j
-
-N(t + u) = exp(M u) N(t)
-```
-
-Find the first time one or more coordinates reach zero. Advance every coordinate to that same time, remove all coalitions eliminated at that event together, rebuild `M` for the remaining live set, and continue. Never integrate through negative strengths and then repair the result by clipping: the eliminated coalition would have fired after death.
-
-Some exact ties approach zero asymptotically rather than hitting it at finite mathematical time. Three equal forces are an example. Detect a balanced state by testing whether all positive participants have the same exact relative loss rate:
+There cannot be two positive final survivors in this complete-hostility model: each would continue suffering fire from the other. If a finite-time boundary leaves a survivor, preserve its remaining strength and set the jointly eliminated enemies to zero. Stop firing and avoid evaluating ratios with zero hostile strength. If combat continues indefinitely, all strengths approach zero. While at least two coalitions remain positive, total strength `S=Σ N_i` obeys:
 
 ```text
-λ_i = (Σ[j ≠ i] f_j N_j / (k - 1)) / N_i
-
-λ_i = λ > 0 for every i
-    ⇒ N_i(t + u) = N_i(t) exp(-λ u)
-    ⇒ every final strength is zero
+S' = -Σ f_i N_i
+S' <= -f_min S
 ```
 
-This is an annihilation result, not a timeout, ceasefire, or randomly selected winner. Under the specified complete-hostility, constant-coefficient model, a positive state outside this balanced ray reaches an extinction boundary in finite time. Between events the matrix is diagonally similar to a symmetric matrix with one negative and `k-1` positive eigenvalues; only its positive decaying eigenvector stays in the positive orthant forever. Do not carry this termination claim into a different targeting or hostility model without rederiving it.
+Thus an engagement that continues indefinitely has no surviving force. Perfectly symmetric equal-technology armies are an exact example, not the only case an implementation must consider. Detect exact symmetry analytically; do not reuse the earlier equal-share model's eigenvector or constant-relative-loss test for this nonlinear system.
 
-Once exactly two coalitions remain, their exact two-party solution is an equivalent way to finish the same simultaneous model. This is not an ordered-duel tournament: both have already fought every other participant throughout the preceding engagement.
+**Do not assume that the smallest army hits zero first and leaves two finite survivors.** For example:
+
+```text
+C' = -C [a A/(B+C) + b B/(A+C)]
+```
+
+While A and B stay bounded away from zero, C's relative loss rate stays bounded, so C cannot reach zero alone at finite time. Several losing forces can instead vanish together as the remaining winner's targeting denominator collapses. In the three-party example below, both smaller armies reach zero together. Extinction and denominator limits must be handled as one joint event, not in participant-list order.
+
+An exact two-party solution remains valid when the mathematical state actually contains only two positive coalitions, including battles that start that way. Do not manufacture this reduction by discarding a third force below one fighter. Such a threshold would be a different combat rule, not an equivalent numerical optimization. With three or more initially positive coalitions, a finite extinction cannot leave two positive coalitions: that would keep all relative loss rates bounded and prevent the extinction. A production solver therefore cannot rely on a sequence of single-elimination events to finish this model.
 
 ### 3.3 Worked multiway examples
 
-**Three equal hostile fleets:** A, B, and C each have 100 fighters and formations 1. Every fleet supplies 100 units of fire, half to each enemy. Each receives 100 units of incoming fire initially. By symmetry:
+**Three equal hostile fleets:** A, B, and C each have 100 fighters and formations 1. Each sees equal enemy counts, so each directs half its fire at each enemy. By symmetry:
 
 ```text
 A(t) = B(t) = C(t) = 100 exp(-t)
@@ -117,17 +128,33 @@ A(t) = B(t) = C(t) = 100 exp(-t)
 
 The result is mutual annihilation. There is no untouched third fleet collecting the system after the other two duel.
 
-**One larger fleet:** A has 200 fighters; B and C each have 100; all coefficients are 1. Let `x=A` and `y=B=C`. Then:
+**One larger fleet:** A has 200 fighters; B and C each have 100; all coefficients are 1. Initially A divides its fire equally between B and C. B and C each direct two-thirds of their fire at A and one-third at the other smaller coalition.
+
+Let `x=A` and `y=B=C`. The coupled equations reduce to:
 
 ```text
-x' = -y
-y' = -(x + y)/2
-
-x(t) = (200/3) exp(t/2) + (400/3) exp(-t)
-y(t) = -(100/3) exp(t/2) + (400/3) exp(-t)
+x' = -2xy/(x+y)
+y' = -x/2 - y²/(x+y)
 ```
 
-B and C reach zero together at `t = (2/3) ln(4)`. A's remaining strength is `100 × cube_root(4) ≈ 158.740105`, so **A retains 158 fighters**. B and C have damaged A and each other from the start.
+For `r=x/y > 1`, eliminating combat time gives:
+
+```text
+d(log x)/dr = -4 / [r(r+2)(r-1)]
+
+x (r+2)^(2/3) (r-1)^(4/3) / r² = constant
+```
+
+As B and C vanish together, `r` tends to infinity and the factor multiplying x tends to 1. With `x_initial=200` and `r_initial=2`:
+
+```text
+A_final = 200 × 4^(2/3) / 4
+        = 50 × 4^(2/3)
+        ≈ 125.992104989
+B_final = C_final = 0
+```
+
+**A retains 125 whole fighters.** This special symmetric case has an analytical outcome; it does not imply a general closed-form solution for arbitrary coefficients and starting counts. Numerical integration at decreasing step sizes independently confirms this result. The earlier equal-coalition targeting draft gave 158 fighters for the same inputs; that result is superseded by the owners' proportional-targeting selection.
 
 ## 4. Ground: shared frontages with defender-first rounds
 
@@ -205,9 +232,9 @@ Both models use nonnegative real-valued intermediate strengths and commit whole-
 
 Ground starts from integer counts and coefficients. Capped equal shares are rational; exact rational arithmetic defines the reference outcome, including all subphase ties. Do not round each allocation to whole casualties: that could erase every half-point shot in a multiway battle. Internal fractional forces retain their frontage until eliminated, another explicit consequence of this abstraction.
 
-Space uses the exact piecewise ODE as its reference semantics. Two-party cases use the normalized integer-square-root solution. Fully balanced cases use the exact decay result. Other cases require deterministic event solving, including simultaneous-extinction detection and final integer-boundary checks.
+Space uses the exact nonlinear ODE and its terminal limits as reference semantics. Two-party cases use the normalized integer-square-root solution. Exactly symmetric equal-technology cases use the exponential-decay result. Other cases require deterministic nonlinear integration and endpoint/limit analysis, including joint extinctions, vanishing denominators, and final integer-boundary checks. Removing a force as soon as it falls below one fighter is explicitly excluded; flooring occurs only at the engagement outcome.
 
-Before production implementation, pin and version a numerical arithmetic profile: solver, operation order, precision escalation, event isolation, symmetry detection, error bounds, and resource budgets. Demonstrate that its final survivor integer and extinction classification match the mathematical model. A fixed timestep plus an undocumented zero epsilon is insufficient. If error bounds straddle an outcome boundary, refine the calculation; if certification still fails within the operational budget, fail the transition without publishing a guessed outcome. This is a delivery gate, not a claim that the continuous model is already an operationally accepted resolver.
+Before production implementation, pin and version a numerical arithmetic profile: solver, operation order, precision escalation, joint-extinction and terminal-limit handling, symmetry detection, error bounds, and resource budgets. Demonstrate that its final survivor integer and extinction classification match the mathematical model. A fixed timestep plus an undocumented zero epsilon is insufficient. If error bounds straddle an outcome boundary, refine the calculation; if certification still fails within the operational budget, fail the transition without publishing a guessed outcome. This is a delivery gate, not a claim that the continuous model is already an operationally accepted resolver.
 
 Canonical sorting may stabilize arithmetic and serialization. It must not allocate a first strike, decide an extinction tie, or choose which faction survives. Permuting coalition labels must permute the result without changing the corresponding casualties. No combat seed or target lottery is needed for these models.
 
@@ -233,7 +260,7 @@ The reference checks for this document were executed as scratch calculations, no
 
 - An exact-rational implementation of the ground allocation/subphase equations matched the existing two-party closed form for **21,609 cases**: A and D each 0–20; attacker and defender melee each 1–7.
 - The ground walkthroughs above were executed with exact fractions, including the 5-versus-5 melee-5 result and the two smaller attackers killed before retaliation.
-- The space two-party example gives 93 survivors; the three-party 200/100/100 closed-form example gives `158.740105…`, committed as 158. The symmetric three-party annihilation result follows directly from the equations.
+- The space two-party example gives 93 survivors. The selected proportional three-party 200/100/100 model has the analytical outcome `125.992104989…`, committed as 125. Independent RK4 checks at steps 0.001 and 0.0001 gave approximately 125.992116654 and 125.992105146 at the joint-extinction endpoint, respectively. These are example checks, not certification of a general production solver. The symmetric three-party annihilation result follows directly from the equations.
 
 Before accepting an implementation, additionally require:
 
@@ -244,20 +271,20 @@ Before accepting an implementation, additionally require:
 | Label and fleet invariance | Input permutations and splitting/rejoining allied fleets preserve coalition outcomes. |
 | Symmetry | Equal hostile forces without an incumbent have equal outcomes; no stable-ID winner. |
 | Budget conservation | Space outgoing fire sums to `f_i N_i`; ground outgoing allocation never exceeds `m_i`; no negative counts or unit creation. |
-| Numerical correctness | Near-balanced space cases, simultaneous extinctions, near-integer survivors, exact-rational ground comparisons, and bounded runtime at supported maximum force sizes. |
+| Numerical correctness | Near-balanced space cases, joint extinctions, vanishing hostile-strength denominators, asymptotic annihilation, near-integer survivors, exact-rational ground comparisons, and bounded runtime at supported maximum force sizes. |
 | World integration | Carrier losses, legal landing, existing hostile surface contingents, final titles, escrow exactly once, private reports, retry and replay. |
-| Balance | Small-coalition distraction, allied aggregation versus independent hostility, unequal technology, concentrated forces, and ground frontage under several attackers. |
+| Balance | Proportional space targeting as enemy sizes change, allied aggregation versus independent hostility, unequal technology, concentrated forces, and ground frontage under several attackers. |
 
-The main owner decisions are the equal-coalition targeting policy, capped ground allocation, one total ground frontage per coalition, continuing defender-first subphases, and whether arrival eligibility should ever permit several hostile landing forces. These are explicit proposal choices. They are not implied by the old two-party formulas, and mathematical consistency is not evidence of balance acceptance.
+The owners selected proportional space targeting and retained the ground model: capped equal-share allocation, one total ground frontage per coalition, and continuing defender-first subphases. These decisions are not implied by the old two-party formulas. Numerical implementation and balance validation remain delivery gates. Whether arrival eligibility should ever permit several hostile landing forces remains a separate decision; this selection does not change existing landing permissions.
 
 ## 8. Relationship to the existing documents
 
 - [VISION.md](VISION.md) and [CLUSTER_II_MVP.md](CLUSTER_II_MVP.md) retain their square-law space and constrained, defender-first ground concepts.
-- [RULES_SPEC.md §7](RULES_SPEC.md#7-combat-and-ownership) currently specifies ordered coalition duels. This proposal replaces that mechanism only after owner approval and versioning.
+- [RULES_SPEC.md §7](RULES_SPEC.md#7-combat-and-ownership) currently specifies ordered coalition duels. The owners selected its replacement in this document; implementation still requires contract reconciliation and versioning.
 - [The step 0 decision table](docs/design/STEP_0_REVIEW.md#decisions-requiring-particular-attention) understates the multiway design choice and overgeneralizes the melee-1 ground example. This proposal states the replacement assumptions directly; it does not silently rewrite the historical review.
 - The later `shared/travel.ts` resolver uses ranked participant duels and the two-party survivor functions. It does not implement this proposal. The oldest open PR's runtime contains identity work, not a combat service.
 - Existing campaigns retain their recorded combat semantics. Adoption requires an explicit compatibility/migration decision; visiting a newer client cannot change a running game's combat law.
 
 ## 9. Mathematical background
 
-[N. J. MacKay, *Lanchester combat models* (2006)](https://arxiv.org/abs/math/0606300) reviews the two-party aimed-fire equations and related combat abstractions. [Moshe Kress, *Lanchester Models for Irregular Warfare* (2020), including its multilateral-conflict discussion](https://www.mdpi.com/2227-7390/8/5/737) illustrates why targeting assumptions matter when extending attrition models. These are background references, not authorities for Cluster's targeting policy, defender-first rounds, landing permissions, or rounding choices. The particular combined game model above is this proposal.
+[N. J. MacKay, *Lanchester combat models* (2006)](https://arxiv.org/abs/math/0606300) reviews the two-party aimed-fire equations and related combat abstractions. [Moshe Kress, *Lanchester Models for Irregular Warfare* (2020), including its multilateral-conflict discussion](https://www.mdpi.com/2227-7390/8/5/737) illustrates why targeting assumptions matter when extending attrition models. These are background references, not authorities for Cluster's targeting policy, defender-first rounds, landing permissions, or rounding choices. The [shared Gemini discussion](https://gemini.google.com/share/6595f921ce83) supplied the proportional aimed-fire comparison selected by the owners. Its ground area-fire model and single-army-elimination numerical procedure are not adopted. The combined game model above records the owners' selected direction.

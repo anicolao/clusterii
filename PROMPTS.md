@@ -347,3 +347,7 @@ We were thinking more along the lines of generalizing these combat laws to handl
 ## Prompt 40: Compare Gemini
 
 Compare your conclusions to Gemini's, highlight any important differences. https://share.gemini.google/8c43CZKXUu51
+
+## Prompt 41: Proportional Space
+
+so I agree that the space combat should be proportional - i.e. gemini's version - let's change to that. I like the ground combat version you've proposed, so let's stick with htat. Update the doc accordingly.
