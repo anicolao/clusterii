@@ -1,0 +1,2099 @@
+{
+  "time": "2026-11-11T20:43:54.886986+00:00",
+  "basis": "Exact byte equality to local and remote-pushed Git originals; only duplicate extracted PNGs removed. All JSON/Markdown manifests, review decisions and remote archive identities retained.",
+  "retainedCommit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b",
+  "paths": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+      "bytes": 801809,
+      "sha256": "f411aac9957e00216fe4906d08438e6639874509879557e2af653e68d7935166",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/010-choose-without-sending-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+      "bytes": 781692,
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/010-choose-without-sending-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "bytes": 800273,
+      "sha256": "ddbfc1d4087681872ede1737a0363e3f5d22079b2a28d4a0b74aada3bb17689e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/011-restore-panel-choice-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "bytes": 810402,
+      "sha256": "2f0e49578d718bf5dba5b281773c1847e57d8a7f8307985e08ea3f62a7a9d56b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "bytes": 781692,
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "bytes": 810564,
+      "sha256": "613a3c66a1f7f84de9badfda8f36b34043c4e716f8340cb91125223db32386c3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/014-queue-investing-1-market-envoy.png",
+      "bytes": 801245,
+      "sha256": "ce2dba720bc92588f5b6ffdfcb26ea06460d09dfbc5de99b837f943c3fc87887",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/014-queue-investing-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/014-queue-investing-2-independent-investor.png",
+      "bytes": 781692,
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/014-queue-investing-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "bytes": 803704,
+      "sha256": "fb6bc01819383079a92f0dbad7d9b5eff30ba9faae4889b7ca407bb3a7cf151d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/015-read-queued-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "bytes": 781692,
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/015-read-queued-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "bytes": 803857,
+      "sha256": "9f70c36bd82c9787ae3aa3b5bfd2e2e2d96a6a5a3f03303f754ae53dd4fb5a5b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/016-read-queued-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "bytes": 798733,
+      "sha256": "38e052fce6f63874a2c011bb2d3c1408530ac76f915c488138bc52ba81bb04b5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/017-reload-accepted-order-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "bytes": 799310,
+      "sha256": "f2c5f988d9c93e0f268f17fd792525258918be7e66b3747dc8319324e9bbcf05",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "bytes": 788404,
+      "sha256": "d5a48d888fef6b6d38468e9e5334788be5d37620065f8a127f7b6611165f9528",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "bytes": 791049,
+      "sha256": "82f65667168fd26d6f7c7087f29acb367f0d3fc4066c786c89b156ea09b57d6a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/024-switch-current-device-1-market-envoy.png",
+      "bytes": 794678,
+      "sha256": "6d1e9c9ac5aaa80ba8a8747812b5c1f57f642818fbce196c9f081e9ea3edba59",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/024-switch-current-device-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/024-switch-current-device-2-independent-investor.png",
+      "bytes": 781692,
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/024-switch-current-device-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "bytes": 796044,
+      "sha256": "01a82ecbdd3c51bb7c542be9015323f4443f909cce36d092ee95467df2ec68c0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "bytes": 781692,
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/026-review-stale-rejection-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 1268566,
+      "sha256": "3d9a3ad19e97380ff86cb739eb2b4d85a8ce8afd835f10c59fee6af9240bc198",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 803729,
+      "sha256": "c518de7636a498c0e2fdafd62c8444805df331ac75a91b3cdd7433d185299539",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "bytes": 797905,
+      "sha256": "214ef1a49ae1d8127eecdab5296293140dbae3d98fcc641c2491956ba29bb97e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "bytes": 785549,
+      "sha256": "d94d839954069d1c6c2927da63c41ad913c9590fba9b853192d724052d7732ee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/031-recover-science-tick-14-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "bytes": 786616,
+      "sha256": "2012b07f2be1fa57d1781e03ea37f95e5905e5541de76ac21f441a86926071d5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/031-recover-science-tick-14-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "bytes": 784991,
+      "sha256": "526de41ece9cc4fd7c75a6de76cccdb8cfce636d71e4d1b531dc9b88b8edf0b4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/033-recover-science-tick-15-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "bytes": 786208,
+      "sha256": "37b04277db112b2cabcbc31b6f196c71bf4fdbd71f67cdbc92471883c8284c68",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/033-recover-science-tick-15-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "bytes": 786191,
+      "sha256": "2db3a3e76357532b0d773d26f71b4dc57ea9d1d4f3684e5c8f87f4fdc5aa7d39",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/035-recover-science-tick-16-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "bytes": 786469,
+      "sha256": "3ef12d12d50930c758cf4c89e513688f1cb58c6eda29d4b20f9d86e83933571d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/035-recover-science-tick-16-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "bytes": 797826,
+      "sha256": "80830c25d201d9f1c9d2efa6566b1e1d888dd751f21296ab28c57873b1d695eb",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 870859,
+      "sha256": "b7447e56d49adec280812d600e5cc8fad220db757abe857892c54ea140c6f234",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 878113,
+      "sha256": "1e68789b72f8208dfb29309791593086eb461f3fabcad04c458917b860c4168d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 871576,
+      "sha256": "6be6112f86a6d23f632c87b19e47cf99fb65925bfc0a99f62b21962b6fa8c118",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+      "bytes": 2021672,
+      "sha256": "e883bba7da23d07459c225fede29808a569142ed9f81bcec92f93e6b00ab1f89",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+      "bytes": 877116,
+      "sha256": "ca6b7d58713e41a34f93a136e8ba4476b1a6591874870919a9a0e4c9c5624bad",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+      "bytes": 2021672,
+      "sha256": "e883bba7da23d07459c225fede29808a569142ed9f81bcec92f93e6b00ab1f89",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+      "bytes": 870859,
+      "sha256": "b7447e56d49adec280812d600e5cc8fad220db757abe857892c54ea140c6f234",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+      "bytes": 871369,
+      "sha256": "7f0ac45fa077a30687c112fde3bd7411a0d773e797ceef4e64faba9f461fa33d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 871684,
+      "sha256": "21bfbb22c7681dd2901383806b72a4bb74df1a603431c04b790ee54ec9fd707c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 878932,
+      "sha256": "3d521ae7b6c8a8134d55a96ef05029e2212d1af432c1c9c3ffd9ce5f2596b68a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 872355,
+      "sha256": "9f7cc106b549c6ec5749d159cae19b8702687982793c7f5311e3138378cbe51f",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+      "bytes": 386774,
+      "sha256": "f54c557601e0883999331d775adf0e7fb234e18716107ba5017d85bffbdf3140",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+      "bytes": 1076951,
+      "sha256": "a8b0da4aceec6219c3c45fef46355d903a0094229a3ad54c33fb40f6c7dc5431",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png",
+      "bytes": 1076951,
+      "sha256": "a8b0da4aceec6219c3c45fef46355d903a0094229a3ad54c33fb40f6c7dc5431",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+      "bytes": 870879,
+      "sha256": "e103ecb3048588faf17a13240f9654f4a707b2dc249b01f19c9e2a289072afe1",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+      "bytes": 872082,
+      "sha256": "e1203e4592adffc13d2654bc2f469ade5f26b0d862cfd7e078beb51d3ab0ffee",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 871251,
+      "sha256": "0f902c425c554484e5d5af5d8eb93bcc8b8953a3fa88fd408b5b7022987e2d9e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/011-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 878448,
+      "sha256": "aedebb821a6dcce77e7db5f79f3fec2e3daabd448039debb1e81de0d2cd233a7",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/012-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 871880,
+      "sha256": "841f1fcf1b4a9590e59817566f9ac19381ab55de6b92d3a98db0ac3ead8af05e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/013-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/014-open-session-control-1-market-envoy-session-control.png",
+      "bytes": 1437163,
+      "sha256": "f08fb01c76117bae24c06257b3bf5b854ee8eba47de657ffc43ae9f7155cdc23",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/014-open-session-control-1-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+      "bytes": 871880,
+      "sha256": "841f1fcf1b4a9590e59817566f9ac19381ab55de6b92d3a98db0ac3ead8af05e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/014-open-session-control-3-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/014-open-session-control-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png",
+      "bytes": 342134,
+      "sha256": "0b416cdd117014bcbccfc330ffddb50e27a1877c0a68504cb693e4b855672897",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png",
+      "bytes": 2027643,
+      "sha256": "f9749d0dc79d572735278f99e640b785807d16a9f0fe37509f924b2ef87fbfe1",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/015-confirm-session-end-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+      "bytes": 1259240,
+      "sha256": "32599f49fefdeaacc05c03a81c5f058c9e0d2b25dcedbeff937c8f561dafaf94",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 870423,
+      "sha256": "552afb8cd305329974e74624e5c2629d54a296559227e23ce96d727227b9e15a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/market-draft-session-revocation/desktop/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+      "bytes": 871680,
+      "sha256": "dceec3fae7bb8d6bfd0c7be802d8469f38248cbc7e2de2b90b72d4567458d3f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+      "bytes": 782415,
+      "sha256": "e822eedefde67f3626a9cbaf220bda949bafaeb48ef40d6b8405e97266eb384f",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+      "bytes": 782298,
+      "sha256": "67ef4b1888bc5d2f3f45f04c731dbc61d73f924d48a01cfd21b4448bab1e9b57",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+      "bytes": 805471,
+      "sha256": "de3b4b879c1d6080431179ba2fbb770cc1d3bb3e9e90305bfbeda5d1ea6d3149",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+      "bytes": 804226,
+      "sha256": "52d452977c6df6a18cf54e03ce36e6c47d51ad90e7fcdbb9cc56a2c045d6fca3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+      "bytes": 803919,
+      "sha256": "73422e2cb222a2be29c76f37a46f453a60213154d1a14df56dc10be5f183e96d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+      "bytes": 802482,
+      "sha256": "8199f5c6ccc4cb11a2202745be19b5ae9c45dd3c8b013c107c33f20c68b5cdd8",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+      "bytes": 804394,
+      "sha256": "9610a18f880af23cc8c3ee1284ea005cc8a18001b8a9ca22c207f7cbc86253a3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+      "bytes": 802811,
+      "sha256": "1713f2cbf514a75616282077de1db43b78a70b0ded7484f2867a67e56926fd70",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+      "bytes": 800999,
+      "sha256": "e6eed2ef9ce2cb40789fa7135869f114d1d755e874653e19183b0a45e4e3342e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+      "bytes": 801020,
+      "sha256": "7cc14b6de3c06d138342b932f8d40e9c0b3f5e2eb439ad86fdae10f317540699",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+      "bytes": 1259750,
+      "sha256": "c28d2041d29b4fe79bd54ebb64bee6116bc7b01a3a69518778ee4a5fca08e21a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/019-close-without-order-2-independent-investor.png",
+      "bytes": 782298,
+      "sha256": "67ef4b1888bc5d2f3f45f04c731dbc61d73f924d48a01cfd21b4448bab1e9b57",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/019-close-without-order-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+      "bytes": 5062684,
+      "sha256": "9e974efde95f4209b75d1a2db5d236bd670c355a03e4c6cac42010f4c326d7f5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+      "bytes": 5038760,
+      "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "bytes": 5062684,
+      "sha256": "9e974efde95f4209b75d1a2db5d236bd670c355a03e4c6cac42010f4c326d7f5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/011-restore-panel-choice-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "bytes": 5087476,
+      "sha256": "5f790cd367767612762ea4350e065cd9b4c5faa2ae2d3bbb7376fe9b9fcf0960",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "bytes": 5038760,
+      "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "bytes": 5089985,
+      "sha256": "72ef13d4b760763d932c33f9e12b4dfa43bc8fce804e7b4c0ecc8d57a5c132c8",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/014-queue-investing-1-market-envoy.png",
+      "bytes": 5057755,
+      "sha256": "b52a4922172254235833c2207d9bc464fe4ed36f6023821cfb1c0c47e93ec545",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/014-queue-investing-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/014-queue-investing-2-independent-investor.png",
+      "bytes": 5038760,
+      "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/014-queue-investing-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "bytes": 5083224,
+      "sha256": "e4c7db37ec877aa2ddeb152fcf92e3d745111d6a930d7c0ed3c6dcff162471b8",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/015-read-queued-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "bytes": 5038760,
+      "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/015-read-queued-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "bytes": 5084007,
+      "sha256": "d61ef42093d28f3a316fb32ce72d4ab16b4c6446bae3886b01eeefe4c6de0d66",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/016-read-queued-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "bytes": 5028971,
+      "sha256": "5fc7aea831c8c40729654fb0408927d39a01759bad6f464be7374429a995029a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/017-reload-accepted-order-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "bytes": 5050896,
+      "sha256": "a538e0fecc0edd5ffabd512435458a72bf7a9e363d4bb22e354beaa495b30c5d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "bytes": 5050028,
+      "sha256": "ec85107f3ddd4dede268a55b514771757dcb4d7ca7350eba8a379ee990c3b42b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "bytes": 5053432,
+      "sha256": "8804b5fd1fa0215903cec34ba383133244937d17924280326ffe37cf94e327a5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/024-switch-current-device-1-market-envoy.png",
+      "bytes": 5054507,
+      "sha256": "b0665aefb1d4aca8eaa6ff3adc0aae197ffeab4c2ead623911c702ee9bc82dc0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/024-switch-current-device-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/024-switch-current-device-2-independent-investor.png",
+      "bytes": 5038760,
+      "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/024-switch-current-device-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "bytes": 5052702,
+      "sha256": "1f0cd0fe224e8bf3a8c63a7742f9d504bc9c160ff1b504261209c8c94ca2d941",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "bytes": 5038760,
+      "sha256": "9d84a4eced5ee99de1de9bdf55d2412145f15c4b19246f42c4bb81a67f61218c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/026-review-stale-rejection-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 5927621,
+      "sha256": "b0360551351063200d0d1e1d3586f4b9c1174c8a1de2e10521f025f565481fdb",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 5053903,
+      "sha256": "885a90971630ca3de6b194b0e08de4c3e59a796414fc77a1bc9e0a802b0bdce1",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "bytes": 5053958,
+      "sha256": "2da51f6d8ac3e31da8285466ca4fe58c27f7930825faab814d6bad4102db952a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "bytes": 5071988,
+      "sha256": "1246b67467a50748ef5fb9b48088c1e6924fb72749d59c388edbff1251597096",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/031-recover-science-tick-14-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "bytes": 5077093,
+      "sha256": "2417496d52309a1e00af4381265ce2b9c753baaa63549c9af9eb7a789d2946af",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/031-recover-science-tick-14-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "bytes": 5070477,
+      "sha256": "dfb038f33fa2fba95405d7c82b8dcdb5e7e2c8c0733540bac06e248242615929",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/033-recover-science-tick-15-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "bytes": 5075574,
+      "sha256": "d66a8536172c74f4799e3dc0c665fc7abf6cbba3463c39b25b224283a6cfc2a3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/033-recover-science-tick-15-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "bytes": 5074087,
+      "sha256": "4fc1396cfd544c2865578b28aaa959e07bf5c05c604ee4fe1bac2c435eeac32d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/035-recover-science-tick-16-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "bytes": 5077069,
+      "sha256": "3c0dedd2306d4e81c36cd1f1883725117be078bc37fe9d02d5f9ecf902b1582c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/035-recover-science-tick-16-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "bytes": 5050012,
+      "sha256": "f345c70434edf1d99b08076c3a299e534e662de90b4d831c2e361ee6e5523b3c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/large/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 5110367,
+      "sha256": "00c7ece1dd7bccf0b0ae0bebc8341a8f648e887caba1688041fb09bff92f4eb7",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 5120306,
+      "sha256": "8750205973e955e0232b74306908f1de96b80fb7a5abdb9413a2b06495b0d13c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 5112035,
+      "sha256": "8b3532056c0f0b6c4ee1389e6d7012e48829c458a9bf3edd75270dfdf8aa6825",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+      "bytes": 8933892,
+      "sha256": "51c6a3f3709b5a746ec7dd9f8f891c317870e8646b3e2e0a4874ef7a40b18c42",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+      "bytes": 5121596,
+      "sha256": "315e0b17908365b16ddb4f042a60d84a35831906506d7463dd13d875e314a076",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+      "bytes": 8933892,
+      "sha256": "51c6a3f3709b5a746ec7dd9f8f891c317870e8646b3e2e0a4874ef7a40b18c42",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+      "bytes": 5110367,
+      "sha256": "00c7ece1dd7bccf0b0ae0bebc8341a8f648e887caba1688041fb09bff92f4eb7",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+      "bytes": 5113161,
+      "sha256": "1c34da053f291b31bde6ba015abd77c71050413d55951050465b5a001d15afda",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 5111229,
+      "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 5121309,
+      "sha256": "4c633a023f0f7444eeb13c2bcaf606cfb77971cbbb29e3ae41ba4633fe241b08",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 5112868,
+      "sha256": "35b12caaa8b0a6b009808b6744ca058071441ffaef215da95aa6f5dd0bc86fed",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+      "bytes": 1434722,
+      "sha256": "9c2c1a47c58d9cdd565dfd3e9756079191eafeed8a2865e20670858e55a3d02f",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+      "bytes": 4415277,
+      "sha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png",
+      "bytes": 4415277,
+      "sha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+      "bytes": 5111837,
+      "sha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+      "bytes": 5114003,
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 5110546,
+      "sha256": "3778c8f80e90ff1ef85b71b0acb645b6c32da565c9b29c0695fa73ac64d04090",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 5120549,
+      "sha256": "bf8ec364026cbd5c27cbdef1d9d1e1c18b009598f82e445e7abc09e5f903a706",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/012-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 5112189,
+      "sha256": "8a2e51afcc6cb22a9ce65d5f7ac96d38aea0045b36597732ee3c3c3559964b1e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/013-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/014-open-session-control-1-market-envoy-session-control.png",
+      "bytes": 6949342,
+      "sha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/014-open-session-control-1-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+      "bytes": 5112189,
+      "sha256": "8a2e51afcc6cb22a9ce65d5f7ac96d38aea0045b36597732ee3c3c3559964b1e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/014-open-session-control-3-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/014-open-session-control-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png",
+      "bytes": 1392212,
+      "sha256": "d6f22d3fc8f52771d0e928cca6ff2246faabaa4784f4a13b18979c63d56dcb90",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png",
+      "bytes": 8939615,
+      "sha256": "18bbe9f7d72ebf4f2571a49959f889c793f211f0d66fad0900ded722c36d5904",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/015-confirm-session-end-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+      "bytes": 5917855,
+      "sha256": "1412bbf1846bc00c37d9b67f54b53ba0b54702ffbd1a85148c2826e626625694",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 5111146,
+      "sha256": "c3614397b015afe4c34366e19b52accc207c9e3c8f37e2cd2653ddfe3535f18f",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+      "bytes": 5113310,
+      "sha256": "7b95f6373915a49fcd4f9bbb1c0927a70f29596207c3522a044eb5e6652c48d4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+      "bytes": 5037679,
+      "sha256": "c1584bcba84053a157ef674ba3931bdb82ea737d82ad71a3f2fa1f4137495162",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+      "bytes": 5039876,
+      "sha256": "033d40eefc2dde353e28a979e0b7958268d6ab458b731eb3934b395a6508db01",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+      "bytes": 5069369,
+      "sha256": "ea8ab3a8865774bfcd53939f45226d97894ae8963acd412f43f6944ce44b1a85",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+      "bytes": 5066644,
+      "sha256": "2b00cc02a8f82958c3dc287d202a8a2c3deafe1646827f0a120efbbff20d3efe",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+      "bytes": 5067004,
+      "sha256": "87f34c5633137a8be3c05c138773e2c2c82db3f1a4b8e1f303216b55ef7e7e21",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+      "bytes": 5063659,
+      "sha256": "0321de70a2d0603d5da81c0d281c5eb01b74a43b2b6c43124a325b153454d5c5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+      "bytes": 5061541,
+      "sha256": "1e7730bf3ee3f788f3c175bfc2084b354a00f46daef88725b882a97f78282050",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+      "bytes": 5061240,
+      "sha256": "3d7f0ef799b29ac4ab6a2db1efee9f86c186c398659edf750432395d9394f6b4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+      "bytes": 5061465,
+      "sha256": "58b5427a9b963967bb1f1a1b1a5496d75285d84643613e4d44f2018aa4343f09",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+      "bytes": 5061735,
+      "sha256": "879b7066ccf29d0e0de62a452000ed8b1f260ae1385d1389ecc9aff311d9a242",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+      "bytes": 5917641,
+      "sha256": "9b6f1513433a9a2ab5ea5ee86d889886d218cb86dcb45cc7ecb7db4c58eea815",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/research-capability-guidance/large/linux-arm64/019-close-without-order-2-independent-investor.png",
+      "bytes": 5039876,
+      "sha256": "033d40eefc2dde353e28a979e0b7958268d6ab458b731eb3934b395a6508db01",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/019-close-without-order-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+      "bytes": 87479,
+      "sha256": "c48f43f829ef00e5eedc87c16ed9a15ae52597cbf2ad0e9f037d2f1b9df5bd38",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/010-choose-without-sending-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/010-choose-without-sending-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "bytes": 86811,
+      "sha256": "d2de8541aa4bb3822478bd9c79d68498adb3fd01d05fab6e487fbb59fcfc83eb",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/011-restore-panel-choice-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "bytes": 90473,
+      "sha256": "87d36149afc59d0f02ff5ceace3adb3c85b38a3b535d700cb138ec2606588e5d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "bytes": 89762,
+      "sha256": "9f604ee5a45522458a7560d2812d349e168bc878b6834c4ab6b72167bbf7ccc5",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/014-queue-investing-1-market-envoy.png",
+      "bytes": 88716,
+      "sha256": "7f2e6e75e628386f506934df8b3b67ffea1e882f72367e2fda280dd553e2794e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/014-queue-investing-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/014-queue-investing-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/014-queue-investing-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "bytes": 91260,
+      "sha256": "510337b5580568689936313ecb599879747ac8058acb067cf9d31c0b3eedfa97",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/015-read-queued-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/015-read-queued-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "bytes": 89584,
+      "sha256": "c54a99983e82977d157b54af5fb8c5a2ef13aff10b86a9a081ec5dbed1cba8bc",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/016-read-queued-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "bytes": 86367,
+      "sha256": "94fee8f3e7c1b2d422044d3a5b62eb8eae4afefef0a1e1c344683e22a16588be",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/017-reload-accepted-order-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "bytes": 86311,
+      "sha256": "e574e52756fd7dfe8f7d9be87bb6577eb721b7534b6f92c3259df83dbd8a4e57",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "bytes": 81903,
+      "sha256": "8e5175da862fa355be4de7fd83f3ba237c114b07e57d447f168f6a34bf75da77",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "bytes": 85496,
+      "sha256": "35da5bbd6f529bbdeee2a4f51f0ce1392ae2ac634268a035b5215fab80d927b1",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/024-switch-current-device-1-market-envoy.png",
+      "bytes": 88489,
+      "sha256": "ed5097336060e7e2d1b4420cf886d09493d0ed7e5d449121dab1a56dc76d67f7",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/024-switch-current-device-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/024-switch-current-device-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/024-switch-current-device-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "bytes": 85848,
+      "sha256": "6a5c67ee874795ea939227ebb986780ae31b4f7fecc4e756be76fa5d7c2cc499",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/026-review-stale-rejection-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 296532,
+      "sha256": "34d92f73764e0073d226a011016571be92d6a35d10f10909d7a67356e89c1737",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 86917,
+      "sha256": "b881e926b73a459ee4ade897cf3d8f06ddf17f10fd70afe233b1e8a801bac76b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "bytes": 86192,
+      "sha256": "6d12c6016951204b7a28286d20603a66d806ec353b6e04d58ae52b2c0638d026",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "bytes": 81363,
+      "sha256": "bcfb6c1bacb490b069bdba297b5690949c80c0fdd56246aac415fe4435154d95",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "bytes": 83333,
+      "sha256": "51e7cfa483f560664227788e559770e4566d40b83809af15c7255f3fd3f95a76",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/031-recover-science-tick-14-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "bytes": 81059,
+      "sha256": "6d6b57df3264cfbc8b55464d03f522c63c1bbc2c1df136486f1ddcb3fe5f1018",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "bytes": 83058,
+      "sha256": "ac96efd8d1eaac8e5053091abe1673a16e2352b936fc68063c2bd9469f268e32",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/033-recover-science-tick-15-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "bytes": 81883,
+      "sha256": "77f410d65068f33d6c54eeb6317f1cf8edf5041bf53ab766b787b2f43adc74d9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "bytes": 83308,
+      "sha256": "db4c2d8d7b00407ba4c0d2a993cef27a74a066919b69213c1f7aa03902db9966",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/035-recover-science-tick-16-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/live-research-orders/phone/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "bytes": 87199,
+      "sha256": "b4ec8490a1cc9aacb535fc40ed1fe767a50bc473ac3a02ea33be223474873be3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/phone/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 133800,
+      "sha256": "7899aaf2c3a2519374b8e8f7cd257b9622d6bae1658989ef4f205dec57f782a9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 137579,
+      "sha256": "d27830d8a0f0e216b99ee09673305b458dc5704d6160339302b8111e52c8d5d0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 135183,
+      "sha256": "501bb679d07484e766ab5c913f013aecf20f86b41bf8c30248ef0191b007086e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+      "bytes": 517625,
+      "sha256": "acf6435c41a6fe6e2e188467bae6d10062b6965325d9a8486474c6b40ca9a401",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+      "bytes": 137193,
+      "sha256": "44e38b7f307e89551608a2158bf586943d6a14fa24b2b6518e7aeeaea8397013",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+      "bytes": 517625,
+      "sha256": "acf6435c41a6fe6e2e188467bae6d10062b6965325d9a8486474c6b40ca9a401",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+      "bytes": 133800,
+      "sha256": "7899aaf2c3a2519374b8e8f7cd257b9622d6bae1658989ef4f205dec57f782a9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 133800,
+      "sha256": "7899aaf2c3a2519374b8e8f7cd257b9622d6bae1658989ef4f205dec57f782a9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 137579,
+      "sha256": "d27830d8a0f0e216b99ee09673305b458dc5704d6160339302b8111e52c8d5d0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 135183,
+      "sha256": "501bb679d07484e766ab5c913f013aecf20f86b41bf8c30248ef0191b007086e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+      "bytes": 130931,
+      "sha256": "703d2ff551fee8629e448c8982c4bf017fab4b47e8a48dfc22590db33612df54",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+      "bytes": 232592,
+      "sha256": "ddd6ffbbae2ba0236e0fb769d476f9bfe4d3267fbdfdc4f049d05ccb22aa150b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png",
+      "bytes": 232592,
+      "sha256": "ddd6ffbbae2ba0236e0fb769d476f9bfe4d3267fbdfdc4f049d05ccb22aa150b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+      "bytes": 134261,
+      "sha256": "dc1baecbeab51708c24d467f1c67700d12b2b5b8b4d5ae0320a4ce674a4604af",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 133800,
+      "sha256": "7899aaf2c3a2519374b8e8f7cd257b9622d6bae1658989ef4f205dec57f782a9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 137579,
+      "sha256": "d27830d8a0f0e216b99ee09673305b458dc5704d6160339302b8111e52c8d5d0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/012-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 135183,
+      "sha256": "501bb679d07484e766ab5c913f013aecf20f86b41bf8c30248ef0191b007086e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/013-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-1-market-envoy-session-control.png",
+      "bytes": 56395,
+      "sha256": "c839c9ca9b2aa79ea04d1942ae95d5ca72ad57c10005ef6e4c0c82399b78f2f9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-1-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+      "bytes": 135183,
+      "sha256": "501bb679d07484e766ab5c913f013aecf20f86b41bf8c30248ef0191b007086e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-3-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/014-open-session-control-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png",
+      "bytes": 98092,
+      "sha256": "d778ba7f004d0f8f016d53deed81c9932e94bad100d5b310e9516b46d7d20012",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png",
+      "bytes": 513128,
+      "sha256": "b8dfd851ee09e7a90eb451ad5269424daf6d63c501c013f9ad754b72012d70cb",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/015-confirm-session-end-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+      "bytes": 289176,
+      "sha256": "321afe851a9ffdc4e2301d8019bf443a282a2c94aba50cd88ce790c1ca63ded9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 134261,
+      "sha256": "dc1baecbeab51708c24d467f1c67700d12b2b5b8b4d5ae0320a4ce674a4604af",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+      "bytes": 134537,
+      "sha256": "5fa5ef4689cac71104c0f2ed086af296ae61bb4c9faeab7fa13a148d8e29db7d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+      "bytes": 80416,
+      "sha256": "db02f9e6905bd3e0f00d81083d68003725b4eb7d938bbb8c9d507026ced57b5f",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+      "bytes": 87331,
+      "sha256": "e7e66860b5fee95464afe8907b3b2b3533e46ecf99e5242c3101325db82e5be0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+      "bytes": 87421,
+      "sha256": "327712fed32b2e56866d082fc841feb2cc2ea18951334df34d8bccb274623cc3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+      "bytes": 86879,
+      "sha256": "c08a7f1de63c598c12042f0f9d4ec5c5d21d8c28abc858be9091b73b14660f6d",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+      "bytes": 86532,
+      "sha256": "45f7599472a493e0886a2fdc274a686b5bb81fe2008b8111bc10eebe482d35f2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+      "bytes": 86700,
+      "sha256": "c7737ac29b08a4b36bb1caa97185aad346ffd50224c45974d682ffee41bb6c99",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+      "bytes": 85705,
+      "sha256": "119b555830eda5a602c2edf5feaa887b6a3d345b17f3e6ad55f7b7ccef0dfe94",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+      "bytes": 84621,
+      "sha256": "88195e9a560f8dec467ba9e4589d94558dd945d7397df6fb8555661a2e7c9453",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+      "bytes": 85184,
+      "sha256": "5388a9be161037a13389ebe286c42eb156bc151ce05ea433f83b729c3fbc8e7b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+      "bytes": 289502,
+      "sha256": "8c2bd874ba38beafd87c8c27de23b789a63edd3a78ba4aeb0b77fe33f275fb09",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/019-close-without-order-2-independent-investor.png",
+      "bytes": 81502,
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/019-close-without-order-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/010-choose-without-sending-1-market-envoy.png",
+      "bytes": 425888,
+      "sha256": "839a6e376be149738ece57bb4ea336d7200e4ae915d0c583f9aa8dc1af557d29",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/010-choose-without-sending-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/010-choose-without-sending-2-independent-investor.png",
+      "bytes": 406875,
+      "sha256": "f1a21bc6fbf0e55d68ad667803e90a27413a7fdbc74d9d6f37f8f1040982f18e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/010-choose-without-sending-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/011-restore-panel-choice-1-market-envoy.png",
+      "bytes": 426660,
+      "sha256": "2153640f4ad2f3f4a0cc64002d680bf006ee42465a4491e75472d5cf69fcc505",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/011-restore-panel-choice-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png",
+      "bytes": 432755,
+      "sha256": "90cc7eec795927cb754a2f2394b3ebafba7485c099136a3fb40107dba041e80e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png",
+      "bytes": 406875,
+      "sha256": "f1a21bc6fbf0e55d68ad667803e90a27413a7fdbc74d9d6f37f8f1040982f18e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/012-read-unfunded-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png",
+      "bytes": 432849,
+      "sha256": "edcbe27d6861de8c2e59b97c8b7e962a44a2ab648f6e7a562879c3e0913cd3a1",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/013-read-unfunded-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/014-queue-investing-1-market-envoy.png",
+      "bytes": 427646,
+      "sha256": "e0fdd5e4734281695430eae97151e781624c78ca81ba9c4a735aa5970daf7ac0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/014-queue-investing-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/014-queue-investing-2-independent-investor.png",
+      "bytes": 406875,
+      "sha256": "f1a21bc6fbf0e55d68ad667803e90a27413a7fdbc74d9d6f37f8f1040982f18e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/014-queue-investing-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/015-read-queued-forecast-1-market-envoy.png",
+      "bytes": 433199,
+      "sha256": "9eb9e86b6b9409ceb64bf3798f5585d1be2b9113a7a870f9fb26a904a208467a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/015-read-queued-forecast-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/015-read-queued-forecast-2-independent-investor.png",
+      "bytes": 406875,
+      "sha256": "f1a21bc6fbf0e55d68ad667803e90a27413a7fdbc74d9d6f37f8f1040982f18e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/015-read-queued-forecast-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/016-read-queued-assumptions-1-market-envoy.png",
+      "bytes": 433343,
+      "sha256": "2a8df872d76391a2a2978983e137cd590cc9078a638cbdcf95cf7012a1f9a0a3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/016-read-queued-assumptions-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/017-reload-accepted-order-1-market-envoy.png",
+      "bytes": 426550,
+      "sha256": "d19208ba63dd5da13182d9d7d0254bfafe1c9ab5de73448454f2745de91a2ec3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/017-reload-accepted-order-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png",
+      "bytes": 424851,
+      "sha256": "28e850a86db401ce857481b6353861b3e4b2699a0d057a24c860b4384b935b8e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/020-submit-held-choice-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "bytes": 419585,
+      "sha256": "5a43f78f93df328f27aded032cde79a910c4b9c1796340fdfe1ed80b647dd514",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/021-reload-submitted-research-1-market-envoy-recovered-submission.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "bytes": 422904,
+      "sha256": "b42a83056b5eb885a014039c67c822e04e694607c727265c4f4b92c791c54032",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/022-read-recovered-retry-1-market-envoy-pending-and-retry.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/024-switch-current-device-1-market-envoy.png",
+      "bytes": 427868,
+      "sha256": "b83fe750115c81cc2fc039c34e7918480163a4cb4be17c0ac93a0f75fd1728f0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/024-switch-current-device-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/024-switch-current-device-2-independent-investor.png",
+      "bytes": 406875,
+      "sha256": "f1a21bc6fbf0e55d68ad667803e90a27413a7fdbc74d9d6f37f8f1040982f18e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/024-switch-current-device-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png",
+      "bytes": 426873,
+      "sha256": "869aefe4b2487be099a8df8e85cc55a917dfa41f3d17d6fea87d6efa4ddd6b16",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/026-review-stale-rejection-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/026-review-stale-rejection-2-independent-investor.png",
+      "bytes": 406875,
+      "sha256": "f1a21bc6fbf0e55d68ad667803e90a27413a7fdbc74d9d6f37f8f1040982f18e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/026-review-stale-rejection-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 727143,
+      "sha256": "2ee3de2b18439d2818de1f2e773873f6ff16dd14d6f3473568308aa4dfb6af4a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/027-close-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "bytes": 426936,
+      "sha256": "551f2101df1bfee5f6c23a047431294e3663c24ad0daa1b7949721b3c2bd6253",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/028-reopen-conflict-panel-1-market-envoy-second-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "bytes": 426093,
+      "sha256": "59ee754cbe06e57193d148198953401641ff392cfd5272c808cff1ceb9195a2e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/029-replace-recovered-intent-1-market-envoy-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/031-recover-science-tick-14-1-market-envoy.png",
+      "bytes": 416006,
+      "sha256": "3e631bbf3d04f666bc412f0910e6d34f9e3bba175a9f3bd1489eb1ea91326afd",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/031-recover-science-tick-14-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/031-recover-science-tick-14-2-independent-investor.png",
+      "bytes": 416934,
+      "sha256": "506c730186eeb36575002de5fc845e3c466441ccfc9d9a6527922f6833a7ea40",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/031-recover-science-tick-14-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/033-recover-science-tick-15-1-market-envoy.png",
+      "bytes": 415295,
+      "sha256": "c2906c7c841154f4213fa40133e64861ca3de03d551fa12635fbc0cdea3d24fc",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/033-recover-science-tick-15-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/033-recover-science-tick-15-2-independent-investor.png",
+      "bytes": 416137,
+      "sha256": "3386c22a948e2baaf06da631b280b814105dad718e5577b630891891aa6d3dd4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/033-recover-science-tick-15-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/035-recover-science-tick-16-1-market-envoy.png",
+      "bytes": 416490,
+      "sha256": "878253ac340f284a8e15e980e19d9092221eee1344fa9b81dcb7b4c14e6d3993",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/035-recover-science-tick-16-1-market-envoy.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/035-recover-science-tick-16-2-independent-investor.png",
+      "bytes": 416846,
+      "sha256": "21cf994e215fc7e52b18da2c43fdf5502403174b2f460e0ba5d5f22949bda768",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/035-recover-science-tick-16-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/live-research-orders/short/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "bytes": 427358,
+      "sha256": "240b1c46ef004152f2caa474b96099f46a27163a3d51076740be9d49a61e8c99",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/live-research-orders/short/linux-arm64/036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 507328,
+      "sha256": "edcbd244a8f74af765ba6f9e822b952423f9499d7a92e51a338c641f15f1cb04",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 515140,
+      "sha256": "9d26309e6d965d01ca2055ad250b67ccb5632991f5a7caa7aaf8e6da53fa7326",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 509603,
+      "sha256": "2e96b2e70e0cdfcac3815ddfcf8a65e2b498086c975230b792beb4a6e0ddafa3",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png",
+      "bytes": 1408803,
+      "sha256": "d27190f11484f854de1a174f8982aa08052a635380fb514d9f828c890290c366",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/013-sign-out-original-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/014-reuse-browser-as-saved-peer-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png",
+      "bytes": 511158,
+      "sha256": "771dfb314c39c0c7a071f829394ff9cd1b738ed6384e84c7d0a84f7c3c2641d6",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/015-edit-second-account-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png",
+      "bytes": 1408803,
+      "sha256": "d27190f11484f854de1a174f8982aa08052a635380fb514d9f828c890290c366",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-1-independent-investor-reused-browser.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/016-sign-out-second-commander-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png",
+      "bytes": 507328,
+      "sha256": "edcbd244a8f74af765ba6f9e822b952423f9499d7a92e51a338c641f15f1cb04",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png",
+      "bytes": 507371,
+      "sha256": "dd779d61bd9f36e3d58e8caffcb440a6ee76d0ecc15b27d3d63827012f4bb45a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/017-return-to-original-saved-identity-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 507752,
+      "sha256": "3de1ad56eb16c6ebbdebd7e576089d275d371465f80332b7526198dcb49c3462",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 515588,
+      "sha256": "411fa9b89244c0aadd730fc139f17cc2b4b85160e5a545c2dbd53ed42736a5a9",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/011-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 510059,
+      "sha256": "5a5b1ce55ca7f12e39349a4aed5c19290d688e58be3c72a83ca35e997bc17f90",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/012-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+      "bytes": 264588,
+      "sha256": "ed9bbc9b7a85bf4fc3fe0790945755fe50a4ecc7916cd22aa4cd3c01f7a5e1e0",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/014-recover-with-inflight-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png",
+      "bytes": 627068,
+      "sha256": "5c8a79f35198a2d1a20bf2d5f3dc9ffdb4b8bb5cc04d34d2412e3afab2a26359",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/016-observe-revoked-access-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png",
+      "bytes": 627068,
+      "sha256": "5c8a79f35198a2d1a20bf2d5f3dc9ffdb4b8bb5cc04d34d2412e3afab2a26359",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/018-reject-late-private-view-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png",
+      "bytes": 508365,
+      "sha256": "6d4de26a08855b90e5c3245e6045c2ddf1762139090898a03fe613a0acc23b84",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-2-independent-investor.png",
+      "bytes": 507818,
+      "sha256": "38a7654e60cd7c4f2faf43ab7ae3e7024aacf7ac729d5acea41e36151527581e",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/020-recover-restored-membership-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "bytes": 507419,
+      "sha256": "4f1e1c5eae81e4868c788508b753e518032c8641f83c115125c064b690809a19",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-2-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 515225,
+      "sha256": "d49daf7f333a0a6b383c0e890c7b20b5fea7f8081f8babea8a77f8df5d9be27a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-2-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/012-edit-partial-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "bytes": 509690,
+      "sha256": "6cacd31777b6da5d34ad3ace9205b174fff264dbc3fb2e74bff498fd67fa1154",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-2-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/013-navigate-with-intent-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/014-open-session-control-1-market-envoy-session-control.png",
+      "bytes": 956643,
+      "sha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/014-open-session-control-1-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png",
+      "bytes": 509690,
+      "sha256": "6cacd31777b6da5d34ad3ace9205b174fff264dbc3fb2e74bff498fd67fa1154",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/014-open-session-control-2-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/014-open-session-control-3-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/014-open-session-control-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png",
+      "bytes": 213155,
+      "sha256": "25721b7a0d91bbd1f235eb3f423768b6a3383804d8f48f6cbab414c207bbd833",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png",
+      "bytes": 1413965,
+      "sha256": "5b82cc11c8739c510da20ec0e28f6fb1cd8f0c5f4cf551ddf3f3cb8975ee344c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-2-market-envoy-session-control.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-3-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/015-confirm-session-end-3-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png",
+      "bytes": 718135,
+      "sha256": "da1051877b86f1e64abd74db0d22bd03ffd45820aebfc9d7d152c23685412076",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/017-fresh-owner-authentication-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png",
+      "bytes": 507989,
+      "sha256": "18f2a561e1b6f96c155c98e0bb1b598600a12158b09a870a45af4a9840c205d8",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png",
+      "bytes": 507462,
+      "sha256": "c0ff6251189ba5f1d1bb4221bdc2a587de43b2602b24b888f3baa58b0186f88b",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/018-recover-authoritative-allocation-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png",
+      "bytes": 407339,
+      "sha256": "6c810ab240b04d36aea094b1bd1e469c12fe28409c3158b5b8a55cda17fcaf52",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-2-independent-investor.png",
+      "bytes": 407505,
+      "sha256": "a7725dd4ca7a6d1092a96c60263bb8917029961f651816800f6cc27eabbffce4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-2-independent-investor.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png",
+      "bytes": 430381,
+      "sha256": "2ab5dfcfbd9d5f3108c5e8bf1b2f9ba64aed552cb6a3027964841bcc02d8d127",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/011-read-scanning-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png",
+      "bytes": 428801,
+      "sha256": "a5649955a98d48494a194b9b62cd6050a18384ea1f029efbc01ef2147e511629",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/012-read-navigation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png",
+      "bytes": 427900,
+      "sha256": "aa50209315667e681835ae2914e353bb5a1227864614cb852dd37f44c1d3ba84",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/013-read-terraforming-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png",
+      "bytes": 427266,
+      "sha256": "f6e69c2013f2dd5e29f1bbabcc61369765b5bc2813fc156d18095a2ea8de687a",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/014-read-investing-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png",
+      "bytes": 427766,
+      "sha256": "5fafe334b7833d01bf597e3140205f2bd8a46596f41ac3ec319bad6cdb6ea720",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/015-read-formations-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png",
+      "bytes": 427031,
+      "sha256": "331fdd5602f4de7f147ac327957a64d3d5ac0550b126077d6be340deddda963c",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/016-read-melee-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png",
+      "bytes": 425872,
+      "sha256": "833089830e53ae8756ab13015766bfb5d85ed67a92cd2323dee7a974f95ac120",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/017-read-recruiting-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png",
+      "bytes": 426664,
+      "sha256": "8f4e6344ceac50a119bd16e6befdec8e3de7baac141aebc728ebefabc1b0c9cc",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/018-read-innovation-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png",
+      "bytes": 718799,
+      "sha256": "16a87872ef0b4abde0a14295712289e3a7a940ade3356d9bfdb2615807e08885",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/019-close-without-order-1-market-envoy-campaign-device.png"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-economy-current-43090793266/short/test-results/stories/research-capability-guidance/short/linux-arm64/019-close-without-order-2-independent-investor.png",
+      "bytes": 407505,
+      "sha256": "a7725dd4ca7a6d1092a96c60263bb8917029961f651816800f6cc27eabbffce4",
+      "retainedGit": "a3bcac22ef110ff5eadc214bfb91ed0d5e221c2b:tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/019-close-without-order-2-independent-investor.png"
+    }
+  ],
+  "totalBytes": 582904836,
+  "freeBefore": 17899667456,
+  "freeAfter": 18484367360,
+  "removed": 348
+}

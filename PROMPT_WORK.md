@@ -943,3 +943,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete native short economy review and import only approved exact hashes with manifest, renderer and source checks; reuse retained originals.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete large economy visual inspection and import only source-bound approved references; retain compact provenance without duplicate archives.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reclaim byte-verified duplicate economy extracts after pushed Git retention; preserve manifests and exact reconstruction inventory.
