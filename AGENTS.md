@@ -2,6 +2,8 @@
 
 README.md, VISION.md, and CLUSTER_II_MVP.md are the design contract. IMPLEMENTATION_PLAN.md defines delivery. CLUSTER_I_DESIGN_REVIEW.md is historical evidence, not a forward requirement. Describe the design directly and assertively. Distinguish the design contract from implementation status.
 
+Implement tracer bullets: every increment connects a final-quality player-visible interaction to its real actions, reducers, persistence, and authorization. Match the approved mockups closely. Do not add temporary scaffolding, fallback implementations, fabricated state, or unused infrastructure. Mock encryption is the explicit development provider, exercised through the same complete interfaces as real encryption; it is not permission to mock services. Add the 3D renderer, campaign services, and their dependencies when their visible interaction ships.
+
 Record every user prompt concerning this project verbatim in PROMPTS.md, including corrections and follow-up requests. Append each prompt once, in conversation order, under the next `## Prompt N: Summary` heading. Use a 2–3 word summary, a blank line, and the verbatim prompt. Preserve spelling, punctuation, capitalization, and line breaks. Exclude assistant messages and automatically supplied environment context.
 
 Update the log before other project work. Never rewrite or remove entries, and never invent or duplicate prompts to satisfy a hook. Stage new entries with the related work.
