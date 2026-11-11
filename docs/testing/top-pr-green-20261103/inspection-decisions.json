@@ -37480,5 +37480,1276 @@
         "previouslyApproved": false
       }
     ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "958ee0c30ad5ff0e6a3b1de2fe271177bf1ecd72c4761eaf6bf07e73da3e7625",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/003-create-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/003-create-1-1-dawn-envoy-1.png",
+        "sha256": "958ee0c30ad5ff0e6a3b1de2fe271177bf1ecd72c4761eaf6bf07e73da3e7625",
+        "oldSha256": "fa073bee4ab5a5487a04eb7a2ba959b47d02bf8496c3920a3e2f8cbb782b1d97"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/004-choose-1-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/004-choose-1-1-1-dawn-envoy-1.png",
+        "sha256": "958ee0c30ad5ff0e6a3b1de2fe271177bf1ecd72c4761eaf6bf07e73da3e7625",
+        "oldSha256": "fa073bee4ab5a5487a04eb7a2ba959b47d02bf8496c3920a3e2f8cbb782b1d97"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "1e076c10c1f5ae4658a2ed06ee2c6182660e5ddb681aae3adf7cb3ad44632010",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/005-join-1-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/005-join-1-1-1-dawn-envoy-1.png",
+        "sha256": "1e076c10c1f5ae4658a2ed06ee2c6182660e5ddb681aae3adf7cb3ad44632010",
+        "oldSha256": "29b282b46b41661a68d6b079fbc786b2bece6a117eee36a9fe565c9a479118cf"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/015-join-2-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/015-join-2-1-1-dawn-envoy-1.png",
+        "sha256": "1e076c10c1f5ae4658a2ed06ee2c6182660e5ddb681aae3adf7cb3ad44632010",
+        "oldSha256": "62e7870c79ae53ec96e2aff2f09e15d840c03110a73a2fa611de477e2073636e"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3ee4f4c2441b4391094b186d3b2e263ffc22176e98717e23b1b2cd29a6d0576f",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/006-choose-1-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/006-choose-1-2-1-dawn-envoy-2.png",
+        "sha256": "3ee4f4c2441b4391094b186d3b2e263ffc22176e98717e23b1b2cd29a6d0576f",
+        "oldSha256": "3211caed07512a93f2731b68b79b71a4d2ecd929ab4d9c51288434cea0fefce6"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3dca37bfb909b3e67fd58573dd8b4f2f1ac81e7e36be8d5eabefc5260ebb9768",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/007-join-1-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/007-join-1-2-1-dawn-envoy-2.png",
+        "sha256": "3dca37bfb909b3e67fd58573dd8b4f2f1ac81e7e36be8d5eabefc5260ebb9768",
+        "oldSha256": "34fd7723e216b613976ad5f77d1c80563bcdc7f0165197e5ef4543df04cfb223"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/007-join-1-2-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/007-join-1-2-2-dawn-envoy-1.png",
+        "sha256": "3dca37bfb909b3e67fd58573dd8b4f2f1ac81e7e36be8d5eabefc5260ebb9768",
+        "oldSha256": "34fd7723e216b613976ad5f77d1c80563bcdc7f0165197e5ef4543df04cfb223"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/017-join-2-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/017-join-2-2-1-dawn-envoy-2.png",
+        "sha256": "3dca37bfb909b3e67fd58573dd8b4f2f1ac81e7e36be8d5eabefc5260ebb9768",
+        "oldSha256": "dedfe3255b3279e88959ec6688cd4a22b49d30395f4b726b835ce67d915377a7"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/017-join-2-2-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/017-join-2-2-2-dawn-envoy-1.png",
+        "sha256": "3dca37bfb909b3e67fd58573dd8b4f2f1ac81e7e36be8d5eabefc5260ebb9768",
+        "oldSha256": "dedfe3255b3279e88959ec6688cd4a22b49d30395f4b726b835ce67d915377a7"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "d2865a15491a38a5b5d31c096f06067159a41b63543fd80eca8bec53937f9967",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/008-choose-1-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/008-choose-1-3-1-dawn-envoy-3.png",
+        "sha256": "d2865a15491a38a5b5d31c096f06067159a41b63543fd80eca8bec53937f9967",
+        "oldSha256": "01e58eeee7e767538deb8d031c78cdfa29d84e6b4d3a7eec703e46e9d4fcd799"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "e6f8fdd66d1a6c3fac076483bbcb9017e69dde5aefbf7282933755d10875a931",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/009-join-1-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/009-join-1-3-1-dawn-envoy-3.png",
+        "sha256": "e6f8fdd66d1a6c3fac076483bbcb9017e69dde5aefbf7282933755d10875a931",
+        "oldSha256": "fe71573a8c3406378b2e5c11d868f3b1387ad34f04e57e244563f0cc6835de78"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/009-join-1-3-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/009-join-1-3-2-dawn-envoy-1.png",
+        "sha256": "e6f8fdd66d1a6c3fac076483bbcb9017e69dde5aefbf7282933755d10875a931",
+        "oldSha256": "fe71573a8c3406378b2e5c11d868f3b1387ad34f04e57e244563f0cc6835de78"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/019-join-2-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/019-join-2-3-1-dawn-envoy-3.png",
+        "sha256": "e6f8fdd66d1a6c3fac076483bbcb9017e69dde5aefbf7282933755d10875a931",
+        "oldSha256": "4a47ab0bd9317b275fcde1e9ccc1f59a7a9352989e3089237bf669b27f566d59"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/019-join-2-3-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/019-join-2-3-2-dawn-envoy-1.png",
+        "sha256": "e6f8fdd66d1a6c3fac076483bbcb9017e69dde5aefbf7282933755d10875a931",
+        "oldSha256": "4a47ab0bd9317b275fcde1e9ccc1f59a7a9352989e3089237bf669b27f566d59"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "597e3b54ee49c6f1a9b701930dd4229e8d7800fe3b8d965a39b65533ec9b04d4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/010-choose-1-4-1-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/010-choose-1-4-1-dawn-envoy-4.png",
+        "sha256": "597e3b54ee49c6f1a9b701930dd4229e8d7800fe3b8d965a39b65533ec9b04d4",
+        "oldSha256": "7cd734ad05d5edbb05011dccc7e0d6f366b133ae15c83c83579d275300d70007"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "afb217f602ba476ccbc39870eb962eb145f23a1edf0d4a12ae162ff02f716168",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/011-join-1-4-1-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/011-join-1-4-1-dawn-envoy-4.png",
+        "sha256": "afb217f602ba476ccbc39870eb962eb145f23a1edf0d4a12ae162ff02f716168",
+        "oldSha256": "0a8fca6c137f935fcaf76fcd3959206be7b8bec2685e40f0b33dde443be5efae"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/011-join-1-4-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/011-join-1-4-2-dawn-envoy-1.png",
+        "sha256": "afb217f602ba476ccbc39870eb962eb145f23a1edf0d4a12ae162ff02f716168",
+        "oldSha256": "0a8fca6c137f935fcaf76fcd3959206be7b8bec2685e40f0b33dde443be5efae"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-4-dawn-envoy-4.png",
+        "sha256": "afb217f602ba476ccbc39870eb962eb145f23a1edf0d4a12ae162ff02f716168",
+        "oldSha256": "0a8fca6c137f935fcaf76fcd3959206be7b8bec2685e40f0b33dde443be5efae"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "a4945a27f487ceff2f4f0756032921068c784b0f8999059170eafab0a89694ce",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/013-create-2-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/013-create-2-1-dawn-envoy-1.png",
+        "sha256": "a4945a27f487ceff2f4f0756032921068c784b0f8999059170eafab0a89694ce",
+        "oldSha256": "5a34f0083856bc6a300008677ceaf8bcc5baa435ded2d938236c9d3d8f07ce9f"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/014-choose-2-1-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/014-choose-2-1-1-dawn-envoy-1.png",
+        "sha256": "a4945a27f487ceff2f4f0756032921068c784b0f8999059170eafab0a89694ce",
+        "oldSha256": "5a34f0083856bc6a300008677ceaf8bcc5baa435ded2d938236c9d3d8f07ce9f"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3ed85b7bc9651ef4ca67ae799646743f05c75ad0cf44e4cf0c11d5c9b93b8bc9",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/016-choose-2-2-1-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/016-choose-2-2-1-dawn-envoy-2.png",
+        "sha256": "3ed85b7bc9651ef4ca67ae799646743f05c75ad0cf44e4cf0c11d5c9b93b8bc9",
+        "oldSha256": "bc96ec9f34f7d34ffd3729d2108cdd2008e048aa3d6a645f29812218286d9f93"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "9825d49b35ed27fef77224e3fa9b19343f9c31209b902526a2c037f3b0ec21af",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/018-choose-2-3-1-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/018-choose-2-3-1-dawn-envoy-3.png",
+        "sha256": "9825d49b35ed27fef77224e3fa9b19343f9c31209b902526a2c037f3b0ec21af",
+        "oldSha256": "1a150196220c770ade795cec98b5d39bd31105e9a6f9d24e1b9e224c1cf72189"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "04ef2dee64545c876db525ff999548175fc0b99615e65bbc20e3482fbcaf5054",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/020-choose-2-4-1-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/020-choose-2-4-1-dawn-envoy-5.png",
+        "sha256": "04ef2dee64545c876db525ff999548175fc0b99615e65bbc20e3482fbcaf5054",
+        "oldSha256": "2c8b83b6c38d207603371a717bc464dada578573cbf374d36f9201db13fed6e4"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/021-join-2-4-1-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/021-join-2-4-1-dawn-envoy-5.png",
+        "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+        "oldSha256": "3eb5b40533aecd558761c7242ca6df7747ac0ba64c745e2bb8d4724a047835cb"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/021-join-2-4-2-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/021-join-2-4-2-dawn-envoy-1.png",
+        "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+        "oldSha256": "3eb5b40533aecd558761c7242ca6df7747ac0ba64c745e2bb8d4724a047835cb"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-1-dawn-envoy-1.png",
+        "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+        "oldSha256": "3eb5b40533aecd558761c7242ca6df7747ac0ba64c745e2bb8d4724a047835cb"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-2-dawn-envoy-2.png",
+        "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+        "oldSha256": "3eb5b40533aecd558761c7242ca6df7747ac0ba64c745e2bb8d4724a047835cb"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-3-dawn-envoy-3.png",
+        "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+        "oldSha256": "3eb5b40533aecd558761c7242ca6df7747ac0ba64c745e2bb8d4724a047835cb"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-5-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/022-scheduled-rosters-5-dawn-envoy-5.png",
+        "sha256": "07978b7af21944fa4bb964536aaa7a594e0c1885421ff97504e1389d930c1949",
+        "oldSha256": "3eb5b40533aecd558761c7242ca6df7747ac0ba64c745e2bb8d4724a047835cb"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "755879a37f1ea9625f7a580caa9b8fed24eba790ea765181c5b4dd4018c1a326",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png",
+        "sha256": "755879a37f1ea9625f7a580caa9b8fed24eba790ea765181c5b4dd4018c1a326",
+        "oldSha256": "071903e2b8fef5641f155090781f2e9850ff9b44d94971f19853fb45fa23e8a9"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-2-dawn-envoy-2.png",
+        "sha256": "755879a37f1ea9625f7a580caa9b8fed24eba790ea765181c5b4dd4018c1a326",
+        "oldSha256": "071903e2b8fef5641f155090781f2e9850ff9b44d94971f19853fb45fa23e8a9"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-3-dawn-envoy-3.png",
+        "sha256": "755879a37f1ea9625f7a580caa9b8fed24eba790ea765181c5b4dd4018c1a326",
+        "oldSha256": "071903e2b8fef5641f155090781f2e9850ff9b44d94971f19853fb45fa23e8a9"
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-5-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-5-dawn-envoy-5.png",
+        "sha256": "755879a37f1ea9625f7a580caa9b8fed24eba790ea765181c5b4dd4018c1a326",
+        "oldSha256": "071903e2b8fef5641f155090781f2e9850ff9b44d94971f19853fb45fa23e8a9"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "78ee48318da58b419f16f5a53e0eab39b010b9635ad6ceacdc0fe409eb55a746",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-4-dawn-envoy-4.png",
+        "sha256": "78ee48318da58b419f16f5a53e0eab39b010b9635ad6ceacdc0fe409eb55a746",
+        "oldSha256": "5ea24e4a3f1be715d724205cc60b089d1c72ee23ef0a4663dfedce87289abcd5"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "b34a7df71b6c0c71ef7ad5b22181bdd33e1f4e216cbd0292fd6d950d23f9eee1",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-1-dawn-envoy-1.png",
+        "sha256": "b34a7df71b6c0c71ef7ad5b22181bdd33e1f4e216cbd0292fd6d950d23f9eee1",
+        "oldSha256": "5bbabf6212869bfa49ef301a524794b4cb1d0ac60f623ea5da9256ec85fdf372"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "0e1ba66ee29e79917ff3cdbfa7f1f07daf5e40b4092d368b33524ac0b4877b04",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-2-dawn-envoy-2.png",
+        "sha256": "0e1ba66ee29e79917ff3cdbfa7f1f07daf5e40b4092d368b33524ac0b4877b04",
+        "oldSha256": "af3090e77be09e3b9842687b0a5e514363decb61c2ce8d31f3c11e8fc8e63afa"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "57daa66ce8b1c8101b506f9a0c7f08ee1bfff448911d9abb35a7d6058545b04e",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-3-dawn-envoy-3.png",
+        "sha256": "57daa66ce8b1c8101b506f9a0c7f08ee1bfff448911d9abb35a7d6058545b04e",
+        "oldSha256": "de20389b1f873b93bf6ac7d9e11c38db1b2356ece974e87c3122f4e4188faa5d"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "7ae1266bec7d652bcd639e536287dcc172ad4c4ba6ffb002c2db205885d18faa",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-4-dawn-envoy-4.png",
+        "sha256": "7ae1266bec7d652bcd639e536287dcc172ad4c4ba6ffb002c2db205885d18faa",
+        "oldSha256": "4c8cd858bc22a600c4bff3624e48c3811f2c007b498703d39d7de80111ef3360"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "887dedec355f8889625c3c254e34ea2c5a90ed763396fc3de480f90dceb9fa80",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/026-started-rosters-5-dawn-envoy-5.png",
+        "sha256": "887dedec355f8889625c3c254e34ea2c5a90ed763396fc3de480f90dceb9fa80",
+        "oldSha256": "49d97a6ba28a57a31547f6df40dc409d4e18ae48b420b062d1afe619c557e403"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "ff4e593e5ff3d68de109428a91294a46c392ff5100383dd5db0807718207944f",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-1-dawn-envoy-1.png",
+        "sha256": "ff4e593e5ff3d68de109428a91294a46c392ff5100383dd5db0807718207944f",
+        "oldSha256": "ebb4315f38ebf84646d3f87d991569ab7d773fb09e525f21f962182978ec126f"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "8aa92514b0374ad93d1d173068ebfbaf792afe804deecba820762a14d1be3aa0",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-2-dawn-envoy-2.png",
+        "sha256": "8aa92514b0374ad93d1d173068ebfbaf792afe804deecba820762a14d1be3aa0",
+        "oldSha256": "1fd36cd32dfad0d91f110facb42fc8b816af04c3a5d2944683c65ed21d83aa94"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "7a64492ab96b1f036c81edb4c35e460847d84c26c83c032f6b13b7ce10db6164",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-3-dawn-envoy-3.png",
+        "sha256": "7a64492ab96b1f036c81edb4c35e460847d84c26c83c032f6b13b7ce10db6164",
+        "oldSha256": "0cce798a39b89b0f02187ab29176e8bbac4f404e57dc67cbff41e6e81f1b657e"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "83e971aa0c72fde28a7ddbd7e969f12cbd2d643af854fe85008be9ee3250a32d",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/027-homes-assigned-4-dawn-envoy-4.png",
+        "sha256": "83e971aa0c72fde28a7ddbd7e969f12cbd2d643af854fe85008be9ee3250a32d",
+        "oldSha256": "77a0d1c3c14cfb31ace1c3820074b21f18d3605c5ac0759e941963f7d29c716f"
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2b56f75ce66cde5457704430599dae5dc60fadc4613b6e4c931d8abe68b08075",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-1-dawn-envoy-1.png",
+        "sha256": "2b56f75ce66cde5457704430599dae5dc60fadc4613b6e4c931d8abe68b08075",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "81f2057e227370b90325d86626c68d6277aa8c901fc8d626f86de1cc9ddb429e",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-2-dawn-envoy-2.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-2-dawn-envoy-2.png",
+        "sha256": "81f2057e227370b90325d86626c68d6277aa8c901fc8d626f86de1cc9ddb429e",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "541944b5743e67e9127143a28d1c43d6caca967caa667d023d096a733bdaee09",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-3-dawn-envoy-3.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-3-dawn-envoy-3.png",
+        "sha256": "541944b5743e67e9127143a28d1c43d6caca967caa667d023d096a733bdaee09",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "67308e6c640b29fecba17781ff8594f751608982869e3e14fefcaf8d066baa0e",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-4-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/028-home-surface-forces-4-dawn-envoy-4.png",
+        "sha256": "67308e6c640b29fecba17781ff8594f751608982869e3e14fefcaf8d066baa0e",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "337b2f760f23251e0c6b01fa8968e1131d4ab665bad28830d3032c7b3f270325",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/029-single-membership-entry-1-dawn-envoy-4.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/029-single-membership-entry-1-dawn-envoy-4.png",
+        "sha256": "337b2f760f23251e0c6b01fa8968e1131d4ab665bad28830d3032c7b3f270325",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "3e122ad9943225f1200c67a862fd0fd894aa2fd4af8dbe7c43da5b7759d3da68",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/030-choose-last-campaign-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/030-choose-last-campaign-1-dawn-envoy-1.png",
+        "sha256": "3e122ad9943225f1200c67a862fd0fd894aa2fd4af8dbe7c43da5b7759d3da68",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/033-continue-exact-campaign-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/033-continue-exact-campaign-1-dawn-envoy-1.png",
+        "sha256": "3e122ad9943225f1200c67a862fd0fd894aa2fd4af8dbe7c43da5b7759d3da68",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "12bc28f6d9793b6b40bd745e5178a487f9c0f55ddbdbdfc911c1c4fa674c13b4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed all31 distinct desktop campaign originals. Faction selections, affinity values and claim actions readable; real roster membership/counts, scheduled versus awaiting-home versus began state remain distinct. Own Orbit/Surface readings preserve20fighters/20infantry,200credits/1.4science and0heldcredits; Continue names and commander match selected campaign. Full Close/Leave/Build controls contained. Background briefing text remains visible outside roster; existing singular seat grammar and bright map glow behind some selected names are recorded fidelity limitations, not new gameplay changes. Scoped regression approval only, not full concept fidelity, all-content reading or hosted cadence certification",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/031-multiple-membership-entry-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/031-multiple-membership-entry-1-dawn-envoy-1.png",
+        "sha256": "12bc28f6d9793b6b40bd745e5178a487f9c0f55ddbdbdfc911c1c4fa674c13b4",
+        "oldSha256": null
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/032-reload-last-selection-1-dawn-envoy-1.png",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+        "story": "campaign-scheduled-start",
+        "viewport": "desktop",
+        "reference": "tests/browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/032-reload-last-selection-1-dawn-envoy-1.png",
+        "sha256": "12bc28f6d9793b6b40bd745e5178a487f9c0f55ddbdbdfc911c1c4fa674c13b4",
+        "oldSha256": null
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "170c1459784d3076a3954e9a9ac6f39ee78965ebfc7f111479d5065f6e1278d3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "sha256": "170c1459784d3076a3954e9a9ac6f39ee78965ebfc7f111479d5065f6e1278d3",
+        "previousSha256": "170c1459784d3076a3954e9a9ac6f39ee78965ebfc7f111479d5065f6e1278d3",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "876bad6f866ba43c15c1e19666a064ec9866c4eceb7ee9c65bb035a875960fca",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "sha256": "876bad6f866ba43c15c1e19666a064ec9866c4eceb7ee9c65bb035a875960fca",
+        "previousSha256": "876bad6f866ba43c15c1e19666a064ec9866c4eceb7ee9c65bb035a875960fca",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "23571bebd6700b443407c113f3c15966440f779f1e622c5dff8671c90f87a586",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "sha256": "23571bebd6700b443407c113f3c15966440f779f1e622c5dff8671c90f87a586",
+        "previousSha256": "23571bebd6700b443407c113f3c15966440f779f1e622c5dff8671c90f87a586",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "8f663c516669e2fc86c49270f70e8d89110171dbce307e1b63949ddcec2260a8",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "sha256": "8f663c516669e2fc86c49270f70e8d89110171dbce307e1b63949ddcec2260a8",
+        "previousSha256": "8f663c516669e2fc86c49270f70e8d89110171dbce307e1b63949ddcec2260a8",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+        "previousSha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "previouslyApproved": false
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+        "previousSha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+        "previousSha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "previouslyApproved": false
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+        "previousSha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "017ed808fadfeabd1d6ec5a1b608bc414541c4e0774c55782d6faea5c2f2e1b6",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "sha256": "017ed808fadfeabd1d6ec5a1b608bc414541c4e0774c55782d6faea5c2f2e1b6",
+        "previousSha256": "017ed808fadfeabd1d6ec5a1b608bc414541c4e0774c55782d6faea5c2f2e1b6",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "e5677ad11a5d58d377c3f56dfbf6d896c3b059db650386ca5804c264056c088b",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "sha256": "e5677ad11a5d58d377c3f56dfbf6d896c3b059db650386ca5804c264056c088b",
+        "previousSha256": "e5677ad11a5d58d377c3f56dfbf6d896c3b059db650386ca5804c264056c088b",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "819315230e651f95f974974abfe7ce69e57880ef6ffdd84b7338daf298382279",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "sha256": "819315230e651f95f974974abfe7ce69e57880ef6ffdd84b7338daf298382279",
+        "previousSha256": "819315230e651f95f974974abfe7ce69e57880ef6ffdd84b7338daf298382279",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "2a4fcbd04b1f4378d3fe766e5407485427b6ab8b65c7b96b45544ff7c00cb22d",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "sha256": "2a4fcbd04b1f4378d3fe766e5407485427b6ab8b65c7b96b45544ff7c00cb22d",
+        "previousSha256": "2a4fcbd04b1f4378d3fe766e5407485427b6ab8b65c7b96b45544ff7c00cb22d",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "7bae1ee53ed913ffa6aa606153ad8d9034e9cc05f0227022d1771e29eb70d342",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "sha256": "7bae1ee53ed913ffa6aa606153ad8d9034e9cc05f0227022d1771e29eb70d342",
+        "previousSha256": "7bae1ee53ed913ffa6aa606153ad8d9034e9cc05f0227022d1771e29eb70d342",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "d046738f29cc7d9fa61c4a546141ecd9f0931eceb125848d0c10f59bbda169b4",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "sha256": "d046738f29cc7d9fa61c4a546141ecd9f0931eceb125848d0c10f59bbda169b4",
+        "previousSha256": "d046738f29cc7d9fa61c4a546141ecd9f0931eceb125848d0c10f59bbda169b4",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "c40717ce22a02cac9df04e0e2affdb78c01356cd08256ded46b231d56b11a691",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "sha256": "c40717ce22a02cac9df04e0e2affdb78c01356cd08256ded46b231d56b11a691",
+        "previousSha256": "c40717ce22a02cac9df04e0e2affdb78c01356cd08256ded46b231d56b11a691",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "374b84181d576fc857666db8e2a01785202bb736f54621a30115128a48251b01",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "sha256": "374b84181d576fc857666db8e2a01785202bb736f54621a30115128a48251b01",
+        "previousSha256": "374b84181d576fc857666db8e2a01785202bb736f54621a30115128a48251b01",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "6104815cda49d4e041737d6b36e2156be4817b6593c05ea0a8af9e55e6c15db1",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "sha256": "6104815cda49d4e041737d6b36e2156be4817b6593c05ea0a8af9e55e6c15db1",
+        "previousSha256": "6104815cda49d4e041737d6b36e2156be4817b6593c05ea0a8af9e55e6c15db1",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "24a0327103ecd7aabb74c7a68783642024625f2fa58204df436b24bf0779194a",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "sha256": "24a0327103ecd7aabb74c7a68783642024625f2fa58204df436b24bf0779194a",
+        "previousSha256": "24a0327103ecd7aabb74c7a68783642024625f2fa58204df436b24bf0779194a",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "sha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+        "previousSha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "previouslyApproved": false
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "sha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+        "previousSha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "sha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+        "previousSha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "previouslyApproved": false
+      },
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "sha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+        "previousSha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "a3182adadf6f7bddde5dbe5bb1e51b9d5dcca88b6dd87297a6632f11b50e86b3",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "sha256": "a3182adadf6f7bddde5dbe5bb1e51b9d5dcca88b6dd87297a6632f11b50e86b3",
+        "previousSha256": "a3182adadf6f7bddde5dbe5bb1e51b9d5dcca88b6dd87297a6632f11b50e86b3",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "949c09326e36f36902d8770f7b342452b04bbd5bb6e43bed4f6fea3250120441",
+    "disposition": "approved-regression",
+    "inspection": "Individually viewed native phone/short complete original. Historical tick195, own casualties and separate Orbit/Surface control readable, lower history/control facts intentionally reached through bounded scrolling. Current ownership/forces differ appropriately from immutable record; retained outer actions fully contained. No full animation, simultaneous whole-content or design-fidelity claim.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "sha256": "949c09326e36f36902d8770f7b342452b04bbd5bb6e43bed4f6fea3250120441",
+        "previousSha256": "949c09326e36f36902d8770f7b342452b04bbd5bb6e43bed4f6fea3250120441",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "842345c77f173dc6d73ecd15bce2bc513efcfa15690d9808dc2515e637514f15",
+    "disposition": "held-focus-outline",
+    "inspection": "Individually viewed native phone/short original. HOLD: lower gold keyboard outline of restored Arrival report opener is covered by adjacent system artwork; border-box focus assertion insufficient. Scoped inset outline fix55774982 under Linux validation, no baseline approval for this hash.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "sha256": "842345c77f173dc6d73ecd15bce2bc513efcfa15690d9808dc2515e637514f15",
+        "previousSha256": "842345c77f173dc6d73ecd15bce2bc513efcfa15690d9808dc2515e637514f15",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "dfd7f8707a41ba73ef2b6035bcbb2eed16c3cb84727cbd74daf70f624a33238b",
+    "disposition": "held-focus-outline",
+    "inspection": "Individually viewed native phone/short original. HOLD: lower gold keyboard outline of restored Arrival report opener is covered by adjacent system artwork; border-box focus assertion insufficient. Scoped inset outline fix55774982 under Linux validation, no baseline approval for this hash.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "sha256": "dfd7f8707a41ba73ef2b6035bcbb2eed16c3cb84727cbd74daf70f624a33238b",
+        "previousSha256": "dfd7f8707a41ba73ef2b6035bcbb2eed16c3cb84727cbd74daf70f624a33238b",
+        "story": "contextual-aftermath",
+        "viewport": "phone",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "fd66c51f810a09af2557ef8e4adb4a1a52b9554d70289e0387dc92eeb01a0ab6",
+    "disposition": "held-focus-outline",
+    "inspection": "Individually viewed native phone/short original. HOLD: lower gold keyboard outline of restored Arrival report opener is covered by adjacent system artwork; border-box focus assertion insufficient. Scoped inset outline fix55774982 under Linux validation, no baseline approval for this hash.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "sha256": "fd66c51f810a09af2557ef8e4adb4a1a52b9554d70289e0387dc92eeb01a0ab6",
+        "previousSha256": "fd66c51f810a09af2557ef8e4adb4a1a52b9554d70289e0387dc92eeb01a0ab6",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
+  },
+  {
+    "target": "9394f233",
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "sha256": "0d57d100310b28be76cdc0c41f2e1bdf25633a9cc2e3a61fd5ebacae479a2ad8",
+    "disposition": "held-focus-outline",
+    "inspection": "Individually viewed native phone/short original. HOLD: lower gold keyboard outline of restored Arrival report opener is covered by adjacent system artwork; border-box focus assertion insufficient. Scoped inset outline fix55774982 under Linux validation, no baseline approval for this hash.",
+    "covered": [
+      {
+        "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "previousImage": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "sha256": "0d57d100310b28be76cdc0c41f2e1bdf25633a9cc2e3a61fd5ebacae479a2ad8",
+        "previousSha256": "0d57d100310b28be76cdc0c41f2e1bdf25633a9cc2e3a61fd5ebacae479a2ad8",
+        "story": "contextual-aftermath",
+        "viewport": "short",
+        "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/short/test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "reference": "tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "previouslyApproved": false
+      }
+    ]
   }
 ]

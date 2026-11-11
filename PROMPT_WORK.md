@@ -915,3 +915,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect corrected Linux route-label originals and unexpected changed pixels against retained source pairs before any zero-science or aftermath promotion.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete retained contextual aftermath image review against real outcomes and source provenance without new downloads or execution.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the single source-bound contextual focus request and continue retained campaign-start visual review while Linux validation runs.
