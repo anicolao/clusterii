@@ -1,0 +1,196 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "source": {
+    "commit": "ec18de6b86f140c3172d32fe8c1760c78586b5f1",
+    "dirty": false,
+    "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+    "specSha256": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-labels-41943637871/large/test-results/stories/live-zero-science/large/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "013-form-0-1-fleet-marshal.png",
+      "sha256": "0e93e906fa8e1cdb5d224588f210c265e3b3c14b2f15e74d29d6b9b468bfcb8b",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "014-form-1-1-independent-marshal.png",
+      "sha256": "1a30b276cd418bf82920fff8512dbaf2e178c402dee082ab57a51c5a90e1ffe7",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "4603cdd6223f0294ac3384de8c25940eb5ec54c00ddd271af32a43339eef6b0c",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "016-formed-fleets-2-independent-marshal.png",
+      "sha256": "a707fb863ce2806ecc4aa3abb0004ef7d4fe5a334a6340b5be0b2a50399ad3d3",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "017-preview-route-0-1-fleet-marshal.png",
+      "sha256": "0f77a5fd686a97373e57d99e3a29a38855d7dc634b28abf85af3a36a6a58cc76",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "4fdf3e1853ff67da43a512338d428bc831bfa9e2910ad86ba8df7cf075289d27",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "019-preview-route-1-1-independent-marshal.png",
+      "sha256": "973262d1c471a6a4799865d7d671c5b3e41251f981d056c9dce819f566cb1382",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "020-commit-route-1-1-independent-marshal.png",
+      "sha256": "efa1be36981e4ef79330deba99fce57be22ae69cc698324f7553d6e6ef18620e",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "022-lost-orbit-1-fleet-marshal.png",
+      "sha256": "3f8f5941c71950ff3944d81ef029527f4fb402f576554b61d3f2f336bf8ad7d0",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "022-lost-orbit-2-independent-marshal.png",
+      "sha256": "acd57a9788102ae90d45deea994de12454ddb28c64410566a86cc7e2b618bb63",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "024-still-unfunded-1-fleet-marshal.png",
+      "sha256": "49f32117be3f31772e7cb686039464ae4260775c46e07fddea3d191a49508b43",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "024-still-unfunded-2-independent-marshal.png",
+      "sha256": "41527f2172351c970753045e95752f793800fb8121513fd1d1e72a80d49704ca",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "025-no-completion-estimate-1-fleet-marshal.png",
+      "sha256": "9faa885e16c7e78ad3be7bcb91572cfacd17361ebf25bc01e8a8b85490149b71",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "026-close-economy-1-fleet-marshal.png",
+      "sha256": "5ea8fdec1b87362637b7bc5f0671408dbc4fa534c73e1139bbd5f94e92a1aa84",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "027-zero-rate-normal-ledger-1-fleet-marshal.png",
+      "sha256": "260fa4fe9f81e441625fbc4e1b6632d25e728eac5f28d3615e03b9133072a737",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "027-zero-rate-normal-ledger-2-independent-marshal.png",
+      "sha256": "7bb21bc8cdbcaf36481be377f7f4ba0a842b599bd0e4e50f5426ec569d8eaad0",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-zero-rate-normal-totals-1-fleet-marshal.png",
+      "sha256": "260fa4fe9f81e441625fbc4e1b6632d25e728eac5f28d3615e03b9133072a737",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-zero-rate-normal-totals-2-independent-marshal.png",
+      "sha256": "d8c755b1e41a9efbed31bc446a33867170e0e8c85db1c653bb50fd63a2d53ee6",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "029-zero-rate-normal-return-1-fleet-marshal.png",
+      "sha256": "30b545944955753993541f47ff4e7c8b404f14500f1343692df648c744730ee3",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "029-zero-rate-normal-return-2-independent-marshal.png",
+      "sha256": "5c310fa8174a8f726240dd2a379f9c7b77704f706b1147cf6b64082813db0117",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "030-zero-rate-reduced-ledger-1-fleet-marshal.png",
+      "sha256": "260fa4fe9f81e441625fbc4e1b6632d25e728eac5f28d3615e03b9133072a737",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "030-zero-rate-reduced-ledger-2-independent-marshal.png",
+      "sha256": "7bb21bc8cdbcaf36481be377f7f4ba0a842b599bd0e4e50f5426ec569d8eaad0",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "031-zero-rate-reduced-totals-1-fleet-marshal.png",
+      "sha256": "260fa4fe9f81e441625fbc4e1b6632d25e728eac5f28d3615e03b9133072a737",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "031-zero-rate-reduced-totals-2-independent-marshal.png",
+      "sha256": "d8c755b1e41a9efbed31bc446a33867170e0e8c85db1c653bb50fd63a2d53ee6",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "032-zero-rate-reduced-return-1-fleet-marshal.png",
+      "sha256": "30b545944955753993541f47ff4e7c8b404f14500f1343692df648c744730ee3",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "032-zero-rate-reduced-return-2-independent-marshal.png",
+      "sha256": "5c310fa8174a8f726240dd2a379f9c7b77704f706b1147cf6b64082813db0117",
+      "previousSha256": null,
+      "changed": true
+    }
+  ],
+  "inspectionScope": "Every exact hash inspected or identical to a previously inspected hash; no full design, animation or release approval"
+}
