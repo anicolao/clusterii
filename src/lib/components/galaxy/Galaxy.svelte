@@ -1828,6 +1828,9 @@
       top: 90px;
     }
   }
+  .construction-panel.fleet-panel {
+    top: var(--command-rail-height);
+  }
   .galaxy-surface {
     height: 100svh;
     min-height: 0;

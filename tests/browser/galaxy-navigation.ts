@@ -135,6 +135,26 @@ export async function openForces(page: Page, count?: number, keyboard = false) {
   await expect(
     page.getByRole("region", { name: "Fleet preparation", exact: true }),
   ).toBeVisible();
+  // The campaign context occupies a second rail row on wider screens. DOM
+  // visibility alone does not detect the opaque fleet reader covering it.
+  await expect
+    .poll(() =>
+      page.locator(".fleet-panel").evaluate((panel) => {
+        const rail = document.querySelector(".command-rail");
+        const heading = document.querySelector("#galaxy-heading");
+        if (!rail || !heading) return false;
+        const panelBox = panel.getBoundingClientRect();
+        const railBox = rail.getBoundingClientRect();
+        const headingBox = heading.getBoundingClientRect();
+        return (
+          headingBox.height > 0 &&
+          headingBox.top >= 0 &&
+          headingBox.bottom <= railBox.bottom &&
+          panelBox.top >= railBox.bottom
+        );
+      }),
+    )
+    .toBe(true);
 }
 
 export async function openConstruction(page: Page, layer: "Orbit" | "Surface") {
