@@ -973,3 +973,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reclaim reviewed credit extraction duplicates after verifying every byte against pushed Git originals; preserve compact reconstruction provenance.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect retained fleet first-failure comparison pixels by bounded ZIP ranges before preparing complete current-source evidence.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete fleet journeys to the measured header repair with fresh outputs and bounded artifact retention.
