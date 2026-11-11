@@ -961,3 +961,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record current-source credit candidate run 43106912579 for confirmed strict failures, with 216 bounded captures and no automatic baseline approval.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Preserve the original November 4 credit dispatch record and give the November 11 request a unique run-bound evidence filename.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit remaining current fleet first-failure coverage and exact complete-journey selection while sole credit and required PR140 jobs execute.

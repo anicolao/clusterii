@@ -1,0 +1,179 @@
+{
+  "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "actualCollectedTests": [
+    {
+      "file": "browser/fleet-cargo.story.spec.ts",
+      "title": "Live fleet cargo transfers conserve private forces through reload",
+      "viewport": "phone"
+    },
+    {
+      "file": "browser/fleet-cargo.story.spec.ts",
+      "title": "Live fleet cargo transfers conserve private forces through reload",
+      "viewport": "desktop"
+    },
+    {
+      "file": "browser/fleet-cargo.story.spec.ts",
+      "title": "Live fleet cargo transfers conserve private forces through reload",
+      "viewport": "large"
+    },
+    {
+      "file": "browser/fleet-cargo.story.spec.ts",
+      "title": "Live fleet cargo transfers conserve private forces through reload",
+      "viewport": "short"
+    },
+    {
+      "file": "browser/fleet-route-recovery.story.spec.ts",
+      "title": "Interrupted route commands retain their original choices and identity",
+      "viewport": "phone"
+    },
+    {
+      "file": "browser/fleet-route-recovery.story.spec.ts",
+      "title": "Interrupted route commands retain their original choices and identity",
+      "viewport": "desktop"
+    },
+    {
+      "file": "browser/fleet-route-recovery.story.spec.ts",
+      "title": "Interrupted route commands retain their original choices and identity",
+      "viewport": "large"
+    },
+    {
+      "file": "browser/fleet-route-recovery.story.spec.ts",
+      "title": "Interrupted route commands retain their original choices and identity",
+      "viewport": "short"
+    },
+    {
+      "file": "browser/fleet-travel-catchup.story.spec.ts",
+      "title": "Paused fleet travel catches up exactly once after concurrent delayed delivery",
+      "viewport": "phone"
+    },
+    {
+      "file": "browser/fleet-travel-catchup.story.spec.ts",
+      "title": "Paused fleet travel catches up exactly once after concurrent delayed delivery",
+      "viewport": "desktop"
+    },
+    {
+      "file": "browser/fleet-travel-catchup.story.spec.ts",
+      "title": "Paused fleet travel catches up exactly once after concurrent delayed delivery",
+      "viewport": "large"
+    },
+    {
+      "file": "browser/fleet-travel-catchup.story.spec.ts",
+      "title": "Paused fleet travel catches up exactly once after concurrent delayed delivery",
+      "viewport": "short"
+    }
+  ],
+  "completeJourneys": [
+    {
+      "spec": "tests/browser/fleet-cargo.story.spec.ts",
+      "specSha256": "2dd06bc18e56c762b80e2801d1e2757570313636089db85db6c247be4e317805",
+      "story": "live-fleet-cargo",
+      "deadlineMs": 240000,
+      "completeStepCount": 16,
+      "playerViewsPerStep": 2,
+      "expectedCapturesPerViewport": 32,
+      "referencePngCounts": {
+        "phone": 32,
+        "desktop": 32,
+        "large": 32,
+        "short": 32
+      }
+    },
+    {
+      "spec": "tests/browser/fleet-route-recovery.story.spec.ts",
+      "specSha256": "606d6b63415dfc70034091bfed261c0e41bcaae61448df14fb43c2985bebd956",
+      "story": "interrupted-fleet-route",
+      "deadlineMs": 240000,
+      "completeStepCount": 20,
+      "playerViewsPerStep": 2,
+      "expectedCapturesPerViewport": 40,
+      "referencePngCounts": {
+        "phone": 40,
+        "desktop": 40,
+        "large": 40,
+        "short": 40
+      }
+    },
+    {
+      "spec": "tests/browser/fleet-travel-catchup.story.spec.ts",
+      "specSha256": "4af5646259515907806f7d659968382ce6473860d0af9011f5ae18e6aec8907c",
+      "story": "paused-fleet-travel",
+      "deadlineMs": 240000,
+      "completeStepCount": 17,
+      "playerViewsPerStep": 2,
+      "expectedCapturesPerViewport": 34,
+      "referencePngCounts": {
+        "phone": 34,
+        "desktop": 34,
+        "large": 34,
+        "short": 34
+      }
+    }
+  ],
+  "firstFailures": [
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-cargo.story.spec.ts:41:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture",
+      "reference": "tests/browser/story-baselines/live-fleet-cargo/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "pixels": 17337,
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "referenceAlreadyUpdated": false
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-route-recovery.story.spec.ts:58:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "pixels": 17337,
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "referenceAlreadyUpdated": false
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-travel-catchup.story.spec.ts:48:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "pixels": 17337,
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "referenceAlreadyUpdated": false
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-cargo.story.spec.ts:41:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture",
+      "reference": "tests/browser/story-baselines/live-fleet-cargo/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "pixels": 112509,
+      "oldSha256": "5211253d08a444730af9efe3d347813611866776c34454772f29f1f3c8b283da",
+      "currentSha256": "5211253d08a444730af9efe3d347813611866776c34454772f29f1f3c8b283da",
+      "referenceAlreadyUpdated": false
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-route-recovery.story.spec.ts:58:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "pixels": 112521,
+      "oldSha256": "5d38e56c93aaf4d647ccd01c75fd2a3611d2975540899e38462f7906715aba99",
+      "currentSha256": "5d38e56c93aaf4d647ccd01c75fd2a3611d2975540899e38462f7906715aba99",
+      "referenceAlreadyUpdated": false
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-travel-catchup.story.spec.ts:48:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "pixels": 112484,
+      "oldSha256": "300eae50430afaad15a41d39062f49b30f53dd53acf0d537ae4e9aafeca9bdaa",
+      "currentSha256": "300eae50430afaad15a41d39062f49b30f53dd53acf0d537ae4e9aafeca9bdaa",
+      "referenceAlreadyUpdated": false
+    }
+  ],
+  "expectedTotalViews": 424,
+  "captureCountBasis": "All story steps use two actual player views. Cargo has five initial steps, two complete five-step cargo cycles, and one recovery step; route has twenty steps and catchup seventeen. Existing references independently have 32/40/34 PNGs per viewport. Collection selects each journey once per viewport.",
+  "interpretation": "Six confirmed pixel first failures at current unchanged executable source, no actual image inspection yet. Shared formation appearance is a hypothesis, not an approved cause. Full story execution is necessary to expose masked later behavior and pixels.",
+  "nextEvidence": "After current credit evidence and required-run artifacts, use complete current-source original journeys if retained strict output cannot supply complete successful candidates. No old-source candidate promotion; each changed image requires inspection.",
+  "noDispatch": true,
+  "preservedRuns": [
+    43106912579,
+    43104256802,
+    43104256749,
+    43090488602
+  ]
+}
