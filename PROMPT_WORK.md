@@ -947,3 +947,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reclaim byte-verified duplicate economy extracts after pushed Git retention; preserve manifests and exact reconstruction inventory.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Diagnose current PR140 conversation acknowledgement failure from completed application log; retain compact log and artifact-upload failure provenance.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record sole pinned-Linux conversation diagnostic run 43099955148 and its immutable request, source identity and unchanged test selection.

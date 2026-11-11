@@ -1,0 +1,18 @@
+{
+  "run": 43099955148,
+  "branch": "investigate/pr140-conversation-20261111",
+  "request": "64ff7a73a962fdd2e18de661528e9fb96aebb697",
+  "executor": "66832c69cad4a5e11f4b59a2b0d2b29bae7563f0",
+  "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+  "selection": "tests/browser/conversations.spec.ts ordinary commanders negotiate through invitation, retry, revocation and recovery mock",
+  "collectionTests": 1,
+  "localGuardTestsPassed": 4,
+  "mode": "unchanged complete application case with trace on; no generation or baseline update",
+  "budgets": "Original 180-second test and five-second assertions, retries zero; 45-minute job bounds setup and artifact publication.",
+  "sourceEquality": "src/shared/functions/tests/package/bun.lock/Playwright/Firebase trees equal target; executor only adds isolated dispatch/guards/runner and two launcher routes.",
+  "retentionDays": 14,
+  "originalFailure": "43090488651/130765927472: conversation acknowledgement; browser artifact unavailable after CreateArtifact failed five times.",
+  "localExecutionConstraint": "Unrelated owned processes listen on 15001/19099/18080; not touched.",
+  "statusAtRecording": "queued",
+  "requiredPrState": "Application FAILURE; strict stories IN_PROGRESS; documentation/publication/generate SUCCESS. No PR140 restart."
+}
