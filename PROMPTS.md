@@ -343,3 +343,7 @@ OK explain the 'network timing' issue from 'Simultaneous combat'. this makes no 
 ## Prompt 39: Multiway Combat
 
 We were thinking more along the lines of generalizing these combat laws to handle multiple hostile participants instead of two opposing factions, so taht if multiple arrive and fight we could simulate that directly. Generalize and formalize your generalization for both land and space combat, and write MULTIWAY_COMBAT_SYSTEM.md explaining the approach
+
+## Prompt 40: Compare Gemini
+
+Compare your conclusions to Gemini's, highlight any important differences. https://share.gemini.google/8c43CZKXUu51
