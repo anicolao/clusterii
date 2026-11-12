@@ -1,0 +1,119 @@
+{
+  "head": "86ef8a1a5db22088da677ddbb21906b3a882d359",
+  "run": 43181778106,
+  "job": 131059241003,
+  "conclusion": "FAILURE",
+  "completedAt": "2026-11-12T11:33:00Z",
+  "logSha256": "8fa2dec9d1357ca36998ea6161d13cb392638bafc16adb8f769ecdf42a6d6c36",
+  "failures": [
+    {
+      "story": "science-rate-sources",
+      "viewport": "phone",
+      "frame": "014-earned-normal-ledger-1-chart-envoy",
+      "pixels": 13250,
+      "inspection": "Native expected/actual/diff viewed. Same words, values, outlines and geometry; different text raster inside ledger. Not approved; cause unproven."
+    },
+    {
+      "story": "galaxy-command-surface",
+      "viewport": "large",
+      "frame": "016-recover-accepted-orbit-order-1-chart-envoy",
+      "pixels": 1369772,
+      "inspection": "Full expected/actual/diff viewed downscaled. Differences concentrate in translucent background/gradient regions and foreground text raster. Counts, queue, balance and actions remain present. Not approved; source/paint cause unproven."
+    }
+  ],
+  "counts": {
+    "pixel": 2,
+    "missingReference": 0,
+    "timeout": 0,
+    "otherFirstFailures": 0
+  },
+  "evidence": {
+    "artifact": {
+      "id": 13940127776,
+      "node_id": "MDg6QXJ0aWZhY3QxMzk0MDEyNzc3Ng==",
+      "name": "illustrated-stories-verify-linux-arm64",
+      "size_in_bytes": 7221760497,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13940127776",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13940127776/zip",
+      "expired": false,
+      "digest": "sha256:867f80474fb7b9413d97575c29db9471f035df38a21f26b738db53e32811e550",
+      "created_at": "2026-11-12T11:32:57Z",
+      "updated_at": "2026-11-12T11:32:57Z",
+      "expires_at": "2027-02-10T08:17:52Z",
+      "workflow_run": {
+        "id": 43181778106,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "feat/admission-briefing-composition",
+        "head_sha": "86ef8a1a5db22088da677ddbb21906b3a882d359"
+      }
+    },
+    "rangeBytes": 58420939,
+    "entries": [
+      {
+        "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-large/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy-actual.png",
+        "size": 5108163,
+        "sha256": "6969da8316445fed1257a12e98422a3887e5ef1eb12dd9001fdc4182e0dd08b9",
+        "crc32": "cfa2be45"
+      },
+      {
+        "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-large/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy-diff.png",
+        "size": 2898834,
+        "sha256": "09be36e9c8bf84807a63124304dc89cd6882ce2ad9b8046f738f995c9511c377",
+        "crc32": "a4e191bb"
+      },
+      {
+        "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-large/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy-expected.png",
+        "size": 5109600,
+        "sha256": "bd83577fd5dc5e97fe67b6cbb5f86a11ff7230605baba8245528bd87ba36c8d2",
+        "crc32": "307abbb8"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy-actual.png",
+        "size": 222462,
+        "sha256": "e272e8fe1bf41afa1e76c4981c6ba14857685c00a5aa3eb72dea7fcea6716e0a",
+        "crc32": "82117e37"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy-diff.png",
+        "size": 54508,
+        "sha256": "73bc8159cc425a9a8dc85500dd53597afdf4be1e3cad209bd6e7d3c67923f687",
+        "crc32": "155ec571"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy-expected.png",
+        "size": 218996,
+        "sha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672",
+        "crc32": "7e5f98c4"
+      },
+      {
+        "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-large/error-context.md",
+        "size": 10121,
+        "sha256": "ee450be234be9c6c574f433fc9a7784916602e036f67700950013c844238d714",
+        "crc32": "6efffbd0"
+      },
+      {
+        "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-large/trace.zip",
+        "size": 44308287,
+        "sha256": "36cb80e14a91c90fac51f4d51a160ef8875fb595e85c6a7599938cf202f14f58",
+        "crc32": "d1c3132c"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/error-context.md",
+        "size": 10115,
+        "sha256": "41d7abcaa5165c5d6f62eaea2e907ee7415f314cda82c740cf3315cc8647f51e",
+        "crc32": "23572710"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/trace.zip",
+        "size": 6871795,
+        "sha256": "113d8a710d21fd4855f21f676b7f173da93f991d353a60cf3b280b6b86e81bea",
+        "crc32": "0eb73548"
+      }
+    ],
+    "integrity": "Exact HTTP Content-Range and API size; selected entries decoded with ZIP CRC and individual SHA256. Full archive SHA not verified; no local archive retained."
+  },
+  "transport": "First selective transfer reset after two complete PNGs. Bounded resume reused those files only after central-directory size and CRC verification; no full ZIP retained. rangeBytes describes successful resumed process, excluding earlier two entry transfers.",
+  "nextExperiment": "One complete unchanged pinned-Linux strict science phone journey and galaxy large journey at exact86ef references/source, retries0. Hypothesis: transient paint/compositing state rather than missing reference/source change. Exact repeat mismatch supports stable alternate rendering; exact pass is a non-reproduction, not a root-cause fix. Preserve all assertions/deadlines and traces; no baseline-guided selection.",
+  "expectedGitBinding": "Both retained expected PNGs equal exact86ef Git blobs."
+}

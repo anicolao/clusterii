@@ -1135,3 +1135,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain successful exact-head publication evidence while existing application and strict checks continue without interruption.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify and retain terminal passing application evidence on the integrated head while the sole strict story job continues.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Classify the two terminal integrated screenshot failures and selectively retain their comparisons and traces without downloading the full archive.
