@@ -289,7 +289,30 @@ test("Five commanders start two campaigns and recover their named active campaig
             );
         },
       },
-      verifications: [noErrors],
+      verifications: [
+        noErrors,
+        {
+          spec: "The underlying campaign manifest also acknowledges the overdue boundary before the complete scene is captured.",
+          check: async () => {
+            for (const page of pages) {
+              // Both production CampaignStartStatus instances own a real timer.
+              // The inert manifest remains painted behind the roster; waiting
+              // only for the foreground status can capture its previous tick.
+              await expect(
+                page
+                  .locator('section[aria-label="Waiting campaign"]')
+                  .getByRole("status", {
+                    name: "Campaign start",
+                    exact: true,
+                    includeHidden: true,
+                  }),
+              ).toContainText(
+                "Awaiting home assignment. Your seat is saved; this view updates automatically.",
+              );
+            }
+          },
+        },
+      ],
       views: pages.map((page, i) => view(page, aliases[i])),
     });
     await story.harness(

@@ -1,0 +1,21 @@
+{
+  "failedHead": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+  "failedRun": 43151818973,
+  "artifact": 13921678685,
+  "entry": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-desktop/trace.zip",
+  "trace": "0-trace.trace",
+  "observation": "At before/after call1083 and before call1085, foreground roster Campaign start says Awaiting home assignment while underlying Waiting campaign manifest says Starts. After screenshot call1085 it says Awaiting home assignment too. Both components use independent 1000ms timers in CampaignStartStatus.svelte.",
+  "image": "Foreground roster identical; background objective/departure text shifts24px. The scene was captured before both visible surfaces acknowledged the same browser-clock boundary.",
+  "correction": "Add acknowledgement assertion for underlying actual CampaignStartStatus in existing awaiting-assignment step before capturing any of five viewpoints. Inert region is queried with includeHidden because it remains painted; no DOM mutation, fake clock advancement, sleeps, timeout/comparator relaxation or production change.",
+  "preserved": "Original foreground acknowledgement, noErrors, all real scheduler/receipt/campaign assertions,50 views and300s story budget retained.",
+  "validation": "Pending bounded complete four-size journey and unchanged required CI. No baseline approved from this failure.",
+  "localValidation": {
+    "check": "0 errors,1 pre-existing FleetRoute accessibility warning; functions tsc exit0",
+    "storyPolicy": "Full existing command exit0 including policy unit suite, actual policy and four path-resolution browser tests",
+    "prettier": "Changed story passes",
+    "policyLog": {
+      "bytes": 11334,
+      "sha256": "16e9df67e8730970cb52c5a4d20de22e06bc79810bcefd4822063bf3a9ad83c8"
+    }
+  }
+}
