@@ -1,0 +1,917 @@
+{
+  "run": 43124420572,
+  "target": "7f841eccbd94f42c76c832251b371f9110f9125d",
+  "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+  "viewport": "phone",
+  "coveredImages": 83,
+  "distinctOriginalsViewed": 37,
+  "disposition": "Approved exact phone hashes for scoped regression only; no whole-family import until remaining viewports inspected.",
+  "inspection": "All37 distinct phone originals individually viewed at393x852, including ordinary and recovery exact duplicates. Rail remains above construction panel. Construction price69/reservation131, tick completion145, base cancellation refund69 and recovered147.8 visible. Market invalid175/150 and corrected100 allocations, input focus outlines, scheduled/applied ticks, disabled duplicate controls, retained accepted orders and final Build on surface keyboard ring readable. Pending button wraps Awaiting receipt by words without mid-word truncation. Explicit rule/outcome readings deliberately scroll adjacent nonfocused content out of view. Not automatic all-content visibility, full design, normal motion or authenticated foreign-read proof.",
+  "groups": [
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+        "sha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+        "oldSha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/029-return-to-development-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/029-return-to-development-1-builder-envoy.png",
+        "sha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+        "sha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+        "oldSha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/029-return-to-development-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/029-return-to-development-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/030-reserve-build-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/030-reserve-build-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/012-pending-build-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/012-pending-build-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/013-recover-pending-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/015-reserve-build-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/015-reserve-build-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/016-reload-reservation-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/016-reload-reservation-2-independent-builder.png",
+        "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+        "oldSha256": "4fae16010dcd9b782d57e9eb00af237e270520bc972b6505399d1ff4c8f740be",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+        "sha256": "8155cc7a102dfc04dcf5f6f6c3aba42c6d25c2b04300e4256b70ca7108a5a4a3",
+        "oldSha256": "78df427d2526381640898e9c5cb5c28184e200858c110f1c08706c4a1bd9560a",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+        "sha256": "a0bda0afba6d7c592909e3bed5f1f1c62469d7d09a9851363de6abddadab6cc9",
+        "oldSha256": "68428451e7e467347196f599e3d1f629569c93947ea147d3dd0faca08b27fec3",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+        "sha256": "067700f09b729cc45f620b828ec7be7c73a20fe97456dcbcd1b2ff9d4fa29094",
+        "oldSha256": "72cfce33c64925cef48982764b7005bc55c8e5da947cbf589f1ccfb863cb0499",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+        "sha256": "e84ed9cfad062b46d4f0537d184d0b8cfb41748912d054fdde76740c2a989414",
+        "oldSha256": "72cfce33c64925cef48982764b7005bc55c8e5da947cbf589f1ccfb863cb0499",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+        "sha256": "59709ed20e85bc316fa73d924624850d814277f6c36eb6362e541e44de564ed3",
+        "oldSha256": "a81081f78e123e46533cac3f846448eb1274d3fbf141cb7b3529413a9170b7c9",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+        "sha256": "2a98bad429c7fad1f3a22ab19a706784ef71d486a9a9ff7e66c94023b51e3bcc",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+        "sha256": "5e4e9dff2af09d25780c8fb033f2dec4d6385f909aca049cce62a86c08602ad7",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+        "sha256": "f23de6cdda32b40e18c6da049b0b408f489994a5b162a64f15ec11fb85ff6763",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+        "sha256": "2614cb7369de5aa0b96506fc6943693e7b0f6b25deebb8f2b0f72c303a827df8",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+        "sha256": "d7bd733996e18b5d2b92015af4d819b32bb7298444186fbe43663a12000dfcbb",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+        "sha256": "fa585b6a73861f0622071ff48e3ba780ec493fe6b226abbb080fce73340f4651",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+        "sha256": "621e5e993eef93b08aab9871f48076285c6909a6f113b6359ea7827610131fca",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+        "sha256": "9cdd008015080bb4c0a1274a213cb0257c4030f4af4e51d6176a73deab5cfa4a",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+        "sha256": "d91395daee3b2209add2d149c4f002d95df8374b15e8c17adc5675d1d29b69aa",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+        "sha256": "f0f1fa656b09c8a9a8fc53f0e5a40c60fa3f692ea134dc0daf7aa51b9edf70c9",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+        "sha256": "307570055328a9c8649191ef8a9f5f50db96605c891672328b2e8139a29daf84",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+        "sha256": "2cdd77151cf3258334481bdb54f9b224d8962a405d04a395983ce3c5b8afe8f1",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+        "sha256": "8994d40b489b8f0cd68ee6f5f6c734290167f6c019bb03aed1c40bd8ac0ef49a",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/030-reserve-build-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/030-reserve-build-1-builder-envoy.png",
+        "sha256": "e1e6d55c50548609bc36b7f718bcd8d8c4eeb09127389e862d6f8c96078ef9e6",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+        "sha256": "26c3b6e0dc3550e525de5d10281c3ac88b34b6978df3747acc7d8e7c7b0033af",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+        "sha256": "c935cd27b089b595a2fcda036b9adc380412de3461f910b53370164cd5a4c942",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+        "sha256": "01387b043f9d97f0a177f84ebf5d09cde9ab106a4e249004902b364037f712f9",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+        "sha256": "01387b043f9d97f0a177f84ebf5d09cde9ab106a4e249004902b364037f712f9",
+        "oldSha256": "0cafe4f914dc5bb0f8f3eb6c7ff4190b95a3f579fdc79085fc481372e7ad462c",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/035-completed-build-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/035-completed-build-1-builder-envoy.png",
+        "sha256": "b35a29047562969f17932804404c56d0884edd459096cf587c97e691cfaf2869",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/018-completed-build-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/018-completed-build-1-builder-envoy.png",
+        "sha256": "b35a29047562969f17932804404c56d0884edd459096cf587c97e691cfaf2869",
+        "oldSha256": "f242819e7ba16ba850457d5e849fe11d666500e2e6ee66d0c3a81d2f2a8dc8cd",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/035-completed-build-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/035-completed-build-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/039-cancel-base-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/039-cancel-base-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/018-completed-build-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/018-completed-build-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": "d34b5a0b165597acacaa616386866df1936c1b77850e1c99cf4b9b53da0883e1",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": "d34b5a0b165597acacaa616386866df1936c1b77850e1c99cf4b9b53da0883e1",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/020-cancel-base-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/020-cancel-base-2-independent-builder.png",
+        "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+        "oldSha256": "d34b5a0b165597acacaa616386866df1936c1b77850e1c99cf4b9b53da0883e1",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+        "sha256": "087f7b840d3fc1932acc8986b9e45b0d8352e364b0c75c37b2e0c80e0aa8d8a8",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+        "sha256": "c60b13b8978e42f60e6b109f34d07a0324fe8b1844416ad273dd7457ab7f10ab",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+        "sha256": "1c47fe0a7c973375375301f612143cea26e72dafd2f9c3194147b1c7938bc106",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+        "sha256": "1c47fe0a7c973375375301f612143cea26e72dafd2f9c3194147b1c7938bc106",
+        "oldSha256": "dc6e79b82c88adff323cf0b8518a7325ca879c1f937f2192511fe21bfea6b773",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/039-cancel-base-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/039-cancel-base-1-builder-envoy.png",
+        "sha256": "4a265eb7aa47e1d5418e3f7be4b3c5d321212225fb799cc1e6930d93494de740",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/020-cancel-base-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/020-cancel-base-1-builder-envoy.png",
+        "sha256": "4a265eb7aa47e1d5418e3f7be4b3c5d321212225fb799cc1e6930d93494de740",
+        "oldSha256": "d193911a8c76f2eab6b5a2c8c32b9404518a020866df3a96a5a60c93b050c822",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+        "sha256": "759a7780b11924f5080f86b9e3aec169f741fb9eccb7febdb482233ffc7d49f4",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+        "sha256": "759a7780b11924f5080f86b9e3aec169f741fb9eccb7febdb482233ffc7d49f4",
+        "oldSha256": "4595f1dad915a629206747f30868e346180956f5d1f0487dc5bac1a7c18fc216",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-2-independent-builder.png",
+        "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+        "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-2-independent-builder.png",
+        "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/022-cancelled-base-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/022-cancelled-base-2-independent-builder.png",
+        "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+        "oldSha256": "ef3ded6a381fb65075f05f330a60a38c490d8816079994668e1670515e9753ad",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+        "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+        "oldSha256": "ef3ded6a381fb65075f05f330a60a38c490d8816079994668e1670515e9753ad",
+        "changed": true,
+        "missing": false
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/024-keyboard-return-2-independent-builder.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/024-keyboard-return-2-independent-builder.png",
+        "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+        "oldSha256": "ef3ded6a381fb65075f05f330a60a38c490d8816079994668e1670515e9753ad",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+        "sha256": "c49f9d27a3903317126cc34837ea0449186a78ee7c6a986ad778c44912efe9cd",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+        "sha256": "c49f9d27a3903317126cc34837ea0449186a78ee7c6a986ad778c44912efe9cd",
+        "oldSha256": "3f462c65b9b96867730cccb2e84e9fc4321f508cda4ddd8ec7afcd340be31960",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-ordinary",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+        "sha256": "52ffc6b30b40315103d2d7d769c256673d7dce4edcac73f6c70e03b7a549d1d0",
+        "oldSha256": null,
+        "changed": true,
+        "missing": true
+      },
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+        "sha256": "52ffc6b30b40315103d2d7d769c256673d7dce4edcac73f6c70e03b7a549d1d0",
+        "oldSha256": "1d3dde838d86511421cca6bcb45659fc46f47350a9b039f58530ec8b93e628e1",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/012-pending-build-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/012-pending-build-1-builder-envoy.png",
+        "sha256": "a14e54ec21542f1f2ea7263ab129463470082c459c352001aac1208fe0dbe92e",
+        "oldSha256": "d4b390be89b5ddf56ed23a055a003ae16576a2632db1cf3fc4d3f94a4fba07e7",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+        "sha256": "d767a0ea67473213ce54e71ce0048bab1892a5ea7e9c4709840058aa9e65d175",
+        "oldSha256": "7c7508ce42a5b0ee3b7cb7b0cd844a3580d734f302f7fb43adda803052c36bd9",
+        "changed": true,
+        "missing": false
+      }
+    ],
+    [
+      {
+        "viewport": "phone",
+        "story": "live-construction-recovery",
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/015-reserve-build-1-builder-envoy.png",
+        "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/015-reserve-build-1-builder-envoy.png",
+        "sha256": "228c9f5eb5a836a4ba696ee4d09e4947c1b7b49cd4223017236c94d8a4d9bbf1",
+        "oldSha256": "47166c2b47c3f6a01814bd3710fff853cb641f7735caf2d017f494e3282ce44e",
+        "changed": true,
+        "missing": false
+      }
+    ]
+  ],
+  "originalJobConclusion": "failure due post-gameplay manifest path lookup; original8manifest passed results independently verified, no status rewrite."
+}
