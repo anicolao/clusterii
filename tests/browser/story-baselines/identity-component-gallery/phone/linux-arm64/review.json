@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/gallery-current-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "identity-component-gallery",
   "renderer": {
@@ -29,160 +29,118 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "commit": "83dd576d9f30181750181f99318f064628d80def",
     "dirty": false,
     "spec": "tests/browser/identity-gallery.story.spec.ts",
     "specSha256": "c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/identity-component-gallery/phone/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "target": "6fd3f0baa14ab6c30631a9e38fad7396548d2dbc",
+  "run": 43126032986,
   "captures": [
     {
       "image": "001-open-gallery-1-developer-gallery-scope.png",
       "sha256": "84f5d58df75a182af8c6b32fea7b3cc7ffd7f9587e38d98336eb8af342ca6a2d",
-      "previousSha256": "4d5e423f6ae1dcd3c8a0752ce98a0ad915baf5aa68ff1f7fd408818ddc14f60b",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "002-navigation-0-1-developer-play-keyboard-focus.png",
       "sha256": "a67cf67442c0aef6a95545a0dfda295342b5020f7c96bd696afbe31492aa859a",
-      "previousSha256": "eace9956900e14e3cd0a3b4ac05a3b7e552d301aa2653c6a5a2e29bd442b8155",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
       "sha256": "c7084eea33d6c4421a0edfcb87e187776d8e2e32c393ecd8f8f9e6e700f766df",
-      "previousSha256": "db822b34358f9b2a7fcb1e0fe0b7c44720ce9953d0163f7326d254fe24f0af7a",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
       "sha256": "25300bc60cf68fe368b246f7c2a73f8ffea41ab8383c8e744b31897f17e5f483",
-      "previousSha256": "01c8ca808ec26e013bb14d1cf3ae4e1494b4243ffa9f7c3e934850063139ed8c",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "005-navigation-pending-1-developer-pending-navigation.png",
       "sha256": "c68275b0b97a8f3f0c3d92346c5b24c62596ca9b3e471420147315e495ac4487",
-      "previousSha256": "85885edb6b570b1ed64609d5a3e88d181fae041087c3f1a7a8e2063d35d24c4c",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "006-action-primary-1-developer-primary-action-states.png",
       "sha256": "571c1500bb19d4389e352af47516d5158756347e7285af357fb68ba7e0ac574f",
-      "previousSha256": "c603b8e604305579251e4aebccb6a2808447842d87a24f3300c6d4121c753f13",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "007-action-secondary-1-developer-secondary-action-states.png",
       "sha256": "793d5b58bd9b2ebcf7b35411a77c6a70d47616a900b250b4d8e27b8e09aacecb",
-      "previousSha256": "cac56fe76fb4060e47822f7b50d4787ded3ff3183762c343507772360482adcb",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "008-action-quiet-1-developer-quiet-action-states.png",
       "sha256": "c9e0d94ce67e3aa8e9e566f79800cf58179b119d2a01fc6353e3724d6a0b3633",
-      "previousSha256": "11e3149006077c481bccd93e7ad00e1dfe14a41b03ce6ee2d5e84c47b313b3ef",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "009-chapter-selected-1-developer-selected-chapter.png",
       "sha256": "ccd13be2aa29afb1a25dd7ff3a987a13ab78e434e3f9468e6390053e61cf6abf",
-      "previousSha256": "b211cd336fa5674281925c89fbd43e7857a5efffedad1b07394890ddd8224222",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "010-identity-fields-1-developer-editable-identity.png",
       "sha256": "6a5c22e198dd25a712ceaad63f122c87cb91a78fb93ae5fc4e24e7a3eb6c9569",
-      "previousSha256": "54b08ad20e537982ef28dacaaedfc62518827bad88f2cad0aef79692e89a8678",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "010-identity-fields-2-developer-validation-and-pending-draft.png",
       "sha256": "77a4c9a868f0f5da03c6cc718335a77c521ed69986732019acd4e291d8011c1d",
-      "previousSha256": "1421c93bf15f05142bed97f91987426094407c586ff9152dc7f135a0c72a27fa",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "011-portrait-selected-1-developer-selected-and-focused-portrait.png",
       "sha256": "de4e1f48443be2a7fdc0ab68338e90f0015595461bf191e99af281cb91c1de84",
-      "previousSha256": "de4e1f48443be2a7fdc0ab68338e90f0015595461bf191e99af281cb91c1de84",
-      "changed": false,
-      "approval": "unchanged inherited reference"
+      "changed": false
     },
     {
       "image": "012-portraits-pending-1-developer-disabled-portraits.png",
       "sha256": "cec7ec33844b6bf0ff09f3286123e10a64db6268c80fed5537ac4c3ac17900e0",
-      "previousSha256": "cec7ec33844b6bf0ff09f3286123e10a64db6268c80fed5537ac4c3ac17900e0",
-      "changed": false,
-      "approval": "unchanged inherited reference"
+      "changed": false
     },
     {
       "image": "013-feedback-recovery-1-developer-identity-acknowledgement.png",
       "sha256": "f67e165fe1df8e7d70cff797a60b4c02f9b3b644e77ed35d9fb8d2e6b7f23298",
-      "previousSha256": "f67e165fe1df8e7d70cff797a60b4c02f9b3b644e77ed35d9fb8d2e6b7f23298",
-      "changed": false,
-      "approval": "unchanged inherited reference"
+      "changed": false
     },
     {
       "image": "013-feedback-recovery-2-developer-conflict-recovery.png",
       "sha256": "14c4bb2191b5da2c27855775ee706126f840eb1459305f336a7a9122e9563a23",
-      "previousSha256": "2f286580d2f7d6e1af86d84cebebf179c3d7e36561661ded7d73533ecd774e24",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "013-feedback-recovery-3-developer-network-remedy.png",
       "sha256": "a3e06e8b1b05fa22845b796c354590ff40244af091eb100f8f9635ee176db583",
-      "previousSha256": "4e5f813856513dc458fd989983ca12d29771a948e8734902740dabd9593bcb0a",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "014-research-disclosure-1-developer-applied-research-disclosure.png",
-      "sha256": "caadf93825af8a8ff69b506bcee8db4b496ed3974fc12e2564d1287049594975",
-      "previousSha256": "a6dcd4cc43e9283ec6e26348d8e3e236576cb8e6d321e57d88c1b05f79bbbbbd",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0",
+      "changed": true
     },
     {
       "image": "015-research-disclosure-close-1-developer-closed-research-disclosure.png",
-      "sha256": "536397cd0ccc015295fdd8aa8695b0f35e78a7c3b88d9d8b4e2453655f674165",
-      "previousSha256": "cf7ab50b722c2db825097545dfefdd9c3be1dd1cd2bec87a5c6255b2afb56f95",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "94b158c8a1f6ac3a250c9bbbe4e692eccb436f27dc891deb9a4fa0c20a7c461f",
+      "changed": true
     },
     {
       "image": "016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
       "sha256": "3b60d49852c90c4734d78f651421d0570d8098c7c570ed4e3ba42aaa718dba7d",
-      "previousSha256": "3b60d49852c90c4734d78f651421d0570d8098c7c570ed4e3ba42aaa718dba7d",
-      "changed": false,
-      "approval": "unchanged inherited reference"
+      "changed": false
     },
     {
       "image": "017-icon-inventory-1-developer-shared-glyph-inventory.png",
       "sha256": "2bdc43f115548f30013864d479f32cec11e7cd1c7f26e15b9f192b7a46643d5b",
-      "previousSha256": "27ebb352218853dc8fcfc5e358981c5f412c2696f86ab41f74e606398d0cf438",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     },
     {
       "image": "018-asset-provenance-1-developer-asset-provenance.png",
       "sha256": "bea8b8639ab0d0b48aff6108a88f022e48063d0b8bcd949a62bab71aed138c16",
-      "previousSha256": "018dfc005e254a7b68e1170471b20c9b56e1c3ae01d7dcda500a6522b7089588",
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "changed": false
     }
   ]
 }

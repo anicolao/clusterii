@@ -1,0 +1,1846 @@
+[
+  {
+    "run": 43126032986,
+    "artifact": {
+      "id": 13902893436,
+      "node_id": "MDg6QXJ0aWZhY3QxMzkwMjg5MzQzNg==",
+      "name": "top-pr140-gallery-current-candidates-phone-83dd576d9f30181750181f99318f064628d80def",
+      "size_in_bytes": 2241880,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13902893436",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13902893436/zip",
+      "expired": false,
+      "digest": "sha256:895935db71fcffbd8d54cebc00bc4e6467c2f67d679939ea0d43babf2132f018",
+      "created_at": "2026-11-12T00:25:09Z",
+      "updated_at": "2026-11-12T00:25:09Z",
+      "expires_at": "2026-11-26T00:25:07Z",
+      "workflow_run": {
+        "id": 43126032986,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-gallery-current-20261112",
+        "head_sha": "83dd576d9f30181750181f99318f064628d80def"
+      }
+    },
+    "archiveSha256": "895935db71fcffbd8d54cebc00bc4e6467c2f67d679939ea0d43babf2132f018",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/phone/gallery-current/firestore-debug.log",
+        "size": 1014,
+        "crc32": "ece91f67",
+        "sha256": "bcba31e66419546cea8217501fb4a1e4a5ba1b983fc76084655b2d53bc9ea976",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/phone/gallery-current/result.json",
+        "size": 165,
+        "crc32": "de3e4b85",
+        "sha256": "c1a87afe5b0d8d0f14e5e6e436ad04250bcd391d2e784dd78d17ee14c65b91c0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/phone/gallery-current/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/attachments/Illustrated-story-2c33c18b37804cf5d3e53153400edd01bec4b568.md",
+        "size": 13723,
+        "crc32": "f003c01b",
+        "sha256": "dac6f663d7751d5c174fed2de378efcd771dd48b1ff809c321ceca4ce7e2f6dd",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+        "size": 91354,
+        "crc32": "679ef990",
+        "sha256": "84f5d58df75a182af8c6b32fea7b3cc7ffd7f9587e38d98336eb8af342ca6a2d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+        "size": 124010,
+        "crc32": "3147ec51",
+        "sha256": "a67cf67442c0aef6a95545a0dfda295342b5020f7c96bd696afbe31492aa859a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+        "size": 122630,
+        "crc32": "33cb3db2",
+        "sha256": "c7084eea33d6c4421a0edfcb87e187776d8e2e32c393ecd8f8f9e6e700f766df",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+        "size": 118428,
+        "crc32": "f645164d",
+        "sha256": "25300bc60cf68fe368b246f7c2a73f8ffea41ab8383c8e744b31897f17e5f483",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/005-navigation-pending-1-developer-pending-navigation.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+        "size": 124053,
+        "crc32": "9aa40c70",
+        "sha256": "c68275b0b97a8f3f0c3d92346c5b24c62596ca9b3e471420147315e495ac4487",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/006-action-primary-1-developer-primary-action-states.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+        "size": 63931,
+        "crc32": "29ae818d",
+        "sha256": "571c1500bb19d4389e352af47516d5158756347e7285af357fb68ba7e0ac574f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/007-action-secondary-1-developer-secondary-action-states.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+        "size": 44856,
+        "crc32": "175e9022",
+        "sha256": "793d5b58bd9b2ebcf7b35411a77c6a70d47616a900b250b4d8e27b8e09aacecb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/008-action-quiet-1-developer-quiet-action-states.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+        "size": 47113,
+        "crc32": "9bc32573",
+        "sha256": "c9e0d94ce67e3aa8e9e566f79800cf58179b119d2a01fc6353e3724d6a0b3633",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/009-chapter-selected-1-developer-selected-chapter.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+        "size": 87692,
+        "crc32": "297909a6",
+        "sha256": "ccd13be2aa29afb1a25dd7ff3a987a13ab78e434e3f9468e6390053e61cf6abf",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/010-identity-fields-1-developer-editable-identity.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+        "size": 87942,
+        "crc32": "274e7541",
+        "sha256": "6a5c22e198dd25a712ceaad63f122c87cb91a78fb93ae5fc4e24e7a3eb6c9569",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+        "size": 152182,
+        "crc32": "13b1e9d6",
+        "sha256": "77a4c9a868f0f5da03c6cc718335a77c521ed69986732019acd4e291d8011c1d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+        "size": 218461,
+        "crc32": "cc4db1eb",
+        "sha256": "de4e1f48443be2a7fdc0ab68338e90f0015595461bf191e99af281cb91c1de84",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+        "size": 222190,
+        "crc32": "46c2a553",
+        "sha256": "cec7ec33844b6bf0ff09f3286123e10a64db6268c80fed5537ac4c3ac17900e0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+        "size": 112353,
+        "crc32": "6f1991c8",
+        "sha256": "f67e165fe1df8e7d70cff797a60b4c02f9b3b644e77ed35d9fb8d2e6b7f23298",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+        "size": 69888,
+        "crc32": "3f6d67c9",
+        "sha256": "14c4bb2191b5da2c27855775ee706126f840eb1459305f336a7a9122e9563a23",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-3-developer-network-remedy.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+        "size": 91709,
+        "crc32": "136a77f3",
+        "sha256": "a3e06e8b1b05fa22845b796c354590ff40244af091eb100f8f9635ee176db583",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+        "size": 51514,
+        "crc32": "8d531c82",
+        "sha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+        "size": 53594,
+        "crc32": "e565c645",
+        "sha256": "94b158c8a1f6ac3a250c9bbbe4e692eccb436f27dc891deb9a4fa0c20a7c461f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+        "size": 218947,
+        "crc32": "7a24f631",
+        "sha256": "3b60d49852c90c4734d78f651421d0570d8098c7c570ed4e3ba42aaa718dba7d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+        "size": 109285,
+        "crc32": "7c24c0d0",
+        "sha256": "2bdc43f115548f30013864d479f32cec11e7cd1c7f26e15b9f192b7a46643d5b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/018-asset-provenance-1-developer-asset-provenance.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+        "size": 36742,
+        "crc32": "362560aa",
+        "sha256": "bea8b8639ab0d0b48aff6108a88f022e48063d0b8bcd949a62bab71aed138c16",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/README.md",
+        "size": 13723,
+        "crc32": "f003c01b",
+        "sha256": "dac6f663d7751d5c174fed2de378efcd771dd48b1ff809c321ceca4ce7e2f6dd",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/renderer.json",
+        "size": 757,
+        "crc32": "32c44c94",
+        "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/phone/linux-arm64/story.json",
+        "size": 15884,
+        "crc32": "fd181657",
+        "sha256": "11d7066d27374e5d27bb41ce19d7131898bbb67a8c9fb6ebb9a68acb2c6884d8",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "24f36689",
+        "sha256": "f799bdad77c9693adf2f750f4aff4d3dd8c61c93f98820e859bd11a4189a9639",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "0306a0d0",
+        "sha256": "e12b4fadc7ec95cf4915fecb86ab27daef75eed3bb6eb6d8a0d86afa72380e6c",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2726,
+        "crc32": "624782cc",
+        "sha256": "b2d0124fce38630384cf8f3fdd5824c518efbcb557efbd1d721a0891e269c396",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "41f003b0",
+        "sha256": "ad9f8db4bd59f9ac72df62d549b77fbfe17d1b85c688ac1700eec46a4ebe536e",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "fdccfe4c",
+        "sha256": "944c6384578286688a7fc19b4ea133517daa0d37f267ae6319dfc5964aa27fee",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "8f07f776",
+        "sha256": "d33406e8fd21b4feb90e4f64ab0d2cb11e90b17a0b9be917010ac0bca11a0327",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-phone.json",
+        "size": 4768,
+        "crc32": "e6f549ff",
+        "sha256": "7d31f60441b9e1969dcc49273e80c7ef163f9785dcbd55d96a1550378ca4c0ca",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-phone.json",
+        "size": 360,
+        "crc32": "9a30265d",
+        "sha256": "d1925fbed6404ae1f200490e347490f868f732d8b80b9664dec006284c68475e",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1351,
+        "crc32": "592a2c1d",
+        "sha256": "3a626778cbc04013f869cae75bed7a31bef56826a4507c05bcbfe8e18cd49686",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 2550,
+        "crc32": "a1ad96db",
+        "sha256": "60084fdd6618e80300e8c9cd1ec2daa983b1b1206b3f96432728ae9d1e084ce3",
+        "retained": false
+      }
+    ]
+  },
+  {
+    "run": 43126032986,
+    "artifact": {
+      "id": 13903681277,
+      "node_id": "MDg6QXJ0aWZhY3QxMzkwMzY4MTI3Nw==",
+      "name": "top-pr140-gallery-current-candidates-desktop-83dd576d9f30181750181f99318f064628d80def",
+      "size_in_bytes": 7193744,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13903681277",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13903681277/zip",
+      "expired": false,
+      "digest": "sha256:8a0f9c69d43fbf5505b317f144e1f341318d8dd31c722896009986001a3e1960",
+      "created_at": "2026-11-12T00:26:46Z",
+      "updated_at": "2026-11-12T00:26:46Z",
+      "expires_at": "2026-11-26T00:26:44Z",
+      "workflow_run": {
+        "id": 43126032986,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-gallery-current-20261112",
+        "head_sha": "83dd576d9f30181750181f99318f064628d80def"
+      }
+    },
+    "archiveSha256": "8a0f9c69d43fbf5505b317f144e1f341318d8dd31c722896009986001a3e1960",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/desktop/gallery-current/firestore-debug.log",
+        "size": 1014,
+        "crc32": "630cf0e7",
+        "sha256": "c6f6bae871c7df78fe952e10d7d9590fa37ef575f526da347ed8f88712e2524b",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/desktop/gallery-current/result.json",
+        "size": 167,
+        "crc32": "27e260a7",
+        "sha256": "c59710627941455496547e8b571de6f9d5353aaeac674c27090d259a0280d388",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/desktop/gallery-current/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-desktop/attachments/Illustrated-story-b651d510659b7cca1824f7b650bdf7858d9a3f24.md",
+        "size": 13725,
+        "crc32": "ed315a99",
+        "sha256": "e8694478e16409af5361d3c229301c96febe94ce6fa7543997ec29babf25c0ff",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/001-open-gallery-1-developer-gallery-scope.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+        "size": 227397,
+        "crc32": "d2920d81",
+        "sha256": "fca31050084194e27ca726d3a22b94609076f2d92506a21f1d9eb7616ddef370",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+        "size": 232283,
+        "crc32": "86a3adf7",
+        "sha256": "e460c509ab85cc4884b6150dfe90f65b65997635229bd3557438a927124a9ea4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+        "size": 236185,
+        "crc32": "c24cb66f",
+        "sha256": "114e7949a7ecca204b3e1259ac34410bd283c2fe03970c71f48dbe699b0b3c06",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+        "size": 238296,
+        "crc32": "5a6ba5a2",
+        "sha256": "ef08a3046abd021aebbd6e0589ef13f68bd8ff533943fce055e969d056d4590b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/005-navigation-pending-1-developer-pending-navigation.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+        "size": 246184,
+        "crc32": "5b5cc7ac",
+        "sha256": "928fa599eebed679317c49be2c8d4af4eae979daa71004da29c62168beadca82",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/006-action-primary-1-developer-primary-action-states.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+        "size": 238830,
+        "crc32": "d7b5f942",
+        "sha256": "c8ec0f15d62fff94f36840cec6a1c18606307391e8f267cbb00b4b890edffd79",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/007-action-secondary-1-developer-secondary-action-states.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+        "size": 238733,
+        "crc32": "81a1715e",
+        "sha256": "f5b091fa88c86d00af57276ded5b479fd63d168b92ddaf2b4a042be520fbea2e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/008-action-quiet-1-developer-quiet-action-states.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+        "size": 236862,
+        "crc32": "1b2bc1c9",
+        "sha256": "35fbcacde7e1f12cdb71f35a02a5d27259535ff8f1c99940aeb8cbbc6ae157eb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/009-chapter-selected-1-developer-selected-chapter.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+        "size": 233612,
+        "crc32": "cad92ecf",
+        "sha256": "947d3ac61cc64705cfb87983c8116168be6269e15606b43cb7be8a7f3910704d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/010-identity-fields-1-developer-editable-identity.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+        "size": 370488,
+        "crc32": "9eda46a7",
+        "sha256": "ff1062da290e8b86c571013ed2a1da163e084ad099358f48c67ec1a1c13ccfec",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+        "size": 454252,
+        "crc32": "df3445c4",
+        "sha256": "1082446707abd984628b9eb1d6813f380368ef8bb20bb745af071e3f859b50fe",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+        "size": 740866,
+        "crc32": "31bdbf1f",
+        "sha256": "db7a76b3888460629004f6c9578d003c7ebcc64f1ad7652fb8a7701d4720725b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+        "size": 895729,
+        "crc32": "c5b07494",
+        "sha256": "f34a03909371574051acab4b73f612d34d9b9cc1aa0e3b68ad62eae1f6f7ddb3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+        "size": 428548,
+        "crc32": "fce1afe7",
+        "sha256": "7bb65c068afd4124ef5049914dca1e130781f000ebdf94e74a87c5f9ffacf93f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+        "size": 465621,
+        "crc32": "4a382148",
+        "sha256": "d4a08d61cc950e59866b3aa1ff01df7cf638677f5fb7f7f6f8ce66cd6e6e8594",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-3-developer-network-remedy.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+        "size": 477068,
+        "crc32": "0e507ff9",
+        "sha256": "f38c24a0aac969ddfbb5511f867686710820e33e21842ae4fd371c1eb6a43745",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+        "size": 427026,
+        "crc32": "b895764a",
+        "sha256": "d6b79dc93dfb1ccd4d56f053eb99b967ff67a8130a95209d65321423ce457748",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+        "size": 434565,
+        "crc32": "82a11992",
+        "sha256": "864769693ae9c42a1b74f622f0c4e32920fa5ace7a11591d97b4600cf721b19b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+        "size": 251326,
+        "crc32": "c4329b88",
+        "sha256": "c69bb4a633426f32cba482794b109658d3d27a175cf4e71af6957fa8a1fef297",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+        "size": 169389,
+        "crc32": "75ac956c",
+        "sha256": "d334bb9dcacc0543b5eee00d6f490d7f253e1f50e6788aa24f5bc0323c803ef5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/018-asset-provenance-1-developer-asset-provenance.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+        "size": 52896,
+        "crc32": "e44e8134",
+        "sha256": "fdf97fbd5f80b6e085c60e92f048e169d75bf84ab14274e9cd8e21f412bd0c46",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/README.md",
+        "size": 13725,
+        "crc32": "ed315a99",
+        "sha256": "e8694478e16409af5361d3c229301c96febe94ce6fa7543997ec29babf25c0ff",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "66da3120",
+        "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/desktop/linux-arm64/story.json",
+        "size": 15888,
+        "crc32": "983d4bc4",
+        "sha256": "5c9470ecd6238bdc201522ed7fe5abe3437c7179989d6eb10c4f918bd931d879",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "4b717f57",
+        "sha256": "e256192c199de83bc59eec89efe62e062e9697faa9f1be9f3bacb1a328d370df",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "38da190a",
+        "sha256": "2bff17c8aa4c2eee7daf505e9eb5f0edd280552f0bd55a3c3dc7c7f8e0133372",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2552,
+        "crc32": "fde155f2",
+        "sha256": "166df5d0c092f7372a572169380badb18be8d8ca870f18b07d1ce151ceb3c48e",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "5e69e5b2",
+        "sha256": "ee7e1c2404336a1c2435b563c71b1e250da0a057c4807e7b6a15b2fd8e3d24bb",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "c8bb1562",
+        "sha256": "f5bb6074ee83f930efec19cb39f9645e9242cf98d9755461833c8170f1151960",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "42016a1a",
+        "sha256": "b118696c862d45d0b930e36f287f39fd3169f8eb92e447fd9aa8e97c4edb41ca",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-desktop.json",
+        "size": 4774,
+        "crc32": "9c390164",
+        "sha256": "3a3ecf96530384e3a2fcbdd41e15a688a2a35cb89915126f16fb457fd67aa419",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-desktop.json",
+        "size": 362,
+        "crc32": "d328de07",
+        "sha256": "401ded36f245bac3c666ff46ffe6403dff56f8d78096af6938143a17b5051bae",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1351,
+        "crc32": "592a2c1d",
+        "sha256": "3a626778cbc04013f869cae75bed7a31bef56826a4507c05bcbfe8e18cd49686",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 2549,
+        "crc32": "5fddb254",
+        "sha256": "de83270192002230279656c48f45cbb8229fd116f573a1788ee166c9fcd3bcb7",
+        "retained": false
+      }
+    ]
+  },
+  {
+    "run": 43126032986,
+    "artifact": {
+      "id": 13903274669,
+      "node_id": "MDg6QXJ0aWZhY3QxMzkwMzI3NDY2OQ==",
+      "name": "top-pr140-gallery-current-candidates-large-83dd576d9f30181750181f99318f064628d80def",
+      "size_in_bytes": 35593653,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13903274669",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13903274669/zip",
+      "expired": false,
+      "digest": "sha256:0f6029ff3029d2c7202e26aa3e73d8917a8a653f2a020043dad3a9a37c81dd3e",
+      "created_at": "2026-11-12T00:26:04Z",
+      "updated_at": "2026-11-12T00:26:04Z",
+      "expires_at": "2026-11-26T00:26:02Z",
+      "workflow_run": {
+        "id": 43126032986,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-gallery-current-20261112",
+        "head_sha": "83dd576d9f30181750181f99318f064628d80def"
+      }
+    },
+    "archiveSha256": "0f6029ff3029d2c7202e26aa3e73d8917a8a653f2a020043dad3a9a37c81dd3e",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/large/gallery-current/firestore-debug.log",
+        "size": 1014,
+        "crc32": "a47424dc",
+        "sha256": "04150b9003efee6490fb523723c1cbca8d207a843b9a6056f0b84635ef295a6e",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/large/gallery-current/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/large/gallery-current/result.json",
+        "size": 165,
+        "crc32": "bbcac5a8",
+        "sha256": "253b655e579fc1c5ec1fb02663a9cfd0280d8c29fb6e82b046b993d61b4ba9f5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-large/attachments/Illustrated-story-b08235a617b6b09c9b4d5905dc795e77106c1379.md",
+        "size": 13723,
+        "crc32": "144de9b2",
+        "sha256": "4f92b62fc64e85f347d3aac2b553b10d27b48ff3add9dbf0f9188072af909ba7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/001-open-gallery-1-developer-gallery-scope.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+        "size": 1899618,
+        "crc32": "64d8c18a",
+        "sha256": "d8ded65bc63888722c5e131ba148e769f691478365688caf1aa493fa82e51f2b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+        "size": 1899157,
+        "crc32": "9b2bd1c8",
+        "sha256": "b7351f44b785f6036486270c8785b6ed9bca8da12d9e0dd394f4b19510b5aa9d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+        "size": 1899173,
+        "crc32": "09d5738f",
+        "sha256": "f3f9c3ec6a6950a4b6b3bd193e35c23917e17088ca1dadc4984588edbbaa81b0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+        "size": 1899502,
+        "crc32": "77a5513e",
+        "sha256": "4cf84d56f52c300ad285023106b30f81a15c9b67c6fd8ae98e33b97ebde904e8",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/005-navigation-pending-1-developer-pending-navigation.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+        "size": 2204960,
+        "crc32": "aea3448f",
+        "sha256": "77d9a4624a2cca41bf59e39c6fb83c89a66245dc723b9d4a5482cfe6bdcb0908",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/006-action-primary-1-developer-primary-action-states.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+        "size": 1899432,
+        "crc32": "57cfa99a",
+        "sha256": "64e4a0573dcd27cd807a1a90d98ac45594fabe2b1c28c2ec06c3d4fbfa018053",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/007-action-secondary-1-developer-secondary-action-states.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+        "size": 1899491,
+        "crc32": "1dadae04",
+        "sha256": "a3d3797e66d9c8657150c5d4710b1507ec407b3069f0efd28cad71c228612e60",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/008-action-quiet-1-developer-quiet-action-states.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+        "size": 1899642,
+        "crc32": "f76c39a9",
+        "sha256": "d684f6e198ae383500503536d7939fcc73505e20e51cd3372282bc4968e781cc",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/009-chapter-selected-1-developer-selected-chapter.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+        "size": 1899649,
+        "crc32": "cc3e3cd9",
+        "sha256": "9df4a9cd42b14694c94170c262114d4914bee7691bd44e8f364061a28e59fc39",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/010-identity-fields-1-developer-editable-identity.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+        "size": 1898622,
+        "crc32": "8a60f270",
+        "sha256": "ee3318fcee04185cdcdf4b1d55dc72817402d9528d5d60de1cbb2d685fac41d9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+        "size": 1898622,
+        "crc32": "8a60f270",
+        "sha256": "ee3318fcee04185cdcdf4b1d55dc72817402d9528d5d60de1cbb2d685fac41d9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+        "size": 2026509,
+        "crc32": "24b085f8",
+        "sha256": "b203cabf0a371222fdc54a2b5e2abbfb5a0d7df26df86e388bd442dd44bc8432",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+        "size": 3031960,
+        "crc32": "750a4a58",
+        "sha256": "4d16e478b4e9e27ceaf77af8d846784b8383c56ac85bae54b2436949bdee6199",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+        "size": 1900213,
+        "crc32": "4e276941",
+        "sha256": "83b1fd111979707fd7834d6e00412f8a8311183e47fd22eff4ee51418f5709fb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+        "size": 1900213,
+        "crc32": "4e276941",
+        "sha256": "83b1fd111979707fd7834d6e00412f8a8311183e47fd22eff4ee51418f5709fb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/013-feedback-recovery-3-developer-network-remedy.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+        "size": 1900213,
+        "crc32": "4e276941",
+        "sha256": "83b1fd111979707fd7834d6e00412f8a8311183e47fd22eff4ee51418f5709fb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+        "size": 1322582,
+        "crc32": "4f25db9e",
+        "sha256": "7b28e6fa390357e8449bbebcc370697833b2479b93b0d7c76813e55b2566c0fa",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+        "size": 1331242,
+        "crc32": "dc75bcda",
+        "sha256": "16018cc739b8e29e557a4bb110d03de6866bd43e4cc10c806a5d685ffeb9f353",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+        "size": 362019,
+        "crc32": "85d5841f",
+        "sha256": "0f6fdefc102afc66472ce3c8e9e5c0a7a04cb54591f84957dad84b5c7dfb8a63",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+        "size": 694894,
+        "crc32": "83654e85",
+        "sha256": "84f7254ea99ad9c3858a2818789479b3a8296c7219bc1b90147e743cd1b9c351",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/018-asset-provenance-1-developer-asset-provenance.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+        "size": 694894,
+        "crc32": "83654e85",
+        "sha256": "84f7254ea99ad9c3858a2818789479b3a8296c7219bc1b90147e743cd1b9c351",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/README.md",
+        "size": 13723,
+        "crc32": "144de9b2",
+        "sha256": "4f92b62fc64e85f347d3aac2b553b10d27b48ff3add9dbf0f9188072af909ba7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "4ece87e2",
+        "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/large/linux-arm64/story.json",
+        "size": 15886,
+        "crc32": "87665813",
+        "sha256": "5e45c1ae12a272732ab12f80e0c8d6088a6eaab53e971e750b4f95fbd23c2b73",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "caa4cbd4",
+        "sha256": "5cc959412e4d8d0f62aed97c15a1e42a74e0374006cd421fd50906b63e0a7d51",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "49afd1b8",
+        "sha256": "856a044e9e67b2379c74c4723426f865516d3d9e4bda4fa11c0c9adf43971d78",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2723,
+        "crc32": "d5bfc9c2",
+        "sha256": "735bbe7407fd6de9d5eae94635b2c286cbbd2a5d632fb444756aba48263712f4",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "38b291f7",
+        "sha256": "52e6afc6bcae70efdb2901e803a75e339fd9de7e68b68306b307f7165542de4f",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "8e2d31e2",
+        "sha256": "fdda6436c14343668f0dc19ad0f66f883be17dd8791ad732a819831cc1e747e1",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "a391b85d",
+        "sha256": "027d1296b0f9b30e737d91bed15e12eb20a30cf2fb7bb6368773ec12c4f9fc09",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-large.json",
+        "size": 4778,
+        "crc32": "90e0d974",
+        "sha256": "64d69df1a3c52e992dd10cad0c7bf2248a4e712786e994aadd29e09b78a8bab0",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-large.json",
+        "size": 360,
+        "crc32": "84f9ec1a",
+        "sha256": "b47327e303c5900a39b1d7f5960ad3291a891f3df3a93686639463066d01fd23",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1351,
+        "crc32": "592a2c1d",
+        "sha256": "3a626778cbc04013f869cae75bed7a31bef56826a4507c05bcbfe8e18cd49686",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 2549,
+        "crc32": "02a3c3ab",
+        "sha256": "c6409aa0b9b7df894b5752c9277a04cc1b1ae3d37eee9b17fabbd315b63649fd",
+        "retained": false
+      }
+    ]
+  },
+  {
+    "run": 43126032986,
+    "artifact": {
+      "id": 13902914204,
+      "node_id": "MDg6QXJ0aWZhY3QxMzkwMjkxNDIwNA==",
+      "name": "top-pr140-gallery-current-candidates-short-83dd576d9f30181750181f99318f064628d80def",
+      "size_in_bytes": 4131279,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13902914204",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13902914204/zip",
+      "expired": false,
+      "digest": "sha256:c8ed0225e6642c2ac3289b173235073481f076704dc449ef38b9904cd693aaed",
+      "created_at": "2026-11-12T00:25:38Z",
+      "updated_at": "2026-11-12T00:25:38Z",
+      "expires_at": "2026-11-26T00:25:37Z",
+      "workflow_run": {
+        "id": 43126032986,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-gallery-current-20261112",
+        "head_sha": "83dd576d9f30181750181f99318f064628d80def"
+      }
+    },
+    "archiveSha256": "c8ed0225e6642c2ac3289b173235073481f076704dc449ef38b9904cd693aaed",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/short/gallery-current/firestore-debug.log",
+        "size": 1014,
+        "crc32": "f885d3af",
+        "sha256": "4a3b97c754813ca66c02540b2a7a6b07d05ba06320fc9753b75f04d6aef3954d",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/short/gallery-current/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/short/gallery-current/result.json",
+        "size": 165,
+        "crc32": "f25e80f6",
+        "sha256": "e87e4f8e19bad8ad7a60986f5cc8f6e7a9e98401f28391be702feb75b5b23d29",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-short/attachments/Illustrated-story-70b83177d3bc5ebe1d31bdb8acb499e336e7a5fb.md",
+        "size": 13723,
+        "crc32": "50228887",
+        "sha256": "49eabdaa597a05b5e44bb6a506ffed44809f57d86bfc09c3319a71990ce63af0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/001-open-gallery-1-developer-gallery-scope.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/001-open-gallery-1-developer-gallery-scope.png",
+        "size": 95233,
+        "crc32": "15ab5e93",
+        "sha256": "5351ab5ac87ad4e4ea8986b1ac73f964893ddfa6b0d026376c32bcad8158470f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/002-navigation-0-1-developer-play-keyboard-focus.png",
+        "size": 214009,
+        "crc32": "b420b68d",
+        "sha256": "6aa5baf2ba497195dc81fc1420cd0dff22b7257a43b33160dc24a55443f9a821",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+        "size": 209541,
+        "crc32": "f0ca3d76",
+        "sha256": "b1509dbd050a9ad9eb9a73ad604437798a2153ad1fc64e1cc72663eb46e6c066",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+        "size": 211015,
+        "crc32": "127dced4",
+        "sha256": "06ed71dbc412633b7e819b4d43368a06327195c2381267f32bd479d87bfedc23",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/005-navigation-pending-1-developer-pending-navigation.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/005-navigation-pending-1-developer-pending-navigation.png",
+        "size": 212386,
+        "crc32": "14ccfa86",
+        "sha256": "800863eb52a11d427abedeb7ba7277d99479b44872faee5b404fd5955cdd4be5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/006-action-primary-1-developer-primary-action-states.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/006-action-primary-1-developer-primary-action-states.png",
+        "size": 70133,
+        "crc32": "91d69b43",
+        "sha256": "bb423bc1971be0a1a160256bf4f3b19b07cb42a978ffe13669b11632f200024f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/007-action-secondary-1-developer-secondary-action-states.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/007-action-secondary-1-developer-secondary-action-states.png",
+        "size": 51327,
+        "crc32": "b1a25ed5",
+        "sha256": "b96008617bb10f1110b8878c833efa2b2ea9fcecf5b8bbb15085970e598c1118",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/008-action-quiet-1-developer-quiet-action-states.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/008-action-quiet-1-developer-quiet-action-states.png",
+        "size": 50018,
+        "crc32": "3d7d293d",
+        "sha256": "50a83f91a63618286b349c72fe6a422906d372a1d87454d43621eb93ad54b023",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/009-chapter-selected-1-developer-selected-chapter.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/009-chapter-selected-1-developer-selected-chapter.png",
+        "size": 93534,
+        "crc32": "18392593",
+        "sha256": "76f9a5483d881596b3f57b1e921d12cb90a6488e507e8daf9e7af44fc861548c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/010-identity-fields-1-developer-editable-identity.png",
+        "size": 133232,
+        "crc32": "2786477f",
+        "sha256": "b6dacc98833f9aa2167daa91dee36a0b9ff16da3dfeb97f6053f8c90b6dbd3fb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/010-identity-fields-1-developer-editable-identity.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/010-identity-fields-2-developer-validation-and-pending-draft.png",
+        "size": 359094,
+        "crc32": "9bc3ffb6",
+        "sha256": "c4f6372eb22f7ff2d9637bf811e7473fb834e4ee8ebe1780b0c3de94fe22e74d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+        "size": 662565,
+        "crc32": "71b88bb2",
+        "sha256": "746243d93dd34144b07de1419e1ce03570f98976f298378f5098e8a71f1d0904",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/012-portraits-pending-1-developer-disabled-portraits.png",
+        "size": 672431,
+        "crc32": "469d925f",
+        "sha256": "92ebe28aa68e44e7b17bc030944f8a522c7166f07a026142c81103946b438b68",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/013-feedback-recovery-1-developer-identity-acknowledgement.png",
+        "size": 276965,
+        "crc32": "1bb2e761",
+        "sha256": "3034518ad721944e9824b9bea06200335904ad890d05022cf0cfe2869f9e4a56",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/013-feedback-recovery-2-developer-conflict-recovery.png",
+        "size": 227565,
+        "crc32": "7db1a2ce",
+        "sha256": "c2266424671428a4725b502924cd59b9cc6ba21e58bc756385210b292cea07d4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/013-feedback-recovery-3-developer-network-remedy.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/013-feedback-recovery-3-developer-network-remedy.png",
+        "size": 179932,
+        "crc32": "d9188203",
+        "sha256": "14e3e3e9e31bfdb94f23ab6ef2d58681723af8db8cb6a606a4e6ddbf178710af",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+        "size": 57962,
+        "crc32": "0b939df4",
+        "sha256": "f7b7f19aacc8f8a4c24cab8c14418c4fbe967c2d5d220f91e7b063bdb2738772",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+        "size": 61730,
+        "crc32": "a8631e7f",
+        "sha256": "4136da6d39e61c1115dcd88a309988c5530114d2685bd8bd985a29daf0bbad4d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+        "size": 252021,
+        "crc32": "00a5adf8",
+        "sha256": "55602f3efe84a684d98156853eda241b55c33d8f2bbb4aeaca39f3656e8ab1d9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.png",
+        "size": 55759,
+        "crc32": "65bbe528",
+        "sha256": "733a4fadb9287fd2d7b1f6345bf3c99322be4325d8d6d4b1ab304691cce82649",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/017-icon-inventory-1-developer-shared-glyph-inventory.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/018-asset-provenance-1-developer-asset-provenance.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/018-asset-provenance-1-developer-asset-provenance.png",
+        "size": 42028,
+        "crc32": "38d9b56b",
+        "sha256": "47545191619828731b4a05ac51ad850620983b23f02a693d6854bd9f4897ad0a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/README.md",
+        "size": 13723,
+        "crc32": "50228887",
+        "sha256": "49eabdaa597a05b5e44bb6a506ffed44809f57d86bfc09c3319a71990ce63af0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/renderer.json",
+        "size": 758,
+        "crc32": "0decb708",
+        "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/identity-component-gallery/short/linux-arm64/story.json",
+        "size": 15885,
+        "crc32": "bfa3f304",
+        "sha256": "ea7fb99441ca568569d6bfcac884b9f74d957a01f13de3184947f49a8ba8009c",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "d913f7ed",
+        "sha256": "b11c5c53538b9cdfdbeef5f0c7c55214a32f59dfbb64e7a811496954aea2bd3b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "0dfedbd6",
+        "sha256": "30de1567aaaceb80365e6b201df6dcd75b668889b07952eb7d853274b2f91b56",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2732,
+        "crc32": "a159c674",
+        "sha256": "5ee8fa69a448b1ca078edb3112421a63b64cd296b79bf265050216c9bb72b195",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "7ef22b6a",
+        "sha256": "7230600a6e99e1e7f3b8885aa4047a608998962651319eea47adee15a38e27fa",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "542099ce",
+        "sha256": "982ddec0e8e22d9f6eac8420f0594d741127cbefa70ee3b651fc9f57ab5c76bb",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "fe863af9",
+        "sha256": "5970e151d662c90c33fc90cc57e254d0f4b183c5bddba55e6c897a304a4341f2",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-short.json",
+        "size": 4779,
+        "crc32": "f0915ddf",
+        "sha256": "d5dc072dabfed276c1021ba22f51cb0628f4318fd2d44f538967e18864f007c6",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-short.json",
+        "size": 360,
+        "crc32": "0c2a4d03",
+        "sha256": "14e4d0f0ea358fdbeb01da1c5efab275dacafc60995143792d40f20a55331bc1",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1351,
+        "crc32": "592a2c1d",
+        "sha256": "3a626778cbc04013f869cae75bed7a31bef56826a4507c05bcbfe8e18cd49686",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 2550,
+        "crc32": "6c71ff8b",
+        "sha256": "395e97d03423d2d283c6aa4b81ba462aae230fd0fb14f39a5cd55ff33f9397bc",
+        "retained": false
+      }
+    ]
+  }
+]
