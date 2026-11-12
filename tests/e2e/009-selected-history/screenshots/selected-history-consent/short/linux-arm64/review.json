@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr72-approved-import/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/history-short-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "selected-history-consent",
   "renderer": {
@@ -28,15 +28,357 @@
     "dpr": 1,
     "motion": "reduce"
   },
-  "generation": {
-    "artifact": 12626547340,
-    "source": {
-      "commit": "3fed71ab7302795aae2f4086e958f8da860cf2ab",
-      "dirty": true,
-      "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
-      "specSha256": "9377847e19003504479cfe214115af7b1946a0ab536248839aa15a75a586e639"
+  "source": {
+    "commit": "eb382adf12ab0fc54d5b0994b291afbf70c10822",
+    "dirty": false,
+    "spec": "tests/e2e/009-selected-history/selected-history.spec.ts",
+    "specSha256": "b157821d60315f7a08a15321ba5be6718ef008706020ac2c66f404e24e3a80ad"
+  },
+  "target": "9b7bf150bc070a6d6159ebee8d0baf68f3fb4582",
+  "run": 43137283407,
+  "manifestSha256": "1c056feaf5a2d4c23df765bc83132e6179e030f563938a1d9f9c226a3f8e7809",
+  "inspectionScope": "All47 distinct1280x720 originals individually viewed, covering68 exact-hash captures. Full previously clipped message is readable. Consent scope, removal, retained history, conflicting drafts, same-command recovery, renewed consent and primary controls/statuses remain readable. Secondary headings/messages/buttons are partially offscreen at deliberate bounded reading positions; conflict views prioritize draft resolution rather than simultaneous whole-history visibility. Existing singular participant wording and map/faction fidelity are not newly certified. Compared original message and conflict references: campaign rail and measured panel placement changed, acknowledgement and privacy meaning retained. UX_DESIGN UX10/14/16; regression approval only, not full design or normal-motion certification.",
+  "applicability": "Only later FleetRoute editing spacing differs in executable inputs; this conversation journey never opens that component. Story/helpers/runtime unchanged.",
+  "captures": [
+    {
+      "image": "010-private-room-1-nacre-envoy.png",
+      "sha256": "4e5710f5acd4b11c9e0c5b60121186aa70c3e0b265f034df285b01c77a494443",
+      "previousSha256": "5aea59eb28e77866ee39202602d1b19dd499e5b3b31cb48eee184e34076761d7"
     },
-    "target": "4a8264453ad62788c454fe3f2b8e20829e3c804f",
-    "run": 40264675463
-  }
+    {
+      "image": "010-private-room-2-dawn-listener.png",
+      "sha256": "149e7f84f6cd687f4354da74c7488c062bdb84d13a69921752ca767e1ce46e84",
+      "previousSha256": "b2b1ee6313824e47a2b4f3c3aacecfd8d2960ac2f1386890641b7ca83fc2e736"
+    },
+    {
+      "image": "010-private-room-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "011-earlier-message-1-1-nacre-envoy.png",
+      "sha256": "166e6596700d744ad8f67b01391ff548f850e9c96d539596d276b2e91eaa042e",
+      "previousSha256": "ff6ad50ebdd0f4ddac31905f53fb1c55804a295016695714a1b9c7b763128a12"
+    },
+    {
+      "image": "012-earlier-message-2-1-nacre-envoy.png",
+      "sha256": "9d667e06d1434636088cf9127dc696d6e933cb3cefc95e3c419a9a73ff02f513",
+      "previousSha256": "ec0d55a6b02375c7169cf8a23bd6fe20f47a163bcad4b948664cff254c07645a"
+    },
+    {
+      "image": "013-choose-history-1-nacre-envoy.png",
+      "sha256": "1cfe6b0bd0719bdf42ec35ea51b783286284996b77afd9711bdc95abaa9713a6",
+      "previousSha256": "6b9aa40ad904357670ca18b7904e892cc8b6ff6a4f60d11069d6d53ed25151c9"
+    },
+    {
+      "image": "014-invite-1-nacre-envoy.png",
+      "sha256": "728fbf078ca75c18bc78497e2f66cf3c2c483c363fa920e90b0c6970aed35393",
+      "previousSha256": "5535075df6fab59d8b2ac5ea4677f2125550d0c1d55c316203a7f27535764b31"
+    },
+    {
+      "image": "014-invite-2-dawn-listener.png",
+      "sha256": "cfa81179310140725a6e8d366884b16b8f526bbaaaa3900c8525799fcd1cc276",
+      "previousSha256": "62925f22194e84a2bcca77d28547e99c4ee5677ebf1fcc460ee2338c2b64e8cd"
+    },
+    {
+      "image": "014-invite-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "015-consent-1-nacre-envoy.png",
+      "sha256": "32140fd19943e62ad2417ef6303466561d4d824144e2ccd94d494e82d0a6606f",
+      "previousSha256": "72c8f2842e168748a0d5ae0478ce0bed8ae8c09bb2f63102b043da90c96929cf"
+    },
+    {
+      "image": "015-consent-2-dawn-listener.png",
+      "sha256": "5ab9efd534836c16d549d98cd81b7eef86b7b1dc01121fa7d28a31bd25559314",
+      "previousSha256": "6fdeac460bfe7960265bddae6bc3b44d471d023519b41828695f6e16db1e3ba7"
+    },
+    {
+      "image": "015-consent-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "016-recover-consent-1-dawn-listener.png",
+      "sha256": "b9ce6a8af1e4a7f3283e1d948b55979a18ef7f9bf2617af61616676f9aa0b143",
+      "previousSha256": "916d84e418a67eb436d15f4e5530885034ff29639483e4bb41856fb21622129c"
+    },
+    {
+      "image": "016-recover-consent-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "017-return-to-chart-1-dawn-listener.png",
+      "sha256": "b3deccfeef0e35f7d1fab7d4a987b5881eb02702723206046186e92802ee958c",
+      "previousSha256": "fc9bfbb0ec2dd34050a7183ac82a294288e7b838946084e867ac8de84cafc7be"
+    },
+    {
+      "image": "018-review-removal-1-nacre-envoy.png",
+      "sha256": "a6da17ca645b6c3fc1af6ca86fed0ff9fda322e3acb0812b7b150a91dd4d7492",
+      "previousSha256": "553d581183c49cac4376aa5f204a7787e4839b96e2979deee2205644e9fa0d30"
+    },
+    {
+      "image": "019-remove-current-access-1-nacre-envoy.png",
+      "sha256": "0ef2a249c31a74f85f47d6a6a40a35d64b4769dac40c197ecf361a657692393a",
+      "previousSha256": "bb682d7a7b0125e169facaff8527a8ec232c2758eaf6cbf06eb21088c7c9de07"
+    },
+    {
+      "image": "019-remove-current-access-2-dawn-listener.png",
+      "sha256": "bea318a858dd064a18bfbc31a81d85148217badc84f199a44d04bf5de6cd69fe",
+      "previousSha256": "83ef5e1b437123fd3a78bc87afc1e15ea381cae5788248f0bfce9d2cc84ae4d9"
+    },
+    {
+      "image": "019-remove-current-access-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "020-message-after-removal-1-nacre-envoy.png",
+      "sha256": "d0e9a00f173c255c42e505aace917d31b8d23ad79e4d9f87ede82a9d1eac048f",
+      "previousSha256": "9a9a35d6fbc100290f8532c5f271b4d27c7e369a986a4ed004a54d8d64854a10"
+    },
+    {
+      "image": "020-message-after-removal-2-dawn-listener.png",
+      "sha256": "bea318a858dd064a18bfbc31a81d85148217badc84f199a44d04bf5de6cd69fe",
+      "previousSha256": "83ef5e1b437123fd3a78bc87afc1e15ea381cae5788248f0bfce9d2cc84ae4d9"
+    },
+    {
+      "image": "020-message-after-removal-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "021-recover-retained-history-1-dawn-listener.png",
+      "sha256": "571a0c289d0dd646e1cbff73074a93e7dd7c98ece81622d5e64a8f01cf32d095",
+      "previousSha256": "6b0f194e24228592bf54979b6c914f236f02428d4579c8835d22cf11c7cfa8db"
+    },
+    {
+      "image": "021-recover-retained-history-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "022-leave-retained-history-1-dawn-listener.png",
+      "sha256": "37d4d386eff29cef00693a2496360756b58e67d24d0914b5442d951c28089a52",
+      "previousSha256": "e0b8bd0ba0d8a35f68d409f01f909778bf75bf33f1f122982595e0e02588c4f5"
+    },
+    {
+      "image": "023-save-private-browser-draft-1-nacre-envoy.png",
+      "sha256": "d7ef8adbdcd4ac90e37aa4b34db43a5a15f234f49e71483a4d208457c35bc520",
+      "previousSha256": "645b8ccf77a28b3d4c7a9923019873a29507c3c6744726bdcdcab594b0508ee2"
+    },
+    {
+      "image": "024-recover-draft-in-two-tabs-1-nacre-envoy.png",
+      "sha256": "3b7aada08393fec6c61ef7975fc99cacc80c9a85d6764d5c4852ebd7aa982295",
+      "previousSha256": "a9639cc9c03a0881ddfd849d92ce02e46a27d56c234d402ee9a4b09500a0a15d"
+    },
+    {
+      "image": "024-recover-draft-in-two-tabs-2-nacre-envoy-second-tab.png",
+      "sha256": "3b7aada08393fec6c61ef7975fc99cacc80c9a85d6764d5c4852ebd7aa982295",
+      "previousSha256": "a9639cc9c03a0881ddfd849d92ce02e46a27d56c234d402ee9a4b09500a0a15d"
+    },
+    {
+      "image": "025-preserve-conflicting-draft-1-nacre-envoy.png",
+      "sha256": "093defaceb7f1528b3f99ba27d09dc83103a512a99719995b47f5d2acb3f4c1c",
+      "previousSha256": "662163e68f0373b26b9f77783b95426c80c56f195645fa4872709d9b2f45662f"
+    },
+    {
+      "image": "025-preserve-conflicting-draft-2-nacre-envoy-second-tab.png",
+      "sha256": "a6fbbdcae03f4221c7e34d863eede357f499d61e1d00bf990bf4a282c2cf17c7",
+      "previousSha256": "95bfdbb1a1dad99986d612d4dcd939107fbd4f0c58393dd688e7bc2420950ce5"
+    },
+    {
+      "image": "026-choose-saved-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "b420c93be33494af85e47495b598ed125d999f9fb6b17eb1071289886d3aed1c",
+      "previousSha256": "1caabd40dd3be6005c5de85dbb27e2c05e0810ecd24fdf5edab28f4265a1ee0b"
+    },
+    {
+      "image": "027-send-recovered-draft-once-1-nacre-envoy-second-tab.png",
+      "sha256": "29a507a4907928934c1867b7f155fdac3c368784bf8df2855ad2c5d3ef4df249",
+      "previousSha256": "f0dd0941360ca02022162c2417d7b21c0bc576a78a687c5e18a8b1d04355e59b"
+    },
+    {
+      "image": "027-send-recovered-draft-once-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "028-recover-cleared-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "02f3eb6a75c6f0dee3be10af1fc56be0ab276d183d773b12209ca6f39064b6e7",
+      "previousSha256": "420ba9a949fc6fecb28f1861c08b9f6817baa9ec471542a64dbd45c98a827a17"
+    },
+    {
+      "image": "029-prepare-replacement-choice-1-nacre-envoy.png",
+      "sha256": "c84812e7084f11fc83aa84bd6535d76e18ff6281c3704d0a5f58163f36f863ae",
+      "previousSha256": "0f95f018c744ceadce94ce073d94579eac22b439797718dcb2c548b76aa2357e"
+    },
+    {
+      "image": "029-prepare-replacement-choice-2-nacre-envoy-second-tab.png",
+      "sha256": "a08915522d4b697d3e508cbd4de83cf10db63fe804b30e29bd089d87dae305f0",
+      "previousSha256": "de897ba378b4dfc74a42273e4ad1f3b0548f83be172d9432019b51b50662555d"
+    },
+    {
+      "image": "030-review-competing-replacement-1-nacre-envoy.png",
+      "sha256": "9ee6a26ca13a56bd762428dde5ce8233fcc8622abb29a47e655a8ecf4517a094",
+      "previousSha256": "361723e13648950b156de5c59b3ed4a52f38afb2a0fe7f236169988c2c671895"
+    },
+    {
+      "image": "030-review-competing-replacement-2-nacre-envoy-second-tab.png",
+      "sha256": "478a4283119205627d4dad7a4ec5903aae5cf9c2540ddf148d4dff2518dcbf8e",
+      "previousSha256": "1316605a9b2b7aa4f107c8655235722b05799cdfebc9d6b144c30c133b7e30eb"
+    },
+    {
+      "image": "031-replace-with-local-proposal-1-nacre-envoy-second-tab.png",
+      "sha256": "d05f1067c2335b1ad3a0d59b4f179745b013b4f704d3c22657442bc2a079bdd8",
+      "previousSha256": "b7fe925484a5d6cd7bd48bebcb01dfadf4ef4df0c06cb5cbe3fd466cb258e85c"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-1-nacre-envoy.png",
+      "sha256": "d05f1067c2335b1ad3a0d59b4f179745b013b4f704d3c22657442bc2a079bdd8",
+      "previousSha256": "b7fe925484a5d6cd7bd48bebcb01dfadf4ef4df0c06cb5cbe3fd466cb258e85c"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-2-nacre-envoy-second-tab.png",
+      "sha256": "d05f1067c2335b1ad3a0d59b4f179745b013b4f704d3c22657442bc2a079bdd8",
+      "previousSha256": "b7fe925484a5d6cd7bd48bebcb01dfadf4ef4df0c06cb5cbe3fd466cb258e85c"
+    },
+    {
+      "image": "032-recover-chosen-local-proposal-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "034-submit-replacement-awaiting-acknowledgement-1-nacre-envoy-second-tab.png",
+      "sha256": "47cc31bd6387f15733f16f755c307510904d218e3a1962cfab7f281b7ef5a7f1",
+      "previousSha256": "86f7d9c2bdcfa24c13bb82916cacac2395162eba5087291843f499dd88199e66"
+    },
+    {
+      "image": "034-submit-replacement-awaiting-acknowledgement-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "035-protect-pending-send-from-second-tab-1-nacre-envoy.png",
+      "sha256": "2a13f936e650293d908d0003e17bed5aa70818e9c536f330f0f0624f24a0067b",
+      "previousSha256": "683a63f86182797296d14d25e140ba82d59e01b0abda5af7cd6a948e775e9c34"
+    },
+    {
+      "image": "036-reload-interrupted-send-1-nacre-envoy-second-tab.png",
+      "sha256": "377bc2954324cacb20ea25d5481d8d0fece75d0be0ee282eacfcaa167c3d8fd0",
+      "previousSha256": "e728300e20b5ed03fc5296dd5835b0a051e53432843aa3599f4c1e479dd017f3"
+    },
+    {
+      "image": "037-retry-original-message-command-1-nacre-envoy-second-tab.png",
+      "sha256": "6731db03cb6e045cbeb71f000ba4f1f60a8966e96b738058d19d1fda71d1c8e0",
+      "previousSha256": "7252bc8798010003ec393740d506469e0f80796f0420dbf4e742676cbc8ea020"
+    },
+    {
+      "image": "039-observe-retried-message-acceptance-1-nacre-envoy-second-tab.png",
+      "sha256": "ede4d0715ba133d3466f449e6de695fcc8887c934f68a0c1cbc732832f8c1881",
+      "previousSha256": "dc3c9fd083a9d83ea4e3052193858105608e826ab3552c11043c117bc6f62966"
+    },
+    {
+      "image": "039-observe-retried-message-acceptance-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "040-recover-acknowledged-send-1-nacre-envoy-second-tab.png",
+      "sha256": "c69e95b94467052f894b010034b0083a51dc2af0b94e5476dfea2224d806af6b",
+      "previousSha256": "5c09a35d758226faeeabbf72cf37b9eba00bdd753b216e2a09fb60a3377bf0e2"
+    },
+    {
+      "image": "041-save-account-private-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "29261db68c175f655cba780dadd0ffd2964329d3561ccb7033cb79926379e303",
+      "previousSha256": "058f2f637e3b7467996267a3fae9c4b6d3d6311603d976bfae2e2aafab8052c5"
+    },
+    {
+      "image": "042-sign-out-with-unsent-note-1-nacre-envoy-second-tab.png",
+      "sha256": "d27190f11484f854de1a174f8982aa08052a635380fb514d9f828c890290c366",
+      "previousSha256": "90199c09b903246281b442f3ad965afeac239b15aa9d8a8312423a9a95122a95"
+    },
+    {
+      "image": "043-other-account-on-same-browser-1-outer-witness-same-browser.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "043-other-account-on-same-browser-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "044-end-other-account-session-1-outer-witness-signed-out.png",
+      "sha256": "d27190f11484f854de1a174f8982aa08052a635380fb514d9f828c890290c366",
+      "previousSha256": "90199c09b903246281b442f3ad965afeac239b15aa9d8a8312423a9a95122a95"
+    },
+    {
+      "image": "045-restore-original-account-draft-1-nacre-envoy-second-tab.png",
+      "sha256": "58a939076f31e38a04bbe8300377a76eb5998aca981152bf70bf941f48eff9b6",
+      "previousSha256": "82728b028ff57e72d14aca0a7dc7d1f0352840ae8402436be7596b24613baa2b"
+    },
+    {
+      "image": "045-restore-original-account-draft-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "046-choose-future-only-readmission-1-nacre-envoy-second-tab.png",
+      "sha256": "d0ff85d8eec35e65e3b124544671132daefcb904495cff617d3ca4d50006a7dd",
+      "previousSha256": "ce5a3d48933fcdea2a6fad57e75e6687c2a867d67032483c65181b406943408e"
+    },
+    {
+      "image": "047-offer-renewed-conversation-access-1-nacre-envoy-second-tab.png",
+      "sha256": "88393c885f3764890e5f5dd5a36506ac6e937ceef18463723f11ebcc55fa40c5",
+      "previousSha256": "d4ccba30c9a57d93bf79cfb2fe6e4a892e57d3f40d143b46e5023a9d11ac15f3"
+    },
+    {
+      "image": "047-offer-renewed-conversation-access-2-dawn-listener.png",
+      "sha256": "1cfd801da191b7a06bf9373b83a397a40e8449f1fc97f6cf21ec6d2a649a718f",
+      "previousSha256": "c0adcc3f24118f49a3a6071a9457f92599d9a2717e7b953b3c044a6485c32b2c"
+    },
+    {
+      "image": "047-offer-renewed-conversation-access-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "048-accept-renewed-future-access-1-dawn-listener.png",
+      "sha256": "ee227a6faafc78f6c987cebcddc5bd3ad19d381b6acec3c4a7b39ca4499bb9c8",
+      "previousSha256": "d00c822e31f8a18584df6f27e54f5488244411df2335ff12e087d29a3f8e2bfc"
+    },
+    {
+      "image": "048-accept-renewed-future-access-2-nacre-envoy-second-tab.png",
+      "sha256": "ce1517416b11d0029fc42dea4b2f7f21f9d4231b709a2d973077ac10ace3215d",
+      "previousSha256": "7078c0b592133821e2d195f40a68754fad033722f4ec0935d75ccaec27b9b919"
+    },
+    {
+      "image": "049-send-after-renewed-consent-1-nacre-envoy-second-tab.png",
+      "sha256": "d9cf6e896ede4ab3eaf80fc9bc820a82b24a47a0440455b0d3dfbabea0cfea22",
+      "previousSha256": "9dc1b4a242d43aca0d0a2a1295d815e3f65f1143c5d065147273dd03e1c0cb4a"
+    },
+    {
+      "image": "049-send-after-renewed-consent-2-dawn-listener.png",
+      "sha256": "2e477256c838344d71a0210254a866bd69e1ed64b60c5a984e2066b510cd4063",
+      "previousSha256": "45c6b9f3132f4025c0d5f04d4b5c381da51cd602feaa0a022527207476404bba"
+    },
+    {
+      "image": "049-send-after-renewed-consent-3-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    },
+    {
+      "image": "050-recover-renewed-message-boundary-1-dawn-listener.png",
+      "sha256": "d7525fd665f43342169284127f7325477b9d58cb0c65dfb0e463a420a41dd9be",
+      "previousSha256": "123c5f576a389ba8448959acdda5b1648af9d283e08a4228d0478663f2382ed3"
+    },
+    {
+      "image": "050-recover-renewed-message-boundary-2-outer-witness.png",
+      "sha256": "9cfef0110a5e1d297f70dbfae727fb6a2ecdefb6393171688f1a767edaf3474e",
+      "previousSha256": "e78b8c9ad51d64d2eed76f9f58b37005dcc28953085269b810e5a353ded43596"
+    }
+  ]
 }
