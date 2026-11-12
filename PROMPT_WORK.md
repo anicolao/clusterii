@@ -1083,3 +1083,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Diagnose the remaining large command-gallery mismatch against original pixels and container-sizing source history.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record validated single large command-motion dispatch and preserve the independently running route follow-up.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify every changed reference hash against recorded review metadata and actual PR base history before integration.
