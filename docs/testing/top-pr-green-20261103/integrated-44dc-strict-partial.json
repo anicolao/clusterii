@@ -1,0 +1,81 @@
+{
+  "head": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+  "run": 43151818973,
+  "job": 130962547976,
+  "exactStepConclusion": "failure",
+  "exactStepCompletedAt": "2026-11-12T06:48:26Z",
+  "jobStatusAtRead": "in_progress: upload-artifact",
+  "logComplete": false,
+  "logLastLine": "2026-11-12T05:42:59.9128820Z i  functions: Finished \"us-central1-profileKey\" in 17.456824ms",
+  "logBytes": 2112780,
+  "logSha256": "cb33dcba74b690599c6d1022551067a98e1e7170906c8b28380f348075c9d454",
+  "pixelFirstFailuresObserved": [
+    {
+      "pixels": 128240,
+      "ratioText": "0.39 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 128168,
+      "ratioText": "0.39 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-formation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 128240,
+      "ratioText": "0.39 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 83238,
+      "ratioText": "0.25 of all image pixels) are different.",
+      "snapshot": "e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 83238,
+      "ratioText": "0.25 of all image pixels) are different.",
+      "snapshot": "e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 126079,
+      "ratioText": "0.38 of all image pixels) are different.",
+      "snapshot": "e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png"
+    },
+    {
+      "pixels": 27885,
+      "ratioText": "0.02 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png"
+    },
+    {
+      "pixels": 897203,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 897090,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 897177,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 917178,
+      "ratioText": "0.64 of all image pixels) are different.",
+      "snapshot": "e2e/010-zero-science/screenshots/live-zero-science/desktop/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 917189,
+      "ratioText": "0.64 of all image pixels) are different.",
+      "snapshot": "e2e/011-contextual-aftermath/screenshots/contextual-aftermath/desktop/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 898622,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "e2e/012-fleet-contacts/screenshots/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png"
+    }
+  ],
+  "observedCount": 13,
+  "limits": "Partial job log ends during large viewport. Counts are not full-run counts. No pixel cause, approval, or timeout absence inferred. Retrieve final log after job terminal and selective triples before repair."
+}

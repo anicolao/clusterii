@@ -1103,3 +1103,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain exact-head successful publication evidence while application and strict verification continue unchanged.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record successful exact-head application verification and compact log while the sole strict visual job continues.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Classify the first partial strict log at 44dc, preserve its truncation boundary, and prepare selective pixel diagnosis after upload.
