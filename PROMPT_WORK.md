@@ -1099,3 +1099,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Consolidate reviewed route and gallery repairs into existing PR140 by verified normal fast-forward and unchanged required CI.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Prepare bounded unchanged-source complete fleet inset candidates after corrected native-image diagnosis; preserve each real-service journey.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request the single source-bound six-family four-size fleet inset candidate run after nine guards and exact collection pass.
