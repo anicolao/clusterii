@@ -1,0 +1,146 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "campaign-admission-navigation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+    "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-propose-campaign-1-star-envoy.png",
+      "sha256": "ef01d637689aec0f2065a6b44d5cb746f07b5e117b9cb2077119651a750fa411",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-created-faction-1-star-envoy.png",
+      "sha256": "350e3e6eae4044eeae2ecc489047a303f8bb5823835ee5cf83b1c13da15d35af",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-choose-portrait-1-star-envoy.png",
+      "sha256": "13e1b8ca45265b2d509278e6f6948783268770c9edbe4331933542658400f133",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-review-faction-1-star-envoy.png",
+      "sha256": "a02271b66ced7cec36fe803e318e9a73240bcc5b784ba4401aab6134b9b709e8",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-review-rules-1-star-envoy.png",
+      "sha256": "07c370d9d9181a55481a6ed79bd27b1ee55a0a50a8e498496789f12c9e804803",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-read-full-briefing-1-star-envoy.png",
+      "sha256": "f87d56cb03fd91cd249e87ff7de027e065499c49eae84e434d68c08e6138aad9",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "008-seat-confirmed-1-star-envoy.png",
+      "sha256": "d46ac168a39ad65ce6d5b6efec8dc22b86f3e429515f619056eb922339b5047c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-waiting-entry-1-star-envoy.png",
+      "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-identity-focus-return-1-star-envoy.png",
+      "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-campaign-directory-1-star-envoy.png",
+      "sha256": "a17dd7b933127b7c4d91fae8dfb30eaf049c903dfa43eb4391bec3f7a90e74f0",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-recover-exact-campaign-1-star-envoy.png",
+      "sha256": "07c405c7d27cf04e61b05fdee7d3a3e910e0bed9e89555e07e3a96176a634d16",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-reload-membership-1-star-envoy.png",
+      "sha256": "c94404654d2a59d3712d20965b96ef8c4be1682c5a079f96dded8ab28b1cf4f1",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "014-roster-focus-return-1-star-envoy.png",
+      "sha256": "421bd514261c56fd5aee15c5ebb1dcbe00cc7158ab022058d672f1aa9441d71a",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-release-seat-1-star-envoy.png",
+      "sha256": "f326293ac28ed6167eddd93cafc830e06cfeb8e425f5f65cd10744e7f5f6a40c",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-released-membership-reload-1-star-envoy.png",
+      "sha256": "c1645c7d4bf5b21b81c0ea1861448572577ef16f70a0c6bf093d4f6878c616ee",
+      "previousSha256": null,
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

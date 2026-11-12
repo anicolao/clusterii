@@ -1,0 +1,179 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/fullscreen-phone-inspection.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-return-briefing",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "a016d7a5a698061653cb04f1abaadd470e22afeb",
+    "dirty": false,
+    "spec": "tests/browser/return-briefing.story.spec.ts",
+    "specSha256": "5eac9055e1010e738b64eb606dc921c69cb037aea232a645dce047e5da69a4f3"
+  },
+  "target": "7f72a4fee81accbab5f1060fc72cca085726c92d",
+  "run": 43134611252,
+  "manifestSha256": "1e34575b7b7c361fe15d77b1216740c6027da7b88fce2578248bd06e69f4575e",
+  "inspectionScope": "All56 representatives individually read in14 native393x852 four-column contact layouts. Campaign rail remains above panel; briefing saved/unsaved boundaries, full focused Tick12, acknowledged economy, private history consent/removal/reinvite, conflicting drafts/retries/account separation and Return controls readable. Existing offscreen neighbor content in bounded readers, singular participant copy and map/HUD fidelity gaps are not full-design approval. No normal-motion certification.",
+  "applicability": "Since executed target, only Conversations short-desktop media query inactive at this viewport and FleetRoute editing spacing, absent from these journeys, changed. No story/helper/runtime/renderer change.",
+  "captures": [
+    {
+      "image": "015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "015-retain-reading-position-3-outer-witness.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "89d3746751079b832915bb03cb3fbd64ddab3c655ce41be233456f2736eaf9bd",
+      "previousSha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "f3d80a6d97197b2b93bd31a87d16bd344e6c9818c3e0be09e9512f811b3ae3a8",
+      "previousSha256": "c5eba1b71391eb6e05114eb6aa07f2ff7a1b177251c557df484c422b2eed4c3f"
+    },
+    {
+      "image": "019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "53144a0ae6b9fd906ca79e6a7d789961738fbfb267f099790c166d5ac0e68cf9",
+      "previousSha256": "3e869ca251fc40532ffee2185d6fc8f2e64cc8e72ff5105bbfeb11e9d1dafbde"
+    },
+    {
+      "image": "016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "53144a0ae6b9fd906ca79e6a7d789961738fbfb267f099790c166d5ac0e68cf9",
+      "previousSha256": "3e869ca251fc40532ffee2185d6fc8f2e64cc8e72ff5105bbfeb11e9d1dafbde"
+    },
+    {
+      "image": "012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "2821f28a1194fb2cdee802c66ca3c06334e8e0a5a93d6cbf294ee24381f2cdf1",
+      "previousSha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8"
+    },
+    {
+      "image": "013-read-later-production-2-independent-envoy.png",
+      "sha256": "2821f28a1194fb2cdee802c66ca3c06334e8e0a5a93d6cbf294ee24381f2cdf1",
+      "previousSha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8"
+    },
+    {
+      "image": "013-read-later-production-3-outer-witness.png",
+      "sha256": "2821f28a1194fb2cdee802c66ca3c06334e8e0a5a93d6cbf294ee24381f2cdf1",
+      "previousSha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8"
+    },
+    {
+      "image": "012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "2821f28a1194fb2cdee802c66ca3c06334e8e0a5a93d6cbf294ee24381f2cdf1",
+      "previousSha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8"
+    },
+    {
+      "image": "012-recover-complete-period-3-outer-witness.png",
+      "sha256": "2821f28a1194fb2cdee802c66ca3c06334e8e0a5a93d6cbf294ee24381f2cdf1",
+      "previousSha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8"
+    },
+    {
+      "image": "011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "2f96a968d304bd25d24734d4333d8f9bee25629f094375dfb1b58a7c7a14a95a",
+      "previousSha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca"
+    },
+    {
+      "image": "011-return-to-campaign-3-outer-witness.png",
+      "sha256": "2f96a968d304bd25d24734d4333d8f9bee25629f094375dfb1b58a7c7a14a95a",
+      "previousSha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca"
+    },
+    {
+      "image": "011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "2f96a968d304bd25d24734d4333d8f9bee25629f094375dfb1b58a7c7a14a95a",
+      "previousSha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca"
+    },
+    {
+      "image": "015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "6c652883b87e9d95d88e5c42a056c3d31f23275f42415b2fafef5db5791277f0",
+      "previousSha256": "1b0979072003067f0e855782930ade9e7ccae8ce9d102c631122d173dbdc6c82"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "22a8800c41a5ffc32e8a63c486c8d61dedd15eb6f10a7f7e073238c8bda31137",
+      "previousSha256": "c0c4b35df98425cae9f5028e7a9a55981c1b23ce37895a54ee88efb0c37de5cd"
+    },
+    {
+      "image": "013-read-later-production-1-returning-envoy.png",
+      "sha256": "1c0c8d066dc7003e9169243ddf45b02e6a6bd07e276aa954bcbf90eaee2944ac",
+      "previousSha256": "304a9ba264ebcc00b566a0a05b88c43b725af6dd3327c19a0d19604680c33805"
+    },
+    {
+      "image": "018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "de7528e6fd05bb3ebb5279ae0fc568fccd281c9f6d3045c2d93da9b0b08ac564",
+      "previousSha256": "83ce719faffbd71879e7adb3040e5d7103d2b87c69be92a46979629905c1e1b4"
+    }
+  ]
+}

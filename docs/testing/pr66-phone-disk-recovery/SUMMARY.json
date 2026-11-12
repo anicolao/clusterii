@@ -1,0 +1,35 @@
+{
+  "freeKiBBeforeAudit": 2006684,
+  "archives": [
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-phone-disk-recovery/cluster-pr62-corrected-linux.json",
+      "archive": "/tmp/cluster-pr62-corrected-linux/artifact.zip",
+      "bytes": 258854781,
+      "sha256": "220322071dc8bc9ebead56f723efc658145b36f5ccc9dc3819ae1e78a16c44a2",
+      "entries": 349,
+      "localOriginals": 349
+    },
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-phone-disk-recovery/cluster-pr62-complete-invitations.json",
+      "archive": "/tmp/cluster-pr62-complete-invitations/artifact.zip",
+      "bytes": 116144964,
+      "sha256": "6f50654c9a3872c9f7605efde112a25bf781a3c5a9a79964c3e780cfbdb4b410",
+      "entries": 189,
+      "localOriginals": 170
+    },
+    {
+      "audit": "/private/tmp/cluster-pr54-credit-review/docs/testing/pr66-phone-disk-recovery/cluster-pr53-complete-linux.json",
+      "archive": "/tmp/cluster-pr53-complete-linux/artifact.zip",
+      "bytes": 48495722,
+      "sha256": "f3049c11c59befdc08a1c3bf73dbeaeb955611292172ee9a1487c45591423f37",
+      "entries": 137,
+      "localOriginals": 137
+    }
+  ],
+  "totalCandidateBytes": 423495467,
+  "deleted": true,
+  "freeKiBImmediatelyBeforeRemoval": 2009328,
+  "removedFileBytes": 423495467,
+  "freeKiBAfterRemoval": 2423144,
+  "attribution": "Only exact archive file sizes attributed; shared filesystem delta can include concurrent activity. Invitation19 previously unextracted entries remain in verified unexpired remote archive with all hashes recorded."
+}

@@ -1,0 +1,104 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "invitation-returning-recovery",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+    "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-returning-recovery/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-return-to-invitation-1-returning-envoy.png",
+      "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+      "previousSha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-preserve-return-link-1-returning-envoy.png",
+      "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+      "previousSha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-authenticate-and-resume-1-returning-envoy.png",
+      "sha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+      "previousSha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-authenticate-and-resume-2-invitation-host.png",
+      "sha256": "507e964228fb08ce474b7fb427603248b6b1ed1f565ac89463069c1f843eb95d",
+      "previousSha256": "6ac7887138b3cb06d42ccbed5f8de42394be5a25a238a5acf985fdb79aad173b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-reload-return-1-returning-envoy.png",
+      "sha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+      "previousSha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-missing-invitation-1-returning-envoy.png",
+      "sha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257",
+      "previousSha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-recover-directory-1-returning-envoy.png",
+      "sha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327",
+      "previousSha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-denied-invitation-1-returning-envoy.png",
+      "sha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934",
+      "previousSha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-recover-entry-1-returning-envoy.png",
+      "sha256": "93d5ce9987e304a9b28acdf4fd3d14e1e6fdcd3e33b5b9771137b5b9fc1a1670",
+      "previousSha256": "93d5ce9987e304a9b28acdf4fd3d14e1e6fdcd3e33b5b9771137b5b9fc1a1670",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

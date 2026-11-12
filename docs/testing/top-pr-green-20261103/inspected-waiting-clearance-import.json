@@ -1,0 +1,679 @@
+{
+  "ledgerSha256": "0b0f0bf50f23035057e1cd145bd2bcdae12bfef48dbef78ad19d7bce17717aa2",
+  "targetBeforeImport": "a7d0ef14312f0c47f26f222b4ddf22ef13517dce",
+  "families": [
+    {
+      "story": "galaxy-command-surface",
+      "viewport": "desktop",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/story.json",
+      "destination": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "006-read-waiting-rail-1-chart-envoy.png",
+          "sha256": "9d978815d0ce84c6a60cd9825d3d408bd6275fce1a5e2547bb3f2abd009edc10",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-galaxy-1-chart-envoy.png",
+          "sha256": "6d5fba87669ac75cdbc1f91b3fc33293e2f06d832cfd16e6661255798f99b18e",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-inspect-independent-layers-1-chart-envoy.png",
+          "sha256": "98b187b514022f56963504e45826443d0fab592037713ab77fcb0ee3740c296c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-inspect-orbital-authority-1-chart-envoy.png",
+          "sha256": "576f34a5f537eb1f26057b63160cd7943a56108e50645d11cc95751151f80969",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-reserve-orbital-development-1-chart-envoy.png",
+          "sha256": "5706b8e8552f6f9152b50d8403a284699fc21617918e06832df86f1f352378e7",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
+          "sha256": "f7dd13ace2416eb6af665504065f8c20c1131c16117eee3e4f204281c5319f69",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-lower-system-facts-1-chart-envoy.png",
+          "sha256": "831f8ec52b3750ecba403631f17cd1b7782ce6b48c88e8dfc5098009cc7e3f5b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-review-surface-development-1-chart-envoy.png",
+          "sha256": "cf081ac602547c3891780846cbcdf25065586e278040b5f80c70f8312f66d4ca",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-navigate-global-economy-1-chart-envoy.png",
+          "sha256": "f6626d8d614d54d7ed9cd472b03b6c855a9e5e4dff71df16eb066bb980b5c2d7",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "020-return-to-selected-system-1-chart-envoy.png",
+          "sha256": "ed3c8d25e5daf32969f582bada2501d524e8328bcf6c50a7f2fb0df58ca777ed",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "021-select-a-catalogued-system-1-chart-envoy.png",
+          "sha256": "8cc2e5fe52bee8ec705f39747183791d037fc4ee574ad12d2d8668c7bd1b914a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
+          "sha256": "9ed1e9f991cc2abbf803830398cc55ecd6d531192d5dc6ff2513ca54a3c0a4b9",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "viewport": "desktop",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/desktop/test-results/stories/waiting-to-home/desktop/linux-arm64/story.json",
+      "destination": "tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "ccc1fb983c24f4d1b8207b0603422bde3cc5ecd7d44f1a31a793fbcf2236e9ae",
+          "previousSha256": "ccc1fb983c24f4d1b8207b0603422bde3cc5ecd7d44f1a31a793fbcf2236e9ae",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "c03c7d17b5e308de638ed1981b83938b989dcfa9437ee098d280216b4c92bf43",
+          "previousSha256": "c03c7d17b5e308de638ed1981b83938b989dcfa9437ee098d280216b4c92bf43",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "7ed5ebd3133f878f9785d44cb52f03b382d536c5ab2804bfe441082f0b7062c8",
+          "previousSha256": "7ed5ebd3133f878f9785d44cb52f03b382d536c5ab2804bfe441082f0b7062c8",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "3e102dd61e39327c3f74d627efbe6c11de216f23d4ad9e81082ed90a8a952a77",
+          "previousSha256": "3e102dd61e39327c3f74d627efbe6c11de216f23d4ad9e81082ed90a8a952a77",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "2f4fdecd22cc405052f3c4fc47d1a8db9cb76811f60aa793c164199b0d920743",
+          "previousSha256": "fc2b717574b2f31beac9b483b7bb7ea5b336a2d85816f718eefe5c913bca89d2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "49a58d6ba643f8269e032c4ff808709675cf664e788eeca542ec912f813b98e3",
+          "previousSha256": "de2ada993bac791ba2a38cda18b29b7bc12e239d57185a93ffc90929529fcf52",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-1-chart-envoy.png",
+          "sha256": "7819fc0139ec1abcafeccbc6df5ce6f00121affc6c3d7730b1c239510f37666f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-2-tidal-envoy.png",
+          "sha256": "441a5126c42e2d7aca616f2b59e8131ee9329b34ea029f70827df981a90307f7",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "galaxy-command-surface",
+      "viewport": "large",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large/test-results/stories/galaxy-command-surface/large/linux-arm64/story.json",
+      "destination": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64",
+      "captures": [
+        {
+          "image": "006-read-waiting-rail-1-chart-envoy.png",
+          "sha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-galaxy-1-chart-envoy.png",
+          "sha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-inspect-independent-layers-1-chart-envoy.png",
+          "sha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-inspect-orbital-authority-1-chart-envoy.png",
+          "sha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-reserve-orbital-development-1-chart-envoy.png",
+          "sha256": "134b4a5a4795673c4480b693eb5390f4ef694474af40be2cfe3404f4b0447ceb",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
+          "sha256": "716373a8fa8c9709e2c32dee22e4c189a5ddeff3d00934f3669d9ed62c53911a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-lower-system-facts-1-chart-envoy.png",
+          "sha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-review-surface-development-1-chart-envoy.png",
+          "sha256": "23088cf0659b4e1028186df15049a8d7b38a18f92c87eba1eabe3f54cc89c021",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-navigate-global-economy-1-chart-envoy.png",
+          "sha256": "d20c4a9ed64bbaefb27bd9487d68b9708e4294589b6060b3a1b877a10c9dfbfd",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "020-return-to-selected-system-1-chart-envoy.png",
+          "sha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "021-select-a-catalogued-system-1-chart-envoy.png",
+          "sha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
+          "sha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "viewport": "large",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large/test-results/stories/waiting-to-home/large/linux-arm64/story.json",
+      "destination": "tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64",
+      "captures": [
+        {
+          "image": "007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "e2b28b6c3dd2743fa8ddb4a2771dc6c7ad66b6dc5aa5201d9198ee1d60991996",
+          "previousSha256": "e2b28b6c3dd2743fa8ddb4a2771dc6c7ad66b6dc5aa5201d9198ee1d60991996",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+          "previousSha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+          "previousSha256": "c62eef96336f8fb398a9d09614d387d6d3609a2f59bc719879b6af13b94ec7bc",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "5a192fe0b857156fb8bd129c253fff0f6844a285cba130e1745ff9ae07e76984",
+          "previousSha256": "5a192fe0b857156fb8bd129c253fff0f6844a285cba130e1745ff9ae07e76984",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "4ccdf826ffe1709a3e5d1372c101c71fe3d6fb659321f84111db435d9dfd6648",
+          "previousSha256": "73ce69fb2f47dec6d9a598778051616fe0d2395eb75510b55aa42febba8d4674",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "528c0a80c0f4de3c2a13dbbc06857674944a078ded81d453186e4b55be11c891",
+          "previousSha256": "ef52c5001bdd2da7cdde5bef00702497e402563c9b4357f70ce248a06c640603",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-1-chart-envoy.png",
+          "sha256": "6fb01d2870e3fcb1a2920486504379091fa60642f83ed9d9eb5f42d4dd13c74f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-2-tidal-envoy.png",
+          "sha256": "c1da4d7d23c3f85b56994deec66e2da91dd6d39c5a5210928def091fa0d83729",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "galaxy-command-surface",
+      "viewport": "phone",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+      "destination": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "006-read-waiting-rail-1-chart-envoy.png",
+          "sha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-galaxy-1-chart-envoy.png",
+          "sha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-inspect-independent-layers-1-chart-envoy.png",
+          "sha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-inspect-orbital-authority-1-chart-envoy.png",
+          "sha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-reserve-orbital-development-1-chart-envoy.png",
+          "sha256": "c546f218d90d2254ac66f350a02d8b1fb73daf02478dd8088853eb761f89a5c6",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
+          "sha256": "ec1aeba49e682bc1e2c6a7cce8b88bf4551ba3e9c0d1bdd099083e5f490a987c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-lower-system-facts-1-chart-envoy.png",
+          "sha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-review-surface-development-1-chart-envoy.png",
+          "sha256": "8c91f826b652c63e8c711e11f962c0f4d4ccc8f034b01f8106c0c77a0009f25c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-navigate-global-economy-1-chart-envoy.png",
+          "sha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "020-return-to-selected-system-1-chart-envoy.png",
+          "sha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "021-select-a-catalogued-system-1-chart-envoy.png",
+          "sha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
+          "sha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "viewport": "phone",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/phone/test-results/stories/waiting-to-home/phone/linux-arm64/story.json",
+      "destination": "tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "ac12b47220e51bbf26dcf46fa377903f8331f8c25247382a167862e7d413886d",
+          "previousSha256": "ac12b47220e51bbf26dcf46fa377903f8331f8c25247382a167862e7d413886d",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "96f7688487c49aeb168cdd02b26ecc02ee738c981b0b7bb5fb031c6177c09439",
+          "previousSha256": "96f7688487c49aeb168cdd02b26ecc02ee738c981b0b7bb5fb031c6177c09439",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "37bead447a6a79377876d334c181993c9fe16063cc6101533ede34b3e2a49136",
+          "previousSha256": "37bead447a6a79377876d334c181993c9fe16063cc6101533ede34b3e2a49136",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "3eba49f2e69fe96018ecb23b4cdd316b46f8fe6beb9f8d0f5cd196a34f78b11f",
+          "previousSha256": "3eba49f2e69fe96018ecb23b4cdd316b46f8fe6beb9f8d0f5cd196a34f78b11f",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "f6cdc802f331982fe324f2e84923be161f0f428ffac72495010a8c9c1c05620a",
+          "previousSha256": "6fff78574c336cab32a943fc84ff6488af71f53f9510392722a2c3982e37674a",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "86e86e03cc1afd86e4b90dd5faca754e0510bf14da0299f74ed3caa93a12d1d0",
+          "previousSha256": "921a54c13c69222fef4e2fab7beded16c7f3ea768ea7c24924ffe9c741372d49",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-1-chart-envoy.png",
+          "sha256": "907f09e86adfb751679827ce352ae929a644d561db699b79a977930c4532ae25",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-2-tidal-envoy.png",
+          "sha256": "c323148878c65df193cb41faab9863675826ecf4a56256196bd06a0a8608445e",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "galaxy-command-surface",
+      "viewport": "short",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+        "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short/test-results/stories/galaxy-command-surface/short/linux-arm64/story.json",
+      "destination": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64",
+      "captures": [
+        {
+          "image": "006-read-waiting-rail-1-chart-envoy.png",
+          "sha256": "58ff3ea807ddff41708919d116745a14706669c7db5b9c046bec3d559d7cf5ed",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-galaxy-1-chart-envoy.png",
+          "sha256": "dd3a78bbbb9d216429fc3c0b078b08962b176cffc7dea7bb7fe509fefd67fac6",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-inspect-independent-layers-1-chart-envoy.png",
+          "sha256": "da5cd12a7db185bdb7c3c706f93d26c9542eeea2ca45a3fbeeb4d8b3a6c4cea0",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-inspect-orbital-authority-1-chart-envoy.png",
+          "sha256": "9c7f2880d1107d16eb792ba8960ddc138b4204ac0c7a2f97eead8b57a73ed2fc",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-reserve-orbital-development-1-chart-envoy.png",
+          "sha256": "1b929d4d4e275cf1454d91afc6751c2a2631429a35376e4ffbf3248d72a8a23c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
+          "sha256": "31ff56da8e5dbd8a42a68db5011d0083f115d547b09e676d472c6ada4c711a00",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-lower-system-facts-1-chart-envoy.png",
+          "sha256": "bbf0deaeed1cfe811a3c03e06d7961a83e5885ae5643a4387e14bde0c7847e10",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-review-surface-development-1-chart-envoy.png",
+          "sha256": "26840ed4e2bac15924aa691663aaa0d30e36701629911aee0afc7c3c8e056537",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-navigate-global-economy-1-chart-envoy.png",
+          "sha256": "9720c3498c2b39ac325518116c0a02cec08401940121a1a77df777646b28e50a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "020-return-to-selected-system-1-chart-envoy.png",
+          "sha256": "ce7244b9836f7f882790cba254fb417124eddd4acda1591ea4c0e1154cfcfbc7",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "021-select-a-catalogued-system-1-chart-envoy.png",
+          "sha256": "d42882751bc5acde71ad01c0d58854e05f4d3d6243789c2dc7ae192ab052241c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
+          "sha256": "fe56ea33ba1282618eb1e5ed0a409b7655f39ab25fb1056b2bb8c8e9179d5437",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "waiting-to-home",
+      "viewport": "short",
+      "source": {
+        "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "dirty": false,
+        "spec": "tests/e2e/004-waiting/waiting.spec.ts",
+        "specSha256": "3392a92bf24034bad5f5b62bd5d5a18905be5542a8f1f3e4715bf385ce71df6e"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short/test-results/stories/waiting-to-home/short/linux-arm64/story.json",
+      "destination": "tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64",
+      "captures": [
+        {
+          "image": "007-recover-waiting-seat-1-chart-envoy.png",
+          "sha256": "c22b3462e1311cd77d62de323754d5b2646e5dbf4c851a67321d4b171c3c1903",
+          "previousSha256": "c22b3462e1311cd77d62de323754d5b2646e5dbf4c851a67321d4b171c3c1903",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scheduled-roster-1-chart-envoy.png",
+          "sha256": "80b54ff53bda6e9123002b84db4516de2e0b6938c97057effafbb3661b38449b",
+          "previousSha256": "80b54ff53bda6e9123002b84db4516de2e0b6938c97057effafbb3661b38449b",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-departure-policy-1-chart-envoy.png",
+          "sha256": "6881de9b376aa71e8dd46c252868fb5da043f1528f8d89ac2b46f1a70e78f87b",
+          "previousSha256": "6881de9b376aa71e8dd46c252868fb5da043f1528f8d89ac2b46f1a70e78f87b",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-rules-and-return-1-chart-envoy.png",
+          "sha256": "8f1e117097c9fe42e54bc433c9ef2a8b67df8ea3e1059a46b48037200d7e6560",
+          "previousSha256": "8f1e117097c9fe42e54bc433c9ef2a8b67df8ea3e1059a46b48037200d7e6560",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-release-saved-seat-1-tidal-envoy.png",
+          "sha256": "f774bb24e8c21c16eaa4cbc87ad6275dc990189621c438ef18b269d73715379d",
+          "previousSha256": "9bd2db4a0664aff3fe0c095361269210056dd327d31bac151e63fd7833522f33",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-rejoin-departure-1-chart-envoy.png",
+          "sha256": "eaa4bd91465c5894a4bcf3601c835a2ff610618c1916c28a6591224a6bab06d2",
+          "previousSha256": "d82045e056245cfee7403837dce9439050c83a986be9213a9747301e9e3592a4",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-1-chart-envoy.png",
+          "sha256": "7e4cd92e416154fdeead2792ff1c4682b38d847ff99c08b702f2c9f17ba2d9d0",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-recover-assigned-home-2-tidal-envoy.png",
+          "sha256": "ae382adc1e58047ae2cac29a250ecbf3801d83deafae2e9252407e12b3d5cd0e",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": []
+}

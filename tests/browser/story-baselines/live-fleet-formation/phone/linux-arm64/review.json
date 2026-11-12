@@ -1,0 +1,194 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-fleet-formation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+    "dirty": false,
+    "spec": "tests/browser/fleet-formation.story.spec.ts",
+    "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "0cbb713c2c36df056cc44f45938009cbd934c68d6633af105410993ff8ed2e2b",
+      "previousSha256": "edf036c2e181d05918910c04e4a5ba9af12f5469dfd9f43aa7a7797cde323707",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "f7a3f54cc5e4184a5d1d155c299481408594bcfd71b247742c45e0510309c45b",
+      "previousSha256": "94a05e49ce82961f3d363982c729da4bae0b291d700d3b6527625ccd39bc55c8",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "ef5b0cb5d2fae34b9961e6b86d6b02e0845f0b5697a2d9a9c76a205d000a12d5",
+      "previousSha256": "86f50332aef08d1d85dde2ad9ebd7e46c6136bdbb2d8badce2dae59d7b178504",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "e2166aa7e86fed3fdb6e8c4cf52e09814171d2d333ce8e1622da75acf31edfdc",
+      "previousSha256": "f25fa2869d930877e8d0010ab5397b02db7a84b84ea9f4173415c0be110c5de4",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "01cecae0bbe5e56c21ed3469cadb2d5db968a8d035fe90f03f87801b9cc1cbae",
+      "previousSha256": "cbd19801e2889785f2709b55ace9d64f32f75eeed9777c4da7ccf0314d626464",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "015-formed-fleet-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "016-map-presence-1-fleet-marshal.png",
+      "sha256": "f3bf8c80a33b00d8d17e96454c7035551129f3a567fe9a75a7fc9716f6b5d3fa",
+      "previousSha256": "b92cc44bdf830d317b0ddd467be86a6ced9ba5497a02e88707c0b6b5a0535f0a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-map-presence-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "017-reserve-disband-1-fleet-marshal.png",
+      "sha256": "75979a8d730d04dd38d34f4e311f11f9487172b72fb08b72c9cf02f24c2e8197",
+      "previousSha256": "4fb9a3d1f8c5fbf72bb6a1071b259557638f2dbb464c30b74f8b8b005468dd66",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "017-reserve-disband-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "018-reload-disband-1-fleet-marshal.png",
+      "sha256": "158e01beceae63e7de4b5335e1d0a62bd772321c826d49bdc777950ac5c84129",
+      "previousSha256": "60dd27d6094cefc78deb4623fd8e19899c29d8be05a8d2e14154b5c86cab5638",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "018-reload-disband-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "020-disbanded-fleet-1-fleet-marshal.png",
+      "sha256": "eefb418a58d60cb11c3809c49df21df8319bca91741d4a9e2a4e43f4bd19f60e",
+      "previousSha256": "5f48b83b4ca6ec7bb38a734cae69a3047687892cbab38f26ada13b38d267b6fc",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "020-disbanded-fleet-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "021-recover-final-forces-1-fleet-marshal.png",
+      "sha256": "a44c8df1d59d2319418b6a73951b9dc12f1f06351555411e4ad26276bb41521e",
+      "previousSha256": "69522733d0da1e159b7b0f62ab2c694d4e19812b58c98a5c43671b07ff22b5f8",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-recover-final-forces-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    }
+  ],
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json",
+      "source": {
+        "commit": "ec13c28dedc76fb08199312ecd5937940995a336",
+        "dirty": false,
+        "spec": "tests/browser/fleet-formation.story.spec.ts",
+        "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-insets-43173376847/phone/test-results/stories/live-fleet-formation/phone/linux-arm64/story.json",
+      "scope": "Exact visually inspected changed hashes; all other reference bytes preserved. Full strict acceptance pending."
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/briefing-short-complete-inspection.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-return-briefing",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "a016d7a5a698061653cb04f1abaadd470e22afeb",
+    "dirty": false,
+    "spec": "tests/browser/return-briefing.story.spec.ts",
+    "specSha256": "5eac9055e1010e738b64eb606dc921c69cb037aea232a645dce047e5da69a4f3"
+  },
+  "target": "7f72a4fee81accbab5f1060fc72cca085726c92d",
+  "run": 43134611252,
+  "manifestSha256": "0ce7164ade4399d2cd00e7180aef958c78c01ad48648f4b723058702fe79e208",
+  "inspectionScope": "All nine distinct native1280x720 originals individually viewed, covering27 exact hashes. Recovery before save, tick12/13 reviewed boundary, new activity, focused report, saved visit and History opener focus are readable. Deliberately scrolled readers clip neighboring content: the lower advisory at015 and lower economy science row at018 are not fully visible in those positions; controls remain visible. Scoped regression approval, not automatic all-content visibility, full design or normal-motion certification.",
+  "applicability": "Only Conversations short reader and FleetRoute editor changed since target7f72; neither component is exercised in this briefing journey; spec/helpers/runtime unchanged.",
+  "captures": [
+    {
+      "image": "011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "4778b3c81b558b5407d91d56944918df758613a14b4003570ad7a2d7a1316e2e",
+      "previousSha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43"
+    },
+    {
+      "image": "011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "4778b3c81b558b5407d91d56944918df758613a14b4003570ad7a2d7a1316e2e",
+      "previousSha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43"
+    },
+    {
+      "image": "011-return-to-campaign-3-outer-witness.png",
+      "sha256": "4778b3c81b558b5407d91d56944918df758613a14b4003570ad7a2d7a1316e2e",
+      "previousSha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43"
+    },
+    {
+      "image": "012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "43d0f0332581201655b1e760b083f1cba681e15bb8ec35ebfbfb0b97d979d4d6",
+      "previousSha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d"
+    },
+    {
+      "image": "012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "43d0f0332581201655b1e760b083f1cba681e15bb8ec35ebfbfb0b97d979d4d6",
+      "previousSha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d"
+    },
+    {
+      "image": "012-recover-complete-period-3-outer-witness.png",
+      "sha256": "43d0f0332581201655b1e760b083f1cba681e15bb8ec35ebfbfb0b97d979d4d6",
+      "previousSha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d"
+    },
+    {
+      "image": "013-read-later-production-1-returning-envoy.png",
+      "sha256": "a976e4d16a080879be6ae72a029d5032ce15537061d1e54a542d27a2dc1b472e",
+      "previousSha256": "c75668b321b0c0e4cdb8e1d40d636c5bac1cdb32385b440f0d23b1c351c92517"
+    },
+    {
+      "image": "013-read-later-production-2-independent-envoy.png",
+      "sha256": "43d0f0332581201655b1e760b083f1cba681e15bb8ec35ebfbfb0b97d979d4d6",
+      "previousSha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d"
+    },
+    {
+      "image": "013-read-later-production-3-outer-witness.png",
+      "sha256": "43d0f0332581201655b1e760b083f1cba681e15bb8ec35ebfbfb0b97d979d4d6",
+      "previousSha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d"
+    },
+    {
+      "image": "015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "dc45ab1e991719a0579f760b17c00754d219768cf9b87e2324de2e2aeb447660",
+      "previousSha256": "f6086226e4bbb61cd745cf2a7e407d444df06958dd23eb60ed07c364c78e02e0"
+    },
+    {
+      "image": "015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "015-retain-reading-position-3-outer-witness.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "c673a806645779cce9b6d8b3bab54b615de0ea6d5e8e1f2dc361098c57ed48f7",
+      "previousSha256": "1702d7b8b3d57ea011cf2623fd6aa65c3bdf1601707ce4274935dabc0eb3b2ab"
+    },
+    {
+      "image": "016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "8d0eb3d7a58df22652a3819c867f7af14050cf45a6a3c248b9add2a7fb202fcc",
+      "previousSha256": "b716bbd9873a9c0ecb12b38d8d74f741cce50164e97286b8e3c20781e1288fab"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "fd4b7d40f2629f068d63dfbe84e61d256194ecaa046d8c2e33cae2f66a5e35c6",
+      "previousSha256": "f3f8e51d663c6569d87cae167e48113de9feb3780e0ac477727d27245ca4af14"
+    },
+    {
+      "image": "018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "c673a806645779cce9b6d8b3bab54b615de0ea6d5e8e1f2dc361098c57ed48f7",
+      "previousSha256": "1702d7b8b3d57ea011cf2623fd6aa65c3bdf1601707ce4274935dabc0eb3b2ab"
+    },
+    {
+      "image": "019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "5329d2e3cce0179a50f20a29488163db88077b79b17592b3ca26fdaf07285c00",
+      "previousSha256": "544615359147ab6a01117edb8cdd552cea38a3b0a923bfaecbd1fd98b1ec101b"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "253bdbe39371135ec02f30fdf6080305e925e6c9d66b84cf0eb2392863e27c5e",
+      "previousSha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931"
+    }
+  ]
+}

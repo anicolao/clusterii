@@ -1,0 +1,1 @@
+First type check failed because the evaluate argument widened surface to string; corrected with the literal game as const. No runtime or assertion change. Original focus diagnostic did not reproduce missing ring; no specific modality cause established.

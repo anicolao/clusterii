@@ -1,0 +1,304 @@
+{
+  "runs": [
+    {
+      "conclusion": "success",
+      "headSha": "b487b2f630124eddd4ae6d544066ed59220a386a",
+      "jobs": [
+        {
+          "completedAt": "2026-11-12T00:25:08Z",
+          "conclusion": "success",
+          "databaseId": 130876855255,
+          "name": "candidates (desktop)",
+          "startedAt": "2026-11-12T00:13:02Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:25:01Z",
+              "conclusion": "success",
+              "name": "Complete both route journeys at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:19:03Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:25:05Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:25:01Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:25:06Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:25:06Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43125630873/job/130876855255"
+        },
+        {
+          "completedAt": "2026-11-12T00:27:46Z",
+          "conclusion": "success",
+          "databaseId": 130876855586,
+          "name": "candidates (large)",
+          "startedAt": "2026-11-12T00:13:00Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:27:30Z",
+              "conclusion": "success",
+              "name": "Complete both route journeys at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:18:55Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:27:43Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:27:30Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:27:45Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:27:45Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43125630873/job/130876855586"
+        },
+        {
+          "completedAt": "2026-11-12T00:24:01Z",
+          "conclusion": "success",
+          "databaseId": 130876855711,
+          "name": "candidates (phone)",
+          "startedAt": "2026-11-12T00:13:00Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:23:56Z",
+              "conclusion": "success",
+              "name": "Complete both route journeys at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:18:47Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:23:58Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:23:56Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:23:59Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:23:59Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43125630873/job/130876855711"
+        },
+        {
+          "completedAt": "2026-11-12T00:24:54Z",
+          "conclusion": "success",
+          "databaseId": 130876855757,
+          "name": "candidates (short)",
+          "startedAt": "2026-11-12T00:13:00Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:24:48Z",
+              "conclusion": "success",
+              "name": "Complete both route journeys at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:19:15Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:24:51Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:24:48Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:24:52Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:24:52Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43125630873/job/130876855757"
+        }
+      ],
+      "status": "completed",
+      "url": "https://github.com/anicolao/clusterii/actions/runs/43125630873",
+      "observedAt": "2026-11-12T00:28:09.396023+00:00"
+    },
+    {
+      "conclusion": "success",
+      "headSha": "83dd576d9f30181750181f99318f064628d80def",
+      "jobs": [
+        {
+          "completedAt": "2026-11-12T00:26:07Z",
+          "conclusion": "success",
+          "databaseId": 130878206711,
+          "name": "candidates (large)",
+          "startedAt": "2026-11-12T00:16:14Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:26:02Z",
+              "conclusion": "success",
+              "name": "Complete identity gallery at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:22:15Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:26:04Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:26:02Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:26:06Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:26:05Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43126032986/job/130878206711"
+        },
+        {
+          "completedAt": "2026-11-12T00:25:12Z",
+          "conclusion": "success",
+          "databaseId": 130878206920,
+          "name": "candidates (phone)",
+          "startedAt": "2026-11-12T00:16:12Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:25:07Z",
+              "conclusion": "success",
+              "name": "Complete identity gallery at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:21:54Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:25:09Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:25:07Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:25:10Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:25:10Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43126032986/job/130878206920"
+        },
+        {
+          "completedAt": "2026-11-12T00:26:50Z",
+          "conclusion": "success",
+          "databaseId": 130878206925,
+          "name": "candidates (desktop)",
+          "startedAt": "2026-11-12T00:16:12Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:26:44Z",
+              "conclusion": "success",
+              "name": "Complete identity gallery at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:23:19Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:26:46Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:26:44Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:26:48Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:26:48Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43126032986/job/130878206925"
+        },
+        {
+          "completedAt": "2026-11-12T00:25:42Z",
+          "conclusion": "success",
+          "databaseId": 130878206986,
+          "name": "candidates (short)",
+          "startedAt": "2026-11-12T00:16:14Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completedAt": "2026-11-12T00:25:37Z",
+              "conclusion": "success",
+              "name": "Complete identity gallery at original limits",
+              "number": 5,
+              "startedAt": "2026-11-12T00:22:18Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:25:38Z",
+              "conclusion": "success",
+              "name": "Retain every result and first failure",
+              "number": 6,
+              "startedAt": "2026-11-12T00:25:37Z",
+              "status": "completed"
+            },
+            {
+              "completedAt": "2026-11-12T00:25:40Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "number": 13,
+              "startedAt": "2026-11-12T00:25:40Z",
+              "status": "completed"
+            }
+          ],
+          "url": "https://github.com/anicolao/clusterii/actions/runs/43126032986/job/130878206986"
+        }
+      ],
+      "status": "completed",
+      "url": "https://github.com/anicolao/clusterii/actions/runs/43126032986",
+      "observedAt": "2026-11-12T00:28:10.504136+00:00"
+    }
+  ],
+  "scope": "Remote outcomes only; newly generated pixels still require source/hash validation and actual visual inspection before import.",
+  "retention": "14-day remote artifacts; no duplicate archive downloaded for this checkpoint."
+}

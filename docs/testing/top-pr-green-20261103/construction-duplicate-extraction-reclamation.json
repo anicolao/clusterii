@@ -1,0 +1,2001 @@
+{
+  "retainedGitCommit": "8d304a40de1922a5ddcd82e8238e31845267ae03",
+  "remoteConfirmed": "8d304a40de1922a5ddcd82e8238e31845267ae03",
+  "files": 332,
+  "logicalBytes": 576910233,
+  "method": "Every candidate PNG compared byte-for-byte with pushed Git blob before deletion. Unique manifests, renderer/source records and failure traces retained. No archive downloaded or other file removed.",
+  "records": [
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+      "bytes": 281994
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "8155cc7a102dfc04dcf5f6f6c3aba42c6d25c2b04300e4256b70ca7108a5a4a3",
+      "bytes": 192575
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "a0bda0afba6d7c592909e3bed5f1f1c62469d7d09a9851363de6abddadab6cc9",
+      "bytes": 190707
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "067700f09b729cc45f620b828ec7be7c73a20fe97456dcbcd1b2ff9d4fa29094",
+      "bytes": 187484
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "e84ed9cfad062b46d4f0537d184d0b8cfb41748912d054fdde76740c2a989414",
+      "bytes": 188382
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "59709ed20e85bc316fa73d924624850d814277f6c36eb6362e541e44de564ed3",
+      "bytes": 240270
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "sha256": "2a98bad429c7fad1f3a22ab19a706784ef71d486a9a9ff7e66c94023b51e3bcc",
+      "bytes": 131541
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "sha256": "5e4e9dff2af09d25780c8fb033f2dec4d6385f909aca049cce62a86c08602ad7",
+      "bytes": 141494
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "sha256": "f23de6cdda32b40e18c6da049b0b408f489994a5b162a64f15ec11fb85ff6763",
+      "bytes": 142275
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "sha256": "2614cb7369de5aa0b96506fc6943693e7b0f6b25deebb8f2b0f72c303a827df8",
+      "bytes": 143423
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "sha256": "d7bd733996e18b5d2b92015af4d819b32bb7298444186fbe43663a12000dfcbb",
+      "bytes": 141398
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "sha256": "fa585b6a73861f0622071ff48e3ba780ec493fe6b226abbb080fce73340f4651",
+      "bytes": 137424
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "sha256": "621e5e993eef93b08aab9871f48076285c6909a6f113b6359ea7827610131fca",
+      "bytes": 135124
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "sha256": "9cdd008015080bb4c0a1274a213cb0257c4030f4af4e51d6176a73deab5cfa4a",
+      "bytes": 132949
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "sha256": "d91395daee3b2209add2d149c4f002d95df8374b15e8c17adc5675d1d29b69aa",
+      "bytes": 134966
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "sha256": "f0f1fa656b09c8a9a8fc53f0e5a40c60fa3f692ea134dc0daf7aa51b9edf70c9",
+      "bytes": 134627
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "sha256": "307570055328a9c8649191ef8a9f5f50db96605c891672328b2e8139a29daf84",
+      "bytes": 143870
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "sha256": "2cdd77151cf3258334481bdb54f9b224d8962a405d04a395983ce3c5b8afe8f1",
+      "bytes": 295082
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "sha256": "8994d40b489b8f0cd68ee6f5f6c734290167f6c019bb03aed1c40bd8ac0ef49a",
+      "bytes": 145877
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "sha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+      "bytes": 281994
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "sha256": "e1e6d55c50548609bc36b7f718bcd8d8c4eeb09127389e862d6f8c96078ef9e6",
+      "bytes": 258293
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "sha256": "26c3b6e0dc3550e525de5d10281c3ac88b34b6978df3747acc7d8e7c7b0033af",
+      "bytes": 76203
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "sha256": "c935cd27b089b595a2fcda036b9adc380412de3461f910b53370164cd5a4c942",
+      "bytes": 295249
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "sha256": "01387b043f9d97f0a177f84ebf5d09cde9ab106a4e249004902b364037f712f9",
+      "bytes": 257338
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "sha256": "b35a29047562969f17932804404c56d0884edd459096cf587c97e691cfaf2869",
+      "bytes": 254494
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/035-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/035-completed-build-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "sha256": "087f7b840d3fc1932acc8986b9e45b0d8352e364b0c75c37b2e0c80e0aa8d8a8",
+      "bytes": 139509
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "sha256": "c60b13b8978e42f60e6b109f34d07a0324fe8b1844416ad273dd7457ab7f10ab",
+      "bytes": 283824
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "1c47fe0a7c973375375301f612143cea26e72dafd2f9c3194147b1c7938bc106",
+      "bytes": 253564
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "sha256": "4a265eb7aa47e1d5418e3f7be4b3c5d321212225fb799cc1e6930d93494de740",
+      "bytes": 252663
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "sha256": "759a7780b11924f5080f86b9e3aec169f741fb9eccb7febdb482233ffc7d49f4",
+      "bytes": 261695
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+      "bytes": 277165
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "c49f9d27a3903317126cc34837ea0449186a78ee7c6a986ad778c44912efe9cd",
+      "bytes": 258404
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+      "bytes": 277165
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "sha256": "52ffc6b30b40315103d2d7d769c256673d7dce4edcac73f6c70e03b7a549d1d0",
+      "bytes": 171081
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+      "bytes": 277165
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+      "bytes": 281994
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "sha256": "a14e54ec21542f1f2ea7263ab129463470082c459c352001aac1208fe0dbe92e",
+      "bytes": 275908
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/012-pending-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/012-pending-build-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "d767a0ea67473213ce54e71ce0048bab1892a5ea7e9c4709840058aa9e65d175",
+      "bytes": 273455
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "sha256": "228c9f5eb5a836a4ba696ee4d09e4947c1b7b49cd4223017236c94d8a4d9bbf1",
+      "bytes": 258290
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "sha256": "01387b043f9d97f0a177f84ebf5d09cde9ab106a4e249004902b364037f712f9",
+      "bytes": 257338
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "sha256": "4aaf630c7c622ffbd08e186f772433d74382a160b850cebc7db053e5ef938455",
+      "bytes": 277114
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "sha256": "b35a29047562969f17932804404c56d0884edd459096cf587c97e691cfaf2869",
+      "bytes": 254494
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/018-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/018-completed-build-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "1c47fe0a7c973375375301f612143cea26e72dafd2f9c3194147b1c7938bc106",
+      "bytes": 253564
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "sha256": "4a265eb7aa47e1d5418e3f7be4b3c5d321212225fb799cc1e6930d93494de740",
+      "bytes": 252663
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "sha256": "777b4bf9787a7bd19055048855e4134c9f9aa2d270ce26a9dfc2e674fc961e7c",
+      "bytes": 277842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "sha256": "759a7780b11924f5080f86b9e3aec169f741fb9eccb7febdb482233ffc7d49f4",
+      "bytes": 261695
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+      "bytes": 277165
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "c49f9d27a3903317126cc34837ea0449186a78ee7c6a986ad778c44912efe9cd",
+      "bytes": 258404
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+      "bytes": 277165
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "sha256": "52ffc6b30b40315103d2d7d769c256673d7dce4edcac73f6c70e03b7a549d1d0",
+      "bytes": 171081
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/phone/test-results/stories/010-construction/stories/live-construction-recovery/phone/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "sha256": "14bc2e3d7c2f43ad55302d6a05a6887a91d6a3547df13fe2b99bac4bc4be297d",
+      "bytes": 277165
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "b20c15b265ceba4a475f91ac0075b70b99615d90d1583ee0cfc5d3a0aac55925",
+      "bytes": 1212793
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "1ef2f58b8d76ae70c46d6215a3457ebff441d6cb7ef467bd5458a54ae00cc51c",
+      "bytes": 741438
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "33b2dbb7f0ca683ff2b5c1bd536054c9914b411c9154ef74517d037dce912050",
+      "bytes": 737794
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "c9b51f0dfe16d3aef7400be01f0b479c9c4d5f76c48082d13960acf59252e824",
+      "bytes": 769026
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "c9b51f0dfe16d3aef7400be01f0b479c9c4d5f76c48082d13960acf59252e824",
+      "bytes": 769026
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "ac8faa17f65bb2caf9c72b346320b8b2463f07be913735f8d749116b2db8f2a9",
+      "bytes": 975866
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "sha256": "42eea71ef4b1b021f4eec0406b2516fce11539bc8c21b846c3da871240f95f43",
+      "bytes": 643310
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "sha256": "a0ea7e941b8d0d05d4fb48192f278ac8503595a6afc0bc4b095ebd6a7a24f23e",
+      "bytes": 689510
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "sha256": "73f04bbbb67999c46d841be320afb35a7d9f93952325e5e83e4882731c907871",
+      "bytes": 685808
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "sha256": "700b2da48883ca76c8436ae79b5ee11890fb8b0bb77c6d18329c4db1698969e1",
+      "bytes": 690428
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "sha256": "1eddec71607bab6eeb6d3d19d3d82309fdfae02cb6f6c03f5400828cf68ad6e1",
+      "bytes": 687839
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "sha256": "54e0bbfc5a7c3017f29a2722ce3eddad4c7a76a3bfea2ddcb7827572a57b13aa",
+      "bytes": 659864
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "sha256": "dea041e1f1ee25392f621bf690ddc6ec2cf3abd63ed43293cabdb90e9011d42d",
+      "bytes": 662894
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "sha256": "20b7f2dd11b984b973d91fa47371d57f17492d4238a95dc5429fa87b01e831c9",
+      "bytes": 649208
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "sha256": "4996b3422ff434a0adae34999d36be407de3327b918f6f4b734e5af219c6e366",
+      "bytes": 871584
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "sha256": "fd6daa792cca139192d026b429e43718ef439a943de1caa96dd2b4b7509ed65b",
+      "bytes": 873377
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "sha256": "e4a7b629a87626146b5092c7174f26b336609f6d8bd47e106d29600fb3df03bb",
+      "bytes": 899763
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "sha256": "4ab640e07d28ec390391d70f5b59e34d9ff8a8d6fdda642644568025f70d6089",
+      "bytes": 1267355
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "sha256": "c8489d80e9a085ca04ba1659849197e10f87b8fe01f6c0816ef0d870497fdda5",
+      "bytes": 895936
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "sha256": "b20c15b265ceba4a475f91ac0075b70b99615d90d1583ee0cfc5d3a0aac55925",
+      "bytes": 1212793
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "sha256": "4160674305e81288905fa444164f5cdb73c419488511431b525030086696b655",
+      "bytes": 995440
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "sha256": "a3a6b0e81cc1493ac8fe531a0eb66913b90b2cc339041f73b8037d1ffda64d47",
+      "bytes": 552015
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "sha256": "57e5eeed03b443fbadbfa355f2f15a5d9a2bfb21a09fd652cfc46c1f9129a680",
+      "bytes": 1267409
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "sha256": "3de3554b06413d281bc5fde75529484c539e3d031d3b3f4015887b12ee8afc9d",
+      "bytes": 1063124
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "sha256": "81bf912670717668b87d457259fb9f5cf8f571fe69b1a8f52579324066db318c",
+      "bytes": 1214376
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "sha256": "c41397282f0f1c88d1aabe6495114748a81159291626587e388f2e71cb3c9b19",
+      "bytes": 1059751
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/035-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/035-completed-build-2-independent-builder.png",
+      "sha256": "14ce6dcf3205dc88b80529336c9fb52f7050428fe4298f5b3c4205e03d25d558",
+      "bytes": 1214660
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "sha256": "1eece3c97647c081113e9c4a2845a4ca16cc465f631e826a87c5247241c429be",
+      "bytes": 667846
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "sha256": "14ce6dcf3205dc88b80529336c9fb52f7050428fe4298f5b3c4205e03d25d558",
+      "bytes": 1214660
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "sha256": "f968f7ec762975946966910ec9405e62ec166fbe9eacca08420a10c68c1fa985",
+      "bytes": 1223849
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "sha256": "14ce6dcf3205dc88b80529336c9fb52f7050428fe4298f5b3c4205e03d25d558",
+      "bytes": 1214660
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "d483c8b3849b290f467ddda493269a179edee8a6b1cf4bf13d75b5d83266eb83",
+      "bytes": 987850
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "14ce6dcf3205dc88b80529336c9fb52f7050428fe4298f5b3c4205e03d25d558",
+      "bytes": 1214660
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "sha256": "c6fbf7f8f3f0d4d1e6c4fc2a52fcb67acffcb72eadb30fe58a99a99bb8358067",
+      "bytes": 983921
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "sha256": "14ce6dcf3205dc88b80529336c9fb52f7050428fe4298f5b3c4205e03d25d558",
+      "bytes": 1214660
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "sha256": "834ab0151e764cc4412dcf36b6e955cc021c6d5eab6b98ce5f0cdb02dc653d22",
+      "bytes": 1031409
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "sha256": "7b56ad13c69cfcda1417822c2b0f911e97d9388b3732937b9a925715037f6301",
+      "bytes": 1214028
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "f62c7ed7e3f1cb2b8c6f35789d38fcfda79a750eeed9640928bca0dbb3bd481a",
+      "bytes": 1088607
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "7b56ad13c69cfcda1417822c2b0f911e97d9388b3732937b9a925715037f6301",
+      "bytes": 1214028
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "sha256": "b0ea9999c458585b14034b2a00b6ad3d1f2aff6a5b63e411140a01a98e8964db",
+      "bytes": 973383
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-ordinary/desktop/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "sha256": "7b56ad13c69cfcda1417822c2b0f911e97d9388b3732937b9a925715037f6301",
+      "bytes": 1214028
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "47e1742767deea6c6d202292b0be49e3deea51c8d8a4944ad93ce072f0686fa0",
+      "bytes": 1212581
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "c7204495fcf89022e5bfd1fcd149183c365235e148c1fc482f5b9444ace4059a",
+      "bytes": 1214197
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "sha256": "42eac451a7e90de20d1d1935aa563b92ae90881f52145e33352420bcfdb4b3fb",
+      "bytes": 1109995
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/012-pending-build-2-independent-builder.png",
+      "sha256": "c7204495fcf89022e5bfd1fcd149183c365235e148c1fc482f5b9444ace4059a",
+      "bytes": 1214197
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "38fa60661b221a845a20f148552000627c4a1a52ad0d571e4a26f0903c6f45f7",
+      "bytes": 1124032
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "sha256": "c7204495fcf89022e5bfd1fcd149183c365235e148c1fc482f5b9444ace4059a",
+      "bytes": 1214197
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "sha256": "0d9b4e52b4c1ff012c191e7c45d7cb18ed074962ff1b7fc5e6199002f69357a4",
+      "bytes": 1017736
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "sha256": "c7204495fcf89022e5bfd1fcd149183c365235e148c1fc482f5b9444ace4059a",
+      "bytes": 1214197
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "sha256": "a66321123f4463f8d12d58259d16f060736d69fc39f6ed30d8030c1ccd21f14b",
+      "bytes": 1062991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "sha256": "c7204495fcf89022e5bfd1fcd149183c365235e148c1fc482f5b9444ace4059a",
+      "bytes": 1214197
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "sha256": "56f4dd35b9d50edd216219471497631d4c230a2c41ad163fe5d170702cb567a0",
+      "bytes": 1059537
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/018-completed-build-2-independent-builder.png",
+      "sha256": "9a0d74305ac03684921057963ea28642e3e7f7541ecb0d09624a97bf88076578",
+      "bytes": 1214522
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "321f3c1d630f69a827d490724f5cf26cb2387abd7a85bd74124981a10de0ae7a",
+      "bytes": 987629
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "9a0d74305ac03684921057963ea28642e3e7f7541ecb0d09624a97bf88076578",
+      "bytes": 1214522
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "sha256": "ee3d6ea0de1a0fb2e6a0b818a5fd318e6004eae90d29189f085f2e1f3f7d23bc",
+      "bytes": 983684
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "sha256": "9a0d74305ac03684921057963ea28642e3e7f7541ecb0d09624a97bf88076578",
+      "bytes": 1214522
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "sha256": "1d6927b3196aae87622ee86a88006c62db4affd8938c8f3679fcedfc59c9bbfb",
+      "bytes": 1031222
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "sha256": "16e416156db0cce861155cb968264fc956fec24e313650986ccc492077346868",
+      "bytes": 1213860
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "097ee3221f03d0aaa281f846b6938245875990ff400e4efbd5ffb543820628c2",
+      "bytes": 1088379
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "16e416156db0cce861155cb968264fc956fec24e313650986ccc492077346868",
+      "bytes": 1213860
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "sha256": "bb62c64105ea7b9f9f0a873f9686e7ebe2538d80ace89b53d73c31bcc3a4fba0",
+      "bytes": 973166
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/desktop/test-results/stories/010-construction/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "sha256": "16e416156db0cce861155cb968264fc956fec24e313650986ccc492077346868",
+      "bytes": 1213860
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "0216fa113180447834477db4da51976e928ce99eabfe62976a8b1932985348cd",
+      "bytes": 5521113
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "7c4c154dfe155cb54299c240255353e3f44364d26c2f905dfee544782f536a23",
+      "bytes": 3306353
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "7c4c154dfe155cb54299c240255353e3f44364d26c2f905dfee544782f536a23",
+      "bytes": 3306353
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "7c4c154dfe155cb54299c240255353e3f44364d26c2f905dfee544782f536a23",
+      "bytes": 3306353
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "7c4c154dfe155cb54299c240255353e3f44364d26c2f905dfee544782f536a23",
+      "bytes": 3306353
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "07a2928bead91b033f8838462ea01d3383e03b7eb8989164c88aefa3e397a894",
+      "bytes": 5524154
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "sha256": "069fb72f5ecaf49ee6593a63e72ef7c2dd6ec560bd6ef1187cd8a63dcac904d7",
+      "bytes": 3098858
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "sha256": "01d09a1f6be2587400c1efb037ccddf8a6ef19a440988126e6174bda9c9ef1a8",
+      "bytes": 3185277
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "sha256": "01d09a1f6be2587400c1efb037ccddf8a6ef19a440988126e6174bda9c9ef1a8",
+      "bytes": 3185277
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "sha256": "01d09a1f6be2587400c1efb037ccddf8a6ef19a440988126e6174bda9c9ef1a8",
+      "bytes": 3185277
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "sha256": "01d09a1f6be2587400c1efb037ccddf8a6ef19a440988126e6174bda9c9ef1a8",
+      "bytes": 3185277
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "sha256": "be5dc6235b3affabd662c81885bc7cc9da7da1983ac5f71ca828cf3b1c3d9f22",
+      "bytes": 3100386
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "sha256": "57bb268a97c9c223846e3ede3fb6f75c091a24ec7f087683d41b3474c4facb25",
+      "bytes": 3102488
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "sha256": "b636daa47b023fff771fb944d4eb879ec63a7548167995c92c879d0330569a98",
+      "bytes": 3101882
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "sha256": "3809cb3912d8465c6cf7ef7ebb4feb604b6f8f47a22cf210a99232ff7c2399b8",
+      "bytes": 5112204
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "sha256": "056768f372aea0d4c571201fd65ee18eeadf30f145ea7f28a460479b1cd96976",
+      "bytes": 5116247
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "sha256": "10c3011c7c76316cfca7ab7b0f346cded53907d21935e8cebda4557768c131b6",
+      "bytes": 5160585
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "sha256": "c667ccdeca9a02f1524019ce422c385cf6e7d173907e99f06560242f3637b593",
+      "bytes": 5928964
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "sha256": "9aad99bbc3390467d59c3fd68c0196d5aa7044e55563ff2210f1c6b9adcea0ea",
+      "bytes": 5134410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "sha256": "0216fa113180447834477db4da51976e928ce99eabfe62976a8b1932985348cd",
+      "bytes": 5521113
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "sha256": "2794b4f64bc26aa8d3e93332b066877e5252f4268a15e195983b2aa378f42b3e",
+      "bytes": 4987942
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "sha256": "1b8753f6f94c7f793f0970bd886b838de3b1e43f23721a4ead3f18289457e067",
+      "bytes": 3047636
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "sha256": "ee8da64a5a73518c40f9dc87b57bce865b7dc536d18db45990cce41095d30b3f",
+      "bytes": 5928440
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "sha256": "253a2ccd60634980cb72cc639c928b64d50ad3cb7e100e674ac5ee013542633f",
+      "bytes": 5118961
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "sha256": "31fa0e47f581a16368f959df6dabb245474569667e8b4080f55579bdddc6c33b",
+      "bytes": 5611991
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "sha256": "f1811b1ec4bc76b66a43befd0c445d8917da8d61e90a837d5792e810696f86b3",
+      "bytes": 5143769
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/035-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/035-completed-build-2-independent-builder.png",
+      "sha256": "b821c0055f516ba4f428bc4714cd9cf7d506ff91f7474ffe272c890e760c2339",
+      "bytes": 5613039
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "sha256": "ba64f4bb66543d7d7df5d34ead75288c41a7e45584b6e11dc9c568cdd14887f1",
+      "bytes": 3117879
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "sha256": "b821c0055f516ba4f428bc4714cd9cf7d506ff91f7474ffe272c890e760c2339",
+      "bytes": 5613039
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "sha256": "62b2356b02915b787275afe98b9dd8fb3f6f18d903044cd845f2270669b8f5c5",
+      "bytes": 5147746
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "sha256": "b821c0055f516ba4f428bc4714cd9cf7d506ff91f7474ffe272c890e760c2339",
+      "bytes": 5613039
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "56a2df0008a278448f98f826dae8ec2f1a88a0103df3b370911c26754aee67f0",
+      "bytes": 5014133
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "b821c0055f516ba4f428bc4714cd9cf7d506ff91f7474ffe272c890e760c2339",
+      "bytes": 5613039
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "sha256": "59fbf63fcfa41a642b13aa879fd01f1777628f737b9c33ddd0bc8955af32492b",
+      "bytes": 5010133
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "sha256": "b821c0055f516ba4f428bc4714cd9cf7d506ff91f7474ffe272c890e760c2339",
+      "bytes": 5613039
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "sha256": "6a972f56652513ddd9d33a336ce5d2616cd93868dd1024660aff0890b4476de0",
+      "bytes": 5199839
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "sha256": "62e0e2dab8ce788696b55d76047dcd8c8df48cac2681f6f3cd2206e92cb274b1",
+      "bytes": 5612048
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "cac6513280c6ba93a79a34e86f3aa61deaddc3cbf9667f9205f44bc8babddcd5",
+      "bytes": 5255931
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "62e0e2dab8ce788696b55d76047dcd8c8df48cac2681f6f3cd2206e92cb274b1",
+      "bytes": 5612048
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "sha256": "de987e55db471e14c319cbc52c739ade4a6e7ac3f68be12aa83211c77e8ee85e",
+      "bytes": 3492127
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-ordinary/large/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "sha256": "62e0e2dab8ce788696b55d76047dcd8c8df48cac2681f6f3cd2206e92cb274b1",
+      "bytes": 5612048
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "fdc8aa6734df7a826b4634ff16897955d07a6ebb9d372c2ee8f1fdaf88593b6f",
+      "bytes": 5521635
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "079bdaba4948aece71343f96ef40c7205a977acf7c1e88ee921616d02834fe66",
+      "bytes": 5612503
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "sha256": "0aa193a6ae107ad3c923e82c641d04f76480db2f03888c1f56556828a7d10f49",
+      "bytes": 5358349
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/012-pending-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/012-pending-build-2-independent-builder.png",
+      "sha256": "079bdaba4948aece71343f96ef40c7205a977acf7c1e88ee921616d02834fe66",
+      "bytes": 5612503
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "1f91182c140ca98763876854b703bbd9e32dcb1e77b6d689fe02d0144d5d1404",
+      "bytes": 5396231
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "sha256": "079bdaba4948aece71343f96ef40c7205a977acf7c1e88ee921616d02834fe66",
+      "bytes": 5612503
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "sha256": "de428379b7dacc164da9afd29a3ddac3c37cf3fc596729dc194908a93df24d0c",
+      "bytes": 4985794
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "sha256": "079bdaba4948aece71343f96ef40c7205a977acf7c1e88ee921616d02834fe66",
+      "bytes": 5612503
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "sha256": "fa3a384ac1e1e9b823e4ad4babdd0ec3543db959e3d2b2adca3aa4b12a3a35e1",
+      "bytes": 5119666
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "sha256": "079bdaba4948aece71343f96ef40c7205a977acf7c1e88ee921616d02834fe66",
+      "bytes": 5612503
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "sha256": "4e2775d4d8c73d58f3b67288dc5e503d49ce05c15706f1aba6401fe42072bd89",
+      "bytes": 5144422
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/018-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/018-completed-build-2-independent-builder.png",
+      "sha256": "2f2f2b269216426b7ac4da689579221c3af328e0f28ab3af0241ff4a9370b94c",
+      "bytes": 5613378
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "7fbe241bc7af7834e335ed53affbe1687f0e33bb88c185010594f5fbd32b0319",
+      "bytes": 5014587
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "2f2f2b269216426b7ac4da689579221c3af328e0f28ab3af0241ff4a9370b94c",
+      "bytes": 5613378
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "sha256": "14974867e9f4654518b2485dfd955d3714ec087d191d5a8b2eeae30e7ec817df",
+      "bytes": 5010597
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "sha256": "2f2f2b269216426b7ac4da689579221c3af328e0f28ab3af0241ff4a9370b94c",
+      "bytes": 5613378
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "sha256": "482a3af6f5b904459510acbd00699a3a747972a3796453103649aeb6e43af1a4",
+      "bytes": 5200230
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "sha256": "a650bd337ba6f455043934ca84556b7bdd0e8b9ec977f52f721dbf9bd77b8559",
+      "bytes": 5612511
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "fc999897409e062101c64828c92237b96f254713568046c03f9dcbfc1b02437a",
+      "bytes": 5256410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "a650bd337ba6f455043934ca84556b7bdd0e8b9ec977f52f721dbf9bd77b8559",
+      "bytes": 5612511
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "sha256": "b10d112e47e66e37d54389df443dcfc2daff7fe85b97da522ed3c4cb526845b2",
+      "bytes": 3492743
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/large/test-results/stories/010-construction/stories/live-construction-recovery/large/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "sha256": "a650bd337ba6f455043934ca84556b7bdd0e8b9ec977f52f721dbf9bd77b8559",
+      "bytes": 5612511
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "de61d3a43c0bfc67013e567ff1f64911506cf592c1247347fd5d8eeb6c304da2",
+      "bytes": 661908
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/011-read-construction-price-1-builder-envoy.png",
+      "sha256": "7ba47fda85b233483c34463ccb7bc7590f906ff93bbac99f83eccdcbf7cbb657",
+      "bytes": 346488
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/011-read-construction-price-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "eb2af4ba2677b58d37fd6ffc9efb18b72982147c174523f7bb0d7cb15c657d0a",
+      "bytes": 350218
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "c94db73f64301096e36dbad61ba61baccc630f72db15d1c217316e0fcf6949ab",
+      "bytes": 368590
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/013-read-construction-refund-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "c94db73f64301096e36dbad61ba61baccc630f72db15d1c217316e0fcf6949ab",
+      "bytes": 368590
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "c316663bce801d5abea5040260ca93353c5538c72d7ba64c287cee73f2cea112",
+      "bytes": 485204
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/015-close-construction-rules-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/016-open-market-focus-1-builder-envoy.png",
+      "sha256": "766a924d73ea7abbecabb28fd8959a8ff319aa96f9b7e7556e187e4ac376bc7e",
+      "bytes": 383441
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/016-open-market-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/017-read-market-rule-0-1-builder-envoy.png",
+      "sha256": "38602e0c7ca13a4d312c1c4c1e5ed4d023c97f7e5cd2f0871c8e39714b51235a",
+      "bytes": 403684
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/017-read-market-rule-0-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/018-read-market-rule-1-1-builder-envoy.png",
+      "sha256": "14249392f2d1ba2f21ca3fcec6192b07abc3d30e3b1d4a5c3bdcdd626e4aefc8",
+      "bytes": 405332
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/018-read-market-rule-1-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/019-read-market-rule-2-1-builder-envoy.png",
+      "sha256": "9c46409eabff91e513381199e192db3c0ecacc2294a52a061fa768cc3f722fd0",
+      "bytes": 407934
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/019-read-market-rule-2-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/020-read-market-rule-3-1-builder-envoy.png",
+      "sha256": "45ec5328b2cfeed4c38916b7d0735dba412b0387c243ca10ac0168f3463a58a2",
+      "bytes": 401755
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/020-read-market-rule-3-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/021-close-market-rules-1-builder-envoy.png",
+      "sha256": "fde4df54a52060eb67840cca1e19654dc62f4352558d77c3cf7cf74aadac403f",
+      "bytes": 389315
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/021-close-market-rules-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/022-review-invalid-focus-1-builder-envoy.png",
+      "sha256": "acccb537ae8d0fcc048fe478b73fe9177d7c06d5f1660bf314ca28eb663a5800",
+      "bytes": 385172
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/022-review-invalid-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/023-leave-partial-focus-1-builder-envoy.png",
+      "sha256": "cfd3e40f0534fbff4fef81f559e60d317f8d691a9e960cb615963fea1ea15e49",
+      "bytes": 383436
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/023-leave-partial-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/024-restore-invalid-focus-1-builder-envoy.png",
+      "sha256": "0425c5bb82a31ffbc65fc3d0ec0177c3a873e2923d9d73facccd4fed8440fc69",
+      "bytes": 510128
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/024-restore-invalid-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/025-review-market-draft-1-builder-envoy.png",
+      "sha256": "23cadb8b7ff64bbbefef38735811eb341553b1ad78ae6f8d954b1cacbfefffb9",
+      "bytes": 510194
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/025-review-market-draft-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/026-accept-market-focus-1-builder-envoy.png",
+      "sha256": "bcbad4e450995488282d93b62301015143a0c49b270be467b255c525af307843",
+      "bytes": 525871
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/026-accept-market-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/027-close-market-feedback-1-builder-envoy.png",
+      "sha256": "15779711d42786e22eb9d70bfd6d5cc5c58d7c22d932d68e890b0707d65344e6",
+      "bytes": 727064
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/028-recover-market-focus-1-builder-envoy.png",
+      "sha256": "b0ba32691403f6f8b96a9c8c8fb772c90e0abe095eebc03620a54ab69370a6de",
+      "bytes": 532597
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/028-recover-market-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/029-return-to-development-1-builder-envoy.png",
+      "sha256": "de61d3a43c0bfc67013e567ff1f64911506cf592c1247347fd5d8eeb6c304da2",
+      "bytes": 661908
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/029-return-to-development-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/030-reserve-build-1-builder-envoy.png",
+      "sha256": "d8052afb85e2dfd38e2a60f7fd3a7516da46ce172db6d874294c3cb1f919cb22",
+      "bytes": 625196
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/030-reserve-build-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "sha256": "04c1474f9605535792fcb4bbbdd7f79183b9cbf92a488867e1a47a784991e753",
+      "bytes": 280754
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "sha256": "9ddbd06fa3218ba4ec1e703ac48d1649763c1c515f64ed17ac04b8753aed62c7",
+      "bytes": 726943
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/033-reload-reservation-1-builder-envoy.png",
+      "sha256": "05d19deb5e5fc1962843df819ca19e7e0faf420742aeaa4540053d17169aa781",
+      "bytes": 653251
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/033-reload-reservation-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "bytes": 675027
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/035-completed-build-1-builder-envoy.png",
+      "sha256": "62f130352dc134ba3faf5ca556baa906307e9438ee699c643056ed219943aafc",
+      "bytes": 649944
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/035-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/035-completed-build-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "bytes": 675410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/036-inspect-applied-focus-1-builder-envoy.png",
+      "sha256": "4bc057cc172af6ed529ff2ce6b60d027a2d43073f4d5712dbd48ec4f0286e875",
+      "bytes": 398082
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/036-inspect-applied-focus-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "bytes": 675410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/037-return-after-focus-settlement-1-builder-envoy.png",
+      "sha256": "ae4ee4f9ebdeeac8f2b803d0cbdafa8684ecfc79059b4c75516dd7ffd67ed592",
+      "bytes": 670507
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/037-return-after-focus-settlement-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "bytes": 675410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/038-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "93adba4399d2485519a615cfde3d987a1431b52784169a4e929eacb11b5ef8af",
+      "bytes": 606816
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/038-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "bytes": 675410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/039-cancel-base-1-builder-envoy.png",
+      "sha256": "76140a50201bb6170c3d10cd55f5792321b337bf0c3a43d8a2dcf1f8b0757ede",
+      "bytes": 603693
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/039-cancel-base-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "bytes": 675410
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/041-cancelled-base-1-builder-envoy.png",
+      "sha256": "3391096d2f057efb2f435cd6ab353f1d453d6ea6d356bd6d53818804109305a0",
+      "bytes": 640413
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/041-cancelled-base-2-independent-builder.png",
+      "sha256": "87fa1da8023d54f10317b238df85b1610c71537770bd4db7293f60c95e7a28eb",
+      "bytes": 674951
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/042-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "83d7a4344649b37d4f9c88ab84bb88bbc48811a6786f820bd9f322e7269a115e",
+      "bytes": 672036
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/042-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "87fa1da8023d54f10317b238df85b1610c71537770bd4db7293f60c95e7a28eb",
+      "bytes": 674951
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/043-keyboard-return-1-builder-envoy.png",
+      "sha256": "6bf1df6b1994eb9c1a9da41aba68b61f4a769d4ad4d9289f4d0d099dfb8d8421",
+      "bytes": 492952
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-ordinary/short/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/043-keyboard-return-2-independent-builder.png",
+      "sha256": "87fa1da8023d54f10317b238df85b1610c71537770bd4db7293f60c95e7a28eb",
+      "bytes": 674951
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "sha256": "b22dcfee3130ccdc5aaa4c56d2863395495d10b417cd278ca413e769203d7016",
+      "bytes": 661765
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/010-inspect-development-2-independent-builder.png",
+      "sha256": "f02c0c4a0b92be887f75ab0d040bbdaced4f428f9e6b0499af374c6291a08d75",
+      "bytes": 674922
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/012-pending-build-1-builder-envoy.png",
+      "sha256": "40599f0efbac9f2692353cb082deaa9cd60b93b62247ffe5274af9b2d7d02242",
+      "bytes": 657947
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/012-pending-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/012-pending-build-2-independent-builder.png",
+      "sha256": "f02c0c4a0b92be887f75ab0d040bbdaced4f428f9e6b0499af374c6291a08d75",
+      "bytes": 674922
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "35094f2fe08176411465c49f7a2040901caae8c4a3b90282303bdd4d962196ba",
+      "bytes": 664445
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/013-recover-pending-2-independent-builder.png",
+      "sha256": "f02c0c4a0b92be887f75ab0d040bbdaced4f428f9e6b0499af374c6291a08d75",
+      "bytes": 674922
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/015-reserve-build-1-builder-envoy.png",
+      "sha256": "28534d4d52cf366192b2533b855fd4c42a55b477db2056302c91c5bc380ce27b",
+      "bytes": 638560
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/015-reserve-build-2-independent-builder.png",
+      "sha256": "f02c0c4a0b92be887f75ab0d040bbdaced4f428f9e6b0499af374c6291a08d75",
+      "bytes": 674922
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+      "sha256": "e89ed04ae7041a23527f5e5417b63590015e93f6845d8a9d78b79d1eb6d0c984",
+      "bytes": 653067
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/016-reload-reservation-2-independent-builder.png",
+      "sha256": "f02c0c4a0b92be887f75ab0d040bbdaced4f428f9e6b0499af374c6291a08d75",
+      "bytes": 674922
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/018-completed-build-1-builder-envoy.png",
+      "sha256": "19b410414b4748ae66057441f15cef06d467dc4f7db13a059ebcbff0f46df409",
+      "bytes": 649762
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/018-completed-build-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/018-completed-build-2-independent-builder.png",
+      "sha256": "37dcf471dcfd278e7f9807ce4f49d9470fc47b40ead3297dd47a4efe151588a5",
+      "bytes": 675308
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "92f57cf0b9ffbead5d0df860a7b97748ffffaae4b8c141094130f087d5481516",
+      "bytes": 606673
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "37dcf471dcfd278e7f9807ce4f49d9470fc47b40ead3297dd47a4efe151588a5",
+      "bytes": 675308
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/020-cancel-base-1-builder-envoy.png",
+      "sha256": "342fbe5ec9e36e97918695c2add381d7e229b04a692bd164a6081c12a7eb1d18",
+      "bytes": 603550
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/020-cancel-base-2-independent-builder.png",
+      "sha256": "37dcf471dcfd278e7f9807ce4f49d9470fc47b40ead3297dd47a4efe151588a5",
+      "bytes": 675308
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+      "sha256": "247d3636b220989aa4306e211bbc91a88122f9eacbe9a3cd91a710d81e73cd5f",
+      "bytes": 640338
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/022-cancelled-base-2-independent-builder.png",
+      "sha256": "437d5ec048fe318c26a7365d611b2a91f7b26d031bbad79e5bbe8aa33297811b",
+      "bytes": 674842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "d6dd7945e753e82de1ba5b6425f782eba43ed03ed94682a52b258cababdd94e2",
+      "bytes": 671943
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "437d5ec048fe318c26a7365d611b2a91f7b26d031bbad79e5bbe8aa33297811b",
+      "bytes": 674842
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+      "sha256": "b53d578352517f57928cdc67b02f7b211a53fcca58f6e4d8102d2507b49d999c",
+      "bytes": 492853
+    },
+    {
+      "removed": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-construction-current-43124420572/short/test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "gitPath": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/024-keyboard-return-2-independent-builder.png",
+      "sha256": "437d5ec048fe318c26a7365d611b2a91f7b26d031bbad79e5bbe8aa33297811b",
+      "bytes": 674842
+    }
+  ]
+}

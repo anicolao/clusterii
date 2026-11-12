@@ -35,7 +35,41 @@ test("camera framing contains the unchanged authorized catalogue at phone, deskt
   expect(() => galaxyOverview(stars, 0)).toThrow();
 });
 
-import { fleetRouteFrame } from "../src/lib/galaxy-framing";
+import {
+  fleetRouteFrame,
+  fleetMarkerPosition,
+} from "../src/lib/galaxy-framing";
+
+test("traveling fleet stays on the framed route rather than escaping through world elevation", () => {
+  const route = [
+    { x: 0, y: 0, z: 0 },
+    { x: 3.5, y: 0, z: 0 },
+  ];
+  for (const aspect of [393 / 280, 1440 / 540, 3840 / 900, 1280 / 320]) {
+    const frame = fleetRouteFrame(route, aspect);
+    const camera = new PerspectiveCamera(48, aspect, 0.01, 1000);
+    camera.position.set(...frame.position);
+    camera.lookAt(...frame.target);
+    camera.updateMatrixWorld();
+    for (const fraction of [0, 0.25, 0.5, 0.75, 1]) {
+      const position = { x: 3.5 * fraction, y: 0, z: 0 };
+      const marker = new Vector3(
+        ...fleetMarkerPosition(position, true),
+      ).project(camera);
+      const real = new Vector3(position.x / 10, 0, 0).project(camera);
+      expect(marker.distanceTo(real)).toBeLessThan(1e-10);
+      expect(Math.abs(marker.x)).toBeLessThanOrEqual(0.68001);
+      expect(Math.abs(marker.y)).toBeLessThanOrEqual(0.64001);
+    }
+  }
+  expect(fleetMarkerPosition(route[0], false)).toEqual([0, 0.08, 0]);
+  const frame = fleetRouteFrame(route, 1440 / 540);
+  const camera = new PerspectiveCamera(48, 1440 / 540, 0.01, 1000);
+  camera.position.set(...frame.position);
+  camera.lookAt(...frame.target);
+  camera.updateMatrixWorld();
+  expect(new Vector3(0, 0.08, 0).project(camera).x).toBeLessThan(-1);
+});
 test("route camera fits actual inclined and reordered endpoints across viewport changes", () => {
   const points = [
     { x: 2, y: 0.3, z: 4 },

@@ -140,6 +140,26 @@ test("Research lab preserves selection through pending, recovery, scheduling and
                 await expect(
                   panel.getByRole("button", { name: "Retry acknowledgement" }),
                 ).toBeEnabled();
+              if (id === "scheduled" || id === "applied") {
+                const selected = panel.getByRole("radio", {
+                  name: /investing/,
+                });
+                await expect(selected).toBeChecked();
+                const bounds = await selected.evaluate((input) => {
+                  const row = input.closest("label")!;
+                  const reader = row.closest(".research-tracks")!;
+                  const r = row.getBoundingClientRect();
+                  const c = reader.getBoundingClientRect();
+                  return {
+                    top: r.top,
+                    bottom: r.bottom,
+                    clipTop: c.top + reader.clientTop,
+                    clipBottom: c.top + reader.clientTop + reader.clientHeight,
+                  };
+                });
+                expect(bounds.top).toBeGreaterThanOrEqual(bounds.clipTop);
+                expect(bounds.bottom).toBeLessThanOrEqual(bounds.clipBottom);
+              }
               if (id === "scheduled") {
                 await expect(
                   panel.getByRole("region", {

@@ -1,0 +1,75 @@
+Promoted reviewed baseline candidates: 4
+$ svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc -p functions/tsconfig.json
+Loading svelte-check in workspace: /private/tmp/cluster-pr54-credit-review
+Getting Svelte diagnostics...
+
+svelte-check found 0 errors and 0 warnings
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 44 files in 37ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ node --test scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs && node scripts/check-story-policy.mjs
+✔ admission fixture changes only designated domain time inputs (0.347042ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.33425ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.22775ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.365417ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.236917ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.668042ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.356ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.42975ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.352834ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.30775ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.342958ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.526958ms)
+Previous story evidence preserved at /tmp/nix-shell.UvdSQa/cluster-cohort-test-2GeVgB/.story-cohorts-PQqVzs/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.UvdSQa/cluster-cohort-test-2GeVgB/.story-cohorts-PQqVzs/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (8.481125ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.453916ms)
+✔ interruption retains current artifacts and launches no successor (1.531708ms)
+✔ an artifact path collision fails rather than overwriting either result (3.134084ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (1.59425ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.81875ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.861042ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (4.866083ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.338916ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.345458ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.445416ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62.663042
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+✔ requires a staged prompt log, including on the initial commit (184.38725ms)
+✔ accepts a staged append and rejects an unstaged append (183.692625ms)
+✔ rejects rewritten or deleted historical prompts (164.787041ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (373.33925ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (282.769667ms)
+✔ checks a PR against its base, including a base with no prompt log (191.344833ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (577.640875ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (212.10275ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (334.978417ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (559.553041ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (570.567375ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (298.326583ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (389.951125ms)
+✔ divergent prompt merge retains exact parent archive and canonical request order (2828.109083ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (772.233292ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1347.389667ms)
+✔ reintegrating a parent retains its formerly final request already archived by child (940.966292ms)
+✔ reintegrating a parent respects the child declared two-LF record separator (942.6445ms)
+✔ post-merge appended prompt retains the exact copied final parent record in base checks (700.681542ms)
+✔ shared Git ancestor proves a final common request without inventing an archive (450.378875ms)
+✔ earlier append-only common history proves original shared final record (501.853ms)
+✔ sibling integration recognizes only committed common-prefix append separators (662.568292ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13513.580917

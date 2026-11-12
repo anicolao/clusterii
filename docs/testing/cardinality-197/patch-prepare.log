@@ -1,0 +1,11 @@
+bun patch v1.3.13 (bf2e2cec)
+
+Checked 878 installs across 855 packages (no changes) [44.00ms]
+
+To patch @threlte/extras, edit the following folder:
+
+  node_modules/@threlte/extras
+
+Once you're done with your changes, run:
+
+  bun patch --commit 'node_modules/@threlte/extras'

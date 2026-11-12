@@ -1,0 +1,429 @@
+{
+  "head": "c7c3a133542dbf6c45e1469e2ac0aa1369f5db43",
+  "activePR140": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "requiredWorkflowRuntimeAndServiceDiff": "",
+  "firstFailureComparisons": [
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "phone",
+      "oldSha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222",
+      "currentSha256": "0b4a08136910f3c6612fc6d4ca51f4e741ccbbb6633dfbd138d513f66a146023",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/phone/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "phone",
+      "oldSha256": "33e97a44c4e56add36d81b285d849a0029bc255638d262fe5aa242390c851222",
+      "currentSha256": "0b4a08136910f3c6612fc6d4ca51f4e741ccbbb6633dfbd138d513f66a146023",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-fleet-cargo/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "phone",
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "0cbb713c2c36df056cc44f45938009cbd934c68d6633af105410993ff8ed2e2b",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "phone",
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "0cbb713c2c36df056cc44f45938009cbd934c68d6633af105410993ff8ed2e2b",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "phone",
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "0cbb713c2c36df056cc44f45938009cbd934c68d6633af105410993ff8ed2e2b",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "viewport": "phone",
+      "oldSha256": "caadf93825af8a8ff69b506bcee8db4b496ed3974fc12e2564d1287049594975",
+      "currentSha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "a0be16c705cf3cc121eb116b88d229841276c9f0b2edab0c77fb34260b18a32d",
+      "currentSha256": "bb71b56acb70d6e2616ccdf7126f6f22e4470a27b427e1e82b08bc05770693f8",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca",
+      "currentSha256": "2f96a968d304bd25d24734d4333d8f9bee25629f094375dfb1b58a7c7a14a95a",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338",
+      "currentSha256": "082291198526d9b2d47eef146398a17f71be1de9faac2ca620ecb3363fa876c0",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "696219bc206f09bb04cdb4b7c1f3ccf2f7cc796dd3bb4a5dec637c587b404cf9",
+      "currentSha256": "435d5e1503ef552a546f9cc228f8be4dcb3270d5851453276c519ef75721ecc0",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "phone",
+      "oldSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556",
+      "currentSha256": "0cbb713c2c36df056cc44f45938009cbd934c68d6633af105410993ff8ed2e2b",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png",
+      "viewport": "phone",
+      "oldSha256": "1f9635776340e88d18946f561bf61102c55148ea2bef15883b92edd4f5c9a9d2",
+      "currentSha256": "9a1c90ff56d4b8980602a2f01250d95e6a2e881605ae8db71182886d12f41c2e",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9",
+      "currentSha256": "0f6107e72f740e64d6428755f2fab82cac9a7859115c666baf2adb28f4f6b405",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1",
+      "currentSha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "phone",
+      "oldSha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1",
+      "currentSha256": "6f91315eb115e14fd78fadfb208bafa2d803b10a7eac496768d4fb1cc69c38f6",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "desktop",
+      "oldSha256": "e20e6bcc844adc78e23c53dbb03b76007d9b648d67e0faf502a33ccda85dafaf",
+      "currentSha256": "fd7411a600bfa528809d6b55adcc6b0cb92c731b2a1ac479b1079b026a6970e0",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/desktop/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "desktop",
+      "oldSha256": "38784db4c79f8ea9ab894e4f3e4030c72c074f6504264dc273b8603d26a36c7c",
+      "currentSha256": "1ca84e8f4d9700d9a5f05dee4184c9ba4f25f0987457332f646b869af94a4c61",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-fleet-cargo/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "desktop",
+      "oldSha256": "5211253d08a444730af9efe3d347813611866776c34454772f29f1f3c8b283da",
+      "currentSha256": "bf1a91765e88a43ae4a061c67f48094823ff1dec5b249dd66df8cd943f654b7d",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "desktop",
+      "oldSha256": "5d38e56c93aaf4d647ccd01c75fd2a3611d2975540899e38462f7906715aba99",
+      "currentSha256": "b2a7d4ce27b462c8eb8355f63c012400ec459b9127f6f753ab0bad998921ee55",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "desktop",
+      "oldSha256": "300eae50430afaad15a41d39062f49b30f53dd53acf0d537ae4e9aafeca9bdaa",
+      "currentSha256": "19a2e5f4be9a5fdef11841674a3de24187bb068e03bc20f0a711d7c30a89ff42",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "viewport": "desktop",
+      "oldSha256": "b8e618e3112c0abfac116627d6137ae610eced01835cedeb1b2218e779e8b23f",
+      "currentSha256": "d6b79dc93dfb1ccd4d56f053eb99b967ff67a8130a95209d65321423ce457748",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "63a45740592511712265d6d772c73a1cb27c3a8c18cd41e81e595261dfb58edb",
+      "currentSha256": "d8a74d6c64fcf310d8b1e97a4b816e8bd1787e7dfc055118a1aaca8f2957118b",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "76a7b8a4ce463f285c92f7dc80eab2ef50337a4080f93510e510e0c642f15c91",
+      "currentSha256": "1f1efd89d89afbaed3d21d262eda595dea6c663dd989bebe51a2cfcae44884c9",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "f6626d8d614d54d7ed9cd472b03b6c855a9e5e4dff71df16eb066bb980b5c2d7",
+      "currentSha256": "abbe886ed79fda36f139198733f6d4268742ecefc1e66f50210972d43e22d752",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "cc4ee31971f8684d9e1f4e6fa28571b47f7f0133dfa25f2eb9bb6fec2808df9d",
+      "currentSha256": "fa32d69176d7bedf6b300af3a6e4956588d110bc09ba8eedec34a416ae071484",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "desktop",
+      "oldSha256": "b8234ce97727ab23ea01701affce199be8586cd271cc4291e32a8873f25c2491",
+      "currentSha256": "30f8806046ac24c831fcfc877e52b3e45cd5e3bed194f4a99dab2bd1f53cf513",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png",
+      "viewport": "desktop",
+      "oldSha256": "2dc4b9f1acb3a4600960268dc9689f17d2de5fc071148bca42ccf30524128ce5",
+      "currentSha256": "e5a8ccb075be859de875af93a26431b06d71dc12a57cdc227b9d9de97be12c3f",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "34bac591cbcb8ea306390aa517a3b84989bb1354cea4cce16ff4e09ebcbc0731",
+      "currentSha256": "b0004959e71a58a098187bb500561bf17251810c3b2f6400b4f01fba4ff0f5d2",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "4aa34028c69aa69c21ecc1e5c247ba7c1bebda5147dc09a44873bda63fcf0f76",
+      "currentSha256": "b20c15b265ceba4a475f91ac0075b70b99615d90d1583ee0cfc5d3a0aac55925",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "desktop",
+      "oldSha256": "ea64542db1ec195e6c23d870049eaa3912fef6623749b6fd167ae918f2fd5230",
+      "currentSha256": "47e1742767deea6c6d202292b0be49e3deea51c8d8a4944ad93ce072f0686fa0",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "large",
+      "oldSha256": "75a437139d6ea3bfe4547fc8cfc7f031f89e81f833a79d09ec6aa1f68f5ede9a",
+      "currentSha256": "86b91555034e870e8547a69e12a7543d676ff3f449eeff427996d7a042c083f4",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/large/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "large",
+      "oldSha256": "deaeafd28deb58c9a1f2f7a9718dbe4b7dd3294150518bc538599da118984e7c",
+      "currentSha256": "d4ae3ef11d650af374fbd1842c4f63f951a7b0a4b5c944f1383d70beabe09d36",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-fleet-cargo/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "large",
+      "oldSha256": "c75c6bf6f9c41d714b620419723f61d50f2dbc19188931929603b2c02dd9ffc2",
+      "currentSha256": "daa57b64c5041c0c05b2777bd661c4dfc6c6e090bfc603798c11b1fe39b3f7c5",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "large",
+      "oldSha256": "02849b2ca836fed1f255fde096dffb664a19e9a9b1f13638cd7e63d8cbee39be",
+      "currentSha256": "0cbfa44c5790146546da692a714a8b9c323e8ab717e53d085e15875fde0be20d",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "large",
+      "oldSha256": "abd600041afbe813f3175d115189e76518e75796645d83ee9ece7660cae5bb78",
+      "currentSha256": "7a65e936fcbb5653c60b0a1ab78306867c9ccbd48d2589fab6b601b58fd0b18d",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "viewport": "large",
+      "oldSha256": "0d8024b322fd1156952646f368a9ac5df20c2f76aa260a6ca3af99250346c41e",
+      "currentSha256": "9c3666ea7af86c8358bd19c78da566ff6c592aae5f04964b42f470f533bb3027",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-return-briefing/large/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "viewport": "large",
+      "oldSha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe",
+      "currentSha256": "84ba1fba664eec000e4a03c9701f9e4d0c63e0534830265d59f35b3596f9b1ea",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "viewport": "large",
+      "oldSha256": "d20c4a9ed64bbaefb27bd9487d68b9708e4294589b6060b3a1b877a10c9dfbfd",
+      "currentSha256": "50f1a6b97d8b6286e7d2fb86d235abecffea1566c8dc951bb4713c84580253f5",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "viewport": "large",
+      "oldSha256": "4a28bd0528a072e947d3400247092359b8ad578f79ef9ff9e697f541feba1d41",
+      "currentSha256": "15f8a0d610a0c3259f9d376ed98a5a91a19bc770ca3d733d34cd0293ac25c786",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "large",
+      "oldSha256": "3a76749fd4a5000e3e00c43edbd3191568e5a62f614dd6f8e0f655402c3aa51a",
+      "currentSha256": "92bc8263ddc3fb03de243ab2a4c54e73a39336e8a26e793a8fdd57222a6e6a23",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-route-forces/screenshots/route-force-review/large/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png",
+      "viewport": "large",
+      "oldSha256": "e0309cc833d6d85b7bcaf9c0c8374aad0cf96255b53050e9c033f09724c33733",
+      "currentSha256": "630bfdd55c6286f6c0d40f2d89a8c99a883d5697e7572f5b36dfcd619587f4a4",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/large/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "viewport": "large",
+      "oldSha256": "a228d61b0726286d2d0033d4872835d96faf77338b31e7a7f0dba026e3b57a2e",
+      "currentSha256": "e55439109bca44a23c23693754288271598c767b0a8c9801d28143ad147a852e",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "large",
+      "oldSha256": "01174e16edc323e35d48711fd885f666769d002200e8f4d80573b72c703d785f",
+      "currentSha256": "0216fa113180447834477db4da51976e928ce99eabfe62976a8b1932985348cd",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "large",
+      "oldSha256": "9721d07bb0f1d3b414cd3899d817c15edca21a83c57840cadc16511299a25485",
+      "currentSha256": "fdc8aa6734df7a826b4634ff16897955d07a6ebb9d372c2ee8f1fdaf88593b6f",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png",
+      "viewport": "large",
+      "oldSha256": "3e7c125c07d2db3c966fae7d077eaf46272c78d60019c8059171c2849096d50c",
+      "currentSha256": "3e7c125c07d2db3c966fae7d077eaf46272c78d60019c8059171c2849096d50c",
+      "changed": false
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-ordinary/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "short",
+      "oldSha256": "3b7bfc285eab2985dcfd5ca75b5b136d8577698166f62dcfe1ebed63be671589",
+      "currentSha256": "40eada9f6c8c8265363ae0ec32380b87020f5b2f130de2c39663a76b4909bd51",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/credit-exchange-recovery/short/linux-arm64/011-compose-1-exchange-sender.png",
+      "viewport": "short",
+      "oldSha256": "28a6d6360c45177cbedebe682b169a8b5c003cb1a50bc4ee901193dd36597f6e",
+      "currentSha256": "5c14cba3dd0351b3caacb50866f4def0d2f5b80eee1eba765bf6b204555f5c78",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-fleet-cargo/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "short",
+      "oldSha256": "50f9b951d9c16705f26362172e70053550049f9bf0bebcb47c269ca50948547d",
+      "currentSha256": "0b1e1b1aabf417d8de0c332046e37f199a72bc192f5c3e159b477e76ff78bd59",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "short",
+      "oldSha256": "241f203b21c3f5523164e220f2ed0712930643d49cd9342a9a5af6c4294cc28f",
+      "currentSha256": "9ebc4495702fe71c1f8e481b3c38c95a4080ebcec73259d0ba4d0289f121dd6d",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "short",
+      "oldSha256": "1bd4b0e59f5bd8b4512ac1849f16958a168f2720a2cdbe6baeb121e70d895ba7",
+      "currentSha256": "142d89554bf4aa13004b153c7a5c4b878daf4e71104d9823d448424681390f8a",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/identity-component-gallery/short/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "viewport": "short",
+      "oldSha256": "9cda636fe7ad69e1847ce107d5f957419322439cd028355e71cfdb0ec239cd38",
+      "currentSha256": "f7b7f19aacc8f8a4c24cab8c14418c4fbe967c2d5d220f91e7b063bdb2738772",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "viewport": "short",
+      "oldSha256": "cfaeecb2e8bafefd0af63d49a81b34bf5b6cabc3ad8ca90bbd20d936fe6ca0ce",
+      "currentSha256": "af97a5ca9fb6e5dce3c437263c0b630e51444b37ab3e2a317a6b87ede3ea9db1",
+      "changed": true
+    },
+    {
+      "reference": "tests/browser/story-baselines/live-return-briefing/short/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "viewport": "short",
+      "oldSha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43",
+      "currentSha256": "4778b3c81b558b5407d91d56944918df758613a14b4003570ad7a2d7a1316e2e",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "viewport": "short",
+      "oldSha256": "9720c3498c2b39ac325518116c0a02cec08401940121a1a77df777646b28e50a",
+      "currentSha256": "24f2d1501628dbf8f856e0b387e21b803f5cefb2b246ec2a5f6f3420f62640a3",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "viewport": "short",
+      "oldSha256": "72a2e08e6bce0eff0102070a69f1204d01c53956896c2705d11e682087009804",
+      "currentSha256": "40f0cabf97be78a53c3548aa37f050c6323f9858e3ce262d02e39ddfb5443bb0",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "viewport": "short",
+      "oldSha256": "b241923e0b19bea3da631b928fa189f9b6276792095129b418f07c04b946b375",
+      "currentSha256": "d7b993261cbc2fadf689987c66d3479c4fb5036763c84a20c81fd1d1ee4ba285",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png",
+      "viewport": "short",
+      "oldSha256": "aff65385c30267038d3a79aa7c54309ca9bf3564b5172f540776815aca9c6242",
+      "currentSha256": "8684d93f021e87c98187a869e20444a670394aaadaefb66a2d403f64e494e415",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/short/linux-arm64/010-private-room-1-nacre-envoy.png",
+      "viewport": "short",
+      "oldSha256": "5aea59eb28e77866ee39202602d1b19dd499e5b3b31cb48eee184e34076761d7",
+      "currentSha256": "4e5710f5acd4b11c9e0c5b60121186aa70c3e0b265f034df285b01c77a494443",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "short",
+      "oldSha256": "f8f17301ed91c37d2910f1ce85577dfd213e8c521339685c4e83c5faccbe0b98",
+      "currentSha256": "de61d3a43c0bfc67013e567ff1f64911506cf592c1247347fd5d8eeb6c304da2",
+      "changed": true
+    },
+    {
+      "reference": "tests/e2e/010-construction/screenshots/live-construction-recovery/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+      "viewport": "short",
+      "oldSha256": "5cac25367f4485f8d1144af293e635844bf04982e8cb2f382eae1d7022b6a675",
+      "currentSha256": "b22dcfee3130ccdc5aaa4c56d2863395495d10b417cd278ca413e769203d7016",
+      "changed": true
+    }
+  ],
+  "changedFirstFailureReferences": 59,
+  "limitations": "Changed first-failure references do not prove later assertions or full strict pass. Route follow-up43149269459 remains running before integrated update. No comparison/assertion/budget removals: helper delta only adds campaign rail visibility guards."
+}

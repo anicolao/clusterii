@@ -1,0 +1,13 @@
+{
+  "path": "/private/tmp/cluster-pr140-commitment-executor",
+  "head": "a0894afbc5bf6afb32fd4953c1291526e7f9f2db",
+  "remoteBranch": "origin/investigate/pr140-commitment-reading-20261104",
+  "cleanTrackedAndUntracked": true,
+  "onlyIgnoredFile": "ci-evidence/top-candidates/request.json",
+  "ignoredFileRetained": "docs/testing/top-pr-green-20261103/commitment-linux-request.json",
+  "ignoredSha256": "d2b72cb723c127ec11bce46cba35b62698e52912be6a7bb2c33d28946650bc36",
+  "measuredKiB": 14304712,
+  "reason": "Temporary executor checkout no longer useful after immutable request pushed; all tracked bytes durable in Git, sole ignored request retained separately. Remove with git worktree remove, not broad cleanup.",
+  "removalCompleted": true,
+  "availableBytesAfter": 290731130880
+}

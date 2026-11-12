@@ -1,0 +1,15 @@
+{
+  "artifact": 12620518604,
+  "expectedBytes": 205464241,
+  "expectedSha256": "f3ad0609551251ed66ca12d7282a22764b5bed1165d702bbe8144b2b7429c5a5",
+  "failure": "subprocess.TimeoutExpired",
+  "localTransportLimitSeconds": 240,
+  "verified": false,
+  "localArchiveCreated": false,
+  "extractedImages": 0,
+  "remoteOriginal": "Unexpired artifact unchanged; no CI rerun",
+  "retry": "One fresh bounded transport retry after prior process terminated; streamed byte progress,900seconds maximum, original gameplay deadlines unchanged",
+  "retryStatus": "Stopped at fresh preflight before downloading;2534864KiB below2559296reserve",
+  "activeDownload": false,
+  "firstFailureNote": "Local240second transport guard interrupted transfer; no remote failure or invalid artifact inferred. No verified local archive created."
+}

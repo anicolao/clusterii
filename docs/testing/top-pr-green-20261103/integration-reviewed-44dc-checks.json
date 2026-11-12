@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-step-zero.py"
+      ],
+      "exit": 0,
+      "seconds": 0.16
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-prompts.mjs",
+        "--base",
+        "117a1277069b8b64ab47dbfa90fec7751fb70bf2"
+      ],
+      "exit": 0,
+      "seconds": 0.09
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.03
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test:baseline-paths"
+      ],
+      "exit": 0,
+      "seconds": 6.38
+    }
+  ],
+  "logSha256": "c9b1523c4076851dced7d7d0c99f4621283a3f33a49c9bd4723d3435f9bb7109",
+  "reuse": "Production/unit/lint source unchanged from passing required application run43151819100. Changed campaign story type/policy checks passed before complete216-view strict run43174325455. No duplicate browser/service run here; full required CI will execute on integrated head."
+}

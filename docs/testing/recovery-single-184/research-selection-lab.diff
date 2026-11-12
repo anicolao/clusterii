@@ -1,0 +1,652 @@
+diff --git a/src/lib/components/CampaignResearch.svelte b/src/lib/components/CampaignResearch.svelte
+index 3f6fb810..c0bf203b 100644
+--- a/src/lib/components/CampaignResearch.svelte
++++ b/src/lib/components/CampaignResearch.svelte
+@@ -1,4 +1,7 @@
+ <script lang="ts">
++  import { researchEstimate } from "@shared/research";
++  import { nextResearchEffect } from "$lib/research-effect";
++  import type { ResearchDraft } from "$lib/research-draft";
+   import { tick } from "svelte";
+   import type { ResearchState, Technology } from "@shared/production";
+   import { technologies } from "@shared/production";
+@@ -8,6 +11,11 @@
+   import Feedback from "./Feedback.svelte";
+   let {
+     research,
++    scienceMilli = null,
++    draft = $bindable<ResearchDraft | undefined>(undefined),
++    scanningEnabled = false,
++    travelEnabled = false,
++    constructionEnabled = false,
+     paused = false,
+     busy = false,
+     pending = false,
+@@ -18,6 +26,11 @@
+     inspect,
+   }: {
+     research: ResearchState;
++    scienceMilli?: number | null;
++    draft?: ResearchDraft;
++    scanningEnabled?: boolean;
++    travelEnabled?: boolean;
++    constructionEnabled?: boolean;
+     paused?: boolean;
+     busy?: boolean;
+     pending?: boolean;
+@@ -29,31 +42,79 @@
+   } = $props();
+   let commitment: HTMLDivElement;
+   let form: HTMLFormElement;
+-  function showChoice(event?: Event) {
++  async function showChoice(event?: Event) {
+     const target = event?.currentTarget;
++    // The new effect/cost can wrap differently. Position the committed layout,
++    // not the previous selection, so Queue stays above the panel footer.
++    await tick();
++    if (!form?.isConnected) return;
+     if (target instanceof HTMLInputElement)
+       target.closest("label")?.scrollIntoView({ block: "nearest" });
+-    form?.scrollIntoView({ block: "nearest" });
++    form.scrollIntoView({ block: "nearest" });
++    // A short panel can be smaller than the form (legend included). Keep the
++    // actual commitment fully visible instead of relying on the form bounds.
++    commitment?.scrollIntoView({ block: "nearest" });
+   }
+   const errorId = $props.id();
+   let choice = $state<Technology | null>(null);
+   const selected = $derived(
+-    choice ?? research.orders?.at(-1)?.target ?? research.target,
++    draft?.target ??
++      choice ??
++      research.orders?.at(-1)?.target ??
++      research.target,
+   );
+-  const descriptions: Record<Technology, string> = {
+-    scanning:
+-      "Improves sensing range. Intelligence reports are not available yet.",
+-    navigation:
+-      "Increases permitted route range. Fleet travel is not available yet.",
+-    terraforming:
+-      "Raises resource extraction. Construction is not available yet.",
++  const estimate = $derived(
++    researchEstimate(
++      research,
++      selected,
++      scienceMilli,
++      paused ? "paused" : pending || busy ? "pending" : null,
++    ),
++  );
++  const nextEffect = $derived(
++    nextResearchEffect(selected, research.levels[selected], {
++      scanning: scanningEnabled,
++      travel: travelEnabled,
++      construction: constructionEnabled,
++    }),
++  );
++  const amount = (milli: number) =>
++    (milli / 1000).toLocaleString("en-US", { maximumFractionDigits: 3 });
++  const estimateReasons = {
++    capped:
++      "Maximum level reached. Science on this track is banked; no further level is estimated.",
++    paused:
++      "Campaign paused. No completion estimate while production is stopped.",
++    pending:
++      "A research selection is awaiting acknowledgement or application. Recalculate after it applies.",
++    "bank-transfer":
++      "Switching will transfer the active capped track's banked science. Recalculate after the transfer applies.",
++    "unknown-rate":
++      "No completed science-production tick is available yet; completion rate is unknown.",
++    "zero-rate":
++      "The last completed tick produced no science. No completion at that rate.",
++  };
++  const descriptions: Record<Technology, string> = $derived({
++    scanning: scanningEnabled
++      ? "Improves the chance of acquiring distant observations. Reports retain their recorded age; research does not reveal every system."
++      : "This campaign retains its recorded intelligence rules. Stellar observations are available in new development campaigns.",
++    navigation: travelEnabled
++      ? `Allows route legs up to ${rules.navigationLyPerLevel} light years per level. Range does not change fleet speed.`
++      : "This campaign retains its recorded travel rules. Fleet routes are available in new development campaigns.",
++    terraforming: constructionEnabled
++      ? "Raises resource extraction and the capacity for each development type at your systems."
++      : "Raises resource extraction. This campaign retains its recorded construction rules.",
+     investing: "Raises total market income before distribution to systems.",
+-    formations: "Improves fighter effectiveness. Combat is not available yet.",
+-    melee: "Improves infantry effectiveness. Combat is not available yet.",
++    formations: travelEnabled
++      ? "Improves fighter effectiveness in orbital combat. Arrival reports record your forces and losses."
++      : "This campaign retains its recorded travel rules. Orbital combat is available in new development campaigns.",
++    melee: travelEnabled
++      ? "Improves infantry effectiveness in surface combat. Orbital and surface control remain separate."
++      : "This campaign retains its recorded travel rules. Surface combat is available in new development campaigns.",
+     recruiting: "Raises infantry production at each controlled surface.",
+     innovation:
+       "Raises total science output before allocation to the selected track.",
+-  };
++  });
+ </script>
+ 
+ <section class="research-instrument" aria-label="Research selection">
+@@ -75,33 +136,98 @@
+   >
+     <fieldset disabled={busy || pending || paused}>
+       <legend>Research target</legend>
+-      {#each technologies as technology}
+-        <label>
+-          <input
+-            type="radio"
+-            name="research-target"
+-            value={technology}
+-            checked={selected === technology}
+-            onfocus={showChoice}
+-            onchange={(event) => {
+-              choice = technology;
+-              showChoice(event);
+-            }}
+-          />
+-          <span
+-            ><strong>{technology}</strong><small
+-              >Level {research.levels[technology]} · {(
+-                research.progressMilli[technology] / 1000
+-              ).toLocaleString()} science{research.levels[technology] ===
+-              rules.maximumResearchLevel
+-                ? " banked"
+-                : " retained"}</small
+-            ></span
+-          >
+-        </label>
+-      {/each}
++      <!-- svelte-ignore a11y_no_noninteractive_tabindex (Pending choices remain readable with keyboard scrolling while radios are disabled.) -->
++      <div
++        class="research-tracks"
++        role="region"
++        aria-label="Research tracks"
++        tabindex="0"
++      >
++        {#each technologies as technology}
++          <label>
++            <input
++              type="radio"
++              name="research-target"
++              value={technology}
++              checked={selected === technology}
++              onfocus={showChoice}
++              onchange={(event) => {
++                if (draft) draft.target = technology;
++                else choice = technology;
++                showChoice(event);
++              }}
++            />
++            <span
++              ><strong>{technology}</strong><small
++                >Level {research.levels[technology]} · {(
++                  research.progressMilli[technology] / 1000
++                ).toLocaleString()} science{research.levels[technology] ===
++                rules.maximumResearchLevel
++                  ? " banked"
++                  : " retained"}</small
++              ></span
++            >
++          </label>
++        {/each}
++      </div>
+     </fieldset>
+     <p class="effect">{descriptions[selected]}</p>
++    <details
++      class="forecast"
++      aria-label="Selected research forecast"
++      ontoggle={async (event) => {
++        const disclosure = event.currentTarget;
++        if (disclosure.open) {
++          await tick();
++          disclosure.scrollIntoView({ block: "start" });
++        }
++      }}
++    >
++      <summary
++        >{#if estimate.costMilli !== null}Next level {research.levels[
++            selected
++          ] + 1} · {amount(estimate.costMilli)} science{:else}Maximum research
++          level{/if}</summary
++      >
++      <!-- svelte-ignore a11y_no_noninteractive_tabindex (The bounded forecast must support keyboard scrolling.) -->
++      <div
++        class="forecast-body"
++        role="region"
++        aria-label="Research forecast details"
++        tabindex="0"
++      >
++        {#if estimate.costMilli !== null}
++          <p>
++            Level {research.levels[selected] + 1} costs {amount(
++              estimate.costMilli,
++            )} science.
++            {amount(estimate.remainingMilli!)} more science required from this track's
++            retained progress.
++          </p>
++        {/if}
++        <p>{nextEffect}</p>
++        {#if estimate.reason}
++          <p>{estimateReasons[estimate.reason]}</p>
++        {:else}
++          <p>
++            Estimated completion: {estimate.fundedTicks} funded {estimate.fundedTicks ===
++            1
++              ? "tick"
++              : "ticks"} ({rules.tickSeconds / 60} minutes each).
++          </p>
++          <p>
++            Assumes {amount(scienceMilli!)} science per tick, the last completed production
++            rate, with unchanged output and all future science allocated to {selected}.
++            Excludes time before a switch applies; this is not a promised
++            completion time.
++          </p>
++        {/if}
++        <p>
++          Active research: {research.target}. A selection changes only at its
++          acknowledged application tick.
++        </p>
++      </div>
++    </details>
+     <div
+       class="research-commit"
+       bind:this={commitment}
+@@ -177,6 +303,9 @@
+     border: 0;
+     padding: 0;
+     margin: 16px 0;
++    min-width: 0;
++  }
++  .research-tracks {
+     display: grid;
+     gap: 8px;
+     max-height: min(320px, 20dvh);
+@@ -254,6 +383,30 @@
+     min-height: 3em;
+     color: #c1e1eb;
+   }
++  .forecast {
++    border-block: 1px solid #476173;
++    padding-block: 4px;
++  }
++  .forecast-body {
++    max-height: min(360px, 30dvh);
++    overflow: auto;
++    overscroll-behavior: contain;
++    padding-inline: 2px;
++  }
++  .forecast-body:focus-visible {
++    outline: 2px solid #9ee9ff;
++    outline-offset: -2px;
++  }
++  .forecast summary {
++    min-height: 44px;
++    align-content: center;
++    cursor: pointer;
++    color: #c1e1eb;
++  }
++  .forecast summary:focus-visible {
++    outline: 2px solid #9ee9ff;
++    outline-offset: 2px;
++  }
+   .review-note {
+     color: #c6b28a;
+   }
+diff --git a/src/lib/components/GameMenu.svelte b/src/lib/components/GameMenu.svelte
+new file mode 100644
+index 00000000..62174471
+--- /dev/null
++++ b/src/lib/components/GameMenu.svelte
+@@ -0,0 +1,190 @@
++<script lang="ts">
++  import { tick } from "svelte";
++  import MarketRules from "./MarketRules.svelte";
++  import RouteRules from "./RouteRules.svelte";
++  import ActionButton from "./ActionButton.svelte";
++  import PresentationSettings from "./PresentationSettings.svelte";
++  import CommanderPortrait from "./CommanderPortrait.svelte";
++  import type { Profile } from "@shared/profile";
++  let {
++    commander,
++    label = "Menu",
++  }: { commander?: Profile & { faction: string }; label?: string } = $props();
++  let dialog: HTMLDialogElement;
++  let readingRegion: HTMLDivElement;
++  let readingRules = $state(false);
++  let navigationSerial = 0;
++  async function showRules(value: boolean) {
++    const serial = ++navigationSerial;
++    readingRules = value;
++    await tick();
++    if (!dialog.open || serial !== navigationSerial) return;
++    if (value) dialog.querySelector<HTMLElement>("h2")?.focus();
++    else dialog.querySelector<HTMLButtonElement>("[data-rules-entry]")?.focus();
++  }
++  function cancel(event: Event) {
++    if (readingRules) {
++      event.preventDefault();
++      void showRules(false);
++    }
++  }
++  let opener: HTMLElement | null = null;
++  function open(event: MouseEvent) {
++    opener = event.currentTarget as HTMLElement;
++    dialog.showModal();
++    dialog.querySelector<HTMLElement>("h2")?.focus();
++  }
++  function containFocus(event: KeyboardEvent) {
++    if (
++      readingRules &&
++      event.target === readingRegion &&
++      !event.altKey &&
++      !event.ctrlKey &&
++      !event.metaKey &&
++      (event.key === "Home" || event.key === "End")
++    ) {
++      // Native End can scroll the document when this bounded region has no overflow.
++      event.preventDefault();
++      readingRegion.scrollTop =
++        event.key === "Home" ? 0 : readingRegion.scrollHeight;
++      return;
++    }
++    if (event.key !== "Tab") return;
++    const controls = Array.from(
++      dialog.querySelectorAll<HTMLElement>(
++        'button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), summary, a[href], [tabindex="0"]',
++      ),
++    ).filter((control) => control.checkVisibility());
++    const first = controls[0];
++    const last = controls.at(-1);
++    if (!first || !last) return;
++    if (!event.shiftKey && document.activeElement === last) {
++      event.preventDefault();
++      first.focus();
++    } else if (
++      event.shiftKey &&
++      (document.activeElement === first ||
++        document.activeElement === dialog.querySelector("h2"))
++    ) {
++      event.preventDefault();
++      last.focus();
++    }
++  }
++  function restore() {
++    navigationSerial++;
++    readingRules = false;
++    if (opener?.isConnected) opener.focus();
++  }
++</script>
++
++<ActionButton
++  class={commander ? "commander-card own-commander" : "quiet"}
++  onclick={open}
++  aria-haspopup="dialog"
++  aria-label={label}
++  title={commander
++    ? `${commander.alias} · ${commander.faction} · Open game menu; portrait is cosmetic`
++    : undefined}
++  >{#if commander}<CommanderPortrait portrait={commander.portrait} /><strong
++      >{commander.alias}</strong
++    ><span>{commander.faction}</span>{:else}Menu{/if}</ActionButton
++>
++<dialog
++  bind:this={dialog}
++  aria-label="Game menu"
++  onclose={restore}
++  oncancel={cancel}
++  onkeydown={containFocus}
++>
++  <!-- svelte-ignore a11y_no_noninteractive_tabindex (The named bounded reading region needs keyboard scrolling.) -->
++  <div
++    class="menu-content"
++    bind:this={readingRegion}
++    role="region"
++    tabindex={readingRules ? 0 : undefined}
++    aria-label={readingRules ? "Rules reading" : "Presentation reading"}
++  >
++    <p class="overline">{readingRules ? "Field guide" : "Your presentation"}</p>
++    <h2 tabindex="-1">{readingRules ? "Rules" : "Game menu"}</h2>
++    {#if readingRules}
++      <p class="navigation-note">
++        The campaign continues while you read. Back returns to this menu; Return
++        to game closes this view. Neither leaves the campaign nor surrenders
++        your seat.
++      </p>
++      <MarketRules />
++      <RouteRules />
++      <p class="navigation-note">
++        This reference covers market focus and fleet routes. Construction rules
++        remain available with the actual development quote in its panel.
++      </p>
++    {:else}
++      <PresentationSettings />
++    {/if}
++  </div>
++  <form method="dialog">
++    {#if readingRules}
++      <ActionButton
++        type="button"
++        class="secondary"
++        onclick={() => showRules(false)}>Back to menu</ActionButton
++      >
++    {:else}
++      <ActionButton
++        type="button"
++        class="secondary"
++        data-rules-entry
++        onclick={() => showRules(true)}>Rules</ActionButton
++      >
++    {/if}
++    <ActionButton class="secondary">Return to game</ActionButton>
++  </form>
++</dialog>
++
++<style>
++  dialog {
++    color: #f3eee2;
++    background: #091a27;
++    border: 1px solid var(--gold);
++    padding: 0;
++    width: min(480px, calc(100vw - 24px));
++    max-height: calc(100svh - 24px);
++  }
++  dialog[open] {
++    display: flex;
++    flex-direction: column;
++  }
++  dialog::backdrop {
++    background: #020913d9;
++  }
++  .menu-content {
++    overflow-y: auto;
++    padding: 24px;
++    min-height: 0;
++  }
++  h2 {
++    font-family: "Cormorant Garamond", serif;
++    font-size: 32px;
++    margin: 8px 0 24px;
++  }
++  .navigation-note {
++    line-height: 1.5;
++    color: var(--muted);
++  }
++  .menu-content:focus-visible {
++    outline: 3px solid var(--gold);
++    outline-offset: -3px;
++  }
++  form {
++    display: flex;
++    gap: 12px;
++    flex: none;
++    border-top: 1px solid #46515a;
++    padding: 12px 24px max(12px, env(safe-area-inset-bottom));
++  }
++  form :global(button) {
++    flex: 1;
++    min-width: 0;
++    white-space: normal;
++  }
++</style>
+diff --git a/src/routes/dev/animations/+page.svelte b/src/routes/dev/animations/+page.svelte
+index 53ff9875..b9db9ba4 100644
+--- a/src/routes/dev/animations/+page.svelte
++++ b/src/routes/dev/animations/+page.svelte
+@@ -1,4 +1,6 @@
+ <script lang="ts">
++  import GameMenu from "$lib/components/GameMenu.svelte";
++  import CommandControl from "$lib/components/CommandControl.svelte";
+   import CreditOffers from "$lib/components/CreditOffers.svelte";
+   import ReturnBriefing from "$lib/components/ReturnBriefing.svelte";
+   import RecoveryRecord from "$lib/components/RecoveryRecord.svelte";
+@@ -18,6 +20,7 @@
+   import MarketFocus from "$lib/components/MarketFocus.svelte";
+   import SystemConstruction from "$lib/components/SystemConstruction.svelte";
+   import CampaignResearch from "$lib/components/CampaignResearch.svelte";
++  import ScienceLedger from "$lib/components/ScienceLedger.svelte";
+   import CampaignEconomy from "$lib/components/CampaignEconomy.svelte";
+   import CampaignHistory from "$lib/components/CampaignHistory.svelte";
+   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
+@@ -39,6 +42,7 @@
+     historyRecords,
+     productionFrame,
+     researchFrame,
++    researchScienceRate,
+     constructionFrame,
+     focusFrame,
+     fleetFrame,
+@@ -52,6 +56,7 @@
+   let time = $state(0);
+   let speed = $state(1);
+   let playing = $state(false);
++  let commandSelections = $state(["systems", "systems"]);
+   const scenario = $derived(scenarios.find((s) => s.id === selected)!);
+   const frame = $derived(
+     [...scenario.frames].reverse().find((f) => f.at <= time)!,
+@@ -80,6 +85,8 @@
+   });
+ </script>
+ 
++<section aria-label="Local presentation controls"><GameMenu /></section>
++
+ <svelte:head
+   ><title>Animation lab — Cluster</title><meta
+     name="robots"
+@@ -141,7 +148,12 @@
+           : "Standard motion comparison"}
+       >
+         <h2>{reduced ? "Reduced motion" : "Standard motion"}</h2>
+-        <p class="overline">Same outcome · {frame.feedback.remedy ?? "none"}</p>
++        <p class="overline">
++          Feedback recovery · {frame.feedback.remedy &&
++          frame.feedback.remedy !== "none"
++            ? frame.feedback.remedy
++            : "No action indicated"}
++        </p>
+         {#if selected === "invalid-recovery"}{#key frame.at}<RecoveryRecord
+               reason={new RecoveryValidation("").message}
+               confirming={time >= 1200}
+@@ -214,6 +226,7 @@
+           >
+             {#key frame.at}<ArrivalReports
+                 {...arrivalFrame(time)}
++                returnLabel="Back to system"
+                 inspect={{ time: time - frame.at, reduced }}
+                 onearlier={() => {}}
+                 onlatest={() => {}}
+@@ -305,7 +318,11 @@
+             />
+           </div>
+         {:else if selected === "research"}<CampaignResearch
++            scanningEnabled={true}
++            travelEnabled={true}
++            constructionEnabled={true}
+             research={researchFrame(time)}
++            scienceMilli={researchScienceRate(time)}
+             inspect={{ time: time - frame.at, reduced }}
+             pending={time < 1000}
+             message={frame.feedback.message}
+@@ -313,6 +330,12 @@
+             onselect={reset}
+             onretry={frame.feedback.remedy === "network" ? reset : undefined}
+           />
++        {:else if selected === "science"}<div style="height:650px">
++            <ScienceLedger
++              view={productionFrame(time).view}
++              onclose={() => (selected = "production")}
++            />
++          </div>
+         {:else if selected === "production"}<div style="height:650px">
+             <CampaignEconomy
+               view={productionFrame(time).view}
+@@ -387,6 +410,40 @@
+   </p>
+ </div>
+ 
++<section class="lab" aria-label="Command control motion lab">
++  <h2>Shared command selection</h2>
++  <p>
++    Selection is immediate. Normal and reduced motion preserve the same local
++    result; this preview issues no campaign order.
++  </p>
++  <div class="comparison">
++    {#each [false, true] as reduced, index}
++      <section
++        class="specimen"
++        aria-label={reduced
++          ? "Reduced command comparison"
++          : "Standard command comparison"}
++        data-reduce-motion={reduced}
++      >
++        <h3>{reduced ? "Reduced motion" : "Standard motion"}</h3>
++        <p role="status" aria-label="Local command selection">
++          Selected command preview: {commandSelections[index]}
++        </p>
++        <div style="display:flex;flex-wrap:wrap;gap:16px">
++          {#each ["systems", "economy"] as const as kind}
++            <CommandControl
++              {kind}
++              label={kind}
++              current={commandSelections[index] === kind}
++              onclick={() => (commandSelections[index] = kind)}
++            />
++          {/each}
++        </div>
++      </section>
++    {/each}
++  </div>
++</section>
++
+ <style>
+   .lab {
+     max-width: 1200px;
+diff --git a/tests/browser/research-lab.story.spec.ts b/tests/browser/research-lab.story.spec.ts
+index 65e24644..5c7ea55f 100644
+--- a/tests/browser/research-lab.story.spec.ts
++++ b/tests/browser/research-lab.story.spec.ts
+@@ -173,7 +173,9 @@ test("Research lab preserves selection through pending, recovery, scheduling and
+       "Open the actual applied-selection disclosure by keyboard in both panes.",
+     action: async () => {
+       for (const panel of panels) {
+-        const summary = panel.locator("summary");
++        const summary = panel
++          .locator("summary")
++          .filter({ hasText: /^Last applied selections$/ });
+         await summary.focus();
+         await summary.press("Enter");
+       }
+@@ -182,8 +184,12 @@ test("Research lab preserves selection through pending, recovery, scheduling and
+       spec: "Both opened histories identify the applied investing order at tick one.",
+       check: async () => {
+         for (const panel of panels) {
+-          await expect(panel.locator("details")).toHaveAttribute("open", "");
+-          await expect(panel.locator("details ol")).toContainText(
++          const history = panel
++            .locator("summary")
++            .filter({ hasText: /^Last applied selections$/ })
++            .locator("..");
++          await expect(history).toHaveAttribute("open", "");
++          await expect(history.locator("ol")).toContainText(
+             "Tick 1 · investing",
+           );
+         }

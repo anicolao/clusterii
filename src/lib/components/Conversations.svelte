@@ -1100,6 +1100,23 @@
       flex: none;
     }
   }
+  @media (min-width: 1060px) and (max-height: 760px) {
+    .heading {
+      padding-top: 12px;
+      padding-bottom: 8px;
+    }
+    .heading h2 {
+      margin-bottom: 8px;
+    }
+    .heading p {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+    footer {
+      padding-top: 8px;
+      padding-bottom: max(8px, env(safe-area-inset-bottom));
+    }
+  }
   @media (max-height: 550px) {
     header {
       padding-top: 8px;

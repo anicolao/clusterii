@@ -37,7 +37,21 @@ export async function runViewportCohorts({
   run,
   beforeEach,
   shouldStop = () => false,
+  groups = [undefined],
+  viewports = storyViewports,
 }) {
+  if (
+    !viewports.length ||
+    new Set(viewports).size !== viewports.length ||
+    viewports.some((viewport) => !storyViewports.includes(viewport))
+  )
+    throw new Error("Invalid or duplicate viewports");
+  if (
+    !groups.length ||
+    new Set(groups).size !== groups.length ||
+    groups.some((group) => group !== undefined && !/^[a-z0-9-]+$/.test(group))
+  )
+    throw new Error("Invalid or duplicate service groups");
   // Check ownership before moving any existing evidence or starting a process.
   await beforeEach();
   mkdirSync(dirname(output), { recursive: true });
@@ -56,54 +70,65 @@ export async function runViewportCohorts({
   }
   const results = [];
   try {
-    for (const viewport of storyViewports) {
-      if (shouldStop()) throw new Error("Story cohorts interrupted");
-      if (results.length) await beforeEach();
-      const startedAt = new Date().toISOString();
-      let error;
-      try {
-        await run(viewport);
-      } catch (failure) {
-        error = failure instanceof Error ? failure.message : String(failure);
-      }
-      const evidence = join(staging, viewport);
-      if (existsSync(output)) renameSync(output, evidence);
-      else mkdirSync(evidence);
-      const metadata = join(evidence, "_cohorts", viewport);
-      mkdirSync(metadata, { recursive: true });
-      if (existsSync(join(evidence, ".last-run.json")))
-        renameSync(
-          join(evidence, ".last-run.json"),
-          join(metadata, "playwright.json"),
+    for (const viewport of viewports)
+      for (const group of groups) {
+        if (shouldStop()) throw new Error("Story cohorts interrupted");
+        if (results.length) await beforeEach();
+        const startedAt = new Date().toISOString();
+        let error;
+        try {
+          await run(viewport, group);
+        } catch (failure) {
+          error = failure instanceof Error ? failure.message : String(failure);
+        }
+        const key = group ? `${viewport}-${group}` : viewport;
+        const evidence = join(staging, key);
+        if (existsSync(output)) renameSync(output, evidence);
+        else mkdirSync(evidence);
+        const metadata = join(
+          evidence,
+          "_cohorts",
+          viewport,
+          ...(group ? [group] : []),
         );
-      if (existsSync(firestoreLog))
-        renameSync(firestoreLog, join(metadata, "firestore-debug.log"));
-      const result = {
-        viewport,
-        startedAt,
-        finishedAt: new Date().toISOString(),
-        status: error ? "failed" : "passed",
-        ...(error ? { error } : {}),
-      };
-      results.push(result);
-      writeFileSync(
-        join(metadata, "result.json"),
-        JSON.stringify(result, null, 2) + "\n",
-      );
-      // Preserve a failed cohort and continue independent viewports; final status
-      // still fails. An explicit interruption must never launch another cohort.
-      if (shouldStop()) throw new Error("Story cohorts interrupted");
-    }
+        mkdirSync(metadata, { recursive: true });
+        if (existsSync(join(evidence, ".last-run.json")))
+          renameSync(
+            join(evidence, ".last-run.json"),
+            join(metadata, "playwright.json"),
+          );
+        if (existsSync(firestoreLog))
+          renameSync(firestoreLog, join(metadata, "firestore-debug.log"));
+        const result = {
+          viewport,
+          ...(group ? { group } : {}),
+          startedAt,
+          finishedAt: new Date().toISOString(),
+          status: error ? "failed" : "passed",
+          ...(error ? { error } : {}),
+        };
+        results.push(result);
+        writeFileSync(
+          join(metadata, "result.json"),
+          JSON.stringify(result, null, 2) + "\n",
+        );
+        // Preserve a failed cohort and continue independent viewports; final status
+        // still fails. An explicit interruption must never launch another cohort.
+        if (shouldStop()) throw new Error("Story cohorts interrupted");
+      }
   } finally {
     mkdirSync(output, { recursive: true });
-    for (const { viewport } of results)
-      mergeEvidence(join(staging, viewport), output);
+    for (const { viewport, group } of results)
+      mergeEvidence(
+        join(staging, group ? `${viewport}-${group}` : viewport),
+        output,
+      );
   }
   if (results.some((result) => result.status === "failed"))
     throw new Error(
       `Story cohorts failed: ${results
         .filter((r) => r.status === "failed")
-        .map((r) => r.viewport)
+        .map((r) => (r.group ? `${r.viewport}/${r.group}` : r.viewport))
         .join(", ")}`,
     );
   return results;

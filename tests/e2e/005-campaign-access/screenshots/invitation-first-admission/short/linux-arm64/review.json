@@ -1,0 +1,104 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "invitation-first-admission",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+    "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-open-invitation-1-invited-envoy.png",
+      "sha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+      "previousSha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-preserve-destination-1-invited-envoy.png",
+      "sha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+      "previousSha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-sign-in-1-invited-envoy.png",
+      "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "previousSha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-draft-identity-1-invited-envoy.png",
+      "sha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+      "previousSha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "007-save-and-resume-1-invited-envoy.png",
+      "sha256": "75dbf8d9d02ed92a6c0f38577cf5009003cf9717b49fab0b2d023dba1f791856",
+      "previousSha256": "75dbf8d9d02ed92a6c0f38577cf5009003cf9717b49fab0b2d023dba1f791856",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "008-choose-faction-1-invited-envoy.png",
+      "sha256": "437c068be101a1e32d2836f26422b59238903a48251bc4a21250548f6298b782",
+      "previousSha256": "437c068be101a1e32d2836f26422b59238903a48251bc4a21250548f6298b782",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-claim-seat-1-invited-envoy.png",
+      "sha256": "3100deb754bfdacf31dd0517e5482a0cec1e856c32c4ba8b5f3071e6afb8573a",
+      "previousSha256": "b0434e2c458a407bc174406bbf60351fb3613cdde053419d64f071817d39a67a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "009-claim-seat-2-invitation-host.png",
+      "sha256": "57ace449cabc976bc8865901e88d641d71a43da166b2c18a12c02fe32a51a9f4",
+      "previousSha256": "39ce8a54d6692f8297b59068b9c69c7bff5f33e6830af29f8968d1440ef71e26",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-recover-seat-1-invited-envoy.png",
+      "sha256": "0f2a884533aa1f8c53eef540cdf6bb26f777d1c5661044b67c3ebd64b7d59b16",
+      "previousSha256": "0f2a884533aa1f8c53eef540cdf6bb26f777d1c5661044b67c3ebd64b7d59b16",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

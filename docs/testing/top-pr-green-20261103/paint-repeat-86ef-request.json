@@ -1,0 +1,56 @@
+{
+  "request": {
+    "schema": 1,
+    "mode": "scoped-strict-paint-repeat",
+    "source": "8c17b0d83fc99e4a6463f1eae4f450d78649dbbb",
+    "target": "86ef8a1a5db22088da677ddbb21906b3a882d359",
+    "projects": [
+      "phone",
+      "large"
+    ],
+    "serviceGroups": [
+      "science",
+      "galaxy"
+    ],
+    "capturesByStory": {
+      "science-rate-sources": 18,
+      "galaxy-command-surface": 12
+    },
+    "testsPerProject": {
+      "phone": 1,
+      "large": 1
+    },
+    "retries": 0,
+    "updateSnapshots": "none",
+    "inputs": {
+      "src": "ca2fd0584deb08f284159f1a95bb3207a98d529e",
+      "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+      "functions": "c116879153585f6c933dad28096563165fa23641",
+      "tests": "331e28fdf20360aef8cee5be9060caa5f8ede24b",
+      "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+      "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+      "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+      "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+      "playwright.stories.config.ts": "25440b492b962da9edeb8700ed0c18c9f062db3a",
+      "scripts/story-cohorts.mjs": "2032d7efeed8b914bc6d668594fd04581ccc65a7",
+      "scripts/story-service-groups.mjs": "9ee85e3deb132f318f80d8a9ef63fd2369f451f4",
+      "scripts/run-stories.mjs": "dbe7446f756baa8c11acc0444d5be813b9e4fe88"
+    }
+  },
+  "requestCommit": "96ae7a48fb8de7c88557005f07bd829d0f055a16",
+  "requestSha256": "222724355563ddf0a141cef6da179d2722d972ebd151cf61b98b371f99c69a58",
+  "run": 43223861057,
+  "url": "https://github.com/anicolao/clusterii/actions/runs/43223861057",
+  "statusAtDispatch": "queued",
+  "guardTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "localCollection": {
+    "phone": 1,
+    "large": 1
+  },
+  "scope": "Complete original science phone18 views and galaxy large12 views, strict immutable references, no retries, no updates, no source/spec changes. Source and all guarded input trees equal86ef. First-attempt branch/path-scoped request only.",
+  "hypothesis": "Transient compositing/paint state is possible but unproven. Repeated mismatch or exact pass will discriminate stable alternate output from isolated non-reproduction; neither blindly approves a new baseline.",
+  "activePR": "PR140 remains86ef: application/documentation/publication/generationSUCCESS, strictFAILURE. This observation is not full integrated acceptance."
+}

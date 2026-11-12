@@ -1,0 +1,88 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "campaign-history",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "44198cd8eeb2a31a2f02c770f29954ac89c43bb0",
+    "dirty": false,
+    "spec": "tests/e2e/006-campaign-history/history.spec.ts",
+    "specSha256": "911800f202c321bee57177be451110b9622d32e3f9eca39d56cad50cc7742a10"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-reader-label-41847756491/phone/test-results/stories/campaign-history/phone/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "002-open-records-1-history-envoy-reading-device.png",
+      "sha256": "40e37f2303abf92ee4f5764a84c38db1b7de6489056822482d57b5c25c32d71d"
+    },
+    {
+      "image": "003-keyboard-cycle-1-history-envoy-reading-device.png",
+      "sha256": "b533d4300b73e598d3fac3de301fea479910086ffb2488edd0629703856f1790"
+    },
+    {
+      "image": "004-inspect-record-1-history-envoy-reading-device.png",
+      "sha256": "3c3a41f14d163a19906d64076c77214f51dc9463f2e6f136a2dfa30ebfbd01e6"
+    },
+    {
+      "image": "005-earlier-records-1-history-envoy-reading-device.png",
+      "sha256": "867dc8c051f274f85773d226e09ab1fd30847fb5927a8d98019dc5257307f0c8"
+    },
+    {
+      "image": "007-other-device-change-1-history-envoy-second-device.png",
+      "sha256": "c50d9bd2869aab156eaa7465fadf37c71f264f490ac9dc40b170c128d9dec52f"
+    },
+    {
+      "image": "007-other-device-change-2-history-envoy-reading-device.png",
+      "sha256": "6a636806e95b67a704c4316204fd8a1abe89108d20d750d84ad9de4177861085"
+    },
+    {
+      "image": "008-recover-latest-1-history-envoy-reading-device.png",
+      "sha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05"
+    },
+    {
+      "image": "010-offline-history-1-history-envoy-reading-device.png",
+      "sha256": "88fe71c605c70a6276648447546bd4fbd5477d39b4f3291dc0c14b55c577de56"
+    },
+    {
+      "image": "012-retry-history-1-history-envoy-reading-device.png",
+      "sha256": "ec3d74e00b12f6bec30fd0de933cb792d7a4b1c21fcaeabb40cd9f13c9416e05"
+    },
+    {
+      "image": "013-return-to-galaxy-1-history-envoy.png",
+      "sha256": "5c8923e588e0602a78d2d7d6b192750ee5d1a11711d768beb9d3c2b7fe2e7489"
+    },
+    {
+      "image": "014-reload-history-1-history-envoy-reading-device.png",
+      "sha256": "ecd78a140c279b55ddf056533df6ebcbb248f1145385daa8a1db0dd928814674"
+    },
+    {
+      "image": "015-finish-reading-1-history-envoy.png",
+      "sha256": "4e70b0ff6722d4e16320e2f1e8b5677319c0497336b109306dfdb40387f8cda3"
+    }
+  ]
+}

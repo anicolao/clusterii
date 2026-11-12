@@ -1,0 +1,62 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "cinematic-returning-entry",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+    "dirty": false,
+    "spec": "tests/e2e/001-entry/returning.spec.ts",
+    "specSha256": "67e6b4a94a13767b38dbf54638c343e5808b2239fc371edd262ed3da5fb0d372"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/phone/test-results/stories/cinematic-returning-entry/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-return-to-entry-1-returning-envoy.png",
+      "sha256": "2d9d3c31ac06ebd6fec8268304db652eb19cbc00acbbfd0fd481ebedf22fe90f",
+      "previousSha256": "2d9d3c31ac06ebd6fec8268304db652eb19cbc00acbbfd0fd481ebedf22fe90f",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "011-reload-returning-entry-1-returning-envoy.png",
+      "sha256": "2d9d3c31ac06ebd6fec8268304db652eb19cbc00acbbfd0fd481ebedf22fe90f",
+      "previousSha256": "2d9d3c31ac06ebd6fec8268304db652eb19cbc00acbbfd0fd481ebedf22fe90f",
+      "changed": false,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-continue-campaign-1-returning-envoy.png",
+      "sha256": "907f09e86adfb751679827ce352ae929a644d561db699b79a977930c4532ae25",
+      "previousSha256": "343e4b9f55c6f2ecd713421fddf016642448f991cc3f1fd646d57403e6c9e3b4",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

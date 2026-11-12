@@ -1,0 +1,383 @@
+{
+  "id": "live-stellar-observations",
+  "title": "Read unknown, current and historical stellar intelligence",
+  "inventory": [
+    "UX-03",
+    "UX-07",
+    "UX-14",
+    "UX-16"
+  ],
+  "description": "Four independent commanders enter through authenticated controls. Actual leased ticks acquire private observations; a missed scan retains historical facts. Fixed catalogue, domain clocks and scan entropy identities are explicit harness controls, not injected reports. Development scanning rules remain under review. Managed encryption, random-map fairness and hosted scheduling are not certified.",
+  "source": {
+    "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+    "dirty": true,
+    "spec": "tests/browser/observations.story.spec.ts",
+    "specSha256": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304"
+  },
+  "mode": "verify",
+  "status": "passed",
+  "project": "phone",
+  "platform": "linux-arm64",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "identity-1",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-2",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-3",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "identity-4",
+      "description": "Ordinary emulator sign-in and identity save, with explicit developer entitlement and fixed browser Date; timers continue normally.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-1",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-2",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-3",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "admit-4",
+      "description": "Create/join through ordinary campaign controls. Fixed catalogue and admission clock are test controls; no seat, message or command outcome is injected.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "scheduler-delivery",
+      "description": "Advance the designated browser/domain clock to 12:15 UTC and deliver the actual emulator Scheduler HTTP request. This does not certify hosted scheduling.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "inspect-before-acquisition",
+      "description": "Select the same nearby catalogue star on two independent accounts before the first scan.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "Both accounts explicitly report that no observation has been acquired.",
+      "verifications": [
+        "Unknown reports have no serialized observation fields or rendered force/development facts; the primary tab and age remain visible."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "010-inspect-before-acquisition-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "010-inspect-before-acquisition-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-scan-tick",
+      "description": "Deliver the first real leased tick at the explicit domain boundary. Fixed scan entropy identities feed the real HMAC; acquisition, authorization and publication are unchanged.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "read-current-report",
+      "description": "Read the acknowledged current scan and compare the other commander's independently authorized view of the same star.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "The nearby star has a current tick-one report for the survey envoy.",
+      "verifications": [
+        "Every displayed field equals that player's actual projection; private entropy and other accounts' report tables are absent.",
+        "Public range and the envoy's level-one scanning guarantee acquisition within ten light years."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "012-read-current-report-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "012-read-current-report-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-scanning-capability",
+      "description": "Use the bounded details panel to read scanning probability while the age stays pinned.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "Scanning capability is visible and the report age remains inside its scroll panel.",
+      "verifications": [
+        "Reading and keyboard focus do not write a command or modify canonical state."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "013-read-scanning-capability-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "013-read-scanning-capability-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second-scan-tick",
+      "description": "Deliver the second real leased tick, then repeat delivery to prove the acquired/current or retained/historical outcomes are not redrawn.",
+      "actor": "Test harness",
+      "kind": "harness",
+      "acknowledgement": "Explicit test control; not a player action or hosted-service certification.",
+      "verifications": [],
+      "views": []
+    },
+    {
+      "id": "read-retained-history",
+      "description": "Select a report the envoy is authorized to read that was not refreshed by the second scan; distinguish its historical facts from another account's report.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "The envoy's retained report is explicitly historical at its original observation tick.",
+      "verifications": [
+        "A missed acquisition retains every prior authorized fact without substituting current canonical data; both players see only their own acquired fields."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "015-read-retained-history-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "015-read-retained-history-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-historical-warning",
+      "description": "Read the full historical warning and the other commander's scan caveat without losing the pinned age or leaving the bounded panel.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "Each full warning is readable inside its panel below the pinned observation age.",
+      "verifications": [
+        "The original observation timestamp and facts remain unchanged after scrolling."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "016-read-historical-warning-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "016-read-historical-warning-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inspect-still-unknown",
+      "description": "Inspect another public catalogue star for which the envoy has still acquired no report.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "The envoy sees unknown information, never a fabricated zero-force report.",
+      "verifications": [
+        "The unacquired star has no observation object or force/development fields in that account's serialized reports; the other account retains its own access."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "017-inspect-still-unknown-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "017-inspect-still-unknown-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recover-retained-report",
+      "description": "Reload both authenticated accounts, reopen the actual campaign and restore the selected historical report through keyboard-accessible system navigation.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "Reload recovers the envoy's original tick-one report at current tick two.",
+      "verifications": [
+        "Recovery changes neither acquired history nor privacy and all rendered facts still match each authoritative private view."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "018-recover-retained-report-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "018-recover-retained-report-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read-labels-after-resize",
+      "description": "Resize the recovered chart and return to the original viewport; compare normal and reduced motion without changing the selected report.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "The same historical report remains selected with readable labels after resize and either motion preference.",
+      "verifications": [
+        "Presentation changes neither canonical state nor authorized observations."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "019-read-labels-after-resize-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "019-read-labels-after-resize-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locate-home-by-keyboard",
+      "description": "Use the systems list and Center home control with the keyboard to discover the home system independently of secondary map labels.",
+      "actor": "Survey envoy",
+      "kind": "player",
+      "acknowledgement": "The authoritative home system is selected and its priority label is readable.",
+      "verifications": [
+        "Keyboard chart navigation preserves authoritative forces, history and private recipient projections."
+      ],
+      "views": [
+        {
+          "player": "Survey envoy",
+          "image": "020-locate-home-by-keyboard-1-survey-envoy.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        },
+        {
+          "player": "Independent surveyor",
+          "image": "020-locate-home-by-keyboard-2-independent-surveyor.png",
+          "verifications": [
+            "Projected system labels remain separated and contained within the chart."
+          ]
+        }
+      ]
+    }
+  ]
+}

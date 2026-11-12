@@ -1,0 +1,23 @@
+{
+  "head": "730297e72db62967d28db609a788fb06edb9d1d5",
+  "run": 43090488651,
+  "job": 130765927472,
+  "testFailureAt": "2026-11-11T20:16:43.0770522Z",
+  "stepCompletedAt": "2026-11-11T20:45:57Z",
+  "test": "tests/browser/conversations.spec.ts:6:3 mock",
+  "failureCall": "post(owner, \"One more point before our reply.\") at line 300",
+  "assertion": "Message sent. within unchanged 5000ms",
+  "observed": "Awaiting acknowledgement\u2026",
+  "counts": {
+    "failed": 1,
+    "passed": 35,
+    "skipped": 3
+  },
+  "artifactFailure": "CreateArtifact failed after five attempts; HTML response could not be parsed as JSON. No browser-evidence archive was created, so the trace is unavailable.",
+  "sourceFacts": [
+    "holding becomes true only after the failed owner post; deliberate guest withholding has not started.",
+    "The log shows profileKey completion at 20:16:38.0368925Z but no processCampaign invocation during the subsequent five-second failure window. This does not prove why submission or acknowledgement stalled."
+  ],
+  "next": "One unchanged complete mock conversation case in pinned Linux, fresh owned emulator, original 180s test and 5s assertions, trace on. Local ports 15001/19099/18080 belong to another task and will not be touched.",
+  "limits": "No cause or repair established; no blanket retry or timeout change."
+}

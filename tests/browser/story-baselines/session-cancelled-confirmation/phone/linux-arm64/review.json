@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/SESSION_RECOVERY_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "session-cancelled-confirmation",
   "renderer": {
@@ -27,5 +27,92 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/session-recovery.story.spec.ts",
+    "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-account-entry-1-commander-first-device.png",
+      "sha256": "46d86c20e4c1ef22457b4434d8e61081927585d6c6523b339884f3709ff64406",
+      "previousSha256": "793d330828bc043fa37bc9b63db7a87aa32880e96b410c523aa09823f0237c6a",
+      "changed": true,
+      "approval": "exact inspected hash"
+    },
+    {
+      "image": "002-account-entry-2-commander-second-device.png",
+      "sha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+      "previousSha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+      "changed": false,
+      "approval": "unchanged inherited reviewed reference"
+    },
+    {
+      "image": "003-open-devices-1-commander-first-device.png",
+      "sha256": "c839c9ca9b2aa79ea04d1942ae95d5ca72ad57c10005ef6e4c0c82399b78f2f9",
+      "previousSha256": "c839c9ca9b2aa79ea04d1942ae95d5ca72ad57c10005ef6e4c0c82399b78f2f9",
+      "changed": false,
+      "approval": "unchanged inherited reviewed reference"
+    },
+    {
+      "image": "004-close-devices-1-commander-first-device.png",
+      "sha256": "46d86c20e4c1ef22457b4434d8e61081927585d6c6523b339884f3709ff64406",
+      "previousSha256": "793d330828bc043fa37bc9b63db7a87aa32880e96b410c523aa09823f0237c6a",
+      "changed": true,
+      "approval": "exact inspected hash"
+    },
+    {
+      "image": "005-cancel-confirmation-1-commander-first-device.png",
+      "sha256": "cd9f8870b283b415da863981fdb92c66c4f5e2af807705c2be990e427a93a6e0",
+      "previousSha256": "cd9f8870b283b415da863981fdb92c66c4f5e2af807705c2be990e427a93a6e0",
+      "changed": false,
+      "approval": "unchanged inherited reviewed reference"
+    },
+    {
+      "image": "005-cancel-confirmation-2-commander-second-device.png",
+      "sha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+      "previousSha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+      "changed": false,
+      "approval": "unchanged inherited reviewed reference"
+    },
+    {
+      "image": "006-end-both-sessions-1-commander-first-device.png",
+      "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+      "previousSha256": "41088d2066d35d89d8bfe10f663d7b7f101b641edb8f7b9b0d179e790052cd72",
+      "changed": true,
+      "approval": "exact inspected hash"
+    },
+    {
+      "image": "006-end-both-sessions-2-commander-second-device.png",
+      "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+      "previousSha256": "41088d2066d35d89d8bfe10f663d7b7f101b641edb8f7b9b0d179e790052cd72",
+      "changed": true,
+      "approval": "exact inspected hash"
+    },
+    {
+      "image": "008-fresh-sign-in-1-commander-first-device.png",
+      "sha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+      "previousSha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+      "changed": false,
+      "approval": "unchanged inherited reviewed reference"
+    },
+    {
+      "image": "008-fresh-sign-in-2-commander-second-device.png",
+      "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+      "previousSha256": "41088d2066d35d89d8bfe10f663d7b7f101b641edb8f7b9b0d179e790052cd72",
+      "changed": true,
+      "approval": "exact inspected hash"
+    },
+    {
+      "image": "009-reload-identity-1-commander-first-device.png",
+      "sha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+      "previousSha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+      "changed": false,
+      "approval": "unchanged inherited reviewed reference"
+    }
+  ]
 }

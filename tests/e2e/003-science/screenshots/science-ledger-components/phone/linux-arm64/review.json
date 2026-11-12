@@ -1,0 +1,84 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/science-layer-all-reviewed.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "science-ledger-components",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+    "dirty": false,
+    "spec": "tests/e2e/003-science/components.spec.ts",
+    "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/story.json",
+  "inspectionScope": "All changed expected/candidate compositions inspected using full phone pairs and changed-RGBA-bounds plus padding for desktop/short/large. Duplicate image hashes explicitly grouped. Text painting changes retain headings, actual values, source names, focus outlines and reading positions. Large component pairs tool-downscaled: layout/content approval, not full native-pixel design certification. Cross-run stability remains to be verified.",
+  "captures": [
+    {
+      "image": "001-gallery-source-reduce-1-component-reviewer.png",
+      "sha256": "3024254ed132ccd5b2963d78e0de1c2f408dae396cd3e39363c6712aad52301e",
+      "previousSha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "002-gallery-source-no-preference-1-component-reviewer.png",
+      "sha256": "3024254ed132ccd5b2963d78e0de1c2f408dae396cd3e39363c6712aad52301e",
+      "previousSha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "003-lab-capacity-1-standard-motion-comparison.png",
+      "sha256": "85a984f4b7432a8cb4d151b3895f429e3a3c0881ddf114a1392161ee89006f1e",
+      "previousSha256": "5a8be39f85bb501119e60de62232fc25af60ba4623ed79dd91dc13ff5d251c10",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "003-lab-capacity-2-reduced-motion-comparison.png",
+      "sha256": "81086bcd345d015c482338016e68954af4c1348f6051bb805ca44ccf619979d8",
+      "previousSha256": "b7ebec3e0d2145b6b2ef5e2a28d753b3e721bfbc576b034d7ecc12be5c76d697",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "004-lab-delivered-1-standard-motion-comparison.png",
+      "sha256": "2007cf4089e2f262b0917bed78255a1391727d39c552d3f68d93313c7a036c3d",
+      "previousSha256": "ee99e3b83301dc248628dbde0d1312d021e654717cb9e66344caa2bb145f278a",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "004-lab-delivered-2-reduced-motion-comparison.png",
+      "sha256": "0a5d0789f5d2e67ac4ee5117ca9840210ccdb46c7a321d1f250210afd7ecd127",
+      "previousSha256": "1b1ceb960b93b19ccc2c8cc67fa1b23724759f3d07acc71fbac167d1034bdaed",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    }
+  ],
+  "previousReview": "docs/testing/top-pr-green-20261103/inspection-decisions.json"
+}

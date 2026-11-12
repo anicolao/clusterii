@@ -1,0 +1,179 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/route-spacing-desktop-inspection.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "route-force-review",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "7554e3436455e1d3703ac95645a7aa2c80606332",
+    "dirty": false,
+    "spec": "tests/e2e/009-route-forces/forces.spec.ts",
+    "specSha256": "f019a866493843ec65f953f1dadefdbcd3f953c3f155d5850ffba2b9fb4a5758"
+  },
+  "target": "d914432f8a1b3ce1e81677c08ff9dd50c612b15b",
+  "run": 43140301420,
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-travel-forces-43140301420/desktop/test-results/stories/route-force-review/desktop/linux-arm64/story.json",
+  "manifestSha256": "f2d6c1b557ced478e32fcf5dfb8fb77c4a138959e83463b5cee12304e5036f5c",
+  "jobConclusion": "failure all4; not rewritten",
+  "functionalResult": "8complete original journeys passed;8passed manifests;52travel+22force eachviewport,296originals",
+  "postprocessingFailure": "52 actual travel captures from26 two-player viewpoints, validator incorrectly expected50. No gameplay/screenshot assertion failure.",
+  "scope": "Exact inspected hashes, original assertions and deadlines. Large downscaled; not full design/release approval.",
+  "captures": [
+    {
+      "image": "010-reserve-real-complement-1-route-marshal.png",
+      "sha256": "a2d5a88abac5f7fea2a85b515375143c8c79d355de884f7faac83c0bac5cdcb6",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/010-reserve-real-complement-1-route-marshal.png",
+      "previousSha256": "b31577ea8b4676e0cbc9b514b6b84957ebd91ef58e29b848be9f90bf8c3b6153"
+    },
+    {
+      "image": "010-reserve-real-complement-2-independent-marshal.png",
+      "sha256": "10646906bcc27b17689b1b0526a7d4f7dad56478a55966637961adedb48f193f",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/010-reserve-real-complement-2-independent-marshal.png",
+      "previousSha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295"
+    },
+    {
+      "image": "012-review-confirmed-forces-1-route-marshal.png",
+      "sha256": "bb71fc620329bafd5c30830614212e63c757c43923110fedba60b592cace7114",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/012-review-confirmed-forces-1-route-marshal.png",
+      "previousSha256": "efbeff993da1481343f2bae8b9302f501e7abd7f7daed7c609b35831ac9ef4e1"
+    },
+    {
+      "image": "012-review-confirmed-forces-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/012-review-confirmed-forces-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    },
+    {
+      "image": "013-read-origin-defense-1-route-marshal.png",
+      "sha256": "a1a502a499b7b810dde6bd63916c5374cdbe6a1b11251a036fdd492e08a08554",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/013-read-origin-defense-1-route-marshal.png",
+      "previousSha256": "fc2d4fcfb0c6b3d72aae51200853f637b10c728f1267243b79f61508610188bc"
+    },
+    {
+      "image": "013-read-origin-defense-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/013-read-origin-defense-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    },
+    {
+      "image": "014-choose-real-waypoint-1-route-marshal.png",
+      "sha256": "7842eb6e2c5d9632112955d4e322f707490fa14691cd3128fb7b27ed0f7bd470",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/014-choose-real-waypoint-1-route-marshal.png",
+      "previousSha256": "046df6aecdcaca888f7ce8597d17f9fd36dde7e7cda4d79a61f6ab88eba57392"
+    },
+    {
+      "image": "014-choose-real-waypoint-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/014-choose-real-waypoint-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    },
+    {
+      "image": "015-edit-multiple-waypoints-1-route-marshal.png",
+      "sha256": "e5a8ccb075be859de875af93a26431b06d71dc12a57cdc227b9d9de97be12c3f",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png",
+      "previousSha256": "2dc4b9f1acb3a4600960268dc9689f17d2de5fc071148bca42ccf30524128ce5"
+    },
+    {
+      "image": "015-edit-multiple-waypoints-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    },
+    {
+      "image": "016-read-earlier-focus-1-route-marshal.png",
+      "sha256": "e5a8ccb075be859de875af93a26431b06d71dc12a57cdc227b9d9de97be12c3f",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/016-read-earlier-focus-1-route-marshal.png",
+      "previousSha256": "2dc4b9f1acb3a4600960268dc9689f17d2de5fc071148bca42ccf30524128ce5"
+    },
+    {
+      "image": "017-read-later-focus-1-route-marshal.png",
+      "sha256": "65cb63ea6ace5bf1ecff23affcae9e1640d7fb32ef6a5570aa726dbeaff0cd7e",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/017-read-later-focus-1-route-marshal.png",
+      "previousSha256": "a2b99377ac409f7180114327a8c1fbdf62c3fd928bfca127fe004efb95ec0945"
+    },
+    {
+      "image": "018-read-remove-focus-1-route-marshal.png",
+      "sha256": "0829720110015d8c292b0e8589840596cd1b02b00c428e63783d8ee94dd7925b",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/018-read-remove-focus-1-route-marshal.png",
+      "previousSha256": "d98c2bec71bcbbd0653cecc83f343f9c0ba1ed0337eebc6589a6d47b223d73f4"
+    },
+    {
+      "image": "019-reorder-remove-waypoint-1-route-marshal.png",
+      "sha256": "7842eb6e2c5d9632112955d4e322f707490fa14691cd3128fb7b27ed0f7bd470",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/019-reorder-remove-waypoint-1-route-marshal.png",
+      "previousSha256": "046df6aecdcaca888f7ce8597d17f9fd36dde7e7cda4d79a61f6ab88eba57392"
+    },
+    {
+      "image": "019-reorder-remove-waypoint-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/019-reorder-remove-waypoint-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    },
+    {
+      "image": "020-review-normal-motion-1-route-marshal.png",
+      "sha256": "7842eb6e2c5d9632112955d4e322f707490fa14691cd3128fb7b27ed0f7bd470",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/020-review-normal-motion-1-route-marshal.png",
+      "previousSha256": "046df6aecdcaca888f7ce8597d17f9fd36dde7e7cda4d79a61f6ab88eba57392"
+    },
+    {
+      "image": "021-acknowledge-dispatch-1-route-marshal.png",
+      "sha256": "80404816403b12d8324515f635d1c922500919398edb77016ccc2c9922ac7729",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/021-acknowledge-dispatch-1-route-marshal.png",
+      "previousSha256": "7f8fd20006ef26390930a07119cdc8983f6dfaacdd6e515a699a12a25f14bca1"
+    },
+    {
+      "image": "021-acknowledge-dispatch-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/021-acknowledge-dispatch-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    },
+    {
+      "image": "022-read-accepted-top-1-route-marshal.png",
+      "sha256": "4e9b539653130e53454c3442682c5e1cd896ecda936124afece311ca95edb780",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/022-read-accepted-top-1-route-marshal.png",
+      "previousSha256": "559f309c3be0a7e754cba7e2bc93242cfcd0fea7d0d500504116b4dc89588a61"
+    },
+    {
+      "image": "023-read-accepted-bottom-1-route-marshal.png",
+      "sha256": "4cd58b871490871a56bd5b2bd7232b77293570a62d3d40daa602c41680d1b8d6",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/023-read-accepted-bottom-1-route-marshal.png",
+      "previousSha256": "e80b822cab1271336197a30483906b81310fdc17e55d0ff5c26fdce19bbdc05d"
+    },
+    {
+      "image": "024-recover-same-dispatch-1-route-marshal.png",
+      "sha256": "37b57d4bad87b8f56054febe5660d1d2cfa4d7f01c2c6f46e5499cd8f0c47f27",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/024-recover-same-dispatch-1-route-marshal.png",
+      "previousSha256": "069d95c80538cf8d2b52fba0df3d28e3c60727420769b2d9960753bd420453d1"
+    },
+    {
+      "image": "024-recover-same-dispatch-2-independent-marshal.png",
+      "sha256": "d003751494e50f4e004cb218ed1523ba63fb613beb9566ed35f313160e6154cd",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/024-recover-same-dispatch-2-independent-marshal.png",
+      "previousSha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e"
+    }
+  ]
+}

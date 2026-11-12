@@ -137,7 +137,7 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
           },
           verifications: [
             {
-              spec: "The bounded waiting manifest retains navigation and omits unavailable empire facts and arbitrary system ownership.",
+              spec: "The bounded waiting manifest retains navigation, keeps the focused Roster outline clear of its confirmation, and omits unavailable empire facts and arbitrary system ownership.",
               check: async () => {
                 await expect(
                   pages[0].getByLabel("Empire resources"),
@@ -164,6 +164,27 @@ test("Inspect and navigate a real galaxy through its command dock", async ({
                   }),
                 ).toHaveCount(0);
                 await expect(manifest).toContainText(aliases[0]);
+                const confirmation = await pages[0]
+                  .getByText("Your seat is confirmed.", { exact: true })
+                  .boundingBox();
+                const focus = await button(pages[0], "Roster").evaluate(
+                  (element) => {
+                    const bounds = element.getBoundingClientRect();
+                    const style = getComputedStyle(element);
+                    return {
+                      visible: element.matches(":focus-visible"),
+                      top:
+                        bounds.top -
+                        parseFloat(style.outlineWidth) -
+                        parseFloat(style.outlineOffset),
+                    };
+                  },
+                );
+                expect(focus.visible).toBe(true);
+                expect(confirmation).not.toBeNull();
+                expect(focus.top).toBeGreaterThanOrEqual(
+                  confirmation!.y + confirmation!.height,
+                );
               },
             },
           ],

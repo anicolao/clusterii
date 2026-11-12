@@ -1,0 +1,18 @@
+✔ admission fixture changes only designated domain time inputs (0.346708ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.275042ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.308417ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.347917ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.23025ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.627084ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.76825ms)
+✔ capture policy protects each exact comparison, readiness and review guard (1.033833ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (8.353291ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 56.655459
+Illustrated-story policy passed; legacy migration gaps remain inventoried.

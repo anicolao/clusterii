@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { keepFocusedControlVisible } from "$lib/focused-reader";
   import type { MotionInspection } from "$lib/motion";
   import { base } from "$app/paths";
   import type { CampaignView } from "@shared/campaign";
@@ -141,6 +142,7 @@
   </header>
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (Keyboard users scroll the bounded offer details without moving the commitment rail.) -->
   <div
+    use:keepFocusedControlVisible
     class="offer-reading"
     role="region"
     aria-label="Offer details"
@@ -284,7 +286,7 @@
               requestMilli: request!,
             })}
           >{pending
-            ? "Awaiting acknowledgement…"
+            ? "Awaiting receipt"
             : busy
               ? "Preparing offer…"
               : "Share credit offer"}</ActionButton
@@ -300,7 +302,7 @@
                 offerId: offer.id,
               })}
             >{pending
-              ? "Awaiting acknowledgement…"
+              ? "Awaiting receipt"
               : busy
                 ? "Preparing acceptance…"
                 : "Accept exact terms"}</ActionButton
@@ -314,7 +316,7 @@
                 offerId: offer.id,
               })}
             >{pending
-              ? "Awaiting acknowledgement…"
+              ? "Awaiting receipt"
               : busy
                 ? "Preparing withdrawal…"
                 : "Withdraw offer"}</ActionButton
@@ -468,7 +470,7 @@
       gap: 8px;
     }
     .commitment :global(button) {
-      padding: 12px 8px;
+      padding: 12px 6px;
     }
   }
   @media (max-height: 700px) {

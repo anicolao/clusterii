@@ -1,0 +1,11 @@
+# PR71 reconciliation onto published PR70
+
+Parent: 058c3a6ce6449fc1f7d9a731bcb5da2b64727781. PR70 required application, strict, generation, documentation and publication checks started; no full-green claim. PR69 exact b553978c publication and independent hosted revision/assets check passed.
+
+All 6,370 inherited reference files match the current parent, accounting for the exact 136-file selected-history namespace move. Product, shared reducers, Functions, feature008 including its normal focus guard, authoritative capture helper, credit readiness repair and overdue route story remain exact parent bytes. Original PR71 journey differs only by five relative import/package-path adaptations. Its functional assertions and budgets are unchanged.
+
+The earlier isolated preparation carried obsolete PR70 candidate-only workflow/runner files from an executor ancestor. Reconciliation removes those seven files/deltas by restoring the published parent's workflow and both launcher trees. This prevents accidental old request routing; no required workflow changes or request dispatch. Scoped registry, narrative, promotion and policy changes for feature009 remain. Six layout checks and 40 policy checks pass; collection preserves all 180 viewport/title identities. The default application collection was also read (39 tests); it is not used as illustrated-story coverage evidence.
+
+Original71 and current70 histories are retained with exact commit-addressed parent archives, append-only canonical requests and inherited continuation records. The unchanged preservation checker passed before the newest real reviewer request was appended; the commit hook checks the final staged logs again.
+
+Historical PR71 run39745132291 at b590be6a reports 59 missing-reference occurrences and three pixel mismatches: phone chart005 (1066), scheduled-start026 Dawn2 (259), selected-history017 Dawn listener (273). These are not current-source failures. Current parent references are preserved; no historical actual is imported. No PR71 Linux candidate or baseline has been approved. Next is an immutable complete four-size, 25-view-per-size candidate request for review, with separate 60 inherited and 40 new-image comparison; no dispatch in this integration.

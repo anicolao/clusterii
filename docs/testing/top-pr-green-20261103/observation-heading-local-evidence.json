@@ -1,0 +1,443 @@
+{
+  "status": "4 passed (1.3m), emulator exit0",
+  "phone18UnchangedFromBefore": true,
+  "families": [
+    {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/story.json",
+      "source": {
+        "commit": "0c59460fae0a8d36f152c53d8e55378444667a2d",
+        "dirty": true,
+        "spec": "tests/browser/observations.story.spec.ts",
+        "specSha256": "6eb4213b234e2c91a32954daad35c6c82b9ae748fb2840051f45279ec5c6ccdf"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+          "sha256": "5b0ae30730af1f2a9817ff64540fbef867b6c6dc8af069976a35e5a21896429d"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+          "sha256": "26d11ba00014499d76422346cfef68811a96c3aa1cc64a7c85c631862b607b95"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/012-read-current-report-1-survey-envoy.png",
+          "sha256": "53524bc9e128559569d811a6bdbecfe9ff504e94fa72bc20cd7cacb6353550f2"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/012-read-current-report-2-independent-surveyor.png",
+          "sha256": "99714abd16b6837c81f1104e02e3c97dbfd5ded45dd1febd312b5c9fab72a060"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/013-read-scanning-capability-1-survey-envoy.png",
+          "sha256": "08af0f152ffcbf7686ae40fbf8dbfacbbca6d910b9a2f22877b416ed59decd3b"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+          "sha256": "99714abd16b6837c81f1104e02e3c97dbfd5ded45dd1febd312b5c9fab72a060"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/015-read-retained-history-1-survey-envoy.png",
+          "sha256": "38813c507a63f48f49100c82dae93ef0c10826e117ca857c91de432b55d0bd69"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/015-read-retained-history-2-independent-surveyor.png",
+          "sha256": "5e07bbfc23dede07dea32f5436368b3139c8e3e9013fc2b74ae45a429a8c8107"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/016-read-historical-warning-1-survey-envoy.png",
+          "sha256": "38813c507a63f48f49100c82dae93ef0c10826e117ca857c91de432b55d0bd69"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/016-read-historical-warning-2-independent-surveyor.png",
+          "sha256": "5e07bbfc23dede07dea32f5436368b3139c8e3e9013fc2b74ae45a429a8c8107"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+          "sha256": "47589c1f0b854a4ffdd0b62b87460eaed55a1395582e140951af1da07d1e271c"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+          "sha256": "f7b42a077999ecd322fe6af137dd375eccd7bf1fef566f82e666bc4c17b384bb"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/018-recover-retained-report-1-survey-envoy.png",
+          "sha256": "38813c507a63f48f49100c82dae93ef0c10826e117ca857c91de432b55d0bd69"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/018-recover-retained-report-2-independent-surveyor.png",
+          "sha256": "5e07bbfc23dede07dea32f5436368b3139c8e3e9013fc2b74ae45a429a8c8107"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+          "sha256": "38813c507a63f48f49100c82dae93ef0c10826e117ca857c91de432b55d0bd69"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+          "sha256": "5e07bbfc23dede07dea32f5436368b3139c8e3e9013fc2b74ae45a429a8c8107"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+          "sha256": "6bbf86b2a947b879085cfc73f8acbcf45bbc9ccbb32632d775f997fc315e231b"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/desktop/darwin-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+          "sha256": "5e07bbfc23dede07dea32f5436368b3139c8e3e9013fc2b74ae45a429a8c8107"
+        }
+      ]
+    },
+    {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/story.json",
+      "source": {
+        "commit": "0c59460fae0a8d36f152c53d8e55378444667a2d",
+        "dirty": true,
+        "spec": "tests/browser/observations.story.spec.ts",
+        "specSha256": "6eb4213b234e2c91a32954daad35c6c82b9ae748fb2840051f45279ec5c6ccdf"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+          "sha256": "ed6efe2cde0167983f365f037fc7a455f3f48ebac56044c5109f46dc1fb6e2e6"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+          "sha256": "5f0cff783eeb8afae9fdb99046d2091be6a02e003565eca5db8d7969f1a716dd"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/012-read-current-report-1-survey-envoy.png",
+          "sha256": "b3d6d1921e0967837c1dd025706eeca7de1d2eb7032bb7b7e3521865923f96a8"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/012-read-current-report-2-independent-surveyor.png",
+          "sha256": "070bc54eacb2fa27bddf7a8fa6a5f69fb91247bc8f2890d982903ccba491177a"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/013-read-scanning-capability-1-survey-envoy.png",
+          "sha256": "b3d6d1921e0967837c1dd025706eeca7de1d2eb7032bb7b7e3521865923f96a8"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+          "sha256": "070bc54eacb2fa27bddf7a8fa6a5f69fb91247bc8f2890d982903ccba491177a"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/015-read-retained-history-1-survey-envoy.png",
+          "sha256": "bf1a43674ec5bde76e0f9825c1e1c0135e2f648eaab67a95e5913e4802250ef1"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/015-read-retained-history-2-independent-surveyor.png",
+          "sha256": "96418d9f1cc214cc2a39a0e8b964159ec51fa567435b7bf8f308b15c16b5948d"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/016-read-historical-warning-1-survey-envoy.png",
+          "sha256": "bf1a43674ec5bde76e0f9825c1e1c0135e2f648eaab67a95e5913e4802250ef1"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/016-read-historical-warning-2-independent-surveyor.png",
+          "sha256": "96418d9f1cc214cc2a39a0e8b964159ec51fa567435b7bf8f308b15c16b5948d"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+          "sha256": "15c3e7941758441d3ee0eed2512ea0d478e158b66236027bb0bc199cc085421c"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+          "sha256": "c4e76b4f68d495e4d068ea354307527ec90edd9e986926671b3f520d1f336ab0"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/018-recover-retained-report-1-survey-envoy.png",
+          "sha256": "bf1a43674ec5bde76e0f9825c1e1c0135e2f648eaab67a95e5913e4802250ef1"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/018-recover-retained-report-2-independent-surveyor.png",
+          "sha256": "96418d9f1cc214cc2a39a0e8b964159ec51fa567435b7bf8f308b15c16b5948d"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+          "sha256": "bf1a43674ec5bde76e0f9825c1e1c0135e2f648eaab67a95e5913e4802250ef1"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+          "sha256": "96418d9f1cc214cc2a39a0e8b964159ec51fa567435b7bf8f308b15c16b5948d"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+          "sha256": "829cee6c62a0b7781358c4f5eb0a29d55a687d1503806186c7fb5c56ae85ad74"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/large/darwin-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+          "sha256": "96418d9f1cc214cc2a39a0e8b964159ec51fa567435b7bf8f308b15c16b5948d"
+        }
+      ]
+    },
+    {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/story.json",
+      "source": {
+        "commit": "0c59460fae0a8d36f152c53d8e55378444667a2d",
+        "dirty": true,
+        "spec": "tests/browser/observations.story.spec.ts",
+        "specSha256": "6eb4213b234e2c91a32954daad35c6c82b9ae748fb2840051f45279ec5c6ccdf"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+          "sha256": "45452f6a6af06e701f22225f4cee96bce6f7cc58a7ca4b50ece7263c81247213"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+          "sha256": "6d2f122966ada4a4ee6d915802992acfd3d487867f5de9e82ea36705b4febb6b"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/012-read-current-report-1-survey-envoy.png",
+          "sha256": "89d6db87904df2145e63191ab4604214f3265f1b694baee17ba4b7c671c69cda"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/012-read-current-report-2-independent-surveyor.png",
+          "sha256": "1197c3c991e2eae7d6588eef2f2abfb883754016b982149a8cc4e8798b091700"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/013-read-scanning-capability-1-survey-envoy.png",
+          "sha256": "77dacc4372a685b316b3d35b541f524e445f4c9804ac1c54b4f4964d9be90f64"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+          "sha256": "1197c3c991e2eae7d6588eef2f2abfb883754016b982149a8cc4e8798b091700"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/015-read-retained-history-1-survey-envoy.png",
+          "sha256": "44b12d8d08b4a8ec015a8e866ba4682ac9857315449ecc9389e0ffcb938349af"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/015-read-retained-history-2-independent-surveyor.png",
+          "sha256": "26ffa268ae940da7b3b4c1bd29984004899645dce265f4357cf892d28ec19d6f"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/016-read-historical-warning-1-survey-envoy.png",
+          "sha256": "12434039545dc1191faf0bdfe4793a736db26c6c73b652e4b786bede29956f28"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/016-read-historical-warning-2-independent-surveyor.png",
+          "sha256": "26ffa268ae940da7b3b4c1bd29984004899645dce265f4357cf892d28ec19d6f"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+          "sha256": "355f6983781aa01278bd99be6567be48a39655370bf446572a44389b728d75b4"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+          "sha256": "bd2be7694d034a5baec4815c15ba67d09fbfd931391f50ab386f03121fcf1307"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-1-survey-envoy.png",
+          "sha256": "44b12d8d08b4a8ec015a8e866ba4682ac9857315449ecc9389e0ffcb938349af"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/018-recover-retained-report-2-independent-surveyor.png",
+          "sha256": "26ffa268ae940da7b3b4c1bd29984004899645dce265f4357cf892d28ec19d6f"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+          "sha256": "44b12d8d08b4a8ec015a8e866ba4682ac9857315449ecc9389e0ffcb938349af"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+          "sha256": "26ffa268ae940da7b3b4c1bd29984004899645dce265f4357cf892d28ec19d6f"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+          "sha256": "412a740caa111c623536429a6b7467e899f7e6fb68fa33454d02b79083e27cfe"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/phone/darwin-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+          "sha256": "26ffa268ae940da7b3b4c1bd29984004899645dce265f4357cf892d28ec19d6f"
+        }
+      ]
+    },
+    {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/story.json",
+      "source": {
+        "commit": "0c59460fae0a8d36f152c53d8e55378444667a2d",
+        "dirty": true,
+        "spec": "tests/browser/observations.story.spec.ts",
+        "specSha256": "6eb4213b234e2c91a32954daad35c6c82b9ae748fb2840051f45279ec5c6ccdf"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "captures": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+          "sha256": "7898a19efadeb63834321971bed40e95184747dc1daf00a76e10c2c85d3cb8ff"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+          "sha256": "2f781fce081fc8bc21e8eff1925d56af708014a0fc0bf04deaa19275d7495752"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/012-read-current-report-1-survey-envoy.png",
+          "sha256": "9d7c75c04047dc3432b590ddd5e7597bf220625d521fce6e5773f79203410874"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/012-read-current-report-2-independent-surveyor.png",
+          "sha256": "bfab8a6dd058f53946965982d19084c756427e7355f948e8624fc6f9ca86c63f"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/013-read-scanning-capability-1-survey-envoy.png",
+          "sha256": "1ff08cd75c288b5fc7d66eb91f952171a655909bf2ca3fc028ca2a8034464701"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+          "sha256": "01bba0c0436406738151a94915c843512025a6728340afb9f7eb02b048ceae28"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/015-read-retained-history-1-survey-envoy.png",
+          "sha256": "87a05550b9075d24588589d6529d26d2aa74b733e14f54c773acb4c38102a1e4"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/015-read-retained-history-2-independent-surveyor.png",
+          "sha256": "ebf15bf2d2d75d4ed9ce72a5dad68571019ad4fb48c994c0382ea3f78089694a"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/016-read-historical-warning-1-survey-envoy.png",
+          "sha256": "1988cc8a73bcd8d2394f2c4c0ba4370edab7e092ac0a05e8e02ef45b4ec1a34d"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/016-read-historical-warning-2-independent-surveyor.png",
+          "sha256": "c1801501e5f3fd206873faee75ed4a37200655dd889815812e4804fd7f62e8a5"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+          "sha256": "10e1ea16ade4a2964cdf9771ca0a078fc88783457b29b27cbd15d79f7563ce41"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+          "sha256": "77974fdc9a3b400e3bb43f702e66ca38f3907e8204c487e0656ba2233ec121b7"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/018-recover-retained-report-1-survey-envoy.png",
+          "sha256": "87a05550b9075d24588589d6529d26d2aa74b733e14f54c773acb4c38102a1e4"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/018-recover-retained-report-2-independent-surveyor.png",
+          "sha256": "ebf15bf2d2d75d4ed9ce72a5dad68571019ad4fb48c994c0382ea3f78089694a"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+          "sha256": "87a05550b9075d24588589d6529d26d2aa74b733e14f54c773acb4c38102a1e4"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+          "sha256": "ebf15bf2d2d75d4ed9ce72a5dad68571019ad4fb48c994c0382ea3f78089694a"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+          "sha256": "b17bec22bc116a43523d9d9bcdefc4d87017eb04652177d9173ef6020def9368"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-after/live-stellar-observations/short/darwin-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+          "sha256": "ebf15bf2d2d75d4ed9ce72a5dad68571019ad4fb48c994c0382ea3f78089694a"
+        }
+      ]
+    }
+  ],
+  "visualInspection": "Corrected desktop/short010 viewed native; large010 viewed downscaled. Full heading clears cards. Short lower scanning prose remains reachable through bounded reader, not all-content simultaneous visibility. No Linux promotion."
+}

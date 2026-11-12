@@ -275,6 +275,7 @@ test("Inspect authoritative science rate and recover earned output", async ({
         {
           spec: "The peer remains at its own initial rate and source while the owner order is accepted.",
           check: async () => {
+            await railClearance(owner, "ordinary-economy");
             await expect(ledger(peer).locator(".rate")).toHaveText(
               "+1.4 / tick",
             );

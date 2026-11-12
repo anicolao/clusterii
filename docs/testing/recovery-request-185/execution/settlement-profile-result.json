@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "durationSeconds": 35,
+  "attachMs": 696.8075660000001,
+  "sourceJarSHA256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c",
+  "buckets": [
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "other-emulator",
+      "count": 4,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ThreadPark",
+      "phase": "other",
+      "count": 2195,
+      "durationMs": 177390.50778500017
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "other",
+      "count": 16,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "security-rules-evaluation",
+      "count": 25,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "listener-query",
+      "count": 11,
+      "durationMs": 0
+    },
+    {
+      "event": "jdk.JavaMonitorEnter",
+      "phase": "other",
+      "count": 1,
+      "durationMs": 12.466417999999999
+    },
+    {
+      "event": "jdk.ExecutionSample",
+      "phase": "grpc-response",
+      "count": 4,
+      "durationMs": 0
+    }
+  ],
+  "ignoredEvents": 0,
+  "export": {
+    "category": "complete",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutBytes": 29758745,
+    "stderrBytes": 0,
+    "elapsedMs": 523.3875079999998
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-fleet-reorganization",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+    "dirty": false,
+    "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+    "specSha256": "123829c3996daa104cd7ac13be00c787fc4c5bfeeb1d12ec3170caead8cd6171"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "bb5814e0addaee5b2a719f637bac4f47160e3fba1d1656709a1a99b5fc0b7376",
+      "previousSha256": "1e36480825895dafbf0393ceefe120b1e0b84cf78d0ff7b41958373ac2b39940",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "39af8a855d96fbe7bafe264e3524ef208d681a8574e0653c5b81db591665b5bb",
+      "previousSha256": "9dc594e665c6d31db99eaf38ae4d7f82483b0053839482d88510a6253ba5cb91",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "822e79d76dfcb4a1b2a53214a874c3ab3ea4c4aeeaedeb5d7342e110e4dd6b81",
+      "previousSha256": "17c159763b6ca6c7f8b87bb18909c516b5187fe983244e9e75428ce661c1e7a6",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "5c00f0975e36ca055e06276e3fe1f7e4c309ad5ce5fc86c243814e194c3891ee",
+      "previousSha256": "3adc93148293bd229afe6b7a2e18fa07e3c86201b29dab1c4ed24e7016983708",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousSha256": "26c47c5ab4340c6afad9e918e94286cbdaebb01b053e7675e84e7e10d910789c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "1a7511ed24ddb22e45408e44bdbe3577ad65c4cb9873431a9e5464992f691a3a",
+      "previousSha256": "c57a86e081d74cbee23dde27d9c7db03a86203f52c0a5151baf9c0819f67fa8d",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "015-formed-fleet-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "016-invalid-split-1-fleet-marshal.png",
+      "sha256": "13cb2bf50f20e4d798da2dc1f99fe0b22ba2238fab29dca249ed59cb9ab47853",
+      "previousSha256": "e288612227e339465cc1d3ecf6e9c8e7f771ca3792c2cc799000d16fa70d13be",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "016-invalid-split-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "017-review-split-1-fleet-marshal.png",
+      "sha256": "4fa827b4363759b0a930bc83aa8c69b8391642467caed15dd268c5adbc48fbf2",
+      "previousSha256": "5a074fa5699a5e3b76247f2c007f1d9936f098068f5f94d116cddbd53aead84f",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "017-review-split-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "019-pending-split-1-fleet-marshal.png",
+      "sha256": "f1b13fc55ee33aea14557b2dd13dd8b7f1baf0a5b30a068abb1c20b898e49ced",
+      "previousSha256": "95fb49fbc37a5bc2c26c53f9b3ad5226e0e4291662b7e2e8758f6eced9060025",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "019-pending-split-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "020-reload-pending-split-1-fleet-marshal.png",
+      "sha256": "b4ad49562a308c12b63c7d95cb3f917ac6851de960715f1fcd189e796b3181a3",
+      "previousSha256": "7e4ddaa2235b825559e172eb72bd2548b41601c314b3b2a9983c3497899744fe",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "020-reload-pending-split-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "022-accepted-split-1-fleet-marshal.png",
+      "sha256": "6786447a2044c4938d73bbe2e157754e0d93ef5590ad491b6fc2c3b512d7be6e",
+      "previousSha256": "f4fbc0954be1f1f7639dd624e91b60109f507eb2fdfd4d9f5d3de5439360c272",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "022-accepted-split-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousSha256": "7a7b047502ddb132d5a2e391bec98f681584481332cf65277914760227a63044",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "024-split-fleets-1-fleet-marshal.png",
+      "sha256": "5c22ddccf39aa4d68649405f4b7befad834001850515e127072932e9abdad8ae",
+      "previousSha256": "12d4d5f0ad19914840c502650c8fe053ed62887833321e5e3f3f8c975d24bdf9",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "024-split-fleets-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "025-choose-recipient-1-fleet-marshal.png",
+      "sha256": "0b93baf120513bec409047127e58e4ebf6eeaa3c5e3e3000d259baee0fc7b8c1",
+      "previousSha256": "fe6d06f1028d3d8a0bccc6fa0052d52e90374d4f0c1e121fb72ff11b1111ddcf",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "025-choose-recipient-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "026-accepted-merge-1-fleet-marshal.png",
+      "sha256": "64687ccf05bcfb75c0339ee0d5c746206e7006ef10f3e6607b71e4cc7432d5ec",
+      "previousSha256": "f15caac919865a846d62c1e67113825a0a8fe8f9136080e4620ef5b12ab07d13",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "026-accepted-merge-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "027-reserved-recipient-1-fleet-marshal.png",
+      "sha256": "de59fe710f24b6da6c3358d848ac0312df172bc413445a09b72b7232cb33fd7b",
+      "previousSha256": "ed5c12b91d24d4b0725ac99a265a0583500241c9ec07a1c99f5d2ab9a10c3813",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "027-reserved-recipient-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "028-reload-merge-1-fleet-marshal.png",
+      "sha256": "f1d284c3afed4b755d4110b8b62607df93c8c34cffe004015d26dac5c399aae9",
+      "previousSha256": "90ace6c4348796dfaa8b4699a8200ec8cbda72be90a4776f2c1801077204269a",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "028-reload-merge-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousSha256": "82c52ed92c6f9c34ac0d6c15e642c35bfbc2045f84c7b6878ddeff9fef482fce",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "030-merged-fleet-1-fleet-marshal.png",
+      "sha256": "b9669451af5b9bfa824d8eccfda46df93ce94e683ecaf7a1fe86771eb6d3f665",
+      "previousSha256": "5ec5fb195ad989417acf6dc556e10c32955133b6a385c4d1244df3e7830bdba7",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "030-merged-fleet-2-independent-marshal.png",
+      "sha256": "a70b714014bf28d301082f2ca0f1cac458e984229f97efcc5246a8b4bd392f4e",
+      "previousSha256": "c45ebcd6905b9013462929ea93c74ac6b4a2cfc3467eea7deb4c7824d1623008",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "031-return-to-galaxy-1-fleet-marshal.png",
+      "sha256": "ecf7a3623c649b50ab1e422767e73ca25e2b47d2356feae1ecfb4b1541c6f3ca",
+      "previousSha256": "e5365f7feb83c8f0a7b6b6de055e6cfe31ee806fb9466a2a571257b14bb96d99",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "031-return-to-galaxy-2-independent-marshal.png",
+      "sha256": "a70b714014bf28d301082f2ca0f1cac458e984229f97efcc5246a8b4bd392f4e",
+      "previousSha256": "c45ebcd6905b9013462929ea93c74ac6b4a2cfc3467eea7deb4c7824d1623008",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    }
+  ],
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json",
+      "source": {
+        "commit": "ec13c28dedc76fb08199312ecd5937940995a336",
+        "dirty": false,
+        "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+        "specSha256": "123829c3996daa104cd7ac13be00c787fc4c5bfeeb1d12ec3170caead8cd6171"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-insets-43173376847/phone/test-results/stories/live-fleet-reorganization/phone/linux-arm64/story.json",
+      "scope": "Exact visually inspected changed hashes; all other reference bytes preserved. Full strict acceptance pending."
+    }
+  ]
+}

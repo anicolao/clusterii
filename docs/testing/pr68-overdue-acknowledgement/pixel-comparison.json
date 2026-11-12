@@ -1,0 +1,21 @@
+{
+  "dimensions": {
+    "format": "raw",
+    "width": 3840,
+    "height": 2160,
+    "channels": 4,
+    "depth": "uchar",
+    "premultiplied": false,
+    "size": 33177600
+  },
+  "changedPixels": 38486,
+  "bounds": {
+    "minX": 2711,
+    "minY": 1982,
+    "maxX": 3815,
+    "maxY": 2143
+  },
+  "expectedSha256": "e12d84197c8134d83f7e5e9a23c28c7730ec04d3fc4f37ac08b2830a6d3a9b8b",
+  "actualSha256": "7274128e03456b7e7907aa6ba39cd654efecbd3dd2b7e1abe75f1ff58d85b16b",
+  "expectedEqualsTargetGit": true
+}

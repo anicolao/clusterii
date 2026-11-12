@@ -1,0 +1,24 @@
+{
+  "run": 43137512097,
+  "target": "9b7bf150bc070a6d6159ebee8d0baf68f3fb4582",
+  "executor": "d8584f0595ebb205042fbfef7c2baba81b256466",
+  "request": "3f907cbbd654cc85d5ab05b2a4354f2b0db8fda3",
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "stories": {
+    "live-fleet-travel": 50,
+    "route-force-review": 22
+  },
+  "expectedViews": 288,
+  "originalDeadlineMs": 240000,
+  "retries": 0,
+  "updateSnapshots": "none",
+  "guardsPassed": 8,
+  "actualCollectionPerProject": 2,
+  "retentionDays": 14,
+  "approval": false
+}

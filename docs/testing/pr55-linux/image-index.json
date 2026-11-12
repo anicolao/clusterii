@@ -1,0 +1,656 @@
+{
+  "source": "c8129fec764fb8824bc951751b35aaedc3176c0f",
+  "originalHead": "88be06f1eb28e6073c91be0385ffef8623d590a6",
+  "specSha256": "5ed55233aeb9259683a8e05fd15833d12f63c13660985bd63cc62beeb5314c99",
+  "artifact": 12410489436,
+  "images": [
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "76a7b8a4ce463f285c92f7dc80eab2ef50337a4080f93510e510e0c642f15c91",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "76a7b8a4ce463f285c92f7dc80eab2ef50337a4080f93510e510e0c642f15c91",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "sha256": "76a7b8a4ce463f285c92f7dc80eab2ef50337a4080f93510e510e0c642f15c91",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "a0b21e1ffa28b6f59d8cfc1642b44ddaabdadc7b3d18906c60019869bdfc05b9",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "a0b21e1ffa28b6f59d8cfc1642b44ddaabdadc7b3d18906c60019869bdfc05b9",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "sha256": "a0b21e1ffa28b6f59d8cfc1642b44ddaabdadc7b3d18906c60019869bdfc05b9",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "sha256": "f59366882cffc5400b3e2013fc9f8bd0bf141f25ece12e06b431d96b3806f0f5",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "sha256": "a0b21e1ffa28b6f59d8cfc1642b44ddaabdadc7b3d18906c60019869bdfc05b9",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "sha256": "a0b21e1ffa28b6f59d8cfc1642b44ddaabdadc7b3d18906c60019869bdfc05b9",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "517a62d28cdef77df97231f3eeb548b9563f1319292189a6075a85ea21f71a61",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "f966e26168a9335f47ca3ce33418a324423f173795ee2f432d6f0f89efcb56cf",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "97bc20ca5d35e91313ac7bd41d67adf9815887153f7095634d4caabb8aea1b86",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "01bfb23103f0b63adcad667263506fc492550df0292038025750bf90d33117b4",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "f966e26168a9335f47ca3ce33418a324423f173795ee2f432d6f0f89efcb56cf",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "relative": "desktop/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "4f879c2ffb7d5abdb882e1c300a0febb2a51d4d0a1deb36d367c030f8630f1d7",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "relative": "desktop/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/desktop/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "relative": "desktop/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "86a22e862bc1e08d9afb12c5b848d2dde9246e60f04cef17c625088d9e47a551",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "relative": "large/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "relative": "large/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "relative": "large/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "sha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "relative": "large/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "relative": "large/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "relative": "large/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "sha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "relative": "large/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "sha256": "5f55f6df8d543c20520536c369e76b6ed9b4172d98d6c1e198991a53d0a57d31",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "relative": "large/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "sha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "relative": "large/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "sha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "relative": "large/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "c0b7feab65b17c2dde471838c17168c2832b3ab7d9b0da328d3ec9da6a670642",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "relative": "large/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "relative": "large/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "relative": "large/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "66fc9c7700d3512a5fdf0ed0604d8197582eea23d3299a4bc5e2510b1990f9d5",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "relative": "large/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "relative": "large/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "relative": "large/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "84929b7214c95775d146bf96d797b6818f90a31a2adf322ec05a059a0540ee57",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "relative": "large/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "relative": "large/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "relative": "large/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "7466222cf5f698707c80e7eb96475a7f1953afdd3abc9341ca959cb749fce55c",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "relative": "large/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "relative": "large/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "relative": "large/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "66fc9c7700d3512a5fdf0ed0604d8197582eea23d3299a4bc5e2510b1990f9d5",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "relative": "large/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "relative": "large/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "relative": "large/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "ccfb4994379989f3f16049d7d30c4e05dfdca3a070d740128ce56c77b3de6658",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "relative": "large/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/large/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "relative": "large/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "relative": "phone/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "sha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "relative": "phone/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "sha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "sha256": "304a9ba264ebcc00b566a0a05b88c43b725af6dd3327c19a0d19604680c33805",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "sha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "relative": "phone/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "sha256": "ce13caa9dd9b9e4b6e7a6461257f325a15bf0cc5835094cac44e08fce1ebcdc8",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "1b0979072003067f0e855782930ade9e7ccae8ce9d102c631122d173dbdc6c82",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "relative": "phone/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "3e869ca251fc40532ffee2185d6fc8f2e64cc8e72ff5105bbfeb11e9d1dafbde",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "relative": "phone/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "c0c4b35df98425cae9f5028e7a9a55981c1b23ce37895a54ee88efb0c37de5cd",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "relative": "phone/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "83ce719faffbd71879e7adb3040e5d7103d2b87c69be92a46979629905c1e1b4",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "relative": "phone/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "3e869ca251fc40532ffee2185d6fc8f2e64cc8e72ff5105bbfeb11e9d1dafbde",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "relative": "phone/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "relative": "phone/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "c5eba1b71391eb6e05114eb6aa07f2ff7a1b177251c557df484c422b2eed4c3f",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "relative": "phone/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/phone/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "relative": "phone/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "5a07974201e4e378454319d1e63b62f1acbd6634744fdc3d373cd4a76490de89",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "relative": "short/linux-arm64/011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "relative": "short/linux-arm64/011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "relative": "short/linux-arm64/011-return-to-campaign-3-outer-witness.png",
+      "sha256": "129e0420947878b43468914980edbe0df0cb6d3f4be95cd0ed90c6ede0e72a43",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "relative": "short/linux-arm64/012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "relative": "short/linux-arm64/012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "relative": "short/linux-arm64/012-recover-complete-period-3-outer-witness.png",
+      "sha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "relative": "short/linux-arm64/013-read-later-production-1-returning-envoy.png",
+      "sha256": "c75668b321b0c0e4cdb8e1d40d636c5bac1cdb32385b440f0d23b1c351c92517",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "relative": "short/linux-arm64/013-read-later-production-2-independent-envoy.png",
+      "sha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "relative": "short/linux-arm64/013-read-later-production-3-outer-witness.png",
+      "sha256": "c0024243876ca45ec3cfc3241a7eaf5b46bd4622ade158ed2fd76c03ab0c284d",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "relative": "short/linux-arm64/015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "f6086226e4bbb61cd745cf2a7e407d444df06958dd23eb60ed07c364c78e02e0",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "relative": "short/linux-arm64/015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "relative": "short/linux-arm64/015-retain-reading-position-3-outer-witness.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "relative": "short/linux-arm64/016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "1702d7b8b3d57ea011cf2623fd6aa65c3bdf1601707ce4274935dabc0eb3b2ab",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "relative": "short/linux-arm64/016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "relative": "short/linux-arm64/016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "relative": "short/linux-arm64/017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "b716bbd9873a9c0ecb12b38d8d74f741cce50164e97286b8e3c20781e1288fab",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "relative": "short/linux-arm64/017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "relative": "short/linux-arm64/017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "relative": "short/linux-arm64/018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "f3f8e51d663c6569d87cae167e48113de9feb3780e0ac477727d27245ca4af14",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "relative": "short/linux-arm64/018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "relative": "short/linux-arm64/018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "relative": "short/linux-arm64/019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "1702d7b8b3d57ea011cf2623fd6aa65c3bdf1601707ce4274935dabc0eb3b2ab",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "relative": "short/linux-arm64/019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "relative": "short/linux-arm64/019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "relative": "short/linux-arm64/020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "544615359147ab6a01117edb8cdd552cea38a3b0a923bfaecbd1fd98b1ec101b",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "relative": "short/linux-arm64/020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    },
+    {
+      "path": "/tmp/cluster-pr55-reviewer-candidates/test-results/stories/live-return-briefing/short/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "relative": "short/linux-arm64/020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "47f5df6dc7e451e15ad9cbcfc25e1dae6f70bd5a21743974eca1f0a25952e931",
+      "disposition": "independently inspected and approved by reviewer; source/renderer applicability verified"
+    }
+  ]
+}

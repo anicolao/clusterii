@@ -1,0 +1,123 @@
+{
+  "reviewer": "supervisor",
+  "scope": "regression references only; no concept-fidelity approval",
+  "artifact": {
+    "artifact": {
+      "id": 12636995366,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYzNjk5NTM2Ng==",
+      "name": "readmission-candidates-draft-large-bca79e0633859a7d0e66ea0506a9abf2b1da4429-1",
+      "size_in_bytes": 145155048,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12636995366",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12636995366/zip",
+      "expired": false,
+      "digest": "sha256:624dd26443bb65835656a8a2d01f92b5e5681f2cacf01dcb2ce40fdc3e0e9018",
+      "created_at": "2026-10-26T08:28:27Z",
+      "updated_at": "2026-10-26T08:28:27Z",
+      "expires_at": "2026-11-25T08:28:23Z",
+      "workflow_run": {
+        "id": 40290683078,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr76-readmission-candidates",
+        "head_sha": "bca79e0633859a7d0e66ea0506a9abf2b1da4429"
+      }
+    },
+    "bytes": 145155048,
+    "sha256": "624dd26443bb65835656a8a2d01f92b5e5681f2cacf01dcb2ce40fdc3e0e9018",
+    "fullZipCRCVerified": true,
+    "selectedFiles": 143
+  },
+  "executor": {
+    "requestId": "readmission-candidates-20261026-01",
+    "sourceCommit": "af36f0c9abefb063076223f9c984fac0146ca0e8",
+    "executorCommit": "bca79e0633859a7d0e66ea0506a9abf2b1da4429",
+    "case": "readmission-candidates",
+    "mode": "generate",
+    "target": "62d1ce49b4e771e28ec3a6f9e568bf5d1c22ea95",
+    "runId": "40290683078",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "c180efe74d44638819d7fd205e80930edadecb29",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "be0d033b93e3151763a6e23f703cc77943b4b42afdd56d395029c148f57d34f5",
+        "views": 68
+      }
+    },
+    "requestSha256": "1bcb285db1cac2292b97926cc3360ab72a8018d9fb71e17c13f4b22e385c3ac3"
+  },
+  "inheritedExact": 57,
+  "individuallyViewedAndApproved": [
+    {
+      "image": "046-choose-future-only-readmission-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/046-choose-future-only-readmission-1-nacre-envoy-second-tab.png",
+      "sha256": "6b93ae375f757398074e4603060c188bb0b006a9c3835621203e2d895bd1c1a0",
+      "step": "Invite the removed commander again, explicitly choosing only messages sent after acceptance. The unsent browser note is not shared by this choice."
+    },
+    {
+      "image": "047-offer-renewed-conversation-access-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/047-offer-renewed-conversation-access-1-nacre-envoy-second-tab.png",
+      "sha256": "4d0b51912e3be71f04fe2e7df2958873a8b5d218dc30b7a2f79638d78206ae35",
+      "step": "Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence."
+    },
+    {
+      "image": "047-offer-renewed-conversation-access-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/047-offer-renewed-conversation-access-2-dawn-listener.png",
+      "sha256": "017ce8f3776d2b477a26d3659c38dbb9c38ad8e4995af8e128c5ae7663716763",
+      "step": "Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence."
+    },
+    {
+      "image": "047-offer-renewed-conversation-access-3-outer-witness.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/047-offer-renewed-conversation-access-3-outer-witness.png",
+      "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+      "step": "Send the future-only invitation. The removed commander opens the renewed offer without receiving messages sent during their absence."
+    },
+    {
+      "image": "048-accept-renewed-future-access-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/048-accept-renewed-future-access-1-dawn-listener.png",
+      "sha256": "110f8f0d398bc7954471ba74104b195f6844dd163ce8e305880f42efb54692b5",
+      "step": "Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval."
+    },
+    {
+      "image": "048-accept-renewed-future-access-2-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/048-accept-renewed-future-access-2-nacre-envoy-second-tab.png",
+      "sha256": "73c8d9559360bc2a372300c80e86dea307e1a9ba5ed6cd65083ee766e9257b1a",
+      "step": "Accept the renewed invitation by keyboard. Membership resumes for future messages without granting the missing interval."
+    },
+    {
+      "image": "049-send-after-renewed-consent-1-nacre-envoy-second-tab.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/049-send-after-renewed-consent-1-nacre-envoy-second-tab.png",
+      "sha256": "09eaef420a15b164a7b4ab0f52f7126fb8294a2fb923e5deae0da21cbb9c5dab",
+      "step": "Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted."
+    },
+    {
+      "image": "049-send-after-renewed-consent-2-dawn-listener.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/049-send-after-renewed-consent-2-dawn-listener.png",
+      "sha256": "faf7f81df01b99b3e6f6a3922242dce3f7ac833a2f4c25e8c28eb1f26b64ee38",
+      "step": "Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted."
+    },
+    {
+      "image": "049-send-after-renewed-consent-3-outer-witness.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/049-send-after-renewed-consent-3-outer-witness.png",
+      "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+      "step": "Return to the saved unsent note, deliberately replace it with a welcome message, and send after the returning commander has accepted."
+    },
+    {
+      "image": "050-recover-renewed-message-boundary-1-dawn-listener.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/050-recover-renewed-message-boundary-1-dawn-listener.png",
+      "sha256": "421cb6339dc4a115e9017216adfb87889163412716539c6ea270259048296edf",
+      "step": "Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences."
+    },
+    {
+      "image": "050-recover-renewed-message-boundary-2-outer-witness.png",
+      "path": "/tmp/cluster-pr76-candidate-review/large/originals/test-results/stories/009-selected-history/stories/selected-history-consent/large/linux-arm64/050-recover-renewed-message-boundary-2-outer-witness.png",
+      "sha256": "f5fbfd499e5e6650c545867dd077e41e887e992d0e8d1a86f6bf99afd92d2b4c",
+      "step": "Reload the returning commander's campaign and read the welcome. Renewed access preserves its boundary across recovery and motion preferences."
+    }
+  ],
+  "findings": "All11 large images individually viewed this turn. Invitation scope and acceptance clear; guest retains authorized message2 and sees welcome6 after send/reload, absent-period messages confined to owner; outsiders empty. Main controls contained. Sparse layout, singular participant grammar and stale invitation-sent acknowledgement after acceptance remain design gaps, not full-fidelity approval."
+}

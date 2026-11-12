@@ -1,0 +1,26 @@
+{
+  "reason": "Retained passed campaign-history source predates changed shared labels, inspector opacity and acknowledgement placement; exact current story SHA alone does not establish screenshot applicability. No old history references imported.",
+  "target": "619a552cbbf768a3ba2520a76079c207208969fe",
+  "executor": "b261e9ea220eb75d365bd9697c5bfe7320028f09",
+  "request": "917ac8db76f1fbc2405d77befb85378b724abe0b",
+  "requestSha256": "4ed8ba00db94bf43cd829ca02b2f225aa33bcd125d54db79f65dff0051364597",
+  "branch": "investigate/pr140-history-current-20261104",
+  "expectedViews": {
+    "phone": 12,
+    "desktop": 10,
+    "short": 10,
+    "large": 10
+  },
+  "selection": "Exactly one complete existing tests/e2e/006-campaign-history/history.spec.ts journey per viewport; actual Playwright collection verified four identities.",
+  "checks": "Five guarded request/collection/launcher tests passed; committed request verified with actual parent/input hashes before push.",
+  "collectionSha256": "daf881bac545859b66a681ff4fd84ea272a14a8a622375b615ed36d89415a518",
+  "preservation": "Current source, story, helpers, reference trees, dependency locks, renderer and original deadlines/assertions unchanged. Generation only, retries0, snapshot updates none. Fresh services per viewport; no restart during journey. Required application/story workflows untouched.",
+  "evidenceScope": "Real twelve acknowledged setup pause/resume actions, history pagination, second-device updates without forced scrolling, explicit latest recovery, phone network failure/retry, return/reload focus and retained selected system. Not authenticated foreign-read denial or full design certification.",
+  "retention": "14-day remote retention with failure artifacts; no new local downloads until complete result/metadata and need assessed. Original retained candidates remain unchanged.",
+  "run": {
+    "id": 41842448559,
+    "url": "https://github.com/anicolao/clusterii/actions/runs/41842448559",
+    "statusAtAudit": "in_progress",
+    "head": "917ac8db76f1fbc2405d77befb85378b724abe0b"
+  }
+}

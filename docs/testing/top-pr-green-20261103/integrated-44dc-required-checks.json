@@ -1,0 +1,60 @@
+{
+  "previousFailedHead": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "current": {
+    "headRefOid": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43151819100/job/130962548514",
+        "name": "verify",
+        "startedAt": "2026-11-12T03:59:41Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Application checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43151818967/job/130962548206",
+        "name": "documentation",
+        "startedAt": "2026-11-12T03:59:41Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Documentation checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43151818973/job/130962547976",
+        "name": "stories (verify)",
+        "startedAt": "2026-11-12T03:59:44Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Illustrated stories"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43151818962/job/130962548286",
+        "name": "publish",
+        "startedAt": "2026-11-12T03:59:41Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Publish review build"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43151818973/job/130962548425",
+        "name": "stories (generate)",
+        "startedAt": "2026-11-12T03:59:44Z",
+        "status": "IN_PROGRESS",
+        "workflowName": "Illustrated stories"
+      }
+    ]
+  },
+  "integration": "Normal fast-forward, required workflows and exact assertions unchanged; no PRmerge",
+  "state": "Required checks live, not green; keep currenthead fixed until terminal evidence."
+}

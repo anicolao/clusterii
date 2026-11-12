@@ -5,6 +5,7 @@ import { test, expect } from "./story-helpers/fixtures";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
+import { assertScreenFit } from "./story-helpers/screen-fit";
 
 const button = (page: Page, name: string) =>
   page.getByRole("button", { name, exact: true });
@@ -410,6 +411,11 @@ test("Live market allocation isolates saved accounts on the same browser", async
         check: async () => {
           await expect(points(owner, "Base")).toHaveValue("");
           await expect(points(owner, "Space station")).toHaveValue("61");
+          await expect(points(owner, "Space station")).toBeFocused();
+          await owner.evaluate(assertScreenFit, {
+            surface: "game" as const,
+            focusedControl: true,
+          });
           await expect(points(owner, "Market")).toHaveValue("25");
           await expect(points(owner, "Training camp")).toHaveValue("25");
           await expect(button(owner, "Apply focus")).toBeDisabled();

@@ -1,0 +1,692 @@
+{
+  "targetBeforeImport": "953af0fb6c558e36035700c4d118cee485349f01",
+  "ledgerSha256": "4ef5e0a50ffd68ee93b3c2f12df0803e4ab950de0368b43b9a73d023f85a5465",
+  "families": [
+    {
+      "story": "session-cancelled-confirmation",
+      "viewport": "phone",
+      "destination": "tests/browser/story-baselines/session-cancelled-confirmation/phone/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/session-recovery.story.spec.ts",
+        "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/session-cancelled-confirmation/phone/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "002-account-entry-1-commander-first-device.png",
+          "sha256": "46d86c20e4c1ef22457b4434d8e61081927585d6c6523b339884f3709ff64406",
+          "previousSha256": "793d330828bc043fa37bc9b63db7a87aa32880e96b410c523aa09823f0237c6a",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "002-account-entry-2-commander-second-device.png",
+          "sha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+          "previousSha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "003-open-devices-1-commander-first-device.png",
+          "sha256": "c839c9ca9b2aa79ea04d1942ae95d5ca72ad57c10005ef6e4c0c82399b78f2f9",
+          "previousSha256": "c839c9ca9b2aa79ea04d1942ae95d5ca72ad57c10005ef6e4c0c82399b78f2f9",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "004-close-devices-1-commander-first-device.png",
+          "sha256": "46d86c20e4c1ef22457b4434d8e61081927585d6c6523b339884f3709ff64406",
+          "previousSha256": "793d330828bc043fa37bc9b63db7a87aa32880e96b410c523aa09823f0237c6a",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "005-cancel-confirmation-1-commander-first-device.png",
+          "sha256": "cd9f8870b283b415da863981fdb92c66c4f5e2af807705c2be990e427a93a6e0",
+          "previousSha256": "cd9f8870b283b415da863981fdb92c66c4f5e2af807705c2be990e427a93a6e0",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "005-cancel-confirmation-2-commander-second-device.png",
+          "sha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+          "previousSha256": "e00df45c11e656380d104b295327b460363c1d230b19ad94f03525356ffd4556",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "006-end-both-sessions-1-commander-first-device.png",
+          "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+          "previousSha256": "41088d2066d35d89d8bfe10f663d7b7f101b641edb8f7b9b0d179e790052cd72",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "006-end-both-sessions-2-commander-second-device.png",
+          "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+          "previousSha256": "41088d2066d35d89d8bfe10f663d7b7f101b641edb8f7b9b0d179e790052cd72",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "008-fresh-sign-in-1-commander-first-device.png",
+          "sha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+          "previousSha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "008-fresh-sign-in-2-commander-second-device.png",
+          "sha256": "7d7f2fe6eba70a5d1b344e4d26d6e4892ea846917c0a9812e5fe463d08d62794",
+          "previousSha256": "41088d2066d35d89d8bfe10f663d7b7f101b641edb8f7b9b0d179e790052cd72",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "009-reload-identity-1-commander-first-device.png",
+          "sha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+          "previousSha256": "f68d93e8d273edbc4a90b7aa81492f80e61ee82b79c82b887f79ea85f3abca56",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        }
+      ]
+    },
+    {
+      "story": "session-cancelled-confirmation",
+      "viewport": "desktop",
+      "destination": "tests/browser/story-baselines/session-cancelled-confirmation/desktop/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/session-recovery.story.spec.ts",
+        "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/session-cancelled-confirmation/desktop/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "002-account-entry-1-commander-first-device.png",
+          "sha256": "309b6931a7d725844002bdfcfc6cea1bb09098651df55a54033e955c2fdedfbf",
+          "previousSha256": "c6eda49650375f035693b9e99b2983aa88f3420eb407b4a0d7113f5664e6fb1e",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "002-account-entry-2-commander-second-device.png",
+          "sha256": "ebf473fdd7ee5c0957c194d89cb3a997e0235bfbc846b2dd18d03e7f5ca00ec8",
+          "previousSha256": "ebf473fdd7ee5c0957c194d89cb3a997e0235bfbc846b2dd18d03e7f5ca00ec8",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "003-open-devices-1-commander-first-device.png",
+          "sha256": "f08fb01c76117bae24c06257b3bf5b854ee8eba47de657ffc43ae9f7155cdc23",
+          "previousSha256": "f08fb01c76117bae24c06257b3bf5b854ee8eba47de657ffc43ae9f7155cdc23",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "004-close-devices-1-commander-first-device.png",
+          "sha256": "309b6931a7d725844002bdfcfc6cea1bb09098651df55a54033e955c2fdedfbf",
+          "previousSha256": "c6eda49650375f035693b9e99b2983aa88f3420eb407b4a0d7113f5664e6fb1e",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "005-cancel-confirmation-1-commander-first-device.png",
+          "sha256": "b967d526913be477032239cc01879c49b4b7de791179aca8c0153296b4f91224",
+          "previousSha256": "b967d526913be477032239cc01879c49b4b7de791179aca8c0153296b4f91224",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "005-cancel-confirmation-2-commander-second-device.png",
+          "sha256": "ebf473fdd7ee5c0957c194d89cb3a997e0235bfbc846b2dd18d03e7f5ca00ec8",
+          "previousSha256": "ebf473fdd7ee5c0957c194d89cb3a997e0235bfbc846b2dd18d03e7f5ca00ec8",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "006-end-both-sessions-1-commander-first-device.png",
+          "sha256": "1beabce9cdbf1bedf48e018877a7ae5aebe007c0d9f54c9a650c8d2e70d155d8",
+          "previousSha256": "0934e74238956715501c1668d8754725824e706b1d99356c3b0c30fb5b119348",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "006-end-both-sessions-2-commander-second-device.png",
+          "sha256": "1beabce9cdbf1bedf48e018877a7ae5aebe007c0d9f54c9a650c8d2e70d155d8",
+          "previousSha256": "0934e74238956715501c1668d8754725824e706b1d99356c3b0c30fb5b119348",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "008-fresh-sign-in-1-commander-first-device.png",
+          "sha256": "be12288f3b0ecfe7fdff2c572e903ac66b39153a6c02615bd8fc939278d7c016",
+          "previousSha256": "be12288f3b0ecfe7fdff2c572e903ac66b39153a6c02615bd8fc939278d7c016",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "008-fresh-sign-in-2-commander-second-device.png",
+          "sha256": "1beabce9cdbf1bedf48e018877a7ae5aebe007c0d9f54c9a650c8d2e70d155d8",
+          "previousSha256": "0934e74238956715501c1668d8754725824e706b1d99356c3b0c30fb5b119348",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "009-reload-identity-1-commander-first-device.png",
+          "sha256": "be12288f3b0ecfe7fdff2c572e903ac66b39153a6c02615bd8fc939278d7c016",
+          "previousSha256": "be12288f3b0ecfe7fdff2c572e903ac66b39153a6c02615bd8fc939278d7c016",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        }
+      ]
+    },
+    {
+      "story": "session-cancelled-confirmation",
+      "viewport": "large",
+      "destination": "tests/browser/story-baselines/session-cancelled-confirmation/large/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/session-recovery.story.spec.ts",
+        "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-cancelled-confirmation/large/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "002-account-entry-1-commander-first-device.png",
+          "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+          "previousSha256": "2640ce4eb9c9342b7a7099883d1ef4a3d86e845bfe533ef4e9c29a480543239b",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "002-account-entry-2-commander-second-device.png",
+          "sha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+          "previousSha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "003-open-devices-1-commander-first-device.png",
+          "sha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+          "previousSha256": "6ccc9718b3be42a7713bca54d9113614739e679128f15e9c34c2fbd3905cb2c0",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "004-close-devices-1-commander-first-device.png",
+          "sha256": "66e51dfcb3ce48e904c4279f791ca14cf24ed38dff51584d2d722a5feb46a7aa",
+          "previousSha256": "2640ce4eb9c9342b7a7099883d1ef4a3d86e845bfe533ef4e9c29a480543239b",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "005-cancel-confirmation-1-commander-first-device.png",
+          "sha256": "ab4bd1cf4aec45688a85cd087c32fb27b088b43d3eb0aebb2fe405fd2685b2d1",
+          "previousSha256": "ab4bd1cf4aec45688a85cd087c32fb27b088b43d3eb0aebb2fe405fd2685b2d1",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "005-cancel-confirmation-2-commander-second-device.png",
+          "sha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+          "previousSha256": "b52d86d6837756c41a777430ee222f019e5848b4bbe53204fe7a54f51ff4c5db",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "006-end-both-sessions-1-commander-first-device.png",
+          "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+          "previousSha256": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "006-end-both-sessions-2-commander-second-device.png",
+          "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+          "previousSha256": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "008-fresh-sign-in-1-commander-first-device.png",
+          "sha256": "9413978b34504223ddb51a17903ef8e89b69ddbf5f56f867091e5478e3d2cf67",
+          "previousSha256": "9413978b34504223ddb51a17903ef8e89b69ddbf5f56f867091e5478e3d2cf67",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "008-fresh-sign-in-2-commander-second-device.png",
+          "sha256": "d080de4fc8b831decb66e40bce51da7dfda37a99f8af759679d2a0188dc25d54",
+          "previousSha256": "71aaf2c2491c72a09cff277b901101039ff284925c07b7f9636cb7686b124bb3",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "009-reload-identity-1-commander-first-device.png",
+          "sha256": "598aab68832980c6fb41c5984d687ff9f1eed2bc243b904409770d533a17ff29",
+          "previousSha256": "598aab68832980c6fb41c5984d687ff9f1eed2bc243b904409770d533a17ff29",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        }
+      ]
+    },
+    {
+      "story": "session-cancelled-confirmation",
+      "viewport": "short",
+      "destination": "tests/browser/story-baselines/session-cancelled-confirmation/short/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/session-recovery.story.spec.ts",
+        "specSha256": "6576459cd3651dda5c86b2b78aaf653a2b6cb73a9f2f3b2301a5d858d293fca1"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/session-cancelled-confirmation/short/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "002-account-entry-1-commander-first-device.png",
+          "sha256": "67f740e29915d09878bdd8a4956221bf5846ba0a174d419f63ddc2b6f16caceb",
+          "previousSha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "002-account-entry-2-commander-second-device.png",
+          "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+          "previousSha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "003-open-devices-1-commander-first-device.png",
+          "sha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+          "previousSha256": "f6bcf79115b73f5bbaefd3a7f8e30045095cc776f5279bf38b688a81e94e58db",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "004-close-devices-1-commander-first-device.png",
+          "sha256": "67f740e29915d09878bdd8a4956221bf5846ba0a174d419f63ddc2b6f16caceb",
+          "previousSha256": "f67b86eed0ad74440cf5c2fe691b25faac660cba3984c5ce5d2b035a236e9730",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "005-cancel-confirmation-1-commander-first-device.png",
+          "sha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+          "previousSha256": "e04e0ecea85297e67f4c28cbd8ef2657207aea24b001f7c8e257362ba5a3acf0",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "005-cancel-confirmation-2-commander-second-device.png",
+          "sha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+          "previousSha256": "e2b6729b2c8291c413592df776679e80f299b5f84263659a9ca2b5c86811ad65",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "006-end-both-sessions-1-commander-first-device.png",
+          "sha256": "0b62cb9272440ffbbd61c67e188bd246850d4ec39a4e0555a16ab3bb73f07ec6",
+          "previousSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "006-end-both-sessions-2-commander-second-device.png",
+          "sha256": "0b62cb9272440ffbbd61c67e188bd246850d4ec39a4e0555a16ab3bb73f07ec6",
+          "previousSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "008-fresh-sign-in-1-commander-first-device.png",
+          "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+          "previousSha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        },
+        {
+          "image": "008-fresh-sign-in-2-commander-second-device.png",
+          "sha256": "0b62cb9272440ffbbd61c67e188bd246850d4ec39a4e0555a16ab3bb73f07ec6",
+          "previousSha256": "e75402a23d9951fdc33068a6e8226f1fd48712b38ca40891766ff52b18658173",
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "009-reload-identity-1-commander-first-device.png",
+          "sha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+          "previousSha256": "a4b8b82f1ceed66a134f5071c9f7ed7e55aeb283a87ab20914fbcc0a400f0688",
+          "changed": false,
+          "approval": "unchanged inherited reviewed reference"
+        }
+      ]
+    },
+    {
+      "story": "campaign-selection-ownership",
+      "viewport": "phone",
+      "destination": "tests/browser/story-baselines/campaign-selection-ownership/phone/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/selection-ownership.story.spec.ts",
+        "specSha256": "1fa8c7a2213824ab3e69b74a9bff70fa820ec223c8726fa0c90025b87f773d44"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/campaign-selection-ownership/phone/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "003-keep-new-proposal-1-selection-envoy.png",
+          "sha256": "1c3354311e1472183afb6461c2331984767e4ae48bc40385733651fd495e56e1",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "004-surface-current-denial-1-selection-envoy.png",
+          "sha256": "de4069b0d75b6b42b0a0bf620b594d32e2a42de71b019dd27e5b3845d9a777e2",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "campaign-selection-ownership",
+      "viewport": "desktop",
+      "destination": "tests/browser/story-baselines/campaign-selection-ownership/desktop/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/selection-ownership.story.spec.ts",
+        "specSha256": "1fa8c7a2213824ab3e69b74a9bff70fa820ec223c8726fa0c90025b87f773d44"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/campaign-selection-ownership/desktop/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "003-keep-new-proposal-1-selection-envoy.png",
+          "sha256": "83fa899440b0d597afe2b1c33115590a0bbf9d6c37c5f8602147ba172f59bb0a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "004-surface-current-denial-1-selection-envoy.png",
+          "sha256": "2b099c6d33c37a171c3392e0fc38c4d23069090310ea7c4e262b99aee2b5737f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "campaign-selection-ownership",
+      "viewport": "large",
+      "destination": "tests/browser/story-baselines/campaign-selection-ownership/large/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/selection-ownership.story.spec.ts",
+        "specSha256": "1fa8c7a2213824ab3e69b74a9bff70fa820ec223c8726fa0c90025b87f773d44"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/campaign-selection-ownership/large/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "003-keep-new-proposal-1-selection-envoy.png",
+          "sha256": "8fda90ea1a72eca16145f5a07a8aa89c5285aad072e43490bd8e82cb0dae465d",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "004-surface-current-denial-1-selection-envoy.png",
+          "sha256": "5bc268907ea97d4e153f50e1415ea685aa01f6264709949a05a6661f9162aca7",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "campaign-selection-ownership",
+      "viewport": "short",
+      "destination": "tests/browser/story-baselines/campaign-selection-ownership/short/linux-arm64",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/selection-ownership.story.spec.ts",
+        "specSha256": "1fa8c7a2213824ab3e69b74a9bff70fa820ec223c8726fa0c90025b87f773d44"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/campaign-selection-ownership/short/linux-arm64/story.json",
+      "captures": [
+        {
+          "image": "003-keep-new-proposal-1-selection-envoy.png",
+          "sha256": "cc35d2ba9280d9eb1718161e872e5b6fd878b1878bd991953a81c40762a30691",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        },
+        {
+          "image": "004-surface-current-denial-1-selection-envoy.png",
+          "sha256": "ec9884cbb068c104a7a6b0f3a9ece42cb41bee120161d68cf4746e5abb3ccb94",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact inspected hash"
+        }
+      ]
+    }
+  ],
+  "sourceApplicability": "Captured entry/session and campaign creation/list source, assets, dependencies and both spec files are unchanged from b9f4c4e2. Later changes are research/market/route/galaxy branches not rendered in these captures. Capture helpers retain exact renderer and comparator; current integrated strict remains mandatory.",
+  "preflightCorrection": "First import assertion incorrectly expected13 session views; rejected actual11. Source has exactly11 named views (2+1+1+2+2+2+1). Rechecked all8 complete manifests and all52 files against Git HEAD and original candidates; no unseen image accepted."
+}

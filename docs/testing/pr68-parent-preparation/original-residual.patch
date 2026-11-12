@@ -1,0 +1,76 @@
+diff --git a/src/lib/components/galaxy/Scene.svelte b/src/lib/components/galaxy/Scene.svelte
+index 0fafc353..8b987247 100644
+--- a/src/lib/components/galaxy/Scene.svelte
++++ b/src/lib/components/galaxy/Scene.svelte
+@@ -275,6 +275,7 @@
+     >
+     {#if !routeFocus && !selectedContact && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
+         position={[0, 0.25, 0]}
++        style="pointer-events: none"
+         center
+         ><span
+           use:galaxyLabel={{
+@@ -319,7 +320,7 @@
+         color="#7ee7ff"
+         side={DoubleSide}
+       /></T.Mesh
+-    ><HTML position={[0, 0.5, 0]} center
++    ><HTML position={[0, 0.5, 0]} style="pointer-events: none" center
+       ><span use:galaxyLabel={{ id: target.id, priority: 3 }} class="star-label"
+         >{target.name}</span
+       ></HTML
+diff --git a/tests/browser/campaign-navigation.story.spec.ts b/tests/browser/campaign-navigation.story.spec.ts
+index 44a6c57b..8d353a86 100644
+--- a/tests/browser/campaign-navigation.story.spec.ts
++++ b/tests/browser/campaign-navigation.story.spec.ts
+@@ -1,4 +1,5 @@
+ import { test, expect } from "./story-helpers/fixtures";
++import { readableLabels } from "./story-helpers/galaxy-labels";
+ import { TestStepHelper } from "./story-helpers/test-step-helper";
+ import { login, grantDeveloper } from "./helpers";
+ import type { Page } from "@playwright/test";
+@@ -413,7 +414,17 @@ test("A waiting commander filters stars, orbits by keyboard and inspects a clipp
+     description:
+       "A real waiting member filters the authoritative catalogue, uses keyboard camera controls, selects a named star and tests map-label clipping at the inspector boundary. No home exists before scheduled start. Fixed catalogue entropy makes the scene repeatable without invented star data or gameplay actions.",
+   });
+-  const views = [view(page, "Star envoy")],
++  const views = [
++      {
++        ...view(page, "Star envoy"),
++        verifications: [
++          {
++            spec: "System names remain separated and contained as the actual camera and class filter change.",
++            check: () => readableLabels(page),
++          },
++        ],
++      },
++    ],
+     errors: string[] = [];
+   page.on("pageerror", (error) => errors.push(error.message));
+   let before: { x: number; y: number; width: number; height: number } | null =
+diff --git a/tests/browser/story-helpers/galaxy-labels.ts b/tests/browser/story-helpers/galaxy-labels.ts
+index b9207b5b..d611c640 100644
+--- a/tests/browser/story-helpers/galaxy-labels.ts
++++ b/tests/browser/story-helpers/galaxy-labels.ts
+@@ -8,8 +8,13 @@ export async function labelGeometry(page: Page) {
+     ]
+       .map((node) => {
+         const b = node.getBoundingClientRect();
++        const hit = document.elementFromPoint(
++          b.x + b.width / 2,
++          b.y + b.height / 2,
++        );
+         return {
+           id: node.dataset.mapLabel!,
++          interceptsPointer: !!hit && !!node.parentElement?.contains(hit),
+           text: node.textContent,
+           x: b.x - viewport.x,
+           y: b.y - viewport.y,
+@@ -20,6 +25,7 @@ export async function labelGeometry(page: Page) {
+       .sort((a, b) => a.id.localeCompare(b.id));
+     const failures: string[] = [];
+     for (const a of labels) {
++      if (a.interceptsPointer) failures.push(`Pointer intercepted: ${a.text}`);
+       if (
+         a.x < 5.9 ||
+         a.y < 5.9 ||

@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "bun",
+      "x",
+      "svelte-kit",
+      "sync"
+    ],
+    "exit": 0,
+    "minimumFreeKiB": 3097024,
+    "diskStop": false
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "--cwd",
+      "functions",
+      "build"
+    ],
+    "exit": 0,
+    "minimumFreeKiB": 3096732,
+    "diskStop": false
+  },
+  {
+    "command": [
+      "bun",
+      "x",
+      "firebase",
+      "emulators:exec",
+      "--project",
+      "demo-clusterii",
+      "--only",
+      "auth,database,firestore,functions",
+      "bun x playwright test --config playwright.stories.config.ts tests/browser/observations.story.spec.ts --project=phone --project=desktop --project=large --project=short --retries=0 --max-failures=1 --update-snapshots=none"
+    ],
+    "exit": 1,
+    "minimumFreeKiB": 3060228,
+    "diskStop": false
+  }
+]

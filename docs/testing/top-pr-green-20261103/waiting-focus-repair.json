@@ -1,0 +1,262 @@
+{
+  "cause": "Global Feedback notice margin18px 0 0 provides no separation before footer buttons. The 3px outline with5px offset intrudes8px into the confirmation paragraph. Parent scoped paragraph CSS does not style child Feedback.",
+  "before": {
+    "commandExit": 1,
+    "expectedOutlineTopAtLeast": 717,
+    "actualOutlineTop": 709,
+    "viewport": "phone",
+    "log": "waiting-focus-before.log.gz"
+  },
+  "fix": "CampaignWaiting footer nonempty notice margin-bottom12px; no global styling, content hiding, assertion/deadline/tolerance changes.",
+  "after": {
+    "commandExit": 0,
+    "completeJourneys": 4,
+    "originalTimeout": 240000,
+    "newAssertion": "Focused Roster entire painted outline top must be at or below confirmation paragraph bottom.",
+    "visualInspection": "All four corrected waiting-rail originals viewed. Text and focus clear; phone/short retain intentional bounded scroll. Large displayed downscaled; no full-design or Linux approval.",
+    "manifests": [
+      {
+        "manifest": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/story.json",
+        "source": {
+          "commit": "ee56db9c341faaeb3eedf35c30231a7a788a27e0",
+          "dirty": true,
+          "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+          "specSha256": "b228fc3ae8e62bf30564a15937527d018548e37d84b9113aadd271c06d6b194b"
+        },
+        "viewport": "desktop",
+        "captures": [
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/006-read-waiting-rail-1-chart-envoy.png",
+            "sha256": "a7a9b532c4187192a718ca45245794c9d6027fa2229b6884ec3820b2c3361561"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/011-read-galaxy-1-chart-envoy.png",
+            "sha256": "09ca55182ab2e6449c11459e7af6216b30da3c5d8166b1b056c7853406488540"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+            "sha256": "50eb0212171dd9706dfdc1f03888d951b3778b1de9c40268235f6b3b49772ee8"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+            "sha256": "ffecc335a60f2b34cdfd3b55dd773ea79a271253771f06c2042ac9399bfd3577"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+            "sha256": "9e47984fa033bc0104eefc6c1c13c8d824432c63826c06b26fe6b1058301c0dd"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+            "sha256": "db6f8f6674ab52897b57832e6efd459a5058736414d1b88d5f7a1239a469ebe0"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+            "sha256": "6eb42ad5ea7930a55baf5a45b547239e27553b12f1d5b43ac13f0ebb0181962a"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/018-review-surface-development-1-chart-envoy.png",
+            "sha256": "f91a46598b1d75de720c9d363605f2626dcd7d688a1d6165d22f1c85eeb767e4"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/019-navigate-global-economy-1-chart-envoy.png",
+            "sha256": "1992b88195075ff93fcff2e7573f8747f8ebd86c805447b6502569b8ee0b2423"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/020-return-to-selected-system-1-chart-envoy.png",
+            "sha256": "2741fd0a5afd80e5a131cf4551feaab9d462c9b5da3478f2ebf72e9998fd0426"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+            "sha256": "a050954524496bd480bc0c7c8e2c44cc1940dbe00977d4811aadd7c502411cbc"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/desktop/darwin-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+            "sha256": "c3ab30470935583247f4d366365bf07bd69ab55884f49957e860254d7f46bed2"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/story.json",
+        "source": {
+          "commit": "ee56db9c341faaeb3eedf35c30231a7a788a27e0",
+          "dirty": true,
+          "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+          "specSha256": "b228fc3ae8e62bf30564a15937527d018548e37d84b9113aadd271c06d6b194b"
+        },
+        "viewport": "large",
+        "captures": [
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/006-read-waiting-rail-1-chart-envoy.png",
+            "sha256": "57fe3470bed4ed97a88fc427e6f3c49484d03b00088edefacdc1c10d05fa2dc8"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/011-read-galaxy-1-chart-envoy.png",
+            "sha256": "a77b6c083d8a316bc0e03b83423b183a76a6491f78e9b1a58109b3b520e2ce11"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+            "sha256": "e9c44f1ff2d57f22a35abddca28b1f4c81594909ee25abe599626b2c0cde98e9"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+            "sha256": "c1aa8b1f666a08d6e5bb47219b298aba4693cfda513c8e60e630cd0157a4e9fb"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+            "sha256": "d5c4c779b3f4bbda01c128d9a5697ed5645e52d92ef8acb9bf14529d3167c3d2"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+            "sha256": "5eae4c7170ecb85f28702d082d9518cf2e66af4a00a8a0ef122b35eca5db7432"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+            "sha256": "29be3bf0861b0b2eea07ffe4a2079b8fe8a5cac30a3aeceec7337452523de8cb"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/018-review-surface-development-1-chart-envoy.png",
+            "sha256": "630a6d9681d0292dcf7af135290af3db54434738f57f72aed3435df6c03f2e43"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/019-navigate-global-economy-1-chart-envoy.png",
+            "sha256": "e4ea919d827cf4b1ee89a7779a24353097ca05deccedf4001e49571ed20f1cbb"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/020-return-to-selected-system-1-chart-envoy.png",
+            "sha256": "b57a214dadd65ea1486783368fa90cf17608dcca6d3c9ba8f3f07c7006860f65"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+            "sha256": "019150e643bffac9feda547ba3930debcd4140ee1b78463d821319e9bc22525c"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/large/darwin-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+            "sha256": "bd3dbf7c1015ba37442795fceae14c88fc84bf9ac52544fbb0a5ddc27f588b81"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/story.json",
+        "source": {
+          "commit": "ee56db9c341faaeb3eedf35c30231a7a788a27e0",
+          "dirty": true,
+          "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+          "specSha256": "b228fc3ae8e62bf30564a15937527d018548e37d84b9113aadd271c06d6b194b"
+        },
+        "viewport": "phone",
+        "captures": [
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/006-read-waiting-rail-1-chart-envoy.png",
+            "sha256": "48e3aad9b1e216f31dc82cebb46f276e417b238ca5ab549404da0ef0139b5acb"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/011-read-galaxy-1-chart-envoy.png",
+            "sha256": "8899068ec766ba10f2fa6ef2f5d4aaac7e39108f5e9de19bc389595c91e11151"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+            "sha256": "62aa040bdbf4fc058c256cf22ea6ac49506e8ac2c78d1034c5c81591e8851a08"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+            "sha256": "5a6f71db435ef093e4bfaff05d682a2f988acc975617ed82f7dbcf0c8b791502"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+            "sha256": "67961eb75b6e5d3c3d4de137590b08db60e35b256e23fbb632eb07e3f9b1586f"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+            "sha256": "0f4ae81ccc1ffc013e869921ddcfc7784ea8c99e089c1e77c9fbd58bbf99d904"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+            "sha256": "55eef94f0e3e98934c5d5ea7e11c2dfa75b4cd2b7739515fbaf3e1d9dafa73f5"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/018-review-surface-development-1-chart-envoy.png",
+            "sha256": "12ecb1ff3d59c9049e10a485471eb7a491b2fe6afd9ebd0a9d046e1f6bc0631d"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/019-navigate-global-economy-1-chart-envoy.png",
+            "sha256": "7c73cd412d7fa340551ced2d304a45db4b1ee941eaf19ad48baf2603634c66ff"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/020-return-to-selected-system-1-chart-envoy.png",
+            "sha256": "3cfce6b0d9c369424f86102b08e6683c3d56ad0e0ab4af4bf6cd72d507faa325"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+            "sha256": "ffb7835bb8327ee4b6a45ec85872c838c9cb9802329f1b2305389491964abba4"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/phone/darwin-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+            "sha256": "ffafadaf2484a6d322450a32a5b6d9dc592c5e3473140a019280c08f2a91a288"
+          }
+        ]
+      },
+      {
+        "manifest": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/story.json",
+        "source": {
+          "commit": "ee56db9c341faaeb3eedf35c30231a7a788a27e0",
+          "dirty": true,
+          "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+          "specSha256": "b228fc3ae8e62bf30564a15937527d018548e37d84b9113aadd271c06d6b194b"
+        },
+        "viewport": "short",
+        "captures": [
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/006-read-waiting-rail-1-chart-envoy.png",
+            "sha256": "8590cc714d699675de10cbb118b3e5641a9cfc94d4ca4b5066dc3c715813d05e"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/011-read-galaxy-1-chart-envoy.png",
+            "sha256": "e4e97612475807f25884eb99ab9705b9192acb7091ff64bceb754287267634a8"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+            "sha256": "792bce6e4a1b9036fae9213a8647fee781dc098bf86ad43b784d5c8353dca80f"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+            "sha256": "0fccc72ed34b24c6b885c942f894e022b61a7ee84d48d807941184cf2ba882a4"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+            "sha256": "e86b37a8537e2c150cddfbfccdc17b2e086f36f919171bd143ea9f3531d9a1b1"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+            "sha256": "acc3ebf357aa3285545a2fbeaf2f2855c3b7da967d4a636acf19d5d9a1ea2b2a"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+            "sha256": "801725e5576637e1a2c860df4d6699f7f0467f892296e4c7eaf6955767776eb0"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/018-review-surface-development-1-chart-envoy.png",
+            "sha256": "da9f6cb5316f335af117c22b9f03d94b7c44e67b70bb4344667ad358215d8372"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/019-navigate-global-economy-1-chart-envoy.png",
+            "sha256": "c5ad08196c081c4a0404ec6dccadc1e63cc784637ea5e71cd2b038d1e2527c75"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/020-return-to-selected-system-1-chart-envoy.png",
+            "sha256": "3b2eb910638bcd14659c0adab86711c89f679db5061d47fd02e2ecd46bcfde3b"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+            "sha256": "bd3f7b0dc2f1eff8d602ff4796e90b53da912623a6aecf381026b4c8b0f88f92"
+          },
+          {
+            "image": "/tmp/cluster-waiting-focus-after/stories/galaxy-command-surface/short/darwin-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+            "sha256": "e95346c02cda033de0c083b81c9f91e1b1c8861750aec5e83904f2109f961bab"
+          }
+        ]
+      }
+    ]
+  },
+  "postRunDifference": "Verification narrative text expanded to describe the new geometry assertion; executable test and source unchanged after run.",
+  "remaining": "Pinned Linux complete changed-source evidence and exact comparison required before changed Linux baseline promotion."
+}

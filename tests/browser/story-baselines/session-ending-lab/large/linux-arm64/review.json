@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/LIFECYCLE_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "session-ending-lab",
   "renderer": {
@@ -27,5 +27,71 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/lifecycle-lab.story.spec.ts",
+    "specSha256": "5c5e99f3296bb2514ac0e386a52f2c338165752a7777e3445e4dc236824da66f"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/session-ending-lab/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-pending-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "a17328285acaee8ae1fe75607080e268eea93d2d64a18b7e2c793de873d82f90",
+      "previousSha256": "674eb784a8e541f7050f252a335bdc432a4ac4ed50b07c58c413a5df86ec2442",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-pending-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "a17328285acaee8ae1fe75607080e268eea93d2d64a18b7e2c793de873d82f90",
+      "previousSha256": "674eb784a8e541f7050f252a335bdc432a4ac4ed50b07c58c413a5df86ec2442",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-ended-reveal-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "a88ea50995370d5aab5f34670ae68d52e795b0a0d738fb761a06364bf495d831",
+      "previousSha256": "d319ee8fdd11fde84c0e07efa2ddada174235082d579851c1322e125dd9ed79f",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-ended-reveal-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "a88ea50995370d5aab5f34670ae68d52e795b0a0d738fb761a06364bf495d831",
+      "previousSha256": "d319ee8fdd11fde84c0e07efa2ddada174235082d579851c1322e125dd9ed79f",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-ended-settled-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "6ee29dc8dc78294555f49735fcabeb3585514a9fce7b7261d3c3a496c344d6f2",
+      "previousSha256": "673480ac4cf1278acc8c5f4b6dace86c9b5dd13680e5b350d6dd3ec39e10808c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-ended-settled-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "6ee29dc8dc78294555f49735fcabeb3585514a9fce7b7261d3c3a496c344d6f2",
+      "previousSha256": "673480ac4cf1278acc8c5f4b6dace86c9b5dd13680e5b350d6dd3ec39e10808c",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-reset-1-developer-standard-lifecycle-presentation.png",
+      "sha256": "a1f3425e7c2c55e645a17406a84a2c56992cbbbd329a6671f2020b984e1fb0a7",
+      "previousSha256": "7b60cc6cf4536efb849fc98361c7e19b7ddfcf1ba8efac5477662c3d86c16587",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-reset-2-developer-reduced-lifecycle-presentation.png",
+      "sha256": "a1f3425e7c2c55e645a17406a84a2c56992cbbbd329a6671f2020b984e1fb0a7",
+      "previousSha256": "7b60cc6cf4536efb849fc98361c7e19b7ddfcf1ba8efac5477662c3d86c16587",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

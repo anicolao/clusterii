@@ -1,0 +1,399 @@
+{
+  "ledgerSha256": "3dac6753dc3484076f3b2b7cc54e748194deee76b796e1bd8bffb264a592dc12",
+  "targetBeforeImport": "2c8111de429deb3c8b34ea0d3180532392fca323",
+  "families": [
+    {
+      "story": "history-recovery-lab",
+      "viewport": "desktop",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/history-lab.story.spec.ts",
+        "specSha256": "bf77182039838400bcb62ab688d49c86b462ddc46ef39af23374d72b942e4766"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/history-recovery-lab/desktop/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/history-recovery-lab/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "002-loading-1-developer-standard-history-presentation.png",
+          "sha256": "78119fbe60ff77bad36ceec397204feaeb2389c3295dfce5d41bbcb8938db235",
+          "previousSha256": "c61c44698a3c535b9b13ce30adf2587ea853f32ed06343dd3967a1e324df48f6",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-loading-2-developer-reduced-history-presentation.png",
+          "sha256": "78119fbe60ff77bad36ceec397204feaeb2389c3295dfce5d41bbcb8938db235",
+          "previousSha256": "c61c44698a3c535b9b13ce30adf2587ea853f32ed06343dd3967a1e324df48f6",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-1-developer-standard-history-presentation.png",
+          "sha256": "a49b0117f7f60d779b7eae863afc2553ab33a6ea7a05939c1c9a3ddf6baab06b",
+          "previousSha256": "0511d90cbab359034f00f4a37f8c6b1fbae6145a306c904abab0575fa3f8399e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-2-developer-reduced-history-presentation.png",
+          "sha256": "a49b0117f7f60d779b7eae863afc2553ab33a6ea7a05939c1c9a3ddf6baab06b",
+          "previousSha256": "0511d90cbab359034f00f4a37f8c6b1fbae6145a306c904abab0575fa3f8399e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-1-developer-standard-history-presentation.png",
+          "sha256": "9801b4066a17fce4a637ab88c71741ed4338cc2969deffd34e63f52c45fdae65",
+          "previousSha256": "16b124926afb86ae7175d8da58ffafc598323f53ecfb756d3905577f24d29103",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-2-developer-reduced-history-presentation.png",
+          "sha256": "9801b4066a17fce4a637ab88c71741ed4338cc2969deffd34e63f52c45fdae65",
+          "previousSha256": "16b124926afb86ae7175d8da58ffafc598323f53ecfb756d3905577f24d29103",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-1-developer-standard-history-presentation.png",
+          "sha256": "3406e91ba490ea1d5a03d6c20796365c799c2ba25015120a82615a6a2828db9d",
+          "previousSha256": "2378142c93bb0d033c277ac26177dac5a662ca859d4e458a25be0979db555ca2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-2-developer-reduced-history-presentation.png",
+          "sha256": "3406e91ba490ea1d5a03d6c20796365c799c2ba25015120a82615a6a2828db9d",
+          "previousSha256": "2378142c93bb0d033c277ac26177dac5a662ca859d4e458a25be0979db555ca2",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-1-developer-standard-history-presentation.png",
+          "sha256": "69540eacfb74fc6b61328c0082d64220f137a991b8aa0b093bb2ef0066efa724",
+          "previousSha256": "af2af7fd4aef9c202ab402e15ca780bdc87c3d7913164de2e5158f68d5e9810e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-2-developer-reduced-history-presentation.png",
+          "sha256": "69540eacfb74fc6b61328c0082d64220f137a991b8aa0b093bb2ef0066efa724",
+          "previousSha256": "af2af7fd4aef9c202ab402e15ca780bdc87c3d7913164de2e5158f68d5e9810e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-1-developer-standard-history-presentation.png",
+          "sha256": "23d9f26ca0398910666acf2e71e19803382f21595236990c6578015ac21991e2",
+          "previousSha256": "b1b4c5958aaab53e5042b6b970712aa7f8858f42700140ac89560ce8168046b7",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-2-developer-reduced-history-presentation.png",
+          "sha256": "23d9f26ca0398910666acf2e71e19803382f21595236990c6578015ac21991e2",
+          "previousSha256": "b1b4c5958aaab53e5042b6b970712aa7f8858f42700140ac89560ce8168046b7",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "history-recovery-lab",
+      "viewport": "large",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/history-lab.story.spec.ts",
+        "specSha256": "bf77182039838400bcb62ab688d49c86b462ddc46ef39af23374d72b942e4766"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/history-recovery-lab/large/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/history-recovery-lab/large/linux-arm64",
+      "captures": [
+        {
+          "image": "002-loading-1-developer-standard-history-presentation.png",
+          "sha256": "a162c4a3637ea86c836444a2f46dd0940455b7d4d8fda4c68f545aa07b93e92d",
+          "previousSha256": "c148b3b79b160b8279268f6de64367b10ffc0a5f000171bffc57070ba2ae6d39",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-loading-2-developer-reduced-history-presentation.png",
+          "sha256": "a162c4a3637ea86c836444a2f46dd0940455b7d4d8fda4c68f545aa07b93e92d",
+          "previousSha256": "c148b3b79b160b8279268f6de64367b10ffc0a5f000171bffc57070ba2ae6d39",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-1-developer-standard-history-presentation.png",
+          "sha256": "aef5e1d500773904d2c73854783a38cf993e3856c721892949c84e2f1954b17c",
+          "previousSha256": "b0fe047cadebf80bbc24d3979090bc8694f427cdd2634f8f175ce8f6f7efd95d",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-2-developer-reduced-history-presentation.png",
+          "sha256": "aef5e1d500773904d2c73854783a38cf993e3856c721892949c84e2f1954b17c",
+          "previousSha256": "b0fe047cadebf80bbc24d3979090bc8694f427cdd2634f8f175ce8f6f7efd95d",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-1-developer-standard-history-presentation.png",
+          "sha256": "81ba688020b3dac6cb00ba828c679c050ee60f284814f8c46bab959aa2522d0d",
+          "previousSha256": "1e0bfc0b6e08c771a36dcece473fbb6c63bf66d71a59bc5f977606d621c55059",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-2-developer-reduced-history-presentation.png",
+          "sha256": "81ba688020b3dac6cb00ba828c679c050ee60f284814f8c46bab959aa2522d0d",
+          "previousSha256": "1e0bfc0b6e08c771a36dcece473fbb6c63bf66d71a59bc5f977606d621c55059",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-1-developer-standard-history-presentation.png",
+          "sha256": "b93673767629d333bde8baabcf72cac19ad2d5321a854cd23c3cefd5b32fe037",
+          "previousSha256": "d820445dbedbc5d53e53dd542b2c02a16eda7c6d5e2a1c4c40bfc1263a0b3982",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-2-developer-reduced-history-presentation.png",
+          "sha256": "b93673767629d333bde8baabcf72cac19ad2d5321a854cd23c3cefd5b32fe037",
+          "previousSha256": "d820445dbedbc5d53e53dd542b2c02a16eda7c6d5e2a1c4c40bfc1263a0b3982",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-1-developer-standard-history-presentation.png",
+          "sha256": "16a24a95e33ee109d495cce8c6f8c9b47f3372456639918a629cd9e97027afea",
+          "previousSha256": "0638cf33b0b040844e95e8b6375dbca1c87bae0f5cf5f21d14879cb104f2451c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-2-developer-reduced-history-presentation.png",
+          "sha256": "16a24a95e33ee109d495cce8c6f8c9b47f3372456639918a629cd9e97027afea",
+          "previousSha256": "0638cf33b0b040844e95e8b6375dbca1c87bae0f5cf5f21d14879cb104f2451c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-1-developer-standard-history-presentation.png",
+          "sha256": "66bb5f57e37f325bfd6e358fa6cfa5073ef4a44867d821dcad5dad69a3293633",
+          "previousSha256": "03539469a5be8e931b357f135802269a9eb0b3e341040dc5c8c798b2f6bb575e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-2-developer-reduced-history-presentation.png",
+          "sha256": "66bb5f57e37f325bfd6e358fa6cfa5073ef4a44867d821dcad5dad69a3293633",
+          "previousSha256": "03539469a5be8e931b357f135802269a9eb0b3e341040dc5c8c798b2f6bb575e",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "history-recovery-lab",
+      "viewport": "phone",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/history-lab.story.spec.ts",
+        "specSha256": "bf77182039838400bcb62ab688d49c86b462ddc46ef39af23374d72b942e4766"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/history-recovery-lab/phone/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/history-recovery-lab/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "002-loading-1-developer-standard-history-presentation.png",
+          "sha256": "eff5603cb87694248b8a0e8a6bd52ea709784e09a15cc2bf4639d2a342f9bd04",
+          "previousSha256": "512a2f53c05d8bb751a15a01dc4512b27ac7b855dcd0c6396075f14010f3f751",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-loading-2-developer-reduced-history-presentation.png",
+          "sha256": "7b15b2244e85882e246936fc83fac47a4253839a7b54e33fbf625d006017e36a",
+          "previousSha256": "937f84991b7a9a2549e301307af88d8ddd8ec67c12b60d317e1ef968392bd542",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-1-developer-standard-history-presentation.png",
+          "sha256": "2d3181caea5c8e62c3a1767d3c572e1fffbad682184de73a4a84bea868cd143f",
+          "previousSha256": "4dd04343a534e203e2738fc79964a5af38825f4b74afcaa6b547d657950c2c31",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-2-developer-reduced-history-presentation.png",
+          "sha256": "7d1634f00b48a72594457de838f11d84ec3feeaa6fc25d3c6e85c4b009708bde",
+          "previousSha256": "f30847503b1540165c2e27deebd63bb55813bc4f559a209b2d562d75337c5242",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-1-developer-standard-history-presentation.png",
+          "sha256": "f53b6d7cdc7bab354659bd518a56a2b9c9855cf77ccdad3e191e6b21a52ce19b",
+          "previousSha256": "5056d899411af2cc0fe7c161bff3dd97fc60011c24f4847bf1458db864ad3a18",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-2-developer-reduced-history-presentation.png",
+          "sha256": "7b15b2244e85882e246936fc83fac47a4253839a7b54e33fbf625d006017e36a",
+          "previousSha256": "937f84991b7a9a2549e301307af88d8ddd8ec67c12b60d317e1ef968392bd542",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-1-developer-standard-history-presentation.png",
+          "sha256": "3ff497ce16a1d644dddef4fceb5c01da241f6db2bf2cbf80861af76e9102cffa",
+          "previousSha256": "81c093b117c58c8b99ee345b605d15162c2c9f7df7f530944c031e2abb3649fb",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-2-developer-reduced-history-presentation.png",
+          "sha256": "c3a325d793a938ea0187ae9ce553b17d53d7d67ab753591d627c93e97782d4ff",
+          "previousSha256": "c11d7f80cb51edf5f24078057c8e5ee1cb3939f92de7ae030dcb4a119a6ac539",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-1-developer-standard-history-presentation.png",
+          "sha256": "e2c1a1eef1b4d71f8ca18be4340f86302c5ac2798d33f1e72e9238a96188437b",
+          "previousSha256": "2dd69bb8c3cce589c0f71800137465bba2882d4fe31f3c53479a20fd2dd927b4",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-2-developer-reduced-history-presentation.png",
+          "sha256": "5260224b6f4ca43c0b5d8651ddc141f9da48d71a5785d78439dd3fc8cc86c52b",
+          "previousSha256": "da10489ce679d0d148606a9766bb43eb5aee8439891efb727af4696a42d248ce",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-1-developer-standard-history-presentation.png",
+          "sha256": "bc51b222ec4b01fc5460a8ce15d2d3be9b836ebe43e6ab5348ac066d44d7848a",
+          "previousSha256": "2e703d8146f2eaf257ff013e61595a2d921643417434a54c3283aef21438c2a7",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-2-developer-reduced-history-presentation.png",
+          "sha256": "7b15b2244e85882e246936fc83fac47a4253839a7b54e33fbf625d006017e36a",
+          "previousSha256": "937f84991b7a9a2549e301307af88d8ddd8ec67c12b60d317e1ef968392bd542",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "history-recovery-lab",
+      "viewport": "short",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/history-lab.story.spec.ts",
+        "specSha256": "bf77182039838400bcb62ab688d49c86b462ddc46ef39af23374d72b942e4766"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/history-recovery-lab/short/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/history-recovery-lab/short/linux-arm64",
+      "captures": [
+        {
+          "image": "002-loading-1-developer-standard-history-presentation.png",
+          "sha256": "18989f7568518e45c6b7c171e6c3f178894c0cbf898c7d7269058bbcbea3f0fe",
+          "previousSha256": "9931e919cc3ee024d8c168747efc12b0bcae54f219b203efdf0c3323e808e3c5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-loading-2-developer-reduced-history-presentation.png",
+          "sha256": "18989f7568518e45c6b7c171e6c3f178894c0cbf898c7d7269058bbcbea3f0fe",
+          "previousSha256": "9931e919cc3ee024d8c168747efc12b0bcae54f219b203efdf0c3323e808e3c5",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-1-developer-standard-history-presentation.png",
+          "sha256": "dc70ca26e88478d25739ca2ce35c6062a7a4f327728cc6282ee45b249277ee59",
+          "previousSha256": "e1866d79cc786d29cc2cb0a0d9325056cfa243feb0def4a76d308f1118654036",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-interrupted-2-developer-reduced-history-presentation.png",
+          "sha256": "dc70ca26e88478d25739ca2ce35c6062a7a4f327728cc6282ee45b249277ee59",
+          "previousSha256": "e1866d79cc786d29cc2cb0a0d9325056cfa243feb0def4a76d308f1118654036",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-1-developer-standard-history-presentation.png",
+          "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+          "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-retry-2-developer-reduced-history-presentation.png",
+          "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+          "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-1-developer-standard-history-presentation.png",
+          "sha256": "6bff640afacf80e708b654477fe494d12275dcaf56c88749ab4aacf8f0f188dd",
+          "previousSha256": "b155b5fab4f85be36d166c1ad2e87bb6c0c3023c2d0f8c33a496591dfdc2c074",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-recovered-2-developer-reduced-history-presentation.png",
+          "sha256": "6bff640afacf80e708b654477fe494d12275dcaf56c88749ab4aacf8f0f188dd",
+          "previousSha256": "b155b5fab4f85be36d166c1ad2e87bb6c0c3023c2d0f8c33a496591dfdc2c074",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-1-developer-standard-history-presentation.png",
+          "sha256": "60b6ef12fd1cfaeb9f69ab6bb0cda477ac339161fabd18e76dee4f765994aae9",
+          "previousSha256": "9bc3a9d19ba98e6adc27b64133f693235faa53e2533480e5d422f7c16bf1ea72",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-read-records-2-developer-reduced-history-presentation.png",
+          "sha256": "60b6ef12fd1cfaeb9f69ab6bb0cda477ac339161fabd18e76dee4f765994aae9",
+          "previousSha256": "9bc3a9d19ba98e6adc27b64133f693235faa53e2533480e5d422f7c16bf1ea72",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-1-developer-standard-history-presentation.png",
+          "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+          "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-latest-2-developer-reduced-history-presentation.png",
+          "sha256": "70751703574129baeed415ad4418c25f39de964a781ca86b1fac41df279110d5",
+          "previousSha256": "0f04fe9f36cb1c4c8a39c413af96bc12933f5c979565b8c8eafb1f5b7e829491",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": []
+}

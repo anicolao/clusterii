@@ -2,7 +2,13 @@
   import { T, useThrelte } from "@threlte/core";
   import { OrbitControls, interactivity, HTML } from "@threlte/extras";
   import { AdditiveBlending, DataTexture, RGBAFormat, DoubleSide } from "three";
-  import { PerspectiveCamera, Spherical, Vector3 } from "three";
+  import {
+    PerspectiveCamera,
+    Spherical,
+    Vector3,
+    type Object3D,
+    type Camera,
+  } from "three";
   import type { OrbitControls as OrbitControlsType } from "three/examples/jsm/controls/OrbitControls.js";
   import type { StarClass } from "@shared/rules";
   import { untrack } from "svelte";
@@ -29,7 +35,27 @@
     );
   });
   import { galaxyLabel } from "$lib/galaxy-labels";
-  import { galaxyOverview, fleetRouteFrame } from "$lib/galaxy-framing";
+  // Snap the projected HTML wrapper too: opposing fractional parent/child
+  // transforms otherwise lose precision before the label's final placement.
+  const labelProjection = new Vector3();
+  function projectLabel(
+    object: Object3D,
+    camera: Camera,
+    size: { width: number; height: number },
+  ): [number, number] {
+    labelProjection.setFromMatrixPosition(object.matrixWorld).project(camera);
+    const ratio = window.devicePixelRatio || 1;
+    return [
+      Math.round(((labelProjection.x + 1) * size.width * ratio) / 2) / ratio,
+      Math.round(((1 - labelProjection.y) * size.height * ratio) / 2) / ratio,
+    ];
+  }
+  import { frameChartTarget, type ChartCenter } from "$lib/galaxy-camera";
+  import {
+    galaxyOverview,
+    fleetRouteFrame,
+    fleetMarkerPosition,
+  } from "$lib/galaxy-framing";
   import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
@@ -68,7 +94,12 @@
     home?: string;
     fleets?: Record<string, number>;
     stellarClass: StarClass | "all";
-    cameraRequest: { action: string; starId: string; sequence: number };
+    cameraRequest: {
+      action: string;
+      starId: string;
+      sequence: number;
+      focusCenter?: ChartCenter;
+    };
   } = $props();
   interactivity();
   const { invalidate, size } = useThrelte();
@@ -106,7 +137,9 @@
     const routePoints = routeFocus ? paths.flatMap((p) => [p.from, p.to]) : [];
     const activeCamera = camera,
       activeControls = controls;
-    if (!activeCamera || !activeControls) return;
+    const width = $size.width,
+      height = $size.height;
+    if (!activeCamera || !activeControls || width <= 0 || height <= 0) return;
     const requestKey = JSON.stringify([
       request,
       selectedContact,
@@ -143,7 +176,7 @@
         }
       } else if (request.action === "overview") {
         overview = true;
-        frameOverview(activeCamera, activeControls, activeCamera.aspect);
+        frameOverview(activeCamera, activeControls, width / height);
       } else if (request.action === "in" || request.action === "out") {
         offset.setLength(
           Math.max(
@@ -174,6 +207,14 @@
         }
       }
       activeControls.update();
+      if (request.action === "home" && request.focusCenter) {
+        frameChartTarget(
+          activeCamera,
+          activeControls.target,
+          request.focusCenter,
+        );
+        activeControls.update();
+      }
       invalidate();
     });
   });
@@ -220,7 +261,7 @@
     thickness={routeFocus ? routeUnit * 1.5 : 0}
   />{/each}
 {#each travelers as fleet}<T.Group
-    position={[fleet.x / 10, fleet.y / 10 + 0.08, fleet.z / 10]}
+    position={fleetMarkerPosition(fleet, routeFocus)}
     ><HTML style={onfleet ? undefined : "pointer-events: none"}
       >{#if onfleet}<button
           class="travel-marker"
@@ -310,6 +351,7 @@
       /><T.MeshBasicMaterial color={colors[star.class]} /></T.Mesh
     >
     {#if !routeFocus && !selectedContact && star.id !== selected && (owned.includes(star.id) || (index % 23 === 0 && Math.hypot(star.x, star.z) > 30 && (!target || Math.hypot(star.x - target.x, star.z - target.z) > 15)))}<HTML
+        calculatePosition={projectLabel}
         position={[0, 0.25, 0]}
         style="pointer-events: none"
         center
@@ -343,7 +385,10 @@
           side={DoubleSide}
         /></T.Mesh
       ><HTML position={[0, 0.015, 0]} style="pointer-events: none" center
-        ><span class="route-node" style="margin-top:22px"
+        ><span
+          use:galaxyLabel={{ id: `route-${star.id}`, priority: 4, snap: false }}
+          class="route-node"
+          style="margin-top:22px"
           >{routeIds.indexOf(star.id) === 0
             ? "Origin"
             : routeIds.indexOf(star.id)} · {star.name}</span

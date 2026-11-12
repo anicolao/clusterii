@@ -1,0 +1,1543 @@
+{
+  "run": 41711284066,
+  "job": 126179689037,
+  "source": "a027458eee7c90de097eb137182929d584a6d43c",
+  "failures": [
+    {
+      "viewport": "phone",
+      "test": "tests/browser/campaign-start.story.spec.ts:43:1 \u203a Five commanders start two campaigns and recover their named active campaign \u203a Create the real waiting galaxy before choosing a faction. \u203a Dawn envoy 1: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/feedback-lab.story.spec.ts:7:1 \u203a Feedback lab inspects reconnect, conflict and playback without changing outcomes \u203a Open the real animation lab and inspect the pending identity frame. \u203a Developer \u00b7 playback controls: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/feedback-lab.story.spec.ts:251:1 \u203a Campaign feedback lab compares authoritative receipt presentations across motion modes \u203a Select campaign-joined and inspect the acknowledged pending presentation in both motion modes. \u203a Developer \u00b7 standard campaign motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-cancellation.story.spec.ts:41:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-cargo.story.spec.ts:41:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-formation.story.spec.ts:41:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-reorganization.story.spec.ts:46:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-route-recovery.story.spec.ts:58:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/fleet-travel-catchup.story.spec.ts:48:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/history-lab.story.spec.ts:7:1 \u203a History lab retries loading and inspects recovered records without changing motion outcomes \u203a Open the history scenario and inspect pending loading without invented records. \u203a Developer \u00b7 standard history presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/identity-gallery.story.spec.ts:9:1 \u203a Production gallery exposes identity, navigation and feedback control states \u203a Open the developer-only gallery and read its scope before inspecting controls. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/identity.story.spec.ts:5:1 \u203a Save and recover a commander identity \u203a \u00c9toile arrives signed out, with no private preview. \u203a \u00c9toile: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:66:1 \u203a Lifecycle lab distinguishes scheduled, delayed and assigned start presentations \u203a Read the scheduled start and server-assignment explanation. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:158:1 \u203a Lifecycle lab preserves session-ending disclosure and inspects completed motion \u203a Inspect the disabled ending control and the complete consequences of ending sessions. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/live-menu-preservation.story.spec.ts:19:1 \u203a Live galaxy menu preserves selection and unsent allocation across a confirmed tick \u203a Use the textual systems list to select the same named home, then enter an incomplete market allocation without applying it. \u203a Menu envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/local-settings.story.spec.ts:7:1 \u203a Shared presentation settings retain local choices and accessible modal ownership \u203a Open the shared menu with Enter and cycle every modal control with Tab and Shift+Tab. \u203a Developer \u00b7 local settings: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/local-presentation-settings/phone/linux-arm64/001-open-and-contain-1-developer-local-settings.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Open the roster while the other commander can still claim a seat. \u203a Maintenance host: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/market-account-isolation.story.spec.ts:47:1 \u203a Live market allocation isolates saved accounts on the same browser \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-account-isolation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/market-draft-lifecycle.story.spec.ts:59:1 \u203a Live market allocation clears after real account-wide sign-out \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-session-revocation/phone/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/market-membership-revocation.story.spec.ts:49:1 \u203a Live membership revocation rejects a delayed private view and clears market intent \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-membership-revocation/phone/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/observations.story.spec.ts:45:1 \u203a Live stellar observations retain private current and historical facts after reload \u203a Select the same nearby catalogue star on two independent accounts before the first scan. \u203a Survey envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/production-lab.story.spec.ts:7:1 \u203a Production lab distinguishes due time from confirmed output and preserves ledger outcomes \u203a Open production before the first deadline and inspect the unchanged starting balance. \u203a Developer \u00b7 standard production summary: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/profile-recovery.story.spec.ts:435:1 \u203a Restore entry focus after keyboard learning and identity editing \u203a Open entry with Play and Learn available. \u203a Visitor: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/research-forecast.story.spec.ts:8:1 \u203a Research forecast gallery explains recorded costs effects and rate assumptions \u203a Read the developer gallery scope before inspecting research. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-forecast-gallery/phone/linux-arm64/001-open-gallery-1-developer-gallery-scope.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/research-guidance.story.spec.ts:45:1 \u203a Live research guidance follows the campaign capabilities without submitting choices \u203a Open each commander's economy through keyboard controls and inspect the saved research target. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/research-lab.story.spec.ts:7:1 \u203a Research lab preserves selection through pending, recovery, scheduling and application \u203a Inspect the pending research frame and compare both motion presentations. \u203a Developer \u00b7 standard research selection: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/research-orders.story.spec.ts:114:1 \u203a Live research orders preserve choices and acknowledge switches \u203a Open both private science instruments and choose investing by keyboard without sending. \u203a Market envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-research-orders/phone/linux-arm64/010-choose-without-sending-1-market-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/return-briefing.story.spec.ts:32:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/selection-ownership.story.spec.ts:5:1 \u203a Mounted campaign selection preserves a newer proposal after genuine delayed recovery \u203a Use keyboard navigation to replace pending recovery with an unsent proposal, then receive the older genuine authorization response. \u203a Selection envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/campaign-selection-ownership/phone/linux-arm64/003-keep-new-proposal-1-selection-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/browser/sharing-lab.story.spec.ts:7:1 \u203a Sharing lab preserves selected-history consent and disclosure across motion modes \u203a Select the recipient's sharing scenario and focus each real Accept invitation control without committing consent through an inert lab callback. \u203a Developer \u00b7 recipient in standard motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/001-entry/entry.spec.ts:4:1 \u203a Learn the campaign and return to entry \u203a The visitor arrives at Cluster and can choose Play or Learn. \u203a Visitor: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/001-entry/returning.spec.ts:11:1 \u203a Return to a genuinely active campaign from the cinematic entry \u203a Leave the campaign view through Campaigns and the Cluster entry link; the campaign continues. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/001-entry/screenshots/cinematic-returning-entry/phone/linux-arm64/010-return-to-entry-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/002-galaxy/galaxy.spec.ts:11:1 \u203a Inspect and navigate a real galaxy through its command dock \u203a Read the acknowledged waiting campaign before other players join. Unavailable empire production is not shown as a placeholder resource row. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/003-science/components.spec.ts:58:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/003-science/science.spec.ts:13:1 \u203a Inspect authoritative science rate and recover earned output \u203a Open the real per-tick rail control on both independent accounts. Current capacity exists before the first delivered output. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/004-waiting/waiting.spec.ts:33:1 \u203a Recover a waiting seat and enter the assigned home \u203a Reload the acknowledged membership without joining again; read named seats and remaining places. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/004-waiting/screenshots/waiting-to-home/phone/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/encryption.spec.ts:29:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Open the proposal and review the available encryption choices before committing. \u203a Cipher envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/002-review-provider-1-cipher-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/phone/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:38:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Open the invitation while signed out. \u203a Invited envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64/002-open-invitation-1-invited-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:277:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Open the original invitation while signed out. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/phone/linux-arm64/002-return-to-invitation-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:100:1 \u203a A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves \u203a Open campaign creation and name the four-empire development galaxy. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/phone/linux-arm64/002-propose-campaign-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:558:1 \u203a An active commander filters stars, orbits by keyboard and inspects a clipped map label \u203a Inspect the real galaxy after acknowledged scheduled home assignment. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/phone/linux-arm64/002-assigned-chart-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:894:1 \u203a A returning commander waits for authoritative identity readiness before Play \u203a Reload entry while the saved identity is still being recovered. Play cannot route to an editor based on missing profile data. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/phone/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/006-campaign-history/history.spec.ts:8:1 \u203a Recover saved campaign records without losing your place \u203a Open history and explicitly load latest records after the acknowledged maintenance commands, with the return control visible. \u203a History envoy \u2014 reading device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/006-campaign-history/screenshots/campaign-history/phone/linux-arm64/002-open-records-1-history-envoy-reading-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/007-galaxy-composition/composition.spec.ts:7:1 \u203a Read the cinematic galaxy through real commander and system instruments \u203a Read the acknowledged home neighbourhood. The saved Deepseer portrait remains cosmetic; Heliac Assembly is the mechanical faction. \u203a Deepseer envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/phone/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/007-galaxy-composition/gallery.spec.ts:4:1 \u203a Shared commander and command instruments expose their real keyboard states \u203a Read the actual commander deck, open its portrait menu with Enter, and traverse every modal control including both wrap boundaries. \u203a Gallery reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/phone/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/008-field-guide/market.spec.ts:5:1 \u203a Read shared market rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing market chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-market-rules/phone/linux-arm64/001-read-market-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/008-field-guide/routes.spec.ts:5:1 \u203a Read shared route rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing route chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-route-rules/phone/linux-arm64/001-read-route-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts:50:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/009-route-forces/components.spec.ts:3:1 \u203a Inspect shared route composition in gallery and interactive lab \u203a Read the real route scene and shared force instrument in its gallery container. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-instrument-components/phone/linux-arm64/001-review-gallery-route-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/009-route-forces/forces.spec.ts:21:1 \u203a Review confirmed forces before acknowledged dispatch and recovery \u203a Form two fighters carrying twenty infantry through the actual preparation controls. \u203a Route marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/010-reserve-real-complement-1-route-marshal.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/009-selected-history/selected-history.spec.ts:52:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Create a private room while the recipient and outsider inspect their own empty directories. \u203a Nacre envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/010-zero-science/controls.spec.ts:5:1 \u203a Shared command artwork retains keyboard targets and motion-independent selection \u203a Select history with the keyboard under normal system preference; inspect the rounded painted face and complete semantic target. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/screenshots/command-control-motion/phone/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/010-zero-science/zero-science.spec.ts:80:1 \u203a Live zero science after orbital loss preserves private research \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 \u203a Open a contextual arrival report and recover its recorded surface \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/011-contextual-aftermath/components.spec.ts:4:1 \u203a Inspect shared contextual aftermath in gallery and animation lab \u203a Read the existing split-occupation specimen with its contextual return control and historical distinction. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/phone/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "phone",
+      "test": "tests/e2e/012-fleet-contacts/contacts.spec.ts:39:1 \u203a Live fleet contacts preserve acquired and last-seen private facts across reload \u203a The owner opens fleet preparation while the observer checks their own contact records before any fleet exists. \u203a Fleet pathfinder: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/campaign-start.story.spec.ts:43:1 \u203a Five commanders start two campaigns and recover their named active campaign \u203a Create the real waiting galaxy before choosing a faction. \u203a Dawn envoy 1: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/feedback-lab.story.spec.ts:7:1 \u203a Feedback lab inspects reconnect, conflict and playback without changing outcomes \u203a Open the real animation lab and inspect the pending identity frame. \u203a Developer \u00b7 playback controls: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/feedback-lab.story.spec.ts:251:1 \u203a Campaign feedback lab compares authoritative receipt presentations across motion modes \u203a Select campaign-joined and inspect the acknowledged pending presentation in both motion modes. \u203a Developer \u00b7 standard campaign motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-cancellation.story.spec.ts:41:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-cargo.story.spec.ts:41:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-formation.story.spec.ts:41:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-reorganization.story.spec.ts:46:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-route-recovery.story.spec.ts:58:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/fleet-travel-catchup.story.spec.ts:48:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/history-lab.story.spec.ts:7:1 \u203a History lab retries loading and inspects recovered records without changing motion outcomes \u203a Open the history scenario and inspect pending loading without invented records. \u203a Developer \u00b7 standard history presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/identity-gallery.story.spec.ts:9:1 \u203a Production gallery exposes identity, navigation and feedback control states \u203a Open the developer-only gallery and read its scope before inspecting controls. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/identity.story.spec.ts:5:1 \u203a Save and recover a commander identity \u203a \u00c9toile arrives signed out, with no private preview. \u203a \u00c9toile: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:66:1 \u203a Lifecycle lab distinguishes scheduled, delayed and assigned start presentations \u203a Read the scheduled start and server-assignment explanation. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:158:1 \u203a Lifecycle lab preserves session-ending disclosure and inspects completed motion \u203a Inspect the disabled ending control and the complete consequences of ending sessions. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/live-menu-preservation.story.spec.ts:19:1 \u203a Live galaxy menu preserves selection and unsent allocation across a confirmed tick \u203a Use the textual systems list to select the same named home, then enter an incomplete market allocation without applying it. \u203a Menu envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/local-settings.story.spec.ts:7:1 \u203a Shared presentation settings retain local choices and accessible modal ownership \u203a Open the shared menu with Enter and cycle every modal control with Tab and Shift+Tab. \u203a Developer \u00b7 local settings: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/local-presentation-settings/desktop/linux-arm64/001-open-and-contain-1-developer-local-settings.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Open the roster while the other commander can still claim a seat. \u203a Maintenance host: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/market-account-isolation.story.spec.ts:47:1 \u203a Live market allocation isolates saved accounts on the same browser \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-account-isolation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/market-draft-lifecycle.story.spec.ts:59:1 \u203a Live market allocation clears after real account-wide sign-out \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-session-revocation/desktop/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/market-membership-revocation.story.spec.ts:49:1 \u203a Live membership revocation rejects a delayed private view and clears market intent \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-membership-revocation/desktop/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/observations.story.spec.ts:45:1 \u203a Live stellar observations retain private current and historical facts after reload \u203a Select the same nearby catalogue star on two independent accounts before the first scan. \u203a Survey envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/production-lab.story.spec.ts:7:1 \u203a Production lab distinguishes due time from confirmed output and preserves ledger outcomes \u203a Open production before the first deadline and inspect the unchanged starting balance. \u203a Developer \u00b7 standard production summary: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/profile-recovery.story.spec.ts:435:1 \u203a Restore entry focus after keyboard learning and identity editing \u203a Open entry with Play and Learn available. \u203a Visitor: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/research-forecast.story.spec.ts:8:1 \u203a Research forecast gallery explains recorded costs effects and rate assumptions \u203a Read the developer gallery scope before inspecting research. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-forecast-gallery/desktop/linux-arm64/001-open-gallery-1-developer-gallery-scope.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/research-guidance.story.spec.ts:45:1 \u203a Live research guidance follows the campaign capabilities without submitting choices \u203a Open each commander's economy through keyboard controls and inspect the saved research target. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/research-lab.story.spec.ts:7:1 \u203a Research lab preserves selection through pending, recovery, scheduling and application \u203a Inspect the pending research frame and compare both motion presentations. \u203a Developer \u00b7 standard research selection: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/research-orders.story.spec.ts:114:1 \u203a Live research orders preserve choices and acknowledge switches \u203a Open both private science instruments and choose investing by keyboard without sending. \u203a Market envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-research-orders/desktop/linux-arm64/010-choose-without-sending-1-market-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/return-briefing.story.spec.ts:32:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/selection-ownership.story.spec.ts:5:1 \u203a Mounted campaign selection preserves a newer proposal after genuine delayed recovery \u203a Use keyboard navigation to replace pending recovery with an unsent proposal, then receive the older genuine authorization response. \u203a Selection envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/campaign-selection-ownership/desktop/linux-arm64/003-keep-new-proposal-1-selection-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/browser/sharing-lab.story.spec.ts:7:1 \u203a Sharing lab preserves selected-history consent and disclosure across motion modes \u203a Select the recipient's sharing scenario and focus each real Accept invitation control without committing consent through an inert lab callback. \u203a Developer \u00b7 recipient in standard motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/001-entry/entry.spec.ts:4:1 \u203a Learn the campaign and return to entry \u203a The visitor arrives at Cluster and can choose Play or Learn. \u203a Visitor: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/001-entry/returning.spec.ts:11:1 \u203a Return to a genuinely active campaign from the cinematic entry \u203a Leave the campaign view through Campaigns and the Cluster entry link; the campaign continues. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/001-entry/screenshots/cinematic-returning-entry/desktop/linux-arm64/010-return-to-entry-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/002-galaxy/galaxy.spec.ts:11:1 \u203a Inspect and navigate a real galaxy through its command dock \u203a Read the acknowledged waiting campaign before other players join. Unavailable empire production is not shown as a placeholder resource row. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/006-read-waiting-rail-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/003-science/components.spec.ts:58:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/003-science/science.spec.ts:13:1 \u203a Inspect authoritative science rate and recover earned output \u203a Open the real per-tick rail control on both independent accounts. Current capacity exists before the first delivered output. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/004-waiting/waiting.spec.ts:33:1 \u203a Recover a waiting seat and enter the assigned home \u203a Reload the acknowledged membership without joining again; read named seats and remaining places. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/004-waiting/screenshots/waiting-to-home/desktop/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/encryption.spec.ts:29:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Open the proposal and review the available encryption choices before committing. \u203a Cipher envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/002-review-provider-1-cipher-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/desktop/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:38:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Open the invitation while signed out. \u203a Invited envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64/002-open-invitation-1-invited-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:277:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Open the original invitation while signed out. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64/002-return-to-invitation-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:100:1 \u203a A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves \u203a Open campaign creation and name the four-empire development galaxy. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/desktop/linux-arm64/002-propose-campaign-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:558:1 \u203a An active commander filters stars, orbits by keyboard and inspects a clipped map label \u203a Inspect the real galaxy after acknowledged scheduled home assignment. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/desktop/linux-arm64/002-assigned-chart-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:894:1 \u203a A returning commander waits for authoritative identity readiness before Play \u203a Reload entry while the saved identity is still being recovered. Play cannot route to an editor based on missing profile data. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/desktop/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/006-campaign-history/history.spec.ts:8:1 \u203a Recover saved campaign records without losing your place \u203a Open history and explicitly load latest records after the acknowledged maintenance commands, with the return control visible. \u203a History envoy \u2014 reading device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/006-campaign-history/screenshots/campaign-history/desktop/linux-arm64/002-open-records-1-history-envoy-reading-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/007-galaxy-composition/composition.spec.ts:7:1 \u203a Read the cinematic galaxy through real commander and system instruments \u203a Read the acknowledged home neighbourhood. The saved Deepseer portrait remains cosmetic; Heliac Assembly is the mechanical faction. \u203a Deepseer envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/desktop/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/007-galaxy-composition/gallery.spec.ts:4:1 \u203a Shared commander and command instruments expose their real keyboard states \u203a Read the actual commander deck, open its portrait menu with Enter, and traverse every modal control including both wrap boundaries. \u203a Gallery reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/desktop/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/008-field-guide/market.spec.ts:5:1 \u203a Read shared market rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing market chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-market-rules/desktop/linux-arm64/001-read-market-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/008-field-guide/routes.spec.ts:5:1 \u203a Read shared route rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing route chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-route-rules/desktop/linux-arm64/001-read-route-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts:50:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/009-route-forces/components.spec.ts:3:1 \u203a Inspect shared route composition in gallery and interactive lab \u203a Read the real route scene and shared force instrument in its gallery container. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-instrument-components/desktop/linux-arm64/001-review-gallery-route-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/009-route-forces/forces.spec.ts:21:1 \u203a Review confirmed forces before acknowledged dispatch and recovery \u203a Form two fighters carrying twenty infantry through the actual preparation controls. \u203a Route marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/010-reserve-real-complement-1-route-marshal.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/009-selected-history/selected-history.spec.ts:52:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Create a private room while the recipient and outsider inspect their own empty directories. \u203a Nacre envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/010-zero-science/controls.spec.ts:5:1 \u203a Shared command artwork retains keyboard targets and motion-independent selection \u203a Select history with the keyboard under normal system preference; inspect the rounded painted face and complete semantic target. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/screenshots/command-control-motion/desktop/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/010-zero-science/zero-science.spec.ts:80:1 \u203a Live zero science after orbital loss preserves private research \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 \u203a Open a contextual arrival report and recover its recorded surface \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/011-contextual-aftermath/components.spec.ts:4:1 \u203a Inspect shared contextual aftermath in gallery and animation lab \u203a Read the existing split-occupation specimen with its contextual return control and historical distinction. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/desktop/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "desktop",
+      "test": "tests/e2e/012-fleet-contacts/contacts.spec.ts:39:1 \u203a Live fleet contacts preserve acquired and last-seen private facts across reload \u203a The owner opens fleet preparation while the observer checks their own contact records before any fleet exists. \u203a Fleet pathfinder: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/campaign-start.story.spec.ts:43:1 \u203a Five commanders start two campaigns and recover their named active campaign \u203a Create the real waiting galaxy before choosing a faction. \u203a Dawn envoy 1: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/feedback-lab.story.spec.ts:7:1 \u203a Feedback lab inspects reconnect, conflict and playback without changing outcomes \u203a Open the real animation lab and inspect the pending identity frame. \u203a Developer \u00b7 playback controls: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/feedback-lab.story.spec.ts:251:1 \u203a Campaign feedback lab compares authoritative receipt presentations across motion modes \u203a Select campaign-joined and inspect the acknowledged pending presentation in both motion modes. \u203a Developer \u00b7 standard campaign motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/fleet-cancellation.story.spec.ts:41:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/fleet-cargo.story.spec.ts:41:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/fleet-formation.story.spec.ts:41:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/fleet-reorganization.story.spec.ts:46:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/fleet-route-recovery.story.spec.ts:58:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/fleet-travel-catchup.story.spec.ts:48:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/history-lab.story.spec.ts:7:1 \u203a History lab retries loading and inspects recovered records without changing motion outcomes \u203a Open the history scenario and inspect pending loading without invented records. \u203a Developer \u00b7 standard history presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/identity-gallery.story.spec.ts:9:1 \u203a Production gallery exposes identity, navigation and feedback control states \u203a Open the developer-only gallery and read its scope before inspecting controls. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/identity.story.spec.ts:5:1 \u203a Save and recover a commander identity \u203a \u00c9toile arrives signed out, with no private preview. \u203a \u00c9toile: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:66:1 \u203a Lifecycle lab distinguishes scheduled, delayed and assigned start presentations \u203a Read the scheduled start and server-assignment explanation. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:158:1 \u203a Lifecycle lab preserves session-ending disclosure and inspects completed motion \u203a Inspect the disabled ending control and the complete consequences of ending sessions. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/live-menu-preservation.story.spec.ts:19:1 \u203a Live galaxy menu preserves selection and unsent allocation across a confirmed tick \u203a Use the textual systems list to select the same named home, then enter an incomplete market allocation without applying it. \u203a Menu envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/local-settings.story.spec.ts:7:1 \u203a Shared presentation settings retain local choices and accessible modal ownership \u203a Open the shared menu with Enter and cycle every modal control with Tab and Shift+Tab. \u203a Developer \u00b7 local settings: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/local-presentation-settings/large/linux-arm64/001-open-and-contain-1-developer-local-settings.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Open the roster while the other commander can still claim a seat. \u203a Maintenance host: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/market-account-isolation.story.spec.ts:47:1 \u203a Live market allocation isolates saved accounts on the same browser \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-account-isolation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/market-draft-lifecycle.story.spec.ts:59:1 \u203a Live market allocation clears after real account-wide sign-out \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-session-revocation/large/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/market-membership-revocation.story.spec.ts:49:1 \u203a Live membership revocation rejects a delayed private view and clears market intent \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/observations.story.spec.ts:45:1 \u203a Live stellar observations retain private current and historical facts after reload \u203a Select the same nearby catalogue star on two independent accounts before the first scan. \u203a Survey envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/production-lab.story.spec.ts:7:1 \u203a Production lab distinguishes due time from confirmed output and preserves ledger outcomes \u203a Open production before the first deadline and inspect the unchanged starting balance. \u203a Developer \u00b7 standard production summary: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/profile-recovery.story.spec.ts:435:1 \u203a Restore entry focus after keyboard learning and identity editing \u203a Open entry with Play and Learn available. \u203a Visitor: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/research-forecast.story.spec.ts:8:1 \u203a Research forecast gallery explains recorded costs effects and rate assumptions \u203a Read the developer gallery scope before inspecting research. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-forecast-gallery/large/linux-arm64/001-open-gallery-1-developer-gallery-scope.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/research-guidance.story.spec.ts:45:1 \u203a Live research guidance follows the campaign capabilities without submitting choices \u203a Open each commander's economy through keyboard controls and inspect the saved research target. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-capability-guidance/large/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/research-lab.story.spec.ts:7:1 \u203a Research lab preserves selection through pending, recovery, scheduling and application \u203a Inspect the pending research frame and compare both motion presentations. \u203a Developer \u00b7 standard research selection: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/research-orders.story.spec.ts:114:1 \u203a Live research orders preserve choices and acknowledge switches \u203a Open both private science instruments and choose investing by keyboard without sending. \u203a Market envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-research-orders/large/linux-arm64/010-choose-without-sending-1-market-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/return-briefing.story.spec.ts:32:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/selection-ownership.story.spec.ts:5:1 \u203a Mounted campaign selection preserves a newer proposal after genuine delayed recovery \u203a Use keyboard navigation to replace pending recovery with an unsent proposal, then receive the older genuine authorization response. \u203a Selection envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/campaign-selection-ownership/large/linux-arm64/003-keep-new-proposal-1-selection-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/browser/sharing-lab.story.spec.ts:7:1 \u203a Sharing lab preserves selected-history consent and disclosure across motion modes \u203a Select the recipient's sharing scenario and focus each real Accept invitation control without committing consent through an inert lab callback. \u203a Developer \u00b7 recipient in standard motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/001-entry/entry.spec.ts:4:1 \u203a Learn the campaign and return to entry \u203a The visitor arrives at Cluster and can choose Play or Learn. \u203a Visitor: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/001-entry/returning.spec.ts:11:1 \u203a Return to a genuinely active campaign from the cinematic entry \u203a Leave the campaign view through Campaigns and the Cluster entry link; the campaign continues. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/001-entry/screenshots/cinematic-returning-entry/large/linux-arm64/010-return-to-entry-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/002-galaxy/galaxy.spec.ts:11:1 \u203a Inspect and navigate a real galaxy through its command dock \u203a Read the acknowledged waiting campaign before other players join. Unavailable empire production is not shown as a placeholder resource row. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/003-science/components.spec.ts:58:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/003-science/science.spec.ts:13:1 \u203a Inspect authoritative science rate and recover earned output \u203a Open the real per-tick rail control on both independent accounts. Current capacity exists before the first delivered output. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/010-inspect-private-sources-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/004-waiting/waiting.spec.ts:33:1 \u203a Recover a waiting seat and enter the assigned home \u203a Reload the acknowledged membership without joining again; read named seats and remaining places. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/004-waiting/screenshots/waiting-to-home/large/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/encryption.spec.ts:29:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Open the proposal and review the available encryption choices before committing. \u203a Cipher envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/002-review-provider-1-cipher-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/large/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:38:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Open the invitation while signed out. \u203a Invited envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64/002-open-invitation-1-invited-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:277:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Open the original invitation while signed out. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64/002-return-to-invitation-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:100:1 \u203a A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves \u203a Open campaign creation and name the four-empire development galaxy. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/large/linux-arm64/002-propose-campaign-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:558:1 \u203a An active commander filters stars, orbits by keyboard and inspects a clipped map label \u203a Inspect the real galaxy after acknowledged scheduled home assignment. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/large/linux-arm64/002-assigned-chart-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:894:1 \u203a A returning commander waits for authoritative identity readiness before Play \u203a Reload entry while the saved identity is still being recovered. Play cannot route to an editor based on missing profile data. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/large/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/006-campaign-history/history.spec.ts:8:1 \u203a Recover saved campaign records without losing your place \u203a Open history and explicitly load latest records after the acknowledged maintenance commands, with the return control visible. \u203a History envoy \u2014 reading device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/006-campaign-history/screenshots/campaign-history/large/linux-arm64/002-open-records-1-history-envoy-reading-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/007-galaxy-composition/composition.spec.ts:7:1 \u203a Read the cinematic galaxy through real commander and system instruments \u203a Read the acknowledged home neighbourhood. The saved Deepseer portrait remains cosmetic; Heliac Assembly is the mechanical faction. \u203a Deepseer envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/large/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/007-galaxy-composition/gallery.spec.ts:4:1 \u203a Shared commander and command instruments expose their real keyboard states \u203a Read the actual commander deck, open its portrait menu with Enter, and traverse every modal control including both wrap boundaries. \u203a Gallery reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/large/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/008-field-guide/market.spec.ts:5:1 \u203a Read shared market rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing market chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-market-rules/large/linux-arm64/001-read-market-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/008-field-guide/routes.spec.ts:5:1 \u203a Read shared route rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing route chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-route-rules/large/linux-arm64/001-read-route-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts:50:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/009-route-forces/components.spec.ts:3:1 \u203a Inspect shared route composition in gallery and interactive lab \u203a Read the real route scene and shared force instrument in its gallery container. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-instrument-components/large/linux-arm64/001-review-gallery-route-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/009-route-forces/forces.spec.ts:21:1 \u203a Review confirmed forces before acknowledged dispatch and recovery \u203a Form two fighters carrying twenty infantry through the actual preparation controls. \u203a Route marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-force-review/large/linux-arm64/010-reserve-real-complement-1-route-marshal.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/009-selected-history/selected-history.spec.ts:52:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Create a private room while the recipient and outsider inspect their own empty directories. \u203a Nacre envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/010-zero-science/controls.spec.ts:5:1 \u203a Shared command artwork retains keyboard targets and motion-independent selection \u203a Select history with the keyboard under normal system preference; inspect the rounded painted face and complete semantic target. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/010-zero-science/zero-science.spec.ts:80:1 \u203a Live zero science after orbital loss preserves private research \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 \u203a Open a contextual arrival report and recover its recorded surface \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/011-contextual-aftermath/components.spec.ts:4:1 \u203a Inspect shared contextual aftermath in gallery and animation lab \u203a Read the existing split-occupation specimen with its contextual return control and historical distinction. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/large/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "large",
+      "test": "tests/e2e/012-fleet-contacts/contacts.spec.ts:39:1 \u203a Live fleet contacts preserve acquired and last-seen private facts across reload \u203a The owner opens fleet preparation while the observer checks their own contact records before any fleet exists. \u203a Fleet pathfinder: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/campaign-start.story.spec.ts:43:1 \u203a Five commanders start two campaigns and recover their named active campaign \u203a Create the real waiting galaxy before choosing a faction. \u203a Dawn envoy 1: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange settles and withdraws exact terms \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/credit-exchange.story.spec.ts:67:3 \u203a Live credit exchange recovers an interrupted offer \u203a Offer 10.001 credits to Exchange recipient in return for 2.002; each observer opens their own private exchange instrument. \u203a Exchange sender: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/feedback-lab.story.spec.ts:7:1 \u203a Feedback lab inspects reconnect, conflict and playback without changing outcomes \u203a Open the real animation lab and inspect the pending identity frame. \u203a Developer \u00b7 playback controls: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/feedback-lab.story.spec.ts:251:1 \u203a Campaign feedback lab compares authoritative receipt presentations across motion modes \u203a Select campaign-joined and inspect the acknowledged pending presentation in both motion modes. \u203a Developer \u00b7 standard campaign motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/fleet-cancellation.story.spec.ts:41:1 \u203a Live fleet cancellation preserves drafts and releases private reservations \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/fleet-cargo.story.spec.ts:41:1 \u203a Live fleet cargo transfers conserve private forces through reload \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/fleet-formation.story.spec.ts:41:1 \u203a Live fleet formation and disband conserve private forces \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/fleet-reorganization.story.spec.ts:46:1 \u203a Live fleet reorganization recovers one private split and conserves forces \u203a Open each commander's own fleet preparation. Enter four fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/fleet-route-recovery.story.spec.ts:58:1 \u203a Interrupted route commands retain their original choices and identity \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/fleet-travel-catchup.story.spec.ts:48:1 \u203a Paused fleet travel catches up exactly once after concurrent delayed delivery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/history-lab.story.spec.ts:7:1 \u203a History lab retries loading and inspects recovered records without changing motion outcomes \u203a Open the history scenario and inspect pending loading without invented records. \u203a Developer \u00b7 standard history presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/identity-gallery.story.spec.ts:9:1 \u203a Production gallery exposes identity, navigation and feedback control states \u203a Open the developer-only gallery and read its scope before inspecting controls. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/identity.story.spec.ts:5:1 \u203a Save and recover a commander identity \u203a \u00c9toile arrives signed out, with no private preview. \u203a \u00c9toile: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:66:1 \u203a Lifecycle lab distinguishes scheduled, delayed and assigned start presentations \u203a Read the scheduled start and server-assignment explanation. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/lifecycle-lab.story.spec.ts:158:1 \u203a Lifecycle lab preserves session-ending disclosure and inspects completed motion \u203a Inspect the disabled ending control and the complete consequences of ending sessions. \u203a Developer \u00b7 standard lifecycle presentation: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/live-menu-preservation.story.spec.ts:19:1 \u203a Live galaxy menu preserves selection and unsent allocation across a confirmed tick \u203a Use the textual systems list to select the same named home, then enter an incomplete market allocation without applying it. \u203a Menu envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/local-settings.story.spec.ts:7:1 \u203a Shared presentation settings retain local choices and accessible modal ownership \u203a Open the shared menu with Enter and cycle every modal control with Tab and Shift+Tab. \u203a Developer \u00b7 local settings: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/local-presentation-settings/short/linux-arm64/001-open-and-contain-1-developer-local-settings.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/maintenance.story.spec.ts:14:1 \u203a The host pauses admission, recovers the pause and resumes a waiting commander \u203a Open the roster while the other commander can still claim a seat. \u203a Maintenance host: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/market-account-isolation.story.spec.ts:47:1 \u203a Live market allocation isolates saved accounts on the same browser \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-account-isolation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/market-draft-lifecycle.story.spec.ts:59:1 \u203a Live market allocation clears after real account-wide sign-out \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-session-revocation/short/linux-arm64/011-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/market-membership-revocation.story.spec.ts:49:1 \u203a Live membership revocation rejects a delayed private view and clears market intent \u203a Both commanders inspect their own authoritative allocation through keyboard controls. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/market-draft-membership-revocation/short/linux-arm64/010-inspect-owned-focus-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/observations.story.spec.ts:45:1 \u203a Live stellar observations retain private current and historical facts after reload \u203a Select the same nearby catalogue star on two independent accounts before the first scan. \u203a Survey envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/production-lab.story.spec.ts:7:1 \u203a Production lab distinguishes due time from confirmed output and preserves ledger outcomes \u203a Open production before the first deadline and inspect the unchanged starting balance. \u203a Developer \u00b7 standard production summary: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/profile-recovery.story.spec.ts:435:1 \u203a Restore entry focus after keyboard learning and identity editing \u203a Open entry with Play and Learn available. \u203a Visitor: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/receipt-recovery.story.spec.ts:209:1 \u203a A mismatched campaign receipt preserves the proposed galaxy for a fresh creation \u203a Create the original galaxy and reach its faction selection. \u203a Receipt envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/research-forecast.story.spec.ts:8:1 \u203a Research forecast gallery explains recorded costs effects and rate assumptions \u203a Read the developer gallery scope before inspecting research. \u203a Developer \u00b7 gallery scope: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-forecast-gallery/short/linux-arm64/001-open-gallery-1-developer-gallery-scope.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/research-guidance.story.spec.ts:45:1 \u203a Live research guidance follows the campaign capabilities without submitting choices \u203a Open each commander's economy through keyboard controls and inspect the saved research target. \u203a Market envoy \u00b7 campaign device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/research-capability-guidance/short/linux-arm64/010-open-authoritative-science-1-market-envoy-campaign-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/research-lab.story.spec.ts:7:1 \u203a Research lab preserves selection through pending, recovery, scheduling and application \u203a Inspect the pending research frame and compare both motion presentations. \u203a Developer \u00b7 standard research selection: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/research-orders.story.spec.ts:114:1 \u203a Live research orders preserve choices and acknowledge switches \u203a Open both private science instruments and choose investing by keyboard without sending. \u203a Market envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/live-research-orders/short/linux-arm64/010-choose-without-sending-1-market-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/return-briefing.story.spec.ts:32:1 \u203a Live return briefing recovers authorized activity and saves only the reviewed private period \u203a Return through the campaign directory. The briefing identifies the confirmed period but refuses to save while earlier authorized records are missing. Other commanders open their own briefings. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/selection-ownership.story.spec.ts:5:1 \u203a Mounted campaign selection preserves a newer proposal after genuine delayed recovery \u203a Use keyboard navigation to replace pending recovery with an unsent proposal, then receive the older genuine authorization response. \u203a Selection envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/browser/story-baselines/campaign-selection-ownership/short/linux-arm64/003-keep-new-proposal-1-selection-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover a cancelled sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/session-recovery.story.spec.ts:24:3 \u203a Two devices recover an interrupted sign-out without losing saved identity \u203a The signed-in entry provides device management while the other device retains its draft. \u203a Commander \u00b7 first device: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/browser/sharing-lab.story.spec.ts:7:1 \u203a Sharing lab preserves selected-history consent and disclosure across motion modes \u203a Select the recipient's sharing scenario and focus each real Accept invitation control without committing consent through an inert lab callback. \u203a Developer \u00b7 recipient in standard motion: settled, contained, exact capture ",
+      "category": "pixel-mismatch",
+      "firstError": "expect(Buffer).toMatchSnapshot(expected) failed"
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/001-entry/entry.spec.ts:4:1 \u203a Learn the campaign and return to entry \u203a The visitor arrives at Cluster and can choose Play or Learn. \u203a Visitor: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/001-entry/returning.spec.ts:11:1 \u203a Return to a genuinely active campaign from the cinematic entry \u203a Leave the campaign view through Campaigns and the Cluster entry link; the campaign continues. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/001-entry/screenshots/cinematic-returning-entry/short/linux-arm64/010-return-to-entry-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/002-galaxy/galaxy.spec.ts:11:1 \u203a Inspect and navigate a real galaxy through its command dock \u203a Read the acknowledged waiting campaign before other players join. Unavailable empire production is not shown as a placeholder resource row. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/003-science/components.spec.ts:58:1 \u203a Read shared science ledger in gallery and lab \u203a Open the actual shared ledger with Enter and read its lower totals through End. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/003-science/science.spec.ts:13:1 \u203a Inspect authoritative science rate and recover earned output \u203a Open the real per-tick rail control on both independent accounts. Current capacity exists before the first delivered output. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/010-inspect-private-sources-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/004-waiting/waiting.spec.ts:33:1 \u203a Recover a waiting seat and enter the assigned home \u203a Reload the acknowledged membership without joining again; read named seats and remaining places. \u203a Chart envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/004-waiting/screenshots/waiting-to-home/short/linux-arm64/007-recover-waiting-seat-1-chart-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/encryption.spec.ts:29:3 \u203a Encryption choice explains unavailable managed keys without silent substitution \u203a Open the proposal and review the available encryption choices before committing. \u203a Cipher envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/002-review-provider-1-cipher-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/faction-components.spec.ts:4:1 \u203a Shared faction composition preserves keyboard choices in both motion preferences \u203a Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/faction-composition-gallery/short/linux-arm64/001-choose-reduce-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:38:1 \u203a An invited new commander saves an identity and joins the preserved campaign \u203a Open the invitation while signed out. \u203a Invited envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64/002-open-invitation-1-invited-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/invitation.spec.ts:277:1 \u203a A returning commander resumes an invitation without rewriting identity and recovers inaccessible links \u203a Open the original invitation while signed out. \u203a Returning envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64/002-return-to-invitation-1-returning-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:100:1 \u203a A commander reviews a faction, commits a seat, recovers the exact waiting campaign and leaves \u203a Open campaign creation and name the four-empire development galaxy. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-admission-navigation/short/linux-arm64/002-propose-campaign-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:558:1 \u203a An active commander filters stars, orbits by keyboard and inspects a clipped map label \u203a Inspect the real galaxy after acknowledged scheduled home assignment. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/campaign-chart-navigation/short/linux-arm64/002-assigned-chart-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/005-campaign-access/navigation.spec.ts:894:1 \u203a A returning commander waits for authoritative identity readiness before Play \u203a Reload entry while the saved identity is still being recovered. Play cannot route to an editor based on missing profile data. \u203a Star envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/005-campaign-access/screenshots/entry-profile-readiness/short/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/006-campaign-history/history.spec.ts:8:1 \u203a Recover saved campaign records without losing your place \u203a Open history and explicitly load latest records after the acknowledged maintenance commands, with the return control visible. \u203a History envoy \u2014 reading device: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/006-campaign-history/screenshots/campaign-history/short/linux-arm64/002-open-records-1-history-envoy-reading-device.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/007-galaxy-composition/composition.spec.ts:7:1 \u203a Read the cinematic galaxy through real commander and system instruments \u203a Read the acknowledged home neighbourhood. The saved Deepseer portrait remains cosmetic; Heliac Assembly is the mechanical faction. \u203a Deepseer envoy: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-cinematic-instruments/short/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/007-galaxy-composition/gallery.spec.ts:4:1 \u203a Shared commander and command instruments expose their real keyboard states \u203a Read the actual commander deck, open its portrait menu with Enter, and traverse every modal control including both wrap boundaries. \u203a Gallery reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/007-galaxy-composition/screenshots/galaxy-instrument-gallery/short/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/008-field-guide/market.spec.ts:5:1 \u203a Read shared market rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing market chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-market-rules/short/linux-arm64/001-read-market-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/008-field-guide/routes.spec.ts:5:1 \u203a Read shared route rules and return without leaving the game \u203a Open the shared menu and Rules with the keyboard, then expand the existing route chapter. \u203a Reader: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/008-field-guide/screenshots/in-game-route-rules/short/linux-arm64/001-read-route-rules-1-reader.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts:50:1 \u203a Live fleet travel and arrival preserve private forces through recovery \u203a Open each commander's own fleet preparation. Enter two fighters and an over-capacity infantry complement before committing anything. \u203a Fleet marshal: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/009-route-forces/components.spec.ts:3:1 \u203a Inspect shared route composition in gallery and interactive lab \u203a Read the real route scene and shared force instrument in its gallery container. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-instrument-components/short/linux-arm64/001-review-gallery-route-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/009-route-forces/forces.spec.ts:21:1 \u203a Review confirmed forces before acknowledged dispatch and recovery \u203a Form two fighters carrying twenty infantry through the actual preparation controls. \u203a Route marshal: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/010-reserve-real-complement-1-route-marshal.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/009-selected-history/selected-history.spec.ts:52:1 \u203a Selected history reaches only a consenting commander and survives reload \u203a Create a private room while the recipient and outsider inspect their own empty directories. \u203a Nacre envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction completes and cancels developments \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/010-construction/construction.spec.ts:70:3 \u203a Live construction recovers an interrupted reservation \u203a Inspect the actual home system and choose an orbital training camp. The other commander reviews their own construction panel. \u203a Builder envoy: settled, contained, exact capture ",
+      "category": "diagnostic-output-path",
+      "firstError": "The outputPath is not allowed outside of the parent directory. Please fix the defined path."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/010-zero-science/controls.spec.ts:5:1 \u203a Shared command artwork retains keyboard targets and motion-independent selection \u203a Select history with the keyboard under normal system preference; inspect the rounded painted face and complete semantic target. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/010-zero-science/screenshots/command-control-motion/short/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/010-zero-science/zero-science.spec.ts:80:1 \u203a Live zero science after orbital loss preserves private research \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/011-contextual-aftermath/aftermath.spec.ts:85:1 \u203a Open a contextual arrival report and recover its recorded surface \u203a Harness control: Deliver100 real leased ticks in bounded batches. No levels, balances, forces or ownership are injected; this is not hosted scheduling. ",
+      "category": "timeout",
+      "firstError": "Step timeout of 30000ms exceeded."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/011-contextual-aftermath/components.spec.ts:4:1 \u203a Inspect shared contextual aftermath in gallery and animation lab \u203a Read the existing split-occupation specimen with its contextual return control and historical distinction. \u203a Component reviewer: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/011-contextual-aftermath/screenshots/contextual-aftermath-components/short/linux-arm64/001-recorded-gallery-outcome-1-component-reviewer.png. Generate candidates separately; verification never writes expected images."
+    },
+    {
+      "viewport": "short",
+      "test": "tests/e2e/012-fleet-contacts/contacts.spec.ts:39:1 \u203a Live fleet contacts preserve acquired and last-seen private facts across reload \u203a The owner opens fleet preparation while the observer checks their own contact records before any fleet exists. \u203a Fleet pathfinder: settled, contained, exact capture ",
+      "category": "missing-reference",
+      "firstError": "Missing reviewed baseline/renderer: /home/runner/work/clusterii/clusterii/tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png. Generate candidates separately; verification never writes expected images."
+    }
+  ]
+}

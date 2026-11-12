@@ -1,5 +1,13 @@
 import type { Star } from "../../shared/galaxy";
 
+/** Route cameras fit real coordinates; a fixed world lift escapes tight framing. */
+export function fleetMarkerPosition(
+  point: Pick<Star, "x" | "y" | "z">,
+  routeFocus: boolean,
+): [number, number, number] {
+  return [point.x / 10, point.y / 10 + (routeFocus ? 0 : 0.08), point.z / 10];
+}
+
 /** Frame real catalogue coordinates; never move a system or create a route. */
 export function galaxyOverview(stars: readonly Star[], aspect: number) {
   if (!stars.length || !Number.isFinite(aspect) || aspect <= 0)

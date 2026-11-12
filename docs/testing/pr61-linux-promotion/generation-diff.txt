@@ -1,0 +1,10 @@
+ .github/recovery/pr61-travel-01.json  |   8 +++
+ .github/workflows/recovery-travel.yml |  48 ++++++++++++++++
+ PROMPT_WORK.md                        |   2 +
+ nix/ci-renderer.sh                    |   1 +
+ scripts/ci-in-renderer.sh             |   4 ++
+ scripts/travel-candidates.mjs         |  23 ++++++++
+ scripts/travel-dispatch.test.mjs      |  23 ++++++++
+ scripts/travel-request.mjs            | 102 ++++++++++++++++++++++++++++++++++
+ scripts/travel-request.test.mjs       |   9 +++
+ 9 files changed, 220 insertions(+)

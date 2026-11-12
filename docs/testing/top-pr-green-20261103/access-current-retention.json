@@ -1,0 +1,2455 @@
+{
+  "run": 41911242352,
+  "archives": [
+    {
+      "artifact": {
+        "id": 13364130892,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2NDEzMDg5Mg==",
+        "name": "top-pr140-access-current-candidates-desktop-1957ac54bf9e476572bf9af407998aea800061eb",
+        "size_in_bytes": 29690199,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13364130892",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13364130892/zip",
+        "expired": false,
+        "digest": "sha256:ea84ce5ec52761bc4207f82cd017c038fce04030df1033effae42b58416d3ea3",
+        "created_at": "2026-11-04T21:07:04Z",
+        "updated_at": "2026-11-04T21:07:04Z",
+        "expires_at": "2026-11-18T21:07:02Z",
+        "workflow_run": {
+          "id": 41911242352,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-access-current-20261104",
+          "head_sha": "1957ac54bf9e476572bf9af407998aea800061eb"
+        }
+      },
+      "archiveSha256": "ea84ce5ec52761bc4207f82cd017c038fce04030df1033effae42b58416d3ea3",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/desktop/access-current/firestore-debug.log",
+          "size": 31034,
+          "crc32": "b0249d89",
+          "sha256": "0bc030fec4e4908af60f1b3667dc16e6faa8802e789dbf436dbfa828a8ba5231"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/access-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/desktop/access-current/result.json",
+          "size": 166,
+          "crc32": "f76f9799",
+          "sha256": "07dfd90ede075bd7bb6fd436f4c79bab734f8519f1cd9f5b2b9a5aff118be917"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/002-propose-campaign-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/002-propose-campaign-1-star-envoy.png",
+          "size": 317393,
+          "crc32": "46cd0fe0",
+          "sha256": "17c7a4d537d966b20cc2f51097b9a926fe380b3c27ab0f1e2db70d3f746afd2f"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/003-created-faction-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/003-created-faction-1-star-envoy.png",
+          "size": 1077945,
+          "crc32": "c4fb3336",
+          "sha256": "77e329960eb65f53c8a667a816343ced95963783bf85595d38fc6eb63acf2d26"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/004-choose-portrait-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/004-choose-portrait-1-star-envoy.png",
+          "size": 803362,
+          "crc32": "6c497670",
+          "sha256": "51801c7989f07681f5f99c1f051adc43deab0b9c13ffc6bb3dd757dcc951ecef"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/005-review-faction-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/005-review-faction-1-star-envoy.png",
+          "size": 1075480,
+          "crc32": "201adda2",
+          "sha256": "30a87946064a7836c656f9edab378ab675270a8db528428ddc122347aaa3d358"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/006-review-rules-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/006-review-rules-1-star-envoy.png",
+          "size": 1157077,
+          "crc32": "d857760e",
+          "sha256": "6e0c5bebfc96f752430228aa3928074b259e1fa723d8e6c583c8db1cb68b88c1"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/007-read-full-briefing-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+          "size": 1142937,
+          "crc32": "82b94883",
+          "sha256": "d447b91e9309d86cfa4cdac6e2cf373a36325802c58b8e3e999110c925e5e0bd"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/008-seat-confirmed-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+          "size": 1504323,
+          "crc32": "2c3c1adb",
+          "sha256": "f18ee2ed43f43d62baf63d0d8a26a1c69e1a5f06e8b59accbf545c8ddd42c769"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/009-waiting-entry-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/009-waiting-entry-1-star-envoy.png",
+          "size": 2030233,
+          "crc32": "b430fd99",
+          "sha256": "63f1a6e37a2ce67950b73e984855b758cfe4bea4279fc3bbf4f87ef007233675"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/010-identity-focus-return-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+          "size": 2030233,
+          "crc32": "b430fd99",
+          "sha256": "63f1a6e37a2ce67950b73e984855b758cfe4bea4279fc3bbf4f87ef007233675"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/011-campaign-directory-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/011-campaign-directory-1-star-envoy.png",
+          "size": 409795,
+          "crc32": "5c06f9af",
+          "sha256": "e949eca35e89f5d8e882e055515e4b540e1b5be4de12db2d33e8a805f2b6ceee"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/012-recover-exact-campaign-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+          "size": 1531958,
+          "crc32": "ab2310ee",
+          "sha256": "d31ffd8128ea715b5f665c931ea86a66fa1a3973de24a4fa722be01a76478b40"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/013-reload-membership-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/013-reload-membership-1-star-envoy.png",
+          "size": 1269875,
+          "crc32": "158d99a6",
+          "sha256": "04f3d0cbce5bc07c2a78de9066dd5f6582ef57b3f7fce825090fe4c7ac716610"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/014-roster-focus-return-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+          "size": 1531816,
+          "crc32": "a49dd404",
+          "sha256": "ae71ddaa26da16501823e0ae0be194f54141b85e78c5749bc8931fecce5ad579"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/015-release-seat-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "dcf83402",
+          "sha256": "e107931d9a099888437c55d87fd51a894e19c0984fd3bad2dfc0b1d6de991d70"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/015-release-seat-1-star-envoy.png",
+          "size": 1076864,
+          "crc32": "9e80b62a",
+          "sha256": "4707830b2854a199ec11eb17a7581f9fba3ee2b740050315305a628080a65c34"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/016-released-membership-reload-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+          "size": 393275,
+          "crc32": "5ab44c08",
+          "sha256": "937b41af0e3c03d233d8f55d0dc4a5e8f997026c767db90ea40570620eff4d2e"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/README.md",
+          "size": 8144,
+          "crc32": "12e09a44",
+          "sha256": "ba195ccfbf1a3ca0f4a83dea9d9921f3281d4606584c3b607503b05d8b9b1ba5"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+          "size": 10844,
+          "crc32": "5deb1812",
+          "sha256": "d3ef2c9ed62a12e13611691d76772ae8683beb7250b979a066d8addf0be9eaa4"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/002-assigned-chart-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/002-assigned-chart-1-star-envoy.png",
+          "size": 1258041,
+          "crc32": "8ffe934c",
+          "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/003-filter-o-stars-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "019367ad",
+          "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+          "size": 1029043,
+          "crc32": "b4e79ce6",
+          "sha256": "fce8eba6577d2509f6a24e10876c9bc8c74b739e15d3e472d8574190cf307de0"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/004-expand-camera-controls-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "019367ad",
+          "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "size": 1035196,
+          "crc32": "cf75affb",
+          "sha256": "8a3ffbe96bc7a42e0166989f3832346b9a93c539aeab5777ba577c0c1cf17b16"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/005-keyboard-orbit-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "019367ad",
+          "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "size": 1252620,
+          "crc32": "ba76fcc8",
+          "sha256": "0790f9bdcb34e7ef2ddeb2a864f71c1d8563b5b56fb239fd8fe7fee51fa088b7"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/006-overview-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "019367ad",
+          "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/006-overview-1-star-envoy.png",
+          "size": 1258041,
+          "crc32": "8ffe934c",
+          "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/007-select-rana-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "019367ad",
+          "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/007-select-rana-1-star-envoy.png",
+          "size": 1257282,
+          "crc32": "a1c9a0e3",
+          "sha256": "b401f47f672ab13892719339d631b500f03cded2a469d15ebdb9b00195f219bc"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/008-reload-chart-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/008-reload-chart-1-star-envoy.png",
+          "size": 1258041,
+          "crc32": "8ffe934c",
+          "sha256": "a374f0a8683365215e3b7e45ae23355f89a486c4ad4cae5f59c77a218a21dd8c"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/README.md",
+          "size": 5811,
+          "crc32": "a66e297f",
+          "sha256": "9a609221a019dee885785260d6cc09922b18d3b9f27db9981320e15eee02d3e0"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+          "size": 7821,
+          "crc32": "247574f3",
+          "sha256": "b2405ea52819e7cd34cfe757015e860834f8da350003a0e948222cfc4082d699"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-05c30-waiting-campaign-and-leaves-desktop/attachments/Illustrated-story-07da2268981a487f70fd65c3bc2897134684b703.md",
+          "size": 8144,
+          "crc32": "12e09a44",
+          "sha256": "ba195ccfbf1a3ca0f4a83dea9d9921f3281d4606584c3b607503b05d8b9b1ba5"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-0655f-ntity-readiness-before-Play-desktop/attachments/Illustrated-story-20ce41f634df7edddcd399bc7115fa853f84dbe3.md",
+          "size": 3112,
+          "crc32": "b7834af1",
+          "sha256": "f191cef3b3b10590e21bf34b17956c39cd8c6165e505b643e05b8537bf06a496"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-c0ddd-nspects-a-clipped-map-label-desktop/attachments/Illustrated-story-168dd0a190b21a74405444f160db0b063e953eac.md",
+          "size": 5811,
+          "crc32": "a66e297f",
+          "sha256": "9a609221a019dee885785260d6cc09922b18d3b9f27db9981320e15eee02d3e0"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/003-entry-waits-for-profile-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "e0bb7a7f",
+          "sha256": "1c1d7522461d7aedeeebf22b5d1f016340765a8684fd35651babba5e023e78d3"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "size": 2040910,
+          "crc32": "4a3c5bc2",
+          "sha256": "0da20b07f628c3a146a81e04e83c816a4589bd23a903ef87b0bcc9f278381441"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/005-ready-campaign-selection-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "85e173b2",
+          "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "size": 393275,
+          "crc32": "5ab44c08",
+          "sha256": "937b41af0e3c03d233d8f55d0dc4a5e8f997026c767db90ea40570620eff4d2e"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/006-saved-identity-unchanged-1-star-envoy.layout.json",
+          "size": 115811,
+          "crc32": "bac4ce60",
+          "sha256": "9536ad77e50122fc1b790ff55b88e74b1c6772ae3e94910b9ada333ea97d3dbe"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "size": 1532175,
+          "crc32": "706c1c44",
+          "sha256": "72d433a3fc718c7b225bd4fdda569900efb2463802f701634e906eee50072a20"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/README.md",
+          "size": 3112,
+          "crc32": "b7834af1",
+          "sha256": "f191cef3b3b10590e21bf34b17956c39cd8c6165e505b643e05b8537bf06a496"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "66da3120",
+          "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/desktop/linux-arm64/story.json",
+          "size": 4852,
+          "crc32": "17f4160b",
+          "sha256": "2dd391082d577cb8450e7fa130e0494a70d75c86f017b28fb8c6a337974ade9e"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "344a4e3c",
+          "sha256": "23971142bf16415e66fcde59981373e5328357bc30195596748b85e42e91c467"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "bc9ac249",
+          "sha256": "2acfb338dfaec0ecd058843d65624e944844f681f1ddf124b1600941cda8aea0"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2729,
+          "crc32": "9712bdc0",
+          "sha256": "78d86f045e7e93c83a5188281a1549bde8e5f0e3368cc441db614dba867e4c35"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "55099e66",
+          "sha256": "582c69f43be33f86443dc155302f85d1ab9281d49a30edf86c33b55fb0877da9"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "5421dc3e",
+          "sha256": "38e1294a291242b66f50ea8d8c26b6465d1e0384bd7637474ce8e5b063c5723b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "31e38e9e",
+          "sha256": "a5181c3c8698bc1097d265c05323af781fe8add62bfd630930b0669cddfa87f4"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-desktop.json",
+          "size": 6568,
+          "crc32": "816619da",
+          "sha256": "84c94d77c2a40628851ae0020032d38ec92a763a438b1c83a8963856d889d30f"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1285,
+          "crc32": "39f99737",
+          "sha256": "b53a55ef4737ad72750dca2d92972c3017a471eb423431b09d8bc61e8d6d0118"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 10875,
+          "crc32": "2ae4a69c",
+          "sha256": "e4b524b48a14420f35255e0493093884b8e63692e71a50fb7fc586447ed48408"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-desktop.json",
+          "size": 361,
+          "crc32": "e02eeb37",
+          "sha256": "6370552bdb766993c0eeeea69973b958180d625bf163f06308d9977be5e16e45"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13362629059,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2MjYyOTA1OQ==",
+        "name": "top-pr140-access-current-candidates-large-1957ac54bf9e476572bf9af407998aea800061eb",
+        "size_in_bytes": 137465058,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362629059",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362629059/zip",
+        "expired": false,
+        "digest": "sha256:13c9edde26896dd00c12ac13e49d4c6e96293acce506c1eb42ab6cca460c1289",
+        "created_at": "2026-11-04T21:08:04Z",
+        "updated_at": "2026-11-04T21:08:04Z",
+        "expires_at": "2026-11-18T21:08:00Z",
+        "workflow_run": {
+          "id": 41911242352,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-access-current-20261104",
+          "head_sha": "1957ac54bf9e476572bf9af407998aea800061eb"
+        }
+      },
+      "archiveSha256": "13c9edde26896dd00c12ac13e49d4c6e96293acce506c1eb42ab6cca460c1289",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/large/access-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/access-current/result.json",
+          "size": 164,
+          "crc32": "ab3fff5f",
+          "sha256": "21f2dce09dc07bb4df92183e69d57b9491c5291afb91599377d2d86fe63ae126"
+        },
+        {
+          "path": "test-results/stories/_cohorts/large/access-current/firestore-debug.log",
+          "size": 28997,
+          "crc32": "41909fa1",
+          "sha256": "7602321d30e5dd07d7457e9e948d85b914d90b7f817abc7ae03c8e2305924f65"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/002-propose-campaign-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/002-propose-campaign-1-star-envoy.png",
+          "size": 1425927,
+          "crc32": "c707ea7e",
+          "sha256": "4fd0bd6eca7d0cbd6bad2b303d64ef6d0a36a62a9ba8bfafaf9cb07069520b18"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/003-created-faction-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/003-created-faction-1-star-envoy.png",
+          "size": 4422245,
+          "crc32": "b85e2995",
+          "sha256": "a286e481711c73fe915130fb9c47cbcc4422c57adeb01d94f64f210578919d91"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/004-choose-portrait-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/004-choose-portrait-1-star-envoy.png",
+          "size": 1399576,
+          "crc32": "1200afdd",
+          "sha256": "ce0cbcad3d60251cfd677fc1f9536fa67b9d14ba8d53e7a326d04a3385fc0e71"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/005-review-faction-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/005-review-faction-1-star-envoy.png",
+          "size": 4432364,
+          "crc32": "1b4689a7",
+          "sha256": "89906ba064bdf296ae977de4f1387e1d74320847545f71230d2d8450c66b2627"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/006-review-rules-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/006-review-rules-1-star-envoy.png",
+          "size": 6043884,
+          "crc32": "69ffc696",
+          "sha256": "198ef0a83171e694ecde6f64685651e3cb4d9f0425f0a3ab8246945e75485228"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/007-read-full-briefing-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+          "size": 5916823,
+          "crc32": "a32a25d4",
+          "sha256": "0646de5fa01a7dc7b05fae56bd31f86f0fda21cd6e7787abe3bd0c7b21dd9ff5"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/008-seat-confirmed-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+          "size": 7638787,
+          "crc32": "1148a19c",
+          "sha256": "ee68758e6662de2668d6819ed203a3287e1dfbcd40aa8aa8a0073ca599c50dd9"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/009-waiting-entry-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/009-waiting-entry-1-star-envoy.png",
+          "size": 8959453,
+          "crc32": "f8c5c90b",
+          "sha256": "a24901508406e48e0ffff6378a567930e4a9d317d9935ff3674ebc6633664bdf"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/010-identity-focus-return-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+          "size": 8959453,
+          "crc32": "f8c5c90b",
+          "sha256": "a24901508406e48e0ffff6378a567930e4a9d317d9935ff3674ebc6633664bdf"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/011-campaign-directory-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/011-campaign-directory-1-star-envoy.png",
+          "size": 1399485,
+          "crc32": "1fc36e41",
+          "sha256": "df884281e06202e9731f6053aeef4ade31567398582cee17ff30f477821c3750"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/012-recover-exact-campaign-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+          "size": 7709409,
+          "crc32": "e30effe6",
+          "sha256": "d8b63536d05b6c1d8f62c3c3d1335190803d0c582dadfe6404b163ebe6f4ddc7"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/013-reload-membership-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/013-reload-membership-1-star-envoy.png",
+          "size": 7487492,
+          "crc32": "99e915d4",
+          "sha256": "90cf54ac09d71ffc498c8506c7c4bbd7535a3bf20ee1a7eb8b9c02f530ff79f0"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/014-roster-focus-return-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+          "size": 7709483,
+          "crc32": "00af58bb",
+          "sha256": "c62bab1b837e20d156d90862015555fcf4510103cb0a09ca5571d42f47958443"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/015-release-seat-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "4205f62b",
+          "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/015-release-seat-1-star-envoy.png",
+          "size": 4421032,
+          "crc32": "1736510a",
+          "sha256": "cc6a61454d3a46bbcea38ef93860abfd9020bae539bdc18fd09c4e25b85468a7"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/016-released-membership-reload-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+          "size": 1442458,
+          "crc32": "216efab1",
+          "sha256": "8c19d9ec15f6f7cda1961d97841a4a9f7613e9d1b771f985cbcdc90e076c764c"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/README.md",
+          "size": 8142,
+          "crc32": "9a6c76b7",
+          "sha256": "58e3ef9900058ea20b5ad42638fdcadbd98c16c9a2fe444273c5173d3fe94517"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+          "size": 10842,
+          "crc32": "c6fbf461",
+          "sha256": "f81d2645e69a8e1e7c9c5fab7d915110e08064b581d4554f07a247ee978b03c7"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/002-assigned-chart-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/002-assigned-chart-1-star-envoy.png",
+          "size": 5915326,
+          "crc32": "b0db2983",
+          "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/003-filter-o-stars-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "45c90c6a",
+          "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+          "size": 5539575,
+          "crc32": "73f9c221",
+          "sha256": "d966651ab570c979a0f13d2ed9ae7e3e4f0a688bf41afa3729684b25bdcd9b80"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/004-expand-camera-controls-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "45c90c6a",
+          "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "size": 5593587,
+          "crc32": "f017c54b",
+          "sha256": "0dab6b4f0d875056e3506628a36a40a708eda170d17df941474699be4135b4d2"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/005-keyboard-orbit-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "45c90c6a",
+          "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "size": 5892852,
+          "crc32": "e6db0ec7",
+          "sha256": "502d4a3e327a7eb6ef2d1514d7d49938fc0a55e422b7adf5a30ba17bcfe47e5b"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/006-overview-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "45c90c6a",
+          "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/006-overview-1-star-envoy.png",
+          "size": 5915326,
+          "crc32": "b0db2983",
+          "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/007-select-rana-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "45c90c6a",
+          "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/007-select-rana-1-star-envoy.png",
+          "size": 5918340,
+          "crc32": "57a38e16",
+          "sha256": "105b1c77209cccee7998ee8106b9741ceff7b80ba82c12dda293ca1bfa488466"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/008-reload-chart-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/008-reload-chart-1-star-envoy.png",
+          "size": 5915326,
+          "crc32": "b0db2983",
+          "sha256": "4e4b546d917ecaaceed943cef703b02c8201eecd4c27dd8a822c61866eaf2583"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/README.md",
+          "size": 5809,
+          "crc32": "ea6948a0",
+          "sha256": "5ac3c6c29f7a0914427ef9a1f3a5401aeefff413d2a29d5e1f96dd06c5f8d507"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+          "size": 7819,
+          "crc32": "06c2e0c9",
+          "sha256": "49cd54080ac8638e9b34b8a85ab2132b0fea7b1c78da4538a0cb35f12280ac1e"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-05c30-waiting-campaign-and-leaves-large/attachments/Illustrated-story-b2e16718e53ac69965028b7a56e94b381eda4e8e.md",
+          "size": 8142,
+          "crc32": "9a6c76b7",
+          "sha256": "58e3ef9900058ea20b5ad42638fdcadbd98c16c9a2fe444273c5173d3fe94517"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-0655f-ntity-readiness-before-Play-large/attachments/Illustrated-story-4d7dc2e9dc0eccb2a0e95bb7f55fed0ae52b555d.md",
+          "size": 3110,
+          "crc32": "a941d413",
+          "sha256": "442b098a05d531de3cd6844b8d01c8fb33f5de64ff1eee358ad6ce0eb70921ed"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-c0ddd-nspects-a-clipped-map-label-large/attachments/Illustrated-story-2491400d23435807de244a303ba1a11b69082364.md",
+          "size": 5809,
+          "crc32": "ea6948a0",
+          "sha256": "5ac3c6c29f7a0914427ef9a1f3a5401aeefff413d2a29d5e1f96dd06c5f8d507"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/003-entry-waits-for-profile-1-star-envoy.layout.json",
+          "size": 2071,
+          "crc32": "7e46b856",
+          "sha256": "4d45484939e3aa979b134c3625709522bfadaf85011a0cdc707292d15f2877e9"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "size": 9007931,
+          "crc32": "2306b70e",
+          "sha256": "d3a2608fa412457b319c113a6f835711daff1fe1adaff203e301722e59e83841"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/005-ready-campaign-selection-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "db3aceb1",
+          "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "size": 1442458,
+          "crc32": "216efab1",
+          "sha256": "8c19d9ec15f6f7cda1961d97841a4a9f7613e9d1b771f985cbcdc90e076c764c"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/006-saved-identity-unchanged-1-star-envoy.layout.json",
+          "size": 114172,
+          "crc32": "a4d66b12",
+          "sha256": "54c40ced4bc1a78c9193a5b70ee2503822771be5bdc9838453b3e89652bd9690"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "size": 7229572,
+          "crc32": "376e3a8f",
+          "sha256": "c9249598e1b0dad02db954e9b43332d0d9bcca4b31513defb4e24785f18acf49"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/README.md",
+          "size": 3110,
+          "crc32": "a941d413",
+          "sha256": "442b098a05d531de3cd6844b8d01c8fb33f5de64ff1eee358ad6ce0eb70921ed"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/renderer.json",
+          "size": 759,
+          "crc32": "4ece87e2",
+          "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/large/linux-arm64/story.json",
+          "size": 4850,
+          "crc32": "90025cb8",
+          "sha256": "73d80dc684e282d292d2b197186a6b79d7c924a3fa74af88c808a542f23d6cc1"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "8059865f",
+          "sha256": "7f8d6eb365dda1accd90b1cb7ec2a0d0c2202643c58d9e55450226ad80fbdba5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "a0a771ee",
+          "sha256": "6d3b65d21743cf3de98a4ff5ea58d546b52abb655cceecd89b161ff3d5c3729d"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2549,
+          "crc32": "b8bbe966",
+          "sha256": "5e9cf7e97253d878a7f3b24d869ce1f5f6a58d82884957963f2704b366a3633c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "b670c75d",
+          "sha256": "f08d669e771b433fce815aa5dfeb0e7c040cf9b41739d9930c9ada477832b5e4"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "757edbed",
+          "sha256": "30aff38754da6566cda1b4fec87645c83130bba85ed7a43554e720a708a770bb"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "35fcbed7",
+          "sha256": "de3d7dd1bbd0480106dd076a315608a568e61edc8d6231c07f9f26aca0fb5986"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-large.json",
+          "size": 6554,
+          "crc32": "0795c882",
+          "sha256": "e02413000777d8885bf14af7d0950415089d23c6ee868731b63b2d1f32b09aab"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-large.json",
+          "size": 359,
+          "crc32": "9f30030f",
+          "sha256": "bf69af20dcf22b3d066efd74b4e8b2a70dc681b1a73661e3322f24d794cd0031"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1285,
+          "crc32": "39f99737",
+          "sha256": "b53a55ef4737ad72750dca2d92972c3017a471eb423431b09d8bc61e8d6d0118"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 10874,
+          "crc32": "defdd91d",
+          "sha256": "4ba030d24766ddbacf0af3ec0c1c079ee42fed84ff9063063e4efe48050e20f8"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13362164560,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2MjE2NDU2MA==",
+        "name": "top-pr140-access-current-candidates-phone-1957ac54bf9e476572bf9af407998aea800061eb",
+        "size_in_bytes": 6475365,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362164560",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13362164560/zip",
+        "expired": false,
+        "digest": "sha256:dee3654a79fa4e43e71cadc85165e08dabc9e9b9f56f95d8a8d28be3705cc70e",
+        "created_at": "2026-11-04T21:06:41Z",
+        "updated_at": "2026-11-04T21:06:41Z",
+        "expires_at": "2026-11-18T21:06:39Z",
+        "workflow_run": {
+          "id": 41911242352,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-access-current-20261104",
+          "head_sha": "1957ac54bf9e476572bf9af407998aea800061eb"
+        }
+      },
+      "archiveSha256": "dee3654a79fa4e43e71cadc85165e08dabc9e9b9f56f95d8a8d28be3705cc70e",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/phone/access-current/firestore-debug.log",
+          "size": 29511,
+          "crc32": "641012cb",
+          "sha256": "4613e2d3c250172825da54a0149f09224bc82b3cde21a088b26fa3be665c64ca"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/access-current/result.json",
+          "size": 164,
+          "crc32": "ce99f78e",
+          "sha256": "d6db76ec4243d0702086b03fff611cd209bc77ba6606387014b68d625806699f"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/002-propose-campaign-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/_cohorts/phone/access-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/002-propose-campaign-1-star-envoy.png",
+          "size": 103562,
+          "crc32": "5ee4bdb6",
+          "sha256": "7279bfb29bd9b335812f2952bf7458613b6fd453fe9f525be52b56917155d960"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/003-created-faction-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/003-created-faction-1-star-envoy.png",
+          "size": 235008,
+          "crc32": "a3fb5f6b",
+          "sha256": "9163fe083cfb2acf035b56c084f9cc3cc0eb7e9bc166e9bac71b52414b3377fe"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/004-choose-portrait-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/004-choose-portrait-1-star-envoy.png",
+          "size": 223856,
+          "crc32": "7b9b8074",
+          "sha256": "2e2eaf3c008aa0dc355cc3252487f16c8e57ad4027d0a376ced6681a4db1c280"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/005-review-faction-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/005-review-faction-1-star-envoy.png",
+          "size": 232875,
+          "crc32": "25a91e6a",
+          "sha256": "6b5a77f2421c997c7e51aea4bce245111c06a18ca05fe96ada1c883b6f0d5316"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/006-review-rules-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/006-review-rules-1-star-envoy.png",
+          "size": 256707,
+          "crc32": "072047e4",
+          "sha256": "aa7eae5407334a93a44f8b4e8dab76f09ec75f0573a36f7ff5c4c19b2125d442"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/007-read-full-briefing-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+          "size": 170517,
+          "crc32": "e88d52d2",
+          "sha256": "00391f3e23204d94339ca26358e1ce46ec2426e9f74b387e2a24f36c9cb5c6c9"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/008-seat-confirmed-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+          "size": 297361,
+          "crc32": "01d829b1",
+          "sha256": "51381526536b11d8d5eec89655bf5dfe76ff5a83c631f82ce924e6ef4cdef954"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/009-waiting-entry-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/009-waiting-entry-1-star-envoy.png",
+          "size": 512281,
+          "crc32": "6666b5df",
+          "sha256": "d55634f02a301e26c04a5fcbbc34ee4febcbcf678285e61a1f432249f00b8ea0"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/010-identity-focus-return-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+          "size": 512281,
+          "crc32": "6666b5df",
+          "sha256": "d55634f02a301e26c04a5fcbbc34ee4febcbcf678285e61a1f432249f00b8ea0"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/011-campaign-directory-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/011-campaign-directory-1-star-envoy.png",
+          "size": 151195,
+          "crc32": "b8e92326",
+          "sha256": "0216bbeb5b83ccd129a66807be0090b9d316ef73c3269ed8caf1370ca05851fa"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/012-recover-exact-campaign-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+          "size": 315099,
+          "crc32": "abf69c21",
+          "sha256": "a6325c233bf5878b1ccb3ac381892fa608df054a535fbaeba4899df3f0e89f24"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/013-reload-membership-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/013-reload-membership-1-star-envoy.png",
+          "size": 103719,
+          "crc32": "4115e07e",
+          "sha256": "5d0ca0f70f9d616682e2b008b3ac82e03c3e58cf534c04784651f7d6c7f51a05"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/014-roster-focus-return-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+          "size": 315056,
+          "crc32": "4937aeac",
+          "sha256": "98dc241965a627ab06af90fc048fa5c5ca82269be94a91f0181604e007e4d972"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/015-release-seat-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "b00e4e0c",
+          "sha256": "3bed7fcba03cfebee4419a68706913e5c878d295321fba58f343c3539ebe4263"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/015-release-seat-1-star-envoy.png",
+          "size": 233919,
+          "crc32": "96d4e1d2",
+          "sha256": "10b61382a13319e0989df0484e2477a5743228d4a456dd56b8784237d3481b5d"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/016-released-membership-reload-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+          "size": 135114,
+          "crc32": "056a1afb",
+          "sha256": "e414ab1df938031f7766aa02cc3eb30205da20aff8cb3d7572985ebbf000ebe9"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/README.md",
+          "size": 8142,
+          "crc32": "1315b98d",
+          "sha256": "f0d7a1ac5eb30f4ef1fe5de67ff3cb4a8a2ce39c72e0c20f92a54ecd26f9eb6b"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/phone/linux-arm64/story.json",
+          "size": 10840,
+          "crc32": "54862dc1",
+          "sha256": "f029366cf1b58df4027dbc5023facc7e2187ea20b7cc8d89894038c11533281f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/002-assigned-chart-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/002-assigned-chart-1-star-envoy.png",
+          "size": 289176,
+          "crc32": "015ac38d",
+          "sha256": "321afe851a9ffdc4e2301d8019bf443a282a2c94aba50cd88ce790c1ca63ded9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/003-filter-o-stars-1-star-envoy.layout.json",
+          "size": 2065,
+          "crc32": "f2a8068a",
+          "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+          "size": 55727,
+          "crc32": "713c913f",
+          "sha256": "f0c7ea8388cb735bf258bcc6128a3b1693ed5446525d1abb8e7ecaf2e461a755"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/004-expand-camera-controls-1-star-envoy.layout.json",
+          "size": 2065,
+          "crc32": "f2a8068a",
+          "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "size": 49067,
+          "crc32": "2ba86822",
+          "sha256": "5315cfe9ecd7e5dea2bb233fb6da2a34177cc51b0c12282550ad62767ef07a87"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.layout.json",
+          "size": 2065,
+          "crc32": "f2a8068a",
+          "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "size": 293731,
+          "crc32": "9ef86789",
+          "sha256": "59025fd442e397ea3f5ea4964222a496a8497cfffc1d3d54584078978b1ad196"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/006-overview-1-star-envoy.layout.json",
+          "size": 2065,
+          "crc32": "f2a8068a",
+          "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/006-overview-1-star-envoy.png",
+          "size": 294022,
+          "crc32": "7b6043d6",
+          "sha256": "3d153dee6d26cef98eb444e7e94eaaee08cd3d5d717a4be8dc0dadecf5e7606c"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/007-select-rana-1-star-envoy.layout.json",
+          "size": 2065,
+          "crc32": "f2a8068a",
+          "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/007-select-rana-1-star-envoy.png",
+          "size": 294057,
+          "crc32": "2a7a79fb",
+          "sha256": "9d70879a2cd56cacca9850a7c9b5ffc6c5601928496dd7f5ef177958e11726c0"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/008-label-inspector-boundary-1-star-envoy.layout.json",
+          "size": 2065,
+          "crc32": "f2a8068a",
+          "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/008-label-inspector-boundary-1-star-envoy.png",
+          "size": 258224,
+          "crc32": "bfbf4262",
+          "sha256": "31dc15fdd122abaadba839e6843d9c98f6583142bcc40b20c11f18cdedda34b1"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/009-reload-chart-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/009-reload-chart-1-star-envoy.png",
+          "size": 289176,
+          "crc32": "015ac38d",
+          "sha256": "321afe851a9ffdc4e2301d8019bf443a282a2c94aba50cd88ce790c1ca63ded9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/README.md",
+          "size": 6502,
+          "crc32": "be86ff80",
+          "sha256": "42bdc3774c2d3f0c9ba26e392ed986fa47364787d8dff35b3f6b13b4007e69fb"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/phone/linux-arm64/story.json",
+          "size": 8566,
+          "crc32": "37605f04",
+          "sha256": "75ca241f41815c7b625f8227b9461c66c552a2f62d81cf4143f326c5c68b80ab"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-05c30-waiting-campaign-and-leaves-phone/attachments/Illustrated-story-ef4ec6f1b59f7aad2b09a395270f03742dca888d.md",
+          "size": 8142,
+          "crc32": "1315b98d",
+          "sha256": "f0d7a1ac5eb30f4ef1fe5de67ff3cb4a8a2ce39c72e0c20f92a54ecd26f9eb6b"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-0655f-ntity-readiness-before-Play-phone/attachments/Illustrated-story-d65f95ca3615b9a1f6329f4929394979851547ca.md",
+          "size": 3110,
+          "crc32": "aab94aa4",
+          "sha256": "7ed73f9471de7554af5c37d9ae0ad713e0a45dc0c70674bc0a108498b9b6d674"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-c0ddd-nspects-a-clipped-map-label-phone/attachments/Illustrated-story-d8bc0003ebab3124bc850da08646e8784715bf40.md",
+          "size": 6502,
+          "crc32": "be86ff80",
+          "sha256": "42bdc3774c2d3f0c9ba26e392ed986fa47364787d8dff35b3f6b13b4007e69fb"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/003-entry-waits-for-profile-1-star-envoy.layout.json",
+          "size": 2069,
+          "crc32": "8c4d0071",
+          "sha256": "3b4e4b239403068e303c4bcbccbc7b20cb447379015d5aef53d483cb5e24bc3f"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "size": 518700,
+          "crc32": "2f0b526e",
+          "sha256": "d7ff5ecfa83fbf997ad0fb2319fdbbe55575964d6928df6d1d2d44ee95e93f73"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/005-ready-campaign-selection-1-star-envoy.layout.json",
+          "size": 2067,
+          "crc32": "65916322",
+          "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "size": 135114,
+          "crc32": "056a1afb",
+          "sha256": "e414ab1df938031f7766aa02cc3eb30205da20aff8cb3d7572985ebbf000ebe9"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/006-saved-identity-unchanged-1-star-envoy.layout.json",
+          "size": 112017,
+          "crc32": "50fcd0e3",
+          "sha256": "d2cc29ed4db0c67bbdb3b367c4f4e867c03a56a12ac459c14b8ea5b9ba09969c"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "size": 150585,
+          "crc32": "5d3daf48",
+          "sha256": "99e02a3f9269927688b9b16167d11c2a83f0ab4df3101dbeaa4ebacfc341d00f"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/README.md",
+          "size": 3110,
+          "crc32": "aab94aa4",
+          "sha256": "7ed73f9471de7554af5c37d9ae0ad713e0a45dc0c70674bc0a108498b9b6d674"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/renderer.json",
+          "size": 757,
+          "crc32": "32c44c94",
+          "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/phone/linux-arm64/story.json",
+          "size": 4848,
+          "crc32": "23ffe644",
+          "sha256": "b6ef2acf8cb1cd29b4217b8fbf15a43d84a7d62869cc91581bc3e3b0344dd127"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "63f72095",
+          "sha256": "48e1446686d65c6fec68c1cfe19276943e50631fe5511fe0679d852bcf873eca"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "a030446f",
+          "sha256": "e3bf96f830dfc35c490008c69c87884951c3cbafa71cf7c1122c9afa4c67178c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2723,
+          "crc32": "017e67cb",
+          "sha256": "1140e4b4b17fe3774ee6d0d7bd2c507dd434f5cd2d8b809d8b2fcb4a896f1948"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "02a7fe19",
+          "sha256": "a3d001331077a7d3d029d3afddff639d968b943be3cd49075925bfb19cbd4c9c"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "7a000178",
+          "sha256": "7b8fa182a48178ebb9fb7aeb7efe2cdc0dc646792afcd28044e28980784f4ad3"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "e76ed172",
+          "sha256": "c43efd7706bf5f68b0e873a6d77afc433f9ba52ddd9e20ccf1eb7cac811fa240"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-phone.json",
+          "size": 6555,
+          "crc32": "c4a48e3d",
+          "sha256": "457ba8aba8d685d63a9fa16a4bd4245accaf21c10c4c7dafc7f06778de693c48"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-phone.json",
+          "size": 359,
+          "crc32": "6d1a30f7",
+          "sha256": "c47ddc5c57cc79b28a7aedb0a251985d8099bb668ef31106aa8b7e46f2b7475a"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1285,
+          "crc32": "39f99737",
+          "sha256": "b53a55ef4737ad72750dca2d92972c3017a471eb423431b09d8bc61e8d6d0118"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 10876,
+          "crc32": "28930ee1",
+          "sha256": "80c9b8dce769a5daa47ae70efab4e3f93764e113cb2ba96e0b3664187c4db408"
+        }
+      ]
+    },
+    {
+      "artifact": {
+        "id": 13363990865,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM2Mzk5MDg2NQ==",
+        "name": "top-pr140-access-current-candidates-short-1957ac54bf9e476572bf9af407998aea800061eb",
+        "size_in_bytes": 18753095,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13363990865",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13363990865/zip",
+        "expired": false,
+        "digest": "sha256:9e9c2e6dce2093afae5d00234cd572b452eb97c5fd86419015d70e4ab0fb9dd2",
+        "created_at": "2026-11-04T21:06:44Z",
+        "updated_at": "2026-11-04T21:06:44Z",
+        "expires_at": "2026-11-18T21:06:42Z",
+        "workflow_run": {
+          "id": 41911242352,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-access-current-20261104",
+          "head_sha": "1957ac54bf9e476572bf9af407998aea800061eb"
+        }
+      },
+      "archiveSha256": "9e9c2e6dce2093afae5d00234cd572b452eb97c5fd86419015d70e4ab0fb9dd2",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "entries": [
+        {
+          "path": "test-results/stories/_cohorts/short/access-current/firestore-debug.log",
+          "size": 30370,
+          "crc32": "bb581fcf",
+          "sha256": "4a90b9467d23ae80f170befeff5cc951f691de5527f381fd4704240295961779"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/access-current/result.json",
+          "size": 164,
+          "crc32": "8dcedcd7",
+          "sha256": "1e90d73bc1bd40f1ed40ddc283e4919fb70d83544a0bc21de7a6073249538b93"
+        },
+        {
+          "path": "test-results/stories/_cohorts/short/access-current/playwright.json",
+          "size": 45,
+          "crc32": "e1bbbed0",
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/002-propose-campaign-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/002-propose-campaign-1-star-envoy.png",
+          "size": 205824,
+          "crc32": "5e11139d",
+          "sha256": "ef01d637689aec0f2065a6b44d5cb746f07b5e117b9cb2077119651a750fa411"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/003-created-faction-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/003-created-faction-1-star-envoy.png",
+          "size": 624569,
+          "crc32": "4fcf1a05",
+          "sha256": "350e3e6eae4044eeae2ecc489047a303f8bb5823835ee5cf83b1c13da15d35af"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/004-choose-portrait-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/004-choose-portrait-1-star-envoy.png",
+          "size": 472865,
+          "crc32": "610de2af",
+          "sha256": "13e1b8ca45265b2d509278e6f6948783268770c9edbe4331933542658400f133"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/005-review-faction-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/005-review-faction-1-star-envoy.png",
+          "size": 625560,
+          "crc32": "084f7288",
+          "sha256": "a02271b66ced7cec36fe803e318e9a73240bcc5b784ba4401aab6134b9b709e8"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/006-review-rules-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/006-review-rules-1-star-envoy.png",
+          "size": 739296,
+          "crc32": "0b154cca",
+          "sha256": "07c370d9d9181a55481a6ed79bd27b1ee55a0a50a8e498496789f12c9e804803"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/007-read-full-briefing-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/007-read-full-briefing-1-star-envoy.png",
+          "size": 696182,
+          "crc32": "836e8eed",
+          "sha256": "f87d56cb03fd91cd249e87ff7de027e065499c49eae84e434d68c08e6138aad9"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/008-seat-confirmed-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/008-seat-confirmed-1-star-envoy.png",
+          "size": 1038683,
+          "crc32": "1b7174b8",
+          "sha256": "d46ac168a39ad65ce6d5b6efec8dc22b86f3e429515f619056eb922339b5047c"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/009-waiting-entry-1-star-envoy.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/009-waiting-entry-1-star-envoy.png",
+          "size": 1416947,
+          "crc32": "a3262636",
+          "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/010-identity-focus-return-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/010-identity-focus-return-1-star-envoy.png",
+          "size": 1416947,
+          "crc32": "a3262636",
+          "sha256": "87614a5b2f0dc36d8cd7bc0ed876b0c7446832a548ac41274695aba2f0526929"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/011-campaign-directory-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/011-campaign-directory-1-star-envoy.png",
+          "size": 297770,
+          "crc32": "9ad18a06",
+          "sha256": "a17dd7b933127b7c4d91fae8dfb30eaf049c903dfa43eb4391bec3f7a90e74f0"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/012-recover-exact-campaign-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/012-recover-exact-campaign-1-star-envoy.png",
+          "size": 1075875,
+          "crc32": "47373bf5",
+          "sha256": "07c405c7d27cf04e61b05fdee7d3a3e910e0bed9e89555e07e3a96176a634d16"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/013-reload-membership-1-star-envoy.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/013-reload-membership-1-star-envoy.png",
+          "size": 748228,
+          "crc32": "73b9f972",
+          "sha256": "c94404654d2a59d3712d20965b96ef8c4be1682c5a079f96dded8ab28b1cf4f1"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/014-roster-focus-return-1-star-envoy.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/014-roster-focus-return-1-star-envoy.png",
+          "size": 1075794,
+          "crc32": "dfb38a16",
+          "sha256": "421bd514261c56fd5aee15c5ebb1dcbe00cc7158ab022058d672f1aa9441d71a"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/015-release-seat-1-star-envoy.layout.json",
+          "size": 2070,
+          "crc32": "3125d098",
+          "sha256": "7645129b240a0629383b2eb5b8701d867f562322f200299925d2ce3ffc539554"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/015-release-seat-1-star-envoy.png",
+          "size": 623412,
+          "crc32": "7351d495",
+          "sha256": "f326293ac28ed6167eddd93cafc830e06cfeb8e425f5f65cd10744e7f5f6a40c"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/016-released-membership-reload-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/016-released-membership-reload-1-star-envoy.png",
+          "size": 272670,
+          "crc32": "a1b0e298",
+          "sha256": "c1645c7d4bf5b21b81c0ea1861448572577ef16f70a0c6bf093d4f6878c616ee"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/README.md",
+          "size": 8142,
+          "crc32": "3250b851",
+          "sha256": "47a4513b2b0372aaf6763a24a5124f9d52d227db5d5018b335254f8db94ecc64"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+          "size": 10841,
+          "crc32": "d0a22b6e",
+          "sha256": "9e6f056f27922f41d14dbbc4d15c6413f25da143809ffefd0fdc34b69a25dd29"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/002-assigned-chart-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/002-assigned-chart-1-star-envoy.png",
+          "size": 717292,
+          "crc32": "a2e22d54",
+          "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/003-filter-o-stars-1-star-envoy.layout.json",
+          "size": 2066,
+          "crc32": "fe23613a",
+          "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+          "size": 561046,
+          "crc32": "c616661d",
+          "sha256": "905055a8a41d09bc41c3ad41e4cdff37b312e1d53cc75a4c9626bb264540f020"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/004-expand-camera-controls-1-star-envoy.layout.json",
+          "size": 2066,
+          "crc32": "fe23613a",
+          "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+          "size": 564833,
+          "crc32": "367d719b",
+          "sha256": "58e4c3f0d0d3c74f08026e3a34f41e05a9314903669cb2b172e6b45c8dacc97f"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/005-keyboard-orbit-1-star-envoy.layout.json",
+          "size": 2066,
+          "crc32": "fe23613a",
+          "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+          "size": 716935,
+          "crc32": "3ab2d5ee",
+          "sha256": "b57c8d3aee17bb0ecb1e12aee16b5586baf5aa85fd578b7542cf3f7484aa8925"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/006-overview-1-star-envoy.layout.json",
+          "size": 2066,
+          "crc32": "fe23613a",
+          "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/006-overview-1-star-envoy.png",
+          "size": 717292,
+          "crc32": "a2e22d54",
+          "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/007-select-rana-1-star-envoy.layout.json",
+          "size": 2066,
+          "crc32": "fe23613a",
+          "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/007-select-rana-1-star-envoy.png",
+          "size": 716817,
+          "crc32": "dad9b249",
+          "sha256": "440cf07bcd26545e7ed4850dd5a2093e74731fc580aa2a22a7e77d233271c900"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/008-reload-chart-1-star-envoy.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/008-reload-chart-1-star-envoy.png",
+          "size": 717292,
+          "crc32": "a2e22d54",
+          "sha256": "52d84ef750c2790364455da49f3c332205c01917e0267ff99f90501c3e38a875"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/README.md",
+          "size": 5809,
+          "crc32": "3a8a7f86",
+          "sha256": "442209627dc7924b01542a9d5019ba4c06b2ab64304dc774596d91f03d6f7ae4"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+          "size": 7818,
+          "crc32": "a2903d8a",
+          "sha256": "4cc6e84e3634e81f919a1f93ae2b67921f32d3bff3ea1ddbc8affb0b4db1a83d"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-05c30-waiting-campaign-and-leaves-short/attachments/Illustrated-story-756818e75fb93c31bec16eef7d1d2f058d768bcd.md",
+          "size": 8142,
+          "crc32": "3250b851",
+          "sha256": "47a4513b2b0372aaf6763a24a5124f9d52d227db5d5018b335254f8db94ecc64"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-0655f-ntity-readiness-before-Play-short/attachments/Illustrated-story-45fe5f27512f1090e75f37d9994279d58d27b141.md",
+          "size": 3110,
+          "crc32": "8c50e179",
+          "sha256": "67a7a5d6c86181fdf53cf956145fd48c98082373858355b2e7fa1333a05abd9d"
+        },
+        {
+          "path": "test-results/stories/e2e-005-campaign-access-na-c0ddd-nspects-a-clipped-map-label-short/attachments/Illustrated-story-ed66d736367b344297ca18ea523c2f24668ee206.md",
+          "size": 5809,
+          "crc32": "3a8a7f86",
+          "sha256": "442209627dc7924b01542a9d5019ba4c06b2ab64304dc774596d91f03d6f7ae4"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/003-entry-waits-for-profile-1-star-envoy.layout.json",
+          "size": 2070,
+          "crc32": "0d669ee5",
+          "sha256": "d4107e3489c5f37129aa2ce1aa2a1f6f7651b13e1736a44753b880173cdcd3b6"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/003-entry-waits-for-profile-1-star-envoy.png",
+          "size": 1431988,
+          "crc32": "c1402897",
+          "sha256": "3cba615c21a4290390a765a76cb2d3f5842a0230da83f1d70a6db12c2a5c2700"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/005-ready-campaign-selection-1-star-envoy.layout.json",
+          "size": 2068,
+          "crc32": "528235ea",
+          "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/005-ready-campaign-selection-1-star-envoy.png",
+          "size": 272670,
+          "crc32": "a1b0e298",
+          "sha256": "c1645c7d4bf5b21b81c0ea1861448572577ef16f70a0c6bf093d4f6878c616ee"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy.layout.json",
+          "size": 115746,
+          "crc32": "ad1cb12e",
+          "sha256": "ea8b89255dde6d246274b6ecd0b29857c15299420dafd524986c835b148a56bd"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/006-saved-identity-unchanged-1-star-envoy.png",
+          "size": 970235,
+          "crc32": "21248760",
+          "sha256": "4018f71243fffd5ec27e9a74223eb05dbc41f0db73818234a18954361d1187aa"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/README.md",
+          "size": 3110,
+          "crc32": "8c50e179",
+          "sha256": "67a7a5d6c86181fdf53cf956145fd48c98082373858355b2e7fa1333a05abd9d"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/renderer.json",
+          "size": 758,
+          "crc32": "0decb708",
+          "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+        },
+        {
+          "path": "test-results/stories/entry-profile-readiness/short/linux-arm64/story.json",
+          "size": 4849,
+          "crc32": "c7398914",
+          "sha256": "dd5b9c90f03f94dd964a16f98e7ebbf8187e1f8cfec5cc856ed32f961465b444"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/browser-path.txt",
+          "size": 49,
+          "crc32": "1e066675",
+          "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/containerd.log",
+          "size": 11788,
+          "crc32": "7b534c9c",
+          "sha256": "601bf1d105230ce296e3fc44a5792912dfd7af186ffae38374b32bd6859cde7e"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine-info.log",
+          "size": 1790,
+          "crc32": "99db2162",
+          "sha256": "0d99e39e2d3506ba347fc30f329022ead9b6fbe996cfd1d3ac94892a0a8289a3"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/engine.log",
+          "size": 2727,
+          "crc32": "8fd29b2b",
+          "sha256": "79c6787991456d0b982946004fc63c206cf73ff05ce79c6b849322ac2f1407c9"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-identity.txt",
+          "size": 144,
+          "crc32": "ff699987",
+          "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-inspect.json",
+          "size": 2411,
+          "crc32": "f68634c1",
+          "sha256": "e97fa5c5556b55996db3c3ef219ae371738c0c15a7963df3943ca00966b1136e"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/image-load.log",
+          "size": 49,
+          "crc32": "8adde11d",
+          "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+          "size": 1491,
+          "crc32": "baaf5796",
+          "sha256": "a714d6bdb6958337099458d0620eb6387bcc72ea2ce0fabdecc698ffc3942f1f"
+        },
+        {
+          "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+          "size": 6729,
+          "crc32": "8d248125",
+          "sha256": "cccd60b18b99e98acf608bde3d4e18acfad46ca058ceedca40d316534f04639e"
+        },
+        {
+          "path": "ci-evidence/top-candidates/collection-short.json",
+          "size": 6555,
+          "crc32": "494470ae",
+          "sha256": "80adadc4f5ca84dbfa440227e0b9ceffc1b03466f907f6fe14293ac82ccbb526"
+        },
+        {
+          "path": "ci-evidence/top-candidates/outcome-short.json",
+          "size": 359,
+          "crc32": "58dd8a5c",
+          "sha256": "4ec3e3a9266023ad9cbd049309d28603231bae37931d6be083ef3a1839184d72"
+        },
+        {
+          "path": "ci-evidence/top-candidates/request.json",
+          "size": 1285,
+          "crc32": "39f99737",
+          "sha256": "b53a55ef4737ad72750dca2d92972c3017a471eb423431b09d8bc61e8d6d0118"
+        },
+        {
+          "path": "database-debug.log",
+          "size": 10873,
+          "crc32": "eba50b72",
+          "sha256": "095cd5bd0d4bf05626ca0e3c5e363d0329ad722c9106b7056cbf760314a6139f"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "story": "campaign-admission-navigation",
+      "viewport": "desktop",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-admission-navigation/desktop/linux-arm64/story.json",
+      "views": 15
+    },
+    {
+      "story": "campaign-chart-navigation",
+      "viewport": "desktop",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/campaign-chart-navigation/desktop/linux-arm64/story.json",
+      "views": 7
+    },
+    {
+      "story": "entry-profile-readiness",
+      "viewport": "desktop",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/desktop/test-results/stories/entry-profile-readiness/desktop/linux-arm64/story.json",
+      "views": 3
+    },
+    {
+      "story": "campaign-admission-navigation",
+      "viewport": "large",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-admission-navigation/large/linux-arm64/story.json",
+      "views": 15
+    },
+    {
+      "story": "campaign-chart-navigation",
+      "viewport": "large",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/campaign-chart-navigation/large/linux-arm64/story.json",
+      "views": 7
+    },
+    {
+      "story": "entry-profile-readiness",
+      "viewport": "large",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/large/test-results/stories/entry-profile-readiness/large/linux-arm64/story.json",
+      "views": 3
+    },
+    {
+      "story": "campaign-admission-navigation",
+      "viewport": "phone",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/phone/test-results/stories/campaign-admission-navigation/phone/linux-arm64/story.json",
+      "views": 15
+    },
+    {
+      "story": "campaign-chart-navigation",
+      "viewport": "phone",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/phone/test-results/stories/campaign-chart-navigation/phone/linux-arm64/story.json",
+      "views": 8
+    },
+    {
+      "story": "entry-profile-readiness",
+      "viewport": "phone",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/phone/test-results/stories/entry-profile-readiness/phone/linux-arm64/story.json",
+      "views": 3
+    },
+    {
+      "story": "campaign-admission-navigation",
+      "viewport": "short",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-admission-navigation/short/linux-arm64/story.json",
+      "views": 15
+    },
+    {
+      "story": "campaign-chart-navigation",
+      "viewport": "short",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/campaign-chart-navigation/short/linux-arm64/story.json",
+      "views": 7
+    },
+    {
+      "story": "entry-profile-readiness",
+      "viewport": "short",
+      "source": {
+        "commit": "1957ac54bf9e476572bf9af407998aea800061eb",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/navigation.spec.ts",
+        "specSha256": "3fe8278c951d16ef80224abe48b5b8728b3aac1dfbb9e4d9668dd80411c42850"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-access-current-41911242352/short/test-results/stories/entry-profile-readiness/short/linux-arm64/story.json",
+      "views": 3
+    }
+  ],
+  "images": 101,
+  "reused": 29,
+  "unreviewedImages": 72,
+  "unreviewedHashes": 61
+}

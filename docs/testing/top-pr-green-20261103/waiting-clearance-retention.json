@@ -1,0 +1,112 @@
+{
+  "run": 41876749323,
+  "status": "success",
+  "retention": "All four original ZIPs verified in memory against API size/SHA, every entry CRC/path/size checked. Only PNG/JSON/MD retained. No duplicate ZIP on disk.",
+  "artifacts": [
+    {
+      "viewport": "phone",
+      "artifact": {
+        "id": 13348710174,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0ODcxMDE3NA==",
+        "name": "top-pr140-waiting-clearance-candidates-phone-138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "size_in_bytes": 5063792,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13348710174",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13348710174/zip",
+        "expired": false,
+        "digest": "sha256:2733e08ee0d1dcbb45893dda141827a268be16a12faeb69cd2f5357d5012a991",
+        "created_at": "2026-11-04T17:30:34Z",
+        "updated_at": "2026-11-04T17:30:34Z",
+        "expires_at": "2026-11-18T17:30:33Z",
+        "workflow_run": {
+          "id": 41876749323,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-waiting-clearance-20261104",
+          "head_sha": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219"
+        }
+      },
+      "archiveSha256": "2733e08ee0d1dcbb45893dda141827a268be16a12faeb69cd2f5357d5012a991",
+      "entries": 64,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/phone-verified.json"
+    },
+    {
+      "viewport": "desktop",
+      "artifact": {
+        "id": 13348341563,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0ODM0MTU2Mw==",
+        "name": "top-pr140-waiting-clearance-candidates-desktop-138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "size_in_bytes": 23554012,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13348341563",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13348341563/zip",
+        "expired": false,
+        "digest": "sha256:d7b6be1f6a0ebc3327f18cb4d9f29207111f6d6612b0ab0d9711422b757a1129",
+        "created_at": "2026-11-04T17:36:30Z",
+        "updated_at": "2026-11-04T17:36:30Z",
+        "expires_at": "2026-11-18T17:36:28Z",
+        "workflow_run": {
+          "id": 41876749323,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-waiting-clearance-20261104",
+          "head_sha": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219"
+        }
+      },
+      "archiveSha256": "d7b6be1f6a0ebc3327f18cb4d9f29207111f6d6612b0ab0d9711422b757a1129",
+      "entries": 64,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/desktop-verified.json"
+    },
+    {
+      "viewport": "large",
+      "artifact": {
+        "id": 13347788394,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0Nzc4ODM5NA==",
+        "name": "top-pr140-waiting-clearance-candidates-large-138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "size_in_bytes": 115155450,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13347788394",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13347788394/zip",
+        "expired": false,
+        "digest": "sha256:cdde245cdf5652376c1ada5962ccda4443ef3cc2c336a5695168c0195ca92595",
+        "created_at": "2026-11-04T17:37:53Z",
+        "updated_at": "2026-11-04T17:37:53Z",
+        "expires_at": "2026-11-18T17:37:50Z",
+        "workflow_run": {
+          "id": 41876749323,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-waiting-clearance-20261104",
+          "head_sha": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219"
+        }
+      },
+      "archiveSha256": "cdde245cdf5652376c1ada5962ccda4443ef3cc2c336a5695168c0195ca92595",
+      "entries": 64,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large-verified.json"
+    },
+    {
+      "viewport": "short",
+      "artifact": {
+        "id": 13348495507,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0ODQ5NTUwNw==",
+        "name": "top-pr140-waiting-clearance-candidates-short-138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+        "size_in_bytes": 14569216,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13348495507",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13348495507/zip",
+        "expired": false,
+        "digest": "sha256:33991220fb8022d3d4e5a398fd938f6e94b6d80fb37a4cd56cc9f74c60439b00",
+        "created_at": "2026-11-04T17:33:23Z",
+        "updated_at": "2026-11-04T17:33:23Z",
+        "expires_at": "2026-11-18T17:33:22Z",
+        "workflow_run": {
+          "id": 41876749323,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-waiting-clearance-20261104",
+          "head_sha": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219"
+        }
+      },
+      "archiveSha256": "33991220fb8022d3d4e5a398fd938f6e94b6d80fb37a4cd56cc9f74c60439b00",
+      "entries": 64,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/short-verified.json"
+    }
+  ],
+  "visual": "Four corrected006 waiting-rail images viewed and approved;27 exact previous approved hashes reused; remaining49 require inspection."
+}

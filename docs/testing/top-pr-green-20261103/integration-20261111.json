@@ -1,0 +1,15 @@
+{
+  "previousTarget": "8eeea5e6315e309f9d883ed3ef3fcf50be2340fe",
+  "recoveryBeforeLog": "a033ab9925b298dc28d9f53c9a2f47632a63801b",
+  "gates": [
+    "bun run check",
+    "bun run lint",
+    "bun run test",
+    "bun run test:story-policy"
+  ],
+  "exitCode": 0,
+  "logSha256": "6b275babebf905aaa766ffd25af6632b9c7864522e40d400ec5e8c636aa60a6b",
+  "requiredWorkflowScriptsNixDiff": "empty",
+  "integration": "normal fast-forward; no merge/rewrite",
+  "limitation": "55 historical first-failing pixel reference files remain unchanged; source repairs may affect some, but no green claim. Required exact CI must classify remaining differences."
+}

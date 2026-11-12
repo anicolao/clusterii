@@ -1,0 +1,112 @@
+{
+  "run": 43136140057,
+  "conclusion": "success",
+  "allFourJobs": "success",
+  "request": "c7fd2d3d79616039922fb380e6a3de061a054957",
+  "target": "0c56cdec",
+  "artifacts": [
+    {
+      "viewport": "phone",
+      "artifact": {
+        "id": 13908485801,
+        "node_id": "MDg6QXJ0aWZhY3QxMzkwODQ4NTgwMQ==",
+        "name": "top-pr140-menu-access-candidates-phone-c7fd2d3d79616039922fb380e6a3de061a054957",
+        "size_in_bytes": 4776523,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13908485801",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13908485801/zip",
+        "expired": false,
+        "digest": "sha256:7c111fba27b91fb80225352e257030513891b14c03156f8b5d5f24cb8dd2fc3b",
+        "created_at": "2026-11-12T01:51:42Z",
+        "updated_at": "2026-11-12T01:51:42Z",
+        "expires_at": "2026-11-26T01:51:41Z",
+        "workflow_run": {
+          "id": 43136140057,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-menu-access-20261112",
+          "head_sha": "c7fd2d3d79616039922fb380e6a3de061a054957"
+        }
+      },
+      "retention": "Verified once in memory; no local ZIP saved",
+      "retainedBytes": 4879631
+    },
+    {
+      "viewport": "desktop",
+      "artifact": {
+        "id": 13907952323,
+        "node_id": "MDg6QXJ0aWZhY3QxMzkwNzk1MjMyMw==",
+        "name": "top-pr140-menu-access-candidates-desktop-c7fd2d3d79616039922fb380e6a3de061a054957",
+        "size_in_bytes": 24494145,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13907952323",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13907952323/zip",
+        "expired": false,
+        "digest": "sha256:1d1e4af89cbcc6f70210ba7c69e83fdfc309abd5779952af945e35d4f2bc28b5",
+        "created_at": "2026-11-12T01:52:07Z",
+        "updated_at": "2026-11-12T01:52:07Z",
+        "expires_at": "2026-11-26T01:52:06Z",
+        "workflow_run": {
+          "id": 43136140057,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-menu-access-20261112",
+          "head_sha": "c7fd2d3d79616039922fb380e6a3de061a054957"
+        }
+      },
+      "retention": "Verified once in memory; no local ZIP saved",
+      "retainedBytes": 24641708
+    },
+    {
+      "viewport": "large",
+      "artifact": {
+        "id": 13908206165,
+        "node_id": "MDg6QXJ0aWZhY3QxMzkwODIwNjE2NQ==",
+        "name": "top-pr140-menu-access-candidates-large-c7fd2d3d79616039922fb380e6a3de061a054957",
+        "size_in_bytes": 120723760,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13908206165",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13908206165/zip",
+        "expired": false,
+        "digest": "sha256:40d0b95c25d3b8a4a451ccf7267acebd5759a95cfe24088f25f8e583e96e901f",
+        "created_at": "2026-11-12T01:53:22Z",
+        "updated_at": "2026-11-12T01:53:22Z",
+        "expires_at": "2026-11-26T01:53:18Z",
+        "workflow_run": {
+          "id": 43136140057,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-menu-access-20261112",
+          "head_sha": "c7fd2d3d79616039922fb380e6a3de061a054957"
+        }
+      },
+      "retention": "Verified once in memory; no local ZIP saved",
+      "retainedBytes": 121204887
+    },
+    {
+      "viewport": "short",
+      "artifact": {
+        "id": 13907942404,
+        "node_id": "MDg6QXJ0aWZhY3QxMzkwNzk0MjQwNA==",
+        "name": "top-pr140-menu-access-candidates-short-c7fd2d3d79616039922fb380e6a3de061a054957",
+        "size_in_bytes": 14343528,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13907942404",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13907942404/zip",
+        "expired": false,
+        "digest": "sha256:3955996bc7412f872e7219a08328cc69fa9ed23047f052cca0352901d5a6ddc4",
+        "created_at": "2026-11-12T01:52:00Z",
+        "updated_at": "2026-11-12T01:52:00Z",
+        "expires_at": "2026-11-26T01:51:59Z",
+        "workflow_run": {
+          "id": 43136140057,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-menu-access-20261112",
+          "head_sha": "c7fd2d3d79616039922fb380e6a3de061a054957"
+        }
+      },
+      "retention": "Verified once in memory; no local ZIP saved",
+      "retainedBytes": 14469368
+    }
+  ],
+  "approval": false,
+  "next": "Compare104 complete images with current reference blobs and inspect all changed unique originals before any import.",
+  "hookNote": "One evidence commit initially rejected two pending continuations. Staged only the first verbatim record, leaving the second unchanged for this distinct evidence commit; checker unchanged."
+}

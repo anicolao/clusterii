@@ -1,0 +1,543 @@
+{
+  "families": [
+    {
+      "viewport": "phone",
+      "manifest": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/story.json",
+      "source": {
+        "commit": "126177a4bc226201e8007c8e20f3c0779da7c8d4",
+        "dirty": true,
+        "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "specSha256": "eac7eaf98af6b2dc8814fd0a3084b646dfb60e113c0476482f8b29e1d808b4ec"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "images": [
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "sha256": "7c76a9d9b63cc2bf52c91345823193a37beeadbc6fcf00ec3072ba91c447c241"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "sha256": "32ed931f44ec740bf72816811e28902640399de3eb6f8a632d92d5f91e3b040c"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "sha256": "6e497dfd66c3051f1bd290ea9688b56683dbb5f64bf739327ed43f1d6f7accb4"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "sha256": "b22c085e84b6d12815043e7f532000da39c0c12d1acc4e2589aeb2f6fd630a2d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/014-read-current-contact-2-contact-watcher.png",
+          "sha256": "e5839f038be35a73e586213903a747855df79a3f97303b9d26b1058ca1851a46"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "sha256": "ff8ff9e82c17187c5b0ca5c5cb8b4113f0a75be3c01ea11ffb25aa2ea6cfe75a"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "sha256": "60013bf859aa2a6097a39267b083e35b844bd059d14304d3ebeda702ed9979e3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "sha256": "60013bf859aa2a6097a39267b083e35b844bd059d14304d3ebeda702ed9979e3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "sha256": "1397e0e20c05f595e794c21c8511d5b6e7d98528e6cfaf41474a80cea252cb70"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "sha256": "8a6dc0a9f9904ec1dca8487f192a149c59f4842a5d84003d06f0355ae40da5a1"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "423ecd5836dd137c631f0212f439ea2d94f7e74695705d70beff1927226559bc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "sha256": "69f90127a3edbc2629b40e0b76f91acbcede6bf2dadbab47315f8e223c0c5093"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "sha256": "e54b9e4603bf4ec7cb7aff10b78f368381f64dbff9305afd8cd53061346dd126"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "sha256": "1397e0e20c05f595e794c21c8511d5b6e7d98528e6cfaf41474a80cea252cb70"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "sha256": "a287883b780a62fc703f6251fb5a9dc1de55de7a79ce48e398871e0a2329f69e"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/phone/darwin-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "sha256": "3e26ecc452b9df610081bd13cb7dcd5b95d79bd33d524cdcaf8325b96c719bac"
+        }
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "manifest": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/story.json",
+      "source": {
+        "commit": "126177a4bc226201e8007c8e20f3c0779da7c8d4",
+        "dirty": true,
+        "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "specSha256": "eac7eaf98af6b2dc8814fd0a3084b646dfb60e113c0476482f8b29e1d808b4ec"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "images": [
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "sha256": "ef6957614ba2c18b0d8ce9faa8dde4c01427530705e0bb24a0a878ab2ef0802d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "sha256": "1b717bbbc1a85d333a2e54c2044b1f1647a89790fe2bd27bd2934610e5c31fbe"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "sha256": "013edefb0d153ea0c163c7ecb3c3ca3fd6974024c76f810039a2c9419afce862"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "sha256": "6d4dcad056c7ff52c0b9458a31b9c35de8a4bae979751a310102d21dad988af0"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "sha256": "489bf110461e03191e1dbbe98da8bf540aba96b1270febbd6b72d53a056df32f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/014-read-current-contact-2-contact-watcher.png",
+          "sha256": "dd64b9dceccaacafb25433c7e0cbb6e761cc7b2242d49dfb8093cc002a3cdb1d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "sha256": "489bf110461e03191e1dbbe98da8bf540aba96b1270febbd6b72d53a056df32f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "sha256": "da0874a7632e7a34556f5432f121c1b06d2d2fd2f10c55eeb8a9c5e53af4d16f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "489bf110461e03191e1dbbe98da8bf540aba96b1270febbd6b72d53a056df32f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "sha256": "dd64b9dceccaacafb25433c7e0cbb6e761cc7b2242d49dfb8093cc002a3cdb1d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "489bf110461e03191e1dbbe98da8bf540aba96b1270febbd6b72d53a056df32f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "sha256": "dd64b9dceccaacafb25433c7e0cbb6e761cc7b2242d49dfb8093cc002a3cdb1d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "sha256": "ef58d3e60200d34f802922b919ccdb203b6499a3cbd0b7d2d37d3561cdf616b9"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "sha256": "c8042b670ef44a39c4eba24d145a32b5bc7cc22482fff3e202acafae26314b3f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "ef58d3e60200d34f802922b919ccdb203b6499a3cbd0b7d2d37d3561cdf616b9"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "sha256": "9f74fb651ed51b1020b21b257ccae4e54abc109cfd8f3319cc15190a27c4aa78"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "ef58d3e60200d34f802922b919ccdb203b6499a3cbd0b7d2d37d3561cdf616b9"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "sha256": "9f74fb651ed51b1020b21b257ccae4e54abc109cfd8f3319cc15190a27c4aa78"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "sha256": "4dc262f79daa580b90fb15e9de03e3529d4526c888eeabde788c2dc5f709af1c"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "sha256": "c8042b670ef44a39c4eba24d145a32b5bc7cc22482fff3e202acafae26314b3f"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "sha256": "b636c3aedd23472b289058241406cfe98094538eeb14f8d09e9c8cab6c7d9f0e"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-after/stories/live-fleet-contacts/desktop/darwin-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "sha256": "894b36d0aa00d1af46a22e4dee94a7d4c0c897a536d768c1d2558b0c5c2281ce"
+        }
+      ]
+    },
+    {
+      "viewport": "short",
+      "manifest": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/story.json",
+      "source": {
+        "commit": "126177a4bc226201e8007c8e20f3c0779da7c8d4",
+        "dirty": true,
+        "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "specSha256": "eac7eaf98af6b2dc8814fd0a3084b646dfb60e113c0476482f8b29e1d808b4ec"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "images": [
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "sha256": "71b769957a40dde019c6bd85464e1e7b5f70a940a387d53ae4ac057348e00587"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "sha256": "1ee17614e92c4da6fbdaacd0efea7fd9b302037d592c6f863bf7c5591f8ab95d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "sha256": "d05a3b78a4e51777896e3bf0741716fffa56bdbf03e562c58907c92dd0ae3d2d"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "sha256": "a4302d0a40600874654d02ab23653e1156461497655867352c56f842bf636219"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "sha256": "ee44dce86611eaa5d692ffbf715485a2af4bb98b3c16019e118f4599cae1fe89"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/014-read-current-contact-2-contact-watcher.png",
+          "sha256": "1fe686d19c405c0023a082701c7a36e038b49a9341577e828d63ed352b498ba1"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "sha256": "ee44dce86611eaa5d692ffbf715485a2af4bb98b3c16019e118f4599cae1fe89"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "sha256": "10cd337d549e643bcd34562f69092a6beffe45fedafaef0bfb039d268459a3d6"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "ee44dce86611eaa5d692ffbf715485a2af4bb98b3c16019e118f4599cae1fe89"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "sha256": "dccdeba3a56ca6a07bb6a1095d9d4a84e9969491d7e042bd97ec1661b2af8209"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "ee44dce86611eaa5d692ffbf715485a2af4bb98b3c16019e118f4599cae1fe89"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "sha256": "dccdeba3a56ca6a07bb6a1095d9d4a84e9969491d7e042bd97ec1661b2af8209"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "sha256": "c72796f937f1692f3f7fe9b2cb43ca35a5512b4ceb63803fa489020b65b6c203"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "sha256": "37abee0273abce38e6af817d30b8900e4607ef90148bc125f0e567caa021203a"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "c72796f937f1692f3f7fe9b2cb43ca35a5512b4ceb63803fa489020b65b6c203"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "sha256": "7d69348c5d28ed794d92d7b7184b7734984e762c7e311d042b965d6c34f1ae82"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "c72796f937f1692f3f7fe9b2cb43ca35a5512b4ceb63803fa489020b65b6c203"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "sha256": "6b0655d17b703e8922708c900f42672eea7ca4104d65171d3b20e79613cf4cf3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "sha256": "b8f04d96b7e4fa39e40b593ae77d56940a16b0e15f2cb7c91e1764d8fbcc2cf1"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "sha256": "37abee0273abce38e6af817d30b8900e4607ef90148bc125f0e567caa021203a"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "sha256": "489b8bf29b7dff6f8dd3d2fd2e8aa9634ca765980345439b62b19925c34795d3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-short/stories/live-fleet-contacts/short/darwin-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "sha256": "bd8afa7ae321d53a864196efbffd9942682c57e9f99b549df8f4f0bf5409f280"
+        }
+      ]
+    },
+    {
+      "viewport": "large",
+      "manifest": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/story.json",
+      "source": {
+        "commit": "126177a4bc226201e8007c8e20f3c0779da7c8d4",
+        "dirty": true,
+        "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "specSha256": "eac7eaf98af6b2dc8814fd0a3084b646dfb60e113c0476482f8b29e1d808b4ec"
+      },
+      "renderer": {
+        "platform": "darwin-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "25.5.0",
+        "browser": "149.0.7827.55",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "images": [
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png",
+          "sha256": "b80750384edab4afa4343f730a0c95093d7e1d1ae9f4f080cc67d3f271da4dfc"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "sha256": "8cd8ab31eeae5b0b7bb4149bb009baf4cb0cc5d0937ed52d8df8f5884de8c8d5"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/011-commit-real-fleet-1-fleet-pathfinder.png",
+          "sha256": "88f2f112ff4e064303e42569163d0c03cac4b6767210ea5ff4ed8a5a57acad89"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "sha256": "3563565da62928a412a10dd5b975e0d36835ccda1972fc548fed90a4f2970e76"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/014-read-current-contact-1-fleet-pathfinder.png",
+          "sha256": "b5cc563fa4038efb556773c31242c0d7757b736dcfcfdf414a800d63d8e95eb2"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/014-read-current-contact-2-contact-watcher.png",
+          "sha256": "cdd4912bc43a506b30f0e63b565dd4f7518456314bc74f6be5acd8f54642c2a3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/015-select-and-resize-contact-1-fleet-pathfinder.png",
+          "sha256": "b5cc563fa4038efb556773c31242c0d7757b736dcfcfdf414a800d63d8e95eb2"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/015-select-and-resize-contact-2-contact-watcher.png",
+          "sha256": "6db14b374e5cbaa72bb3be6907c76be7e9aab2d153fb18acac3317c7f0310e30"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/016-read-current-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "b5cc563fa4038efb556773c31242c0d7757b736dcfcfdf414a800d63d8e95eb2"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/016-read-current-coordinates-age-2-contact-watcher.png",
+          "sha256": "cdd4912bc43a506b30f0e63b565dd4f7518456314bc74f6be5acd8f54642c2a3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/017-read-current-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "b5cc563fa4038efb556773c31242c0d7757b736dcfcfdf414a800d63d8e95eb2"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/017-read-current-coordinates-facts-2-contact-watcher.png",
+          "sha256": "cdd4912bc43a506b30f0e63b565dd4f7518456314bc74f6be5acd8f54642c2a3"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/019-recover-last-seen-record-1-fleet-pathfinder.png",
+          "sha256": "5ab9711f63438dba7d033e4974ec0c29353904c16e73c4421b6b3cd844f3f208"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/019-recover-last-seen-record-2-contact-watcher.png",
+          "sha256": "1ec2bf67592e878d9975deb2daffa6ca6121fa6f84004a64d5f14e7075fba368"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/020-read-retained-coordinates-age-1-fleet-pathfinder.png",
+          "sha256": "5ab9711f63438dba7d033e4974ec0c29353904c16e73c4421b6b3cd844f3f208"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/020-read-retained-coordinates-age-2-contact-watcher.png",
+          "sha256": "be28b7a4ae81ba40b1027aaf0ef726fdc7a9a15baedfe71de84f714dab307013"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
+          "sha256": "5ab9711f63438dba7d033e4974ec0c29353904c16e73c4421b6b3cd844f3f208"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/021-read-retained-coordinates-facts-2-contact-watcher.png",
+          "sha256": "be28b7a4ae81ba40b1027aaf0ef726fdc7a9a15baedfe71de84f714dab307013"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/022-reload-private-contact-history-1-fleet-pathfinder.png",
+          "sha256": "7df7db4f6b7fec27705faa41a1225c9bd68f7b0355a0ee794688fd39789ca666"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/022-reload-private-contact-history-2-contact-watcher.png",
+          "sha256": "1ec2bf67592e878d9975deb2daffa6ca6121fa6f84004a64d5f14e7075fba368"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/023-return-to-chart-by-keyboard-1-contact-watcher.png",
+          "sha256": "13b54ac47492cfd9c2845dd4060046985823347d6b43ccf4739315b04466b29e"
+        },
+        {
+          "path": "/tmp/cluster-contacts-qualifier-large/stories/live-fleet-contacts/large/darwin-arm64/024-review-galaxy-overview-1-contact-watcher.png",
+          "sha256": "e62bdc905a701a4dc80957fe43fe47c701969480e68851cb1efb85111e2f2d10"
+        }
+      ]
+    }
+  ],
+  "productFiles": {
+    "src/lib/components/FleetContacts.svelte": "b332792499a8dd101076e9bc650825517b0050388d5818b934a0589f97aa17e3",
+    "src/lib/galaxy-labels.ts": "e741f0015c4d8a5338675919e249feb22937f1fd20201daf612eaff418cfd554"
+  },
+  "heldLinux": [
+    [
+      "596eb5ca875558b339fe339c213b963f9a5b975b544a28a68558de4a1ba7c0f4",
+      [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+          "story": "live-fleet-contacts",
+          "viewport": "phone",
+          "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-2-contact-watcher.png",
+          "sha256": "596eb5ca875558b339fe339c213b963f9a5b975b544a28a68558de4a1ba7c0f4",
+          "oldSha256": null
+        }
+      ]
+    ],
+    [
+      "a7b6abf69c74c69c1f6dc5193475232fa6b0d56e9766253bd6472ddbb1328598",
+      [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/phone/test-results/stories/live-fleet-contacts/phone/linux-arm64/story.json",
+          "story": "live-fleet-contacts",
+          "viewport": "phone",
+          "reference": "tests/e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/011-commit-real-fleet-2-contact-watcher.png",
+          "sha256": "a7b6abf69c74c69c1f6dc5193475232fa6b0d56e9766253bd6472ddbb1328598",
+          "oldSha256": null
+        }
+      ]
+    ]
+  ],
+  "scope": "All88 complete local originals retained. Four native/large-downscaled empty-contact originals viewed. No Darwin imports, no whole88 visual approval. Linux corrected capture still required."
+}

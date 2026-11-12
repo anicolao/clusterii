@@ -20,7 +20,8 @@ export default defineConfig({
   timeout: 90000,
   outputDir: "test-results/stories",
   updateSnapshots: "none",
-  snapshotPathTemplate: "{testDir}/browser/story-baselines/{arg}{ext}",
+  // Both legacy and numbered-feature names stay inside the diagnostics output.
+  snapshotPathTemplate: "{testDir}/{arg}{ext}",
   grep: process.env.CLUSTER_STORY_FILTER
     ? new RegExp(process.env.CLUSTER_STORY_FILTER)
     : undefined,

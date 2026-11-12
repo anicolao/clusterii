@@ -104,7 +104,9 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
         await page.keyboard.press("Tab");
         await expect(button(page, "Close roster")).toBeFocused();
         await page.keyboard.press("Tab");
-        await expect(button(page, "Leave campaign")).toBeFocused();
+        await expect(
+          roster.getByRole("button", { name: "Leave campaign", exact: true }),
+        ).toBeFocused();
         await page.keyboard.press("Tab");
         await expect(summary).toBeFocused();
         await page.keyboard.press("Tab");
@@ -136,21 +138,29 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
         spec: "The server acknowledges the pause and explicitly stops admissions and scheduled start.",
         check: async () =>
           expect(
-            page.getByRole("status").filter({ hasText: /^Campaign paused\./ }),
+            roster
+              .getByRole("status")
+              .filter({ hasText: /^Campaign paused\./ }),
           ).toHaveText(
             "Campaign paused. Admissions and scheduled start are stopped.",
           ),
       },
       verifications: [
         {
-          spec: "Resume is available, leaving is disabled, the background command rail is inert and the applicant cannot claim a seat.",
+          spec: "Resume is available, leaving is disabled, the background waiting campaign is inert and the applicant cannot claim a seat.",
           check: async () => {
             await expect(button(page, "Resume campaign")).toBeEnabled();
-            await expect(button(page, "Leave campaign")).toBeDisabled();
-            await expect(page.locator(".command-rail")).toHaveAttribute(
-              "inert",
-              "",
-            );
+            await expect(
+              roster.getByRole("button", {
+                name: "Leave campaign",
+                exact: true,
+              }),
+            ).toBeDisabled();
+            expect(
+              await page
+                .locator('[aria-label="Waiting campaign"]')
+                .evaluate((element) => element.closest("[inert]") !== null),
+            ).toBe(true);
             await expect(button(guest, "Claim your seat")).toBeDisabled();
           },
         },
@@ -168,8 +178,10 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
         spec: "The recovered galaxy discloses the development maintenance pause.",
         check: async () =>
           expect(
-            page.getByText("Paused · Development maintenance", { exact: true }),
-          ).toBeVisible(),
+            page.getByRole("status", { name: "Campaign start" }),
+          ).toHaveText(
+            "Paused for development maintenance. Admissions and scheduled start are stopped.",
+          ),
       },
       verifications: [
         {
@@ -202,7 +214,12 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
         {
           spec: "Leaving remains disabled until the server accepts resume.",
           check: async () =>
-            expect(button(page, "Leave campaign")).toBeDisabled(),
+            expect(
+              roster.getByRole("button", {
+                name: "Leave campaign",
+                exact: true,
+              }),
+            ).toBeDisabled(),
         },
       ],
       views: [{ ...hostView(), primary: [button(page, "Resume campaign")] }],
@@ -216,14 +233,21 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
         spec: "The authoritative receipt confirms Campaign resumed.",
         check: async () =>
           expect(
-            page.getByRole("status").filter({ hasText: /^Campaign resumed\./ }),
+            roster
+              .getByRole("status")
+              .filter({ hasText: /^Campaign resumed\./ }),
           ).toHaveText("Campaign resumed."),
       },
       verifications: [
         {
           spec: "Leaving and claiming a seat become available after acceptance.",
           check: async () => {
-            await expect(button(page, "Leave campaign")).toBeEnabled();
+            await expect(
+              roster.getByRole("button", {
+                name: "Leave campaign",
+                exact: true,
+              }),
+            ).toBeEnabled();
             await expect(button(guest, "Claim your seat")).toBeEnabled();
           },
         },
@@ -241,13 +265,14 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
       },
       verifications: [
         {
-          spec: "The modal is closed and normal galaxy controls are no longer inert.",
+          spec: "The modal is closed and normal waiting-campaign controls are no longer inert.",
           check: async () => {
             await expect(roster).toHaveCount(0);
-            await expect(page.locator(".command-rail")).not.toHaveAttribute(
-              "inert",
-              "",
-            );
+            expect(
+              await page
+                .locator('[aria-label="Waiting campaign"]')
+                .evaluate((element) => element.closest("[inert]") !== null),
+            ).toBe(false);
           },
         },
       ],
@@ -268,7 +293,7 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
             guest.getByText("Your seat is confirmed.", { exact: true }),
           ).toBeVisible();
           await expect(
-            page.getByText("Waiting envoy", { exact: true }),
+            roster.getByText("Waiting envoy", { exact: true }),
           ).toBeVisible();
         },
       },
@@ -276,9 +301,14 @@ test("The host pauses admission, recovers the pause and resumes a waiting comman
         {
           spec: "Both commanders see the real persisted campaign; it remains waiting for a full roster.",
           check: async () => {
-            await expect(guest.locator("canvas")).toBeVisible();
             await expect(
-              page
+              guest.getByRole("region", {
+                name: "Waiting campaign",
+                exact: true,
+              }),
+            ).toBeVisible();
+            await expect(
+              roster
                 .getByRole("status")
                 .filter({ hasText: /Waiting for players/ }),
             ).toBeVisible();

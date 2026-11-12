@@ -11,6 +11,8 @@ import {
   phaseOf,
   startRecording,
   readRecording,
+  ProfileDecoder,
+  readProfileProcess,
 } from "./emulator-post-marker.mjs";
 test("emulator selection is exact and exported categories cannot include document or identity metadata", () => {
   const args = [
@@ -146,7 +148,7 @@ class AttachFixture { public static void main(String[] args) throws Exception { 
     assert.match(ready[0].toString(), /ready/);
     startRecording(child.pid, file, 2);
     await new Promise((resolve) => setTimeout(resolve, 3500));
-    const summary = readRecording(file);
+    const summary = await readRecording(file);
     assert.ok(
       summary.buckets.some(
         (b) => b.event === "jdk.ThreadPark" && b.count > 0 && b.durationMs > 0,
@@ -188,5 +190,70 @@ class ProfileFixture { public static void main(String[] args) throws Exception {
     assert.ok(!JSON.stringify(summary).includes("ProfileFixture"));
   } finally {
     rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test("streamed JFR events preserve aggregation across escaped strings and chunk boundaries", () => {
+  const event = {
+    type: "jdk.ThreadPark",
+    values: {
+      duration: "PT0.02S",
+      stackTrace: { frames: [] },
+      privateMetadata: 'é } [ \" hidden',
+    },
+  };
+  const document = { recording: { events: [event, event] } };
+  const decoder = new ProfileDecoder();
+  for (const character of JSON.stringify(document)) decoder.write(character);
+  assert.deepEqual(decoder.finish(), aggregateProfile(document));
+  for (const value of [
+    {},
+    { recording: { events: [{ type: "jdk.ThreadPark" }] } },
+  ]) {
+    const bad = new ProfileDecoder();
+    assert.throws(
+      () => {
+        bad.write(JSON.stringify(value));
+        bad.finish();
+      },
+      (error) => error.category === "schema",
+    );
+  }
+});
+test("export failures retain classified process facts without output or exception contents", async () => {
+  await assert.rejects(
+    readProfileProcess("/nonexistent/SECRET_EXECUTABLE", []),
+    (error) => {
+      assert.equal(error.diagnostic.category, "spawn");
+      assert.equal(error.message, "profile-export");
+      assert.ok(!JSON.stringify(error).includes("SECRET"));
+      return true;
+    },
+  );
+  const cases = [
+    ["exit", 'process.stderr.write("SECRET_METADATA");process.exit(7)', 10000],
+    ["signal", 'process.kill(process.pid,"SIGTERM")', 10000],
+    ["timeout", "setInterval(()=>{},1000)", 100],
+    ["json", `process.stdout.write('{"recording":{"events":[{bad}]}}')`, 10000],
+    ["schema", 'process.stdout.write("{}")', 10000],
+    [
+      "buffer",
+      'process.stdout.write(JSON.stringify({recording:{events:[{type:"jdk.ThreadPark",values:{private:"x".repeat(5*1024*1024)}}]}}))',
+      10000,
+    ],
+  ];
+  for (const [category, code, timeout] of cases) {
+    await assert.rejects(
+      readProfileProcess(process.execPath, ["-e", code], timeout),
+      (error) => {
+        assert.equal(error.diagnostic.category, category);
+        assert.ok(Number.isInteger(error.diagnostic.stdoutBytes));
+        assert.ok(Number.isInteger(error.diagnostic.stderrBytes));
+        assert.ok(!JSON.stringify(error).includes("SECRET"));
+        assert.ok(!("stdout" in error) && !("stderr" in error));
+        if (category === "exit") assert.equal(error.diagnostic.exitCode, 7);
+        return true;
+      },
+    );
   }
 });

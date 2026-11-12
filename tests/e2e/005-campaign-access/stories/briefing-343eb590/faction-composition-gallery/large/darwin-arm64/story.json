@@ -1,0 +1,120 @@
+{
+  "id": "faction-composition-gallery",
+  "title": "Inspect the shared faction instrument",
+  "inventory": [
+    "UX-02",
+    "UX-03",
+    "UX-16"
+  ],
+  "description": "The existing reducer-derived gallery roster exercises the real FactionPicker, art, radio controls and affinity matrix. It is a component demonstration, not a live seat or service acknowledgement. Live admission remains a separate genuine player journey.",
+  "source": {
+    "commit": "343eb590850b7cd79ee839420a863ffb1c5c1ab2",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/faction-components.spec.ts",
+    "specSha256": "332729a35e6dabc2059a71cdb894049ec14ce893006e5510bc86bcf57fb07d22"
+  },
+  "mode": "generate",
+  "status": "passed",
+  "project": "large",
+  "platform": "darwin-arm64",
+  "renderer": {
+    "platform": "darwin-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "25.5.0",
+    "browser": "149.0.7827.55",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "steps": [
+    {
+      "id": "choose-reduce",
+      "description": "Use the actual shared radios with reduce preference; full faction slots stay unavailable and the selected matrix comes from versioned rules.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The component acknowledges the keyboard selection without issuing a campaign command.",
+      "verifications": [
+        "The full Pelagic quota is disabled, all four affinities remain present and the pending component retains disabled controls."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "001-choose-reduce-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "briefing-reduce",
+      "description": "Read the actual shared admission briefing and open its rules with the keyboard. This reducer-derived gallery is not a live campaign.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The shared rules disclosure opens without claiming a seat.",
+      "verifications": [
+        "Real rules and all four faction capacities remain in the shared component."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "002-briefing-reduce-1-component-reviewer.png",
+          "verifications": []
+        }
+      ]
+    },
+    {
+      "id": "choose-no-preference",
+      "description": "Use the actual shared radios with no-preference preference; full faction slots stay unavailable and the selected matrix comes from versioned rules.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The component acknowledges the keyboard selection without issuing a campaign command.",
+      "verifications": [
+        "The full Pelagic quota is disabled, all four affinities remain present and the pending component retains disabled controls."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "003-choose-no-preference-1-component-reviewer.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "briefing-no-preference",
+      "description": "Read the actual shared admission briefing and open its rules with the keyboard. This reducer-derived gallery is not a live campaign.",
+      "actor": "Component reviewer",
+      "kind": "player",
+      "acknowledgement": "The shared rules disclosure opens without claiming a seat.",
+      "verifications": [
+        "Real rules and all four faction capacities remain in the shared component."
+      ],
+      "views": [
+        {
+          "player": "Component reviewer",
+          "image": "004-briefing-no-preference-1-component-reviewer.png",
+          "verifications": [
+            "Normal-motion device preference; finite effects settled without fast-forward and exact pixels unchanged."
+          ]
+        }
+      ]
+    }
+  ]
+}

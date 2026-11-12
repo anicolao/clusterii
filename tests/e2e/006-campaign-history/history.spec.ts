@@ -1,6 +1,9 @@
 import { activeAdmissionControls } from "../helpers/campaign-phase";
 import { admissionAt } from "../../browser/story-helpers/admission-clock.mjs";
-import { openGalaxyCommand } from "../../browser/galaxy-navigation";
+import {
+  openGalaxyCommand,
+  expectReadingPanelLabelClearance,
+} from "../../browser/galaxy-navigation";
 import { test, expect } from "../helpers/fixtures";
 import { TestStepHelper } from "../helpers/test-step-helper";
 import { login, grantDeveloper } from "../../browser/helpers";
@@ -145,6 +148,11 @@ test("Recover saved campaign records without losing your place", async ({
     surface: "game" as const,
     primary: [back],
     verifications: [
+      {
+        spec: "The History reader does not cut through visible chart names; the selected name remains visible beside the reader on wider charts.",
+        check: () =>
+          expectReadingPanelLabelClearance(page, ".campaign-records"),
+      },
       {
         spec: "The prior acknowledged resume is not clipped behind the history reader.",
         check: async () => {

@@ -1,0 +1,29 @@
+✔ requires a staged prompt log, including on the initial commit (191.646959ms)
+✔ accepts a staged append and rejects an unstaged append (214.380792ms)
+✔ rejects rewritten or deleted historical prompts (196.701542ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (457.291833ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (355.903375ms)
+✔ checks a PR against its base, including a base with no prompt log (230.71075ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (487.450041ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (258.327584ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (365.577083ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (627.928333ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (613.485125ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (319.636791ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (427.424042ms)
+✔ divergent prompt merge retains exact parent archive and canonical request order (2819.19375ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (813.429625ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1301.648292ms)
+✔ reintegrating a parent retains its formerly final request already archived by child (903.333209ms)
+✔ reintegrating a parent respects the child declared two-LF record separator (943.394958ms)
+✔ post-merge appended prompt retains the exact copied final parent record in base checks (775.180792ms)
+✔ shared Git ancestor proves a final common request without inventing an archive (427.38ms)
+✔ earlier append-only common history proves original shared final record (537.319542ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13317.077875

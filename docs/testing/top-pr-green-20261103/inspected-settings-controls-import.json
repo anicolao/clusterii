@@ -1,0 +1,407 @@
+{
+  "ledgerSha256": "421f66656f7efe32bd4a34ec62578e1872de94a2a3b3af0fca91d8ca044e5ea2",
+  "targetBeforeImport": "8fe17fb12d74ccb560c4bfb4792bed564c159902",
+  "families": [
+    {
+      "story": "command-control-motion",
+      "viewport": "desktop",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+        "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/command-control-motion/desktop/linux-arm64/story.json",
+      "destination": "tests/e2e/010-zero-science/screenshots/command-control-motion/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "001-normal-gallery-selection-1-component-reviewer.png",
+          "sha256": "186a00cba8ffc5fb59d8ddaa5316cdeb56d575dbaf4440adc0021caaedc3a47f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-reduced-gallery-selection-1-component-reviewer.png",
+          "sha256": "bb0728fd9e1c56c5f15579b171bb359bd0b7443cd512a6c76c434b09b9a6689b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-normal-lab-selection-1-component-reviewer.png",
+          "sha256": "29904f87a1a304dcbb420f08141b948a4d946e810422335cb23d02537c1f96fe",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-reduced-lab-selection-1-component-reviewer.png",
+          "sha256": "c081f8688aedfa9433536948548272ad17865e81f23858e1423b8bb07e435ad5",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "local-presentation-settings",
+      "viewport": "desktop",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/local-settings.story.spec.ts",
+        "specSha256": "deaad02dd5dbcb5566c7296ef2e906c6c782ffb35ac0f20c9e987fb5ec77b24d"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/desktop/test-results/stories/local-presentation-settings/desktop/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/local-presentation-settings/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "001-open-and-contain-1-developer-local-settings.png",
+          "sha256": "312d3b161a276cfc5d4516ff311db57b51e23ee2e7c8e75f8c173e8165c690c8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-choose-local-reduction-1-developer-local-settings.png",
+          "sha256": "ffb50ac7e33abbda5e999fa5fa1a36e7ed64151514d032a476159d099d522a93",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-reload-and-respect-device-1-developer-local-settings.png",
+          "sha256": "fba03e294885fe1b2c4a18c4bff97315b24fe44add0dc48016596ae5cc3aca02",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-close-explicitly-1-developer-restored-opener.png",
+          "sha256": "e9585de591c3c2aac8476c62d7825253c49fbf224f545983b5d669da7499940a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-1-developer-standard-feedback.png",
+          "sha256": "a14f3c2574a50630f4277ad461574d03c88c2f60c6e56fb920a1d08ae8e85388",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-2-developer-reduced-feedback.png",
+          "sha256": "a14f3c2574a50630f4277ad461574d03c88c2f60c6e56fb920a1d08ae8e85388",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "command-control-motion",
+      "viewport": "large",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+        "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/command-control-motion/large/linux-arm64/story.json",
+      "destination": "tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64",
+      "captures": [
+        {
+          "image": "001-normal-gallery-selection-1-component-reviewer.png",
+          "sha256": "3e7c125c07d2db3c966fae7d077eaf46272c78d60019c8059171c2849096d50c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-reduced-gallery-selection-1-component-reviewer.png",
+          "sha256": "8b8464071e310ba568b0ae4188d8d684a2a0b339dcdd42b3598dfb1a18bb1c59",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-normal-lab-selection-1-component-reviewer.png",
+          "sha256": "09f8004ed9f87561e030b4e4513138ed6b837d314cb55cdbc6b5af55361b8672",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-reduced-lab-selection-1-component-reviewer.png",
+          "sha256": "c5a1d3c43c2db118741aa4859ab25a308cc9106ac5060c65b0a7449bb4da593e",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "local-presentation-settings",
+      "viewport": "large",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/local-settings.story.spec.ts",
+        "specSha256": "deaad02dd5dbcb5566c7296ef2e906c6c782ffb35ac0f20c9e987fb5ec77b24d"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/local-presentation-settings/large/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/local-presentation-settings/large/linux-arm64",
+      "captures": [
+        {
+          "image": "001-open-and-contain-1-developer-local-settings.png",
+          "sha256": "934e17bd4d6b3ffb71ad731ed0b024a4fdd2e5f89ff5a57bcfc9480525111044",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-choose-local-reduction-1-developer-local-settings.png",
+          "sha256": "63ef24f9cbfde11c4b83195729d381ba618de14e593e586538454350bec57225",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-reload-and-respect-device-1-developer-local-settings.png",
+          "sha256": "8d3a9a96d28692f18ddb026a79ac26d6304bd13b08e58bc97e371ee636d9299e",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-close-explicitly-1-developer-restored-opener.png",
+          "sha256": "50ed10a11bbbd458a7e4f29277d2cb2a42edf0737e633a335682f5cdfa2477a3",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-1-developer-standard-feedback.png",
+          "sha256": "c6d3998ef23595f34d86c32136c452bef397bf5f7669e7b6cc4ca0a263461707",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-2-developer-reduced-feedback.png",
+          "sha256": "c6d3998ef23595f34d86c32136c452bef397bf5f7669e7b6cc4ca0a263461707",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "command-control-motion",
+      "viewport": "phone",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+        "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/command-control-motion/phone/linux-arm64/story.json",
+      "destination": "tests/e2e/010-zero-science/screenshots/command-control-motion/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "001-normal-gallery-selection-1-component-reviewer.png",
+          "sha256": "42519de6cf4d25e3783bfea4a6f3479945e85eaec93081bfb727de3456c497f4",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-reduced-gallery-selection-1-component-reviewer.png",
+          "sha256": "e3f181c47f39bc6a8c71388be0626f8e2256741202c433bbd7983e452e468658",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-normal-lab-selection-1-component-reviewer.png",
+          "sha256": "a1bf559f2174258221868a6ef4ed6512a955be7ed5c829b23eb29e3c3223f6f7",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-reduced-lab-selection-1-component-reviewer.png",
+          "sha256": "6f61e35606448bc1e9fe6ec50ef180608bf6a89a288a25fcf9f61a1f809f92c2",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "local-presentation-settings",
+      "viewport": "phone",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/local-settings.story.spec.ts",
+        "specSha256": "deaad02dd5dbcb5566c7296ef2e906c6c782ffb35ac0f20c9e987fb5ec77b24d"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/local-presentation-settings/phone/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/local-presentation-settings/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "001-open-and-contain-1-developer-local-settings.png",
+          "sha256": "67a7934ca589f048698742d52ca1a26f31b098f2fe7cff7411122b7df1a949e6",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-choose-local-reduction-1-developer-local-settings.png",
+          "sha256": "7c7fe909dea537967d0e42ea4061def7afee8aad17254da6dc9aa39c6c7a0e2f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-reload-and-respect-device-1-developer-local-settings.png",
+          "sha256": "b4f304f74f42287d6f31dada62db60dae75c89b8c234b4ae09371c889e85fd7d",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-close-explicitly-1-developer-restored-opener.png",
+          "sha256": "68b19776289b391fd872a699b50f9c5f33e8faa904169a10f7e5f2129dd13d46",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-1-developer-standard-feedback.png",
+          "sha256": "d1eec53ad097d7091bd2976e78887f51a6b79cc0228ad86118cf8a0a0f315b96",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-2-developer-reduced-feedback.png",
+          "sha256": "e1781f0b1eb29726a28b7a54b0e5e74f8c41581ec07ac3822b480ecf83d721f8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "command-control-motion",
+      "viewport": "short",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+        "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/command-control-motion/short/linux-arm64/story.json",
+      "destination": "tests/e2e/010-zero-science/screenshots/command-control-motion/short/linux-arm64",
+      "captures": [
+        {
+          "image": "001-normal-gallery-selection-1-component-reviewer.png",
+          "sha256": "e2f86d9a2d831831c98cbf18b0f5f81cf2eb5ce8366c64eb7c1d7ece6a830e5d",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-reduced-gallery-selection-1-component-reviewer.png",
+          "sha256": "2b6331820a53714bb28d6ea6633d4beec928dcae5e68fd85e26fe24d6bb60453",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-normal-lab-selection-1-component-reviewer.png",
+          "sha256": "b6fa9e649d8a3f82de87fb8e4241687989c20f3e5fa873391d15e45f879d8f9b",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-reduced-lab-selection-1-component-reviewer.png",
+          "sha256": "82887db252c4f48862c20c523d1e0da5e92d2f2d075ba7e98c501c7672736279",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "local-presentation-settings",
+      "viewport": "short",
+      "source": {
+        "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+        "dirty": false,
+        "spec": "tests/browser/local-settings.story.spec.ts",
+        "specSha256": "deaad02dd5dbcb5566c7296ef2e906c6c782ffb35ac0f20c9e987fb5ec77b24d"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/local-presentation-settings/short/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/local-presentation-settings/short/linux-arm64",
+      "captures": [
+        {
+          "image": "001-open-and-contain-1-developer-local-settings.png",
+          "sha256": "80bb293b096349a426d089552c01650e8ffbc303b637d0258c1c3ac4191e7c84",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "002-choose-local-reduction-1-developer-local-settings.png",
+          "sha256": "ad66149407d40b2fed516abe6fa02b15e9cca9053108b74906fa851806b40e00",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-reload-and-respect-device-1-developer-local-settings.png",
+          "sha256": "ad5018f383a7973c5fe89d479df8cbd154fc6a123aa9c41046306925d2bed0a0",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-close-explicitly-1-developer-restored-opener.png",
+          "sha256": "818b2b99e25f6141acc0c6305db3c0c8055b629635cfcfe01078b649d0f3a558",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-1-developer-standard-feedback.png",
+          "sha256": "69443e1384c2d5d22c037bee1474f12839d27578821118f70e73679f32c8b312",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-compare-shared-feedback-2-developer-reduced-feedback.png",
+          "sha256": "69443e1384c2d5d22c037bee1474f12839d27578821118f70e73679f32c8b312",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": [],
+  "sourceApplicability": {
+    "candidateSource": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "currentSource": "8fe17fb1",
+    "specs": "Exact current SHA256s matched complete passed manifests",
+    "unchanged": "Gallery/lab page sources, GameMenu, CommandControl, Feedback, identity controls, assets and pinned renderer unchanged.",
+    "limitations": "Other shared gallery research/market/route components have recovery changes; current integrated strict must validate resulting document/scroll positions. These references approve the pictured explicit command/settings state, not unseen neighboring components or animation performance."
+  },
+  "retention": "All original images reused from verified retained artifacts; no new downloads or executions."
+}

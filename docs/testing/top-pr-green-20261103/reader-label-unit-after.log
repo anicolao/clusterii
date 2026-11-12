@@ -1,0 +1,14 @@
+bun test v1.3.13 (bf2e2cec)
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > selected name clears a tall reading panel without moving its anchor and restores on close [0.45ms]
+(pass) galaxy label cartography > selected label clears a real acknowledgement and returns when it closes
+(pass) galaxy label cartography > resize round-trip projection noise preserves the physical text origin without changing catalogue anchors [0.08ms]
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars [0.11ms]
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.46ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes [0.13ms]
+
+ 6 pass
+ 0 fail
+ 121 expect() calls
+Ran 6 tests across 1 file. [56.00ms]

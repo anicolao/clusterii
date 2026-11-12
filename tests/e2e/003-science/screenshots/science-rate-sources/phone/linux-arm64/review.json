@@ -1,0 +1,168 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/science-layer-all-reviewed.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "science-rate-sources",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+    "dirty": false,
+    "spec": "tests/e2e/003-science/science.spec.ts",
+    "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/story.json",
+  "inspectionScope": "All changed expected/candidate compositions inspected using full phone pairs and changed-RGBA-bounds plus padding for desktop/short/large. Duplicate image hashes explicitly grouped. Text painting changes retain headings, actual values, source names, focus outlines and reading positions. Large component pairs tool-downscaled: layout/content approval, not full native-pixel design certification. Cross-run stability remains to be verified.",
+  "captures": [
+    {
+      "image": "010-inspect-private-sources-1-chart-envoy.png",
+      "sha256": "c7391630a91d56b82e766d3afc0db8937085d7139fe6c7b71a007722fe7e017a",
+      "previousSha256": "af930d4052a22f527defb683291cae237dd419d46492a24cda0c8bd3de4f92c6",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "010-inspect-private-sources-2-tidal-envoy.png",
+      "sha256": "84c37f3a14e47a2d54cd49b5002302609a0c90190b239d0b38cca81c83b90f15",
+      "previousSha256": "c1414ba89d4dc49d9acc1a835c7a61d79e5e055cc4a8ca6332330a6e297ab10c",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "011-commit-innovation-1-chart-envoy.png",
+      "sha256": "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6",
+      "previousSha256": "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "013-read-earned-capacity-1-chart-envoy.png",
+      "sha256": "258bbc89fe9422319c56be28c805198dc4823e18a37f3535c1d5c1d8480468ef",
+      "previousSha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "013-read-earned-capacity-2-tidal-envoy.png",
+      "sha256": "e0be26350b68ce3c5848b11fa2562b0aeb9d23d417facb5ce036e828016b95f2",
+      "previousSha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "014-earned-normal-ledger-1-chart-envoy.png",
+      "sha256": "dea995deb763ef00975e7e5dfb2b0caae75021079ba0e00476ce1a879462fc70",
+      "previousSha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "014-earned-normal-ledger-2-tidal-envoy.png",
+      "sha256": "053a0b60d56396a689a36f433afa4ba5fb55551d6f7b96ddf2c4496034c9262b",
+      "previousSha256": "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "015-earned-normal-totals-1-chart-envoy.png",
+      "sha256": "258bbc89fe9422319c56be28c805198dc4823e18a37f3535c1d5c1d8480468ef",
+      "previousSha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "015-earned-normal-totals-2-tidal-envoy.png",
+      "sha256": "e0be26350b68ce3c5848b11fa2562b0aeb9d23d417facb5ce036e828016b95f2",
+      "previousSha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "016-earned-normal-return-1-chart-envoy.png",
+      "sha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+      "previousSha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "016-earned-normal-return-2-tidal-envoy.png",
+      "sha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+      "previousSha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "017-earned-reduced-ledger-1-chart-envoy.png",
+      "sha256": "dea995deb763ef00975e7e5dfb2b0caae75021079ba0e00476ce1a879462fc70",
+      "previousSha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "017-earned-reduced-ledger-2-tidal-envoy.png",
+      "sha256": "053a0b60d56396a689a36f433afa4ba5fb55551d6f7b96ddf2c4496034c9262b",
+      "previousSha256": "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "018-earned-reduced-totals-1-chart-envoy.png",
+      "sha256": "258bbc89fe9422319c56be28c805198dc4823e18a37f3535c1d5c1d8480468ef",
+      "previousSha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "018-earned-reduced-totals-2-tidal-envoy.png",
+      "sha256": "e0be26350b68ce3c5848b11fa2562b0aeb9d23d417facb5ce036e828016b95f2",
+      "previousSha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "019-earned-reduced-return-1-chart-envoy.png",
+      "sha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+      "previousSha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "019-earned-reduced-return-2-tidal-envoy.png",
+      "sha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+      "previousSha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    },
+    {
+      "image": "021-recover-delivered-rate-1-chart-envoy.png",
+      "sha256": "f9d22175b257213195958fb85e5be7f9dafca18a21df4078ad84c55a153fcf8b",
+      "previousSha256": "7cc9dedabeee7a82d0e92bd45daf0f7094e426f9dd20e04f714a587ae03b295a",
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
+    }
+  ],
+  "previousReview": "docs/testing/top-pr-green-20261103/inspection-decisions.json"
+}

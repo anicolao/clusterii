@@ -1,0 +1,20 @@
+file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/classify-story-log.mjs:9
+  throw Error(
+        ^
+
+Error: Usage: node scripts/classify-story-log.mjs log.gz source-revision
+    at file:///Users/anicolao/projects/games/clusterii-conversation-history/scripts/classify-story-log.mjs:9:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.18.0
+warning: 'ping' is a deprecated alias for 'info'
+Store URL: ssh-ng://builder@linux-builder
+no such identity: /Users/anicolao/.ssh/builder_ed25519: No such file or directory
+Load key "/etc/nix/builder_ed25519": Permission denied
+Permission denied, please try again.
+Permission denied, please try again.
+Received disconnect from 127.0.0.1 port 31022:2: Too many authentication failures
+Disconnected from 127.0.0.1 port 31022
+error: failed to start SSH connection to 'linux-builder'

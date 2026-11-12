@@ -1,0 +1,27 @@
+[
+  {
+    "gate": "check",
+    "status": "passed",
+    "sha256": "19390e044419735b426d88998c4e61e98075670195d7f2403f559e017279445d"
+  },
+  {
+    "gate": "lint",
+    "status": "passed",
+    "sha256": "7e2c6861c6f113b12bb49ba07e8c28e367895e25577de17d459ffd458c1a5b33"
+  },
+  {
+    "gate": "test",
+    "status": "passed",
+    "sha256": "51d29fd0a6bfb66733b312864a6ba4e2e5863178d7a457f3965698918839e584"
+  },
+  {
+    "gate": "test-story-policy",
+    "status": "passed",
+    "sha256": "2aac617c2a8c4297f421684f86d6042bf3188df6d901d408f2fd71c67c246c53"
+  },
+  {
+    "gate": "prompts",
+    "status": "passed",
+    "sha256": "98edf39f76abf388669364a6cf7bccda6c502573ec80cc20a30597c05bec2212"
+  }
+]

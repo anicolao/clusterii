@@ -1,0 +1,70 @@
+✔ requires a staged prompt log, including on the initial commit (188.803584ms)
+✔ accepts a staged append and rejects an unstaged append (192.176834ms)
+✔ rejects rewritten or deleted historical prompts (180.014041ms)
+✔ rejects empty bodies, invalid summaries, numbering gaps, and bare append text (420.000667ms)
+✔ accepts a unique continuation bound to the latest exact prompt log (324.746542ms)
+✔ checks a PR against its base, including a base with no prompt log (220.907ms)
+✔ the installed pre-commit hook blocks commits without a staged prompt (613.195125ms)
+✔ explicit PR-base validation accepts multiple valid commits while the local hook requires one step (243.407833ms)
+✔ PR-base continuation validation rejects a bad or duplicate later entry (386.254666ms)
+✔ stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks (649.282083ms)
+✔ merge commit preserves both parent histories and adds exactly one new continuation (660.178083ms)
+✔ PR continuations retain their exact committed prompt hash after a newer base prompt arrives (338.119875ms)
+✔ synthetic PR merge retains historical prompt hashes from both parent ancestries (446.721792ms)
+✖ divergent prompt merge retains exact parent archive and canonical request order (2150.456208ms)
+✔ later stacked integration recognizes only a Git-verified inherited record separator (885.777584ms)
+✔ explicit structural separators retain exact request whitespace and reject undeclared changes (1573.932125ms)
+✔ reintegrating a parent retains its formerly final request already archived by child (1044.522709ms)
+✔ reintegrating a parent respects the child declared two-LF record separator (1079.94325ms)
+✔ post-merge appended prompt retains the exact copied final parent record in base checks (813.957625ms)
+✔ shared Git ancestor proves a final common request without inventing an archive (506.832625ms)
+✔ earlier append-only common history proves original shared final record (620.305792ms)
+✔ sibling integration recognizes only committed common-prefix append separators (774.716208ms)
+✔ archived final-record separator follows only proven later append transitions (1448.168625ms)
+✖ ordered suffix accepts byte-exact interleaved parent requests without separator fabrication (735.713125ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 22
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16551.546708
+
+✖ failing tests:
+
+test at scripts/check-prompts.test.mjs:179:1
+✖ divergent prompt merge retains exact parent archive and canonical request order (2150.456208ms)
+  AssertionError [ERR_ASSERTION]: changed trailing whitespace is rejected
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-recovery/scripts/check-prompts.test.mjs:213:58)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 0,
+    operator: 'notStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/check-prompts.test.mjs:355:1
+✖ ordered suffix accepts byte-exact interleaved parent requests without separator fabrication (735.713125ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" to be strictly unequal to: 0
+      at TestContext.<anonymous> (file:///Users/anicolao/projects/games/clusterii-recovery/scripts/check-prompts.test.mjs:363:408)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 0,
+    operator: 'notStrictEqual',
+    diff: 'simple'
+  }

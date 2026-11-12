@@ -1,0 +1,70 @@
+{
+  "artifact": {
+    "id": 13894258735,
+    "node_id": "MDg6QXJ0aWZhY3QxMzg5NDI1ODczNQ==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 4971092037,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13894258735",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13894258735/zip",
+    "expired": false,
+    "digest": "sha256:a27ccf87caa5c62f0296b9522666c5e1bab3cb28ad05d2547a53b48d2aeace6b",
+    "created_at": "2026-11-11T22:01:42Z",
+    "updated_at": "2026-11-11T22:01:42Z",
+    "expires_at": "2027-02-09T19:47:39Z",
+    "workflow_run": {
+      "id": 43090488602,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/admission-briefing-composition",
+      "head_sha": "730297e72db62967d28db609a788fb06edb9d1d5"
+    }
+  },
+  "rangeBytes": 4553957,
+  "entries": [
+    {
+      "name": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-desktop/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy-actual.png",
+      "size": 1233151,
+      "sha256": "44af200dd769d41c034b0ca185ce0fe1fabf35089ddbe31f846719b004614be1",
+      "crc32": "65a58fb5"
+    },
+    {
+      "name": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-desktop/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy-diff.png",
+      "size": 558616,
+      "sha256": "047bd1bdc8f36b27070b8021b630f115311d912650a2ca4a7954b2869c6ef133",
+      "crc32": "ae2fd445"
+    },
+    {
+      "name": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-desktop/e2e/010-construction/screenshots/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy-expected.png",
+      "size": 1220595,
+      "sha256": "4aa34028c69aa69c21ecc1e5c247ba7c1bebda5147dc09a44873bda63fcf0f76",
+      "crc32": "96701dc1"
+    },
+    {
+      "name": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-actual.png",
+      "size": 270341,
+      "sha256": "35b7fe3ba1f961c7dabdecc797b7c35a9ad7ff4eeaaef0b4aae3ddc37871bcf2",
+      "crc32": "864c8921"
+    },
+    {
+      "name": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-diff.png",
+      "size": 184764,
+      "sha256": "8ab30585bfff2754546a2e2ab715fac2dc5afc8225394e138c9efe7ba04d5263",
+      "crc32": "b44d3176"
+    },
+    {
+      "name": "test-results/stories/e2e-010-construction-const-3ce26-es-and-cancels-developments-phone/e2e/010-construction/screenshots/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy-expected.png",
+      "size": 262158,
+      "sha256": "ec9bc407c455960f426a5ba60ec00630fba9ec9984d90702f70212edf59c00d1",
+      "crc32": "4d3d7bcc"
+    }
+  ],
+  "integrity": "Exact HTTP Content-Range and API size; selected entries decoded with ZIP CRC and individual SHA256. Full archive SHA not verified; no local archive retained.",
+  "inspection": {
+    "reviewer": "Implementation agent",
+    "viewed": "All six phone/desktop expected, actual and diff originals",
+    "disposition": "Hold failed actuals; fix real desktop occlusion before new complete candidates",
+    "finding": "Fixed 58px inset covers second-row campaign context and slices commander portraits; phone header itself remains legible. Details and actions remain readable but this does not approve the hidden header.",
+    "sourceCorrection": "System construction panel starts below measured rail and commander presence. Existing openConstruction asserts heading and portrait clearance.",
+    "validation": "Offline Nix check: zero errors, existing FleetRoute warning; policy and changed-file formatting pass. Complete real-service four-size verification remains required."
+  }
+}

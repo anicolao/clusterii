@@ -1,0 +1,546 @@
+{
+  "ledgerSha256": "ec93f9a2bcf37140859ed89ea98cf7c5fe2e5e50cd5600bb424a3f285421437a",
+  "targetBeforeImport": "aaae752f010f375fa69d723d9c6c0f8adb9a7f1c",
+  "families": [
+    {
+      "story": "invitation-first-admission",
+      "viewport": "desktop",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-first-admission/desktop/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "002-open-invitation-1-invited-envoy.png",
+          "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+          "previousSha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-destination-1-invited-envoy.png",
+          "sha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+          "previousSha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-sign-in-1-invited-envoy.png",
+          "sha256": "4a553ff4566a67749229173bef0d292e8e32d068d339b864755f34448af1ad11",
+          "previousSha256": "4a553ff4566a67749229173bef0d292e8e32d068d339b864755f34448af1ad11",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-draft-identity-1-invited-envoy.png",
+          "sha256": "fbc6d309a6bc009fb6abadf68fc1e7f67adbc138444530c931943921475750ea",
+          "previousSha256": "fbc6d309a6bc009fb6abadf68fc1e7f67adbc138444530c931943921475750ea",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-save-and-resume-1-invited-envoy.png",
+          "sha256": "15c44e1c19370e9bddc9ca7976f9ef2334f023a0d954ceb039a11319e12b1ba7",
+          "previousSha256": "15c44e1c19370e9bddc9ca7976f9ef2334f023a0d954ceb039a11319e12b1ba7",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-choose-faction-1-invited-envoy.png",
+          "sha256": "3e57d942a158461b3e079a13f8f9d7f384343852ac4cf5989fa3a37d9c023e87",
+          "previousSha256": "3e57d942a158461b3e079a13f8f9d7f384343852ac4cf5989fa3a37d9c023e87",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-1-invited-envoy.png",
+          "sha256": "9bd6c1c719f46bd21b697113cf0f3a9e10e38071d917c65fcd0e66b8562c39a7",
+          "previousSha256": "6f71b92024737e7fa260d0a1d1e44a66e01d2ae784a0c668a04e7c23231c614c",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-2-invitation-host.png",
+          "sha256": "43eb4d549e0d7120bcc15f98798a374a6a8fbf28566fc560910cabbd1253fc3d",
+          "previousSha256": "80c962d77cdbf6550b4e01a0f452e559b818c506397b9127472e1791def6f68b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-seat-1-invited-envoy.png",
+          "sha256": "7d494da32a8704148f0f810361d9f3105685a9ac1ca2612d38f28a3ac87b16af",
+          "previousSha256": "7d494da32a8704148f0f810361d9f3105685a9ac1ca2612d38f28a3ac87b16af",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "invitation-returning-recovery",
+      "viewport": "desktop",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/desktop/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+          "previousSha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+          "previousSha256": "a4a0c99a1cf7cebc7b93add542410a9df31d766f9b8ef46d4cdab53bb59095be",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "7f43852b5f6191267f7a7628220bbf71484d412f057e580cbb524987692ff3ce",
+          "previousSha256": "7f43852b5f6191267f7a7628220bbf71484d412f057e580cbb524987692ff3ce",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "79b23d27fdc3e99c11dbad98393243bfa76cb5fc5ff7f6f601bc7a2822facc93",
+          "previousSha256": "09194c9ad2cbf16adadf4dc32e7c6115f57f003052bea395564efe4285bf7eba",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-reload-return-1-returning-envoy.png",
+          "sha256": "7f43852b5f6191267f7a7628220bbf71484d412f057e580cbb524987692ff3ce",
+          "previousSha256": "7f43852b5f6191267f7a7628220bbf71484d412f057e580cbb524987692ff3ce",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-missing-invitation-1-returning-envoy.png",
+          "sha256": "172819ff4f249c310250b1206f2fdac2fa3faecea754311696a6cd0a7bc01c97",
+          "previousSha256": "172819ff4f249c310250b1206f2fdac2fa3faecea754311696a6cd0a7bc01c97",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-recover-directory-1-returning-envoy.png",
+          "sha256": "a30008f2aab0e5fc96f5542aaa15eca05464bbd20a8a4c2348c1b04b9612a2a9",
+          "previousSha256": "a30008f2aab0e5fc96f5542aaa15eca05464bbd20a8a4c2348c1b04b9612a2a9",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-denied-invitation-1-returning-envoy.png",
+          "sha256": "466cdeb63fbab8a9ef68d63ef925225b7a98a6a91ae429f01bcc02d0e9365a39",
+          "previousSha256": "466cdeb63fbab8a9ef68d63ef925225b7a98a6a91ae429f01bcc02d0e9365a39",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-entry-1-returning-envoy.png",
+          "sha256": "e2de63f51ffd2656858a718f478ba6569debd54c8022938adc4e322100d4c13f",
+          "previousSha256": "e2de63f51ffd2656858a718f478ba6569debd54c8022938adc4e322100d4c13f",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "invitation-first-admission",
+      "viewport": "large",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-first-admission/large/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/large/linux-arm64",
+      "captures": [
+        {
+          "image": "002-open-invitation-1-invited-envoy.png",
+          "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+          "previousSha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-destination-1-invited-envoy.png",
+          "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+          "previousSha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-sign-in-1-invited-envoy.png",
+          "sha256": "327a71ac5a4a2d2b306bf69a16f4fd3eb932692d436dbd9727e068ba3af7d515",
+          "previousSha256": "327a71ac5a4a2d2b306bf69a16f4fd3eb932692d436dbd9727e068ba3af7d515",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-draft-identity-1-invited-envoy.png",
+          "sha256": "f6c96ec6a12d7899b6f2f1ccbea954418cd8901a4d8ea91df2017be76ef5db45",
+          "previousSha256": "f6c96ec6a12d7899b6f2f1ccbea954418cd8901a4d8ea91df2017be76ef5db45",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-save-and-resume-1-invited-envoy.png",
+          "sha256": "8d58baafd69398219120af380dc948662232afa44b43d225f98334ecb6e921cf",
+          "previousSha256": "8d58baafd69398219120af380dc948662232afa44b43d225f98334ecb6e921cf",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-choose-faction-1-invited-envoy.png",
+          "sha256": "533c6fef4662109e15093790ed69ede310d0cc2b40fea9497f89700172fa6c1b",
+          "previousSha256": "533c6fef4662109e15093790ed69ede310d0cc2b40fea9497f89700172fa6c1b",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-1-invited-envoy.png",
+          "sha256": "e4e9071760064be6fe73232acaf80eeb782e5897cb2f5fe6b5937aa2e0a173b4",
+          "previousSha256": "3be53f56afcb4ed9a69f4a31d9a6d182e497dc5daa4346906108b8239f5ac7d7",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-2-invitation-host.png",
+          "sha256": "ecd6f6381cd8ea07ef25783c7832f38c9b026a59fe20eb2df66c2820a04082cf",
+          "previousSha256": "c07278b448cbcd47cbeaf1f9778a1d9393fcabf3f62190e57df723336df0e431",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-seat-1-invited-envoy.png",
+          "sha256": "edb6de24a91d82d7a189793f1262807713d01949d30eb06c9e7089530ef2d67a",
+          "previousSha256": "edb6de24a91d82d7a189793f1262807713d01949d30eb06c9e7089530ef2d67a",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "invitation-returning-recovery",
+      "viewport": "large",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/large/test-results/stories/invitation-returning-recovery/large/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/large/linux-arm64",
+      "captures": [
+        {
+          "image": "002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+          "previousSha256": "d4b907ffbb7e1f254dda4d976aa6545dcb221e13fea6161e0a8d4bcc3bc85d17",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+          "previousSha256": "47cade8718c590ffd7f71d702e38707b0bea6e6d11ff55b94fc18945f3ac3a5e",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+          "previousSha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "507e964228fb08ce474b7fb427603248b6b1ed1f565ac89463069c1f843eb95d",
+          "previousSha256": "6ac7887138b3cb06d42ccbed5f8de42394be5a25a238a5acf985fdb79aad173b",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-reload-return-1-returning-envoy.png",
+          "sha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+          "previousSha256": "9410951eb7f16f9de76397dfa5b0cab1f48256b3803dc2f9e6e8edd75017ddfe",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-missing-invitation-1-returning-envoy.png",
+          "sha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257",
+          "previousSha256": "66ed9e76b98dbfc2aada2c7db6aa5cc9b19ff3d1dcf7deb322dab59b83e16257",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-recover-directory-1-returning-envoy.png",
+          "sha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327",
+          "previousSha256": "7c20bf98896ae8c98200a5267ab76eb771c97c7b03fd3ac27883e0749d30a327",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-denied-invitation-1-returning-envoy.png",
+          "sha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934",
+          "previousSha256": "a9a4f482bdc432e098babf670565ba8a02a1ba99aedf819c4936bf52bc6ea934",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-entry-1-returning-envoy.png",
+          "sha256": "93d5ce9987e304a9b28acdf4fd3d14e1e6fdcd3e33b5b9771137b5b9fc1a1670",
+          "previousSha256": "93d5ce9987e304a9b28acdf4fd3d14e1e6fdcd3e33b5b9771137b5b9fc1a1670",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "invitation-first-admission",
+      "viewport": "phone",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/phone/test-results/stories/invitation-first-admission/phone/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "002-open-invitation-1-invited-envoy.png",
+          "sha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+          "previousSha256": "4a03f54535bf89ce01d8df0a81ae1f032ed6d0b007adb35db0bdf5c764e2e54c",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-destination-1-invited-envoy.png",
+          "sha256": "e1c6347c3684c3dda7bfe58107d34bd0168b27e0e0aa917fd2aff68fe6f3b3c2",
+          "previousSha256": "e1c6347c3684c3dda7bfe58107d34bd0168b27e0e0aa917fd2aff68fe6f3b3c2",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-sign-in-1-invited-envoy.png",
+          "sha256": "b64e0ffa689865c8f3305359e61a6e3480ab2c09e298ca1f41588032343b14ea",
+          "previousSha256": "b64e0ffa689865c8f3305359e61a6e3480ab2c09e298ca1f41588032343b14ea",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-draft-identity-1-invited-envoy.png",
+          "sha256": "9ce4041717db4a6a3867d40633ab1c7d87769109baf352fbf0bca890bd81177d",
+          "previousSha256": "9ce4041717db4a6a3867d40633ab1c7d87769109baf352fbf0bca890bd81177d",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-save-and-resume-1-invited-envoy.png",
+          "sha256": "1ddfbe1eb86183d1d1b94553287f0dbd3dab651a213b3e5f69833bca12aaa22d",
+          "previousSha256": "1ddfbe1eb86183d1d1b94553287f0dbd3dab651a213b3e5f69833bca12aaa22d",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-choose-faction-1-invited-envoy.png",
+          "sha256": "55c8e132a1a10764309bfe835ccfccbd1b5524dd40098b90758499c34243d99d",
+          "previousSha256": "55c8e132a1a10764309bfe835ccfccbd1b5524dd40098b90758499c34243d99d",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-1-invited-envoy.png",
+          "sha256": "b083db9ac9dd24bb8982aa8572609e2e407028b4393d2bd7eb6ef733c6311878",
+          "previousSha256": "3c3b9ee2e8ef24d14e3aa96eb38d32e5394f537b668b6342fe2c2d13ea74b00f",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-2-invitation-host.png",
+          "sha256": "0e50da1519b12f34596861fb341410f3c1991d7778a25797f4b2a80dcbe0a1bf",
+          "previousSha256": "0e50da1519b12f34596861fb341410f3c1991d7778a25797f4b2a80dcbe0a1bf",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-seat-1-invited-envoy.png",
+          "sha256": "f30410f52c471cacaf138c590ab4ed95c269d0b395524d48fb39cf1a15962f23",
+          "previousSha256": "f30410f52c471cacaf138c590ab4ed95c269d0b395524d48fb39cf1a15962f23",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "invitation-first-admission",
+      "viewport": "short",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-first-admission/short/linux-arm64",
+      "captures": [
+        {
+          "image": "002-open-invitation-1-invited-envoy.png",
+          "sha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+          "previousSha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-destination-1-invited-envoy.png",
+          "sha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+          "previousSha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-sign-in-1-invited-envoy.png",
+          "sha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+          "previousSha256": "3f932a6daf3be9906202c57e7902ec19693aa1d72245a552d9ff3ed2126c9773",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-draft-identity-1-invited-envoy.png",
+          "sha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+          "previousSha256": "4a381e5b5bbf1d39d59901f09ef49eb7dc772920162c9735b5fde7ad02754306",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-save-and-resume-1-invited-envoy.png",
+          "sha256": "75dbf8d9d02ed92a6c0f38577cf5009003cf9717b49fab0b2d023dba1f791856",
+          "previousSha256": "75dbf8d9d02ed92a6c0f38577cf5009003cf9717b49fab0b2d023dba1f791856",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "008-choose-faction-1-invited-envoy.png",
+          "sha256": "437c068be101a1e32d2836f26422b59238903a48251bc4a21250548f6298b782",
+          "previousSha256": "437c068be101a1e32d2836f26422b59238903a48251bc4a21250548f6298b782",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-1-invited-envoy.png",
+          "sha256": "3100deb754bfdacf31dd0517e5482a0cec1e856c32c4ba8b5f3071e6afb8573a",
+          "previousSha256": "b0434e2c458a407bc174406bbf60351fb3613cdde053419d64f071817d39a67a",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-claim-seat-2-invitation-host.png",
+          "sha256": "57ace449cabc976bc8865901e88d641d71a43da166b2c18a12c02fe32a51a9f4",
+          "previousSha256": "39ce8a54d6692f8297b59068b9c69c7bff5f33e6830af29f8968d1440ef71e26",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-seat-1-invited-envoy.png",
+          "sha256": "0f2a884533aa1f8c53eef540cdf6bb26f777d1c5661044b67c3ebd64b7d59b16",
+          "previousSha256": "0f2a884533aa1f8c53eef540cdf6bb26f777d1c5661044b67c3ebd64b7d59b16",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "invitation-returning-recovery",
+      "viewport": "short",
+      "source": {
+        "commit": "9ed511a2a944121c8e752874072e424ae5213b8c",
+        "dirty": false,
+        "spec": "tests/e2e/005-campaign-access/invitation.spec.ts",
+        "specSha256": "ffa7988cc8cdb5b0db967ce64597b21521e6970b05e794617a5e79dea23c4d74"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-followup-41921642165/short/test-results/stories/invitation-returning-recovery/short/linux-arm64/story.json",
+      "destination": "tests/e2e/005-campaign-access/screenshots/invitation-returning-recovery/short/linux-arm64",
+      "captures": [
+        {
+          "image": "002-return-to-invitation-1-returning-envoy.png",
+          "sha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+          "previousSha256": "e500b268a0e167bd6ae111e7f77debbc27e257abec5afd247280472c52f4989f",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "003-preserve-return-link-1-returning-envoy.png",
+          "sha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+          "previousSha256": "ed1f6931affb2387463c51ece0178ef2508854cfcbe8701b986f84ebd24072c7",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-authenticate-and-resume-1-returning-envoy.png",
+          "sha256": "8891dab2739c7e046a19255bf124593d1f1ae83da997f17cc3864ede69ad7267",
+          "previousSha256": "8891dab2739c7e046a19255bf124593d1f1ae83da997f17cc3864ede69ad7267",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "004-authenticate-and-resume-2-invitation-host.png",
+          "sha256": "ed5500c8e210978c1cd99f17a6cec6c60a6721f712f5347a2a133bcfabee5f96",
+          "previousSha256": "fcce0d6076a6470bf47e49527e97837be82fc38af2e0a31ede514fa1041652f4",
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "005-reload-return-1-returning-envoy.png",
+          "sha256": "8891dab2739c7e046a19255bf124593d1f1ae83da997f17cc3864ede69ad7267",
+          "previousSha256": "8891dab2739c7e046a19255bf124593d1f1ae83da997f17cc3864ede69ad7267",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "006-missing-invitation-1-returning-envoy.png",
+          "sha256": "9155cc5fd964bf3df2b733dc05eeedcd92d1474e85feac84ae062ba8055a4b09",
+          "previousSha256": "9155cc5fd964bf3df2b733dc05eeedcd92d1474e85feac84ae062ba8055a4b09",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "007-recover-directory-1-returning-envoy.png",
+          "sha256": "75f8fcda1611d445608a3bc941684006d5c1f00b4814c3ed67b12ee0e7853e05",
+          "previousSha256": "75f8fcda1611d445608a3bc941684006d5c1f00b4814c3ed67b12ee0e7853e05",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "009-denied-invitation-1-returning-envoy.png",
+          "sha256": "ddc4d02817a06aaaf8b4d5019d67e8ddf66b18a61a10f3314e1ec9c047474136",
+          "previousSha256": "ddc4d02817a06aaaf8b4d5019d67e8ddf66b18a61a10f3314e1ec9c047474136",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-recover-entry-1-returning-envoy.png",
+          "sha256": "643d83b3430c6f417448c7979209339a86ab3316095ad60a00776b68be60274c",
+          "previousSha256": "643d83b3430c6f417448c7979209339a86ab3316095ad60a00776b68be60274c",
+          "changed": false,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": []
+}

@@ -1,0 +1,408 @@
+{
+  "originalBase": "417bb62232403a3a841245b2e6aabdd34f9701dc",
+  "originalHead": "b590be6aa09466a8b28ea9e96708eb4b430ef6d0",
+  "reviewedTarget": "52856f40c5c99de98918cff2d156e1979af32fa1",
+  "originalSpecSha256": "f88a77979033604fa9009299e83fa4d8c8247f34e1348540834b6bce91eba954",
+  "inheritedSpecSha256": "02f5c7efe2e3f8eda5e280d2433577c01f3c825f749d088564a9ed53ea0ee959",
+  "originalAndCurrentInheritedSpecIdentical": true,
+  "referenceFiles": 136,
+  "pngCounts": {
+    "desktop/darwin-arm64": 15,
+    "desktop/linux-arm64": 15,
+    "large/darwin-arm64": 15,
+    "large/linux-arm64": 15,
+    "phone/darwin-arm64": 15,
+    "phone/linux-arm64": 15,
+    "short/darwin-arm64": 15,
+    "short/linux-arm64": 15
+  },
+  "historicalManifests": {
+    "phone": {
+      "views": 25,
+      "steps": [
+        {
+          "id": "identity-1",
+          "views": 0
+        },
+        {
+          "id": "identity-2",
+          "views": 0
+        },
+        {
+          "id": "identity-3",
+          "views": 0
+        },
+        {
+          "id": "identity-4",
+          "views": 0
+        },
+        {
+          "id": "admit-1",
+          "views": 0
+        },
+        {
+          "id": "admit-2",
+          "views": 0
+        },
+        {
+          "id": "admit-3",
+          "views": 0
+        },
+        {
+          "id": "admit-4",
+          "views": 0
+        },
+        {
+          "id": "scheduler-delivery",
+          "views": 0
+        },
+        {
+          "id": "private-room",
+          "views": 3
+        },
+        {
+          "id": "earlier-message-1",
+          "views": 1
+        },
+        {
+          "id": "earlier-message-2",
+          "views": 1
+        },
+        {
+          "id": "choose-history",
+          "views": 1
+        },
+        {
+          "id": "invite",
+          "views": 3
+        },
+        {
+          "id": "consent",
+          "views": 3
+        },
+        {
+          "id": "recover-consent",
+          "views": 2
+        },
+        {
+          "id": "return-to-chart",
+          "views": 1
+        },
+        {
+          "id": "review-removal",
+          "views": 1
+        },
+        {
+          "id": "remove-current-access",
+          "views": 3
+        },
+        {
+          "id": "message-after-removal",
+          "views": 3
+        },
+        {
+          "id": "recover-retained-history",
+          "views": 2
+        },
+        {
+          "id": "leave-retained-history",
+          "views": 1
+        }
+      ]
+    },
+    "desktop": {
+      "views": 25,
+      "steps": [
+        {
+          "id": "identity-1",
+          "views": 0
+        },
+        {
+          "id": "identity-2",
+          "views": 0
+        },
+        {
+          "id": "identity-3",
+          "views": 0
+        },
+        {
+          "id": "identity-4",
+          "views": 0
+        },
+        {
+          "id": "admit-1",
+          "views": 0
+        },
+        {
+          "id": "admit-2",
+          "views": 0
+        },
+        {
+          "id": "admit-3",
+          "views": 0
+        },
+        {
+          "id": "admit-4",
+          "views": 0
+        },
+        {
+          "id": "scheduler-delivery",
+          "views": 0
+        },
+        {
+          "id": "private-room",
+          "views": 3
+        },
+        {
+          "id": "earlier-message-1",
+          "views": 1
+        },
+        {
+          "id": "earlier-message-2",
+          "views": 1
+        },
+        {
+          "id": "choose-history",
+          "views": 1
+        },
+        {
+          "id": "invite",
+          "views": 3
+        },
+        {
+          "id": "consent",
+          "views": 3
+        },
+        {
+          "id": "recover-consent",
+          "views": 2
+        },
+        {
+          "id": "return-to-chart",
+          "views": 1
+        },
+        {
+          "id": "review-removal",
+          "views": 1
+        },
+        {
+          "id": "remove-current-access",
+          "views": 3
+        },
+        {
+          "id": "message-after-removal",
+          "views": 3
+        },
+        {
+          "id": "recover-retained-history",
+          "views": 2
+        },
+        {
+          "id": "leave-retained-history",
+          "views": 1
+        }
+      ]
+    },
+    "large": {
+      "views": 25,
+      "steps": [
+        {
+          "id": "identity-1",
+          "views": 0
+        },
+        {
+          "id": "identity-2",
+          "views": 0
+        },
+        {
+          "id": "identity-3",
+          "views": 0
+        },
+        {
+          "id": "identity-4",
+          "views": 0
+        },
+        {
+          "id": "admit-1",
+          "views": 0
+        },
+        {
+          "id": "admit-2",
+          "views": 0
+        },
+        {
+          "id": "admit-3",
+          "views": 0
+        },
+        {
+          "id": "admit-4",
+          "views": 0
+        },
+        {
+          "id": "scheduler-delivery",
+          "views": 0
+        },
+        {
+          "id": "private-room",
+          "views": 3
+        },
+        {
+          "id": "earlier-message-1",
+          "views": 1
+        },
+        {
+          "id": "earlier-message-2",
+          "views": 1
+        },
+        {
+          "id": "choose-history",
+          "views": 1
+        },
+        {
+          "id": "invite",
+          "views": 3
+        },
+        {
+          "id": "consent",
+          "views": 3
+        },
+        {
+          "id": "recover-consent",
+          "views": 2
+        },
+        {
+          "id": "return-to-chart",
+          "views": 1
+        },
+        {
+          "id": "review-removal",
+          "views": 1
+        },
+        {
+          "id": "remove-current-access",
+          "views": 3
+        },
+        {
+          "id": "message-after-removal",
+          "views": 3
+        },
+        {
+          "id": "recover-retained-history",
+          "views": 2
+        },
+        {
+          "id": "leave-retained-history",
+          "views": 1
+        }
+      ]
+    },
+    "short": {
+      "views": 25,
+      "steps": [
+        {
+          "id": "identity-1",
+          "views": 0
+        },
+        {
+          "id": "identity-2",
+          "views": 0
+        },
+        {
+          "id": "identity-3",
+          "views": 0
+        },
+        {
+          "id": "identity-4",
+          "views": 0
+        },
+        {
+          "id": "admit-1",
+          "views": 0
+        },
+        {
+          "id": "admit-2",
+          "views": 0
+        },
+        {
+          "id": "admit-3",
+          "views": 0
+        },
+        {
+          "id": "admit-4",
+          "views": 0
+        },
+        {
+          "id": "scheduler-delivery",
+          "views": 0
+        },
+        {
+          "id": "private-room",
+          "views": 3
+        },
+        {
+          "id": "earlier-message-1",
+          "views": 1
+        },
+        {
+          "id": "earlier-message-2",
+          "views": 1
+        },
+        {
+          "id": "choose-history",
+          "views": 1
+        },
+        {
+          "id": "invite",
+          "views": 3
+        },
+        {
+          "id": "consent",
+          "views": 3
+        },
+        {
+          "id": "recover-consent",
+          "views": 2
+        },
+        {
+          "id": "return-to-chart",
+          "views": 1
+        },
+        {
+          "id": "review-removal",
+          "views": 1
+        },
+        {
+          "id": "remove-current-access",
+          "views": 3
+        },
+        {
+          "id": "message-after-removal",
+          "views": 3
+        },
+        {
+          "id": "recover-retained-history",
+          "views": 2
+        },
+        {
+          "id": "leave-retained-history",
+          "views": 1
+        }
+      ]
+    }
+  },
+  "originalHistory": {
+    "PROMPTS.md": {
+      "commit": "b590be6aa09466a8b28ea9e96708eb4b430ef6d0",
+      "gitBlob": "011a2290699a10a6df4edcd28a24ddb0b5325139",
+      "sha256": "f022f357e20df6718495e650cb86540187a72985f07acf75ef51774f0ec1e854",
+      "bytes": 74817
+    },
+    "PROMPT_WORK.md": {
+      "commit": "b590be6aa09466a8b28ea9e96708eb4b430ef6d0",
+      "gitBlob": "95b02f3dd7aff4e8e266ba05642dbf6f7ecdb381",
+      "sha256": "c00d1f31a328f56f9983aab4cb0c1fa3da37c9c97323e42a8f5bc7549e2e69a0",
+      "bytes": 54591
+    }
+  },
+  "scope": "Source-only audit; no source/move/PNG import or generation performed"
+}

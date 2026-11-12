@@ -1,0 +1,214 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "source": {
+    "commit": "bcede878538d0f237a8f6a2885e62add59b46a21",
+    "dirty": false,
+    "spec": "tests/browser/research-orders.story.spec.ts",
+    "specSha256": "96f37162da5695295ea5aedb2b3358afe57c660714e4c6bd91006de972156ef2"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "manifest": "../clusterii-recovery-evidence/pr140-economy-current-43090793266/desktop/test-results/stories/live-research-orders/desktop/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "010-choose-without-sending-1-market-envoy.png",
+      "sha256": "f411aac9957e00216fe4906d08438e6639874509879557e2af653e68d7935166",
+      "previousSha256": "7b3b529894fa28c87b30ca5a871b3a3804c30ffb851cdd305f391f6ec96bbe6e",
+      "changed": true
+    },
+    {
+      "image": "010-choose-without-sending-2-independent-investor.png",
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "previousSha256": "e1bc332cbfbc8c74f8e8bb53cf3ed46535de28e9d0a87c5a6943241ba1b74720",
+      "changed": true
+    },
+    {
+      "image": "011-restore-panel-choice-1-market-envoy.png",
+      "sha256": "ddbfc1d4087681872ede1737a0363e3f5d22079b2a28d4a0b74aada3bb17689e",
+      "previousSha256": "94481bdca8d0af3a69eaafd026b7fb75d84ba5a76dd001a484b33eb6bcbeffc9",
+      "changed": true
+    },
+    {
+      "image": "012-read-unfunded-forecast-1-market-envoy.png",
+      "sha256": "2f0e49578d718bf5dba5b281773c1847e57d8a7f8307985e08ea3f62a7a9d56b",
+      "previousSha256": "bea6e654520b0146847e7603943c0e908f8480b9d5c087e8310bbd3c67dc9594",
+      "changed": true
+    },
+    {
+      "image": "012-read-unfunded-forecast-2-independent-investor.png",
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "previousSha256": "e1bc332cbfbc8c74f8e8bb53cf3ed46535de28e9d0a87c5a6943241ba1b74720",
+      "changed": true
+    },
+    {
+      "image": "013-read-unfunded-assumptions-1-market-envoy.png",
+      "sha256": "613a3c66a1f7f84de9badfda8f36b34043c4e716f8340cb91125223db32386c3",
+      "previousSha256": "870af7f57361e8a4308abd1b25ece3eace143cb2ecd87df13e3c9459992d0a48",
+      "changed": true
+    },
+    {
+      "image": "014-queue-investing-1-market-envoy.png",
+      "sha256": "ce2dba720bc92588f5b6ffdfcb26ea06460d09dfbc5de99b837f943c3fc87887",
+      "previousSha256": "9402b6720a9a3874b32badc25fe1683ae833b02d97a33ac557725e628b4b99b2",
+      "changed": true
+    },
+    {
+      "image": "014-queue-investing-2-independent-investor.png",
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "previousSha256": "e1bc332cbfbc8c74f8e8bb53cf3ed46535de28e9d0a87c5a6943241ba1b74720",
+      "changed": true
+    },
+    {
+      "image": "015-read-queued-forecast-1-market-envoy.png",
+      "sha256": "fb6bc01819383079a92f0dbad7d9b5eff30ba9faae4889b7ca407bb3a7cf151d",
+      "previousSha256": "85cd613201b1b2b44ec6057fc696fe5738dcd4f7ad3b2592169de19aea5850c4",
+      "changed": true
+    },
+    {
+      "image": "015-read-queued-forecast-2-independent-investor.png",
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "previousSha256": "e1bc332cbfbc8c74f8e8bb53cf3ed46535de28e9d0a87c5a6943241ba1b74720",
+      "changed": true
+    },
+    {
+      "image": "016-read-queued-assumptions-1-market-envoy.png",
+      "sha256": "9f70c36bd82c9787ae3aa3b5bfd2e2e2d96a6a5a3f03303f754ae53dd4fb5a5b",
+      "previousSha256": "45553e7596e3b3eb3227f0cfffcff3cf7380dfe49792e52b825875430aeb37cc",
+      "changed": true
+    },
+    {
+      "image": "017-reload-accepted-order-1-market-envoy.png",
+      "sha256": "38e052fce6f63874a2c011bb2d3c1408530ac76f915c488138bc52ba81bb04b5",
+      "previousSha256": "2245b3af83ef1443756b10feb5810908da3f3e48b61ff445175e52e5ce1793a3",
+      "changed": true
+    },
+    {
+      "image": "020-submit-held-choice-1-market-envoy-second-device.png",
+      "sha256": "f2c5f988d9c93e0f268f17fd792525258918be7e66b3747dc8319324e9bbcf05",
+      "previousSha256": "25480fc3e092aa1e269368e37539a565017cedcda9e052d8fb476bdd94212ddb",
+      "changed": true
+    },
+    {
+      "image": "021-reload-submitted-research-1-market-envoy-recovered-submission.png",
+      "sha256": "d5a48d888fef6b6d38468e9e5334788be5d37620065f8a127f7b6611165f9528",
+      "previousSha256": "72c414ba545ac2c51f65ce182fa31d8a9f925be704710eacf64d51ebd1d5a1a3",
+      "changed": true
+    },
+    {
+      "image": "022-read-recovered-retry-1-market-envoy-pending-and-retry.png",
+      "sha256": "82f65667168fd26d6f7c7087f29acb367f0d3fc4066c786c89b156ea09b57d6a",
+      "previousSha256": "c1bc1800444ac137172312d74ae213d34669ad70312cd171f521d6a4bce03913",
+      "changed": true
+    },
+    {
+      "image": "024-switch-current-device-1-market-envoy.png",
+      "sha256": "6d1e9c9ac5aaa80ba8a8747812b5c1f57f642818fbce196c9f081e9ea3edba59",
+      "previousSha256": "c988be9696b2018f36a537f9139a1e91bd8a4c42ab558ed90fc9f5a679363acc",
+      "changed": true
+    },
+    {
+      "image": "024-switch-current-device-2-independent-investor.png",
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "previousSha256": "e1bc332cbfbc8c74f8e8bb53cf3ed46535de28e9d0a87c5a6943241ba1b74720",
+      "changed": true
+    },
+    {
+      "image": "026-review-stale-rejection-1-market-envoy-second-device.png",
+      "sha256": "01a82ecbdd3c51bb7c542be9015323f4443f909cce36d092ee95467df2ec68c0",
+      "previousSha256": "13d7b43fe38235a34da433abdce12dbb39154ab365b0b8c7a9c7ade9982d10ae",
+      "changed": true
+    },
+    {
+      "image": "026-review-stale-rejection-2-independent-investor.png",
+      "sha256": "55ebe8f450f5e2cdb6449e4288ddb378d2a3b527570f2442779ad5e5dce38eff",
+      "previousSha256": "e1bc332cbfbc8c74f8e8bb53cf3ed46535de28e9d0a87c5a6943241ba1b74720",
+      "changed": true
+    },
+    {
+      "image": "027-close-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "3d9a3ad19e97380ff86cb739eb2b4d85a8ce8afd835f10c59fee6af9240bc198",
+      "previousSha256": "3d9a3ad19e97380ff86cb739eb2b4d85a8ce8afd835f10c59fee6af9240bc198",
+      "changed": false
+    },
+    {
+      "image": "028-reopen-conflict-panel-1-market-envoy-second-device.png",
+      "sha256": "c518de7636a498c0e2fdafd62c8444805df331ac75a91b3cdd7433d185299539",
+      "previousSha256": "2b4e713da73b3f4488c2cf231a3d54e8b9227317f2174dd5c8899d78b56f69ed",
+      "changed": true
+    },
+    {
+      "image": "029-replace-recovered-intent-1-market-envoy-revised-intent.png",
+      "sha256": "214ef1a49ae1d8127eecdab5296293140dbae3d98fcc641c2491956ba29bb97e",
+      "previousSha256": "c27851912672bd21dbc59bf23fe6441537a02a4255ac14d1ebb1f55f69ae5975",
+      "changed": true
+    },
+    {
+      "image": "031-recover-science-tick-14-1-market-envoy.png",
+      "sha256": "d94d839954069d1c6c2927da63c41ad913c9590fba9b853192d724052d7732ee",
+      "previousSha256": "a6c4f6324d6a8825bb6870a17baea115eb525e89ba19468f2f903a9dcb20c83c",
+      "changed": true
+    },
+    {
+      "image": "031-recover-science-tick-14-2-independent-investor.png",
+      "sha256": "2012b07f2be1fa57d1781e03ea37f95e5905e5541de76ac21f441a86926071d5",
+      "previousSha256": "a6a819da47b44b09589209ab2b8503a7c71017fa41b4c05b08ef3b0702010db9",
+      "changed": true
+    },
+    {
+      "image": "033-recover-science-tick-15-1-market-envoy.png",
+      "sha256": "526de41ece9cc4fd7c75a6de76cccdb8cfce636d71e4d1b531dc9b88b8edf0b4",
+      "previousSha256": "549306051e982ad846aeeed282217218bcbf6928ae6762fea0fca034e37fc8d9",
+      "changed": true
+    },
+    {
+      "image": "033-recover-science-tick-15-2-independent-investor.png",
+      "sha256": "37b04277db112b2cabcbc31b6f196c71bf4fdbd71f67cdbc92471883c8284c68",
+      "previousSha256": "31c8118136cbd12bf80981e138b9c6d2e415c141ccc1b750882e78764ddb5290",
+      "changed": true
+    },
+    {
+      "image": "035-recover-science-tick-16-1-market-envoy.png",
+      "sha256": "2db3a3e76357532b0d773d26f71b4dc57ea9d1d4f3684e5c8f87f4fdc5aa7d39",
+      "previousSha256": "bd2aef6779d22e2ac6bf32c9b817cd363f7962cfa129874fc745eaa12739dcd2",
+      "changed": true
+    },
+    {
+      "image": "035-recover-science-tick-16-2-independent-investor.png",
+      "sha256": "3ef12d12d50930c758cf4c89e513688f1cb58c6eda29d4b20f9d86e83933571d",
+      "previousSha256": "e9aceb43eb51e57028494ed9b790dbda85007f304d490858079f527e4e942272",
+      "changed": true
+    },
+    {
+      "image": "036-retain-newer-intent-after-ticks-1-market-envoy-retained-revised-intent.png",
+      "sha256": "80830c25d201d9f1c9d2efa6566b1e1d888dd751f21296ab28c57873b1d695eb",
+      "previousSha256": "a5cd112662fa70ed1f7fef853915b07caa9fffc3ef77ebfb99643c2ad4cc15be",
+      "changed": true
+    }
+  ],
+  "scope": "Individually viewed all48 distinct changed desktop originals:15 market states previously recorded and33 research guidance/order states now inspected. Four allocation controls, invalid123/100 and111/100, complete focus outlines, disabled Apply, reset25 and private peer context readable. All eight research choices show full selected row, effect, cost and queue button. Held/reloaded Recruiting, gold retry focus, preserved stale conflict and exact scheduled Investing/Innovation tick1 lists remain readable. Actual science19.6 then completion1 then2.404 and earned1.4/1.404, independent Navigation19.6/21/22.4 match shown state. Economy panel clears rail. Bounded readers intentionally clip neighboring unselected rows/prose; deliberate outcome readings do not claim automatic simultaneous all-content visibility. Scoped regression approval only, not whole design or motion certification."
+}

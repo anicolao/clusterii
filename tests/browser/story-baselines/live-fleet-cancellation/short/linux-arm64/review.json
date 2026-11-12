@@ -1,0 +1,208 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-fleet-cancellation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+    "dirty": false,
+    "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+    "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/short/test-results/stories/live-fleet-cancellation/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "5983ecc9f06d7182bae92cede48a86d7c8eed55ec151b836579012e9a521c366",
+      "previousSha256": "1e783eeb7c79e13676cdf9c7f54a5ac512086bb80e684c5f57b9a18469462aa5",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "68d63b64f6bc0dc9ea2f3aeee36d66b619b6b85f076ee37dd0b5fcb221de727f",
+      "previousSha256": "31ace5480ed380b2d62f95e2bcd3872cebc3be23b082d897f61208777d92feee",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "8e5ca12215d8d1a64212f3a8ca21ab97aeffb58424759e7870ec46a17e1f32e7",
+      "previousSha256": "18d2d8538591800b4ea9744025cc307f109ac0e28bb4f40b4073bd55b92f6b72",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "6b840cb83e513730adf0ada26f476043bcaea00544613bbf44b40a7af58b4415",
+      "previousSha256": "b9f29a291fbbfe5191b704c8e0ead9add5dee35ee3f3f6e80009e928af263a86",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "014-review-cancellation-1-fleet-marshal.png",
+      "sha256": "f87d67f29a9deeb66eb250c1f8527e0c7d2a652dae0f4f867db916ee4d0129ec",
+      "previousSha256": "602b0a9cdf26c513931d3979786a10e26374838d043b6ee87a222dbb0721236c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "014-review-cancellation-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "015-keep-order-1-fleet-marshal.png",
+      "sha256": "0c28240807379749e403c3deebe6bdb66d2db438f5e49ae53ccbba8b2af3ee94",
+      "previousSha256": "baa8327ed72a94ec5df3441eb1c1d6aec1f4a5b817f2739d74a17ae6ebe00f76",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "015-keep-order-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "016-cancel-formation-1-fleet-marshal.png",
+      "sha256": "06c7df2c7b679539bd7a1f0fe12c16bef519548424951605bec3838b3dde4db9",
+      "previousSha256": "0387c520cb29e7d71ec2db20d7feee838e493d2dd52a36892b2a1d86165d8ef9",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "016-cancel-formation-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "017-released-draft-1-fleet-marshal.png",
+      "sha256": "171a177d7469ea680e11995d0c8c9974de54c67e43265b40ab443b1870205ead",
+      "previousSha256": "9541c79ff4019396f48df63960bcbab20945e9cb22cc4cfd0a385fe4a1764bdb",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "017-released-draft-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "018-reload-cancelled-1-fleet-marshal.png",
+      "sha256": "465cb12a195445e7605b3c501fa4be7d0f3ca70852632d8ae7ecb9c40922eb3c",
+      "previousSha256": "37bec256c59180fabbfc0b0af39b4634d6e0f055a369a026ee98f5c361bd8785",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "018-reload-cancelled-2-independent-marshal.png",
+      "sha256": "464f6f0b95fd1e4b291457d48399956a576c792610600691bf260af9e594739c",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "020-cancelled-order-never-executes-1-fleet-marshal.png",
+      "sha256": "aecd9be43f354d825c6e61269a3238acedcece550e37d91b82c386c006d1ba12",
+      "previousSha256": "31e8637f228de6dbd19fa6c9bd0492358ca35843ff02bcef030fc3d3b2208c7a",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "020-cancelled-order-never-executes-2-independent-marshal.png",
+      "sha256": "36a8b4e076f22f871d4a2d828706d67f56534a86f84e33d660ac3ba6710a1812",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    },
+    {
+      "image": "021-return-to-system-1-fleet-marshal.png",
+      "sha256": "1ca473c8aa6834d3359f8774a86978be0cce988c76bab25be546e2227605673a",
+      "previousSha256": "e9955a0887601d94fadd3e19e71eb4fabd917be868e34b886fd022fcd8ef15c8",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "021-return-to-system-2-independent-marshal.png",
+      "sha256": "36a8b4e076f22f871d4a2d828706d67f56534a86f84e33d660ac3ba6710a1812",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json"
+    }
+  ],
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/fleet-insets-short-reviewed.json",
+      "source": {
+        "commit": "ec13c28dedc76fb08199312ecd5937940995a336",
+        "dirty": false,
+        "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+        "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-insets-43173376847/short/test-results/stories/live-fleet-cancellation/short/linux-arm64/story.json",
+      "scope": "Exact changed-hash regression approval only; no full design/normal motion/privacy-rule/release acceptance."
+    }
+  ]
+}

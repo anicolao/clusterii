@@ -1,0 +1,53 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "route-instrument-components",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/009-route-forces/components.spec.ts",
+    "specSha256": "504a59eddebd991a74f40fa84a676e4b76fe08f9db78bd70815184ad93e1437c"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/route-instrument-components/phone/linux-arm64/story.json",
+  "inspectionScope": "Draft/accepted route distinction, real catalogue labels, 2 fighters/10 infantry, capacity and route status readable. Gallery actions contained; phone/short lab view intentionally leaves lower footer below the document viewport and does not establish simultaneous full-control visibility. Scoped regression only.",
+  "captures": [
+    {
+      "image": "001-review-gallery-route-1-component-reviewer.png",
+      "sha256": "19bbbf2dbb81a1ac06c29b03b1de04aa3a8cd35444bf5f302c346713b52f38c4",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "002-inspect-accepted-lab-1-component-reviewer.png",
+      "sha256": "40a0e04244f4aab484088ef62d5cd3d10d6a8a65f34003385cfe5d73c166415c",
+      "previousSha256": null,
+      "changed": true
+    }
+  ]
+}

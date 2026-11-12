@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "mode": "generate",
+  "source": "9cb0c16ecc89b8d0bf3839bcd14dca23c5c9d721",
+  "target": "0a415b89fa7f95e6dc1987bb8577017221e90a0b",
+  "serviceGroups": [
+    "waiting-followup"
+  ],
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "testsPerProject": {
+    "phone": 5,
+    "desktop": 5,
+    "large": 5,
+    "short": 5
+  },
+  "retries": 0,
+  "updateSnapshots": "none",
+  "inputs": {
+    "src": "768e08f2518332ce37cecf4305c2666030175a10",
+    "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+    "functions": "c116879153585f6c933dad28096563165fa23641",
+    "tests": "1e5a462b508c97cbb3743faa24eed7ffb81a4617",
+    "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+    "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+    "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+    "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+    "playwright.stories.config.ts": "25440b492b962da9edeb8700ed0c18c9f062db3a",
+    "scripts/story-cohorts.mjs": "2032d7efeed8b914bc6d668594fd04581ccc65a7",
+    "scripts/story-service-groups.mjs": "9ee85e3deb132f318f80d8a9ef63fd2369f451f4",
+    "scripts/run-stories.mjs": "dbe7446f756baa8c11acc0444d5be813b9e4fe88"
+  },
+  "request": "9ed511a2a944121c8e752874072e424ae5213b8c",
+  "branch": "investigate/pr140-waiting-followup-20261104",
+  "guardTests": 6,
+  "collection": [
+    {
+      "project": "phone",
+      "count": 5
+    },
+    {
+      "project": "desktop",
+      "count": 5
+    },
+    {
+      "project": "large",
+      "count": 5
+    },
+    {
+      "project": "short",
+      "count": 5
+    }
+  ],
+  "scope": "Five complete original journeys: two invitation stories, campaign start, maintenance and returning entry. Current-source exact comparisons after inspected waiting-footer margin cause; no source/spec/helper/reference edits, no automatic promotion.",
+  "reason": "Avoid repeated first-mismatch reference updates: expose all subsequent states in complete current-source candidate journeys. Independently failed pixels still classified individually; future actual images require inspection.",
+  "retention": "14 days remote; no duplicate archive download; retain only useful selected originals/manifests and compact provenance.",
+  "run": 41921642165
+}

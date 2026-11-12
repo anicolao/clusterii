@@ -1,0 +1,433 @@
+$ biome check shared functions/src src/lib && prettier --check "src/**/*.svelte" "src/**/*.css"
+Checked 58 files in 34ms. No fixes applied.
+Checking formatting...
+All matched files use Prettier code style!
+$ bun test tests/unit.test.ts tests/galaxy-labels.test.ts tests/galaxy-camera.test.ts tests/campaign.test.ts tests/travel.test.ts tests/fleet-contacts.test.ts tests/conversations.test.ts tests/briefing.test.ts tests/trades.test.ts tests/selected-observer.test.ts tests/current-result.test.ts tests/motion-preference.test.ts tests/detail-preference.test.ts tests/science-rate.test.ts tests/galaxy-framing.test.ts
+bun test v1.3.13 (bf2e2cec)
+
+tests/motion-preference.test.ts:
+(pass) explicit reduction persists and OS reduction cannot be overridden [0.56ms]
+(pass) cross-tab changes and unavailable storage preserve honest usable state [0.09ms]
+(pass) shared feedback cancels active motion on local reduction without replaying the event [0.12ms]
+
+tests/campaign.test.ts:
+(pass) review rules generate persisted, reproducible, fair connected galaxies for every roster size [98.41ms]
+(pass) development admission enforces quota, idempotency, stale claims, scheduled start and private views [1.65ms]
+(pass) split ownership omits opposing layer values from serialized views [0.15ms]
+(pass) private projections are independent of opposing-layer values for every control combination [3.90ms]
+(pass) maintenance freezes scheduled time and rejects admissions without changing holdings [0.45ms]
+(pass) epoch activation resumes only paused members and permanently records mock exposure [0.35ms]
+(pass) exact production floors review exponents, preserves milliunits and apportions stable ties [0.36ms]
+(pass) home production conserves credits, whole forces and fractional remainders; science advances only after output [3.36ms]
+(pass) split control routes production by layer, releases escrow once and hides opposing ledgers [1.57ms]
+(pass) production force caps record discarded units and legacy campaigns retain their stored capability [0.28ms]
+(pass) production pause preserves the remaining interval and legacy starts never gain an economy [0.53ms]
+(pass) investing is applied once before wallet/escrow apportionment and neutral developments produce nothing [0.50ms]
+(pass) research admission assigns future cutoff, rejects foreign/stale/paused/legacy orders and keeps queues private [1.18ms]
+(pass) research selections settle in admitted order, retain unfinished progress and transfer capped bank exactly once [1.21ms]
+(pass) construction reserves exact escalating prices, serial layer capacity and future cutoffs without overspending [2.03ms]
+(pass) four construction advances produce on completion and distribute one bounded dividend from frozen markets [2.15ms]
+(pass) cancellation settles at its assigned tick with full or half refund and cannot repeat [2.71ms]
+(pass) split-layer construction privacy, pre-execution invalidation and capture cancellation preserve exact refunds [1.75ms]
+(pass) construction layer queues start successors without an immediate advance and dividend escrow conserves its pool [3.79ms]
+(pass) market focus validates exact allocation, membership, private orders and future boundary [1.23ms]
+(pass) focus applies in sequence but completion dividends use the previous tick allocation [2.94ms]
+(pass) focus admission is bounded, ordered and zero-weight completion pools pay nothing [12.78ms]
+(pass) scans use one private draw per target, frozen levels and nearest orbital source [2.07ms]
+(pass) stale observations preserve old permitted facts and never expose current enemy secrets or draws [2.09ms]
+(pass) split ownership grants only observed fields; no sensor means stale and legacy capability remains unchanged [2.62ms]
+(pass) server observation draws are stable and domain-separated without public replay secrets [0.26ms]
+Stellar observation envelope budget {
+  mode: "mock",
+  bytes: 563611,
+  players: 12,
+  stars: 384,
+}
+Stellar observation envelope budget {
+  mode: "real",
+  bytes: 563432,
+  players: 12,
+  stars: 384,
+}
+(pass) the largest stellar catalogue retains complete reports within the canonical envelope budget [24.28ms]
+(pass) observation storage reserves complete reports before admitting excess pending work [5.10ms]
+(pass) fleet admission reserves without moving forces; boundary settlement conserves units and rejects duplicate reservations [4.03ms]
+(pass) fleet validation, layer entitlement and private views fail closed [2.61ms]
+(pass) formed and reserved fleet units count toward the empire production ceiling [0.91ms]
+(pass) fleet slots include reservations and enforce the recorded empire limit [23.14ms]
+(pass) state capacity cannot block disbanding that frees persistent fleet storage [614.60ms]
+Disband recovery envelope budget {
+  mode: "mock",
+  bytes: 933747,
+}
+Disband recovery envelope budget {
+  mode: "real",
+  bytes: 933568,
+}
+(pass) the disbanding recovery budget fits both encrypted envelope formats [15.97ms]
+(pass) two commanders using one command UUID retain independent fleet identities and forces [1.45ms]
+(pass) cargo reservations share surface inventory and conserve fleet/system forces across load and unload [1.81ms]
+(pass) cargo fails closed on forged fields, lost layer ownership, capacity changes and absent fleets [5.32ms]
+(pass) fleet acknowledgement reconciles only its authoritative outcome and never invents a future transfer [1.88ms]
+(pass) split and merge conserve stationed complements, reserve slots and lock every participant [1.77ms]
+(pass) reorganization rejects forged or incompatible fleets and preserves orthogonal surface control [3.88ms]
+(pass) pending splits reserve the shared fleet limit against formation and other splits [2.47ms]
+(pass) fleet cancellation releases only owned reservations before the exact cutoff [1.03ms]
+(pass) cancelling all stationed operations preserves forces and releases both merge participants [4.06ms]
+
+tests/unit.test.ts:
+(pass) JSON, Unicode, escaping, null and newlines round trip through object and grant [1.08ms]
+(pass) wrong keys, modified bodies, game, recipient, epoch and revision fail closed [0.42ms]
+(pass) profile reducer validates data and rejects lost updates [0.29ms]
+(pass) campaign sign-in return accepts only canonical IDs and retains the preview base
+(pass) Continue uses accessible active metadata and the remembered selection only
+(pass) AES-GCM reads an independent OpenSSL vector with authenticated Cluster metadata [0.38ms]
+(pass) real envelopes and recipient grants reject substitution and never accept mock data [0.73ms]
+(pass) acknowledgements bind exact payload and admission path independently of JSON property order [0.32ms]
+(pass) market drafts preserve incomplete intent, follow untouched authority and isolate account/access scopes [0.26ms]
+
+tests/trades.test.ts:
+(pass) credit offers reserve exact amounts and settle both sides once without a dividend [0.61ms]
+(pass) only named participants see terms and outcomes, with no account IDs or opponent wallet [0.92ms]
+(pass) authorization, exact terms, affordability and revision guards leave canonical state unchanged [1.65ms]
+(pass) first admitted acceptance or withdrawal wins and all cancellation paths conserve reservations [1.29ms]
+(pass) strict tick cutoff and expiry precede settlement during catch-up [0.79ms]
+(pass) overflow fails the complete exchange and returns both reservations without partial credit [1.69ms]
+(pass) credit input accepts exact milliunits without float rounding or scientific notation
+(pass) co-faction commanders retain distinct trade identities and private entitlements [1.16ms]
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [0.50ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [1.92ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [3.76ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [3.90ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [1.74ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [1.61ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [151.63ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [4.89ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [2.65ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [0.72ms]
+(pass) route memory and submitted recovery preserve newer intent across navigation and retirement [1.70ms]
+(pass) route review retains exact garrison without subtracting formed forces twice or revealing the opposite layer [1.48ms]
+
+tests/fleet-contacts.test.ts:
+(pass) fleet scans persist one target draw and project exact acquired facts without private identifiers or routes [1.82ms]
+(pass) failed scans publish no contact; stale history retains only acquired positions [1.51ms]
+(pass) scan outcomes survive JSON reload and future navigation orders without exposing hidden destinations [1.42ms]
+(pass) frozen scanning level, missing sensors, invalid draws and legacy capability are explicit [1.18ms]
+(pass) incomplete persisted scan matrices fail closed instead of exposing an unverified contact [1.29ms]
+(pass) moving contacts use the confirmed position and never publish the planned destination [1.81ms]
+(pass) an empire without an orbital or fleet sensor acquires no contacts and consumes no target draw [1.07ms]
+
+tests/galaxy-camera.test.ts:
+(pass) home target framing > measured phone inspector leaves target in the exposed upper chart [0.27ms]
+(pass) home target framing > measured DOMRect properties may be inherited accessors, not spreadable fields
+(pass) home target framing > unoccluded desktop and short chart centers remain unchanged
+
+tests/briefing.test.ts:
+(pass) visit checkpoints are private, monotonic and change no gameplay or message-read state [0.89ms]
+(pass) visit validation rejects forged periods and nonmembers without mutation [1.04ms]
+(pass) briefing requires an exact baseline, deduplicates production and reports layer losses explicitly [1.12ms]
+(pass) briefing includes only received message metadata and does not mark messages read [1.40ms]
+(pass) briefing retains construction completion once and excludes outcomes before the saved visit [1.94ms]
+(pass) illustrated briefing derives mixed control, arrivals, construction and received-message reports from production reducers [3.47ms]
+(pass) eight-seat briefings distinguish co-faction authors and safely label legacy identity [3.23ms]
+(pass) commander identity rejects missing or invalid seat indices without faction inference [1.17ms]
+
+tests/galaxy-framing.test.ts:
+(pass) camera framing contains the unchanged authorized catalogue at phone, desktop, large and short map aspects [1.32ms]
+(pass) route camera fits actual inclined and reordered endpoints across viewport changes [0.43ms]
+
+tests/selected-observer.test.ts:
+(pass) superseded selection rejects late data and errors and retires delayed subscription [0.15ms]
+(pass) current observer preserves ownership of cleanup and propagates initialization failure
+
+tests/current-result.test.ts:
+(pass) a superseded snapshot error cannot replace a newer saved identity
+(pass) current errors remain actionable and retired successes cannot restore identity
+
+tests/science-rate.test.ts:
+(pass) current rate is available before first output and equals unchanged next settlement [4.43ms]
+(pass) current earned Innovation differs from previous delivered output without changing settlement timing [3.62ms]
+(pass) science sources follow orbital entitlement, omit opposing fields and sum before Innovation [0.79ms]
+
+tests/detail-preference.test.ts:
+(pass) detail preference waits for initialization and persists browser-local selection [0.25ms]
+(pass) storage denial is explicit while the current-page setting still works
+(pass) late decorative texture cannot restore a retired render generation [0.18ms]
+
+tests/conversations.test.ts:
+(pass) future-only admission never grants an invited player earlier message plaintext [1.27ms]
+(pass) concurrent senders share one server sequence without rejecting unrelated campaign revisions [1.54ms]
+(pass) removal fences stale sends and rejoining grants no messages sent during absence [1.73ms]
+(pass) only the creator manages membership and closure; members leave without erasing earlier records [2.08ms]
+(pass) validation and room conflicts preserve authoritative state and never alter economic or military state [1.48ms]
+(pass) selected history requires explicit acceptance and projects only granted bodies [1.87ms]
+(pass) selected references reject invalid scopes, stale membership and unbounded or duplicate history [1.02ms]
+
+tests/galaxy-labels.test.ts:
+(pass) galaxy label cartography > selected name clears a tall reading panel without moving its anchor and restores on close [0.20ms]
+(pass) galaxy label cartography > selected label clears a real acknowledgement and returns when it closes [0.04ms]
+(pass) galaxy label cartography > resize round-trip projection noise preserves the physical text origin without changing catalogue anchors [0.03ms]
+(pass) galaxy label cartography > retained phone overlap separates home from Tupã without changing stars
+(pass) galaxy label cartography > selected then home then owned retain priority in a crowded viewport [0.28ms]
+(pass) galaxy label cartography > edges stay contained, offscreen anchors stay offscreen, resize recomputes
+
+ 119 pass
+ 0 fail
+ 4572 expect() calls
+Ran 119 tests across 15 files. [1235.00ms]
+$ node --test scripts/check-recovery-settlement.test.mjs scripts/check-emulator-post-marker.test.mjs scripts/check-verification-reuse.test.mjs scripts/check-profile-ingress-observer.test.mjs scripts/check-story-bootstrap.test.mjs scripts/check-campaign-start-time.test.mjs scripts/check-membership-fault.test.mjs scripts/check-contact-inputs.test.mjs scripts/check-observation-inputs.test.mjs scripts/check-story-cohorts.test.mjs scripts/check-story-policy.test.mjs scripts/check-catalogue-loader.test.mjs scripts/check-admission-clock.test.mjs scripts/check-credit-clock.test.mjs scripts/check-construction-clock.test.mjs scripts/check-fleet-clock.test.mjs scripts/check-travel-clock.test.mjs scripts/check-feature-story-layout.test.mjs scripts/check-route-observation-inputs.test.mjs && node scripts/check-story-policy.mjs && bun run test:baseline-paths
+✔ admission fixture changes only designated domain time inputs (0.373542ms)
+✔ admission loader leaves unrelated modules untouched and fails closed outside emulator (0.292833ms)
+✔ admission loader preserves identities and actions and rejects changed signatures (1.895ms)
+✔ future, overdue and begun statuses retain the same authoritative ISO start identity (10.406833ms)
+✔ a roster without a scheduled start does not fabricate a time (0.094792ms)
+✔ catalogue instrumentation leaves every unrelated module untouched (0.383417ms)
+✔ catalogue instrumentation refuses non-emulator and non-demo services (0.246542ms)
+✔ demo fixture changes only catalogue input and rejects a changed reducer signature (0.694208ms)
+✔ construction story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.358084ms)
+✔ construction loader fails closed outside demo runtime and preserves all command inputs (1.629667ms)
+✔ contact entropy preserves real facts and distinguishes observers and same-number owners including a newly formed fleet (1.023917ms)
+✔ unrelated campaigns retain every production entropy input (0.067167ms)
+✔ contact instrumentation refuses non-demo, non-loopback and changed or duplicate signatures (0.205583ms)
+✔ route story contact draws are stable across generated IDs and viewport names (0.718208ms)
+✔ credit story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.3705ms)
+✔ credit loader fails closed outside demo runtime and preserves all command inputs (1.424291ms)
+✔ emulator selection is exact and exported categories cannot include document or identity metadata (0.957292ms)
+✔ unsafe invocation reports only a fixed guard category and unit tooling cannot claim the story observation (40.448292ms)
+✔ actual jcmd acquisition uses the checked-in JFC and completes a parseable recording (4548.430833ms)
+✔ real Nix JDK recording exports bounded wait evidence without JVM metadata (480.539209ms)
+✔ streamed JFR events preserve aggregation across escaped strings and chunk boundaries (0.417959ms)
+✔ export failures retain classified process facts without output or exception contents (267.774208ms)
+✔ migrated and legacy paths remain separate and share one fixture implementation (2.91175ms)
+✔ generated feature narrative requires all four complete matching verified sequences (0.70975ms)
+✔ historical telemetry remains opt-in and emulator-only, with exact source anchor (0.367042ms)
+✔ same step IDs cannot disguise mixed spec or changed acknowledgement/view claims (0.535708ms)
+✔ Playwright comparison and manual renderer preflight resolve the same exact baseline path (0.72975ms)
+✔ separate feature stories require complete matching four-size source and claims (2.13875ms)
+✔ fleet story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.360667ms)
+✔ fleet loader fails closed outside demo runtime and preserves all command inputs (1.573833ms)
+✔ membership fault requires demo loopback and reviewed source hashes (1.015042ms)
+✔ fault changes only target authorization membership and preserves original metadata (0.282375ms)
+✔ fault rejects unrelated, inactive, real-provider, mismatched and nonmember targets (0.1ms)
+✔ restoration refuses concurrent head, membership or directory writes (1.04175ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.881458ms)
+✔ unrelated campaigns retain every original entropy input (0.065083ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.195167ms)
+✔ binary metadata correlation is bounded and never returns source identifiers or secrets (1.31925ms)
+✔ native HTTP observer preserves body, headers, status and response while separating arrival/close (11.992167ms)
+✔ diagnostic cap is explicit and does not prevent subsequent HTTP responses (13.197375ms)
+✔ successful CI cannot accept absent, unmatched or uncorrelated ingress evidence (1.204667ms)
+✔ entry permits exactly the frozen feature010 phone verification (2.029416ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (34.55375ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.35975ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.440625ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.183542ms)
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+Recovery accepts no additional arguments
+Usage: cluster-ci-renderer stories verify|generate OR application OR recovery feature010-phone
+✔ actual launcher rejects non-allowlisted commands before touching renderer ownership (16.661542ms)
+✔ fixed scan entropy keeps star/tick/seed and distinct seats without mutating real identities (0.901708ms)
+✔ unrelated campaigns retain every original entropy input (0.066333ms)
+✔ instrumentation fails closed outside demo loopback and on changed service signatures (0.1965ms)
+✔ entropy identities are stable across real campaign/account IDs, never modifying state (0.07375ms)
+✔ passed-run facts remain as an explicit file even when reporter ignores attachment bodies (1.702459ms)
+✔ generated Svelte aliases must precede Playwright's first configuration read (3.161542ms)
+✔ story runner awaits alias generation before building and launching any cohort (0.34825ms)
+Previous story evidence preserved at /tmp/nix-shell.rQtWz2/cluster-cohort-test-6Iu2Oi/.story-cohorts-TpIoWt/previous
+Previous Firestore evidence preserved at /tmp/nix-shell.rQtWz2/cluster-cohort-test-6Iu2Oi/.story-cohorts-TpIoWt/previous-root-logs
+✔ fresh sequential viewport cohorts retain every capture, failed trace, log and status (9.679083ms)
+✔ occupied services abort before moving prior evidence or launching a cohort (0.472834ms)
+✔ interruption retains current artifacts and launches no successor (1.928417ms)
+✔ an artifact path collision fails rather than overwriting either result (4.300375ms)
+✔ a later ownership guard failure retains completed evidence without launching another process (2.095625ms)
+✔ independent service groups retain all failures and never overlap active emulators (10.4975ms)
+✔ an explicitly scoped candidate viewport cannot expand or silently accept invalid selections (1.750542ms)
+✔ service grouping keeps every actual test identity once and rejects omitted or duplicated journeys (1.343042ms)
+✔ story convention rejects screenshot, sleep, mask and ambiguous selector bypasses (0.833333ms)
+✔ capture policy protects each exact comparison, readiness and review guard (0.892209ms)
+✔ current migration inventory and story configuration satisfy the explicit policy (15.537417ms)
+✔ reviewed credit maintenance changes only one exact pending accessible name (0.510041ms)
+✔ travel story clock preserves unrelated campaigns and advances only with confirmed boundaries (0.46725ms)
+✔ travel loader fails closed outside demo runtime and preserves all command inputs (1.471041ms)
+✔ index acquisition preserves every mode/path beyond the default child buffer and matches the complete repository (157.789792ms)
+✔ only the explicit report allowlist can change without changing verification inputs (0.372291ms)
+✔ reuse requires exact scope, provenance and an earlier source; outcomes never turn failure or pending into success (0.213792ms)
+✔ workflow check names, full execution branches and evidence retention remain present (0.413709ms)
+✔ prepare executes normal checks for absent, invalid, expired, unavailable or unrelated evidence (0.677791ms)
+✔ prepare and wait pin a real executor; pending becomes its failure or retained success, never a manufactured pass (0.701917ms)
+✔ chained plans resolve the original checkout and reject a substituted unrelated executor (0.16625ms)
+✔ wait falls back to real tests on missing evidence/API, but preserves a pending or failed source gate (0.311459ms)
+✔ plan archive reader checks size/hash, expiry and bounded JSON with actual ZIP fixtures (114.719042ms)
+ℹ tests 77
+ℹ suites 0
+ℹ pass 77
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5402.05425
+Illustrated-story policy passed; legacy migration gaps remain inventoried.
+$ playwright test --config playwright.paths.config.ts
+
+Running 4 tests using 1 worker
+
+
+(node:54203) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [phone] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[phone] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:54460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/4] [desktop] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[desktop] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:54723) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/4] [large] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[large] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(node:54989) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] [short] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+[short] › tests/tooling/baseline-paths.spec.ts:12:1 › real TestInfo resolves both baseline layouts without changing reviewed artifacts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4 passed (6.3s)

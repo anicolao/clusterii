@@ -1,0 +1,298 @@
+[
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/desktop/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/large/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/phone/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-first-admission/short/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/desktop/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/large/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/phone/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  },
+  {
+    "path": "/tmp/cluster-pr62-complete-invitations/originals/test-results/stories/invitation-returning-recovery/short/linux-arm64/story.json",
+    "source": {
+      "commit": "04c4459164665411a9af5bafa36dd40d3e39bf87",
+      "dirty": true,
+      "spec": "tests/browser/invitation.story.spec.ts",
+      "specSha256": "5b24b70c8719f111f6812b5c24923a85dad7212071c8ea1653d7b1aea66d5d70"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "status": "passed",
+    "captures": 9
+  }
+]

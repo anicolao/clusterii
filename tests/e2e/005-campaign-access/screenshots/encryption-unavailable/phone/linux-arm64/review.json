@@ -1,0 +1,74 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/menu-access-inspection.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "encryption-unavailable",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "c7fd2d3d79616039922fb380e6a3de061a054957",
+    "dirty": false,
+    "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
+    "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
+  },
+  "target": "0c56cdec",
+  "run": 43136140057,
+  "manifestSha256": "b1f3b6ab4f66d47585a52ab980ee40b860dc3d3892e959e3fbeb6310b731e5e6",
+  "inspectionScope": "All36 distinct changed originals individually inspected:9 each viewport, phone/desktop/short at native display, large3840x2160 displayed2048x1152. Seat confirmation and named action/footer remain readable; construction paid69/remaining131 and available costs/queue/cancel controls remain visible; market draft73 with123/100 validation and disabledApply retained; focused training input outline complete; acknowledged tick1 credits202.8 and production2.8 readable. Deliberately bounded readers clip secondary neighboring paragraphs/rows (including short science-earned lower row); this does not claim complete ledger reading in one frame or full design/normal-motion certification. Compared old short market and phone admission originals: measured header/footer placement changes, truthful state retained.",
+  "applicability": "Only Conversations short media spacing and FleetRoute editor CSS differ since0c56cdec. These three stories use waiting admission, construction/economy/market/menu surfaces, never Conversations or FleetRoute. Their specs, shared helpers, runtime and renderer are unchanged.",
+  "captures": [
+    {
+      "image": "002-review-provider-1-cipher-envoy.png",
+      "sha256": "52acc87fa7e1d763b9ed4d888194ab4a16070d1f5d4e32bfd5cf7a3f2e0044b9",
+      "previousSha256": "52acc87fa7e1d763b9ed4d888194ab4a16070d1f5d4e32bfd5cf7a3f2e0044b9",
+      "changed": false
+    },
+    {
+      "image": "003-created-campaign-1-cipher-envoy.png",
+      "sha256": "acd28a0ad94a711be4e443be32392adfa48d8c698d9cd4d5f6b91dc45bd75292",
+      "previousSha256": "acd28a0ad94a711be4e443be32392adfa48d8c698d9cd4d5f6b91dc45bd75292",
+      "changed": false
+    },
+    {
+      "image": "004-claimed-seat-1-cipher-envoy.png",
+      "sha256": "435d5e1503ef552a546f9cc228f8be4dcb3270d5851453276c519ef75721ecc0",
+      "previousSha256": "696219bc206f09bb04cdb4b7c1f3ccf2f7cc796dd3bb4a5dec637c587b404cf9",
+      "changed": true
+    },
+    {
+      "image": "005-recovered-seat-1-cipher-envoy.png",
+      "sha256": "df25cf4d265add146f4dacafa68c2f04f1e33ad116bcd5c1e9beffc8bcc05b40",
+      "previousSha256": "df25cf4d265add146f4dacafa68c2f04f1e33ad116bcd5c1e9beffc8bcc05b40",
+      "changed": false
+    },
+    {
+      "image": "006-released-seat-1-cipher-envoy.png",
+      "sha256": "f98d814876cdcbfa79c1eb5562549da7f9277f88bbe63e339d3ee04cfd94ac5d",
+      "previousSha256": "f98d814876cdcbfa79c1eb5562549da7f9277f88bbe63e339d3ee04cfd94ac5d",
+      "changed": false
+    }
+  ]
+}

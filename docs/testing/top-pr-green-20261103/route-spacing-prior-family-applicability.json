@@ -1,0 +1,40 @@
+{
+  "source": "3d0fbdf2f819829025d5395225e36ac9d6d2e987",
+  "reviewedPriorTarget": "9340870486e305050e09c58aa4b1ea4db9935b6b",
+  "priorRun": 43133029642,
+  "productionChanges": [
+    "327aa0fe: waypoint-actions vertical margin 4px to 7px; phone route-editor padding and heading margin reduced",
+    "d914432f: zero waypoint row padding scoped to route editor; accepted-route row padding remains 4px"
+  ],
+  "affectedStories": [
+    {
+      "story": "paused-fleet-travel",
+      "spec": "tests/browser/fleet-travel-catchup.story.spec.ts",
+      "viewsPerViewport": 34,
+      "editorSteps": [
+        "open-route",
+        "choose-waypoint",
+        "reject-distant-leg",
+        "repair-route"
+      ]
+    },
+    {
+      "story": "interrupted-fleet-route",
+      "spec": "tests/browser/fleet-route-recovery.story.spec.ts",
+      "viewsPerViewport": 40,
+      "editorSteps": [
+        "open-route",
+        "choose-waypoint",
+        "reject-distant-leg",
+        "repair-route",
+        "pending-route",
+        "reload-pending-route",
+        "review-route-retry",
+        "retry-original-route"
+      ]
+    }
+  ],
+  "finding": "Prior image approval does not transfer to changed route-editor states. Both complete existing stories exercise that shared editor; unchanged accepted-route padding reduces scope but does not prove all later scroll positions unchanged.",
+  "nextAction": "Use the existing bounded route reader executor on current source for these two complete journeys/four sizes, retaining original deadlines/assertions and fresh outputs. Compare all 296 captures to already inspected current Git references, reuse only exact hashes and inspect every changed image. No travel/force rerun for the corrected manifest count alone.",
+  "requiredCI": "Still mandatory after integrated reference repair; this applicability analysis is not a green check."
+}

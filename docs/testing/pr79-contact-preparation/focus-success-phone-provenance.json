@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "id": 12651846251,
+    "node_id": "MDg6QXJ0aWZhY3QxMjY1MTg0NjI1MQ==",
+    "name": "construction-focus-7df29917a8156deff4f15b1abc0862132a89ce0e",
+    "size_in_bytes": 383781869,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12651846251",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12651846251/zip",
+    "expired": false,
+    "digest": "sha256:fa3dd4b971b9b71056c09378455016721433b9e6345e94fe1b8f22c8e7a69672",
+    "created_at": "2026-10-26T13:02:58Z",
+    "updated_at": "2026-10-26T13:02:58Z",
+    "expires_at": "2027-01-24T12:48:55Z",
+    "workflow_run": {
+      "id": 40325433132,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr79-construction-focus",
+      "head_sha": "7df29917a8156deff4f15b1abc0862132a89ce0e"
+    }
+  },
+  "downloadedRangeBytes": 332551,
+  "etag": "\"0x8DF3361753A24DE\"",
+  "wholeArchiveShaVerified": false,
+  "integrity": "API immutable size/digest metadata; exact206Content-Range and stableETag; ZIP central directory and selected entries CRC32 verified; local selected-entrySHA256 recorded. Whole archive not downloaded or SHA verified.",
+  "entries": [
+    {
+      "path": "/tmp/cluster-pr79-focus-phone-review/test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "entry": "test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+      "sha256": "3f48b82de050f526a7f81eb6fb2fb86f9a0892b1938f5c833dfe10920ab825f0",
+      "bytes": 261869,
+      "crc32": "bc401b58"
+    }
+  ]
+}

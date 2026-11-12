@@ -1,0 +1,167 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-stellar-observations",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "7b69e1fa33dfae235abf4fdb0c4190ec104b1842",
+    "dirty": false,
+    "spec": "tests/browser/observations.story.spec.ts",
+    "specSha256": "6eb4213b234e2c91a32954daad35c6c82b9ae748fb2840051f45279ec5c6ccdf"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-observation-heading-41822454774/large/test-results/stories/live-stellar-observations/large/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-before-acquisition-1-survey-envoy.png",
+      "sha256": "c966225feedb1555dddfb965cd8c589076da1800bd15371849237a8d35a2a7a9",
+      "previousSha256": "73d67a1656882d5866aa70f5c0b772b8ffdd8abeaf386d6208ba794efbdb2b8a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "010-inspect-before-acquisition-2-independent-surveyor.png",
+      "sha256": "8df47822ed9ea7f6c738fee61ca13c1298bf2184f67143f8e9a5c3b4dde5dfca",
+      "previousSha256": "490111f75cd02164e5a47b1cd1dbbacde6f47c1f8106c6f38a11f42d3e8b25fa",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-read-current-report-1-survey-envoy.png",
+      "sha256": "b03ff17f5ec7505fde9fb049ae33bb07e5a833761b10780eca41428d53346b73",
+      "previousSha256": "72ad140d8425b39ac8d625731ab7d1510ef2dda541464bc3ce1e5d4b0a39061a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "012-read-current-report-2-independent-surveyor.png",
+      "sha256": "74162cc8d30c0ad4567d1cd0fc6520deed80b2c758bdd9d3e4ce28f06d7ff0a2",
+      "previousSha256": "f8959fa88e365b1e9b30d41621609b86da29f4caa460116bd2bc038711e6b500",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-read-scanning-capability-1-survey-envoy.png",
+      "sha256": "b03ff17f5ec7505fde9fb049ae33bb07e5a833761b10780eca41428d53346b73",
+      "previousSha256": "72ad140d8425b39ac8d625731ab7d1510ef2dda541464bc3ce1e5d4b0a39061a",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "013-read-scanning-capability-2-independent-surveyor.png",
+      "sha256": "74162cc8d30c0ad4567d1cd0fc6520deed80b2c758bdd9d3e4ce28f06d7ff0a2",
+      "previousSha256": "f8959fa88e365b1e9b30d41621609b86da29f4caa460116bd2bc038711e6b500",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-read-retained-history-1-survey-envoy.png",
+      "sha256": "8d82d5eed56955afba4ddbb61514849fd7a571ae48878d0b52bbe5dc729cc318",
+      "previousSha256": "7ca0ed26973961d450e974c50e48822cac1fc4d35f598892c4562052ecbecfcc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "015-read-retained-history-2-independent-surveyor.png",
+      "sha256": "8a7f72e429b7036beb2ebce828317350c4d55425e7c24d304b51320c368c4a8a",
+      "previousSha256": "916f5f5e851262f04a966cb0daa0a63018d9f9cdb8babae2bdcba9f58ff5eb76",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-read-historical-warning-1-survey-envoy.png",
+      "sha256": "8d82d5eed56955afba4ddbb61514849fd7a571ae48878d0b52bbe5dc729cc318",
+      "previousSha256": "7ca0ed26973961d450e974c50e48822cac1fc4d35f598892c4562052ecbecfcc",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "016-read-historical-warning-2-independent-surveyor.png",
+      "sha256": "8a7f72e429b7036beb2ebce828317350c4d55425e7c24d304b51320c368c4a8a",
+      "previousSha256": "916f5f5e851262f04a966cb0daa0a63018d9f9cdb8babae2bdcba9f58ff5eb76",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-inspect-still-unknown-1-survey-envoy.png",
+      "sha256": "0a90bf29a17921cd721b6706d78b59ef3514bde86080c810492f299f5a55c345",
+      "previousSha256": "220ef5a802c25c4b416cef823184e00a4f8f0211a1bebab8a45d8d5b7170d916",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "017-inspect-still-unknown-2-independent-surveyor.png",
+      "sha256": "8e4f7f33eeac37ef82a0025f6ced48258cb8f63ce7d48fe4ca5013c2c3096c00",
+      "previousSha256": "1de3d1e2f3fda9ea9447d12d20c03515f66644656d46335fb0ab073747598622",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-recover-retained-report-1-survey-envoy.png",
+      "sha256": "8d82d5eed56955afba4ddbb61514849fd7a571ae48878d0b52bbe5dc729cc318",
+      "previousSha256": "37a54198374d4f0b444c670f1dac2ada50089b3fc7a05bb52a0fcada0db79721",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "018-recover-retained-report-2-independent-surveyor.png",
+      "sha256": "8a7f72e429b7036beb2ebce828317350c4d55425e7c24d304b51320c368c4a8a",
+      "previousSha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-read-labels-after-resize-1-survey-envoy.png",
+      "sha256": "8d82d5eed56955afba4ddbb61514849fd7a571ae48878d0b52bbe5dc729cc318",
+      "previousSha256": "37a54198374d4f0b444c670f1dac2ada50089b3fc7a05bb52a0fcada0db79721",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "019-read-labels-after-resize-2-independent-surveyor.png",
+      "sha256": "8a7f72e429b7036beb2ebce828317350c4d55425e7c24d304b51320c368c4a8a",
+      "previousSha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-locate-home-by-keyboard-1-survey-envoy.png",
+      "sha256": "b97dc58411859ad7b58bca421d923f9d1ecbfdfba0e0a059735506817b166013",
+      "previousSha256": "85b99409a9ad88427e21c4abfc832a1c34a7ee49d37f860fbf134bf89e9b47c2",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "020-locate-home-by-keyboard-2-independent-surveyor.png",
+      "sha256": "8a7f72e429b7036beb2ebce828317350c4d55425e7c24d304b51320c368c4a8a",
+      "previousSha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
+}

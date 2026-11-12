@@ -858,6 +858,35 @@ test("Open a contextual arrival report and recover its recorded surface", async 
             await expect(reportPanel(p)).toHaveCount(0);
             await expect(contextControl(p)).toBeFocused();
             await expectReadingTarget(contextControl(p));
+            await expect
+              .poll(
+                () =>
+                  contextControl(p).evaluate((element) => {
+                    const style = getComputedStyle(element);
+                    const box = element.getBoundingClientRect();
+                    const reader = element
+                      .closest(".system-inspector")!
+                      .querySelector(".system-details")!
+                      .getBoundingClientRect();
+                    const width = parseFloat(style.outlineWidth);
+                    const outset = Math.max(
+                      0,
+                      width + parseFloat(style.outlineOffset),
+                    );
+                    return {
+                      visible:
+                        element.matches(":focus-visible") &&
+                        style.outlineStyle !== "none" &&
+                        width > 0,
+                      clearOfReader: box.bottom + outset <= reader.top,
+                    };
+                  }),
+                {
+                  message:
+                    "The restored keyboard outline clears the system artwork reader",
+                },
+              )
+              .toEqual({ visible: true, clearOfReader: true });
             await expect(
               inspector(p).getByRole("button", {
                 name: /^Inspect Orbit · owner /,

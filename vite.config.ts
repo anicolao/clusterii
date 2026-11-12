@@ -1,4 +1,4 @@
-import { renderTelemetryPlugin } from "./tests/browser/story-helpers/render-telemetry-plugin.mjs";
+import { renderTelemetryPlugin } from "./tests/e2e/helpers/render-telemetry-plugin.mjs";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
 export default defineConfig({

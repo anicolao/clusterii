@@ -64,6 +64,7 @@
   } from "../dev/animations/scenarios";
   import SessionSecurity from "$lib/components/SessionSecurity.svelte";
   import CampaignStartStatus from "$lib/components/CampaignStartStatus.svelte";
+  import AdmissionBriefing from "$lib/components/AdmissionBriefing.svelte";
   import CampaignRoster from "$lib/components/CampaignRoster.svelte";
   import FactionPicker from "$lib/components/FactionPicker.svelte";
   import {
@@ -280,6 +281,8 @@
             onretry={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Fleet cargo · shared load and unload controls</h2>
       <p>
         Select the stationed fleet, then Load or Unload to inspect the manifest
@@ -311,6 +314,8 @@
           />
         </div>
       {/each}
+    </section>
+    <section>
       <h2>Fleet reorganization · shared split and merge controls</h2>
       {#each [false, true] as merge}{#each [2400, 3400] as time}{@const sample =
             reorganizationFrame(time, merge)}
@@ -336,6 +341,8 @@
             />
           </div>
         {/each}{/each}
+    </section>
+    <section>
       <h2>Invalid saved order · retry and explicit local discard</h2>
       {#each [false, true] as confirming}<RecoveryRecord
           reason={new RecoveryValidation("").message}
@@ -343,6 +350,8 @@
           onretry={() => {}}
           onforget={() => {}}
         />{/each}
+    </section>
+    <section>
       <h2>Browser drafts · recovery, conflict and saved</h2>
       {#each [0, 1200, 2200, 3200, 4800] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
@@ -359,6 +368,8 @@
             onreplaceDraft={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Commander identity · distinct seats in the same faction</h2>
       <section
         aria-label="Eight-seat commander identity"
@@ -373,6 +384,8 @@
           onclose={() => {}}
         />
       </section>
+    </section>
+    <section>
       <h2>Credit offers · exact terms and atomic settlement</h2>
       {#each [0, 500, 1200, 2200, 3200, 4800] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
@@ -385,6 +398,8 @@
             onhistory={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Return briefing · recovery and visit acknowledgement</h2>
       {#each [0, 1200, 1600, 1800, 2200, 3200, 3800, 4200, 4800, 5300] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
@@ -399,6 +414,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Selected earlier history · scope and acceptance</h2>
       {#each [-1, 0, 1200] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
@@ -412,6 +429,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Private conversations · invitation and recipient history</h2>
       {#each [0, 1200, 2200, 4800] as time}<div
           style="height:min(900px,90svh);min-height:550px;margin-bottom:32px"
@@ -425,6 +444,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Arrival reports · split occupation and conquest</h2>
       {#each [0, 700, 1200, 2200, 3200] as time}<div
           role="region"
@@ -441,6 +462,8 @@
             oninspect={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Fleet contacts · acquired and last-seen intelligence</h2>
       {#each [0, 700, 1200, 2200, 3200] as time}{@const sample =
           contactsFrame(time)}
@@ -455,6 +478,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Fleet routing · real catalogue and authoritative states</h2>
       {#each [0, 2400, 3400, 5000] as time}<section
           aria-label={`Fleet route specimen ${time}`}
@@ -468,6 +493,8 @@
             onclose={() => {}}
           />
         </section>{/each}
+    </section>
+    <section>
       <h2>Fleet cancellation · reservations released</h2>
       {#each [0, 2400] as time}{@const sample = cancellationFrame(time)}
         <div
@@ -490,6 +517,8 @@
           />
         </div>
       {/each}
+    </section>
+    <section>
       <h2>Stellar observations · entitled report states</h2>
       {#each [0, 1200, 3400] as time}<div
           style="max-width:420px;padding:20px;border:1px solid #42616d;margin-bottom:20px"
@@ -505,6 +534,8 @@
           starId={observedTarget}
         />
       </div>
+    </section>
+    <section>
       <h2>Market focus · production allocation and icons</h2>
       {#each ["market", "camp", "base", "station"] as type}<DevelopmentIcon
           type={type as "market" | "camp" | "base" | "station"}
@@ -527,6 +558,8 @@
             onretry={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Construction · shared illustrated instrument</h2>
       {#each ["ready", "pending", "error", "paused", "completed"] as state}{@const sample =
           constructionFrame(
@@ -547,6 +580,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Research · shared selection and acknowledgement</h2>
       {#each ["ready", "pending", "error", "disabled", "applied"] as state}<div
           role="region"
@@ -569,6 +604,8 @@
             onselect={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Economy · shared production ledger</h2>
       {#each [productionFrame(0).view, productionFrame(1200).view, productionFrame(2400).view, legacyProductionView] as sample}<div
           style="height:650px;max-width:620px;margin-bottom:32px"
@@ -579,6 +616,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Campaign history · shared instrument</h2>
       {#each ["ready", "loading", "error"] as state}<div
           style="height: 540px; max-width: 620px; margin-bottom: 32px;"
@@ -597,6 +636,8 @@
             onclose={() => {}}
           />
         </div>{/each}
+    </section>
+    <section>
       <h2>Account sessions</h2>
       <SessionSecurity onconfirm={() => {}} />
       <SessionSecurity pending onconfirm={() => {}} />
@@ -604,6 +645,12 @@
         error="Sessions could not be ended. Confirm your identity and retry the same request."
         onconfirm={() => {}}
       />
+    </section>
+    <section>
+      <h2>Admission briefing · shared reading surface</h2>
+      <div class="briefing-specimen"><AdmissionBriefing game={roster} /></div>
+    </section>
+    <section>
       <h2>Campaign roster</h2>
       <CampaignRoster game={roster} />
       <h3>Scheduled start</h3>
@@ -638,6 +685,7 @@
       <WorldArt />
       <h2>Science sources · shared production instrument</h2>
       <button
+        class="secondary"
         bind:this={scienceExampleButton}
         onclick={() => (scienceExampleOpen = true)}
         >Open science source specimen</button
@@ -765,7 +813,7 @@
 
 <style>
   .dev-shell {
-    max-width: 1200px;
+    max-width: 3200px;
     margin: auto;
     padding: 32px;
   }
@@ -801,9 +849,14 @@
   }
   .samples {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 640px), 1fr));
     gap: 24px;
+    align-items: start;
     margin-top: 24px;
+  }
+  .briefing-specimen {
+    height: min(700px, 90svh);
+    overflow: auto;
   }
   .faction-specimens {
     grid-column: 1 / -1;

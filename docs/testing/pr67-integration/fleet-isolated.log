@@ -1,0 +1,10 @@
+bun test v1.3.13 (bf2e2cec)
+
+tests/campaign.test.ts:
+(pass) state capacity cannot block disbanding that frees persistent fleet storage [689.82ms]
+
+ 1 pass
+ 42 filtered out
+ 0 fail
+ 52 expect() calls
+Ran 1 test across 1 file. [975.00ms]

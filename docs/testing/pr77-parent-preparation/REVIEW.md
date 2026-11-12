@@ -1,0 +1,1 @@
+Preserved 264 original PR77 Darwin PNGs, 272 inherited PR76 Linux references, and exact original discard component. No new visual approval. Policy tests: 40 passed. Retained inherited capture-focus assertions and feature-directory relocation. Pending/busy component interaction and Linux candidates remain required.

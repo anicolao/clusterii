@@ -1,0 +1,320 @@
+{
+  "ledgerSha256": "e9d49d5ec05f0c23355fccbcda3a58bdec3c27ce7da29225e58452d2f9c8b6ed",
+  "targetBeforeImport": "1d20bba3ab1768225c3bd02303f87f923ff59642",
+  "families": [
+    {
+      "story": "research-capability-guidance",
+      "viewport": "desktop",
+      "source": {
+        "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+        "dirty": false,
+        "spec": "tests/browser/research-guidance.story.spec.ts",
+        "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/desktop/test-results/stories/research-capability-guidance/desktop/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/research-capability-guidance/desktop/linux-arm64",
+      "captures": [
+        {
+          "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+          "sha256": "928504b14fdb9ba4dfe10fc768891afa3a151d3bef5c872752a48fb39a30b3f5",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-open-authoritative-science-2-independent-investor.png",
+          "sha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scanning-1-market-envoy-campaign-device.png",
+          "sha256": "4d069ee16e3aac71ba0e750b1b6cf7030dc6e2c4b4b2ad6f5509965680475612",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-navigation-1-market-envoy-campaign-device.png",
+          "sha256": "2ffcbb4560f4848617fdf35bbb817926d16a5597fa14367e82ecaf10876c80f2",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
+          "sha256": "db6f3304faef1061820c95405f64d1cd164ccf89f2283eeda39aed9356047168",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "014-read-investing-1-market-envoy-campaign-device.png",
+          "sha256": "5e9478b5e330de1b5665e03a002f739565983aa5b482cd644f18f1e8285511be",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-read-formations-1-market-envoy-campaign-device.png",
+          "sha256": "9d000702fe318609b5fddffbea1d7c9135fa0f46a9e95852f9246aa4ae529e2a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-read-melee-1-market-envoy-campaign-device.png",
+          "sha256": "876ba8eafeb281f8603746be0d0f809e9829f798e75a27b2263cc5fc8e030aa3",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
+          "sha256": "b9f411826359e15f1380d74de1ade9c5b486396229dee31ba3d8b3d253b6bd5f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-read-innovation-1-market-envoy-campaign-device.png",
+          "sha256": "f7cef7e64c8a6f295496494e69033ff586a07ca65212f09ec4944aa7bcdb1aee",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-1-market-envoy-campaign-device.png",
+          "sha256": "c28d2041d29b4fe79bd54ebb64bee6116bc7b01a3a69518778ee4a5fca08e21a",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-2-independent-investor.png",
+          "sha256": "2ee2586bb60f5e9900da9e42c346cdbf666a2e9145ae57d48e2944e048e8eb06",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "research-capability-guidance",
+      "viewport": "phone",
+      "source": {
+        "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+        "dirty": false,
+        "spec": "tests/browser/research-guidance.story.spec.ts",
+        "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/phone/test-results/stories/research-capability-guidance/phone/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/research-capability-guidance/phone/linux-arm64",
+      "captures": [
+        {
+          "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+          "sha256": "8c7ec23aaa56ff621dfee3530008681c81033b5301e79ac288a2cffdfe45c290",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-open-authoritative-science-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scanning-1-market-envoy-campaign-device.png",
+          "sha256": "3a3f8400710418311813d231be7e0dcaec1bae9bcee487006eabdd2a3fd5b6fb",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-navigation-1-market-envoy-campaign-device.png",
+          "sha256": "aae64e53f7c24646997495d1764f2f3596c909079ee6427866db88708de4a656",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
+          "sha256": "a9679ca086d57363cd37151d5d6a6bb24f2e8eea296fd806e2f557dc775974c3",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "014-read-investing-1-market-envoy-campaign-device.png",
+          "sha256": "8b9ea6b6e55e29d886bbf33e3ecdec4076686ec0cfb5adc7ccee34d224adb0e4",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-read-formations-1-market-envoy-campaign-device.png",
+          "sha256": "223a9e745eb2465e3e0071073735eace78646dfe4a584e7afc8fce2372e3a01f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-read-melee-1-market-envoy-campaign-device.png",
+          "sha256": "249680bb47fafb8f031462648542efb8621c092e875c6c5f42f023d44d148096",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
+          "sha256": "b328cdefa2cde11729d80b18b3dd9761226210c80296a5fd9049b1e765e03954",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-read-innovation-1-market-envoy-campaign-device.png",
+          "sha256": "e0985b498f4b9d35639625bcb70f6eef104686122e20643154d3b696ec550bb9",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-1-market-envoy-campaign-device.png",
+          "sha256": "8c2bd874ba38beafd87c8c27de23b789a63edd3a78ba4aeb0b77fe33f275fb09",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-2-independent-investor.png",
+          "sha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    },
+    {
+      "story": "research-capability-guidance",
+      "viewport": "short",
+      "source": {
+        "commit": "b592602a8e6e1e9ebe770b931e4606caae8586bf",
+        "dirty": false,
+        "spec": "tests/browser/research-guidance.story.spec.ts",
+        "specSha256": "b3a687564d97a3a025a8df4be0e9e59c85896bc207a3041b8d7f52f36ad8d9c5"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-research-candidates-41732979054/short/test-results/stories/research-capability-guidance/short/linux-arm64/story.json",
+      "destination": "tests/browser/story-baselines/research-capability-guidance/short/linux-arm64",
+      "captures": [
+        {
+          "image": "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+          "sha256": "dacd38b0af20c38cf982826f1a3043c7220e2758b40109186fa91793fcb6f8dd",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "010-open-authoritative-science-2-independent-investor.png",
+          "sha256": "bd6fd3c9be5a2f2038c97a688db9d2e491f641fc4716c8cd255e279493109ed8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "011-read-scanning-1-market-envoy-campaign-device.png",
+          "sha256": "aebbce963e3023ccd93b103b5ec7ba77ae0a0b5082fa2fe56bd9a65a1b0abd9c",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "012-read-navigation-1-market-envoy-campaign-device.png",
+          "sha256": "7ce11daa285748e19778727a3584d7326759cba319bdb2bf36b65a77997fcc4f",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "013-read-terraforming-1-market-envoy-campaign-device.png",
+          "sha256": "8ef59b1c2a12f5d48385fbb3d6eaa790c395929c52d1425ca58ca64b24ee4788",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "014-read-investing-1-market-envoy-campaign-device.png",
+          "sha256": "637bbd29b668c76ba0d5bd82975096c23964edcd0c6a2709ca016e8ca4b38917",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "015-read-formations-1-market-envoy-campaign-device.png",
+          "sha256": "ddca0cb54eb4555ce9a53a0b75a0c78bf540ca2b2bd5d42f2bf5f0961a7e9770",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "016-read-melee-1-market-envoy-campaign-device.png",
+          "sha256": "3cf1d7c7f2508551e80b240f9c6ec822275b8f1a7e27419aafa522ad48cc171d",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "017-read-recruiting-1-market-envoy-campaign-device.png",
+          "sha256": "0436978ca7b6f21268f5f6b3566de3bcc3f30f5262022ee44d631edbc81e1a45",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "018-read-innovation-1-market-envoy-campaign-device.png",
+          "sha256": "512b6b0f2c847e6f365f2024ed3e9be19bc76aaa1aae1a3ccd646be22fea1676",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-1-market-envoy-campaign-device.png",
+          "sha256": "0a0a39854ffd2827b0274361ca8288f9e6bf0be9f8bedcf08fe32609160d4699",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        },
+        {
+          "image": "019-close-without-order-2-independent-investor.png",
+          "sha256": "bd6fd3c9be5a2f2038c97a688db9d2e491f641fc4716c8cd255e279493109ed8",
+          "previousSha256": null,
+          "changed": true,
+          "approval": "exact individually inspected hash"
+        }
+      ]
+    }
+  ],
+  "remainingUnreviewed": [
+    {
+      "story": "research-capability-guidance",
+      "viewport": "large",
+      "unreviewed": [
+        "010-open-authoritative-science-1-market-envoy-campaign-device.png",
+        "010-open-authoritative-science-2-independent-investor.png",
+        "011-read-scanning-1-market-envoy-campaign-device.png",
+        "012-read-navigation-1-market-envoy-campaign-device.png",
+        "013-read-terraforming-1-market-envoy-campaign-device.png",
+        "014-read-investing-1-market-envoy-campaign-device.png",
+        "015-read-formations-1-market-envoy-campaign-device.png",
+        "016-read-melee-1-market-envoy-campaign-device.png",
+        "017-read-recruiting-1-market-envoy-campaign-device.png",
+        "018-read-innovation-1-market-envoy-campaign-device.png",
+        "019-close-without-order-1-market-envoy-campaign-device.png",
+        "019-close-without-order-2-independent-investor.png"
+      ]
+    }
+  ]
+}

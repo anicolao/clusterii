@@ -1,0 +1,922 @@
+[
+  {
+    "family": "research-selection-lab",
+    "manifests": [
+      {
+        "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/story.json",
+        "source": {
+          "commit": "05a27a9607a8ca210590f497865b07550a4e8a99",
+          "dirty": false,
+          "spec": "tests/browser/research-lab.story.spec.ts",
+          "specSha256": "3c4a67c4428fe938f4991d75d552fda67cacfb12de4e22b02359529569de0f9a"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": false,
+        "images": [
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+            "sha256": "ea353776e0c3e2c7f74cffa24a178df9111f1d258e0fb3fbe3045ac2b83b6c5e"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+            "sha256": "d0290b6a6b9cae13ce91e228ea2c763ea455531e99a1065677957d5ba085bf64"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+            "sha256": "ea353776e0c3e2c7f74cffa24a178df9111f1d258e0fb3fbe3045ac2b83b6c5e"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+            "sha256": "d0290b6a6b9cae13ce91e228ea2c763ea455531e99a1065677957d5ba085bf64"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+            "sha256": "39cc0ddd44d3a14c764e922a441d8efd06079b468716412aa76826efd729d215"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+            "sha256": "665bee6ca4bad0d7f9ee78e23f8b86f1e71c226fad3a87525cbf01d1b914119c"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+            "sha256": "39cc0ddd44d3a14c764e922a441d8efd06079b468716412aa76826efd729d215"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+            "sha256": "665bee6ca4bad0d7f9ee78e23f8b86f1e71c226fad3a87525cbf01d1b914119c"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+            "sha256": "fc23863d81f0923141d4b0ec983a8e66a03950135696ab0e20ebd47c1b3bd58f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+            "sha256": "1ef057b1b4e5e20ae59bf330374dcbf6270dbd2e4b127d4038f1fcd1a171420f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+            "sha256": "fc23863d81f0923141d4b0ec983a8e66a03950135696ab0e20ebd47c1b3bd58f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+            "sha256": "1ef057b1b4e5e20ae59bf330374dcbf6270dbd2e4b127d4038f1fcd1a171420f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+            "sha256": "9042292e5d0e8d2ae0f8a2f0179f1d5149cba4adf5c675e6dd84019e4d63be84"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+            "sha256": "1bcb572a7f8ea34d0ac7b05873a6485f9dce86152d7cef74f79ae07b46985e10"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+            "sha256": "9042292e5d0e8d2ae0f8a2f0179f1d5149cba4adf5c675e6dd84019e4d63be84"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+            "sha256": "1bcb572a7f8ea34d0ac7b05873a6485f9dce86152d7cef74f79ae07b46985e10"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+            "sha256": "afa024a4cf35a0d590df2873c082471c8d05216a4dd1bd91e050debcc3b2c418"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+            "sha256": "a27d6b69f2b52ab9a1072ebf6c84e614cfb8f4b96d014a6dda18ea4e5cb562f8"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+            "sha256": "afa024a4cf35a0d590df2873c082471c8d05216a4dd1bd91e050debcc3b2c418"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+            "sha256": "a27d6b69f2b52ab9a1072ebf6c84e614cfb8f4b96d014a6dda18ea4e5cb562f8"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+            "sha256": "6f56eda46c886ea0bb597a9524f28522f70c9a058aff3541b2d5a6dbcd88b280"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+            "sha256": "054862b859664bc18d01b938a7b1dab938b5471ec2c31cb5e348b13a47fc3565"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+            "sha256": "6f56eda46c886ea0bb597a9524f28522f70c9a058aff3541b2d5a6dbcd88b280"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/desktop/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+            "sha256": "054862b859664bc18d01b938a7b1dab938b5471ec2c31cb5e348b13a47fc3565"
+          }
+        ]
+      },
+      {
+        "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/story.json",
+        "source": {
+          "commit": "05a27a9607a8ca210590f497865b07550a4e8a99",
+          "dirty": false,
+          "spec": "tests/browser/research-lab.story.spec.ts",
+          "specSha256": "3c4a67c4428fe938f4991d75d552fda67cacfb12de4e22b02359529569de0f9a"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": false,
+        "images": [
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+            "sha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+            "sha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+            "sha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+            "sha256": "87d7f98bdd4be1700e0b3b07bd2cbd0281f27a325f461ac1542a5235c2b271ee"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+            "sha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+            "sha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+            "sha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+            "sha256": "00c63a68d08df2821a755d5265934d3721ccf78d16de7b70a0864137df686eeb"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+            "sha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+            "sha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+            "sha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+            "sha256": "0882fb812ce918493ebfd94be0247f8cae7e5b045507d07fabe7ab46abc36a82"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+            "sha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+            "sha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+            "sha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+            "sha256": "b8f188368e24cb13bf5b591ff5329dda3dc48fdc52f4373000e18683a49f0005"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+            "sha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+            "sha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+            "sha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+            "sha256": "e90d5265d3a4bcb9dbcb9fbff6c0e2d098c4afa54f27f8cc0f1c1d537f94c0a2"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+            "sha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+            "sha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+            "sha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/large/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+            "sha256": "c39250dcff82f623e7ce5127ed18af979f0b44de68f736d0227ce86ff870efdf"
+          }
+        ]
+      },
+      {
+        "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/story.json",
+        "source": {
+          "commit": "05a27a9607a8ca210590f497865b07550a4e8a99",
+          "dirty": false,
+          "spec": "tests/browser/research-lab.story.spec.ts",
+          "specSha256": "3c4a67c4428fe938f4991d75d552fda67cacfb12de4e22b02359529569de0f9a"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 393,
+            "height": 852
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": false,
+        "images": [
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+            "sha256": "9bdec6e35b5fc61b6a141483419bbe9ae994764e19af32611c8731b8ce3d257f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+            "sha256": "1407ab1333182a04e3c6faf1f0a1700c8225df6e4a18764427f34a6a796eb824"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+            "sha256": "97874f9a5f6bf0c253cd60da1ac161dfde8a2fe64a15d3b0f5f9dbe160df5032"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+            "sha256": "3945beae0dbf0d4cbaa523f4b938f8cd7390cd857c99b8c56255ceaedec79c3a"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+            "sha256": "ee4c1ca710f58d4c11acc3f94965d208105ca55eeecbe6b142cb0df1f75025b8"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+            "sha256": "2fd46b148b4dbfec81ed0b49f1bf500997969927f33a4b9249c7ba327eb2ab47"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+            "sha256": "37d9cce7fe72667775f3c8f2ab479a7339b43ad2bbd0a81693986f937ed8f5ae"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+            "sha256": "ca230509c3e978e348df63adf1e744b8c2cacc95a523ce8ecb458b0f3ece6c69"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+            "sha256": "8edf318a75760552340ef5bfa2d29115f21648b2d97e18ac918c6224d304dd42"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+            "sha256": "de70b0598200090705d91dc865c5fab2caccf337e026e3a05528509eeab7433b"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+            "sha256": "002d6195f9981cb5cadfe477b812e803bd0353405da55534eef8f217e74a1a73"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+            "sha256": "bdbcc483fb3349a617b8d4111fe773e73eb0cfa9de6625a77c3fa6d8b93df5c5"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+            "sha256": "90e0c0ba929e72ac78898847bc8811c7dd0950dff3fd8327bea018e23eaf92d4"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+            "sha256": "88e8979a3112f950b1020ebeaf6d8444b614c775f28f90d524eab3c703a6cd88"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+            "sha256": "95806e6c79d656c59af2568c53828009cf913ea664e8893d6db417639f64b739"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+            "sha256": "dfeb7e5f4cafc52146c9327e47b30626673aa27f8ceae33cb32b0ab9f20da385"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+            "sha256": "4f721f9cd2d0c972beecacd1a01336536a43da674fca9ec603e2b14954e3ffc0"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+            "sha256": "6f97261a3f0ef1d0890ab3138a878578598a07037e4e6777bdfc70a31175292f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+            "sha256": "c3f7e9fa3ca9cf4f84baa3c0630efdcbe37aa740a40c216377d84ba299ba3855"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+            "sha256": "63d785e285fd0dc7c5f683fa0fec13c9c9443db7e0e9db566b0c64ba8a2d3e03"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+            "sha256": "4f6aa020288448a6ebf8affa414a4f3e6705cb1b000b4894097ba03bd62206d0"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+            "sha256": "43df6703b804584ef6f13064ddb09e2d8ff6cfc20f8fd28cfced996c842221df"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+            "sha256": "97874f9a5f6bf0c253cd60da1ac161dfde8a2fe64a15d3b0f5f9dbe160df5032"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/phone/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+            "sha256": "3945beae0dbf0d4cbaa523f4b938f8cd7390cd857c99b8c56255ceaedec79c3a"
+          }
+        ]
+      },
+      {
+        "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/story.json",
+        "source": {
+          "commit": "05a27a9607a8ca210590f497865b07550a4e8a99",
+          "dirty": false,
+          "spec": "tests/browser/research-lab.story.spec.ts",
+          "specSha256": "3c4a67c4428fe938f4991d75d552fda67cacfb12de4e22b02359529569de0f9a"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": false,
+        "images": [
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-1-developer-standard-research-selection.png",
+            "sha256": "580d3e2ab0d2dd54b46e422ef0537c50b2d952bfeb08b6d2103926a9bf384198"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-2-developer-standard-research-outcome.png",
+            "sha256": "8442803e02b1852102b11c2986dcf381ca9c49569779ffec51897a39eb12fcf9"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-3-developer-reduced-research-selection.png",
+            "sha256": "580d3e2ab0d2dd54b46e422ef0537c50b2d952bfeb08b6d2103926a9bf384198"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/002-pending-4-developer-reduced-research-outcome.png",
+            "sha256": "8442803e02b1852102b11c2986dcf381ca9c49569779ffec51897a39eb12fcf9"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-1-developer-standard-research-selection.png",
+            "sha256": "3cc466af236d92db1d14151a25a00da7b6971783f1704cb4eead2ec47ea2d6a0"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-2-developer-standard-research-outcome.png",
+            "sha256": "a9f8f2fa0553fff9ece95cf9993dee19a8299f6bd65791f28d26cdaddaccdb97"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-3-developer-reduced-research-selection.png",
+            "sha256": "3cc466af236d92db1d14151a25a00da7b6971783f1704cb4eead2ec47ea2d6a0"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/003-interrupted-4-developer-reduced-research-outcome.png",
+            "sha256": "a9f8f2fa0553fff9ece95cf9993dee19a8299f6bd65791f28d26cdaddaccdb97"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-1-developer-standard-research-selection.png",
+            "sha256": "43de0d6aaa4f22f9c3a9ea196306b5dd1ac9973e07a2e02659b09554a51ffe4c"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-2-developer-standard-research-outcome.png",
+            "sha256": "00963b25fc4c043751c6adc6a9daa9c752db1a4bb29d29623de11babed053b2f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-3-developer-reduced-research-selection.png",
+            "sha256": "43de0d6aaa4f22f9c3a9ea196306b5dd1ac9973e07a2e02659b09554a51ffe4c"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/004-scheduled-4-developer-reduced-research-outcome.png",
+            "sha256": "00963b25fc4c043751c6adc6a9daa9c752db1a4bb29d29623de11babed053b2f"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-1-developer-standard-research-selection.png",
+            "sha256": "4e40a2cdae7b9dbcdca708b8eeb9116689d51655da89123abdb60004b32aa38a"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-2-developer-standard-research-outcome.png",
+            "sha256": "1562e1b3f2504bc34c3670c4cb091a07601d8c05761cd0c38180c798a5848ea0"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-3-developer-reduced-research-selection.png",
+            "sha256": "4e40a2cdae7b9dbcdca708b8eeb9116689d51655da89123abdb60004b32aa38a"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/005-applied-4-developer-reduced-research-outcome.png",
+            "sha256": "1562e1b3f2504bc34c3670c4cb091a07601d8c05761cd0c38180c798a5848ea0"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-1-developer-standard-research-selection.png",
+            "sha256": "9b08c6856afe21ca5a52c472bfad7d7f26aabeb08062a135f8ec8f1176493f32"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-2-developer-standard-research-outcome.png",
+            "sha256": "5f0e6029bb2cbdeca1904e0a08824eae7919a11d4be9f11a91e4fa3d622ac7cc"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-3-developer-reduced-research-selection.png",
+            "sha256": "9b08c6856afe21ca5a52c472bfad7d7f26aabeb08062a135f8ec8f1176493f32"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/006-applied-history-4-developer-reduced-research-outcome.png",
+            "sha256": "5f0e6029bb2cbdeca1904e0a08824eae7919a11d4be9f11a91e4fa3d622ac7cc"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-1-developer-standard-research-selection.png",
+            "sha256": "0a5d869a9941299cb49a3b76c5aa43b65b956dcb100df6c5ad8b9fb45ffd512a"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-2-developer-standard-research-outcome.png",
+            "sha256": "59d4d6def55601cf9f640efb423d63db78d4d498fef3f1c5299137da031bc4c4"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-3-developer-reduced-research-selection.png",
+            "sha256": "0a5d869a9941299cb49a3b76c5aa43b65b956dcb100df6c5ad8b9fb45ffd512a"
+          },
+          {
+            "file": "/tmp/cluster49-linux-research/test-results/stories/research-selection-lab/short/linux-arm64/007-queue-preserved-choice-4-developer-reduced-research-outcome.png",
+            "sha256": "59d4d6def55601cf9f640efb423d63db78d4d498fef3f1c5299137da031bc4c4"
+          }
+        ]
+      }
+    ],
+    "sourceCompatible": false,
+    "reason": "Actual visible component/lab changes, not merely unrelated changed files",
+    "diff": "research-selection-lab.diff"
+  },
+  {
+    "family": "production-ledger-lab",
+    "manifests": [
+      {
+        "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/story.json",
+        "source": {
+          "commit": "cbf67363a4575f127308d2190b03b404a9a72873",
+          "dirty": false,
+          "spec": "tests/browser/production-lab.story.spec.ts",
+          "specSha256": "0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": true,
+        "images": [
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+            "sha256": "dc72dee62a96a466f15013fa7d8859eda7ea8ddd9aaf413a2374845b2319b5b0"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+            "sha256": "dc72dee62a96a466f15013fa7d8859eda7ea8ddd9aaf413a2374845b2319b5b0"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/003-due-1-developer-standard-production-summary.png",
+            "sha256": "4f2a8d9b6405094bad08351b566922f68054d73e85878e54ca2c72ae6056cabc"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+            "sha256": "4f2a8d9b6405094bad08351b566922f68054d73e85878e54ca2c72ae6056cabc"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+            "sha256": "a9de780bddda08ea19e802d1aacb8497b5477264aae093c55a90737d49a5b112"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+            "sha256": "a9de780bddda08ea19e802d1aacb8497b5477264aae093c55a90737d49a5b112"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+            "sha256": "ff995ef1323df0592f8bed53c89285e072f69a202dceabd5e38c1a23c37a6211"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+            "sha256": "aba0318d5d0d473c891bf778b05c20dd130962c5ffdab4cd42c02c333acf7190"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+            "sha256": "cbbd5aaadb4ec14a7d4fb2b7261d09a89adeb0349e95c31a8aeb5c7265b0cf88"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+            "sha256": "cbbd5aaadb4ec14a7d4fb2b7261d09a89adeb0349e95c31a8aeb5c7265b0cf88"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+            "sha256": "e9e8e0fdf08d07962c9b63704646315756f4a274dcbeb800ca810f197d869ee3"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/desktop/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+            "sha256": "e9e8e0fdf08d07962c9b63704646315756f4a274dcbeb800ca810f197d869ee3"
+          }
+        ]
+      },
+      {
+        "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/story.json",
+        "source": {
+          "commit": "cbf67363a4575f127308d2190b03b404a9a72873",
+          "dirty": false,
+          "spec": "tests/browser/production-lab.story.spec.ts",
+          "specSha256": "0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 3840,
+            "height": 2160
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": true,
+        "images": [
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+            "sha256": "5dd5e94f1f8e0ea0edeb9b624b2f1a84d963ae519f7b9d76b9f729d0bac90576"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+            "sha256": "5dd5e94f1f8e0ea0edeb9b624b2f1a84d963ae519f7b9d76b9f729d0bac90576"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/003-due-1-developer-standard-production-summary.png",
+            "sha256": "417f6e0e820ae5fe862a6b7603b2660ef3d2e229d699555ef94812ddf361b02e"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+            "sha256": "417f6e0e820ae5fe862a6b7603b2660ef3d2e229d699555ef94812ddf361b02e"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+            "sha256": "5f002b1a339277a403a1f46621e5916512eb417c872656344775aa96eddbae96"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+            "sha256": "5f002b1a339277a403a1f46621e5916512eb417c872656344775aa96eddbae96"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+            "sha256": "7b3f80c7931c24322c04b1e5f09ef7ca3782b6007ff8f9257fe950e3d6b9b130"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+            "sha256": "0576813a244c17ed525f40f20aabee387f24ced8554a5ce93faf401e60ec290c"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+            "sha256": "cf5c5f56bbe087f2017851e573854ef20cec4c878abc09e13cf1dcf2b467f0a7"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+            "sha256": "cf5c5f56bbe087f2017851e573854ef20cec4c878abc09e13cf1dcf2b467f0a7"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+            "sha256": "a52372d230e3fe58b48cca54d1ae86877f92efdaa6e98dc252ba1e54613bead7"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/large/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+            "sha256": "a52372d230e3fe58b48cca54d1ae86877f92efdaa6e98dc252ba1e54613bead7"
+          }
+        ]
+      },
+      {
+        "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/story.json",
+        "source": {
+          "commit": "cbf67363a4575f127308d2190b03b404a9a72873",
+          "dirty": false,
+          "spec": "tests/browser/production-lab.story.spec.ts",
+          "specSha256": "0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 393,
+            "height": 852
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": true,
+        "images": [
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+            "sha256": "8b33cc4fb68bfe37168c26565b6afc9b49ff0ef50d32cd70453f09f41867d572"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+            "sha256": "928e701b080ced81fdc292410d2b49def2f0fb7a6a9df6a41d2cc95a8b2316e2"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/003-due-1-developer-standard-production-summary.png",
+            "sha256": "056d30f1ede3e0ef100fd7422ac20b415dde33910f9a219be3981a4afa40da06"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+            "sha256": "a8626a473ac98311985de8a9fdb73e550c7fecf1d41de9d39e6ac7f48178dce5"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+            "sha256": "fb3e6fecdf68da9fb4eaeacb66ec59a7cbe6ab5c97c7652549e2b5692e6b567b"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+            "sha256": "ebf759a1cce2d10cdb2972fc33b94e32672542383a0a25bcc2e7dafdb5ab9ccf"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+            "sha256": "cc09e6629a1fe802fb9b1971670fffa81304707980b89bea5287b5ebababeb52"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+            "sha256": "eef032c8d9fba72292f7c9bc21c0f216380bdbeb2dfe3fd0076f213c1684616e"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+            "sha256": "9d43f0804a103c0e4a4867a4a663aa6de98305c378729fe910a5edf4fc857af1"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+            "sha256": "9bb9d6134076fbb469c9f3dd9e7310b6c48695648815ca06438590293a4acd28"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+            "sha256": "a0a8b5441644ea214b5199017f22eecb5dbaa2f6036bc9a743eb34097225b359"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/phone/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+            "sha256": "928e701b080ced81fdc292410d2b49def2f0fb7a6a9df6a41d2cc95a8b2316e2"
+          }
+        ]
+      },
+      {
+        "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/story.json",
+        "source": {
+          "commit": "cbf67363a4575f127308d2190b03b404a9a72873",
+          "dirty": false,
+          "spec": "tests/browser/production-lab.story.spec.ts",
+          "specSha256": "0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75"
+        },
+        "status": "passed",
+        "mode": "generate",
+        "renderer": {
+          "platform": "linux-arm64",
+          "rendererArgs": [
+            "--use-angle=swiftshader",
+            "--enable-unsafe-swiftshader",
+            "--num-raster-threads=2",
+            "--disable-skia-runtime-opts",
+            "--run-all-compositor-stages-before-draw",
+            "--disable-checker-imaging",
+            "--disable-partial-raster",
+            "--disable-gpu-rasterization",
+            "--disable-gpu"
+          ],
+          "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+          "browser": "149.0.7827.0",
+          "playwright": "1.61.1",
+          "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "locale": "en-US",
+          "timezone": "UTC",
+          "dpr": 1,
+          "motion": "reduce"
+        },
+        "rendererMatchesObserved137ExceptViewport": true,
+        "currentSpecMatches": true,
+        "images": [
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/002-scheduled-1-developer-standard-production-summary.png",
+            "sha256": "bb45132278baa959d92c33f6ceefe25e67a836870ebd8a61bc6acfa8a3921c6b"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/002-scheduled-2-developer-reduced-production-summary.png",
+            "sha256": "bb45132278baa959d92c33f6ceefe25e67a836870ebd8a61bc6acfa8a3921c6b"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/003-due-1-developer-standard-production-summary.png",
+            "sha256": "946f33843b6667522b6e0d854144ece620881bfaf23dd82e6d32af9cb6212501"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/003-due-2-developer-reduced-production-summary.png",
+            "sha256": "946f33843b6667522b6e0d854144ece620881bfaf23dd82e6d32af9cb6212501"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/004-confirmed-1-developer-standard-production-summary.png",
+            "sha256": "de5d512eede79a109971c9b60323ddc63baa1496b78dbe5636a0963f18de83eb"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/004-confirmed-2-developer-reduced-production-summary.png",
+            "sha256": "de5d512eede79a109971c9b60323ddc63baa1496b78dbe5636a0963f18de83eb"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/004-confirmed-3-developer-standard-production-science.png",
+            "sha256": "374e9be0406cc2630d42b2e3b418ec41c446fc02b10dcc679cba164a35b1b3b8"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/004-confirmed-4-developer-reduced-production-science.png",
+            "sha256": "59522fb8354d4bcb88d8f76621510342527aa72d9fd8e43536ee5b9b71ba68d1"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/005-read-ledger-1-developer-standard-production-reading.png",
+            "sha256": "b75f30f677d22fe40030c81065e766c74d8d123f56c51ff9457e562cfa6aab67"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/005-read-ledger-2-developer-reduced-production-reading.png",
+            "sha256": "b75f30f677d22fe40030c81065e766c74d8d123f56c51ff9457e562cfa6aab67"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/006-return-reset-1-developer-standard-production-summary.png",
+            "sha256": "686b74331a93d3fb879d9918b06c763285e04b41988b8233bd3e545dacbc7f99"
+          },
+          {
+            "file": "/tmp/cluster51-linux-labs/test-results/stories/production-ledger-lab/short/linux-arm64/006-return-reset-2-developer-reduced-production-summary.png",
+            "sha256": "686b74331a93d3fb879d9918b06c763285e04b41988b8233bd3e545dacbc7f99"
+          }
+        ]
+      }
+    ],
+    "sourceCompatible": false,
+    "reason": "Actual visible component/lab changes, not merely unrelated changed files",
+    "diff": "production-ledger-lab.diff"
+  }
+]

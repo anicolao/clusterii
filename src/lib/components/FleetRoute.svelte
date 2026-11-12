@@ -79,7 +79,12 @@
     query = "";
     draftNotice = "Draft discarded. No fleet order was sent.";
     await tick();
-    waypointSearch?.focus();
+    waypointSearch?.focus({ preventScroll: true });
+    waypointSearch?.closest("label")?.scrollIntoView({
+      block: "center",
+      inline: "nearest",
+      behavior: "instant",
+    });
   }
   let replanning = $state(false);
   const outcome = $derived(
@@ -253,7 +258,7 @@
           onselect={add}
         /></Canvas
       >
-      <div class="chart-caption">
+      <div class="chart-caption" data-map-label-exclusion>
         <p>
           {committed?.status === "traveling"
             ? "Traveling"
@@ -797,6 +802,7 @@
     margin: 0 0 8px;
   }
   .editor-reading {
+    scroll-padding: 8px;
     min-height: 0;
     overflow: auto;
     overscroll-behavior: contain;
@@ -843,15 +849,17 @@
     font-size: 0.85em;
     color: #b4cbd1;
   }
-  li {
-    padding: 8px 0;
+  ol[aria-label="Route waypoints"] > li {
+    padding: 4px 0;
+  }
+  .route-editor ol[aria-label="Route waypoints"] > li {
+    padding: 0;
   }
   li span {
     display: block;
   }
   .waypoint-actions {
-    margin-top: 10px;
-    margin-bottom: 6px;
+    margin: 7px 0;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
@@ -979,10 +987,11 @@
       left: 0;
       right: 0;
       width: auto;
-      padding: 12px 16px;
+      padding: 8px 16px;
     }
     .route-editor h2 {
       font-size: 26px;
+      margin-bottom: 4px;
     }
     .destinations {
       max-height: 110px;

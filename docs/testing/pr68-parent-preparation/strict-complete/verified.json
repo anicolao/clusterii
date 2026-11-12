@@ -1,0 +1,1299 @@
+[
+  {
+    "artifact": {
+      "id": 12619065249,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxOTA2NTI0OQ==",
+      "name": "scene-strict-chart-desktop-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 7423432,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12619065249",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12619065249/zip",
+      "expired": false,
+      "digest": "sha256:d9503440e86e095276b2ee6d65528304bae5b7ce8093c78727ca6d68a5035367",
+      "created_at": "2026-10-25T23:36:47Z",
+      "updated_at": "2026-10-25T23:36:47Z",
+      "expires_at": "2026-11-24T23:36:46Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "chart",
+      "viewport": "desktop",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 7
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/campaign-navigation.story.spec.ts",
+      "specSha256": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/002-waiting-chart-1-star-envoy.png",
+        "sha256": "953f4fc086cfda66856b03efcde9a132897dc0c95a4d3af4dc6e6a5f458206c5",
+        "bytes": 1117140
+      },
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "e0c7458a95468b9c379af9f658f81940516028fee55a99c2ac460c9f2931140f",
+        "bytes": 905416
+      },
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "72899865a0ee52347972b6483d68368ab33d83330e786a3babb8b1678b6b6cdd",
+        "bytes": 910697
+      },
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "16e4a3e053c282202f556eff127beb2ca58be7431ba88772d55055d884e78eb3",
+        "bytes": 1122113
+      },
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "953f4fc086cfda66856b03efcde9a132897dc0c95a4d3af4dc6e6a5f458206c5",
+        "bytes": 1117140
+      },
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "4e822d447879a9c53d825499c710c6553dc971797b28e9cef397a8fcaf4bbb8f",
+        "bytes": 1118586
+      },
+      {
+        "path": "campaign-chart-navigation/desktop/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "sha256": "4c3aad2cf54b17ab5a824c090dbfb9f26cf6711be469e9033961376a1bd9cabf",
+        "bytes": 1115275
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618707160,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODcwNzE2MA==",
+      "name": "scene-strict-chart-large-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 34044443,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618707160",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618707160/zip",
+      "expired": false,
+      "digest": "sha256:0e8cc206e340416abaebc42278e04e3553bef092843cfff411fe0b81455e9c3e",
+      "created_at": "2026-10-25T23:41:27Z",
+      "updated_at": "2026-10-25T23:41:27Z",
+      "expires_at": "2026-11-24T23:41:25Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "chart",
+      "viewport": "large",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 7
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/campaign-navigation.story.spec.ts",
+      "specSha256": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/002-waiting-chart-1-star-envoy.png",
+        "sha256": "75ebc33401006a63c1f9fe6d5880ecc97957f8a217aef25da90dbd8be0b3ca0e",
+        "bytes": 4912226
+      },
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "6148b9b0f0c28ff50980f9999c082b3655dcb2b916118a06b5372584176bf628",
+        "bytes": 4732503
+      },
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "e7e89b3e04b3df63cb0d320fbe5b4ca8fc15e462f9754dbf7740ed1a09a65182",
+        "bytes": 4773054
+      },
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "1ece466c2f01809176563066541faa9de35b6f93d1e64a6c994ff0227d583b1d",
+        "bytes": 4945624
+      },
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "75ebc33401006a63c1f9fe6d5880ecc97957f8a217aef25da90dbd8be0b3ca0e",
+        "bytes": 4912226
+      },
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "53cb9317cc5d1da92fd9c1f2b177bfa69c9e59492c058fb687286f21bf4fe4ed",
+        "bytes": 4912315
+      },
+      {
+        "path": "campaign-chart-navigation/large/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "sha256": "884f3711783c52e64da331fe67cdaf66f9e2d300682aef6b803d3bd39d5dbde5",
+        "bytes": 4909083
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618546801,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODU0NjgwMQ==",
+      "name": "scene-strict-chart-phone-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 1603888,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618546801",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618546801/zip",
+      "expired": false,
+      "digest": "sha256:f2647f2e1a9c40ec1b15913121c039b6a7754f88b46d92156f35c35ecfc316dd",
+      "created_at": "2026-10-25T23:35:49Z",
+      "updated_at": "2026-10-25T23:35:49Z",
+      "expires_at": "2026-11-24T23:35:48Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "chart",
+      "viewport": "phone",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 8
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/campaign-navigation.story.spec.ts",
+      "specSha256": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/002-waiting-chart-1-star-envoy.png",
+        "sha256": "974e2ed5ac92021189ecb05a5906b37903c73b5b854b539fb80d2d52de745681",
+        "bytes": 261116
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "b4e754e8b8c60b75151aab1b6b5855c2794859566f02422a00cc15a06288eb87",
+        "bytes": 45946
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "c16d73ab66c9ea995905bbbdd1d1c87a089eff29229e31bf908bb3f619704abd",
+        "bytes": 45200
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "4986dc2113d0f63afe2d9f1523cc26583a7451a3190dbf4e6a3d9f753594322c",
+        "bytes": 260217
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "974e2ed5ac92021189ecb05a5906b37903c73b5b854b539fb80d2d52de745681",
+        "bytes": 261116
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "3dfab3ff7af4a29288937e7458b353b65356a7ed7998eeb11377c94d97908a3a",
+        "bytes": 260012
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/008-label-inspector-boundary-1-star-envoy.png",
+        "sha256": "de1566abb33dea166610db51c01b8ab5001c45216f516bca3c0138b0a866b63f",
+        "bytes": 191274
+      },
+      {
+        "path": "campaign-chart-navigation/phone/linux-arm64/009-reload-chart-1-star-envoy.png",
+        "sha256": "449990a73d99f762c173057c86e6b7fbfbe1fc39594c9c2793627eff1b094b70",
+        "bytes": 259174
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618521257,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODUyMTI1Nw==",
+      "name": "scene-strict-observation-large-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 84799376,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618521257",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618521257/zip",
+      "expired": false,
+      "digest": "sha256:3ac61fcc484ad9daacb554ffc5f3c242a2bee13714d502d8bf22f131d72756e2",
+      "created_at": "2026-10-25T23:31:22Z",
+      "updated_at": "2026-10-25T23:31:22Z",
+      "expires_at": "2026-11-24T23:31:19Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "observation",
+      "viewport": "large",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 18
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/observations.story.spec.ts",
+      "specSha256": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "live-stellar-observations/large/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+        "sha256": "73d67a1656882d5866aa70f5c0b772b8ffdd8abeaf386d6208ba794efbdb2b8a",
+        "bytes": 4715967
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+        "sha256": "490111f75cd02164e5a47b1cd1dbbacde6f47c1f8106c6f38a11f42d3e8b25fa",
+        "bytes": 4719323
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/012-read-current-report-1-survey-envoy.png",
+        "sha256": "72ad140d8425b39ac8d625731ab7d1510ef2dda541464bc3ce1e5d4b0a39061a",
+        "bytes": 4752476
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+        "sha256": "f8959fa88e365b1e9b30d41621609b86da29f4caa460116bd2bc038711e6b500",
+        "bytes": 4719687
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+        "sha256": "72ad140d8425b39ac8d625731ab7d1510ef2dda541464bc3ce1e5d4b0a39061a",
+        "bytes": 4752476
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+        "sha256": "f8959fa88e365b1e9b30d41621609b86da29f4caa460116bd2bc038711e6b500",
+        "bytes": 4719687
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+        "sha256": "7ca0ed26973961d450e974c50e48822cac1fc4d35f598892c4562052ecbecfcc",
+        "bytes": 4752284
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+        "sha256": "916f5f5e851262f04a966cb0daa0a63018d9f9cdb8babae2bdcba9f58ff5eb76",
+        "bytes": 4717572
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+        "sha256": "7ca0ed26973961d450e974c50e48822cac1fc4d35f598892c4562052ecbecfcc",
+        "bytes": 4752284
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+        "sha256": "916f5f5e851262f04a966cb0daa0a63018d9f9cdb8babae2bdcba9f58ff5eb76",
+        "bytes": 4717572
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+        "sha256": "220ef5a802c25c4b416cef823184e00a4f8f0211a1bebab8a45d8d5b7170d916",
+        "bytes": 4713556
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+        "sha256": "1de3d1e2f3fda9ea9447d12d20c03515f66644656d46335fb0ab073747598622",
+        "bytes": 4716821
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+        "sha256": "37a54198374d4f0b444c670f1dac2ada50089b3fc7a05bb52a0fcada0db79721",
+        "bytes": 4749562
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+        "sha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+        "bytes": 4714487
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+        "sha256": "37a54198374d4f0b444c670f1dac2ada50089b3fc7a05bb52a0fcada0db79721",
+        "bytes": 4749562
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+        "sha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+        "bytes": 4714487
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+        "sha256": "85b99409a9ad88427e21c4abfc832a1c34a7ee49d37f860fbf134bf89e9b47c2",
+        "bytes": 4573260
+      },
+      {
+        "path": "live-stellar-observations/large/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+        "sha256": "8e8c0ead3e6fbcaf36099d07756e9b796aa07876dc92e14841aef8241f843ca5",
+        "bytes": 4714487
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618462717,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODQ2MjcxNw==",
+      "name": "scene-strict-chart-short-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 4602884,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618462717",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618462717/zip",
+      "expired": false,
+      "digest": "sha256:ae20f6fa9a27bf382b88f18f2db30c54f33f91e55605b29e938837f42c573276",
+      "created_at": "2026-10-25T23:42:13Z",
+      "updated_at": "2026-10-25T23:42:13Z",
+      "expires_at": "2026-11-24T23:42:12Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "chart",
+      "viewport": "short",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 7
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/campaign-navigation.story.spec.ts",
+      "specSha256": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/002-waiting-chart-1-star-envoy.png",
+        "sha256": "c1014119cf545996685246fb065de3203028493fc420bef1000b3cdb05e954ec",
+        "bytes": 697887
+      },
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/003-filter-o-stars-1-star-envoy.png",
+        "sha256": "790922447123a785cd82dce015dcad5623a4a7118f00a056795176250eb41f73",
+        "bytes": 545906
+      },
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/004-expand-camera-controls-1-star-envoy.png",
+        "sha256": "ab1f7e139e8ae8c1034ac9e99248379fdf1212c582b6a419a83b2d0886bb89ce",
+        "bytes": 549927
+      },
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/005-keyboard-orbit-1-star-envoy.png",
+        "sha256": "9cb5158375404fa0e2d5b04264d2677162fefbc0d03b9c6b78c309bb4e9fe00e",
+        "bytes": 699350
+      },
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/006-overview-1-star-envoy.png",
+        "sha256": "c1014119cf545996685246fb065de3203028493fc420bef1000b3cdb05e954ec",
+        "bytes": 697887
+      },
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/007-select-rana-1-star-envoy.png",
+        "sha256": "17d69a7b264f972bbcdfa56cafa3a8b7a72a62a5bc8c6e229969d1f85b4fa13c",
+        "bytes": 698704
+      },
+      {
+        "path": "campaign-chart-navigation/short/linux-arm64/008-reload-chart-1-star-envoy.png",
+        "sha256": "4101164917b4930793d403e20f759977c803e4f0652612971159e0efb3c62d01",
+        "bytes": 695561
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12618212059,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxODIxMjA1OQ==",
+      "name": "scene-strict-observation-desktop-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 19186602,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618212059",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12618212059/zip",
+      "expired": false,
+      "digest": "sha256:ee3a692957b230a2441c151b7c7235360ef3a26d6b6105afd6f3adebc1789605",
+      "created_at": "2026-10-25T23:24:40Z",
+      "updated_at": "2026-10-25T23:24:40Z",
+      "expires_at": "2026-11-24T23:24:39Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "observation",
+      "viewport": "desktop",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 18
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/observations.story.spec.ts",
+      "specSha256": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+        "sha256": "c93eda163113f6742e0dc7e972a944603bd2ed8eb00fcdf03f1866fdee96fd73",
+        "bytes": 1069599
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+        "sha256": "7afbdf62d1a4df175ee60107312f95f556e19c957ccc3117a945f53c53d48d30",
+        "bytes": 1069796
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/012-read-current-report-1-survey-envoy.png",
+        "sha256": "1e54a8b198c1b97ff50302473e0eedae122bbbef89bafe401f51dc40b435959a",
+        "bytes": 1064026
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+        "sha256": "ae253dd77e7a4f54d453ca9bbdfc4d9d49b8927d26aba9c975814d129b9089a0",
+        "bytes": 1070001
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+        "sha256": "f07f5ae6fbd171b7b04d906c9927425ea2fa91bb95354d2e4d49851c1fbf5d48",
+        "bytes": 1067791
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+        "sha256": "5998e916c412a15b9290f9068f85ec2a6520a712a892f4c5c21ef21acd192a5e",
+        "bytes": 1069818
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+        "sha256": "d0b78a6091d99790b3f35d2ebeb335e8e2592cffca1dc31d29b271db5ab97efc",
+        "bytes": 1064839
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+        "sha256": "be9f5a20cce86008c34be44154c86643405e75cef5989f255e7e2bd813241f1b",
+        "bytes": 1070933
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+        "sha256": "d0b78a6091d99790b3f35d2ebeb335e8e2592cffca1dc31d29b271db5ab97efc",
+        "bytes": 1064839
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+        "sha256": "798183d53c75428027f5faffa85ae97cfb9f536e79aa41c22867803a04146497",
+        "bytes": 1072107
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+        "sha256": "510551122fe5210e1b134fa9b393d0f9d09e94dd2fa116d237f2bbe2ca2eff09",
+        "bytes": 1071168
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+        "sha256": "3c7bd76b7805d330ffae1906d52c28be859748e5360680b09f9aa5067b13fa49",
+        "bytes": 1071056
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+        "sha256": "1595a8f5d9b525b62a6e497747c6a99dc6adde0533435bc809624d894b11b331",
+        "bytes": 1062942
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+        "sha256": "eefa9ca1123fc9322ffaa059a2c1f55dee18447d94e3f660f319be9fc79e7d77",
+        "bytes": 1069032
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+        "sha256": "1595a8f5d9b525b62a6e497747c6a99dc6adde0533435bc809624d894b11b331",
+        "bytes": 1062942
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+        "sha256": "eefa9ca1123fc9322ffaa059a2c1f55dee18447d94e3f660f319be9fc79e7d77",
+        "bytes": 1069032
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+        "sha256": "4ca75acfecacedf45de0aa45062496a7b11456faef9b6cf0b7800082a84b4bda",
+        "bytes": 1003149
+      },
+      {
+        "path": "live-stellar-observations/desktop/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+        "sha256": "eefa9ca1123fc9322ffaa059a2c1f55dee18447d94e3f660f319be9fc79e7d77",
+        "bytes": 1069032
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12617988065,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxNzk4ODA2NQ==",
+      "name": "scene-strict-observation-short-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 11039561,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12617988065",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12617988065/zip",
+      "expired": false,
+      "digest": "sha256:689b1990da34a3d2d4baee310277d768eedec7bed3600363152cac41aebd95c8",
+      "created_at": "2026-10-25T23:30:37Z",
+      "updated_at": "2026-10-25T23:30:37Z",
+      "expires_at": "2026-11-24T23:30:36Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "observation",
+      "viewport": "short",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 18
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/observations.story.spec.ts",
+      "specSha256": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "live-stellar-observations/short/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+        "sha256": "947e755f9c792000f6853a5cf8912dcde99874393ff7832648857f92d9feac7a",
+        "bytes": 613770
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+        "sha256": "8cae1aaad7bfd01f275b59b07dbf1fbfa45402e168eaebea38a5d0734d887e43",
+        "bytes": 613753
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/012-read-current-report-1-survey-envoy.png",
+        "sha256": "57291a23cac4cfbd5cfefca745e8b1621422931e0c0cfd2d68682ca58308063d",
+        "bytes": 612561
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+        "sha256": "528155a6e9bb6e5334358536a202a773c1713d9a5d52bf9b1642453b6b47a4f4",
+        "bytes": 613953
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+        "sha256": "da6098c8e5837982314ac9b94b886ed9c62c4569917f61dbff5c21565d4cca28",
+        "bytes": 615265
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+        "sha256": "2e74bbb8719c9516401649aa230d5a9c87355004d033397c311cbe12a0ac6df3",
+        "bytes": 616916
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+        "sha256": "1f7ce1e61be4889e6c15399edd6659edb75f1c7dbb45e5bec66bfae8d31d52d7",
+        "bytes": 612852
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+        "sha256": "4fb0ade369ec71008a1b19b435098943ad92fc973c516f7d1ea4e10c2116596e",
+        "bytes": 614751
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+        "sha256": "392b4c256f6ff66250d9b507a690af147ebb5edefdd9ca897a78984ad7f5aa84",
+        "bytes": 612954
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+        "sha256": "b7299c31c5c378b8b829655ad876a61f0663e85bfb9662a880b8e90231df2c70",
+        "bytes": 618245
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+        "sha256": "f947a047f0a23c60daef2379f5557b25c6c92385b83ef20f215254143b9bbd29",
+        "bytes": 614942
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+        "sha256": "962662244fa246d9d61a725a42d8bde62c56af59d2480061cbd667d2e9b6a236",
+        "bytes": 614765
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+        "sha256": "61f1047ce6f557fed0784e66df90a475a9e868f50f16bfd0d745ed5162d0434b",
+        "bytes": 611011
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+        "sha256": "3baf7a5582209101d848616d8d4789e05ab6730ab84668bd43101ba18101f119",
+        "bytes": 612875
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+        "sha256": "61f1047ce6f557fed0784e66df90a475a9e868f50f16bfd0d745ed5162d0434b",
+        "bytes": 611011
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+        "sha256": "3baf7a5582209101d848616d8d4789e05ab6730ab84668bd43101ba18101f119",
+        "bytes": 612875
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+        "sha256": "e656429372df32f82058396fa6240d518180980298a96930a4b4cdce0b69a2ea",
+        "bytes": 587347
+      },
+      {
+        "path": "live-stellar-observations/short/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+        "sha256": "3baf7a5582209101d848616d8d4789e05ab6730ab84668bd43101ba18101f119",
+        "bytes": 612875
+      }
+    ]
+  },
+  {
+    "artifact": {
+      "id": 12617649522,
+      "node_id": "MDg6QXJ0aWZhY3QxMjYxNzY0OTUyMg==",
+      "name": "scene-strict-observation-phone-91a10a62a520f22a295dc23a2a082d4ead2824d3-1",
+      "size_in_bytes": 1971817,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12617649522",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12617649522/zip",
+      "expired": false,
+      "digest": "sha256:1a1a3de460bdc703cdc9cbb7cdebd43d6a3c7507fe07d43d0869c58ae85408f0",
+      "created_at": "2026-10-25T23:24:41Z",
+      "updated_at": "2026-10-25T23:24:41Z",
+      "expires_at": "2026-11-24T23:24:40Z",
+      "workflow_run": {
+        "id": 40244192975,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr68-navigation-strict",
+        "head_sha": "91a10a62a520f22a295dc23a2a082d4ead2824d3"
+      }
+    },
+    "outcome": {
+      "family": "observation",
+      "viewport": "phone",
+      "exit": 0,
+      "signal": null,
+      "referenceDiffExit": 0,
+      "manifestStatus": "passed",
+      "mode": "verify",
+      "views": 18
+    },
+    "executor": {
+      "requestId": "navigation-strict-20261025-01",
+      "sourceCommit": "d00a2afbd64ac92e7244147a2b34ca9eadb806f5",
+      "executorCommit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "case": "scene-strict",
+      "mode": "verify",
+      "target": "ef600330c78981b56b121e807f602933caafb8a7",
+      "runId": "40244192975",
+      "attempt": 1,
+      "referenceTree": "bd1e2b97fad85573a00762f5348f506a26912218",
+      "specs": {
+        "observation": {
+          "file": "tests/browser/observations.story.spec.ts",
+          "title": "Live stellar observations retain private current and historical facts after reload",
+          "story": "live-stellar-observations",
+          "sha": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304",
+          "views": 18
+        },
+        "chart": {
+          "file": "tests/browser/campaign-navigation.story.spec.ts",
+          "title": "A waiting commander filters stars, orbits by keyboard and inspects a clipped map label",
+          "story": "campaign-chart-navigation",
+          "sha": "577720bd59241b1e0d9e62f8737c686f70fdbef28a1f40697932bc921e77e788",
+          "views": {
+            "phone": 8,
+            "desktop": 7,
+            "large": 7,
+            "short": 7
+          }
+        }
+      },
+      "requestSha256": "7947c6aadb3139c60e7f7905a9bdd225596676fd75f949bde0cc11cf5ab0d1e3"
+    },
+    "source": {
+      "commit": "91a10a62a520f22a295dc23a2a082d4ead2824d3",
+      "dirty": true,
+      "spec": "tests/browser/observations.story.spec.ts",
+      "specSha256": "5c543b34e907850b9ae515acb9097c8466aefc4adb3dfe7816734dc6b419b304"
+    },
+    "renderer": {
+      "platform": "linux-arm64",
+      "rendererArgs": [
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader",
+        "--num-raster-threads=2",
+        "--disable-skia-runtime-opts",
+        "--run-all-compositor-stages-before-draw",
+        "--disable-checker-imaging",
+        "--disable-partial-raster",
+        "--disable-gpu-rasterization",
+        "--disable-gpu"
+      ],
+      "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+      "browser": "149.0.7827.0",
+      "playwright": "1.61.1",
+      "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "locale": "en-US",
+      "timezone": "UTC",
+      "dpr": 1,
+      "motion": "reduce"
+    },
+    "images": [
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-1-survey-envoy.png",
+        "sha256": "3447d7cf228874cea2c39ede24c9a3f53042d8e4ddf3d1945fadd5c513d5730a",
+        "bytes": 109319
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/010-inspect-before-acquisition-2-independent-surveyor.png",
+        "sha256": "42bf143f79598b6f8c62b481f49ea086e81aa62af01f71fcc7667d54e69bd6f1",
+        "bytes": 107559
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/012-read-current-report-1-survey-envoy.png",
+        "sha256": "d40c86bbd02bd5741dd3949793d6bf3e6200f15bad13ae5739c3f4b536f5ec0b",
+        "bytes": 110260
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/012-read-current-report-2-independent-surveyor.png",
+        "sha256": "42bf143f79598b6f8c62b481f49ea086e81aa62af01f71fcc7667d54e69bd6f1",
+        "bytes": 107559
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-1-survey-envoy.png",
+        "sha256": "b84be4b4891d731fbb1b2e78df8df4fcaa4e517480f157b1b791f28040814932",
+        "bytes": 108503
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/013-read-scanning-capability-2-independent-surveyor.png",
+        "sha256": "74d51b204cdd35e4e3d72bbc1b609c60aba4ed43981ac4b222a8c777e124c179",
+        "bytes": 108238
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/015-read-retained-history-1-survey-envoy.png",
+        "sha256": "97d56c5e7595ed1b9ba59eac5e7a8b97559e739798090272a3ff9941e1070fab",
+        "bytes": 109158
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/015-read-retained-history-2-independent-surveyor.png",
+        "sha256": "b1e8b91b5345d10f652be479522f15f8b632f8aba6fc6326ee90e9fac0626c97",
+        "bytes": 106553
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/016-read-historical-warning-1-survey-envoy.png",
+        "sha256": "91d3dd12db79ce32f681aff0d2278ab517124dbb897809212b1df2ffc9526360",
+        "bytes": 107948
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/016-read-historical-warning-2-independent-surveyor.png",
+        "sha256": "70608c27c216c5a5a9b16a679e3fd087b70177297be15fdc400f1c2bc6d1f8f9",
+        "bytes": 107283
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-1-survey-envoy.png",
+        "sha256": "8ebf61e5f76c23c0e6b4285be6617b81e52c114f88835bfc03bda9faccb6d7fd",
+        "bytes": 108638
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/017-inspect-still-unknown-2-independent-surveyor.png",
+        "sha256": "93b57ec2bc092a30c97d1f9b2e9d3606600afb31b0a296e871d4ff218946caf2",
+        "bytes": 106781
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/018-recover-retained-report-1-survey-envoy.png",
+        "sha256": "3eb6c34a298aa9d50bdedd14ee15e3d1d551c698c7eddcffe02e5f71acba958c",
+        "bytes": 106808
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/018-recover-retained-report-2-independent-surveyor.png",
+        "sha256": "65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e",
+        "bytes": 103969
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/019-read-labels-after-resize-1-survey-envoy.png",
+        "sha256": "3eb6c34a298aa9d50bdedd14ee15e3d1d551c698c7eddcffe02e5f71acba958c",
+        "bytes": 106808
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/019-read-labels-after-resize-2-independent-surveyor.png",
+        "sha256": "65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e",
+        "bytes": 103969
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/020-locate-home-by-keyboard-1-survey-envoy.png",
+        "sha256": "a0db4074c6290d8173d5400d8d2e36bdc1dc62a602d337b490ed5808190791da",
+        "bytes": 124579
+      },
+      {
+        "path": "live-stellar-observations/phone/linux-arm64/020-locate-home-by-keyboard-2-independent-surveyor.png",
+        "sha256": "65cfa8b062f61237f7346d86d9b51b671c4c05bdb2070a5a70b589d0a56b983e",
+        "bytes": 103969
+      }
+    ]
+  }
+]

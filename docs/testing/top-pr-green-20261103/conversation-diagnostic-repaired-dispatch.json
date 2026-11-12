@@ -1,0 +1,20 @@
+{
+  "firstRun": 43099955148,
+  "firstJob": 130787991563,
+  "classification": "Failed before collection/build/test: GITHUB_REF_NAME absent inside pinned container. No gameplay outcome inferred.",
+  "originalArtifact": {
+    "id": 13891666462,
+    "bytes": 8149,
+    "sha256": "f31b84d8c53364398058829d24929dbdb0e89b31e78eb660535a50df36f8cd83",
+    "downloaded": false
+  },
+  "repair": "Forward GITHUB_REF_NAME and GITHUB_RUN_ATTEMPT unchanged through isolated container launcher. Add explicit forwarding regression. Pinned renderer already forwarded.",
+  "guardTestsPassed": 5,
+  "run": 43101524495,
+  "request": "e0757413942123e852b48565093f0012f2c2d082",
+  "executor": "9da1b898670aec8ef831c1e207d702dc92bb316a",
+  "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+  "sourceSpecDeadlineAssertionDelta": "none",
+  "requestStatus": "in_progress",
+  "requiredStrictRunPreserved": 43090488602
+}

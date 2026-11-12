@@ -1,0 +1,92 @@
+[WebServer] $ vite build
+[WebServer] (node:40201) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 11:05:22 PM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+[WebServer] https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+[WebServer] 292:     </div>
+[WebServer] 293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+[WebServer] 294:     <div
+[WebServer]              ^
+[WebServer] 295:       class="route-details"
+[WebServer] 296:       onkeydown={readingKey}
+[WebServer] (node:40201) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 11:05:23 PM [vite-plugin-svelte] src/lib/components/FleetRoute.svelte:294:4 Non-interactive element `<div>` should not be assigned mouse or keyboard event listeners
+[WebServer] https://svelte.dev/e/a11y_no_noninteractive_element_interactions
+[WebServer] 292:     </div>
+[WebServer] 293:     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded route details support keyboard scrolling.) -->
+[WebServer] 294:     <div
+[WebServer]              ^
+[WebServer] 295:       class="route-details"
+[WebServer] 296:       onkeydown={readingKey}
+[WebServer] [plugin builtin:vite-reporter] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:40201) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:40203) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+(node:40204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·(node:40245) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·(node:40276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+F
+Testing stopped early after 1 maximum allowed failures.
+
+
+  1) [large] › tests/e2e/003-science/components.spec.ts:42:1 › Read shared science ledger in gallery and lab › Inspect capacity at the actual lab frame using the production ledger in both comparison panels. Seek changes reducer-derived presentation, not game state. › Standard motion comparison: The named comparison is the keyboard reading viewpoint; its delivered total and Return remain contained before capture. 
+
+    Error: The entire reading target and both corners remain usable inside every clipping ancestor
+
+    The entire reading target and both corners remain usable inside every clipping ancestor
+
+    expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+    -   "contained": true,
+    +   "contained": false,
+        "hits": true,
+      }
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+       at browser/story-helpers/reading-target.ts:70
+
+      68 |       },
+      69 |     )
+    > 70 |     .toMatchObject({ contained: true, hits: true });
+         |      ^
+      71 | }
+      72 |
+        at expectReadingTarget (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/reading-target.ts:70:6)
+        at readDelivered (/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/003-science/components.spec.ts:39:9)
+        at check (/Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/003-science/components.spec.ts:200:15)
+        at test.step.timeout (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:207:13)
+        at TestStepHelper.step (/Users/anicolao/projects/games/clusterii-conversation-history/tests/browser/story-helpers/test-step-helper.ts:184:5)
+        at /Users/anicolao/projects/games/clusterii-conversation-history/tests/e2e/003-science/components.spec.ts:132:5
+
+    Error Context: ../../../../../tmp/cluster-heading-194/local-playwright/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-large/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../../../tmp/cluster-heading-194/local-playwright/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-large/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../../../tmp/cluster-heading-194/local-playwright/e2e-003-science-components-dc168-e-ledger-in-gallery-and-lab-large/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [large] › tests/e2e/003-science/components.spec.ts:42:1 › Read shared science ledger in gallery and lab 
+  1 did not run
+  2 passed (1.4m)
+  1 error was not a part of any test, see above for details

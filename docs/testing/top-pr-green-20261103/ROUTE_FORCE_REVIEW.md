@@ -1,0 +1,9 @@
+# Route force retained evidence review
+
+Source-bound run41919956624 retained originals were reused without another download or generation. The implementation agent individually inspected42 distinct current images across all four sizes, including duplicate-hash coverage recorded in inspection-decisions.json. Complete family import requires passed manifests, exact current spec SHA, pinned renderer identity, and every image equal either its inherited reference or an inspected hash.
+
+Formation reserves2 fighters/20 infantry; confirmed origin defense is19 fighters/1 infantry after formation. Waypoint order, capacity20/20, range10ly/speed2, accepted departuretick2/first arrivaltick4 and recovered same dispatch remain readable. The selected Earlier/Later/Remove control outlines are complete. Top/bottom readings intentionally show different portions of the bounded reader.
+
+Phone Discard draft is partly below the editor-reading aperture while a different waypoint control has focus. Source inspection confirms it belongs to the overflow:auto region with scroll-padding8px; Review route is the separate persistent footer action. This capture does not prove traversal to Discard, nor does it demonstrate permanent occlusion. No source change or unsupported global layout repair was made. Small-size neighboring prose, formation cancellation and lower rule details can remain offscreen in these deliberate reading positions. This regression disposition is not full reading-access, animation or concept-fidelity approval. Large images viewed at2048x1152 from3840x2160 originals.
+
+Original failed CI remains available for diagnosis. This work adds no duplicate artifact archive; it reuses the verified retained image inventory. New recovery artifacts use14-day remote retention. Required CI remains failed at the previous PR140 head until the validated recovery batch is integrated and checked.

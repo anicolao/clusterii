@@ -1,0 +1,88 @@
+bun test v1.3.13 (bf2e2cec)
+
+tests/campaign.test.ts:
+(pass) review rules generate persisted, reproducible, fair connected galaxies for every roster size [103.29ms]
+(pass) development admission enforces quota, idempotency, stale claims, scheduled start and private views [1.62ms]
+(pass) split ownership omits opposing layer values from serialized views [0.15ms]
+(pass) private projections are independent of opposing-layer values for every control combination [4.13ms]
+(pass) maintenance freezes scheduled time and rejects admissions without changing holdings [0.57ms]
+(pass) epoch activation resumes only paused members and permanently records mock exposure [0.31ms]
+(pass) exact production floors review exponents, preserves milliunits and apportions stable ties [0.48ms]
+(pass) home production conserves credits, whole forces and fractional remainders; science advances only after output [3.56ms]
+(pass) split control routes production by layer, releases escrow once and hides opposing ledgers [1.13ms]
+(pass) production force caps record discarded units and legacy campaigns retain their stored capability [0.48ms]
+(pass) production pause preserves the remaining interval and legacy starts never gain an economy [0.39ms]
+(pass) investing is applied once before wallet/escrow apportionment and neutral developments produce nothing [0.29ms]
+(pass) research admission assigns future cutoff, rejects foreign/stale/paused/legacy orders and keeps queues private [1.42ms]
+(pass) research selections settle in admitted order, retain unfinished progress and transfer capped bank exactly once [1.56ms]
+(pass) construction reserves exact escalating prices, serial layer capacity and future cutoffs without overspending [1.98ms]
+(pass) four construction advances produce on completion and distribute one bounded dividend from frozen markets [2.03ms]
+(pass) cancellation settles at its assigned tick with full or half refund and cannot repeat [2.60ms]
+(pass) split-layer construction privacy, pre-execution invalidation and capture cancellation preserve exact refunds [1.77ms]
+(pass) construction layer queues start successors without an immediate advance and dividend escrow conserves its pool [2.84ms]
+(pass) market focus validates exact allocation, membership, private orders and future boundary [1.09ms]
+(pass) focus applies in sequence but completion dividends use the previous tick allocation [2.82ms]
+(pass) focus admission is bounded, ordered and zero-weight completion pools pay nothing [13.55ms]
+(pass) scans use one private draw per target, frozen levels and nearest orbital source [2.22ms]
+(pass) stale observations preserve old permitted facts and never expose current enemy secrets or draws [2.33ms]
+(pass) split ownership grants only observed fields; no sensor means stale and legacy capability remains unchanged [2.35ms]
+(pass) server observation draws are stable and domain-separated without public replay secrets [0.28ms]
+Stellar observation envelope budget {
+  mode: "mock",
+  bytes: 563611,
+  players: 12,
+  stars: 384,
+}
+Stellar observation envelope budget {
+  mode: "real",
+  bytes: 563432,
+  players: 12,
+  stars: 384,
+}
+(pass) the largest stellar catalogue retains complete reports within the canonical envelope budget [25.50ms]
+(pass) observation storage reserves complete reports before admitting excess pending work [5.79ms]
+(pass) fleet admission reserves without moving forces; boundary settlement conserves units and rejects duplicate reservations [3.26ms]
+(pass) fleet validation, layer entitlement and private views fail closed [2.32ms]
+(pass) formed and reserved fleet units count toward the empire production ceiling [0.99ms]
+(pass) fleet slots include reservations and enforce the recorded empire limit [23.37ms]
+(pass) state capacity cannot block disbanding that frees persistent fleet storage [643.80ms]
+Disband recovery envelope budget {
+  mode: "mock",
+  bytes: 933747,
+}
+Disband recovery envelope budget {
+  mode: "real",
+  bytes: 933568,
+}
+(pass) the disbanding recovery budget fits both encrypted envelope formats [16.93ms]
+(pass) two commanders using one command UUID retain independent fleet identities and forces [1.45ms]
+(pass) cargo reservations share surface inventory and conserve fleet/system forces across load and unload [1.70ms]
+(pass) cargo fails closed on forged fields, lost layer ownership, capacity changes and absent fleets [4.90ms]
+(pass) fleet acknowledgement reconciles only its authoritative outcome and never invents a future transfer [2.54ms]
+(pass) split and merge conserve stationed complements, reserve slots and lock every participant [1.95ms]
+(pass) reorganization rejects forged or incompatible fleets and preserves orthogonal surface control [4.63ms]
+(pass) pending splits reserve the shared fleet limit against formation and other splits [1.64ms]
+(pass) fleet cancellation releases only owned reservations before the exact cutoff [1.12ms]
+(pass) cancelling all stationed operations preserves forces and releases both merge participants [4.42ms]
+
+tests/travel.test.ts:
+(pass) route geometry uses exact Euclidean range separately from speed and validates each leg [0.50ms]
+(pass) route admission is private, revision-bound, strict, cancellable and does not move forces [2.20ms]
+(pass) travel conserves complements, resolves neutral layers, stops at waypoints and revalidates onward range [4.07ms]
+(pass) integer combat follows square-law coefficients and defender-first linear frontage [0.02ms]
+(pass) simultaneous hostile arrival is permutation-stable, capacity-safe and reports only to participants [2.92ms]
+(pass) fleet sensors use confirmed in-flight positions without disclosing the private route [1.68ms]
+(pass) hostile surface arrival ends the onward route even with friendly orbital control [2.25ms]
+Route capacity fixture {
+  admitted: 142,
+  refused: true,
+}
+(pass) route admission reserves multi-fleet departure and arrival growth within both encrypted document limits [158.63ms]
+(pass) split occupation routes each output by layer and releases escrow once with recipient-only loss reports [5.43ms]
+(pass) arrival history deduplicates repeated snapshots while retaining older recorded details [2.46ms]
+(pass) submitted route recovery requires the accessible matching fleet and preserves newer local edits [1.14ms]
+
+ 54 pass
+ 0 fail
+ 1175 expect() calls
+Ran 54 tests across 2 files. [1128.00ms]

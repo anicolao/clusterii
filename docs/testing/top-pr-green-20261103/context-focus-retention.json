@@ -1,0 +1,2014 @@
+[
+  {
+    "run": 43087376550,
+    "artifact": {
+      "id": 13887892436,
+      "node_id": "MDg6QXJ0aWZhY3QxMzg4Nzg5MjQzNg==",
+      "name": "top-pr140-context-focus-candidates-desktop-c064f32e201b1913007f2317e65d66589cc11e4b",
+      "size_in_bytes": 31146331,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13887892436",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13887892436/zip",
+      "expired": false,
+      "digest": "sha256:5a92ddcaf3d8dd0c423d03e1c2349f789416dad748362d52f69953f7c33d7277",
+      "created_at": "2026-11-11T19:36:17Z",
+      "updated_at": "2026-11-11T19:36:17Z",
+      "expires_at": "2026-11-25T19:36:15Z",
+      "workflow_run": {
+        "id": 43087376550,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-context-focus-20261111",
+        "head_sha": "c064f32e201b1913007f2317e65d66589cc11e4b"
+      }
+    },
+    "archiveSha256": "5a92ddcaf3d8dd0c423d03e1c2349f789416dad748362d52f69953f7c33d7277",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/desktop/context-focus/firestore-debug.log",
+        "size": 20385,
+        "crc32": "df6856b8",
+        "sha256": "6cb3a2130bea0bccd4367a6e92d4e2097785eb071697a63aa0677df9412d8bcb",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/desktop/context-focus/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/desktop/context-focus/result.json",
+        "size": 165,
+        "crc32": "567974e2",
+        "sha256": "e40135d0aab79bdde8aaeadafe5895fdfbeb17c1063a90974fe0ebcac1679ba4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/013-form-0-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/013-form-0-1-fleet-marshal.png",
+        "size": 1460684,
+        "crc32": "f0899bb1",
+        "sha256": "aee7bb8ac81d93ee3e9442b77b0a3117a5b7618ae8b7d79e4228f09a7c228df7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/014-form-1-1-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/014-form-1-1-independent-marshal.png",
+        "size": 1460627,
+        "crc32": "57c41731",
+        "sha256": "f127e4335afeba24081bb376501bdae5eab2a2b6d916f37e3f08d36fbf4ec666",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/016-formed-fleets-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/016-formed-fleets-1-fleet-marshal.png",
+        "size": 1456741,
+        "crc32": "c194f468",
+        "sha256": "2ebd2794314e0637af7c3ae711184697d107a562bea7c02163041217dc8ac697",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/016-formed-fleets-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/016-formed-fleets-2-independent-marshal.png",
+        "size": 1457747,
+        "crc32": "83e7a4a5",
+        "sha256": "69f8641fe343a78d2eadee2ab8fedeebc6ffaca07698602e6590ba5048d81adc",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/017-preview-route-0-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/017-preview-route-0-1-fleet-marshal.png",
+        "size": 1349240,
+        "crc32": "f04f9a1d",
+        "sha256": "1f72da6e4948a248f444434bad7db416f0714ad1b76faeeaca218b4f0f1ddced",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/018-commit-route-0-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/018-commit-route-0-1-fleet-marshal.png",
+        "size": 1585702,
+        "crc32": "b4a87fcf",
+        "sha256": "f15ac1ffc40999f626be3d53c1dc8a6677f086c6bc5aac8fc1645808f0f00b94",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/019-preview-route-1-1-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "0480ee85",
+        "sha256": "ddb3e53f9787755c8a0f09bda246d1d6b3f52e22ab906afa6ad407f2ea3e3d44",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/019-preview-route-1-1-independent-marshal.png",
+        "size": 1363997,
+        "crc32": "f3bd6eea",
+        "sha256": "09699c5741c415c4a4b00e2df9ecfda4ff412ecb50830daec958eb1f816d86bc",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/020-commit-route-1-1-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "0480ee85",
+        "sha256": "ddb3e53f9787755c8a0f09bda246d1d6b3f52e22ab906afa6ad407f2ea3e3d44",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/020-commit-route-1-1-independent-marshal.png",
+        "size": 1614649,
+        "crc32": "bd739b02",
+        "sha256": "3cdf16b5aac498b6cd90cdcce94948c917bec049c283e21fcdccc70cb6090d94",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/022-select-contested-system-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "373b24ee",
+        "sha256": "8bc2d362c3e1578f2a82679ea9ba3dfd5b9f07cc6acfba051981ee05c716abd6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "size": 837220,
+        "crc32": "9ab0ae3a",
+        "sha256": "3dfb3ea3668f9d7d9480ea9213105bda9473bb73f329c5b664caed23e57adaa5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/022-select-contested-system-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "373b24ee",
+        "sha256": "8bc2d362c3e1578f2a82679ea9ba3dfd5b9f07cc6acfba051981ee05c716abd6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "size": 792130,
+        "crc32": "7b43ca86",
+        "sha256": "c4185b19675426f83ccb80537867c951cbb2444cd04b89b2459f1225d60d4986",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "size": 1459631,
+        "crc32": "4c473710",
+        "sha256": "b8a0a0bfaab6d0986fd83f51bf36f5695f084ee69b78618d60df4c4ee46f0da0",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "size": 1472020,
+        "crc32": "1be057b3",
+        "sha256": "2acc5d7c89411af0283115d1973f1aafb1e14be865e9d09353bad26421fdb2d4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/024-read-own-casualties-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "size": 1436463,
+        "crc32": "c302f31a",
+        "sha256": "2845e1d7637824764b861e43536358b6c21025cd0dcc049877155422af88a2ed",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/024-read-own-casualties-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "size": 1434883,
+        "crc32": "d0632b14",
+        "sha256": "670c0c0aed1a6f94a930205b2d65dfe793e94b7a374c3b8588a9722bda0c5d7a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/025-read-recorded-layers-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "size": 1436463,
+        "crc32": "c302f31a",
+        "sha256": "2845e1d7637824764b861e43536358b6c21025cd0dcc049877155422af88a2ed",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/025-read-recorded-layers-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "size": 1434883,
+        "crc32": "d0632b14",
+        "sha256": "670c0c0aed1a6f94a930205b2d65dfe793e94b7a374c3b8588a9722bda0c5d7a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/027-retain-record-during-update-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "size": 1465822,
+        "crc32": "bb5cfd3b",
+        "sha256": "b953fac4444cfd27ae8c0934bc1e7544e1935fd87a41aa38f58ffcfbab3750a7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/027-retain-record-during-update-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "size": 1482362,
+        "crc32": "4c5f89c7",
+        "sha256": "5cec6cec5454c8210b7675075a46e29917b718e601d97a7d1ec870ff7a297b0c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/028-restore-system-context-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "size": 836668,
+        "crc32": "0c8ba367",
+        "sha256": "46fb55a0a5c9839cd1cbd1a44ae7aaaf4dd86ceb4437731a8bccbcc14a7f3f3f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/028-restore-system-context-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "size": 791550,
+        "crc32": "7f2b5e34",
+        "sha256": "d6c4eadd7243faa6a0480291dd5b520840ab9c2dfab8c55ff41f56cfc535e51e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/029-inspect-current-surface-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "size": 773795,
+        "crc32": "3a7f8eec",
+        "sha256": "e36923e583e43ede993c9885314d8294e1cded7184c1eb6d8ea605bba4bebb8f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/029-inspect-current-surface-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "size": 796171,
+        "crc32": "0df855e8",
+        "sha256": "40ca396c8b72fed23888d481fe1c17443fe63760ca56f22c3ae104d960e1618e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "size": 1459634,
+        "crc32": "391f51a1",
+        "sha256": "1cf1ca2610e5fa752bbb29a039598ee8279665c5196395d7618528c2257d3e44",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "size": 1472098,
+        "crc32": "5b21c96b",
+        "sha256": "344a4a3560063645846aeef3a62ecb2d4c604f4446c0ec0a7e510242b295be0d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/README.md",
+        "size": 19168,
+        "crc32": "2fe638e4",
+        "sha256": "f284a10154c03f14571191b323c5c923be46fc6aac77a2e6321ed7778a094ef7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "66da3120",
+        "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/desktop/linux-arm64/story.json",
+        "size": 21301,
+        "crc32": "569330bd",
+        "sha256": "0b8f9efc5e1ed4b9be21483dc54c15a5412d21a78e624e1b479d50f72a8e6e63",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-desktop/attachments/Illustrated-story-04972b69a4fcf03fdc27eb46c3dd9666c0f22197.md",
+        "size": 19168,
+        "crc32": "2fe638e4",
+        "sha256": "f284a10154c03f14571191b323c5c923be46fc6aac77a2e6321ed7778a094ef7",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "86a995ec",
+        "sha256": "e103fd5d3185532ec21fcebb83fe3ec37025bf4104f9df7548bbf0d526150821",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "e802ab19",
+        "sha256": "aeb6419355e71f77b7e202c7100ee65bd680c2307956130f11d4ec32b5452b81",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2726,
+        "crc32": "f58a26ef",
+        "sha256": "5de2465c412a9630ef803ab4bae1db89df859f8716c4e762795e9cac91398e57",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "bee982c7",
+        "sha256": "a9bf2b535998d9782debddeb2f9568205330e2bd9665450253c6ad0081e32c41",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "054f8a44",
+        "sha256": "cafb53b8c32555f7985be3b7539967a0f006c865fd4d698c77811db420936a87",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "c92bfdbd",
+        "sha256": "cd6acf1e9e31d77a3a2f902a23ec5d048cdc711e4f2940679973c75c76d1101a",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-desktop.json",
+        "size": 4797,
+        "crc32": "1c1044c3",
+        "sha256": "c9e5904f62047b2e80dc37ad1d427cb37449da934f8c27f08fdccecea84baad2",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-desktop.json",
+        "size": 360,
+        "crc32": "ac6717e4",
+        "sha256": "dfb4ba91519e5d347ada161c38b6a31789c44cd56e2c4f76c55fc2d6e565ba24",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1284,
+        "crc32": "95a8bdf3",
+        "sha256": "0202e2e2df10bf7011df1c32e328ac975e97f57b1f61c9a11178ab6e6f5e6a39",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 10328,
+        "crc32": "81560267",
+        "sha256": "4fd2988f46df149d666bd8b2417213c59cefe6085a3acde807ac1da6bc844535",
+        "retained": false
+      }
+    ]
+  },
+  {
+    "run": 43087376550,
+    "artifact": {
+      "id": 13887093589,
+      "node_id": "MDg6QXJ0aWZhY3QxMzg4NzA5MzU4OQ==",
+      "name": "top-pr140-context-focus-candidates-large-c064f32e201b1913007f2317e65d66589cc11e4b",
+      "size_in_bytes": 136112134,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13887093589",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13887093589/zip",
+      "expired": false,
+      "digest": "sha256:5ef22899c9c67185c811d439dabdeaae585e05c727c96065e965d4cba0c7f000",
+      "created_at": "2026-11-11T19:37:05Z",
+      "updated_at": "2026-11-11T19:37:05Z",
+      "expires_at": "2026-11-25T19:37:01Z",
+      "workflow_run": {
+        "id": 43087376550,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-context-focus-20261111",
+        "head_sha": "c064f32e201b1913007f2317e65d66589cc11e4b"
+      }
+    },
+    "archiveSha256": "5ef22899c9c67185c811d439dabdeaae585e05c727c96065e965d4cba0c7f000",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/large/context-focus/firestore-debug.log",
+        "size": 20386,
+        "crc32": "d5959315",
+        "sha256": "c80285c4d3121295512c2a8bb7a86399db3dc069f9db04d977bfc63b72bf2eb3",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/large/context-focus/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/large/context-focus/result.json",
+        "size": 163,
+        "crc32": "ffe6601e",
+        "sha256": "00f9b6d13229cf3357bb08abda01fa7e4b6a82ad014786c39154b9f2a859caf6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/013-form-0-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/013-form-0-1-fleet-marshal.png",
+        "size": 6576052,
+        "crc32": "bd9324c6",
+        "sha256": "0e93e906fa8e1cdb5d224588f210c265e3b3c14b2f15e74d29d6b9b468bfcb8b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/014-form-1-1-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/014-form-1-1-independent-marshal.png",
+        "size": 6575984,
+        "crc32": "ab221d1a",
+        "sha256": "1a30b276cd418bf82920fff8512dbaf2e178c402dee082ab57a51c5a90e1ffe7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/016-formed-fleets-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/016-formed-fleets-1-fleet-marshal.png",
+        "size": 6579358,
+        "crc32": "fa9ee3bc",
+        "sha256": "4603cdd6223f0294ac3384de8c25940eb5ec54c00ddd271af32a43339eef6b0c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/016-formed-fleets-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/016-formed-fleets-2-independent-marshal.png",
+        "size": 6580027,
+        "crc32": "cbdfebb6",
+        "sha256": "a707fb863ce2806ecc4aa3abb0004ef7d4fe5a334a6340b5be0b2a50399ad3d3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/017-preview-route-0-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/017-preview-route-0-1-fleet-marshal.png",
+        "size": 5984441,
+        "crc32": "5bfb9a9d",
+        "sha256": "0f77a5fd686a97373e57d99e3a29a38855d7dc634b28abf85af3a36a6a58cc76",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/018-commit-route-0-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/018-commit-route-0-1-fleet-marshal.png",
+        "size": 6515892,
+        "crc32": "59e9fd0b",
+        "sha256": "4fdf3e1853ff67da43a512338d428bc831bfa9e2910ad86ba8df7cf075289d27",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/019-preview-route-1-1-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "9ccd8cfd",
+        "sha256": "427c893e0202f6e6b945a720d2fba274f02af01b44710bd787be66dc1427b590",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/019-preview-route-1-1-independent-marshal.png",
+        "size": 6046192,
+        "crc32": "d2632219",
+        "sha256": "973262d1c471a6a4799865d7d671c5b3e41251f981d056c9dce819f566cb1382",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/020-commit-route-1-1-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "9ccd8cfd",
+        "sha256": "427c893e0202f6e6b945a720d2fba274f02af01b44710bd787be66dc1427b590",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/020-commit-route-1-1-independent-marshal.png",
+        "size": 6634893,
+        "crc32": "57d6f4ae",
+        "sha256": "efa1be36981e4ef79330deba99fce57be22ae69cc698324f7553d6e6ef18620e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/022-select-contested-system-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "69e099ed",
+        "sha256": "c58acf9a78bdadd14266c0e611c38e15b8c952bd5b7180d9fe8b7a26af18a6cc",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "size": 3623674,
+        "crc32": "2d351f4e",
+        "sha256": "4075e8643507c4dba94c52fa0dd6273717a0160e0910765ceb9ce9e25e74ca02",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/022-select-contested-system-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "69e099ed",
+        "sha256": "c58acf9a78bdadd14266c0e611c38e15b8c952bd5b7180d9fe8b7a26af18a6cc",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "size": 3534771,
+        "crc32": "a2a3798b",
+        "sha256": "cfbb31c2e3f6270e55a2ad17eacb9129bab73ad81f8a3c3b23f4d74b4b347cc9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "size": 6342724,
+        "crc32": "49ad71bf",
+        "sha256": "174e4cb0ab7909201b140f2f76cce4a98f77b956defc9da0d418d1a9678699af",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "size": 6371319,
+        "crc32": "09adaf10",
+        "sha256": "49b5f520558926b98992825086e998958bad4964820259566b4f6a674684fef1",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/024-read-own-casualties-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "size": 6311019,
+        "crc32": "82f6e6cb",
+        "sha256": "12369750424df284c9782f120411b7e24635c96295bf951ed6a970000ee7a5d3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/024-read-own-casualties-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "size": 6320376,
+        "crc32": "e1c8bb69",
+        "sha256": "68ba1752189ec49d1661de94870c701cd01589ca99cc4ad0e44c3527a6ba026d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/025-read-recorded-layers-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "size": 6311019,
+        "crc32": "82f6e6cb",
+        "sha256": "12369750424df284c9782f120411b7e24635c96295bf951ed6a970000ee7a5d3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/025-read-recorded-layers-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "size": 6320376,
+        "crc32": "e1c8bb69",
+        "sha256": "68ba1752189ec49d1661de94870c701cd01589ca99cc4ad0e44c3527a6ba026d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/027-retain-record-during-update-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "size": 6373130,
+        "crc32": "9e96d438",
+        "sha256": "45dbbd8dd5a34faa6e44c0d175d667dcfa48a14fb62311281135eb8a08225f99",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/027-retain-record-during-update-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "size": 6406855,
+        "crc32": "f9e1d0c5",
+        "sha256": "b4bf295db9ef42f3eb1e854ba687d9a44dc73524341761123c99a2809cd0b23a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/028-restore-system-context-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "size": 3622422,
+        "crc32": "046f2c38",
+        "sha256": "e64ed364fbc1cb1c3ed798abf49ef89e1558c4a3eb630e8a03e2e61621f604cc",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/028-restore-system-context-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "size": 3533279,
+        "crc32": "6a3fe03e",
+        "sha256": "abf24fdccb4e5555dd9811baf685bbf9062cf759e5288e178bcb8f6d7e9592ca",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/029-inspect-current-surface-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "size": 3483315,
+        "crc32": "600647f2",
+        "sha256": "007674b6e2d971dee6cb911f3b392a14da398dfa3f5972b423d261aea5b29581",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/029-inspect-current-surface-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "size": 3536401,
+        "crc32": "9abc3bfc",
+        "sha256": "38bb94063b72b0342d3ec66c28e849a8174b80b033fe4543dc2a76056b3a63ec",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "size": 6342751,
+        "crc32": "a7bc51e2",
+        "sha256": "71cddb4c404548787230a3b9adb59c6227178f788d4655511c05509a40c11e14",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "45c90c6a",
+        "sha256": "80f6db55b680f45a79274a91757e47b748abd74e3bd27280ea0dca9397941063",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "size": 6371269,
+        "crc32": "732204b4",
+        "sha256": "3ff17ef35c4ecd7d42fed7bd6a6eac5528a02894f4d6dfbeb2798d39f478c767",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/README.md",
+        "size": 19166,
+        "crc32": "fddc1d89",
+        "sha256": "f894833ba43daffa8c29225ecaea89d6dc858dcc4419bb99758084ad4665b016",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "4ece87e2",
+        "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/large/linux-arm64/story.json",
+        "size": 21299,
+        "crc32": "eb67277e",
+        "sha256": "486ce0c45b94109a89edfa5e86a4f03467531dde2af98e5b0aa6b4aa290839d6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-large/attachments/Illustrated-story-2c8a913979a0f9ba2108c74187443918c631cf3c.md",
+        "size": 19166,
+        "crc32": "fddc1d89",
+        "sha256": "f894833ba43daffa8c29225ecaea89d6dc858dcc4419bb99758084ad4665b016",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "2cde9ddf",
+        "sha256": "3a4fa93f314c8d42272eeeaa37ec28107f262bcfae4281da4bf8fc831868dd93",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "48f6c04d",
+        "sha256": "ce8499e781a61f5e65224cec76acf667f08f4b621f5ca0d9ee5f6b05ab5ef9cb",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2721,
+        "crc32": "2ca7999a",
+        "sha256": "039fe286fb6bcbf68c737a4ba096e637501ac5a4f9772e6643a0f299cecd83e8",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "a8370686",
+        "sha256": "cfd7e4c270fcbbb31e01282fed8d4ece3b752a6165a881bd622ff8cfe521226b",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "6cd49ddb",
+        "sha256": "7944391e68627d168f54c8ec94b52fb739fdc6c8f4aa5cab88fa5b21567fe9b6",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "7ab2c73d",
+        "sha256": "f9bf09055702da86812e6f07cb2cb641dfcaec3701a09ecc6199b018e1867ed0",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-large.json",
+        "size": 4791,
+        "crc32": "c56bc05a",
+        "sha256": "0597312784aef1dc721caff5f603f888a3d553c9a13a535bad5485010403ffe9",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-large.json",
+        "size": 358,
+        "crc32": "7a829620",
+        "sha256": "dba580f15af434960054fe175615729afb4851c99598f5ba93d7fb5b5fedac39",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1284,
+        "crc32": "95a8bdf3",
+        "sha256": "0202e2e2df10bf7011df1c32e328ac975e97f57b1f61c9a11178ab6e6f5e6a39",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 10330,
+        "crc32": "71b64402",
+        "sha256": "81784b71958cba5d01917b9e7cb4aa2bbe61e13e6c394a22e03ff4b02caccc67",
+        "retained": false
+      }
+    ]
+  },
+  {
+    "run": 43087376550,
+    "artifact": {
+      "id": 13887557851,
+      "node_id": "MDg6QXJ0aWZhY3QxMzg4NzU1Nzg1MQ==",
+      "name": "top-pr140-context-focus-candidates-phone-c064f32e201b1913007f2317e65d66589cc11e4b",
+      "size_in_bytes": 5710766,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13887557851",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13887557851/zip",
+      "expired": false,
+      "digest": "sha256:46853a76f6c02826540716643e906bbdfa06744cb1611308fa51ff18e622b3bb",
+      "created_at": "2026-11-11T19:36:13Z",
+      "updated_at": "2026-11-11T19:36:13Z",
+      "expires_at": "2026-11-25T19:36:12Z",
+      "workflow_run": {
+        "id": 43087376550,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-context-focus-20261111",
+        "head_sha": "c064f32e201b1913007f2317e65d66589cc11e4b"
+      }
+    },
+    "archiveSha256": "46853a76f6c02826540716643e906bbdfa06744cb1611308fa51ff18e622b3bb",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/phone/context-focus/firestore-debug.log",
+        "size": 19851,
+        "crc32": "b6793caf",
+        "sha256": "bfc45662908192aa0420621f5acf6f06c96e06235dd4e36c6f8a636447a6f03d",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/phone/context-focus/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/phone/context-focus/result.json",
+        "size": 163,
+        "crc32": "5068820c",
+        "sha256": "9169d455f3dbd6013ccc86b94c6fccd41e2da5e5ee372df4a2752809817029cb",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/013-form-0-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/013-form-0-1-fleet-marshal.png",
+        "size": 165084,
+        "crc32": "5ba4e22e",
+        "sha256": "c9d7de96e97a831ec92be96b1f2721e4a135fbf72ff6a1edfdd48b928031b513",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/014-form-1-1-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/014-form-1-1-independent-marshal.png",
+        "size": 164966,
+        "crc32": "4f3f2a6f",
+        "sha256": "958ace6bca0e38d83661c04c401d876708208e489ceb5045069f248c4f6ec62b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/016-formed-fleets-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/016-formed-fleets-1-fleet-marshal.png",
+        "size": 159891,
+        "crc32": "44148cdd",
+        "sha256": "6e80258ab6b539474731c85aaeb656e820042e979f92592503eb539ec6651707",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/016-formed-fleets-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "65916322",
+        "sha256": "0b70de0ce3b47c69643a88b41fd7b0495dd6fb4d69a0f7ffdedfd5d27d851193",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/016-formed-fleets-2-independent-marshal.png",
+        "size": 160421,
+        "crc32": "b52439ff",
+        "sha256": "05199486acc2fd7d1df5d554d7852d121b70e72709156abfa6219f84cbff3fa1",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/017-preview-route-0-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/017-preview-route-0-1-fleet-marshal.png",
+        "size": 211044,
+        "crc32": "cdd88815",
+        "sha256": "e15d00603957eed1088e5993d4ca9a3aa04614ba6d47c7201c6cd8a992942ed4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/018-commit-route-0-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/018-commit-route-0-1-fleet-marshal.png",
+        "size": 301713,
+        "crc32": "f014ff8a",
+        "sha256": "54986548c7ca440e5b39b425b2d43f641506f8c97a42261dfa1372fe93da815f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/019-preview-route-1-1-independent-marshal.layout.json",
+        "size": 2063,
+        "crc32": "1c1b3dd3",
+        "sha256": "fa07d8652db593ca283b51f48d487c7bbd5caf075861ba95c81de604a64130b4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/019-preview-route-1-1-independent-marshal.png",
+        "size": 219088,
+        "crc32": "275715f9",
+        "sha256": "cccab1fd8a7b8da138d0cbda4fd88cc90e0e6baa1e1822cfa4a47b08141f83c3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/020-commit-route-1-1-independent-marshal.layout.json",
+        "size": 2063,
+        "crc32": "1c1b3dd3",
+        "sha256": "fa07d8652db593ca283b51f48d487c7bbd5caf075861ba95c81de604a64130b4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/020-commit-route-1-1-independent-marshal.png",
+        "size": 308103,
+        "crc32": "5be551bb",
+        "sha256": "507a36181db23130f2dfca299063722c3b856f2e3664440ba52bc7514849161f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "d74b347e",
+        "sha256": "40aff2383cc83d766979d18af2ba8256ffef98fa7b104298231a752baedbef03",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "size": 246487,
+        "crc32": "aa22f730",
+        "sha256": "170c1459784d3076a3954e9a9ac6f39ee78965ebfc7f111479d5065f6e1278d3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-2-independent-marshal.layout.json",
+        "size": 2067,
+        "crc32": "d74b347e",
+        "sha256": "40aff2383cc83d766979d18af2ba8256ffef98fa7b104298231a752baedbef03",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "size": 217023,
+        "crc32": "d6a07705",
+        "sha256": "876bad6f866ba43c15c1e19666a064ec9866c4eceb7ee9c65bb035a875960fca",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "size": 291647,
+        "crc32": "e9e0cdd6",
+        "sha256": "23571bebd6700b443407c113f3c15966440f779f1e622c5dff8671c90f87a586",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "size": 292981,
+        "crc32": "8b66bc09",
+        "sha256": "8f663c516669e2fc86c49270f70e8d89110171dbce307e1b63949ddcec2260a8",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "size": 200052,
+        "crc32": "209fbaea",
+        "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "size": 206974,
+        "crc32": "4f4b6fd4",
+        "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "size": 200052,
+        "crc32": "209fbaea",
+        "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "size": 206974,
+        "crc32": "4f4b6fd4",
+        "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "size": 291254,
+        "crc32": "08e7f726",
+        "sha256": "017ed808fadfeabd1d6ec5a1b608bc414541c4e0774c55782d6faea5c2f2e1b6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "size": 292597,
+        "crc32": "10fab7ee",
+        "sha256": "e5677ad11a5d58d377c3f56dfbf6d896c3b059db650386ca5804c264056c088b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "size": 246089,
+        "crc32": "d12ac15d",
+        "sha256": "133884465cd3bad9c6e3fe5be826d77fc906570b3ab9585ae0d46425338476c3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "size": 216427,
+        "crc32": "9155a1f5",
+        "sha256": "17e6fbc5c7935e930393dc004beb0a160e656111985e27c98e14b32ae2834cb9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "size": 250883,
+        "crc32": "a63428f7",
+        "sha256": "819315230e651f95f974974abfe7ce69e57880ef6ffdd84b7338daf298382279",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "size": 252999,
+        "crc32": "2a75c04e",
+        "sha256": "2a4fcbd04b1f4378d3fe766e5407485427b6ab8b65c7b96b45544ff7c00cb22d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "size": 291625,
+        "crc32": "0570c707",
+        "sha256": "7bae1ee53ed913ffa6aa606153ad8d9034e9cc05f0227022d1771e29eb70d342",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.layout.json",
+        "size": 2065,
+        "crc32": "f2a8068a",
+        "sha256": "c669a7fb7a717d13b0ad462f2651c3ad091f1f97b20a8d181df03bacff627cf5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "size": 292959,
+        "crc32": "b3f99b99",
+        "sha256": "d046738f29cc7d9fa61c4a546141ecd9f0931eceb125848d0c10f59bbda169b4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/README.md",
+        "size": 19166,
+        "crc32": "14bc6712",
+        "sha256": "efd86b985060cd04592326232fb255cd1eea35a686a7cc5fb77a9b886e52fd5b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/renderer.json",
+        "size": 757,
+        "crc32": "32c44c94",
+        "sha256": "395743cf4cdd38eb8c5ef467245333176b507e380417ce42a8c4f7a63f9384f5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+        "size": 21297,
+        "crc32": "84639f18",
+        "sha256": "a2fe83e797e9b9aff4876e8d6494cdeaf81db66ab9269ea1d8ae86c27808549c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-phone/attachments/Illustrated-story-992b3b7ece212146012ca6a58bcfe7799691276b.md",
+        "size": 19166,
+        "crc32": "14bc6712",
+        "sha256": "efd86b985060cd04592326232fb255cd1eea35a686a7cc5fb77a9b886e52fd5b",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "b54c8f48",
+        "sha256": "52ed3a44290afa8ed1eaf5237c4c0ae731bee80e069d5104097bb7b7728d41eb",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 3786,
+        "crc32": "feab158c",
+        "sha256": "3b2b86474b528df994d73dba6ae8ef8d3f8d931d87998fab9adfc729f5d05967",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "e2ba1b50",
+        "sha256": "0e93d84b9b20e1033bee1037766cad42f58e069f9b8f0224dd79e2dc76f0984a",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "0f298836",
+        "sha256": "4af34edaaaed53c6ae0c8a7e834830671bf340ccd2ff314be7fcf8ab35f649af",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "b5975bd2",
+        "sha256": "a4965c9fcfe82050567d9acd9e9bbdd4c78f9b932fe327cd37fc906c12577dda",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "0bf8fb64",
+        "sha256": "d3c2d34ee928e18ca08d160f26facc3823355e5564e6e5fe53f316b5dc488dbe",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-phone.json",
+        "size": 4781,
+        "crc32": "ecb60b57",
+        "sha256": "b211096ae9b4b846341fe3cf76ab6e4a7f8aebe65b28b4881ee89de26e4f34ce",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-phone.json",
+        "size": 358,
+        "crc32": "d16162f6",
+        "sha256": "d62f874576242d32845d44001bc0eef9898117b25c334a28f729cb3b554b4b9b",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1284,
+        "crc32": "95a8bdf3",
+        "sha256": "0202e2e2df10bf7011df1c32e328ac975e97f57b1f61c9a11178ab6e6f5e6a39",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 10329,
+        "crc32": "ce222c27",
+        "sha256": "e8fb83a100e66c74664c62439c3956292a0fb151389ed53c66ab29de20ea1ef0",
+        "retained": false
+      }
+    ]
+  },
+  {
+    "run": 43087376550,
+    "artifact": {
+      "id": 13888136337,
+      "node_id": "MDg6QXJ0aWZhY3QxMzg4ODEzNjMzNw==",
+      "name": "top-pr140-context-focus-candidates-short-c064f32e201b1913007f2317e65d66589cc11e4b",
+      "size_in_bytes": 19908923,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13888136337",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13888136337/zip",
+      "expired": false,
+      "digest": "sha256:5d185708dd522e73e63e11e1af2297a5d701d9e7bead9e0b9bf7cd632c9e2016",
+      "created_at": "2026-11-11T19:35:46Z",
+      "updated_at": "2026-11-11T19:35:46Z",
+      "expires_at": "2026-11-25T19:35:45Z",
+      "workflow_run": {
+        "id": 43087376550,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-context-focus-20261111",
+        "head_sha": "c064f32e201b1913007f2317e65d66589cc11e4b"
+      }
+    },
+    "archiveSha256": "5d185708dd522e73e63e11e1af2297a5d701d9e7bead9e0b9bf7cd632c9e2016",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/short/context-focus/firestore-debug.log",
+        "size": 21576,
+        "crc32": "1afd852a",
+        "sha256": "59e0003c19802617c1101d31ac63af40b44cc2fc663bb3738ffa9053fd359191",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/short/context-focus/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/short/context-focus/result.json",
+        "size": 163,
+        "crc32": "03db8e85",
+        "sha256": "b4f2da677c9e42d780c10e7ef8f39f8da02d5cec3ab217c503d10a66be5fad18",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/013-form-0-1-fleet-marshal.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/013-form-0-1-fleet-marshal.png",
+        "size": 965477,
+        "crc32": "f0ae208e",
+        "sha256": "b409943054912be6b92c8f00c426be1b22bbf97fb07244b3e640675cad209d1d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/014-form-1-1-independent-marshal.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/014-form-1-1-independent-marshal.png",
+        "size": 965466,
+        "crc32": "0d367ee0",
+        "sha256": "c658d661d66d3477872460e82f5754a69abc3f67b3d02125827be7ce1d1f22c3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/016-formed-fleets-1-fleet-marshal.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/016-formed-fleets-1-fleet-marshal.png",
+        "size": 961008,
+        "crc32": "4cb582d7",
+        "sha256": "6fe39aaec6127100b8320720d7bb637df03625dd4c46cf263a814ec06ea5bfe5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/016-formed-fleets-2-independent-marshal.layout.json",
+        "size": 2068,
+        "crc32": "528235ea",
+        "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/016-formed-fleets-2-independent-marshal.png",
+        "size": 961670,
+        "crc32": "67cb96a9",
+        "sha256": "20f5be8ed66d499a638c50f7c4ed795f4ce45c2fffa015e9d0c749076346c297",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/017-preview-route-0-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/017-preview-route-0-1-fleet-marshal.png",
+        "size": 856307,
+        "crc32": "c9a31b18",
+        "sha256": "25135ad1101d050214cb922fa8b8b50864d8ed914f9c9a2429b835b24dd14e52",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/018-commit-route-0-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/018-commit-route-0-1-fleet-marshal.png",
+        "size": 1029334,
+        "crc32": "dec8ca84",
+        "sha256": "9f895a3d90eab1883a3737e411566af6f6513f20574eef15357202ab1f4b5c0e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/019-preview-route-1-1-independent-marshal.layout.json",
+        "size": 2064,
+        "crc32": "b80621b6",
+        "sha256": "d78d9bc663e9f97121ccc05e84e2ce66092a760a1f714e1143df532a19f64155",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/019-preview-route-1-1-independent-marshal.png",
+        "size": 871550,
+        "crc32": "78257f77",
+        "sha256": "f624f292b0044119167d5ed761d3c511af106c81d2cdf520ce39fc6ce2659bae",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/020-commit-route-1-1-independent-marshal.layout.json",
+        "size": 2064,
+        "crc32": "b80621b6",
+        "sha256": "d78d9bc663e9f97121ccc05e84e2ce66092a760a1f714e1143df532a19f64155",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/020-commit-route-1-1-independent-marshal.png",
+        "size": 1057574,
+        "crc32": "36a13392",
+        "sha256": "c4f8391bef600c0f722e35620995287d1f4858fd421528490375db8dc371b890",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-1-fleet-marshal.layout.json",
+        "size": 2068,
+        "crc32": "e05862b6",
+        "sha256": "70bfce32e814b8e380c2c6f0720b44180af044821fc6e800ad49d97950758ed7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-1-fleet-marshal.png",
+        "size": 410930,
+        "crc32": "50ffa8af",
+        "sha256": "c40717ce22a02cac9df04e0e2affdb78c01356cd08256ded46b231d56b11a691",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-2-independent-marshal.layout.json",
+        "size": 2068,
+        "crc32": "e05862b6",
+        "sha256": "70bfce32e814b8e380c2c6f0720b44180af044821fc6e800ad49d97950758ed7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/022-select-contested-system-2-independent-marshal.png",
+        "size": 398622,
+        "crc32": "ec4604ce",
+        "sha256": "374b84181d576fc857666db8e2a01785202bb736f54621a30115128a48251b01",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-1-fleet-marshal.png",
+        "size": 996686,
+        "crc32": "40e9816a",
+        "sha256": "6104815cda49d4e041737d6b36e2156be4817b6593c05ea0a8af9e55e6c15db1",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/023-open-recorded-aftermath-2-independent-marshal.png",
+        "size": 994671,
+        "crc32": "217ba844",
+        "sha256": "24a0327103ecd7aabb74c7a68783642024625f2fa58204df436b24bf0779194a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-1-fleet-marshal.png",
+        "size": 949008,
+        "crc32": "471673ca",
+        "sha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/024-read-own-casualties-2-independent-marshal.png",
+        "size": 947060,
+        "crc32": "2ae476d2",
+        "sha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-1-fleet-marshal.png",
+        "size": 949008,
+        "crc32": "471673ca",
+        "sha256": "cda59f4a3c30c8ea3db56753911ce76e68f5ef5e614431c440bd0fd2c7a7f2f1",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/025-read-recorded-layers-2-independent-marshal.png",
+        "size": 947060,
+        "crc32": "2ae476d2",
+        "sha256": "014032b6084781ca87d97f841eed8c7db7ecafeed297846f7a6a9d19153296ef",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-1-fleet-marshal.png",
+        "size": 999822,
+        "crc32": "3686aa7c",
+        "sha256": "a3182adadf6f7bddde5dbe5bb1e51b9d5dcca88b6dd87297a6632f11b50e86b3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/027-retain-record-during-update-2-independent-marshal.png",
+        "size": 998344,
+        "crc32": "4287521c",
+        "sha256": "949c09326e36f36902d8770f7b342452b04bbd5bb6e43bed4f6fea3250120441",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-1-fleet-marshal.png",
+        "size": 410365,
+        "crc32": "38a47b09",
+        "sha256": "81d2d92c403cbda532a32a939cbd224f6fd973116ac3626df487df8ac465e262",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/028-restore-system-context-2-independent-marshal.png",
+        "size": 398097,
+        "crc32": "84253c93",
+        "sha256": "a833e31993c526d23e1d700391518bf88223de1c854a9480c8b993e2993df1a6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/029-inspect-current-surface-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/029-inspect-current-surface-1-fleet-marshal.png",
+        "size": 407450,
+        "crc32": "18b2cf95",
+        "sha256": "92815af708b9be40a49987cc674bac0d963986c4fd29ff8585f6ed98252f3a27",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/029-inspect-current-surface-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/029-inspect-current-surface-2-independent-marshal.png",
+        "size": 417037,
+        "crc32": "cbfebb5f",
+        "sha256": "5b50bc6d0c7edf17c5c33d464c4072f0d347ede1b86503b0b0c14f4f51cd05a8",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/030-recover-report-normal-motion-1-fleet-marshal.png",
+        "size": 996687,
+        "crc32": "6e79315f",
+        "sha256": "8a23dfbbafe5656c252e74352f22d228999a16d9b1384dc9e3cdbcf4d7895dd8",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.layout.json",
+        "size": 2066,
+        "crc32": "fe23613a",
+        "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/030-recover-report-normal-motion-2-independent-marshal.png",
+        "size": 994671,
+        "crc32": "5659c00f",
+        "sha256": "f75961167d9fc693199257a3c7ac3d48ff41a0a6685ebf32a8d9a8a9dba49fd6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/README.md",
+        "size": 19166,
+        "crc32": "e3b23501",
+        "sha256": "8728c1902991099f1adcd32c12788d68cee711886b9c14fe7749fddd1c6ff7ff",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/renderer.json",
+        "size": 758,
+        "crc32": "0decb708",
+        "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/contextual-aftermath/short/linux-arm64/story.json",
+        "size": 21298,
+        "crc32": "dd9285c3",
+        "sha256": "0c1822ee5eefed8847455d0a0efdcce646d692aaea782ca2fce91b7016aba687",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/e2e-011-contextual-afterma-e740a-ecover-its-recorded-surface-short/attachments/Illustrated-story-080696ef47e04670668645bba16f3b0b7fa5c664.md",
+        "size": 19166,
+        "crc32": "e3b23501",
+        "sha256": "8728c1902991099f1adcd32c12788d68cee711886b9c14fe7749fddd1c6ff7ff",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "45a751b2",
+        "sha256": "4524be55d831a0811ab6bbff2e0cc6b01a68c4d112a47015d6c4210ec43ce39a",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "3b82779f",
+        "sha256": "714fc751a06f33d7fb7134af775bfeeab1680d78dd56ad8ad73cc4a41d6bafad",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2726,
+        "crc32": "4a0749e8",
+        "sha256": "cb4c4655c91600e4df30431d5e991f3deac090f1ef8704cf2a4632bd760d7b3c",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "6df1f45b",
+        "sha256": "9db7219c73308b9bee475ef814502784597d07cdf57cba2b0ab89b09c0a79033",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "ff8afdfd",
+        "sha256": "efe1b822b1b03b9dcd0c1dda408dbd9641279a1974da0dd2dad92da0f68d911f",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "f3eecd1b",
+        "sha256": "fa57ff38b96d64dd23d0e687e792393b237cdb812a774e041d9c1909feb2ee46",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-short.json",
+        "size": 4791,
+        "crc32": "c2d427ef",
+        "sha256": "677ee13f42dc12016e7aa2aae6f3fec2ab282e2bc764814409b5ab755a62b5e4",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-short.json",
+        "size": 358,
+        "crc32": "dac85bb6",
+        "sha256": "52d1957bd3d3e7c1c6f937534052e5a96a03129a32dad142bf18068bab05bde8",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1284,
+        "crc32": "95a8bdf3",
+        "sha256": "0202e2e2df10bf7011df1c32e328ac975e97f57b1f61c9a11178ab6e6f5e6a39",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 10325,
+        "crc32": "f651cd57",
+        "sha256": "072e6bdc952b07f53d42b02a2cf82298157e7cc221ed09d6315fa4a493f5fc95",
+        "retained": false
+      }
+    ]
+  }
+]

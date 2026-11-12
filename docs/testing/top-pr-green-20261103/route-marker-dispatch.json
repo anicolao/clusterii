@@ -1,0 +1,27 @@
+{
+  "target": "9340870486e305050e09c58aa4b1ea4db9935b6b",
+  "executor": "3f113937fe78b0395653604978c3e4a1470adb2e",
+  "request": "d2350a42e2402d49f5d8b3ffdab1dfdbab904ced",
+  "run": 43133029642,
+  "jobs": {
+    "desktop": 130901553072,
+    "phone": 130901553344,
+    "short": 130901553438,
+    "large": 130901553455
+  },
+  "verifiedStatus": "All four jobs in_progress, checkout; not test success",
+  "mode": "generate",
+  "capturesByStory": {
+    "interrupted-fleet-route": 40,
+    "paused-fleet-travel": 34
+  },
+  "expectedViews": 296,
+  "retries": 0,
+  "updateSnapshots": "none",
+  "originalDeadlineMs": 240000,
+  "retentionDays": 14,
+  "guards": "7 passed. Initial checkout-depth fixture still named prior36ba target and correctly failed; rebound fixture to current93408704 target, no assertion weakening. Real request validated after commit; all executable/spec/reference input trees match target.",
+  "diskAvailableKiB": 13142684,
+  "approval": false,
+  "reason": "Changed-source verification of numerically reproduced off-chart traveler world offset. No repeated cargo/construction/gallery execution. Original clipped route captures remain held; compare every returned capture before promotion."
+}

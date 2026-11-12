@@ -1,0 +1,205 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "source": {
+    "commit": "c064f32e201b1913007f2317e65d66589cc11e4b",
+    "dirty": false,
+    "spec": "tests/e2e/011-contextual-aftermath/aftermath.spec.ts",
+    "specSha256": "7102655cbba8a4e60a2754be8e397b113a96ca02785ac243744770beab08a6dc"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-context-focus-43087376550/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "013-form-0-1-fleet-marshal.png",
+      "sha256": "6e554c57a3349c0f0fd625e86987888bdb1b93fe3c3342e46d4b20d56f527154",
+      "previousSha256": "c9d7de96e97a831ec92be96b1f2721e4a135fbf72ff6a1edfdd48b928031b513",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "014-form-1-1-independent-marshal.png",
+      "sha256": "d41dda24152979b7bfb2df90703a08360f51c2c1cfded650b881775c5f4887b8",
+      "previousSha256": "958ace6bca0e38d83661c04c401d876708208e489ceb5045069f248c4f6ec62b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "016-formed-fleets-1-fleet-marshal.png",
+      "sha256": "2f5eb3f22c42b765254eb9e2fdf291432452e2a719771c3be6a3e2ec74cb2876",
+      "previousSha256": "6e80258ab6b539474731c85aaeb656e820042e979f92592503eb539ec6651707",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "016-formed-fleets-2-independent-marshal.png",
+      "sha256": "eec57b67dcc6344c658773b41f0385df623160717178d73838bb3830c64a3ef0",
+      "previousSha256": "05199486acc2fd7d1df5d554d7852d121b70e72709156abfa6219f84cbff3fa1",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "017-preview-route-0-1-fleet-marshal.png",
+      "sha256": "eab0095fea7a9fc54ef43f7378c4f650f724acc584da405a200c6d7f13f0331c",
+      "previousSha256": "e15d00603957eed1088e5993d4ca9a3aa04614ba6d47c7201c6cd8a992942ed4",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "018-commit-route-0-1-fleet-marshal.png",
+      "sha256": "f275e34374e82c75f50c5d47612112d081043b9776f0bf35d17c2dbf0e52d4f2",
+      "previousSha256": "54986548c7ca440e5b39b425b2d43f641506f8c97a42261dfa1372fe93da815f",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "019-preview-route-1-1-independent-marshal.png",
+      "sha256": "cc67ba24aaf826a682a206330cce5254efcd4b116ebd0fa926cd2b1b1ea939ba",
+      "previousSha256": "cccab1fd8a7b8da138d0cbda4fd88cc90e0e6baa1e1822cfa4a47b08141f83c3",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "020-commit-route-1-1-independent-marshal.png",
+      "sha256": "f2c852abaa7750e173b1d133a42fd3f4051cec2c525711b323af16c6145d73a8",
+      "previousSha256": "507a36181db23130f2dfca299063722c3b856f2e3664440ba52bc7514849161f",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json"
+    },
+    {
+      "image": "022-select-contested-system-1-fleet-marshal.png",
+      "sha256": "170c1459784d3076a3954e9a9ac6f39ee78965ebfc7f111479d5065f6e1278d3",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "022-select-contested-system-2-independent-marshal.png",
+      "sha256": "876bad6f866ba43c15c1e19666a064ec9866c4eceb7ee9c65bb035a875960fca",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "023-open-recorded-aftermath-1-fleet-marshal.png",
+      "sha256": "23571bebd6700b443407c113f3c15966440f779f1e622c5dff8671c90f87a586",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "023-open-recorded-aftermath-2-independent-marshal.png",
+      "sha256": "8f663c516669e2fc86c49270f70e8d89110171dbce307e1b63949ddcec2260a8",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "024-read-own-casualties-1-fleet-marshal.png",
+      "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "024-read-own-casualties-2-independent-marshal.png",
+      "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "025-read-recorded-layers-1-fleet-marshal.png",
+      "sha256": "a96d98bb83a447c75d31e44fca6747163e5a28a238f5e73bfb6d5068ca3547f7",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "025-read-recorded-layers-2-independent-marshal.png",
+      "sha256": "539b8d3db027dfc1fba13d6de19457c49335b76223a7812be7f52157ad382267",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "027-retain-record-during-update-1-fleet-marshal.png",
+      "sha256": "017ed808fadfeabd1d6ec5a1b608bc414541c4e0774c55782d6faea5c2f2e1b6",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "027-retain-record-during-update-2-independent-marshal.png",
+      "sha256": "e5677ad11a5d58d377c3f56dfbf6d896c3b059db650386ca5804c264056c088b",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-restore-system-context-1-fleet-marshal.png",
+      "sha256": "133884465cd3bad9c6e3fe5be826d77fc906570b3ab9585ae0d46425338476c3",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "028-restore-system-context-2-independent-marshal.png",
+      "sha256": "17e6fbc5c7935e930393dc004beb0a160e656111985e27c98e14b32ae2834cb9",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "029-inspect-current-surface-1-fleet-marshal.png",
+      "sha256": "819315230e651f95f974974abfe7ce69e57880ef6ffdd84b7338daf298382279",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "029-inspect-current-surface-2-independent-marshal.png",
+      "sha256": "2a4fcbd04b1f4378d3fe766e5407485427b6ab8b65c7b96b45544ff7c00cb22d",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "030-recover-report-normal-motion-1-fleet-marshal.png",
+      "sha256": "7bae1ee53ed913ffa6aa606153ad8d9034e9cc05f0227022d1771e29eb70d342",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "030-recover-report-normal-motion-2-independent-marshal.png",
+      "sha256": "d046738f29cc7d9fa61c4a546141ecd9f0931eceb125848d0c10f59bbda169b4",
+      "previousSha256": null,
+      "changed": true
+    }
+  ],
+  "inspectionScope": "Every exact hash inspected or identical to a previously inspected hash; no full design, animation or release approval",
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/fleet-insets-phone-reviewed.json",
+      "source": {
+        "commit": "ec13c28dedc76fb08199312ecd5937940995a336",
+        "dirty": false,
+        "spec": "tests/e2e/011-contextual-aftermath/aftermath.spec.ts",
+        "specSha256": "7102655cbba8a4e60a2754be8e397b113a96ca02785ac243744770beab08a6dc"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-insets-43173376847/phone/test-results/stories/contextual-aftermath/phone/linux-arm64/story.json",
+      "scope": "Exact visually inspected changed hashes; all other reference bytes preserved. Full strict acceptance pending."
+    }
+  ]
+}

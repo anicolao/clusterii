@@ -1,0 +1,19 @@
+{
+  "head": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+  "run": 43151819100,
+  "job": 130962548514,
+  "conclusion": "success",
+  "completedAt": "2026-11-12T05:01:24Z",
+  "application": {
+    "browserPassed": 36,
+    "browserSkipped": 3,
+    "browserDuration": "47.2m",
+    "unitPassed": 121,
+    "unitAssertions": 4651,
+    "svelteErrors": 0,
+    "svelteWarnings": 1
+  },
+  "logSha256": "3abf9f783c237c6d68f37530a4465105feb7b774908207cdfbcbfb617ce72514",
+  "logBytes": 1279948,
+  "remaining": "Strict run43151818973/job130962547976 remains live. No full green claim. Active PR head unchanged; this evidence is recovery-branch only."
+}

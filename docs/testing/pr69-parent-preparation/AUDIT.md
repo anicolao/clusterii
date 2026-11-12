@@ -1,0 +1,15 @@
+# Original PR69 residual audit
+
+Prepare atop reconciled68c215647d. Original69f6c20e3d versus original68a6f04e9: port complete671line fleet-contact story, guarded contact-input/entropy helpers,3guardtests and exact four decorative pointer-wrapper changes. Preserve interactive traveling fleet button when onfleet exists. No catalogue position, reducers, authorizations, persistence or rule change. Existing67home framing/DOMRect/018/020 visibility and68pointer assertions unchanged. All inherited baseline bytes unchanged; no historical Darwin image imported or Linux approval claimed.
+
+Original package hunk rejected because inherited test policy command has newer guards. Retained rejection and parent-only check distinction; inserted only contact guard registration into current command, losing no inherited guards. Integrated Svelte/TS0errors0warnings;34policytests plus actual gate passed. Story/helpers/guardtest bytes exact original69.
+
+Story: four ordinary authenticated identities and real UI creation/faction admission; explicit scheduler/domain-clock control; real encrypted formation4fighters6infantry; accepted receipt/total-force check; actual leased tick production+formation with repeat no-op; current acquisition, missed scan, retained immutable history, independent reading positions, reload/recovery, keyboard return and preference equivalence. Each settlement conserves forces including production and retains one real fleet. Original240s enclosing and30s/10s helper limits untouched.
+
+Entropy hook only intercepts exact separately imported production.js?illustrated-fleet-contacts. Requires demo-clusterii and loopbackFirestore18080; exact unique service call signature. Only Scheduled story fleet contacts prefix maps HMAC campaign/observer/owner+fleet-number domains; validates seed, matching IDs, actual next-state fleet ownership/number, membership and tick. Production HMAC/probability/acquisition/history/projection remain real. Test chooses bounded next acquired/missed tick explicitly as harness, not player choice or production entropy certification. Unrelated campaigns retain original inputs; hook deregisteredfinally.
+
+Privacy assertions decrypt admin-accessible recipient projections and compare allowed report fields/absence of seed/scans/foreign fleetIDs/orders/ledger. They do not demonstrate authenticated foreign-read denial. Normal preference is briefly exercised then restored; reduced captures are not normal-motion visual approval. No broadened claims.
+
+Existing Cluster E2E_GUIDE and actual Pantheon tests/e2e README/001-game-setup layout were inspected during parent preparation; existing illustrated conventions retained, no story relocation or new alternative framework. Scope is original69 repair, not new feature work.
+
+Historical strict39735293422/job119679444037: reviewer classified56missingrefs4pixels,60fail112pass8skip, no TimeoutError. Old inherited references predate repaired stack. No current fleet-contact Linux references exist; do not count historical errors as current source defects or promote Darwin evidence.

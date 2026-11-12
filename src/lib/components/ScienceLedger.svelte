@@ -135,6 +135,12 @@
       linear-gradient(#061722c9, #06131cf5 36%),
       var(--station) center top / cover;
   }
+  /* Keep transparent text surfaces on their own paint layers across ledger
+     focus, scrolling and reload. Their geometry and artwork stay unchanged. */
+  header,
+  .reading {
+    transform: translateZ(0);
+  }
   header {
     padding: 24px;
     border-bottom: 1px solid #75c9db66;

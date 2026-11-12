@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/PRODUCTION_LAB_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
   "mode": "reviewed-baseline-candidates",
   "story": "production-ledger-lab",
   "renderer": {
@@ -27,5 +27,99 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/production-lab.story.spec.ts",
+    "specSha256": "0ef9ae8798bfd0c323385ac18a3ceedb6fe23a4a6c24af5db4674f50e6facf75"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/production-ledger-lab/short/linux-arm64/story.json",
+  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "captures": [
+    {
+      "image": "002-scheduled-1-developer-standard-production-summary.png",
+      "sha256": "8b84cba64ef46d532e15f2d01e0181502ef0868eac8c88027e20a18c9dc52046",
+      "previousSha256": "bb45132278baa959d92c33f6ceefe25e67a836870ebd8a61bc6acfa8a3921c6b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "002-scheduled-2-developer-reduced-production-summary.png",
+      "sha256": "8b84cba64ef46d532e15f2d01e0181502ef0868eac8c88027e20a18c9dc52046",
+      "previousSha256": "bb45132278baa959d92c33f6ceefe25e67a836870ebd8a61bc6acfa8a3921c6b",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-due-1-developer-standard-production-summary.png",
+      "sha256": "2f52ae1aaa52a78381d7ed8d8176be829214ce6625285406b4cacc4f58a5daa3",
+      "previousSha256": "946f33843b6667522b6e0d854144ece620881bfaf23dd82e6d32af9cb6212501",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "003-due-2-developer-reduced-production-summary.png",
+      "sha256": "2f52ae1aaa52a78381d7ed8d8176be829214ce6625285406b4cacc4f58a5daa3",
+      "previousSha256": "946f33843b6667522b6e0d854144ece620881bfaf23dd82e6d32af9cb6212501",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-confirmed-1-developer-standard-production-summary.png",
+      "sha256": "f130f6171430e965d15f1a8b81d027d09d0ead478a24533d450dc49a147baf92",
+      "previousSha256": "de5d512eede79a109971c9b60323ddc63baa1496b78dbe5636a0963f18de83eb",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-confirmed-2-developer-reduced-production-summary.png",
+      "sha256": "f130f6171430e965d15f1a8b81d027d09d0ead478a24533d450dc49a147baf92",
+      "previousSha256": "de5d512eede79a109971c9b60323ddc63baa1496b78dbe5636a0963f18de83eb",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-confirmed-3-developer-standard-production-science.png",
+      "sha256": "6afa5e2a47c908fe06988110385bbc3d69ea457b2774039118e9c70b6473edd6",
+      "previousSha256": "374e9be0406cc2630d42b2e3b418ec41c446fc02b10dcc679cba164a35b1b3b8",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "004-confirmed-4-developer-reduced-production-science.png",
+      "sha256": "8d96d2b1938747d52bcda3c9662b13de8e4ddbb826fa50a19b1fb6e73b4819c5",
+      "previousSha256": "59522fb8354d4bcb88d8f76621510342527aa72d9fd8e43536ee5b9b71ba68d1",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-read-ledger-1-developer-standard-production-reading.png",
+      "sha256": "f41725d7d8862b7e5bea8a14bfcbc45b9aab2b5eea4a2981f0dcf5d359ad948d",
+      "previousSha256": "b75f30f677d22fe40030c81065e766c74d8d123f56c51ff9457e562cfa6aab67",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "005-read-ledger-2-developer-reduced-production-reading.png",
+      "sha256": "f41725d7d8862b7e5bea8a14bfcbc45b9aab2b5eea4a2981f0dcf5d359ad948d",
+      "previousSha256": "b75f30f677d22fe40030c81065e766c74d8d123f56c51ff9457e562cfa6aab67",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-return-reset-1-developer-standard-production-summary.png",
+      "sha256": "beb70fae7c3dc51397bfe77e3a1e2e806e997d45a95a7afdfcdda1bd911e85ea",
+      "previousSha256": "686b74331a93d3fb879d9918b06c763285e04b41988b8233bd3e545dacbc7f99",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    },
+    {
+      "image": "006-return-reset-2-developer-reduced-production-summary.png",
+      "sha256": "beb70fae7c3dc51397bfe77e3a1e2e806e997d45a95a7afdfcdda1bd911e85ea",
+      "previousSha256": "686b74331a93d3fb879d9918b06c763285e04b41988b8233bd3e545dacbc7f99",
+      "changed": true,
+      "approval": "exact individually inspected hash"
+    }
+  ]
 }

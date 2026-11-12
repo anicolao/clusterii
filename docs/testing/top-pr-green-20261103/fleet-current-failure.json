@@ -1,0 +1,33 @@
+{
+  "run": 43119625703,
+  "source": "456a0ece123133018ef0a878732804c44044a771",
+  "request": "d267d7dbc38ae7cf4493050ffdd85bdd3ce73abe",
+  "conclusion": "failure",
+  "logSha256": "ba5665ae97ed1236dee04930b26bd79ca7f5fb00f5837b90ea1f8dcf29d0de45",
+  "failure": "Both route recovery and paused travel fail existing complete-route-list containment at reject-distant-leg in phone and short. Phone list top412.59375 is16px above reader top428.59375; short top164 is1px above reader top165. No timeout or pixel comparator failure in these summaries.",
+  "remainingDiagnosis": "Inspect phone original/trace before choosing layout correction. List height versus bounded reader is not yet measured. No blind retry or failed-image promotion.",
+  "artifacts": [
+    {
+      "id": 13901138075,
+      "viewport": "phone",
+      "size": 24180901,
+      "sha256": "59f5a5953378f0f639b37e9183257dab911184175bfde4985fa315a1caaacee9"
+    },
+    {
+      "id": 13900537261,
+      "viewport": "short",
+      "size": 82212448
+    },
+    {
+      "id": 13900163299,
+      "viewport": "desktop",
+      "size": 147180865
+    },
+    {
+      "id": 13901746637,
+      "viewport": "large",
+      "size": 665018059
+    }
+  ],
+  "retention": "Remote originals expire November25; phone alone being verified in memory and selected original/trace entries retained. No full large archive download."
+}

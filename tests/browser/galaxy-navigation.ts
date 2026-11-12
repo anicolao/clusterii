@@ -3,6 +3,40 @@ import { expect, type Page } from "@playwright/test";
 const selectedSystem = (page: Page) =>
   page.getByRole("complementary", { name: "Selected system", exact: true });
 
+/** Visible chart text must not emerge as a fragment from an opaque reader. */
+export async function expectReadingPanelLabelClearance(
+  page: Page,
+  selector: string,
+) {
+  const panel = page.locator(selector);
+  if (!(await panel.isVisible())) return;
+  if ((page.viewportSize()?.width ?? 0) >= 1024)
+    await expect(
+      page.locator("[data-galaxy-viewport] .star-label"),
+    ).toBeVisible();
+  await expect
+    .poll(() =>
+      panel.evaluate((node) => {
+        const panelBox = node.getBoundingClientRect();
+        return [...document.querySelectorAll<HTMLElement>("[data-map-label]")]
+          .filter((label) => getComputedStyle(label).visibility === "visible")
+          .filter((label) => {
+            const box = label.getBoundingClientRect();
+            return (
+              box.width > 0 &&
+              box.height > 0 &&
+              box.left < panelBox.right &&
+              box.right > panelBox.left &&
+              box.top < panelBox.bottom &&
+              box.bottom > panelBox.top
+            );
+          })
+          .map((label) => label.textContent);
+      }),
+    )
+    .toEqual([]);
+}
+
 /** Read the displayed name, excluding the aria-hidden decorative icon. */
 export async function selectedSystemName(page: Page) {
   return selectedSystem(page)
@@ -101,6 +135,26 @@ export async function openForces(page: Page, count?: number, keyboard = false) {
   await expect(
     page.getByRole("region", { name: "Fleet preparation", exact: true }),
   ).toBeVisible();
+  // The campaign context occupies a second rail row on wider screens. DOM
+  // visibility alone does not detect the opaque fleet reader covering it.
+  await expect
+    .poll(() =>
+      page.locator(".fleet-panel").evaluate((panel) => {
+        const rail = document.querySelector(".command-rail");
+        const heading = document.querySelector("#galaxy-heading");
+        if (!rail || !heading) return false;
+        const panelBox = panel.getBoundingClientRect();
+        const railBox = rail.getBoundingClientRect();
+        const headingBox = heading.getBoundingClientRect();
+        return (
+          headingBox.height > 0 &&
+          headingBox.top >= 0 &&
+          headingBox.bottom <= railBox.bottom &&
+          panelBox.top >= railBox.bottom
+        );
+      }),
+    )
+    .toBe(true);
 }
 
 export async function openConstruction(page: Page, layer: "Orbit" | "Surface") {
@@ -117,6 +171,28 @@ export async function openConstruction(page: Page, layer: "Orbit" | "Surface") {
       exact: true,
     }),
   ).toBeVisible();
+  await expect
+    .poll(() =>
+      page
+        .getByRole("dialog", { name: "System construction panel", exact: true })
+        .evaluate((panel) => {
+          const rail = document.querySelector(".command-rail");
+          const presence = document.querySelector(".commander-presence");
+          const heading = document.querySelector("#galaxy-heading");
+          if (!rail || !presence || !heading) return false;
+          const panelBox = panel.getBoundingClientRect();
+          const railBox = rail.getBoundingClientRect();
+          const headingBox = heading.getBoundingClientRect();
+          return (
+            headingBox.height > 0 &&
+            headingBox.top >= 0 &&
+            headingBox.bottom <= railBox.bottom &&
+            panelBox.top >= railBox.bottom &&
+            panelBox.top >= presence.getBoundingClientRect().bottom
+          );
+        }),
+    )
+    .toBe(true);
 }
 
 /** Global destinations belong to the dock, including its real phone More disclosure. */

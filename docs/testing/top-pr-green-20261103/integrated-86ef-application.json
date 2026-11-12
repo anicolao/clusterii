@@ -1,0 +1,25 @@
+{
+  "head": "86ef8a1a5db22088da677ddbb21906b3a882d359",
+  "run": 43181778095,
+  "job": 131059240568,
+  "conclusion": "SUCCESS",
+  "completedAt": "2026-11-12T09:16:11Z",
+  "bytes": 1281019,
+  "sha256": "d924ff4b3a15842f052d49c5249a0699aa5362b408528e9805bb37da9413e662",
+  "scope": "Full existing Nix-provisioned application step executed successfully; matching-outcome wait skipped. Exact story verification remains independently live.",
+  "results": {
+    "svelteErrors": 0,
+    "svelteWarnings": 1,
+    "unitPassed": 121,
+    "unitFailed": 0,
+    "unitAssertions": 4651,
+    "baselinePathTestsPassed": 4,
+    "servicePassed": 35,
+    "serviceSkipped": 22,
+    "serviceFailed": 0,
+    "serviceAssertions": 2527,
+    "browserPassed": 36,
+    "browserSkipped": 3,
+    "browserDuration": "42.4m"
+  }
+}

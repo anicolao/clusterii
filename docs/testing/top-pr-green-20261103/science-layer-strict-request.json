@@ -1,0 +1,18 @@
+{
+  "reviewerReference": "main meta-prompts.md: Supervisor recovered monitoring and PR140 continuation",
+  "previousGoalTurn": "No progress: storage status response; current continuation completed image promotion and dispatched validated strict verification.",
+  "activePR140": "86ef8a1a5db22088da677ddbb21906b3a882d359",
+  "activeIntegratedStories": {
+    "run": 43181778106,
+    "status": "failure"
+  },
+  "target": "11f5742ea2673d1f8cda509772dae623ef6891a1",
+  "executor": "abf90354f94394230c88e453e67816fb6c448170",
+  "request": "45fc9dd0432204a24106f94ab7c0ab7d6348a8c0",
+  "run": 43296531488,
+  "observedStatus": "in_progress",
+  "scope": "Two complete science journeys per viewport, 24 captures each, 96 total; 76 inspected changed references and 20 unchanged. Strict verify only, original deadlines/assertions/comparator, retries0, updatesnone.",
+  "localGuards": "8 passed; committed request validated against immutable target trees and first-attempt branch binding.",
+  "duplicateCheck": "Latest25 repository runs all terminal before this sole dispatch.",
+  "approvalLimit": "Scoped regression references; no full design, release or cross-run stability claim yet."
+}

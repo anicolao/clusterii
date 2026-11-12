@@ -1,0 +1,98 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/menu-access-inspection.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "live-menu-preservation",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "c7fd2d3d79616039922fb380e6a3de061a054957",
+    "dirty": false,
+    "spec": "tests/browser/live-menu-preservation.story.spec.ts",
+    "specSha256": "238ed2e67bb4fda6741cc8429922f74ce47f9613414ed7e48d1a6b2c515a7f56"
+  },
+  "target": "0c56cdec",
+  "run": 43136140057,
+  "manifestSha256": "b86093ef9ecd209de89e86c64aecb638e6188383b7fe59f2fdd00f6e0f79a307",
+  "inspectionScope": "All36 distinct changed originals individually inspected:9 each viewport, phone/desktop/short at native display, large3840x2160 displayed2048x1152. Seat confirmation and named action/footer remain readable; construction paid69/remaining131 and available costs/queue/cancel controls remain visible; market draft73 with123/100 validation and disabledApply retained; focused training input outline complete; acknowledged tick1 credits202.8 and production2.8 readable. Deliberately bounded readers clip secondary neighboring paragraphs/rows (including short science-earned lower row); this does not claim complete ledger reading in one frame or full design/normal-motion certification. Compared old short market and phone admission originals: measured header/footer placement changes, truthful state retained.",
+  "applicability": "Only Conversations short media spacing and FleetRoute editor CSS differ since0c56cdec. These three stories use waiting admission, construction/economy/market/menu surfaces, never Conversations or FleetRoute. Their specs, shared helpers, runtime and renderer are unchanged.",
+  "captures": [
+    {
+      "image": "010-select-and-draft-1-menu-envoy.png",
+      "sha256": "bb71b56acb70d6e2616ccdf7126f6f22e4470a27b427e1e82b08bc05770693f8",
+      "previousSha256": "a0be16c705cf3cc121eb116b88d229841276c9f0b2edab0c77fb34260b18a32d",
+      "changed": true
+    },
+    {
+      "image": "010-select-and-draft-2-ledger-witness.png",
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "previousSha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+      "changed": true
+    },
+    {
+      "image": "011-read-menu-rules-1-menu-envoy.png",
+      "sha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "previousSha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "changed": false
+    },
+    {
+      "image": "013-acknowledge-while-reading-1-menu-envoy.png",
+      "sha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "previousSha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "changed": false
+    },
+    {
+      "image": "013-acknowledge-while-reading-2-ledger-witness.png",
+      "sha256": "4987812227a8e8668ba033c026424c48ae08b6328154af426683b699a7550c4b",
+      "previousSha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf",
+      "changed": true
+    },
+    {
+      "image": "014-return-to-updated-galaxy-1-menu-envoy.png",
+      "sha256": "aebd329b98fc095f0db323288ec49830fc03e8a8eec979735495987033462247",
+      "previousSha256": "aebd329b98fc095f0db323288ec49830fc03e8a8eec979735495987033462247",
+      "changed": false
+    },
+    {
+      "image": "014-return-to-updated-galaxy-2-ledger-witness.png",
+      "sha256": "4987812227a8e8668ba033c026424c48ae08b6328154af426683b699a7550c4b",
+      "previousSha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf",
+      "changed": true
+    },
+    {
+      "image": "015-recover-unsent-allocation-1-menu-envoy.png",
+      "sha256": "37d050fcc6c53e7546ef3b8ce3fa82a3456b53ee0e00dbae2f8cf04c46c43da5",
+      "previousSha256": "6c94cc3af65623beb16a71ae0528ff03948df6f676e9912455107995ac3e92c9",
+      "changed": true
+    },
+    {
+      "image": "015-recover-unsent-allocation-2-ledger-witness.png",
+      "sha256": "4987812227a8e8668ba033c026424c48ae08b6328154af426683b699a7550c4b",
+      "previousSha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf",
+      "changed": true
+    }
+  ]
+}

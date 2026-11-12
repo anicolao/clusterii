@@ -228,6 +228,9 @@
     border-top: 1px solid #65717c77;
     background: #07131c;
   }
+  footer :global(.notice:not(:empty)) {
+    margin-bottom: 12px;
+  }
   .actions {
     display: flex;
     flex-wrap: wrap;

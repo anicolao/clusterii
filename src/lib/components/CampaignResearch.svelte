@@ -63,6 +63,31 @@
       research.orders?.at(-1)?.target ??
       research.target,
   );
+  let tracks = $state<HTMLDivElement>();
+  $effect(() => {
+    const target = selected;
+    const reader = tracks;
+    let active = true;
+    // Reveal real external orders and bound drafts inside this list only.
+    // Do not steal focus or move the enclosing forecast/panel/document.
+    void tick().then(() => {
+      if (!active || !reader?.isConnected) return;
+      const row = reader
+        .querySelector<HTMLInputElement>(`input[value="${target}"]`)
+        ?.closest("label");
+      if (!row) return;
+      const box = row.getBoundingClientRect();
+      const clip = reader.getBoundingClientRect();
+      const top = clip.top + reader.clientTop;
+      const bottom = top + reader.clientHeight;
+      if (box.top < top) reader.scrollTop -= Math.ceil(top - box.top);
+      else if (box.bottom > bottom)
+        reader.scrollTop += Math.ceil(box.bottom - bottom);
+    });
+    return () => {
+      active = false;
+    };
+  });
   const estimate = $derived(
     researchEstimate(
       research,
@@ -139,6 +164,7 @@
       <!-- svelte-ignore a11y_no_noninteractive_tabindex (Pending choices remain readable with keyboard scrolling while radios are disabled.) -->
       <div
         class="research-tracks"
+        bind:this={tracks}
         role="region"
         aria-label="Research tracks"
         tabindex="0"
@@ -250,9 +276,11 @@
       preserved.
     </p>{/if}
   {#if message || error}<Feedback {message} {error} {inspect} {errorId} />{/if}
-  {#if onretry}<ActionButton class="secondary" onclick={onretry}
-      >Retry acknowledgement</ActionButton
-    >{/if}
+  {#if onretry}<div class="research-retry">
+      <ActionButton class="secondary" onclick={onretry}
+        >Retry acknowledgement</ActionButton
+      >
+    </div>{/if}
   {#if research.orders?.length}<section aria-label="Accepted research orders">
       <h4>Scheduled selections</h4>
       <ol>
@@ -282,6 +310,9 @@
 </section>
 
 <style>
+  .research-retry {
+    margin: 12px;
+  }
   summary {
     min-height: 44px;
     padding: 12px 0;

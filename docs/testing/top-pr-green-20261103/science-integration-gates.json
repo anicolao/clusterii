@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "command": [
+        "bun",
+        "run",
+        "lint"
+      ],
+      "exit": 0,
+      "seconds": 1.45
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 1.58
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test:story-policy"
+      ],
+      "exit": 0,
+      "seconds": 12.69
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-step-zero.py"
+      ],
+      "exit": 0,
+      "seconds": 0.18
+    }
+  ],
+  "reuse": "Type checks passed on identical source8e5a6729; complete96 strict passed on identical executable source. Full required application and stories will run after integration."
+}

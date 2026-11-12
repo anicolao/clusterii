@@ -1,0 +1,87 @@
+{
+  "observedAt": "2026-11-12T07:27:35.074244+00:00",
+  "executions": [
+    {
+      "run": 43173376847,
+      "head": "ec13c28dedc76fb08199312ecd5937940995a336",
+      "status": "in_progress",
+      "conclusion": "",
+      "jobs": [
+        {
+          "id": 131031726908,
+          "name": "candidates (phone)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Complete six original real-service fleet journeys"
+        },
+        {
+          "id": 131031727218,
+          "name": "candidates (large)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Complete six original real-service fleet journeys"
+        },
+        {
+          "id": 131031727284,
+          "name": "candidates (desktop)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Complete six original real-service fleet journeys"
+        },
+        {
+          "id": 131031727298,
+          "name": "candidates (short)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Complete six original real-service fleet journeys"
+        }
+      ]
+    },
+    {
+      "run": 43174325455,
+      "head": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+      "status": "in_progress",
+      "conclusion": "",
+      "jobs": [
+        {
+          "id": 131034788843,
+          "name": "candidates (short)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Verify complete admission plus scoped membership and history lab"
+        },
+        {
+          "id": 131034789079,
+          "name": "candidates (large)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Verify complete admission plus scoped membership and history lab"
+        },
+        {
+          "id": 131034789097,
+          "name": "candidates (desktop)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Verify complete admission plus scoped membership and history lab"
+        },
+        {
+          "id": 131034789103,
+          "name": "candidates (phone)",
+          "status": "in_progress",
+          "conclusion": "",
+          "completedAt": "0001-01-01T00:00:00Z",
+          "activeStep": "Verify complete admission plus scoped membership and history lab"
+        }
+      ]
+    }
+  ],
+  "local": "No browser/build/download execution active; original first-failure images reused for inspection.",
+  "next": "On terminal candidate output verify complete manifests/source/renderer and every hash, then compare/review changed later views. On strict failure inspect exact first failure without blind retries."
+}

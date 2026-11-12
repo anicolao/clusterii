@@ -1,0 +1,58 @@
+{
+  "artifact": {
+    "id": 12631685994,
+    "node_id": "MDg6QXJ0aWZhY3QxMjYzMTY4NTk5NA==",
+    "name": "acknowledgement-strict-draft-phone-e696c5acf889d4ed3cc7a00713826feae2b30458-1",
+    "size_in_bytes": 3181236,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12631685994",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/12631685994/zip",
+    "expired": false,
+    "digest": "sha256:bac83126ac9c35cab78019c90b88fb26c0091ecc716ae30f130345fad6df44f5",
+    "created_at": "2026-10-26T06:17:56Z",
+    "updated_at": "2026-10-26T06:17:56Z",
+    "expires_at": "2026-11-25T06:17:55Z",
+    "workflow_run": {
+      "id": 40278359470,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr74-acknowledgement-strict",
+      "head_sha": "e696c5acf889d4ed3cc7a00713826feae2b30458"
+    }
+  },
+  "outcome": {
+    "family": "draft",
+    "viewport": "phone",
+    "exit": 0,
+    "signal": null,
+    "referenceDiffExit": 0,
+    "manifestStatus": "passed",
+    "mode": "verify",
+    "views": 50
+  },
+  "binding": {
+    "requestId": "acknowledgement-strict-20261026-01",
+    "sourceCommit": "7a2b8baf1592cd17101ffdc89467a7019957185a",
+    "executorCommit": "e696c5acf889d4ed3cc7a00713826feae2b30458",
+    "case": "acknowledgement-strict",
+    "mode": "verify",
+    "target": "02bba89b6dea8c49affca037a556c6156a72a463",
+    "runId": "40278359470",
+    "attempt": 1,
+    "arrivalReferenceTree": "d3b62c90b9cc37d7f29f8396b1832349f6a19d42",
+    "referenceTree": "a7a4782123c9655a160e9f89025ac849a8fe83ae",
+    "featureReferenceTree": "3eb50e74beb77c379f99f8825409c0537af22bc2",
+    "specs": {
+      "draft": {
+        "file": "tests/e2e/009-selected-history/selected-history.spec.ts",
+        "title": "Selected history reaches only a consenting commander and survives reload",
+        "story": "selected-history-consent",
+        "sha": "7c5e8841ba05497ad1a33c5f3b5f1a1647978b4be0b6eedd95b70e172a39caf9",
+        "views": 50
+      }
+    },
+    "requestSha256": "e0785a2a2034cfe95f294090858eeccebbbe68f5b04277026085e7ee2ac255ea"
+  },
+  "exactApprovedImages": 50,
+  "rendererExact": true,
+  "wholeArchiveShaVerified": true
+}

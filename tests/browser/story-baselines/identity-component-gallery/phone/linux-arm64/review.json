@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/IDENTITY_GALLERY_BASELINE_REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/gallery-current-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "identity-component-gallery",
   "renderer": {
@@ -27,5 +27,120 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "83dd576d9f30181750181f99318f064628d80def",
+    "dirty": false,
+    "spec": "tests/browser/identity-gallery.story.spec.ts",
+    "specSha256": "c2bfba40911bb5c3def4047566eb5466de8e7cfcbbc6d0270acda341cd8da039"
+  },
+  "target": "6fd3f0baa14ab6c30631a9e38fad7396548d2dbc",
+  "run": 43126032986,
+  "captures": [
+    {
+      "image": "001-open-gallery-1-developer-gallery-scope.png",
+      "sha256": "84f5d58df75a182af8c6b32fea7b3cc7ffd7f9587e38d98336eb8af342ca6a2d",
+      "changed": false
+    },
+    {
+      "image": "002-navigation-0-1-developer-play-keyboard-focus.png",
+      "sha256": "a67cf67442c0aef6a95545a0dfda295342b5020f7c96bd696afbe31492aa859a",
+      "changed": false
+    },
+    {
+      "image": "003-navigation-1-1-developer-learn-the-game-keyboard-focus.png",
+      "sha256": "c7084eea33d6c4421a0edfcb87e187776d8e2e32c393ecd8f8f9e6e700f766df",
+      "changed": false
+    },
+    {
+      "image": "004-navigation-2-1-developer-continue-the-cygnus-compact-keyboard-focus.png",
+      "sha256": "25300bc60cf68fe368b246f7c2a73f8ffea41ab8383c8e744b31897f17e5f483",
+      "changed": false
+    },
+    {
+      "image": "005-navigation-pending-1-developer-pending-navigation.png",
+      "sha256": "c68275b0b97a8f3f0c3d92346c5b24c62596ca9b3e471420147315e495ac4487",
+      "changed": false
+    },
+    {
+      "image": "006-action-primary-1-developer-primary-action-states.png",
+      "sha256": "571c1500bb19d4389e352af47516d5158756347e7285af357fb68ba7e0ac574f",
+      "changed": false
+    },
+    {
+      "image": "007-action-secondary-1-developer-secondary-action-states.png",
+      "sha256": "793d5b58bd9b2ebcf7b35411a77c6a70d47616a900b250b4d8e27b8e09aacecb",
+      "changed": false
+    },
+    {
+      "image": "008-action-quiet-1-developer-quiet-action-states.png",
+      "sha256": "c9e0d94ce67e3aa8e9e566f79800cf58179b119d2a01fc6353e3724d6a0b3633",
+      "changed": false
+    },
+    {
+      "image": "009-chapter-selected-1-developer-selected-chapter.png",
+      "sha256": "ccd13be2aa29afb1a25dd7ff3a987a13ab78e434e3f9468e6390053e61cf6abf",
+      "changed": false
+    },
+    {
+      "image": "010-identity-fields-1-developer-editable-identity.png",
+      "sha256": "6a5c22e198dd25a712ceaad63f122c87cb91a78fb93ae5fc4e24e7a3eb6c9569",
+      "changed": false
+    },
+    {
+      "image": "010-identity-fields-2-developer-validation-and-pending-draft.png",
+      "sha256": "77a4c9a868f0f5da03c6cc718335a77c521ed69986732019acd4e291d8011c1d",
+      "changed": false
+    },
+    {
+      "image": "011-portrait-selected-1-developer-selected-and-focused-portrait.png",
+      "sha256": "de4e1f48443be2a7fdc0ab68338e90f0015595461bf191e99af281cb91c1de84",
+      "changed": false
+    },
+    {
+      "image": "012-portraits-pending-1-developer-disabled-portraits.png",
+      "sha256": "cec7ec33844b6bf0ff09f3286123e10a64db6268c80fed5537ac4c3ac17900e0",
+      "changed": false
+    },
+    {
+      "image": "013-feedback-recovery-1-developer-identity-acknowledgement.png",
+      "sha256": "f67e165fe1df8e7d70cff797a60b4c02f9b3b644e77ed35d9fb8d2e6b7f23298",
+      "changed": false
+    },
+    {
+      "image": "013-feedback-recovery-2-developer-conflict-recovery.png",
+      "sha256": "14c4bb2191b5da2c27855775ee706126f840eb1459305f336a7a9122e9563a23",
+      "changed": false
+    },
+    {
+      "image": "013-feedback-recovery-3-developer-network-remedy.png",
+      "sha256": "a3e06e8b1b05fa22845b796c354590ff40244af091eb100f8f9635ee176db583",
+      "changed": false
+    },
+    {
+      "image": "014-research-disclosure-1-developer-applied-research-disclosure.png",
+      "sha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0",
+      "changed": true
+    },
+    {
+      "image": "015-research-disclosure-close-1-developer-closed-research-disclosure.png",
+      "sha256": "94b158c8a1f6ac3a250c9bbbe4e692eccb436f27dc891deb9a4fa0c20a7c461f",
+      "changed": true
+    },
+    {
+      "image": "016-narrow-specimens-1-developer-phone-width-portrait-specimen.png",
+      "sha256": "3b60d49852c90c4734d78f651421d0570d8098c7c570ed4e3ba42aaa718dba7d",
+      "changed": false
+    },
+    {
+      "image": "017-icon-inventory-1-developer-shared-glyph-inventory.png",
+      "sha256": "2bdc43f115548f30013864d479f32cec11e7cd1c7f26e15b9f192b7a46643d5b",
+      "changed": false
+    },
+    {
+      "image": "018-asset-provenance-1-developer-asset-provenance.png",
+      "sha256": "bea8b8639ab0d0b48aff6108a88f022e48063d0b8bcd949a62bab71aed138c16",
+      "changed": false
+    }
+  ]
 }

@@ -1,0 +1,14 @@
+scripts/check-recovery-settlement.test.mjs 29ms (unchanged)
+✔ entry permits exactly the frozen feature010 phone verification (1.018ms)
+✔ actual subprocess exit is preserved and observer wait begins only afterward (33.71625ms)
+✔ bounded observation waits preserve terminal errors and cannot manufacture success (1.06425ms)
+✔ renderer recovery dispatch uses the same pinned launcher with no suite fallback (0.384916ms)
+✔ preparation serializes sync/build and preserves failure without starting emulators (0.180375ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 82.301917

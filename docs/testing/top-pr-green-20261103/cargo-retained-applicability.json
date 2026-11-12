@@ -1,0 +1,52 @@
+{
+  "target": "730297e72db62967d28db609a788fb06edb9d1d5",
+  "retainedSource": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/browser/fleet-cargo.story.spec.ts",
+    "specSha256": "2dd06bc18e56c762b80e2801d1e2757570313636089db85db6c247be4e317805"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "retained": {
+    "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/phone/test-results/stories/live-fleet-cargo/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "edf036c2e181d05918910c04e4a5ba9af12f5469dfd9f43aa7a7797cde323707"
+  },
+  "reference": {
+    "path": "tests/browser/story-baselines/live-fleet-cargo/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+    "sha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556"
+  },
+  "inspection": "Both complete native phone originals viewed. Campaign header title/controls arrangement differs; formation quantities, validation, focused infantry field, accepted-order text and footer controls remain readable. This is a retained-source comparison, not approval for current target.",
+  "applicability": "Cargo spec and SystemFleets component unchanged from retained source, but Galaxy/Scene/labels and other shared production components changed. Current-source equivalence is not established; do not promote retained pixels as current evidence.",
+  "requiredRuns": {
+    "application": 43090488651,
+    "strict": 43090488602
+  },
+  "boundedEconomyRun": 43090793266,
+  "newDownloads": 0,
+  "newImageCopies": 0
+}

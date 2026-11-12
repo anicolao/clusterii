@@ -1,0 +1,25 @@
+{
+  "originalAnchor": "/private/tmp/cluster-pr54-credit-review/functions/package.json",
+  "migratedAnchor": "/private/tmp/cluster-pr54-credit-review/functions/package.json",
+  "identical": true,
+  "resolutions": [
+    {
+      "id": "./lib/shared/crypto.js",
+      "original": "/private/tmp/cluster-pr54-credit-review/functions/lib/shared/crypto.js",
+      "migrated": "/private/tmp/cluster-pr54-credit-review/functions/lib/shared/crypto.js"
+    },
+    {
+      "id": "./lib/functions/src/campaigns.js",
+      "original": "/private/tmp/cluster-pr54-credit-review/functions/lib/functions/src/campaigns.js",
+      "migrated": "/private/tmp/cluster-pr54-credit-review/functions/lib/functions/src/campaigns.js"
+    },
+    {
+      "id": "./lib/shared/command-receipt.js",
+      "original": "/private/tmp/cluster-pr54-credit-review/functions/lib/shared/command-receipt.js",
+      "migrated": "/private/tmp/cluster-pr54-credit-review/functions/lib/shared/command-receipt.js"
+    }
+  ],
+  "receiptDigestExport": "function",
+  "innerReceiptRequireUnchanged": true,
+  "scope": "Real Node module resolution only; not a service/receipt behavior test."
+}

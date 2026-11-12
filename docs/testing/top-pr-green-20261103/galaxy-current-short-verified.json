@@ -1,0 +1,506 @@
+{
+  "artifact": {
+    "id": 13343427222,
+    "node_id": "MDg6QXJ0aWZhY3QxMzM0MzQyNzIyMg==",
+    "name": "top-pr140-galaxy-current-candidates-short-829ef8ed6652b7b6ff444ac05133ecf8bf39eb4a",
+    "size_in_bytes": 14047072,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13343427222",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13343427222/zip",
+    "expired": false,
+    "digest": "sha256:308ddeb14afb953d04f6b0ad551b639199bc5b13393888b877dec4a18127b47f",
+    "created_at": "2026-11-04T16:38:19Z",
+    "updated_at": "2026-11-04T16:38:19Z",
+    "expires_at": "2026-11-18T16:38:17Z",
+    "workflow_run": {
+      "id": 41867551971,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr140-galaxy-current-20261104",
+      "head_sha": "829ef8ed6652b7b6ff444ac05133ecf8bf39eb4a"
+    }
+  },
+  "archiveSha256": "308ddeb14afb953d04f6b0ad551b639199bc5b13393888b877dec4a18127b47f",
+  "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+  "entries": [
+    {
+      "path": "test-results/stories/_cohorts/short/galaxy-current/firestore-debug.log",
+      "size": 25321,
+      "crc32": "ff667f75",
+      "sha256": "82c619c2eaf9d028c990b9a6f0f27c9566bb3f822030787ac0bcff7533f9296c"
+    },
+    {
+      "path": "test-results/stories/_cohorts/short/galaxy-current/playwright.json",
+      "size": 45,
+      "crc32": "e1bbbed0",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "test-results/stories/_cohorts/short/galaxy-current/result.json",
+      "size": 164,
+      "crc32": "e67c92f0",
+      "sha256": "a6fad2edadb6889f9c08a3d58bf91107eb9525340f21ffe457d85218f743b635"
+    },
+    {
+      "path": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-short/attachments/Illustrated-story-42efa6aa61f1103db9ea2e0dde1de4dbd97a316c.md",
+      "size": 11551,
+      "crc32": "56902ab6",
+      "sha256": "fc157d5846cf0a0cdfdc694ebf87f511e9501e78fa84587bd4d22d7f4b91a107"
+    },
+    {
+      "path": "test-results/stories/e2e-007-galaxy-composition-6948c-nder-and-system-instruments-short/attachments/Illustrated-story-c342054d6e604a6cf5dc1ad803a1a3fecac6ce6f.md",
+      "size": 8265,
+      "crc32": "8cef8c62",
+      "sha256": "2a434f2cb506c724dc46a55435f926d7f9bac8e01f0c6d58c711376ecf726e02"
+    },
+    {
+      "path": "test-results/stories/e2e-007-galaxy-composition-ec1d7--their-real-keyboard-states-short/attachments/Illustrated-story-743fff7a1c666300a9cc6c60bb0a2ad865222a32.md",
+      "size": 3762,
+      "crc32": "ffb8d8c8",
+      "sha256": "9a6347cac5eb8566a1c0dae8515f4cd70be22b9fb26b8807b5227a6ed957f9cc"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/004-read-commanders-and-home-1-deepseer-envoy.png",
+      "size": 756696,
+      "crc32": "996dda19",
+      "sha256": "4a765dec914b7af0db6c3badff37d3ca6b51083341abc527ed4de9c7dad2d811"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/006-return-to-portrait-1-deepseer-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/005-inspect-real-commanders-1-deepseer-envoy.png",
+      "size": 376980,
+      "crc32": "1d2df31d",
+      "sha256": "9e88f1e214602fdb3c8b996983d29e0f230eace337c47bdb091f0f777e757c67"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/006-return-to-portrait-1-deepseer-envoy.png",
+      "size": 757927,
+      "crc32": "fd2bcb05",
+      "sha256": "c6072dc99e1b93674d23b051985b7e3d986c6a58423787d3744ecee048873829"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/007-choose-full-overview-1-deepseer-envoy.layout.json",
+      "size": 2066,
+      "crc32": "fe23613a",
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/007-choose-full-overview-1-deepseer-envoy.png",
+      "size": 756999,
+      "crc32": "3051040f",
+      "sha256": "7459b740638cd1c62158e78d93303edb2362610388d7726fadc67ec21d7e548b"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.layout.json",
+      "size": 2066,
+      "crc32": "fe23613a",
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/008-inspect-home-layers-1-deepseer-envoy.png",
+      "size": 474600,
+      "crc32": "61029bb6",
+      "sha256": "374bc4848dbb23c68bac6ce36c4ae61001af62141700103681531e2842ee1368"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/009-normal-motion-return-1-deepseer-envoy.layout.json",
+      "size": 2068,
+      "crc32": "e05862b6",
+      "sha256": "70bfce32e814b8e380c2c6f0720b44180af044821fc6e800ad49d97950758ed7"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/009-normal-motion-return-1-deepseer-envoy.png",
+      "size": 747261,
+      "crc32": "b81fd27f",
+      "sha256": "75afbf9d36e995249f0d69c573edd91dc1cad31d9b34fdc11620051f3b570a6f"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.layout.json",
+      "size": 2066,
+      "crc32": "fe23613a",
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/010-contain-live-commander-menu-1-deepseer-envoy.png",
+      "size": 240806,
+      "crc32": "4b2ce3b3",
+      "sha256": "36a90e9d352166b4ef96e343a40e6f1edc821f9feac5f755dbe62aebc3006737"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.layout.json",
+      "size": 2066,
+      "crc32": "fe23613a",
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/011-reduce-decoration-retain-facts-1-deepseer-envoy.png",
+      "size": 606138,
+      "crc32": "bb3e8c75",
+      "sha256": "de7cb5c690709a81543208b51c2e15582f6259902143d2785684c04fcb185e47"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/012-recover-real-home-1-deepseer-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/012-recover-real-home-1-deepseer-envoy.png",
+      "size": 612031,
+      "crc32": "6c3830df",
+      "sha256": "bd073fd7f12821d4aa5479a506274bf8713636349a7f2577d2e92b415fe3d280"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/README.md",
+      "size": 8265,
+      "crc32": "8cef8c62",
+      "sha256": "2a434f2cb506c724dc46a55435f926d7f9bac8e01f0c6d58c711376ecf726e02"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/renderer.json",
+      "size": 758,
+      "crc32": "0decb708",
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+    },
+    {
+      "path": "test-results/stories/galaxy-cinematic-instruments/short/linux-arm64/story.json",
+      "size": 10087,
+      "crc32": "67cec7d1",
+      "sha256": "fd476afd970f52632774618792628bb647a1855d8a03bc89eb1ed3f0a67554c3"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "size": 1054593,
+      "crc32": "3766417d",
+      "sha256": "106e53305d9659a7f87c5547b39e9ed28295a28546dc9bee9f93f7bfda09f5c1"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/011-read-galaxy-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "size": 718192,
+      "crc32": "79190bd6",
+      "sha256": "dd3a78bbbb9d216429fc3c0b078b08962b176cffc7dea7bb7fe509fefd67fac6"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/012-inspect-independent-layers-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "size": 418215,
+      "crc32": "0241f79a",
+      "sha256": "da5cd12a7db185bdb7c3c706f93d26c9542eeea2ca45a3fbeeb4d8b3a6c4cea0"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "size": 393519,
+      "crc32": "c09cc0fb",
+      "sha256": "9c7f2880d1107d16eb792ba8960ddc138b4204ac0c7a2f97eead8b57a73ed2fc"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/015-reserve-orbital-development-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "size": 634374,
+      "crc32": "ddef3e6a",
+      "sha256": "1b929d4d4e275cf1454d91afc6751c2a2631429a35376e4ffbf3248d72a8a23c"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "size": 583511,
+      "crc32": "dd6e3154",
+      "sha256": "31ff56da8e5dbd8a42a68db5011d0083f115d547b09e676d472c6ada4c711a00"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/017-read-lower-system-facts-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "size": 495813,
+      "crc32": "e34b415a",
+      "sha256": "bbf0deaeed1cfe811a3c03e06d7961a83e5885ae5643a4387e14bde0c7847e10"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/018-review-surface-development-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "size": 636664,
+      "crc32": "5dde66b8",
+      "sha256": "26840ed4e2bac15924aa691663aaa0d30e36701629911aee0afc7c3c8e056537"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/019-navigate-global-economy-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "size": 394949,
+      "crc32": "4a0164e9",
+      "sha256": "9720c3498c2b39ac325518116c0a02cec08401940121a1a77df777646b28e50a"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/020-return-to-selected-system-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "size": 719034,
+      "crc32": "2b37a193",
+      "sha256": "ce7244b9836f7f882790cba254fb417124eddd4acda1591ea4c0e1154cfcfbc7"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.layout.json",
+      "size": 2066,
+      "crc32": "fe23613a",
+      "sha256": "097ad97fae964a19795fc8dbf450d726cd1e37f27ddf5f55e8a48ae09e4633b9"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "size": 719378,
+      "crc32": "c48e33ed",
+      "sha256": "d42882751bc5acde71ad01c0d58854e05f4d3d6243789c2dc7ae192ab052241c"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.layout.json",
+      "size": 2068,
+      "crc32": "e05862b6",
+      "sha256": "70bfce32e814b8e380c2c6f0720b44180af044821fc6e800ad49d97950758ed7"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "size": 573386,
+      "crc32": "beedc6ab",
+      "sha256": "fe56ea33ba1282618eb1e5ed0a409b7655f39ab25fb1056b2bb8c8e9179d5437"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/README.md",
+      "size": 11551,
+      "crc32": "56902ab6",
+      "sha256": "fc157d5846cf0a0cdfdc694ebf87f511e9501e78fa84587bd4d22d7f4b91a107"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/renderer.json",
+      "size": 758,
+      "crc32": "0decb708",
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+    },
+    {
+      "path": "test-results/stories/galaxy-command-surface/short/linux-arm64/story.json",
+      "size": 14216,
+      "crc32": "a8b4340b",
+      "sha256": "6562f7c3c38063f15fc3fe49786d202b136d56667b1766198fec89b2ccd219a0"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/001-open-shared-portrait-menu-1-gallery-reviewer.png",
+      "size": 183697,
+      "crc32": "e530c1aa",
+      "sha256": "70c28c7c4b483254955b182fb37391a6c716dde8f0fb7f5f15258fb0bd8d0c48"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/002-return-to-commander-deck-1-gallery-reviewer.png",
+      "size": 347498,
+      "crc32": "de0aa1af",
+      "sha256": "6f6b18269b4393b54a92b1bfbb03d2d4b3ec1b62371762c0ec4cf4bf3ddaa2c4"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/003-request-roster-example-1-gallery-reviewer.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/003-request-roster-example-1-gallery-reviewer.png",
+      "size": 349354,
+      "crc32": "9767895e",
+      "sha256": "f6d473d234b56a34899c365fb58f11a0b15277ee5c09582df594bcd544f97e75"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/004-select-shared-command-1-gallery-reviewer.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/004-select-shared-command-1-gallery-reviewer.png",
+      "size": 139298,
+      "crc32": "3ccb2a3d",
+      "sha256": "e55f4d3116c2642256fd4f80fe1c83797073a6e4fa7266ae8806b0d1f8b6d0fc"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/005-read-provenanced-portraits-1-gallery-reviewer.layout.json",
+      "size": 2068,
+      "crc32": "528235ea",
+      "sha256": "bf221db205b05408e738f27cf6c69da988f4d12bcc39e215631fdf7ef1e48a41"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/005-read-provenanced-portraits-1-gallery-reviewer.png",
+      "size": 337212,
+      "crc32": "e96f3de0",
+      "sha256": "6c1055a5462236f82b48e58d871ae80701d566c3a754ed25a563962079c0a364"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/README.md",
+      "size": 3762,
+      "crc32": "ffb8d8c8",
+      "sha256": "9a6347cac5eb8566a1c0dae8515f4cd70be22b9fb26b8807b5227a6ed957f9cc"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/renderer.json",
+      "size": 758,
+      "crc32": "0decb708",
+      "sha256": "d0715e9688fadfa992a86df61c580c3f41b47580fce52ab675476d6ecbd8b383"
+    },
+    {
+      "path": "test-results/stories/galaxy-instrument-gallery/short/linux-arm64/story.json",
+      "size": 5127,
+      "crc32": "f0cd9804",
+      "sha256": "ab12ab07d8617aa2a5a1320f9b8d04f99ab3942e8807da663264e3a29dbd886f"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/browser-path.txt",
+      "size": 49,
+      "crc32": "1e066675",
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/containerd.log",
+      "size": 11788,
+      "crc32": "925e69e7",
+      "sha256": "efd0e54cffa79b0a8cd4d2be8496046afb0dcd67f63ec420d0f9d0e4d458e4c1"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/engine-info.log",
+      "size": 1790,
+      "crc32": "3f69f417",
+      "sha256": "56797acb5e40ea82b0442d573d50fcfb3ec900753c2f63db7105a82f66564712"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/engine.log",
+      "size": 2726,
+      "crc32": "f096c102",
+      "sha256": "da75f4d4d8a0ebb4345749bca262b9259b0a53aa3f27f18c500cffb3292b199c"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-identity.txt",
+      "size": 144,
+      "crc32": "ff699987",
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-inspect.json",
+      "size": 2411,
+      "crc32": "216d5ff2",
+      "sha256": "9855e51ddcb123094c65f57e5ea7d2d6bebae398c988191a60cc53bb41b045d8"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/image-load.log",
+      "size": 49,
+      "crc32": "8adde11d",
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/nix-ldd.txt",
+      "size": 1491,
+      "crc32": "f194a06d",
+      "sha256": "63f2345e61bdad52d8195b295ea26658a8dc9029a063bde098b7a8801ca80ed8"
+    },
+    {
+      "path": "ci-evidence/nix-renderer/renderer-ldd.txt",
+      "size": 6729,
+      "crc32": "fb8fb2af",
+      "sha256": "2c6de04b64071e846f93e59d5d54a938bdd47c734e2ae5b1abdcb75c7d7e099c"
+    },
+    {
+      "path": "ci-evidence/top-candidates/collection-short.json",
+      "size": 6920,
+      "crc32": "3eaae386",
+      "sha256": "1c7a22952a55efa7654edc6200b6a165a0d17209094c19adeaa96cd6db2bae86"
+    },
+    {
+      "path": "ci-evidence/top-candidates/outcome-short.json",
+      "size": 359,
+      "crc32": "490f0ea3",
+      "sha256": "f69bdf0c580ed91f9395f1c9a054fee46fa11526787e12cd56c84ef1c1b8fdbb"
+    },
+    {
+      "path": "ci-evidence/top-candidates/request.json",
+      "size": 1285,
+      "crc32": "fb2524b6",
+      "sha256": "61acf4758b5c8e4d4ffa8fbebf7e3f4a1e9b2d5d21890757070a5b254f4a7593"
+    },
+    {
+      "path": "database-debug.log",
+      "size": 13852,
+      "crc32": "dc77b44b",
+      "sha256": "c8f9ceb3cff35f35d3d5b6fd13fee8475c6158cb3469926f45d031455f54a10b"
+    }
+  ]
+}

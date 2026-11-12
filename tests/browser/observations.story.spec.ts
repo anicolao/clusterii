@@ -5,7 +5,12 @@ import type { Campaign, CampaignView } from "../../shared/campaign";
 import { observationView } from "../../shared/observations";
 import { distance } from "../../shared/galaxy";
 import { test, expect } from "./story-helpers/fixtures";
-import { readableLabels, labelGeometry } from "./story-helpers/galaxy-labels";
+import {
+  readableLabels,
+  labelGeometry,
+  selectedLabelClearance,
+  unobscuredSelectedLabel,
+} from "./story-helpers/galaxy-labels";
 import { TestStepHelper } from "./story-helpers/test-step-helper";
 import { login, grantDeveloper } from "./helpers";
 import { admissionAt, scheduledAt } from "./story-helpers/admission-clock.mjs";
@@ -103,6 +108,34 @@ test("Live stellar observations retain private current and historical facts afte
       surface: "game" as const,
       primary: [button(page, "Return to system")],
       verifications: [
+        {
+          spec: "The expanded observation heading clears the complete commander cards.",
+          check: async () => {
+            await expect
+              .poll(async () =>
+                page.evaluate(() => {
+                  const panel = document.querySelector(
+                    ".system-inspector.expanded",
+                  );
+                  const cards = document.querySelector(
+                    '[aria-label="Campaign commanders"]',
+                  );
+                  if (!panel || !cards) return true;
+                  const heading = panel
+                    .querySelector("h2")!
+                    .getBoundingClientRect();
+                  const deck = cards.getBoundingClientRect();
+                  return (
+                    heading.right <= deck.left ||
+                    heading.left >= deck.right ||
+                    heading.bottom <= deck.top ||
+                    heading.top >= deck.bottom
+                  );
+                }),
+              )
+              .toBe(true);
+          },
+        },
         {
           spec: "Projected system labels remain separated and contained within the chart.",
           check: () => readableLabels(page),
@@ -574,6 +607,16 @@ test("Live stellar observations retain private current and historical facts afte
             );
             await privacy();
             for (const seat of [0, 1]) await matchReport(seat, stale.id);
+            if (info.project.name === "phone") {
+              await expect(
+                owner.locator(".quiet-label").filter({ hasText: "Tupã · A" }),
+              ).toBeVisible();
+              await expect(
+                owner
+                  .locator(".quiet-label")
+                  .filter({ hasText: "Tania Australis · G · You" }),
+              ).toBeVisible();
+            }
           },
         },
       ],
@@ -634,12 +677,28 @@ test("Live stellar observations retain private current and historical facts afte
       description:
         "Use the systems list and Center home control with the keyboard to discover the home system independently of secondary map labels.",
       action: async () => {
+        if (!(await button(owner, "Systems list").isVisible())) {
+          await button(owner, "More").focus();
+          await button(owner, "More").press("Enter");
+        }
         await button(owner, "Systems list").focus();
         await button(owner, "Systems list").press("Enter");
         await button(owner, "Center home").focus();
         await button(owner, "Center home").press("Enter");
         await expect(button(owner, "Close list")).toHaveCount(0);
         await expect(button(owner, "Systems list")).toBeFocused();
+        if (
+          (await button(owner, "More").isVisible()) &&
+          (await button(owner, "More").getAttribute("aria-expanded")) === "true"
+        ) {
+          await button(owner, "More").focus();
+          await owner.keyboard.press("Escape");
+          await expect(button(owner, "More")).toBeFocused();
+          await expect(button(owner, "More")).toHaveAttribute(
+            "aria-expanded",
+            "false",
+          );
+        }
       },
       acknowledgement: {
         spec: "The authoritative home system is selected and its priority label is readable.",
@@ -648,7 +707,12 @@ test("Live stellar observations retain private current and historical facts afte
             inspector(owner).getByRole("heading", { level: 2 }),
           ).toHaveAccessibleName(home.name);
           await expect(owner.locator(".star-label")).toHaveText(home.name);
+          await info.attach("home-label-geometry", {
+            body: JSON.stringify(await selectedLabelClearance(owner)),
+            contentType: "application/json",
+          });
           await expect(owner.locator(".star-label")).toBeVisible();
+          await unobscuredSelectedLabel(owner);
           await readableLabels(owner);
         },
       },

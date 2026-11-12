@@ -1,0 +1,887 @@
+{
+  "run": 41870610515,
+  "target": "ee56db9c",
+  "executor": "5b731871",
+  "request": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+  "reviewedImages": 76,
+  "individuallyViewedHashes": 38,
+  "totalReviewedImages": 228,
+  "remainingUnreviewedImages": 76,
+  "baselineImports": 0,
+  "decisions": [
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "935e0abb3ac8bbbe5f4334ba37ec80379c35132da47f4e32601e0c52820e9049",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "a50c98173cae5e8a75856e5103ad1240212836ec2dda7d18dd65cf4a05192295",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "b0c5d43c9c933018c1631b6f13c7d9c0d2cf6e3ce67764a183f2666fd81cb62b",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "e0adac3dd318c0c9a5740088f395f4561daa426438cbe901c90f916505d69c30",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "f6818406ca55e970cac9cd79b73fc7e1089d8412bad32f7c1ce8d9aa2a298c8f",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "a1051d2bea4fdcab10bf9b0e278e810d02e144809edca090adf13a7a8bcf69f6",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/014-review-cancellation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "4cff0c434f56705a215200a9cc95ab8da0b0c7256bb5e12ece87f7ee4e549171",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/015-keep-order-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "4bb046289e8278a37f23643a4ea202f6c512184427108b65a0f70b4da005cc4a",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/016-cancel-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "a12005905c1bcccf0d7938abf30e83404d234c3af82a8c4584058ea767c350f4",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/017-released-draft-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "ff1cc36b2c579bbb88e4a9b2eb2fb46ac24487a7e76725af5512b63797929a4e",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/018-reload-cancelled-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "7f10bd347a3aa0ff235b42b421e8c16ccdb70702e5a14649f5544a636768c67e",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "7d269277472855123390a27c2e91f2bc95d21eed491712307b2f307c807b1c7e",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/020-cancelled-order-never-executes-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/016-map-presence-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/016-map-presence-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/017-reserve-disband-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/017-reserve-disband-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/018-reload-disband-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/018-reload-disband-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/017-review-split-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/017-review-split-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-2-independent-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "ae3bfcd7ab2ea0b96e0cb54a8b73003426c34763cfeec7ddf3e928fcb69c3ef0",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-cancellation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-cancellation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/021-return-to-system-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "b185f04f1eef4a0f562092aaec4d9ab62eb130ccbb74923fee4ea355f7912d96",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "70b2faec9b6f0992f9fa352d940a707937c6251811c633c507c2bf451653712e",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "f554b73f8cf8f9336acc83368c473482d1c1b1994be64a9d5788b12f4130bde8",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "ded423a4f5b78adc4eb94885a96a15b1737a66f9d7ef2d71632e23c2fef62381",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "6908b8846678a68b05f62b2c711a5821f4a9f34c1f2019a084d802cab9b3c9f0",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "c333044a5717b6c4ef652a3b6a9c8f6472b05edebf7600416565d6ccff07a4b7",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/016-map-presence-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/016-map-presence-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "2e0569e05e80deb08664411bd0cc04b29ff45e3238786caed48b170b6c1cf407",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/017-reserve-disband-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/017-reserve-disband-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "7b1498cf481f1e3e15916f0b370f1249335fffe4914957fa6e35f344dd138bfd",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/018-reload-disband-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/018-reload-disband-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "17de147df794e12da508dc4de813b6c11a580aadbc67d1647b60425376fbe4ef",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/020-disbanded-fleet-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/020-disbanded-fleet-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "c3a24a41796ea2dc44296d6c295b64d57907572c9b37145f913e76416e4e07da",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/020-disbanded-fleet-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/020-disbanded-fleet-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/021-recover-final-forces-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/021-recover-final-forces-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-2-independent-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "867e1f6e15c5c83de1674b71ecbea9ae79fdf5cced875ee1b04fdb64b1a6c165",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/021-recover-final-forces-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-formation/desktop/linux-arm64/story.json",
+          "story": "live-fleet-formation",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-formation/desktop/linux-arm64/021-recover-final-forces-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "cf9d4116d31fdcbfb54c3ecb2ddbc0f9f7dc87d4aaf242fbc648824a09cf14f8",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "6516cab3313df7317c28ba61b219a5b610b791ea0e708b0f5b12e12d50d6653e",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/016-invalid-split-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "719eb6c11a7d3c095b26685ed56450b6407455e5568bc0304fe07f5aaafd0f35",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/017-review-split-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/017-review-split-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "a27461e59baed0631d7dd62ff62a97d0f9f53fdaad47dc4db40608017a75a27b",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/019-pending-split-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "6fe0bda56b152ffa78ce1dce39238de2b8053a3dbc0f9df493b7e0e9eeca6974",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/020-reload-pending-split-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "ac4963ae09960f67ceb4549e65b45058e6fcc4495c2df63bda4f5a69248c64fa",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/022-accepted-split-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "110fca7b56ab59410b64fb202cc4ec4acf794040453b94d9f51380482d90c83c",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/024-split-fleets-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "f5bae7efe97dc8943b2efa44e5e25a98a02776bc943cec5da16dd3cf1751ce79",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/025-choose-recipient-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "6160ea24747d96cc8f71703868b6327bac72e1909555fed856bd96f5f7543387",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/026-accepted-merge-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "ac8635e8e8c83b0ce22caa787b3e9500fd0971fe7c04094510303209425ed7fd",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/027-reserved-recipient-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "f0917ca468e2f13a194ebd6218221da78c4d797c6ff9157fad6603ea7ab80ac9",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/028-reload-merge-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "19a8cc653c893bb43d6804789d7dcb0402acd426b9f0178a5f650871320a37fd",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-1-fleet-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "b01e6b8a6424fc2ffdbfdc6e773ea1a75b4c757dc7dc39404e2c7e158ddde682",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/030-merged-fleet-2-independent-marshal.png"
+        },
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-2-independent-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-2-independent-marshal.png"
+        }
+      ]
+    },
+    {
+      "target": "ee56db9c",
+      "reviewer": "Implementation agent, under direct human inspect-before-approval instruction",
+      "sha256": "1b587c998953c6d1300d9eaa9d94b774871ea041fc86395ca1dae2720a8dc350",
+      "disposition": "approved-regression",
+      "inspection": "1440x1000 original individually inspected. Capacity validation and focused infantry outline, formation reservations, cancellation confirmation/released draft with complete focused Form fleet outline, disband receipt, pending/reloaded split, accepted merge and conserved final quantities are readable. Fixed actions fit the viewport. Deliberate manifest reading positions clip unfocused neighboring headings/navigation/default controls; they do not claim simultaneous full-content visibility. Return chart has readable system facts, home label and complete focused Inspect system outline. Scoped regression only; not concept-fidelity/normal-motion certification or authenticated foreign-read proof.",
+      "covered": [
+        {
+          "image": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png",
+          "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop/test-results/stories/live-fleet-reorganization/desktop/linux-arm64/story.json",
+          "story": "live-fleet-reorganization",
+          "viewport": "desktop",
+          "reference": "tests/browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/031-return-to-galaxy-1-fleet-marshal.png"
+        }
+      ]
+    }
+  ]
+}

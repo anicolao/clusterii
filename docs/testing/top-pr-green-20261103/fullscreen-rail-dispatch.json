@@ -1,0 +1,37 @@
+{
+  "target": "7f72a4fee81accbab5f1060fc72cca085726c92d",
+  "executor": "308b744d",
+  "request": "a016d7a5a698061653cb04f1abaadd470e22afeb",
+  "run": 43134611252,
+  "status": "queued",
+  "mode": "generate",
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "testsPerProject": 2,
+  "capturesByStory": {
+    "live-return-briefing": 27,
+    "selected-history-consent": 68
+  },
+  "expectedViews": 380,
+  "guardsPassed": 8,
+  "actualCollection": "2 original journeys per viewport; all four collected and validated locally without browser execution",
+  "retries": 0,
+  "updateSnapshots": "none",
+  "originalDeadlineMs": 300000,
+  "retentionDays": 14,
+  "diskAvailableKiB": 12463900,
+  "priorRouteRun": {
+    "id": 43133029642,
+    "phone": "success",
+    "short": "success",
+    "desktop": "in_progress",
+    "large": "in_progress"
+  },
+  "approval": false,
+  "retentionPolicy": "No archive download now. Review and verify once; reclaim duplicate extracted images only after exact committed retention. Remote diagnostics expire after 14 days.",
+  "requiredPR140": "Application green, strict failed at 5d1342c6; no integrated green claim."
+}

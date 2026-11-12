@@ -1,0 +1,123 @@
+{
+  "artifact": 12542539892,
+  "bytes": 68074608,
+  "sha256": "e9602bea6d5465b6206120ae889e7c3396acde3621f5874927ba81bf4095a120",
+  "entries": [
+    {
+      "path": "nix-renderer/browser-path.txt",
+      "bytes": 49,
+      "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b"
+    },
+    {
+      "path": "nix-renderer/containerd.log",
+      "bytes": 11788,
+      "sha256": "94c4a97272502c110dcef666bc21cc7a87e1dffff49307a319598efaf50f95aa"
+    },
+    {
+      "path": "nix-renderer/engine-info.log",
+      "bytes": 1791,
+      "sha256": "18839b3ffffab51deab7a788cce6a602e6c9804140a0748f9d818b590c9d74c9"
+    },
+    {
+      "path": "nix-renderer/engine.log",
+      "bytes": 2722,
+      "sha256": "f34b6f2e23518123e58fc829f49164ddcafbed6116065ca1335c88622813e876"
+    },
+    {
+      "path": "nix-renderer/image-identity.txt",
+      "bytes": 144,
+      "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd"
+    },
+    {
+      "path": "nix-renderer/image-inspect.json",
+      "bytes": 2411,
+      "sha256": "ea720d12ee68d78eb66e0ee67388be9631c7f8a1c27f0362b470c1684a98d8fc"
+    },
+    {
+      "path": "nix-renderer/image-load.log",
+      "bytes": 49,
+      "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5"
+    },
+    {
+      "path": "nix-renderer/nix-ldd.txt",
+      "bytes": 1491,
+      "sha256": "3c1c37949f03b9d4714065d45b4a8a895078637f37cc67eac73b36514a9b7c6b"
+    },
+    {
+      "path": "nix-renderer/renderer-ldd.txt",
+      "bytes": 6729,
+      "sha256": "1e78b3dd664fb55155f913f618585359e6aa7bc0ca78ab39dad0eb0bf261f4d3"
+    },
+    {
+      "path": "recovery-gallery-iG7o88/geometry.json",
+      "bytes": 32266,
+      "sha256": "7d27dfbdd431bfd73a984ac3b1cc7c95cd74232fb8d03d5d0354e52f191d12da"
+    },
+    {
+      "path": "recovery-gallery-iG7o88/playwright/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "recovery-gallery-iG7o88/playwright/lab-large-gallery-and-lab-rendered-evidence/attachments/dev-animations-large-844208b07462d02b3184ed4cb46bee7f1a428646.png",
+      "bytes": 422694,
+      "sha256": "e008d1223591feceb6bfe0ee57dd0bda78e10857feb7eb494cba302ff80cb566",
+      "dimensions": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "recovery-gallery-iG7o88/playwright/lab-large-gallery-and-lab-rendered-evidence/attachments/gallery-large-30344d270cdb67334418ef44818269b924390258.png",
+      "bytes": 34358232,
+      "sha256": "a5b336dcf2106e05f996d000744162dca486d310a7d7e97a73e9be783610a2b8",
+      "dimensions": [
+        3840,
+        37385
+      ]
+    },
+    {
+      "path": "recovery-gallery-iG7o88/playwright/lab-large-gallery-and-lab-rendered-evidence/dev-animations-large.png",
+      "bytes": 422694,
+      "sha256": "e008d1223591feceb6bfe0ee57dd0bda78e10857feb7eb494cba302ff80cb566",
+      "dimensions": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "recovery-gallery-iG7o88/playwright/lab-large-gallery-and-lab-rendered-evidence/gallery-large.png",
+      "bytes": 34358232,
+      "sha256": "a5b336dcf2106e05f996d000744162dca486d310a7d7e97a73e9be783610a2b8",
+      "dimensions": [
+        3840,
+        37385
+      ]
+    },
+    {
+      "path": "recovery-gallery-iG7o88/result.json",
+      "bytes": 44,
+      "sha256": "e65bdab39dbffbb911ea204782167500de89b5b06593c1f032e37b8937109227"
+    },
+    {
+      "path": "recovery-gallery-iG7o88/selection.log",
+      "bytes": 103,
+      "sha256": "d4181db11f79c88f17b53e5da2dd422423488187fd55e945e9ed22a786ea03e3"
+    },
+    {
+      "path": "recovery-gallery-iG7o88/source.json",
+      "bytes": 417,
+      "sha256": "be5095f7fb1224167792e05f8fb49ca9cfa05830edcc56928e5272787e674563"
+    },
+    {
+      "path": "recovery-request/executor.json",
+      "bytes": 399,
+      "sha256": "8555dbe68a83aefbdbc67daf8e1c02ff0ece5184c84971ac0028b2d4f5f7f739"
+    },
+    {
+      "path": "recovery-request/request.json",
+      "bytes": 215,
+      "sha256": "1553bf502dade5aa2e9602131393f402c68549e28fe25fc30585674c436f975d"
+    }
+  ]
+}

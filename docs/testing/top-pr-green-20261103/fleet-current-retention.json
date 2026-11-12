@@ -1,0 +1,561 @@
+{
+  "run": 41870610515,
+  "archiveVerification": "Full in-memory size/SHA256/CRC/path verification; no local ZIP copies. Only PNG/JSON/MD retained.",
+  "archives": [
+    {
+      "viewport": "phone",
+      "artifact": {
+        "id": 13345468845,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NTQ2ODg0NQ==",
+        "name": "top-pr140-fleet-current-candidates-phone-ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "size_in_bytes": 12375221,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13345468845",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13345468845/zip",
+        "expired": false,
+        "digest": "sha256:9dc0417a8e27f5e7ee116547234c52b74815ae4efc59cfeed723d217cdafdd77",
+        "created_at": "2026-11-04T17:12:30Z",
+        "updated_at": "2026-11-04T17:12:30Z",
+        "expires_at": "2026-11-18T17:12:28Z",
+        "workflow_run": {
+          "id": 41870610515,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-fleet-current-20261104",
+          "head_sha": "ac4afe2a2a0763bfaa7696f27b98d80099631106"
+        }
+      },
+      "archiveSha256": "9dc0417a8e27f5e7ee116547234c52b74815ae4efc59cfeed723d217cdafdd77",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "verifiedEntryCount": 180,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/phone-verified.json"
+    },
+    {
+      "viewport": "desktop",
+      "artifact": {
+        "id": 13345446021,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NTQ0NjAyMQ==",
+        "name": "top-pr140-fleet-current-candidates-desktop-ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "size_in_bytes": 109233423,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13345446021",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13345446021/zip",
+        "expired": false,
+        "digest": "sha256:99a85fe62be39c2c81031b49073c7051479862e59181c2339b3b883d4a0a875b",
+        "created_at": "2026-11-04T16:56:11Z",
+        "updated_at": "2026-11-04T16:56:11Z",
+        "expires_at": "2026-11-18T16:56:07Z",
+        "workflow_run": {
+          "id": 41870610515,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-fleet-current-20261104",
+          "head_sha": "ac4afe2a2a0763bfaa7696f27b98d80099631106"
+        }
+      },
+      "archiveSha256": "99a85fe62be39c2c81031b49073c7051479862e59181c2339b3b883d4a0a875b",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "verifiedEntryCount": 180,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/desktop-verified.json"
+    },
+    {
+      "viewport": "short",
+      "artifact": {
+        "id": 13346880146,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0Njg4MDE0Ng==",
+        "name": "top-pr140-fleet-current-candidates-short-ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "size_in_bytes": 71430337,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13346880146",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13346880146/zip",
+        "expired": false,
+        "digest": "sha256:c779f3dd1689fd5b65dd984ff6a338385d1ba218ba6e183748b0c86856aa3ddd",
+        "created_at": "2026-11-04T17:06:35Z",
+        "updated_at": "2026-11-04T17:06:35Z",
+        "expires_at": "2026-11-18T17:06:32Z",
+        "workflow_run": {
+          "id": 41870610515,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-fleet-current-20261104",
+          "head_sha": "ac4afe2a2a0763bfaa7696f27b98d80099631106"
+        }
+      },
+      "archiveSha256": "c779f3dd1689fd5b65dd984ff6a338385d1ba218ba6e183748b0c86856aa3ddd",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "verifiedEntryCount": 180,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/short-verified.json"
+    },
+    {
+      "viewport": "large",
+      "artifact": {
+        "id": 13344724744,
+        "node_id": "MDg6QXJ0aWZhY3QxMzM0NDcyNDc0NA==",
+        "name": "top-pr140-fleet-current-candidates-large-ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "size_in_bytes": 494823514,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344724744",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13344724744/zip",
+        "expired": false,
+        "digest": "sha256:e872527d47d344fc426ae539c100103454306e69c1d53cb98cc02154104a7ef3",
+        "created_at": "2026-11-04T17:07:55Z",
+        "updated_at": "2026-11-04T17:07:55Z",
+        "expires_at": "2026-11-18T17:07:18Z",
+        "workflow_run": {
+          "id": 41870610515,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-fleet-current-20261104",
+          "head_sha": "ac4afe2a2a0763bfaa7696f27b98d80099631106"
+        }
+      },
+      "archiveSha256": "e872527d47d344fc426ae539c100103454306e69c1d53cb98cc02154104a7ef3",
+      "retention": "Original ZIP verified in memory only; PNG/JSON/MD entries retained locally; ancillary logs remain remotely reconstructable, with entry hashes recorded. Remote original expiry recorded.",
+      "verifiedEntryCount": 180,
+      "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-current-41870610515/large-verified.json"
+    }
+  ],
+  "families": [
+    {
+      "story": "live-fleet-cancellation",
+      "viewport": "desktop",
+      "views": 22,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+        "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-formation",
+      "viewport": "desktop",
+      "views": 20,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-formation.story.spec.ts",
+        "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-reorganization",
+      "viewport": "desktop",
+      "views": 34,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+        "specSha256": "123829c3996daa104cd7ac13be00c787fc4c5bfeeb1d12ec3170caead8cd6171"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-cancellation",
+      "viewport": "large",
+      "views": 22,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+        "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-formation",
+      "viewport": "large",
+      "views": 20,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-formation.story.spec.ts",
+        "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-reorganization",
+      "viewport": "large",
+      "views": 34,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+        "specSha256": "123829c3996daa104cd7ac13be00c787fc4c5bfeeb1d12ec3170caead8cd6171"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-cancellation",
+      "viewport": "phone",
+      "views": 22,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+        "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-formation",
+      "viewport": "phone",
+      "views": 20,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-formation.story.spec.ts",
+        "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-reorganization",
+      "viewport": "phone",
+      "views": 34,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+        "specSha256": "123829c3996daa104cd7ac13be00c787fc4c5bfeeb1d12ec3170caead8cd6171"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-cancellation",
+      "viewport": "short",
+      "views": 22,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-cancellation.story.spec.ts",
+        "specSha256": "d6b6d05c6b291320037960193ade6fe9286bcbd5530b6d60728c1433372524e7"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-formation",
+      "viewport": "short",
+      "views": 20,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-formation.story.spec.ts",
+        "specSha256": "b40bfe2a314da2bf155a08768f68fafe567da02e47e3492b771ed4862595657f"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    },
+    {
+      "story": "live-fleet-reorganization",
+      "viewport": "short",
+      "views": 34,
+      "source": {
+        "commit": "ac4afe2a2a0763bfaa7696f27b98d80099631106",
+        "dirty": false,
+        "spec": "tests/browser/fleet-reorganization.story.spec.ts",
+        "specSha256": "123829c3996daa104cd7ac13be00c787fc4c5bfeeb1d12ec3170caead8cd6171"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      }
+    }
+  ],
+  "sourceApplicability": "Fleet specs/helpers unchanged from target; manifest spec hashes rechecked against current source. Later changes are waiting screen, unopened credit instrument, identical extraction of MarketFocus reader action, and SystemLayers container sizing. Fleet panel is opaque and overlays the inspector; reviewed phone return views have collapsed inspector (SystemLayers unmounted). Remaining sizes still need visual inspection before full-family approval. No baselines imported by this report."
+}

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { keepFocusedControlVisible } from "$lib/focused-reader";
   import { base } from "$app/paths";
   import { untrack, tick } from "svelte";
   import { developments, type Development } from "@shared/construction";
@@ -98,6 +99,7 @@
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (Bounded allocation details support keyboard scrolling.) -->
     <div
       class="focus-scroll"
+      use:keepFocusedControlVisible
       role="region"
       aria-label="Focus allocation details"
       tabindex="0"

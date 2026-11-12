@@ -1,0 +1,1 @@
+Held local component candidates from clean 886c738d3e207ad504918b94d3844a68a439f1c6. Four journeys passed 1.2m; 24 originals. Not Linux or independent visual approval. Prior failures preserved in docs/testing/heading-closure-194.

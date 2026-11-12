@@ -5,3 +5,5 @@ Compare admission and waiting scenes to UX_DESIGN section02 and approved entry p
 Navigation compatibility work is not approval of earlier pixel differences. All migrated families require source-paired candidate review before any feature-local baseline promotion. Old Linux missing references and raster differences remain separate. Actual gameplay/privacy assertions, KMS/hosted authentication/scheduling and full release gates are not certified by a generation pass.
 
 Faction composition correction: [retained actual-versus-plate audit](../../../docs/ux/reviews/faction-composition/README.md). Live admission semantics remain unchanged; new candidate review is required, and older approved images remain untouched.
+
+Admission briefing follow-through: [demonstrated gap, failures and corrected source](../../../docs/ux/reviews/faction-composition/BRIEFING_REVIEW.md), with [76 source-paired candidates](stories/briefing-343eb590/README.md). Bounded keyboard reading and real commitment remain tested; independent candidate approval and hosted protected-flow acceptance are still pending.

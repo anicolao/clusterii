@@ -1,0 +1,1071 @@
+{
+  "target": "8e5a6729",
+  "run": 43234128112,
+  "inspection": "All changed expected/candidate compositions inspected using full phone pairs and changed-RGBA-bounds plus padding for desktop/short/large. Duplicate image hashes explicitly grouped. Text painting changes retain headings, actual values, source names, focus outlines and reading positions. Large component pairs tool-downscaled: layout/content approval, not full native-pixel design certification. Cross-run stability remains to be verified.",
+  "viewports": {
+    "phone": {
+      "manifests": [
+        {
+          "story": "science-ledger-components",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/components.spec.ts",
+            "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 393,
+              "height": 852
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 6
+        },
+        {
+          "story": "science-rate-sources",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/science.spec.ts",
+            "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 393,
+              "height": 852
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 18
+        }
+      ],
+      "captures": [
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "sha256": "3024254ed132ccd5b2963d78e0de1c2f408dae396cd3e39363c6712aad52301e",
+          "expectedSha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "sha256": "3024254ed132ccd5b2963d78e0de1c2f408dae396cd3e39363c6712aad52301e",
+          "expectedSha256": "22f2b0a86c86598e6536d182aebfae6af787194c78a4ce420c3647774280c2c9",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "sha256": "85a984f4b7432a8cb4d151b3895f429e3a3c0881ddf114a1392161ee89006f1e",
+          "expectedSha256": "5a8be39f85bb501119e60de62232fc25af60ba4623ed79dd91dc13ff5d251c10",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "sha256": "81086bcd345d015c482338016e68954af4c1348f6051bb805ca44ccf619979d8",
+          "expectedSha256": "b7ebec3e0d2145b6b2ef5e2a28d753b3e721bfbc576b034d7ecc12be5c76d697",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "sha256": "2007cf4089e2f262b0917bed78255a1391727d39c552d3f68d93313c7a036c3d",
+          "expectedSha256": "ee99e3b83301dc248628dbde0d1312d021e654717cb9e66344caa2bb145f278a",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/phone/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "sha256": "0a5d0789f5d2e67ac4ee5117ca9840210ccdb46c7a321d1f250210afd7ecd127",
+          "expectedSha256": "1b1ceb960b93b19ccc2c8cc67fa1b23724759f3d07acc71fbac167d1034bdaed",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "sha256": "c7391630a91d56b82e766d3afc0db8937085d7139fe6c7b71a007722fe7e017a",
+          "expectedSha256": "af930d4052a22f527defb683291cae237dd419d46492a24cda0c8bd3de4f92c6",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "sha256": "84c37f3a14e47a2d54cd49b5002302609a0c90190b239d0b38cca81c83b90f15",
+          "expectedSha256": "c1414ba89d4dc49d9acc1a835c7a61d79e5e055cc4a8ca6332330a6e297ab10c",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "sha256": "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6",
+          "expectedSha256": "adbf3a79bb7e0b5980b81a5becaaa76ae54c293f1a94bc580eb2ed87793706d6",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "sha256": "258bbc89fe9422319c56be28c805198dc4823e18a37f3535c1d5c1d8480468ef",
+          "expectedSha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "sha256": "e0be26350b68ce3c5848b11fa2562b0aeb9d23d417facb5ce036e828016b95f2",
+          "expectedSha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "sha256": "dea995deb763ef00975e7e5dfb2b0caae75021079ba0e00476ce1a879462fc70",
+          "expectedSha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "sha256": "053a0b60d56396a689a36f433afa4ba5fb55551d6f7b96ddf2c4496034c9262b",
+          "expectedSha256": "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "sha256": "258bbc89fe9422319c56be28c805198dc4823e18a37f3535c1d5c1d8480468ef",
+          "expectedSha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "sha256": "e0be26350b68ce3c5848b11fa2562b0aeb9d23d417facb5ce036e828016b95f2",
+          "expectedSha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "sha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+          "expectedSha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "sha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+          "expectedSha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "sha256": "dea995deb763ef00975e7e5dfb2b0caae75021079ba0e00476ce1a879462fc70",
+          "expectedSha256": "316ade8b7dbe40b8812dc9c7feb745d51f4816379a1145b8dea3d3266a929672",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "sha256": "053a0b60d56396a689a36f433afa4ba5fb55551d6f7b96ddf2c4496034c9262b",
+          "expectedSha256": "3ff7f98d254cb18d258c59279893854734f016413c343f06566917494d619cac",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "sha256": "258bbc89fe9422319c56be28c805198dc4823e18a37f3535c1d5c1d8480468ef",
+          "expectedSha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "sha256": "e0be26350b68ce3c5848b11fa2562b0aeb9d23d417facb5ce036e828016b95f2",
+          "expectedSha256": "23c0f18441d5f5df9a2d76f51ac3906318083836cefb6fdc0342681c4b2cff2c",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "sha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+          "expectedSha256": "23b5d9d9703151ef8e9675c1e0a06a82e0b88c2bef00060f845a90a593908a6b",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "sha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+          "expectedSha256": "04e89cc6dca71cb9afc8d5f2078245c37e9f048a155877b93a7adb8d66b8daff",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/phone/test-results/stories/science-rate-sources/phone/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "sha256": "f9d22175b257213195958fb85e5be7f9dafca18a21df4078ad84c55a153fcf8b",
+          "expectedSha256": "7cc9dedabeee7a82d0e92bd45daf0f7094e426f9dd20e04f714a587ae03b295a",
+          "changed": true
+        }
+      ],
+      "artifact": {
+        "id": 13951724200,
+        "node_id": "MDg6QXJ0aWZhY3QxMzk1MTcyNDIwMA==",
+        "name": "top-pr140-science-layer-phone-e8e287c93ddd3da81df4889f38a7d76ccab34226",
+        "size_in_bytes": 5751494,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13951724200",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13951724200/zip",
+        "expired": false,
+        "digest": "sha256:1f93cafa251f689da5a76571b6671bf718d188eeea239343dc689929dc01535b",
+        "created_at": "2026-11-12T14:21:36Z",
+        "updated_at": "2026-11-12T14:21:36Z",
+        "expires_at": "2026-11-26T14:21:34Z",
+        "workflow_run": {
+          "id": 43234128112,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-layer-20261112",
+          "head_sha": "e8e287c93ddd3da81df4889f38a7d76ccab34226"
+        }
+      }
+    },
+    "desktop": {
+      "manifests": [
+        {
+          "story": "science-ledger-components",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/components.spec.ts",
+            "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 6
+        },
+        {
+          "story": "science-rate-sources",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/science.spec.ts",
+            "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 18
+        }
+      ],
+      "captures": [
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "sha256": "2ef3ebfc51374fa2630c47404a8f1c520c4ab4fa3efcec6386ea327d4f5b54ee",
+          "expectedSha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "sha256": "2ef3ebfc51374fa2630c47404a8f1c520c4ab4fa3efcec6386ea327d4f5b54ee",
+          "expectedSha256": "f1d2d22a41e8ff83d9a85e0decdbb02293bbf1237afb1a694139b5bc6e7bb95d",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "sha256": "c26bc6d314e7043b0b710a1f8c2335af27828107eb132bc26fcf06d55de7b36f",
+          "expectedSha256": "469f4cbb838a9f90af82234240dfdd9e6bdc6a5b6699de6626875b15eab1dc45",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "sha256": "b9ed6460aba1d468e3b184ea9b56a0f86fc8516b3b81d318b5202ad362237dc8",
+          "expectedSha256": "e2c799846c657ee42f73b5935df3842abcec21c663d8ecea472b062404c58813",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "sha256": "835ec096d4ea8ac522dfe52f9686b8dbe7c533d4dc3b917e82c03e365b27951f",
+          "expectedSha256": "873d2b9317e185c2598d24edeb50ae3e3fca5ec5a1dfc956cdd4fd8dede0568a",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/desktop/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "sha256": "15d8f47ef2a5ddc99560ec28598a450d69518f012dbd4c99ac7341d6ea454e9b",
+          "expectedSha256": "541f34b422f7ee3dda134baccb08a8f0d59e988bff4e0d970739189b02a07f78",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "sha256": "8e90b4fb15e45ed928b6e6ab85655fa6ae0e1413e0049563b74b01ac3a48911b",
+          "expectedSha256": "30b99e9f2896c3895a9bbe45d63444fa06336d38f21455beef371fff8bea89fa",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "sha256": "7d6c55596afa52af6b9026c69db601980c23498b74202d20cec5297b62a7ebf3",
+          "expectedSha256": "99fe0e1ba74002ae42095ebf5cee3a7539eeee4a4544e5691c1798c515303bc2",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "sha256": "92f3357a45eddc2382a70d384f088bd1d33b43a2cc586a8826a61c770cdb1dd4",
+          "expectedSha256": "92f3357a45eddc2382a70d384f088bd1d33b43a2cc586a8826a61c770cdb1dd4",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "sha256": "23b6dd3489413f5f26da3e3255b9446a5bdeebe957254bc9a61c54b44d89d899",
+          "expectedSha256": "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "sha256": "03f50b7ec666cffdc5fc7ac49db31817892cea441c50149834cc2f5a3d896396",
+          "expectedSha256": "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "sha256": "f28019dead498119ebe011e7edb2ee5e4dfdd52682c41a9a1d29209e0139ec1d",
+          "expectedSha256": "b721b3f01adb5f53277ac77c276081ca94555b8c271833b46fd13f9e4f4cbf22",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "sha256": "b12be726078e8a592e6e31e57b867867fb23586570e374993fd20e266e35915f",
+          "expectedSha256": "bb97f3c989665e377a2fd97a82f7fb95193e4dc8af988c3621de5aee107379fe",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "sha256": "23b6dd3489413f5f26da3e3255b9446a5bdeebe957254bc9a61c54b44d89d899",
+          "expectedSha256": "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "sha256": "03f50b7ec666cffdc5fc7ac49db31817892cea441c50149834cc2f5a3d896396",
+          "expectedSha256": "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "sha256": "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306",
+          "expectedSha256": "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "sha256": "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558",
+          "expectedSha256": "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "sha256": "f28019dead498119ebe011e7edb2ee5e4dfdd52682c41a9a1d29209e0139ec1d",
+          "expectedSha256": "b721b3f01adb5f53277ac77c276081ca94555b8c271833b46fd13f9e4f4cbf22",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "sha256": "b12be726078e8a592e6e31e57b867867fb23586570e374993fd20e266e35915f",
+          "expectedSha256": "bb97f3c989665e377a2fd97a82f7fb95193e4dc8af988c3621de5aee107379fe",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "sha256": "23b6dd3489413f5f26da3e3255b9446a5bdeebe957254bc9a61c54b44d89d899",
+          "expectedSha256": "bf4f701018457f59ed2890e81be3d7a84b796727e32749a221869cca359229dc",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "sha256": "03f50b7ec666cffdc5fc7ac49db31817892cea441c50149834cc2f5a3d896396",
+          "expectedSha256": "eb63d5db3d42f7343f9a6c96437371a09a87cc6bea27020767f4d63addc890c1",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "sha256": "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306",
+          "expectedSha256": "2a3e6d2ca9e01db4ca4094f54fe12236eea5cc25316fc63919ff308b32d16306",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "sha256": "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558",
+          "expectedSha256": "ee6eb9eae83a151f29f2acf8cf215af5fa11de8d0d0c91e00a25201796052558",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/desktop/test-results/stories/science-rate-sources/desktop/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/desktop/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "sha256": "9dd8eff76de44c91abde742fdc8c2fa2f45119087471dc0c629708a8854342f7",
+          "expectedSha256": "a18b5dea9880de038cf996cebcf19731d450620fcee99384260097a32c3aad32",
+          "changed": true
+        }
+      ],
+      "artifact": {
+        "id": 13953760093,
+        "node_id": "MDg6QXJ0aWZhY3QxMzk1Mzc2MDA5Mw==",
+        "name": "top-pr140-science-layer-desktop-e8e287c93ddd3da81df4889f38a7d76ccab34226",
+        "size_in_bytes": 22617751,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13953760093",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13953760093/zip",
+        "expired": false,
+        "digest": "sha256:da5baa5c3165e25f5429d80d54f4a2e3b736a61ef92c4739a60c236bd5ceafc0",
+        "created_at": "2026-11-12T14:22:15Z",
+        "updated_at": "2026-11-12T14:22:15Z",
+        "expires_at": "2026-11-26T14:22:13Z",
+        "workflow_run": {
+          "id": 43234128112,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-layer-20261112",
+          "head_sha": "e8e287c93ddd3da81df4889f38a7d76ccab34226"
+        }
+      }
+    },
+    "short": {
+      "manifests": [
+        {
+          "story": "science-ledger-components",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/components.spec.ts",
+            "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 1280,
+              "height": 720
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 6
+        },
+        {
+          "story": "science-rate-sources",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/science.spec.ts",
+            "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 1280,
+              "height": 720
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 18
+        }
+      ],
+      "captures": [
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "sha256": "cbc429be56333168dd489172c4f8e9980033672875e39d5b5b3ee014c4f2ee6e",
+          "expectedSha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "sha256": "cbc429be56333168dd489172c4f8e9980033672875e39d5b5b3ee014c4f2ee6e",
+          "expectedSha256": "9c8166fe20fb7371474f9a888e03a6e18818ad05df9c927a636c078ca4e0a386",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "sha256": "9f6a7869f2b819bce16ccfaab12babfc4c4952215069e92b37b27eadabe9486c",
+          "expectedSha256": "f20721a000c03c3d74387dea3a8c986910c27ef9f1e864902081d9020569b68b",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "sha256": "9695ef1b01ae0edfab530337582eb98c564196cb9f09f99ec2ff2403e74c3845",
+          "expectedSha256": "118c0acd6c0a76bd192bd14554cf23ba6b443ec52a18d575972255954136478b",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "sha256": "79c69b8446c84365653f5aced7e509f977b14dc084433af0ca0502b43ce2fc7a",
+          "expectedSha256": "e475bbacfaad92e5c4328091723b0adfb73d206c2e291856d1717093110a4cc9",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/short/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "sha256": "19d3ad8cd6811b2ea0a9e84e9289dbe6d29b63b533621446d4dbcb44301eb69a",
+          "expectedSha256": "35958d48114baa09c2d4621f1d866a7a986be62aa4b326d3e95d2693b75d738d",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "sha256": "2988017654d9e4a0b8ca6e907b6b311616c4d2beb3dedf3cd3b2d264ca29efaf",
+          "expectedSha256": "c2d8adbaf536921457a2f724fad76d8c60e5f18604cf1db3a9a34c16b00d28f3",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "sha256": "2bb845175e50e52fe7b5a7389a9f49e790345ac3cb67c354d01d920b25adf15d",
+          "expectedSha256": "cd80cd94a59032d128a8d132e6ec6ed09a4849abc048db435f661fe000397a0f",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "sha256": "69b44dfdd95f9c87c8cb2e1ad27873cd1ecf410f7d99e28bb1d6b7a05bffce84",
+          "expectedSha256": "69b44dfdd95f9c87c8cb2e1ad27873cd1ecf410f7d99e28bb1d6b7a05bffce84",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "sha256": "1dd55b7df3353d9a559becfca6127d10b2483d0ecdb919a3ed736c4fa8f3346f",
+          "expectedSha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "sha256": "c91ecdf20158447f296254ae18c33081c9e00b8590d9972a42ff9744705523de",
+          "expectedSha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "sha256": "2d6102a8cdbc3eaa6a9ff19e0d64cf187f5f2a6e9d3debd45d704bb1a2339ef0",
+          "expectedSha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "sha256": "9c6988908d3e7bae6a28669705ce7924ca1b0be38ba22ab0291a66a6947651c4",
+          "expectedSha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "sha256": "1dd55b7df3353d9a559becfca6127d10b2483d0ecdb919a3ed736c4fa8f3346f",
+          "expectedSha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "sha256": "c91ecdf20158447f296254ae18c33081c9e00b8590d9972a42ff9744705523de",
+          "expectedSha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "sha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+          "expectedSha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "sha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+          "expectedSha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "sha256": "2d6102a8cdbc3eaa6a9ff19e0d64cf187f5f2a6e9d3debd45d704bb1a2339ef0",
+          "expectedSha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "sha256": "9c6988908d3e7bae6a28669705ce7924ca1b0be38ba22ab0291a66a6947651c4",
+          "expectedSha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "sha256": "1dd55b7df3353d9a559becfca6127d10b2483d0ecdb919a3ed736c4fa8f3346f",
+          "expectedSha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "sha256": "c91ecdf20158447f296254ae18c33081c9e00b8590d9972a42ff9744705523de",
+          "expectedSha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "sha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+          "expectedSha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "sha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+          "expectedSha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/short/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "sha256": "55031c7654798928165dd408d66fa88e5c919e251ec571b7a3363d721dd92e72",
+          "expectedSha256": "25c5f4400cb7681649c5726102f36a0fdba5077cf71a254a3a97ec27a0a16d17",
+          "changed": true
+        }
+      ],
+      "artifact": {
+        "id": 13952123116,
+        "node_id": "MDg6QXJ0aWZhY3QxMzk1MjEyMzExNg==",
+        "name": "top-pr140-science-layer-short-e8e287c93ddd3da81df4889f38a7d76ccab34226",
+        "size_in_bytes": 14134834,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13952123116",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13952123116/zip",
+        "expired": false,
+        "digest": "sha256:1e042dc1f28e1994ebcc4a1b19e5c2e3ecf3374a74dec1888e8f87d760bca672",
+        "created_at": "2026-11-12T14:22:17Z",
+        "updated_at": "2026-11-12T14:22:17Z",
+        "expires_at": "2026-11-26T14:22:15Z",
+        "workflow_run": {
+          "id": 43234128112,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-layer-20261112",
+          "head_sha": "e8e287c93ddd3da81df4889f38a7d76ccab34226"
+        }
+      }
+    },
+    "large": {
+      "manifests": [
+        {
+          "story": "science-ledger-components",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/components.spec.ts",
+            "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 3840,
+              "height": 2160
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 6
+        },
+        {
+          "story": "science-rate-sources",
+          "source": {
+            "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
+            "dirty": false,
+            "spec": "tests/e2e/003-science/science.spec.ts",
+            "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
+          },
+          "renderer": {
+            "platform": "linux-arm64",
+            "rendererArgs": [
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--num-raster-threads=2",
+              "--disable-skia-runtime-opts",
+              "--run-all-compositor-stages-before-draw",
+              "--disable-checker-imaging",
+              "--disable-partial-raster",
+              "--disable-gpu-rasterization",
+              "--disable-gpu"
+            ],
+            "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+            "browser": "149.0.7827.0",
+            "playwright": "1.61.1",
+            "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+            "viewport": {
+              "width": 3840,
+              "height": 2160
+            },
+            "locale": "en-US",
+            "timezone": "UTC",
+            "dpr": 1,
+            "motion": "reduce"
+          },
+          "views": 18
+        }
+      ],
+      "captures": [
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/001-gallery-source-reduce-1-component-reviewer.png",
+          "sha256": "4c55aecf23bb4c23de7b8814cab0d92120adae078666c2c5a6daaf6da9bf24f6",
+          "expectedSha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/002-gallery-source-no-preference-1-component-reviewer.png",
+          "sha256": "4c55aecf23bb4c23de7b8814cab0d92120adae078666c2c5a6daaf6da9bf24f6",
+          "expectedSha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/003-lab-capacity-1-standard-motion-comparison.png",
+          "sha256": "f81fd40b1e91a99f1d0b9ee7f77a17b92ba14d5d170e042c52df864ed623542c",
+          "expectedSha256": "3e116427ca1d10b4ee49b06d187e65b5dd94d000d79fc3b3022f04f365d07f74",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/003-lab-capacity-2-reduced-motion-comparison.png",
+          "sha256": "b7e9e52f3a9c99af4eb938e85ec65490ce633c1fc65872293050cd3b09c3fa01",
+          "expectedSha256": "a6f4f60621d82b8de08d0560e4cfd4fac7f4475015ee7d79347542e6d1e61edf",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/004-lab-delivered-1-standard-motion-comparison.png",
+          "sha256": "1166a89953c6ba476f72be105ebcaa8bae3393cfe3a2cead5251501825f15fa0",
+          "expectedSha256": "408e37d82fb04d090570b29874ee3cf964693f1c741205035026885449107a70",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "reference": "tests/e2e/003-science/screenshots/science-ledger-components/large/linux-arm64/004-lab-delivered-2-reduced-motion-comparison.png",
+          "sha256": "5b19841c5baf214536429d2143e30087af3f3ed34f441f4a58970eb0faace8b8",
+          "expectedSha256": "4be1920077d749cea2daa486399653b783ff62b27bb1da64eea3a5738697611b",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/010-inspect-private-sources-1-chart-envoy.png",
+          "sha256": "9d61b193dfd7b5a04b5720a415d7dc5d64332738cd113aae92b3554fd2744631",
+          "expectedSha256": "a562ef9dcaef0c8a644b049e5cd88d906484d88ddb67e8d961555e5924525675",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/010-inspect-private-sources-2-tidal-envoy.png",
+          "sha256": "44712375420d8355a0e1f0b6ee402f5d493c12702892d0dc8c8418a09908d172",
+          "expectedSha256": "1dd1d2cc2bf7a694a3e25ee860730ab5539cc5445a03cdaa7ea40777ef33cdb9",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/011-commit-innovation-1-chart-envoy.png",
+          "sha256": "f692f4169bf05a37a0b3671a94454d558f8a0ed8d5143406b3d3ff5d907b4d0b",
+          "expectedSha256": "f692f4169bf05a37a0b3671a94454d558f8a0ed8d5143406b3d3ff5d907b4d0b",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/013-read-earned-capacity-1-chart-envoy.png",
+          "sha256": "960c279e52e1223edceb7db0436899fe806bc09213ae482bdb2fce9335a856ab",
+          "expectedSha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/013-read-earned-capacity-2-tidal-envoy.png",
+          "sha256": "650941ec46ca00ff0f3a38716b1beca8076e41164da6f13db65c61dcc20fba62",
+          "expectedSha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-1-chart-envoy.png",
+          "sha256": "960c279e52e1223edceb7db0436899fe806bc09213ae482bdb2fce9335a856ab",
+          "expectedSha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/014-earned-normal-ledger-2-tidal-envoy.png",
+          "sha256": "650941ec46ca00ff0f3a38716b1beca8076e41164da6f13db65c61dcc20fba62",
+          "expectedSha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/015-earned-normal-totals-1-chart-envoy.png",
+          "sha256": "960c279e52e1223edceb7db0436899fe806bc09213ae482bdb2fce9335a856ab",
+          "expectedSha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/015-earned-normal-totals-2-tidal-envoy.png",
+          "sha256": "650941ec46ca00ff0f3a38716b1beca8076e41164da6f13db65c61dcc20fba62",
+          "expectedSha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/016-earned-normal-return-1-chart-envoy.png",
+          "sha256": "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0",
+          "expectedSha256": "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/016-earned-normal-return-2-tidal-envoy.png",
+          "sha256": "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d",
+          "expectedSha256": "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-1-chart-envoy.png",
+          "sha256": "960c279e52e1223edceb7db0436899fe806bc09213ae482bdb2fce9335a856ab",
+          "expectedSha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/017-earned-reduced-ledger-2-tidal-envoy.png",
+          "sha256": "650941ec46ca00ff0f3a38716b1beca8076e41164da6f13db65c61dcc20fba62",
+          "expectedSha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-1-chart-envoy.png",
+          "sha256": "960c279e52e1223edceb7db0436899fe806bc09213ae482bdb2fce9335a856ab",
+          "expectedSha256": "24fa665c9be04f5e7fdd22dcf063ebbfeced75657a9a37c7cc8bfc66a53d0e86",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/018-earned-reduced-totals-2-tidal-envoy.png",
+          "sha256": "650941ec46ca00ff0f3a38716b1beca8076e41164da6f13db65c61dcc20fba62",
+          "expectedSha256": "d74c1261e8c2e9b453d756952a1a803c518d00a9e56956d339af1f7c6009fdcd",
+          "changed": true
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/019-earned-reduced-return-1-chart-envoy.png",
+          "sha256": "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0",
+          "expectedSha256": "3b9aa769d30b267f5dc7b8527cad1e8406ef0a05009470254b4b381acf6417f0",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/019-earned-reduced-return-2-tidal-envoy.png",
+          "sha256": "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d",
+          "expectedSha256": "3bef8780f640a0cbe660080a102312a3cf5a6e7bd45a0c54603620c5b6b66c6d",
+          "changed": false
+        },
+        {
+          "candidate": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-rate-sources/large/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "reference": "tests/e2e/003-science/screenshots/science-rate-sources/large/linux-arm64/021-recover-delivered-rate-1-chart-envoy.png",
+          "sha256": "1e75a69b53d5114b7b8e25945c5ea34fdd4a10c27973224a547aa828f134ea39",
+          "expectedSha256": "b982d597b0810541040647c40dc550be59efe377a16da82554dce7dc06fba52a",
+          "changed": true
+        }
+      ],
+      "artifact": {
+        "id": 13951589758,
+        "node_id": "MDg6QXJ0aWZhY3QxMzk1MTU4OTc1OA==",
+        "name": "top-pr140-science-layer-large-e8e287c93ddd3da81df4889f38a7d76ccab34226",
+        "size_in_bytes": 110159339,
+        "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13951589758",
+        "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13951589758/zip",
+        "expired": false,
+        "digest": "sha256:4605985d7a1c3b7153d9b0bbbe3d8fa554179c741d50d22ad47bdc629c5adde6",
+        "created_at": "2026-11-12T14:23:43Z",
+        "updated_at": "2026-11-12T14:23:43Z",
+        "expires_at": "2026-11-26T14:23:39Z",
+        "workflow_run": {
+          "id": 43234128112,
+          "repository_id": 1427003910,
+          "head_repository_id": 1427003910,
+          "head_branch": "investigate/pr140-science-layer-20261112",
+          "head_sha": "e8e287c93ddd3da81df4889f38a7d76ccab34226"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "43d7225ef287352075fa854ffe6d9de45ea976171909def58d169d610082a8b2",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/012-pending-build-1-builder-envoy.png",
+    "sha256": "a41915897afd013eb76258d6fe4ff561f6053c6626d5ee726f292658b87ddda8",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/012-pending-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/012-pending-build-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/012-pending-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png",
+    "sha256": "976b549a70f647517aee78b179d71725af6e1e2ac91ec407ed0973a17265002d",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/013-recover-pending-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/013-recover-pending-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/013-recover-pending-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/015-reserve-build-1-builder-envoy.png",
+    "sha256": "be895c75caa8ad96dd6a1072aa30a2e8a980cdf68dfae250fb79f517d437a274",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/015-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/015-reserve-build-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/015-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+    "sha256": "b8207dd5d702edbb5c6455f2c1a6b2350c94d6fb2e53f4aaf2e1798496af1deb",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/016-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/016-reload-reservation-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/016-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/018-completed-build-1-builder-envoy.png",
+    "sha256": "df738002b1dd8ce689f5d4238ebe0ed0adb414026d68ef59ae0df024f986c723",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/018-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/018-completed-build-2-independent-builder.png",
+    "sha256": "3e05448dcfe433e2f5d29daedbf0c801026ced86dca283e1c1ca9bc223783949",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/018-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "dc6e79b82c88adff323cf0b8518a7325ca879c1f937f2192511fe21bfea6b773",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "3e05448dcfe433e2f5d29daedbf0c801026ced86dca283e1c1ca9bc223783949",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/020-cancel-base-1-builder-envoy.png",
+    "sha256": "d193911a8c76f2eab6b5a2c8c32b9404518a020866df3a96a5a60c93b050c822",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/020-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/020-cancel-base-2-independent-builder.png",
+    "sha256": "3e05448dcfe433e2f5d29daedbf0c801026ced86dca283e1c1ca9bc223783949",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/020-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+    "sha256": "0f64c3a0b03cb14ef73e89f9c8febff572795a383b9b56685d635bd0de543a9e",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/022-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/022-cancelled-base-2-independent-builder.png",
+    "sha256": "b0f9090d8d2cb7421216ff7327127477da75c1de6554f2bbd02b941b764e58b5",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/022-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "715c09b7bd0af0b4a75d8c208c05cc28bed16f2a0ea54f40a35c291dec8f7399",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "b0f9090d8d2cb7421216ff7327127477da75c1de6554f2bbd02b941b764e58b5",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/023-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+    "sha256": "1d3dde838d86511421cca6bcb45659fc46f47350a9b039f58530ec8b93e628e1",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/024-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/phone/linux-arm64/024-keyboard-return-2-independent-builder.png",
+    "sha256": "b0f9090d8d2cb7421216ff7327127477da75c1de6554f2bbd02b941b764e58b5",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/phone/linux-arm64/024-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "5e3a2f23916679d80aca5b81c28d875c02da802f864a51940f431b0a224aa55c",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "2d6b37a47e2fd9082986a130651e1c6b14a8331c9df911ddf3238343b337c7b2",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-1-builder-envoy.png",
+    "sha256": "bf408bacd2d5134bc485876f7bad51b7a2a8ddd23bd07e59d2a894f0c4f94634",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/012-pending-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/012-pending-build-2-independent-builder.png",
+    "sha256": "2d6b37a47e2fd9082986a130651e1c6b14a8331c9df911ddf3238343b337c7b2",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/012-pending-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png",
+    "sha256": "9576d5eec54c8725768313dc1716432185e2d70240b10debadb6b0f404fee499",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/013-recover-pending-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/013-recover-pending-2-independent-builder.png",
+    "sha256": "2d6b37a47e2fd9082986a130651e1c6b14a8331c9df911ddf3238343b337c7b2",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/013-recover-pending-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-1-builder-envoy.png",
+    "sha256": "8808caab3d8d5257f67630ee7165b0b6d70705d1cf8ca683a26bf9a7a502820e",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/015-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/015-reserve-build-2-independent-builder.png",
+    "sha256": "2d6b37a47e2fd9082986a130651e1c6b14a8331c9df911ddf3238343b337c7b2",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/015-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+    "sha256": "8735b1a9a848927000a79917e17a021bb7183c2f844297ef2f7b829d918245df",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-2-independent-builder.png",
+    "sha256": "2d6b37a47e2fd9082986a130651e1c6b14a8331c9df911ddf3238343b337c7b2",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/016-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-1-builder-envoy.png",
+    "sha256": "cde9cdb7fd3ce927cc1c1f426ff7784d2ebe84919d9ae5cd46268c482c76b899",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/018-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/018-completed-build-2-independent-builder.png",
+    "sha256": "62df86c66025961efae58a68b5fc6665801fe795127e8de7e4ed09355ce4ea45",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/018-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "b0375ac5838a14d27af0874da157170b3e1c046b88f316d39541625115761ccb",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "62df86c66025961efae58a68b5fc6665801fe795127e8de7e4ed09355ce4ea45",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-1-builder-envoy.png",
+    "sha256": "6bf28c35fd3350978e520da3567002b43c937d9ec93b5a6ac03ddd74acdc8532",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/020-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/020-cancel-base-2-independent-builder.png",
+    "sha256": "62df86c66025961efae58a68b5fc6665801fe795127e8de7e4ed09355ce4ea45",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/020-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+    "sha256": "7be461ef13b03afc6e5c41770e5050315383d72342a7ba9310856b6a26b07968",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-2-independent-builder.png",
+    "sha256": "a1cf4bc9a4bec3375aa031855dfdde1432c127a3c8f965a7d0650d9723a9f29b",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/022-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "7ffd035989f32bf8e43327de4cdfa9cc00e187a27b2cd13a7064299ce7c3c51b",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "a1cf4bc9a4bec3375aa031855dfdde1432c127a3c8f965a7d0650d9723a9f29b",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/023-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+    "sha256": "6bf2810604ed5d0b042d894ad5d1e51b7bf4fa6494db569ac9f1598573fb900c",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-2-independent-builder.png",
+    "sha256": "a1cf4bc9a4bec3375aa031855dfdde1432c127a3c8f965a7d0650d9723a9f29b",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/desktop/linux-arm64/024-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "6e639c5e53b0408df6c07042ab9490e25d00c56f8ca576a88718f1bdd3cffb5d",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "2755c825bc55116d8342d492c04fd071b6aabdd33f29f0103b290dd552f3cd8f",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/012-pending-build-1-builder-envoy.png",
+    "sha256": "13ef92b668df08e8ccce4b363b0fdd6bfd46d3be27f142c264a645b6a926b08b",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/012-pending-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/012-pending-build-2-independent-builder.png",
+    "sha256": "2755c825bc55116d8342d492c04fd071b6aabdd33f29f0103b290dd552f3cd8f",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/012-pending-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/013-recover-pending-1-builder-envoy.png",
+    "sha256": "bc6d125d97fe503c82bc4fc12ec030916b33d5ed1b68ea589284f13f9e28d302",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/013-recover-pending-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/013-recover-pending-2-independent-builder.png",
+    "sha256": "2755c825bc55116d8342d492c04fd071b6aabdd33f29f0103b290dd552f3cd8f",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/013-recover-pending-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/015-reserve-build-1-builder-envoy.png",
+    "sha256": "bd7997325622ea0e717f6d71e8f8a574fcbb12ca9d1d74a6a6863b6cc443297d",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/015-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/015-reserve-build-2-independent-builder.png",
+    "sha256": "2755c825bc55116d8342d492c04fd071b6aabdd33f29f0103b290dd552f3cd8f",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/015-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+    "sha256": "c145f15ac6961fefb4981997571f2bc0a7e035975586b39af8140e8f807820f7",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/016-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/016-reload-reservation-2-independent-builder.png",
+    "sha256": "2755c825bc55116d8342d492c04fd071b6aabdd33f29f0103b290dd552f3cd8f",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/016-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/018-completed-build-1-builder-envoy.png",
+    "sha256": "5f52e3fa63f696dcf90f2293595279ab018cadcdd1eab4d46baa65ef8653724d",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/018-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/018-completed-build-2-independent-builder.png",
+    "sha256": "cfdd705e24bcba7fce752e189869e7196566ba8723f51af1b0d10b62a33bc399",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/018-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "6a4c82203171347f70af4920bf27f091ff4f9643667198f6f8566f6c1d2977fa",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "cfdd705e24bcba7fce752e189869e7196566ba8723f51af1b0d10b62a33bc399",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/020-cancel-base-1-builder-envoy.png",
+    "sha256": "0b86a5db0a37a7484d3829a438f5ce78cfa5c5101b43bb54f9c1246d3fe3cb2c",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/020-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/020-cancel-base-2-independent-builder.png",
+    "sha256": "cfdd705e24bcba7fce752e189869e7196566ba8723f51af1b0d10b62a33bc399",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/020-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+    "sha256": "66dfc6c9e645a3fea1e421253acedbdee6d0c41314685340fb8f35707ca4a987",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/022-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/022-cancelled-base-2-independent-builder.png",
+    "sha256": "535649424767327e90e0cbbe6f457a6408df561febb685c5b6226d0bdf6367b8",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/022-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "cf2d2097c8b441e2cc6a2bfcdc83f22a90dd0418b2e842484aca7485544831d8",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "535649424767327e90e0cbbe6f457a6408df561febb685c5b6226d0bdf6367b8",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/023-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+    "sha256": "bdc9aedcf01a78b79d01d3d4a4c94ebc6c691a8da522e9b261b40f4f2e18289a",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/024-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/short/linux-arm64/024-keyboard-return-2-independent-builder.png",
+    "sha256": "535649424767327e90e0cbbe6f457a6408df561febb685c5b6226d0bdf6367b8",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/short/linux-arm64/024-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "ccb0638e6d2ef5677ed881ae06e3716220cb5308e64a8b7ddecb35c5e9463f70",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "f2310fe897e6fc771bb318673a6ee1c035dd4364da07f1b58bae4fa49e670f89",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/012-pending-build-1-builder-envoy.png",
+    "sha256": "1198f869e0e50eaceea73cf4f34ef95d85d9b8eb9a7f1e3690404ba18aaf665c",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/012-pending-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/012-pending-build-2-independent-builder.png",
+    "sha256": "f2310fe897e6fc771bb318673a6ee1c035dd4364da07f1b58bae4fa49e670f89",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/012-pending-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/013-recover-pending-1-builder-envoy.png",
+    "sha256": "00817ba4eb7322f09938e139a8ae67c37f9494ca2c7c2ebb266e16e7d7786a55",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/013-recover-pending-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/013-recover-pending-2-independent-builder.png",
+    "sha256": "f2310fe897e6fc771bb318673a6ee1c035dd4364da07f1b58bae4fa49e670f89",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/013-recover-pending-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/015-reserve-build-1-builder-envoy.png",
+    "sha256": "7604504afe14c81d65b3d9797ae569e292e4a279053232b2c89688bd06535918",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/015-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/015-reserve-build-2-independent-builder.png",
+    "sha256": "f2310fe897e6fc771bb318673a6ee1c035dd4364da07f1b58bae4fa49e670f89",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/015-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/016-reload-reservation-1-builder-envoy.png",
+    "sha256": "327e69909cd62419c66993a4f6017708004b251c68d633b1f4c059228c19b3a8",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/016-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/016-reload-reservation-2-independent-builder.png",
+    "sha256": "f2310fe897e6fc771bb318673a6ee1c035dd4364da07f1b58bae4fa49e670f89",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/016-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/018-completed-build-1-builder-envoy.png",
+    "sha256": "98b9cb219786951b47555958505617b2867cef01c5acb9fbe5b1dfdcdbd99b01",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/018-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/018-completed-build-2-independent-builder.png",
+    "sha256": "dec56e9b9232dd5f7ca8bab7072a5cdf6c54c63afb88f84071600d72654f7e19",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/018-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "6a09c85c53dfd9b6863b6c05b57f8563f33db6a22f69fcd8eacbfad1fe9a2ca0",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "dec56e9b9232dd5f7ca8bab7072a5cdf6c54c63afb88f84071600d72654f7e19",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/019-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/020-cancel-base-1-builder-envoy.png",
+    "sha256": "28e00a1d9b3a3ce98376f164166a4715029e61e1f6718a9c6faf51c46f5354e6",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/020-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/020-cancel-base-2-independent-builder.png",
+    "sha256": "dec56e9b9232dd5f7ca8bab7072a5cdf6c54c63afb88f84071600d72654f7e19",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/020-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/022-cancelled-base-1-builder-envoy.png",
+    "sha256": "a2d29a5007150aeab58db87e0e282a827ca08116cde267a5a8a280da89d4a15b",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/022-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/022-cancelled-base-2-independent-builder.png",
+    "sha256": "7c29f30b253845ed0366da30fc3848ccd2a6a1ab14817baba98d61e6b883db8a",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/022-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "38b91d809d0d34f289fbaa27518cd95eac9bac271883da2844f423666fc93b11",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "7c29f30b253845ed0366da30fc3848ccd2a6a1ab14817baba98d61e6b883db8a",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/023-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/024-keyboard-return-1-builder-envoy.png",
+    "sha256": "3e7112526c89fa7050a92ce81fe42e3a2e611ed024ea4daf78ab6e55266d2e64",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/024-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-recovery/large/linux-arm64/024-keyboard-return-2-independent-builder.png",
+    "sha256": "7c29f30b253845ed0366da30fc3848ccd2a6a1ab14817baba98d61e6b883db8a",
+    "baseline": "tests/browser/story-baselines/live-construction-recovery/large/linux-arm64/024-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "43d7225ef287352075fa854ffe6d9de45ea976171909def58d169d610082a8b2",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/011-reserve-build-1-builder-envoy.png",
+    "sha256": "be895c75caa8ad96dd6a1072aa30a2e8a980cdf68dfae250fb79f517d437a274",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/011-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/011-reserve-build-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/011-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/012-reload-reservation-1-builder-envoy.png",
+    "sha256": "b8207dd5d702edbb5c6455f2c1a6b2350c94d6fb2e53f4aaf2e1798496af1deb",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/012-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/012-reload-reservation-2-independent-builder.png",
+    "sha256": "54d134108505456f5580f0ea2a9d1623ed38fcf2d817b3ff290d1297321994cc",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/012-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/014-completed-build-1-builder-envoy.png",
+    "sha256": "df738002b1dd8ce689f5d4238ebe0ed0adb414026d68ef59ae0df024f986c723",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/014-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/014-completed-build-2-independent-builder.png",
+    "sha256": "3e05448dcfe433e2f5d29daedbf0c801026ced86dca283e1c1ca9bc223783949",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/014-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "dc6e79b82c88adff323cf0b8518a7325ca879c1f937f2192511fe21bfea6b773",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "3e05448dcfe433e2f5d29daedbf0c801026ced86dca283e1c1ca9bc223783949",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/016-cancel-base-1-builder-envoy.png",
+    "sha256": "d193911a8c76f2eab6b5a2c8c32b9404518a020866df3a96a5a60c93b050c822",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/016-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/016-cancel-base-2-independent-builder.png",
+    "sha256": "3e05448dcfe433e2f5d29daedbf0c801026ced86dca283e1c1ca9bc223783949",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/016-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/018-cancelled-base-1-builder-envoy.png",
+    "sha256": "0f64c3a0b03cb14ef73e89f9c8febff572795a383b9b56685d635bd0de543a9e",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/018-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/018-cancelled-base-2-independent-builder.png",
+    "sha256": "b0f9090d8d2cb7421216ff7327127477da75c1de6554f2bbd02b941b764e58b5",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/018-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "715c09b7bd0af0b4a75d8c208c05cc28bed16f2a0ea54f40a35c291dec8f7399",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/019-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "b0f9090d8d2cb7421216ff7327127477da75c1de6554f2bbd02b941b764e58b5",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/019-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/020-keyboard-return-1-builder-envoy.png",
+    "sha256": "1d3dde838d86511421cca6bcb45659fc46f47350a9b039f58530ec8b93e628e1",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/020-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/phone/linux-arm64/020-keyboard-return-2-independent-builder.png",
+    "sha256": "b0f9090d8d2cb7421216ff7327127477da75c1de6554f2bbd02b941b764e58b5",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/phone/linux-arm64/020-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "4f47a56c4058c2db5215378e5ae69f217956cb3ccfb5e4c655e997528e09831c",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "dcf0e3a261d60d7c3080f9993ae22ffb88ad8034354bb8fe14f26d13499d7f12",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/011-reserve-build-1-builder-envoy.png",
+    "sha256": "45f4c00049ba78dc7aafaf690dc69662c38808ac4a29d36b05b2f94a55635e28",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/011-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/011-reserve-build-2-independent-builder.png",
+    "sha256": "dcf0e3a261d60d7c3080f9993ae22ffb88ad8034354bb8fe14f26d13499d7f12",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/011-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/012-reload-reservation-1-builder-envoy.png",
+    "sha256": "2f3648b165d05d923f480a8eff83699b19a8d45b5eb074ae9f76acc7c846e40a",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/012-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/012-reload-reservation-2-independent-builder.png",
+    "sha256": "dcf0e3a261d60d7c3080f9993ae22ffb88ad8034354bb8fe14f26d13499d7f12",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/012-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/014-completed-build-1-builder-envoy.png",
+    "sha256": "0b14141817370374d91c66d094f0ac796395ca012da311d967cdacba418aef86",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/014-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/014-completed-build-2-independent-builder.png",
+    "sha256": "0dfa97aa40ac24640d42fec819bc48413d7883ebd941e709f26754b868374171",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/014-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "7b464fe736722217f8b48d81bc720fadd0fb659d7f125e3c3a5ce7a0952ac6d3",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "0dfa97aa40ac24640d42fec819bc48413d7883ebd941e709f26754b868374171",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/016-cancel-base-1-builder-envoy.png",
+    "sha256": "2a4b71cdeb235c542db8495f7d78d41d57f913fdaf5985b841d0cf1e1f673b21",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/016-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/016-cancel-base-2-independent-builder.png",
+    "sha256": "0dfa97aa40ac24640d42fec819bc48413d7883ebd941e709f26754b868374171",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/016-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/018-cancelled-base-1-builder-envoy.png",
+    "sha256": "5426f1bf1c999b6810f8449636a4c0cef632448358af7b62fb271ebce1e2bdc6",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/018-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/018-cancelled-base-2-independent-builder.png",
+    "sha256": "5e96c43b0a4331eee82f2cd699b87f566d2762682567ea6555d3e951f35ccad3",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/018-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "557c6fdfadc6655584817ff915453b3620564ccd985ec87d57eee6e60218e618",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/019-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "5e96c43b0a4331eee82f2cd699b87f566d2762682567ea6555d3e951f35ccad3",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/019-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/020-keyboard-return-1-builder-envoy.png",
+    "sha256": "201bcdc29a46fe44d6be2d1b9fd67fba2cf15bc9fba83595aa8b356cb4572ed3",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/020-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/desktop/linux-arm64/020-keyboard-return-2-independent-builder.png",
+    "sha256": "5e96c43b0a4331eee82f2cd699b87f566d2762682567ea6555d3e951f35ccad3",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/desktop/linux-arm64/020-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "ca071f8f3c5d7797029d5684be2a83dc6e4a802e6f47437722281d9a5316cd8b",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "78313aec3d925c54d8bead611392a97d6649285cc303590d86ab2ad632186f0a",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/011-reserve-build-1-builder-envoy.png",
+    "sha256": "0dbd958daf445414e16aa8f23b90211af96cbe87a41a0da6fd05f548674ea942",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/011-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/011-reserve-build-2-independent-builder.png",
+    "sha256": "78313aec3d925c54d8bead611392a97d6649285cc303590d86ab2ad632186f0a",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/011-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/012-reload-reservation-1-builder-envoy.png",
+    "sha256": "3cea9bddbabfccaab6e410ee6af5354f7bd022365f4a2932a5874d0827bb3ff1",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/012-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/012-reload-reservation-2-independent-builder.png",
+    "sha256": "78313aec3d925c54d8bead611392a97d6649285cc303590d86ab2ad632186f0a",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/012-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/014-completed-build-1-builder-envoy.png",
+    "sha256": "800aa785676dace04b4586c6567094aae7dcf480fa6a3616dbed7180afc68b54",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/014-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/014-completed-build-2-independent-builder.png",
+    "sha256": "4a5228e1c32b588d7ea448fcba5315ee8b4c3cef764d064b89b098da62589274",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/014-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "bad8c57fce5c7b451cd8919ca635f66cb7d3bd99133660e53d2edced763ec0e7",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "4a5228e1c32b588d7ea448fcba5315ee8b4c3cef764d064b89b098da62589274",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/016-cancel-base-1-builder-envoy.png",
+    "sha256": "077834504658ed0e7b03fb43bff6c20648bcef95ba943b6bbc548b7b2db00762",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/016-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/016-cancel-base-2-independent-builder.png",
+    "sha256": "4a5228e1c32b588d7ea448fcba5315ee8b4c3cef764d064b89b098da62589274",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/016-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/018-cancelled-base-1-builder-envoy.png",
+    "sha256": "559298ee6f58ea4bbba540291d9916452370cec78653851dbacccea3c3cf9a44",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/018-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/018-cancelled-base-2-independent-builder.png",
+    "sha256": "3ba6d324c51267a54d0bd21d4339a8f5c5c6819575324a40a4d97555f738ee7c",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/018-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "d207a8a4716c74e49cfbdbc641fac3508f6a3343b7c89e438fff0e326d7e6ed1",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/019-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "3ba6d324c51267a54d0bd21d4339a8f5c5c6819575324a40a4d97555f738ee7c",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/019-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/020-keyboard-return-1-builder-envoy.png",
+    "sha256": "30a0e6302ad33268a6f683722f2fda412bddde7eb6049256606da64ddc090384",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/020-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/short/linux-arm64/020-keyboard-return-2-independent-builder.png",
+    "sha256": "3ba6d324c51267a54d0bd21d4339a8f5c5c6819575324a40a4d97555f738ee7c",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/short/linux-arm64/020-keyboard-return-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png",
+    "sha256": "99c61a63e735b9bd802184443e6a67350bbe9eb6c734694b2a9fc94c1b576b8c",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/010-inspect-development-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/010-inspect-development-2-independent-builder.png",
+    "sha256": "28ce8b9e275eeb1088cd1c38e3d4e3e649813b6ea8b2e1c8f3c9aa553c6d2ce1",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/010-inspect-development-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/011-reserve-build-1-builder-envoy.png",
+    "sha256": "f2d7751f4aec17f81f0a289a26a6a905686e0d714510cd378c98d19a79c00362",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/011-reserve-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/011-reserve-build-2-independent-builder.png",
+    "sha256": "28ce8b9e275eeb1088cd1c38e3d4e3e649813b6ea8b2e1c8f3c9aa553c6d2ce1",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/011-reserve-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/012-reload-reservation-1-builder-envoy.png",
+    "sha256": "ec038e32bef64edf14ed15aa85f9f604bbb545b4a22ff86862ed22fdf4a570f9",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/012-reload-reservation-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/012-reload-reservation-2-independent-builder.png",
+    "sha256": "28ce8b9e275eeb1088cd1c38e3d4e3e649813b6ea8b2e1c8f3c9aa553c6d2ce1",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/012-reload-reservation-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/014-completed-build-1-builder-envoy.png",
+    "sha256": "ff94240e4ea0228c7a3b7490450915243cce65c4f6722fa46e300f552644851d",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/014-completed-build-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/014-completed-build-2-independent-builder.png",
+    "sha256": "3d2d1fc3f3b3e2effa980adc4206196ab03706972a498b8ccb32f365d1386e32",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/014-completed-build-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png",
+    "sha256": "e78691bfa358936e21a9541f4c19c1c906f611584eb2e1e504914511658a6a32",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/015-reserve-cancellable-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png",
+    "sha256": "3d2d1fc3f3b3e2effa980adc4206196ab03706972a498b8ccb32f365d1386e32",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/015-reserve-cancellable-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/016-cancel-base-1-builder-envoy.png",
+    "sha256": "07d5ec88bfecc41782242de5203c34a398b279fe8c1c48adc428f7de0ed998f4",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/016-cancel-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/016-cancel-base-2-independent-builder.png",
+    "sha256": "3d2d1fc3f3b3e2effa980adc4206196ab03706972a498b8ccb32f365d1386e32",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/016-cancel-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/018-cancelled-base-1-builder-envoy.png",
+    "sha256": "b8a1fc2cd1723ab3277a14ab03bab7c8e8f3566145c7249d50d7d647aaf5cf8e",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/018-cancelled-base-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/018-cancelled-base-2-independent-builder.png",
+    "sha256": "0eab46992338ec931979f09a247e7f7e17b91619a3524766cfcfc70a3e50dc2f",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/018-cancelled-base-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png",
+    "sha256": "6275f93c2ea26eaa71d08d98740458a45e1ef90d1e1df18d38aacce06bd0148b",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/019-recover-settled-outcome-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/019-recover-settled-outcome-2-independent-builder.png",
+    "sha256": "0eab46992338ec931979f09a247e7f7e17b91619a3524766cfcfc70a3e50dc2f",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/019-recover-settled-outcome-2-independent-builder.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/020-keyboard-return-1-builder-envoy.png",
+    "sha256": "a3f874c41a2733fd31178915d61bb2cd3cba6193359e37e85fe3f7cf803f665f",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/020-keyboard-return-1-builder-envoy.png"
+  },
+  {
+    "path": "/tmp/cluster-pr56-reviewer-candidates/test-results/stories/live-construction-ordinary/large/linux-arm64/020-keyboard-return-2-independent-builder.png",
+    "sha256": "0eab46992338ec931979f09a247e7f7e17b91619a3524766cfcfc70a3e50dc2f",
+    "baseline": "tests/browser/story-baselines/live-construction-ordinary/large/linux-arm64/020-keyboard-return-2-independent-builder.png"
+  }
+]

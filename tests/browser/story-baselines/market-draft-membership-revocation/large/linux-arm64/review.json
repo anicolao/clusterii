@@ -1,0 +1,134 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "source": {
+    "commit": "bcede878538d0f237a8f6a2885e62add59b46a21",
+    "dirty": false,
+    "spec": "tests/browser/market-membership-revocation.story.spec.ts",
+    "specSha256": "f9045b8872531a189b8efbeb8fdc870a8a76b507f3befe00825016ac7fe8e90a"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "manifest": "../clusterii-recovery-evidence/pr140-economy-current-43090793266/large/test-results/stories/market-draft-membership-revocation/large/linux-arm64/story.json",
+  "captures": [
+    {
+      "image": "010-inspect-owned-focus-1-market-envoy-campaign-device.png",
+      "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+      "previousSha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
+      "changed": true
+    },
+    {
+      "image": "010-inspect-owned-focus-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    },
+    {
+      "image": "011-edit-partial-allocation-1-market-envoy-campaign-device.png",
+      "sha256": "4c633a023f0f7444eeb13c2bcaf606cfb77971cbbb29e3ae41ba4633fe241b08",
+      "previousSha256": "fde422ea9627f792c4132b4a3c1911988bf97a38d8fbc242e4b6f6d7f80c2f0e",
+      "changed": true
+    },
+    {
+      "image": "011-edit-partial-allocation-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    },
+    {
+      "image": "012-navigate-with-intent-1-market-envoy-campaign-device.png",
+      "sha256": "35b12caaa8b0a6b009808b6744ca058071441ffaef215da95aa6f5dd0bc86fed",
+      "previousSha256": "c3c32a9b3e7aa90b3a83a2630971c2e14f440a6dc754b969e2ba6b940fc90ac6",
+      "changed": true
+    },
+    {
+      "image": "012-navigate-with-intent-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    },
+    {
+      "image": "014-recover-with-inflight-view-1-market-envoy-campaign-device.png",
+      "sha256": "9c2c1a47c58d9cdd565dfd3e9756079191eafeed8a2865e20670858e55a3d02f",
+      "previousSha256": "9c2c1a47c58d9cdd565dfd3e9756079191eafeed8a2865e20670858e55a3d02f",
+      "changed": false
+    },
+    {
+      "image": "014-recover-with-inflight-view-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    },
+    {
+      "image": "016-observe-revoked-access-1-market-envoy-campaign-device.png",
+      "sha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "previousSha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "changed": false
+    },
+    {
+      "image": "016-observe-revoked-access-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    },
+    {
+      "image": "018-reject-late-private-view-1-market-envoy-campaign-device.png",
+      "sha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "previousSha256": "69eecb66ff2e8874219701ba39ed64192ec34d1154029d37d20990455937abe2",
+      "changed": false
+    },
+    {
+      "image": "018-reject-late-private-view-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    },
+    {
+      "image": "020-recover-restored-membership-1-market-envoy-campaign-device.png",
+      "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+      "previousSha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/market-repeat-44dc-reviewed.json"
+    },
+    {
+      "image": "020-recover-restored-membership-2-independent-investor.png",
+      "sha256": "1d714804e015f547813230659e35f246e8c1c396bee13fcb2b7a569a2c1ee473",
+      "previousSha256": "4eebd1cb2cd1f6c7b95aefd10c1d1d3ee491ac0348aaa7a3d10db50f5ebbcbf1",
+      "changed": true
+    }
+  ],
+  "scope": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/market-repeat-44dc-reviewed.json",
+      "target": "9184937e02984ed6112eac832d4a117839176dff",
+      "request": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+      "mode": "strict first failure; incomplete story manifest not emitted",
+      "scope": "One exact inspected actual, identical in full CI and isolated repeat and identical to already-reviewed initial owned-focus baseline. No complete-story claim; final peer comparison pending."
+    }
+  ]
+}

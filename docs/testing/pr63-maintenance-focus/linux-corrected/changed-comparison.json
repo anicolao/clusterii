@@ -1,0 +1,34 @@
+[
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "sha256": "6557d6a6df04d3e88995233c78dd2977cb76a6083b2371946d3839130bd2ac7b",
+    "disposition": "changed-needs-independent-inspection",
+    "previousPath": "/tmp/cluster-pr63-paused-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+    "previousSHA256": "af211b4e7a4ac226b4b08540f1beb57756cd439f4e5aa6f7a22684cc4c32ac02",
+    "changedPixels": 76761,
+    "bounds": {
+      "minX": 413,
+      "minY": 111,
+      "maxX": 1230,
+      "maxY": 688
+    },
+    "diffPath": "/tmp/cluster-pr63-focus-linux/comparisons/paused-fleet-travel/short/linux-arm64/024-pause-travel-1-fleet-marshal.png"
+  },
+  {
+    "path": "/tmp/cluster-pr63-focus-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "relative": "paused-fleet-travel/short/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "sha256": "7bf73dd3c1e71244da76b6e627a7cb0fb48ab84bfa05af3241dcad5a4ac28a3b",
+    "disposition": "changed-needs-independent-inspection",
+    "previousPath": "/tmp/cluster-pr63-paused-linux/originals/test-results/stories/paused-fleet-travel/short/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+    "previousSHA256": "c0a0119efb598674003608c979b9063ca307791b4adf4e0f524e235bd5cf301c",
+    "changedPixels": 71140,
+    "bounds": {
+      "minX": 413,
+      "minY": 87,
+      "maxX": 1230,
+      "maxY": 688
+    },
+    "diffPath": "/tmp/cluster-pr63-focus-linux/comparisons/paused-fleet-travel/short/linux-arm64/027-resume-travel-1-fleet-marshal.png"
+  }
+]

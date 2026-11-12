@@ -1,0 +1,20 @@
+{
+  "run": 43137283407,
+  "target": "9b7bf150bc070a6d6159ebee8d0baf68f3fb4582",
+  "executor": "4e70f85f829bcce23f6e57c287c3b7ce3285cfe2",
+  "request": "eb382adf12ab0fc54d5b0994b291afbf70c10822",
+  "projects": [
+    "short"
+  ],
+  "stories": {
+    "selected-history-consent": 68
+  },
+  "originalDeadlineMs": 300000,
+  "retries": 0,
+  "updateSnapshots": "none",
+  "guardsPassed": 8,
+  "actualCollection": 1,
+  "priorFailureRun": 43134611252,
+  "diagnosticNote": "Initial guard invocation from wrong cwd failed3 filesystem assertions; all8 passed in exact executor cwd before request. No guard modified to accommodate failure.",
+  "retentionDays": 14
+}

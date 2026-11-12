@@ -1,0 +1,59 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "contextual-aftermath-components",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 3840,
+      "height": 2160
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "dirty": false,
+    "spec": "tests/e2e/011-contextual-aftermath/components.spec.ts",
+    "specSha256": "8292cced6e642644147ad31473c00541cebdb166ba0acaa90eb0e0f4b1ba3d1d"
+  },
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/contextual-aftermath-components/large/linux-arm64/story.json",
+  "inspectionScope": "Recorded tick4 versus current control qualification, losses, split orbit/surface ownership and privacy qualification readable; Back/Inspect controls contained. Secondary prose remains scrollable. Scoped regression only.",
+  "captures": [
+    {
+      "image": "001-recorded-gallery-outcome-1-component-reviewer.png",
+      "sha256": "050b3715a3a4767a86da11cb253b7aa10b55ad0a5bf194e2dc92068dacd1193d",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "002-inspect-lab-outcome-1-standard-motion-comparison.png",
+      "sha256": "13af7f56ed583170d5e38b66c75d57f04674efe27fc7f4544848faaff6a59900",
+      "previousSha256": null,
+      "changed": true
+    },
+    {
+      "image": "002-inspect-lab-outcome-2-reduced-motion-comparison.png",
+      "sha256": "13af7f56ed583170d5e38b66c75d57f04674efe27fc7f4544848faaff6a59900",
+      "previousSha256": null,
+      "changed": true
+    }
+  ]
+}

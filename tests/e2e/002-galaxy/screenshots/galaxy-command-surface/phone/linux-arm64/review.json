@@ -1,0 +1,116 @@
+{
+  "review": "docs/testing/top-pr-green-20261103/menu-access-inspection.json",
+  "mode": "reviewed-baseline-candidates",
+  "story": "galaxy-command-surface",
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "source": {
+    "commit": "c7fd2d3d79616039922fb380e6a3de061a054957",
+    "dirty": false,
+    "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
+    "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
+  },
+  "target": "0c56cdec",
+  "run": 43136140057,
+  "manifestSha256": "d6b4f807d5169d84ab494a6b07dbf41d47bf1f9120c6bcbb2cab0788e08aacc1",
+  "inspectionScope": "All36 distinct changed originals individually inspected:9 each viewport, phone/desktop/short at native display, large3840x2160 displayed2048x1152. Seat confirmation and named action/footer remain readable; construction paid69/remaining131 and available costs/queue/cancel controls remain visible; market draft73 with123/100 validation and disabledApply retained; focused training input outline complete; acknowledged tick1 credits202.8 and production2.8 readable. Deliberately bounded readers clip secondary neighboring paragraphs/rows (including short science-earned lower row); this does not claim complete ledger reading in one frame or full design/normal-motion certification. Compared old short market and phone admission originals: measured header/footer placement changes, truthful state retained.",
+  "applicability": "Only Conversations short media spacing and FleetRoute editor CSS differ since0c56cdec. These three stories use waiting admission, construction/economy/market/menu surfaces, never Conversations or FleetRoute. Their specs, shared helpers, runtime and renderer are unchanged.",
+  "captures": [
+    {
+      "image": "006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045",
+      "previousSha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045",
+      "changed": false
+    },
+    {
+      "image": "011-read-galaxy-1-chart-envoy.png",
+      "sha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457",
+      "previousSha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457",
+      "changed": false
+    },
+    {
+      "image": "012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf",
+      "previousSha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf",
+      "changed": false
+    },
+    {
+      "image": "013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1",
+      "previousSha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1",
+      "changed": false
+    },
+    {
+      "image": "015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "8358181612e0c0d8ddb9e2a9d90596b50cdf5f8e94d1b1f1e45141455898edd0",
+      "previousSha256": "c546f218d90d2254ac66f350a02d8b1fb73daf02478dd8088853eb761f89a5c6",
+      "changed": true
+    },
+    {
+      "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "5fac367e3e47c8d371f73bbc0972b3abeb66d3500a2023dcd804094401b37598",
+      "previousSha256": "ec1aeba49e682bc1e2c6a7cce8b88bf4551ba3e9c0d1bdd099083e5f490a987c",
+      "changed": true
+    },
+    {
+      "image": "017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064",
+      "previousSha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064",
+      "changed": false
+    },
+    {
+      "image": "018-review-surface-development-1-chart-envoy.png",
+      "sha256": "3d93185b784d69a2a38eeba9f49929d7feb579b16866a63fcd5c5ed3d4d15765",
+      "previousSha256": "8c91f826b652c63e8c711e11f962c0f4d4ccc8f034b01f8106c0c77a0009f25c",
+      "changed": true
+    },
+    {
+      "image": "019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "082291198526d9b2d47eef146398a17f71be1de9faac2ca620ecb3363fa876c0",
+      "previousSha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338",
+      "changed": true
+    },
+    {
+      "image": "020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1",
+      "previousSha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1",
+      "changed": false
+    },
+    {
+      "image": "021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb",
+      "previousSha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb",
+      "changed": false
+    },
+    {
+      "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652",
+      "previousSha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652",
+      "changed": false
+    }
+  ]
+}

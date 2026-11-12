@@ -1,0 +1,160 @@
+{
+  "head": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+  "run": 43151818973,
+  "job": 130962547976,
+  "conclusion": "failure",
+  "completedAt": "2026-11-12T06:51:25Z",
+  "exactStepCompletedAt": "2026-11-12T06:48:26Z",
+  "logComplete": true,
+  "logBytes": 3447698,
+  "logSha256": "59e3cae15efe9d93f1466eedede5e043a96a4c75dfd10e1796492a370e80bcc2",
+  "firstFailures": [
+    {
+      "pixels": 128240,
+      "ratioText": "0.39 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-cancellation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 128168,
+      "ratioText": "0.39 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-formation/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 128240,
+      "ratioText": "0.39 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-reorganization/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 83238,
+      "ratioText": "0.25 of all image pixels) are different.",
+      "snapshot": "e2e/010-zero-science/screenshots/live-zero-science/phone/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 83238,
+      "ratioText": "0.25 of all image pixels) are different.",
+      "snapshot": "e2e/011-contextual-aftermath/screenshots/contextual-aftermath/phone/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 126079,
+      "ratioText": "0.38 of all image pixels) are different.",
+      "snapshot": "e2e/012-fleet-contacts/screenshots/live-fleet-contacts/phone/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png"
+    },
+    {
+      "pixels": 27885,
+      "ratioText": "0.02 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/campaign-scheduled-start/desktop/linux-arm64/024-awaiting-assignment-1-dawn-envoy-1.png"
+    },
+    {
+      "pixels": 897203,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-cancellation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 897090,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-formation/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 897177,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-reorganization/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 917178,
+      "ratioText": "0.64 of all image pixels) are different.",
+      "snapshot": "e2e/010-zero-science/screenshots/live-zero-science/desktop/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 917189,
+      "ratioText": "0.64 of all image pixels) are different.",
+      "snapshot": "e2e/011-contextual-aftermath/screenshots/contextual-aftermath/desktop/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 898622,
+      "ratioText": "0.63 of all image pixels) are different.",
+      "snapshot": "e2e/012-fleet-contacts/screenshots/live-fleet-contacts/desktop/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png"
+    },
+    {
+      "pixels": 5667360,
+      "ratioText": "0.69 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-cancellation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 5667373,
+      "ratioText": "0.69 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-formation/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 5667215,
+      "ratioText": "0.69 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-reorganization/large/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 7854,
+      "ratioText": "0.01 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device.png"
+    },
+    {
+      "pixels": 5701594,
+      "ratioText": "0.69 of all image pixels) are different.",
+      "snapshot": "e2e/010-zero-science/screenshots/live-zero-science/large/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 5701582,
+      "ratioText": "0.69 of all image pixels) are different.",
+      "snapshot": "e2e/011-contextual-aftermath/screenshots/contextual-aftermath/large/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 5670079,
+      "ratioText": "0.69 of all image pixels) are different.",
+      "snapshot": "e2e/012-fleet-contacts/screenshots/live-fleet-contacts/large/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png"
+    },
+    {
+      "pixels": 551487,
+      "ratioText": "0.60 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-cancellation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 551432,
+      "ratioText": "0.60 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-formation/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 551562,
+      "ratioText": "0.60 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/live-fleet-reorganization/short/linux-arm64/010-inspect-formation-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 101514,
+      "ratioText": "0.12 of all image pixels) are different.",
+      "snapshot": "browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png"
+    },
+    {
+      "pixels": 494068,
+      "ratioText": "0.54 of all image pixels) are different.",
+      "snapshot": "e2e/010-zero-science/screenshots/live-zero-science/short/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 494051,
+      "ratioText": "0.54 of all image pixels) are different.",
+      "snapshot": "e2e/011-contextual-aftermath/screenshots/contextual-aftermath/short/linux-arm64/013-form-0-1-fleet-marshal.png"
+    },
+    {
+      "pixels": 552940,
+      "ratioText": "0.60 of all image pixels) are different.",
+      "snapshot": "e2e/012-fleet-contacts/screenshots/live-fleet-contacts/short/linux-arm64/010-inspect-empty-contact-history-1-fleet-pathfinder.png"
+    }
+  ],
+  "pixelMismatchCount": 27,
+  "missingReferenceCount": 0,
+  "timeoutFailureCount": 0,
+  "otherFailureCount": 0,
+  "limits": "First failures mask later assertions. Pixel mismatch cause and correctness require actual image inspection. No promotion authorized by this inventory.",
+  "artifact": {
+    "id": 13921678685,
+    "size": 6409838817,
+    "sha256": "f20d35df03ab455af966e9cab8f1e7e336d129415729d9d753ab2e147ff744a2",
+    "expiresAt": "2027-02-10T03:59:38Z",
+    "retention": "Remote original; selective comparison entries only, no full local archive."
+  }
+}

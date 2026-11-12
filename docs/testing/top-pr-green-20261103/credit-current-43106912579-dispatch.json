@@ -1,0 +1,37 @@
+{
+  "run": 43106912579,
+  "request": "45dde0047cf2eed1e7c8751414439d4940382464",
+  "executor": "b2edad109ff446658a20b7ac3a83bfb59ea880d7",
+  "target": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "branch": "investigate/pr140-credit-current-20261111",
+  "basis": "Completed phone and desktop cohorts at unchanged production source730297e7 each failed credit-exchange ordinary/recovery at sender compose011. Four failures require current output inspection; original full job remains live and its artifact unavailable.",
+  "scope": {
+    "credit-exchange-ordinary": 29,
+    "credit-exchange-recovery": 25,
+    "viewports": [
+      "phone",
+      "desktop",
+      "large",
+      "short"
+    ],
+    "totalCaptures": 216
+  },
+  "checks": {
+    "guardTestsPassed": 7,
+    "actualCollectionPerViewport": 2,
+    "productionSpecHelpersReferenceTreeDelta": 0,
+    "retries": 0,
+    "snapshotUpdates": "none",
+    "deadlines": "original",
+    "renderer": "pinned existing Linux arm64"
+  },
+  "implementation": "Reuse established current-economy candidate executor; change only exact case/request selection, branch trigger and expected full-manifest capture counts. Both launchers preserve request identity.",
+  "acceptance": "Generation only. Compare every output against current references and inspect all changed images before promotion. No production, test, threshold or required workflow change on PR140.",
+  "retentionDays": 14,
+  "preservedRuns": [
+    43090488602,
+    43104256802,
+    43104256749
+  ],
+  "statusAtRecording": "in_progress"
+}

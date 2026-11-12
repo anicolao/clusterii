@@ -159,6 +159,60 @@ test("undecodable visible images fail readiness", async () => {
     },
   );
 });
+test("offline readiness retains decoded background bytes but rejects unseen broken art", async () => {
+  let requests = 0;
+  const server = Bun.serve({
+    hostname: "127.0.0.1",
+    port: 0,
+    fetch: () => {
+      requests++;
+      return new Response(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><rect width="20" height="20" fill="gold"/></svg>',
+        {
+          headers: {
+            "content-type": "image/svg+xml",
+            "cache-control": "no-store",
+          },
+        },
+      );
+    },
+  });
+  try {
+    await fixture(
+      `<div style="width:60px;height:60px;background-image:url(http://127.0.0.1:${server.port}/known.svg)"></div>`,
+      async (page) => {
+        await page.evaluate(captureReady, []);
+        const loadedRequests = requests;
+        expect(loadedRequests).toBeGreaterThan(0);
+        await page.context().setOffline(true);
+        await page.evaluate(captureReady, []);
+        expect(requests).toBe(loadedRequests);
+        await page.locator("div").evaluate((el) => {
+          el.style.backgroundImage = 'url("data:image/png;base64,YmFk")';
+        });
+        await expect(page.evaluate(captureReady, [])).rejects.toThrow();
+      },
+    );
+  } finally {
+    server.stop(true);
+  }
+});
+test("full-page instruments cannot cover the measured campaign rail", async () => {
+  for (const label of ["Return briefing panel", "Conversations panel"])
+    await fixture(
+      `<header class="command-rail" inert style="height:98px">Campaign context</header><section aria-label="${label}" style="position:absolute;inset:58px 0 0;background:black">Instrument</section>`,
+      async (page) => {
+        await expect(
+          page.evaluate(assertScreenFit, { surface: "game" as const }),
+        ).rejects.toThrow(`Campaign rail covered: ${label}`);
+        await page.getByLabel(label, { exact: true }).evaluate((panel) => {
+          panel.style.top = "98px";
+        });
+        await page.evaluate(assertScreenFit, { surface: "game" as const });
+      },
+    );
+});
+
 test("geometry rejects undersized, overlapping and out-of-viewport controls", async () => {
   for (const [html, message] of [
     ['<button style="width:20px">Bad</button>', "under 44px"],

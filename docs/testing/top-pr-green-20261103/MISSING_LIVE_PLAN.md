@@ -1,0 +1,9 @@
+# Current-source missing live references
+
+PR140 at8eeea5e has absent four-size route-force-review, live-zero-science, contextual-aftermath and live-fleet-contacts references. Older retained candidates predate reader-label, Economy/Research and shared scene changes; a matching spec alone does not prove source compatibility. Do not substitute them automatically.
+
+Request004ae8f1 binds target0a415b89 and executor0ef45ee2. The four existing complete journeys are the only collection, one per original isolated service lifetime. Each keeps real authenticated admission/actions, reducers, receipts, recovery and original deadlines. No tests are edited. The existing ordinary service boundary is reduced to the one route story;010/011/012 retain separate emulator lifetimes. Original complete source contract and README were read, no story/layout migration introduced.
+
+Seven guard tests reject replay, wrong branch/mode/source/scope, wrong/empty/duplicate collection and cross-group selection. Actual Playwright collection proves sixteen total tests. The first temporary all-project report filter retained empty specs and was rejected; removing only empty diagnostic report nodes produced exact4perviewport and1pergroup. This was a local report-parser error, no browser behavior failure or guard weakening. Executor committed before that diagnostic was corrected; request was not dispatched until the actual collection passed.
+
+The branch-only, request-path-only workflow has contents:read,120-minute infrastructure bound, pinned renderer and14-day artifacts. No required PR workflow changes, no generation-to-reference writes, no retries, no snapshot updates, telemetry disabled. All376 originals require complete passed manifests and actual visual/hash review before any new promotion. Admin projections are not substituted for authenticated denial proofs. Main PR remains failed until current-head required checks prove otherwise.

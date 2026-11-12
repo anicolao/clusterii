@@ -1,0 +1,3 @@
+# Propagated post-merge history validation
+
+Parent9306f80e corrects actual PR54 base-check failure after a later appended prompt. Preserve PR55 explicit two-LF separator metadata while reusing exact committed append-transition proof. No prompt body normalization or archive/order/continuation weakening.19prompt fixtures pass, including later append and negative whitespace cases; full story-policy12tests plus guard pass. No browser/build rerun, production, baseline or deadline change. Commit then check immutable current HEAD/index against exact parent9306f80e before push. Existing53jobs and older54/55failures remain retained.
