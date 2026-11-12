@@ -317,3 +317,12 @@ Exact continuation: let integrated checks finish, diagnose terminal failures onl
 Independently viewed short1280x720 and large3840x2160 science-rate-sources010 chart-envoy captures from strict43296531488. Short retains heading/rate/assumptions and complete fixed Return to galaxy action; lower source rows continue below scroll boundary. Source test readTotals explicitly focuses Science source ledger and presses End; still must inspect resulting totals captures before claiming all content reviewed. Large retains map context, separate selected-system inspector and complete source/empire ledger; preview resized2048x1152, so this is composition inspection only. Together with prior phone/desktop010 review, this covers four opening views, not all96images or full design approval.
 
 Exact continuation: let current checks complete and inspect totals/delivered/recovery science states plus actual shared gallery/lab evidence. Maintain concept-fidelity/release holds; no agent interruption or merge.
+
+
+## Supervisor PR140 short totals accessibility evidence
+
+2026-11-12 20:50 UTC: inspected pane first; no new agent work or dirty top files. Public140 remains6a2cbeee. Documentation now SUCCESS alongside publish/generate; application43299783685 and full strict43299783595 still IN_PROGRESS. No duplicate prompt/run or intervention.
+
+Independently viewed short science-rate-sources015 normal-motion chart-envoy totals and018 reduced-motion tidal-envoy totals from43296531488. After keyboard End, each shows complete ledger focus outline, before/after Innovation values, last delivered science, calculation explanation, uncertainty/proposed-rule copy and complete Return to galaxy action above bottom edge. Chart rate1.404 with Innovation1 vs tidal1.4 with Innovation0 remain distinct; both delivered1.4. This resolves the specific short opening-view below-scroll-boundary concern for these totals views, not all motion/privacy or complete design evidence.
+
+Exact continuation: await integrated terminal checks; inspect remaining recovered/delivered/component states and applicable approved visual references. Preserve design/release holds. No merge.
