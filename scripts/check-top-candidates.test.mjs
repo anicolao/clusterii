@@ -109,7 +109,7 @@ import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 test("checkout depth contains immutable request target", () => {
   const depth = Number(readFileSync(".github/workflows/top-candidates.yml", "utf8").match(/fetch-depth: (\d+)/)[1]);
-  const request = { target: execFileSync("git", ["rev-parse", "9b7bf150"], { encoding: "utf8" }).trim() };
+  const request = JSON.parse(readFileSync(".github/recovery/top-candidates.json", "utf8"));
   const history = execFileSync("git", ["rev-list", `--max-count=${depth}`, "HEAD"], {encoding:"utf8"}).trim().split("\n");
   assert.ok(history.includes(request.target), "Checkout must include source target, not just request and executor");
 });
