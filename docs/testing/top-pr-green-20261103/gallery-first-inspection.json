@@ -1,0 +1,69 @@
+{
+  "artifact": {
+    "id": 13894258735,
+    "node_id": "MDg6QXJ0aWZhY3QxMzg5NDI1ODczNQ==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 4971092037,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13894258735",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13894258735/zip",
+    "expired": false,
+    "digest": "sha256:a27ccf87caa5c62f0296b9522666c5e1bab3cb28ad05d2547a53b48d2aeace6b",
+    "created_at": "2026-11-11T22:01:42Z",
+    "updated_at": "2026-11-11T22:01:42Z",
+    "expires_at": "2027-02-09T19:47:39Z",
+    "workflow_run": {
+      "id": 43090488602,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/admission-briefing-composition",
+      "head_sha": "730297e72db62967d28db609a788fb06edb9d1d5"
+    }
+  },
+  "rangeBytes": 2141924,
+  "entries": [
+    {
+      "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-desktop/browser/story-baselines/identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-actual.png",
+      "size": 427026,
+      "sha256": "d6b79dc93dfb1ccd4d56f053eb99b967ff67a8130a95209d65321423ce457748",
+      "crc32": "b895764a"
+    },
+    {
+      "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-desktop/browser/story-baselines/identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-diff.png",
+      "size": 192293,
+      "sha256": "6d33dffe19ba35ac532255db3cab1c8495943ea04d1adab82f74c02a0e92b9a0",
+      "crc32": "2baba1cd"
+    },
+    {
+      "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-desktop/browser/story-baselines/identity-component-gallery/desktop/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-expected.png",
+      "size": 427558,
+      "sha256": "b8e618e3112c0abfac116627d6137ae610eced01835cedeb1b2218e779e8b23f",
+      "crc32": "59a29566"
+    },
+    {
+      "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-actual.png",
+      "size": 51514,
+      "sha256": "62708b623b12c2654c588129dd99ba02bcb6b39ad21a687709ba0885c283f6c0",
+      "crc32": "8d531c82"
+    },
+    {
+      "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-diff.png",
+      "size": 43281,
+      "sha256": "3cc3202d9a14d8331d4d441bd8fe325120b6e2a2af8f385e2a8dc263b8a5a93a",
+      "crc32": "847e3067"
+    },
+    {
+      "name": "test-results/stories/browser-identity-gallery.s-a2797-and-feedback-control-states-phone/browser/story-baselines/identity-component-gallery/phone/linux-arm64/014-research-disclosure-1-developer-applied-research-disclosure-expected.png",
+      "size": 49276,
+      "sha256": "caadf93825af8a8ff69b506bcee8db4b496ed3974fc12e2564d1287049594975",
+      "crc32": "b0466b5b"
+    }
+  ],
+  "integrity": "Exact HTTP Content-Range and API size; selected entries decoded with ZIP CRC and individual SHA256. Full archive SHA not verified; no local archive retained.",
+  "inspection": {
+    "reviewer": "Implementation agent under direct human inspect-before-approval instruction",
+    "viewed": "All six phone and desktop expected/actual/diff originals",
+    "disposition": "Phone and desktop exact actuals acceptable scoped regression changes; no reference import until complete current family comparison and remaining viewport inspection.",
+    "finding": "Only the research internal radio-list scroll position changes. Corrected actual reveals selected Investing with 1.4 retained science; old expected hides selected Investing while displaying unchecked Navigation. Applied tick1 record, history disclosure focus, queue action and surrounding specimens unchanged. Neighbouring document content is deliberately scrolled, not automatic full-content visibility.",
+    "source": "CampaignResearch selected-track effect reveals the externally selected row inside its own list without focusing it. No new production fix needed for this observed difference."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "target": "36ba7239356acaa837d854640aedda4cc90d2e4e",
+  "executor": "a7c2bbaa2f3c28a79e61545436e0fd9b91d7425e",
+  "request": "b487b2f630124eddd4ae6d544066ed59220a386a",
+  "run": 43125630873,
+  "mode": "generate",
+  "capturesByStory": {
+    "interrupted-fleet-route": 40,
+    "paused-fleet-travel": 34
+  },
+  "expectedViews": 296,
+  "actualCollectedTests": 8,
+  "guardTestsPassed": 7,
+  "retries": 0,
+  "updateSnapshots": "none",
+  "originalDeadlineMs": 240000,
+  "retentionDays": 14,
+  "approval": false,
+  "preservedEvidence": "43119625703 original phone/short containment failures and complete cargo outputs. This changed-source run excludes cargo; no identical retry."
+}
