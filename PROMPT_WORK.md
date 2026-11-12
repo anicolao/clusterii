@@ -1045,3 +1045,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record complete phone briefing/history image inspection, three bounded execution handles and memory-only archive provenance.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete retained desktop briefing and history inspection while monitoring the sole corrected short and travel-force runs.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect complete retained large briefing and history originals with exact hashes and explicit display-resolution limits.
