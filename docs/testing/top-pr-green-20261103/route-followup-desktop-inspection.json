@@ -1,0 +1,2069 @@
+{
+  "families": [
+    {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/story.json",
+      "sha256": "00184799ab433bf4409cae7b0f677af9ae7de95ab1fd4da464adf6b726a24111",
+      "source": {
+        "commit": "c86b76d471fcb3f3429c60b5540f4fceb74facf9",
+        "dirty": false,
+        "spec": "tests/browser/fleet-route-recovery.story.spec.ts",
+        "specSha256": "606d6b63415dfc70034091bfed261c0e41bcaae61448df14fb43c2985bebd956"
+      },
+      "views": 40
+    },
+    {
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/story.json",
+      "sha256": "4a68d4426d1d59624be48f3454d0d901d00a0d0e117aa3a1c757e9f9702d8243",
+      "source": {
+        "commit": "c86b76d471fcb3f3429c60b5540f4fceb74facf9",
+        "dirty": false,
+        "spec": "tests/browser/fleet-travel-catchup.story.spec.ts",
+        "specSha256": "4af5646259515907806f7d659968382ce6473860d0af9011f5ae18e6aec8907c"
+      },
+      "views": 34
+    }
+  ],
+  "records": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "b2a7d4ce27b462c8eb8355f63c012400ec459b9127f6f753ab0bad998921ee55",
+      "oldSha256": "b2a7d4ce27b462c8eb8355f63c012400ec459b9127f6f753ab0bad998921ee55",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "oldSha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "sha256": "da5a4d87f36b97e64fb2d95d4e701348de1b70c8a7e37d4447356e80a4f0fc5d",
+      "oldSha256": "da5a4d87f36b97e64fb2d95d4e701348de1b70c8a7e37d4447356e80a4f0fc5d",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "oldSha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "748c63ef022b1fd28714651274954f843dac709356b7ca1f2e46c98ffe0d7436",
+      "oldSha256": "748c63ef022b1fd28714651274954f843dac709356b7ca1f2e46c98ffe0d7436",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "oldSha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "sha256": "35e2f15090dc2d22b5f7acc1d2bb721cc933540aa778ef2c65229eae7d88f759",
+      "oldSha256": "35e2f15090dc2d22b5f7acc1d2bb721cc933540aa778ef2c65229eae7d88f759",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "oldSha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "78f9cd7f78f5986336e495a7a514a1f04b563b28aadba728fcb3c4eeacb25e8b",
+      "oldSha256": "78f9cd7f78f5986336e495a7a514a1f04b563b28aadba728fcb3c4eeacb25e8b",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "sha256": "c9fa63d9bf6c1ff1aa98eb95040b5f9a18cf7135ab92df3ae8f1ebb7942a6e05",
+      "oldSha256": "c9fa63d9bf6c1ff1aa98eb95040b5f9a18cf7135ab92df3ae8f1ebb7942a6e05",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "df36702222d9cbd8f5c364795b9c4c60e2926f65f0b9b74a78419b21daaeeb71",
+      "oldSha256": "335f401e45fb620cab9ada7eb7a7d4bf6d3c8baf475164de0c50c1c6f3c05415",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "768f1f66f8aa4a88f8ad2dfa926e9d1e968ab410960bb9ea57b2cbfdd16cac49",
+      "oldSha256": "ed09583fe3b860c809eacdfd9e07082b3c2c18c6a691dfd17ac748057170d67f",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "sha256": "080a210c44f0990ec6c64630fbb9e4823bd7cd7910dafa2c8c82af6a95554c06",
+      "oldSha256": "693b2c5e88caf6591f0b71c3d256e11a77c262d6fef76aeea6f004928486cae3",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.png",
+      "sha256": "3865b7a86e5083befa74a764264ec7c052a970eec16b84168055d6e5a090c7c2",
+      "oldSha256": "dccfcbdaec47d0328407d5982aafec862ad79904b0dbc2fa47216239cf0fda39",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+      "sha256": "740bd9b041584ed281e8814e7c75d241f87eff2870f6f3055a56cab275972830",
+      "oldSha256": "026b3fab540cbbff653f0c062db48f033f121f37bdbe34d4d741c55b1eb800ed",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+      "sha256": "f7c75005c8d88ffe9facc62ba24b5cc09ad37236820d401d607e49cf7ad449cf",
+      "oldSha256": "197a4ab9f2bf774085264b42dd4b0d267b1dce3b605a6315b040a760b77a67ed",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+      "sha256": "206c3e8c46dccff4c5507f50fa8ad9c1d53356767a4c43f27ea137681e624556",
+      "oldSha256": "b59d7b712fd12df7d16661f728cb2cfd68ea8259b8576763ab85ea6332c3f32a",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+      "sha256": "391bd01c19aeb14787027b570b00362e573df0ff58b923808261383cd59a55af",
+      "oldSha256": "db7445eed02660d034904ae729a339ae85f510eb51f305b89f38a692c50f99d9",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-1-fleet-marshal.png",
+      "sha256": "0f850d4e401c11b9b2fea7629e96d39a1650aa9401c34f60c91e5bfaa1b36c1b",
+      "oldSha256": "0f850d4e401c11b9b2fea7629e96d39a1650aa9401c34f60c91e5bfaa1b36c1b",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-1-fleet-marshal.png",
+      "sha256": "2de25b5ed0d853d178e4bba280f607de41a9b67b0425a8840ceb19c8c61105c9",
+      "oldSha256": "2de25b5ed0d853d178e4bba280f607de41a9b67b0425a8840ceb19c8c61105c9",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-2-independent-marshal.png",
+      "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "oldSha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "sha256": "d5e9f1874aa971e3ae7cf89e4e560f4021c271e44fd1b1a70a3fd7651569bfa5",
+      "oldSha256": "d5e9f1874aa971e3ae7cf89e4e560f4021c271e44fd1b1a70a3fd7651569bfa5",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/031-traveling-2-independent-marshal.png",
+      "sha256": "88eeca5b0f898df284901c4543bb6e0eb4a257b76b4405428069723b48d1b4a2",
+      "oldSha256": "88eeca5b0f898df284901c4543bb6e0eb4a257b76b4405428069723b48d1b4a2",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-1-fleet-marshal.png",
+      "sha256": "8a6d4e8591065d20b3ca12d3adc3fb374e9be9fe4ad24ed50b89e78b90e3a337",
+      "oldSha256": "8a6d4e8591065d20b3ca12d3adc3fb374e9be9fe4ad24ed50b89e78b90e3a337",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-2-independent-marshal.png",
+      "sha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+      "oldSha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-1-fleet-marshal.png",
+      "sha256": "fb8dbb002ac826421bf1a3592df1bdc1884c9a7bb5592aff76ca1806d279ccf4",
+      "oldSha256": "fb8dbb002ac826421bf1a3592df1bdc1884c9a7bb5592aff76ca1806d279ccf4",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-2-independent-marshal.png",
+      "sha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+      "oldSha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-1-fleet-marshal.png",
+      "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "oldSha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-2-independent-marshal.png",
+      "sha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+      "oldSha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+      "story": "interrupted-fleet-route",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "19a2e5f4be9a5fdef11841674a3de24187bb068e03bc20f0a711d7c30a89ff42",
+      "oldSha256": "19a2e5f4be9a5fdef11841674a3de24187bb068e03bc20f0a711d7c30a89ff42",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "oldSha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "sha256": "b656eadfb699b7faffd9c77ffbc66578c9b92d8f7de9b39763dc80864b7ba37c",
+      "oldSha256": "b656eadfb699b7faffd9c77ffbc66578c9b92d8f7de9b39763dc80864b7ba37c",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "oldSha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "e98b013d99faeae8dd020d80df381656e5a74583ee6e7955146ae2d1654b8d0e",
+      "oldSha256": "e98b013d99faeae8dd020d80df381656e5a74583ee6e7955146ae2d1654b8d0e",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "oldSha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "sha256": "273413e613fd13d045906619e2925a6291c8b5a26b3452d582bfc41fd4d5a0c1",
+      "oldSha256": "273413e613fd13d045906619e2925a6291c8b5a26b3452d582bfc41fd4d5a0c1",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "oldSha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "2812c79fc89aaf834bf041023df56f50e8ec07dc208ecdbcdd9beafb103bd608",
+      "oldSha256": "2812c79fc89aaf834bf041023df56f50e8ec07dc208ecdbcdd9beafb103bd608",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "sha256": "c6d3fbc9c18c04b65615571ce941f78c91dbef5cf2f1e92b1e8143d98709b41c",
+      "oldSha256": "c6d3fbc9c18c04b65615571ce941f78c91dbef5cf2f1e92b1e8143d98709b41c",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "47e778a24aa0dda449bc114275acaba1c8d63f2bf474258cf6e4619c3f3dbb51",
+      "oldSha256": "65111b77d017ea36fd97aaf72bc09d5a9bd7727c969a82f389b67f9fe67cd3a1",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "812b2c6cabac195468677e01ad7c9de5b6e806ba9c4187fdadc9bd5bd3b7d39b",
+      "oldSha256": "0d0b1008ac7d348d8b23d32270de35ec38bf4153ac2a16aae714e2102086dbc4",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "sha256": "4cb023a97d0e992257c5ed01910489f4fdae27b3aba730977b89b5dab948d28b",
+      "oldSha256": "6aa27ce7422db9e090b4754cfbead519e1e8c7fed3d30e499224c84781ff3eb1",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+      "sha256": "34416c3297725964aa151fedeab654b3540e509702fbe456cd77c009d51b26f8",
+      "oldSha256": "34416c3297725964aa151fedeab654b3540e509702fbe456cd77c009d51b26f8",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+      "sha256": "adc7cfdb56f84bc5807e800d55764d1d0c38c9434d742da55e3284ab0a6f0845",
+      "oldSha256": "adc7cfdb56f84bc5807e800d55764d1d0c38c9434d742da55e3284ab0a6f0845",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+      "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "oldSha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+      "sha256": "8a10fec6eae6ee5197fda67a26f38c7e3133399b4d6429a7135ede9a49a29967",
+      "oldSha256": "8a10fec6eae6ee5197fda67a26f38c7e3133399b4d6429a7135ede9a49a29967",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+      "sha256": "cc91dbe8e62a0b6cb1665562fc276da3b064bcfd913cce33f3493dddbf9c0db6",
+      "oldSha256": "cc91dbe8e62a0b6cb1665562fc276da3b064bcfd913cce33f3493dddbf9c0db6",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+      "sha256": "12e81dde8de3be2d7f54e13a034e37643c77693508e35965905d2f2c29ebb255",
+      "oldSha256": "12e81dde8de3be2d7f54e13a034e37643c77693508e35965905d2f2c29ebb255",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-2-independent-marshal.png",
+      "sha256": "4ff35843af65bf4ed5ce79d048b55e8f99b85826746a0306657b6698d669ed57",
+      "oldSha256": "4ff35843af65bf4ed5ce79d048b55e8f99b85826746a0306657b6698d669ed57",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+      "sha256": "559518c35a2cc8b89c28b9f00c3e4f1623fba7d25086eff0b65493245950d607",
+      "oldSha256": "559518c35a2cc8b89c28b9f00c3e4f1623fba7d25086eff0b65493245950d607",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+      "sha256": "4ff35843af65bf4ed5ce79d048b55e8f99b85826746a0306657b6698d669ed57",
+      "oldSha256": "4ff35843af65bf4ed5ce79d048b55e8f99b85826746a0306657b6698d669ed57",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+      "sha256": "52d392f6a37222e532ccff124dc108ff1950d6914bef1b9379f3ac5d926a05df",
+      "oldSha256": "52d392f6a37222e532ccff124dc108ff1950d6914bef1b9379f3ac5d926a05df",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-2-independent-marshal.png",
+      "sha256": "0bffb5923ede2b53a2a6dfb55ef321ef701256b471491e18fa7ac2b4133625b4",
+      "oldSha256": "0bffb5923ede2b53a2a6dfb55ef321ef701256b471491e18fa7ac2b4133625b4",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+      "sha256": "a9fed7fa2da98ab55633a1a1ff1085f9cfb2132a806af9948f15c44e0ddeefef",
+      "oldSha256": "a9fed7fa2da98ab55633a1a1ff1085f9cfb2132a806af9948f15c44e0ddeefef",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-2-independent-marshal.png",
+      "sha256": "fdc5d3b45d8b3fb8cfc803c9a63429a215b4c7c5b6b948629f54486e799dd93b",
+      "oldSha256": "fdc5d3b45d8b3fb8cfc803c9a63429a215b4c7c5b6b948629f54486e799dd93b",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+      "sha256": "04050cb486c0ed0ca0e3bb40bddfd23c7d66eac9b3a0afd0f5e0084067d678d2",
+      "oldSha256": "04050cb486c0ed0ca0e3bb40bddfd23c7d66eac9b3a0afd0f5e0084067d678d2",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+      "sha256": "fdc5d3b45d8b3fb8cfc803c9a63429a215b4c7c5b6b948629f54486e799dd93b",
+      "oldSha256": "fdc5d3b45d8b3fb8cfc803c9a63429a215b4c7c5b6b948629f54486e799dd93b",
+      "story": "paused-fleet-travel",
+      "viewport": "desktop",
+      "changed": false
+    }
+  ],
+  "groups": [
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "sha256": "df36702222d9cbd8f5c364795b9c4c60e2926f65f0b9b74a78419b21daaeeb71",
+        "oldSha256": "335f401e45fb620cab9ada7eb7a7d4bf6d3c8baf475164de0c50c1c6f3c05415",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "sha256": "768f1f66f8aa4a88f8ad2dfa926e9d1e968ab410960bb9ea57b2cbfdd16cac49",
+        "oldSha256": "ed09583fe3b860c809eacdfd9e07082b3c2c18c6a691dfd17ac748057170d67f",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "sha256": "080a210c44f0990ec6c64630fbb9e4823bd7cd7910dafa2c8c82af6a95554c06",
+        "oldSha256": "693b2c5e88caf6591f0b71c3d256e11a77c262d6fef76aeea6f004928486cae3",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.png",
+        "sha256": "3865b7a86e5083befa74a764264ec7c052a970eec16b84168055d6e5a090c7c2",
+        "oldSha256": "dccfcbdaec47d0328407d5982aafec862ad79904b0dbc2fa47216239cf0fda39",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+        "sha256": "740bd9b041584ed281e8814e7c75d241f87eff2870f6f3055a56cab275972830",
+        "oldSha256": "026b3fab540cbbff653f0c062db48f033f121f37bdbe34d4d741c55b1eb800ed",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+        "sha256": "f7c75005c8d88ffe9facc62ba24b5cc09ad37236820d401d607e49cf7ad449cf",
+        "oldSha256": "197a4ab9f2bf774085264b42dd4b0d267b1dce3b605a6315b040a760b77a67ed",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+        "sha256": "206c3e8c46dccff4c5507f50fa8ad9c1d53356767a4c43f27ea137681e624556",
+        "oldSha256": "b59d7b712fd12df7d16661f728cb2cfd68ea8259b8576763ab85ea6332c3f32a",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+        "sha256": "391bd01c19aeb14787027b570b00362e573df0ff58b923808261383cd59a55af",
+        "oldSha256": "db7445eed02660d034904ae729a339ae85f510eb51f305b89f38a692c50f99d9",
+        "story": "interrupted-fleet-route",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "sha256": "47e778a24aa0dda449bc114275acaba1c8d63f2bf474258cf6e4619c3f3dbb51",
+        "oldSha256": "65111b77d017ea36fd97aaf72bc09d5a9bd7727c969a82f389b67f9fe67cd3a1",
+        "story": "paused-fleet-travel",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "sha256": "812b2c6cabac195468677e01ad7c9de5b6e806ba9c4187fdadc9bd5bd3b7d39b",
+        "oldSha256": "0d0b1008ac7d348d8b23d32270de35ec38bf4153ac2a16aae714e2102086dbc4",
+        "story": "paused-fleet-travel",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ],
+    [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-followup-43149269459/desktop/test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "reference": "tests/browser/story-baselines/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "sha256": "4cb023a97d0e992257c5ed01910489f4fdae27b3aba730977b89b5dab948d28b",
+        "oldSha256": "6aa27ce7422db9e090b4754cfbead519e1e8c7fed3d30e499224c84781ff3eb1",
+        "story": "paused-fleet-travel",
+        "viewport": "desktop",
+        "changed": true
+      }
+    ]
+  ],
+  "run": 43149269459,
+  "target": "31cf16a52ff48de55c662726bed9fdaac64fa86a",
+  "retention": {
+    "run": 43149269459,
+    "artifact": {
+      "id": 13913292546,
+      "node_id": "MDg6QXJ0aWZhY3QxMzkxMzI5MjU0Ng==",
+      "name": "top-pr140-route-reading-candidates-desktop-c86b76d471fcb3f3429c60b5540f4fceb74facf9",
+      "size_in_bytes": 101676604,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13913292546",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13913292546/zip",
+      "expired": false,
+      "digest": "sha256:ff824fa8a81df149dc83368313f86bcb054ab2ca1217a33723f043a23096d886",
+      "created_at": "2026-11-12T03:50:24Z",
+      "updated_at": "2026-11-12T03:50:24Z",
+      "expires_at": "2026-11-26T03:50:20Z",
+      "workflow_run": {
+        "id": 43149269459,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-route-followup-20261112",
+        "head_sha": "c86b76d471fcb3f3429c60b5540f4fceb74facf9"
+      }
+    },
+    "archiveSha256": "ff824fa8a81df149dc83368313f86bcb054ab2ca1217a33723f043a23096d886",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/desktop/route-reading/firestore-debug.log",
+        "size": 42139,
+        "crc32": "260a883e",
+        "sha256": "e539857c0ed5823b59e084af2c83fc445eb25448a19919b872f25066edad5684",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/desktop/route-reading/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/desktop/route-reading/result.json",
+        "size": 165,
+        "crc32": "2851b967",
+        "sha256": "05acf8748f49120b530431bdc98acacac8d167e4d0b1e225d826160a2cc4cd9d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-fleet-route-recove-fff28-iginal-choices-and-identity-desktop/attachments/Illustrated-story-ee4614e489113f4aac8bdacfede3ad7d2e0b8326.md",
+        "size": 28468,
+        "crc32": "5a7f2608",
+        "sha256": "2953e99f686f6d33b35c46031b231925be30994dc899f8256758547176abf0c7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-fleet-route-recove-fff28-iginal-choices-and-identity-desktop/attachments/route-observation-facts-de85562a8ff0fc7da6ce140fa1c2c7d4bdb50360.json",
+        "size": 613,
+        "crc32": "336b9302",
+        "sha256": "3d1992b24d491b82c7d93b6895c8ecd3da9ad14d942c52dacf194b5e4ffef4c2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-fleet-route-recove-fff28-iginal-choices-and-identity-desktop/route-observation-facts.json",
+        "size": 613,
+        "crc32": "336b9302",
+        "sha256": "3d1992b24d491b82c7d93b6895c8ecd3da9ad14d942c52dacf194b5e4ffef4c2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/browser-fleet-travel-catch-40e20-concurrent-delayed-delivery-desktop/attachments/Illustrated-story-23146977af6da3238dd7a6b04a28d741ef6c2833.md",
+        "size": 22072,
+        "crc32": "fde454a8",
+        "sha256": "87ba42d338292b002f12f1232d785df2a86dc043a579896ef125c28e83391ede",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "size": 1426183,
+        "crc32": "473eeb0c",
+        "sha256": "b2a7d4ce27b462c8eb8355f63c012400ec459b9127f6f753ab0bad998921ee55",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "size": 1421117,
+        "crc32": "e58e2dce",
+        "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "size": 1421556,
+        "crc32": "81ef7b17",
+        "sha256": "da5a4d87f36b97e64fb2d95d4e701348de1b70c8a7e37d4447356e80a4f0fc5d",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "size": 1421117,
+        "crc32": "e58e2dce",
+        "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+        "size": 1437888,
+        "crc32": "aed6acb1",
+        "sha256": "748c63ef022b1fd28714651274954f843dac709356b7ca1f2e46c98ffe0d7436",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "size": 1421117,
+        "crc32": "e58e2dce",
+        "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "size": 1425236,
+        "crc32": "c9471716",
+        "sha256": "35e2f15090dc2d22b5f7acc1d2bb721cc933540aa778ef2c65229eae7d88f759",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "size": 1421117,
+        "crc32": "e58e2dce",
+        "sha256": "ac23cc1164342ccc61e74329c1f0d8f09fb96fb97b20120d7ce64f486fe19934",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "size": 1430732,
+        "crc32": "a9bc68bd",
+        "sha256": "78f9cd7f78f5986336e495a7a514a1f04b563b28aadba728fcb3c4eeacb25e8b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "size": 1305022,
+        "crc32": "ba7ec251",
+        "sha256": "c9fa63d9bf6c1ff1aa98eb95040b5f9a18cf7135ab92df3ae8f1ebb7942a6e05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "size": 1310316,
+        "crc32": "074182bb",
+        "sha256": "df36702222d9cbd8f5c364795b9c4c60e2926f65f0b9b74a78419b21daaeeb71",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "size": 1321533,
+        "crc32": "9591ca35",
+        "sha256": "768f1f66f8aa4a88f8ad2dfa926e9d1e968ab410960bb9ea57b2cbfdd16cac49",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "size": 1309239,
+        "crc32": "c5d2455b",
+        "sha256": "080a210c44f0990ec6c64630fbb9e4823bd7cd7910dafa2c8c82af6a95554c06",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-1-fleet-marshal.png",
+        "size": 1314513,
+        "crc32": "d406d989",
+        "sha256": "3865b7a86e5083befa74a764264ec7c052a970eec16b84168055d6e5a090c7c2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/021-pending-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-1-fleet-marshal.png",
+        "size": 1320746,
+        "crc32": "bd165bbe",
+        "sha256": "740bd9b041584ed281e8814e7c75d241f87eff2870f6f3055a56cab275972830",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/022-reload-pending-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-1-fleet-marshal.png",
+        "size": 1324865,
+        "crc32": "8511178a",
+        "sha256": "f7c75005c8d88ffe9facc62ba24b5cc09ad37236820d401d607e49cf7ad449cf",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/023-review-route-retry-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-1-fleet-marshal.png",
+        "size": 1320507,
+        "crc32": "28b3da2d",
+        "sha256": "206c3e8c46dccff4c5507f50fa8ad9c1d53356767a4c43f27ea137681e624556",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/024-retry-original-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-1-fleet-marshal.png",
+        "size": 1325492,
+        "crc32": "6658c529",
+        "sha256": "391bd01c19aeb14787027b570b00362e573df0ff58b923808261383cd59a55af",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/026-accepted-while-offline-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-1-fleet-marshal.png",
+        "size": 1541288,
+        "crc32": "97694c2e",
+        "sha256": "0f850d4e401c11b9b2fea7629e96d39a1650aa9401c34f60c91e5bfaa1b36c1b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/028-accept-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-1-fleet-marshal.png",
+        "size": 1533769,
+        "crc32": "b8a1c48c",
+        "sha256": "2de25b5ed0d853d178e4bba280f607de41a9b67b0425a8840ceb19c8c61105c9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/029-recover-route-2-independent-marshal.png",
+        "size": 1421405,
+        "crc32": "45019deb",
+        "sha256": "4fdf9b62f70eedb343f8cf509944fbd797255ea33593becb36d7977fc1e8c006",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-1-fleet-marshal.png",
+        "size": 1507139,
+        "crc32": "800979dd",
+        "sha256": "d5e9f1874aa971e3ae7cf89e4e560f4021c271e44fd1b1a70a3fd7651569bfa5",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/031-traveling-2-independent-marshal.png",
+        "size": 1421369,
+        "crc32": "a7f16500",
+        "sha256": "88eeca5b0f898df284901c4543bb6e0eb4a257b76b4405428069723b48d1b4a2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-1-fleet-marshal.png",
+        "size": 1538741,
+        "crc32": "dbfb5934",
+        "sha256": "8a6d4e8591065d20b3ca12d3adc3fb374e9be9fe4ad24ed50b89e78b90e3a337",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/033-arrival-report-2-independent-marshal.png",
+        "size": 1421178,
+        "crc32": "db4fa0bc",
+        "sha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-1-fleet-marshal.png",
+        "size": 1424704,
+        "crc32": "921336b8",
+        "sha256": "fb8dbb002ac826421bf1a3592df1bdc1884c9a7bb5592aff76ca1806d279ccf4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/034-recover-arrival-2-independent-marshal.png",
+        "size": 1421178,
+        "crc32": "db4fa0bc",
+        "sha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-1-fleet-marshal.layout.json",
+        "size": 2073,
+        "crc32": "ecc659ed",
+        "sha256": "ca108ad7a3eb3181bf1d683fffbbf53af61fbab383b2be41e72be8cd32db1666",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-1-fleet-marshal.png",
+        "size": 342006,
+        "crc32": "fbc6948f",
+        "sha256": "acf2bf9c006fb22cff3dd694506b07ea1ac59299b3bc8e7514f201c38be82959",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/035-sign-out-access-2-independent-marshal.png",
+        "size": 1421178,
+        "crc32": "db4fa0bc",
+        "sha256": "e4cd7018b440728c1e27487b458693d5c5648b5dcf5feb8691ea01b79192bf9a",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/README.md",
+        "size": 28468,
+        "crc32": "5a7f2608",
+        "sha256": "2953e99f686f6d33b35c46031b231925be30994dc899f8256758547176abf0c7",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "66da3120",
+        "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/interrupted-fleet-route/desktop/linux-arm64/story.json",
+        "size": 29664,
+        "crc32": "2223778b",
+        "sha256": "00184799ab433bf4409cae7b0f677af9ae7de95ab1fd4da464adf6b726a24111",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+        "size": 1426748,
+        "crc32": "5ec71d2a",
+        "sha256": "19a2e5f4be9a5fdef11841674a3de24187bb068e03bc20f0a711d7c30a89ff42",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+        "size": 1421712,
+        "crc32": "5ebb5315",
+        "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+        "size": 1422131,
+        "crc32": "e8af8978",
+        "sha256": "b656eadfb699b7faffd9c77ffbc66578c9b92d8f7de9b39763dc80864b7ba37c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/011-choose-complement-2-independent-marshal.png",
+        "size": 1421712,
+        "crc32": "5ebb5315",
+        "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+        "size": 1438450,
+        "crc32": "697422b5",
+        "sha256": "e98b013d99faeae8dd020d80df381656e5a74583ee6e7955146ae2d1654b8d0e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+        "size": 1421712,
+        "crc32": "5ebb5315",
+        "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+        "size": 1425809,
+        "crc32": "2d722e8a",
+        "sha256": "273413e613fd13d045906619e2925a6291c8b5a26b3452d582bfc41fd4d5a0c1",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/013-reload-formation-2-independent-marshal.png",
+        "size": 1421712,
+        "crc32": "5ebb5315",
+        "sha256": "02c22929e03fc5b2eada644be81d325a946f2abc1148e2e6928a134b0304a6b9",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+        "size": 1431316,
+        "crc32": "a0a28aba",
+        "sha256": "2812c79fc89aaf834bf041023df56f50e8ec07dc208ecdbcdd9beafb103bd608",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-1-fleet-marshal.png",
+        "size": 1305596,
+        "crc32": "77c627fb",
+        "sha256": "c6d3fbc9c18c04b65615571ce941f78c91dbef5cf2f1e92b1e8143d98709b41c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/016-open-route-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+        "size": 1310896,
+        "crc32": "a3e812f6",
+        "sha256": "47e778a24aa0dda449bc114275acaba1c8d63f2bf474258cf6e4619c3f3dbb51",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+        "size": 1322158,
+        "crc32": "32c05890",
+        "sha256": "812b2c6cabac195468677e01ad7c9de5b6e806ba9c4187fdadc9bd5bd3b7d39b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-1-fleet-marshal.png",
+        "size": 1309751,
+        "crc32": "c3e93ab9",
+        "sha256": "4cb023a97d0e992257c5ed01910489f4fdae27b3aba730977b89b5dab948d28b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/019-repair-route-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.layout.json",
+        "size": 2067,
+        "crc32": "019367ad",
+        "sha256": "37b1de80667da80d70a02942e0fc4ccb8a7228472dc5a7261c8176bc73ea503f",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-1-fleet-marshal.png",
+        "size": 1542940,
+        "crc32": "d3743e87",
+        "sha256": "34416c3297725964aa151fedeab654b3540e509702fbe456cd77c009d51b26f8",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/020-accept-route-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-1-fleet-marshal.png",
+        "size": 1534272,
+        "crc32": "45d08b76",
+        "sha256": "adc7cfdb56f84bc5807e800d55764d1d0c38c9434d742da55e3284ab0a6f0845",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/021-recover-route-2-independent-marshal.png",
+        "size": 1422023,
+        "crc32": "77340684",
+        "sha256": "cc4cfdb6d8d183a5462e4e5398b8b2e3b8828e2616711dd29b1338b1136ee400",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-1-fleet-marshal.png",
+        "size": 1507642,
+        "crc32": "03c08792",
+        "sha256": "8a10fec6eae6ee5197fda67a26f38c7e3133399b4d6429a7135ede9a49a29967",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/023-traveling-2-independent-marshal.png",
+        "size": 1421980,
+        "crc32": "06387079",
+        "sha256": "cc91dbe8e62a0b6cb1665562fc276da3b064bcfd913cce33f3493dddbf9c0db6",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-1-fleet-marshal.png",
+        "size": 421417,
+        "crc32": "43cb9335",
+        "sha256": "12e81dde8de3be2d7f54e13a034e37643c77693508e35965905d2f2c29ebb255",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/024-pause-travel-2-independent-marshal.png",
+        "size": 1416341,
+        "crc32": "0141cebf",
+        "sha256": "4ff35843af65bf4ed5ce79d048b55e8f99b85826746a0306657b6698d669ed57",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+        "size": 1475652,
+        "crc32": "d765a6d9",
+        "sha256": "559518c35a2cc8b89c28b9f00c3e4f1623fba7d25086eff0b65493245950d607",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/026-recover-paused-travel-2-independent-marshal.png",
+        "size": 1416341,
+        "crc32": "0141cebf",
+        "sha256": "4ff35843af65bf4ed5ce79d048b55e8f99b85826746a0306657b6698d669ed57",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-1-fleet-marshal.png",
+        "size": 429395,
+        "crc32": "4fc10835",
+        "sha256": "52d392f6a37222e532ccff124dc108ff1950d6914bef1b9379f3ac5d926a05df",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/027-resume-travel-2-independent-marshal.png",
+        "size": 1422126,
+        "crc32": "d28fe0f7",
+        "sha256": "0bffb5923ede2b53a2a6dfb55ef321ef701256b471491e18fa7ac2b4133625b4",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-1-fleet-marshal.png",
+        "size": 1539319,
+        "crc32": "e153fce5",
+        "sha256": "a9fed7fa2da98ab55633a1a1ff1085f9cfb2132a806af9948f15c44e0ddeefef",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/029-arrival-report-2-independent-marshal.png",
+        "size": 1421775,
+        "crc32": "2b64c557",
+        "sha256": "fdc5d3b45d8b3fb8cfc803c9a63429a215b4c7c5b6b948629f54486e799dd93b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-1-fleet-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-1-fleet-marshal.png",
+        "size": 1425307,
+        "crc32": "5494ddf1",
+        "sha256": "04050cb486c0ed0ca0e3bb40bddfd23c7d66eac9b3a0afd0f5e0084067d678d2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-2-independent-marshal.layout.json",
+        "size": 2069,
+        "crc32": "85e173b2",
+        "sha256": "8238b129e5285a7bc912cd42c1da751932c0514bb53f3e98fd46e00a8ab87154",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/030-recover-arrival-2-independent-marshal.png",
+        "size": 1421775,
+        "crc32": "2b64c557",
+        "sha256": "fdc5d3b45d8b3fb8cfc803c9a63429a215b4c7c5b6b948629f54486e799dd93b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/README.md",
+        "size": 22072,
+        "crc32": "fde454a8",
+        "sha256": "87ba42d338292b002f12f1232d785df2a86dc043a579896ef125c28e83391ede",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "66da3120",
+        "sha256": "3db238b9197ef6999344a3417ac93690bb2b0367e6e72136e3242de522441e9e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/paused-fleet-travel/desktop/linux-arm64/story.json",
+        "size": 23526,
+        "crc32": "76969f84",
+        "sha256": "4a68d4426d1d59624be48f3454d0d901d00a0d0e117aa3a1c757e9f9702d8243",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "b1b3e052",
+        "sha256": "ee2c1bfd03f67236409de99003e8416319b0b86d3e1621ad2d848ffc20d0eb4a",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "13a5e82d",
+        "sha256": "a83e158ecbd74d32f874b4aa440bb93426a7699dab35c6a51adc9bca27da0d02",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2721,
+        "crc32": "4f6d0697",
+        "sha256": "79f26023907b6f02e6ef210374ff8d7a8432f4c80e85335931efa4f8c55af1d1",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "f1d0246c",
+        "sha256": "f76f0e85143e0b09a04c1425ecf7ad70ec5b92de755aa00938f1e44f3dcd360e",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "283fcf37",
+        "sha256": "7c223b2306d93b162262bb260dc62ecd43fce3596391531ae38c6df6dc493130",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "f8dcc338",
+        "sha256": "5a3817444738ebe30191304e4f5c5838d116ca8624e180b01e0b15b09b08c5ae",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-desktop.json",
+        "size": 5906,
+        "crc32": "c42fb04c",
+        "sha256": "e0cdc89ba51f3f5249c414fce8fd0d10f08eaf6a2661f723ff96d12765035954",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-desktop.json",
+        "size": 360,
+        "crc32": "a5db9335",
+        "sha256": "58690db21a007409a6ad6639af714438c8dc1f4e665c512ba9065a62ba2da8d4",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 16937,
+        "crc32": "4e46026f",
+        "sha256": "ef3162b9d871720fab65a848fc8bb50879f3cbd28779df31d4934a0b884233b9",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1377,
+        "crc32": "39ac6dc1",
+        "sha256": "dc74bcc5a6f6d012e03575db2a1f89df290a6222e781defad66992661ed6a864",
+        "retained": true
+      }
+    ]
+  },
+  "inspection": {
+    "disposition": "Approve exact11changed originals after individual native1440x1000 inspection;63unchanged exact inherited references.",
+    "finding": "Route-editor waypoint spacing only. Full Earlier/Later/Remove and Discard actions, pending/reloaded/same-order retry status, range rejection10.49ly,2fighters20infantry and19/1garrison remain readable; focused Send/Check ring contained.",
+    "limitations": "Reader intentionally clips lower navigation help in two-waypoint view and unrelated suggestion entries after reload; no whole-content, full-design or normal-motion claim. Import awaits complete family comparison."
+  }
+}
