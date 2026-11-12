@@ -1,0 +1,47 @@
+{
+  "run": 43150384965,
+  "request": "02f85a9751eaabd36be61faace6de6e39b952595",
+  "requestSha256": "cd162e33c1afc95be3d0031e9f521fe39c946de178bcc1e88099ef68a294655b",
+  "requestBody": {
+    "schema": 1,
+    "mode": "generate",
+    "target": "597106f424392f3fa4605c90f8759d2e8ae7c896",
+    "source": "b58aac1b976ac4db11e47bbe2aa54554b9018c06",
+    "projects": [
+      "large"
+    ],
+    "serviceGroups": [
+      "motion-large"
+    ],
+    "capturesByStory": {
+      "command-control-motion": 4
+    },
+    "testsPerProject": {
+      "large": 1
+    },
+    "retries": 0,
+    "updateSnapshots": "none",
+    "inputs": {
+      "src": "ca2fd0584deb08f284159f1a95bb3207a98d529e",
+      "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+      "functions": "c116879153585f6c933dad28096563165fa23641",
+      "tests": "ff1d7c701d5c40933fb501d8b3db002d5cb5bfa7",
+      "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+      "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+      "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+      "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+      "playwright.stories.config.ts": "25440b492b962da9edeb8700ed0c18c9f062db3a",
+      "scripts/story-cohorts.mjs": "2032d7efeed8b914bc6d668594fd04581ccc65a7",
+      "scripts/story-service-groups.mjs": "9ee85e3deb132f318f80d8a9ef63fd2369f451f4",
+      "scripts/run-stories.mjs": "dbe7446f756baa8c11acc0444d5be813b9e4fe88"
+    }
+  },
+  "validation": "9guard tests pass before and after immutable request commit; actual pinned local Playwright collection exactly1 large story;4normal/reduced gallery/lab views from unchanged original120s story; both launchers large-only; no updates/retries/production change",
+  "localCollectionFailure": "First bunx collection in dependency-free executor checkout attempted ephemeral package resolution and failed missing@playwright/test; no test executed or repository lock/dependency changed. Corrected collection used existing main-worktree pinned node_modules and identical source/spec/config; passed exactly1. No downloaded substitute used for evidence.",
+  "concurrentRun": {
+    "routeFollowup": 43149269459,
+    "status": "four cases confirmed in_progress, untouched"
+  },
+  "retention": "14days remote; selected useful outputs only; no full archive duplicate retention",
+  "notAcceptance": "Generation and prior actual inspection do not approve unseen later frames or prove full PR140 green."
+}
