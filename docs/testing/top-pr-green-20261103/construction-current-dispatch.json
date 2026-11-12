@@ -1,0 +1,30 @@
+{
+  "target": "7f841eccbd94f42c76c832251b371f9110f9125d",
+  "executor": "a79f9d7462f4a1ab9a2046acda22ecf3ee114a57",
+  "request": "217d008d62b91eec8e46dd1ff02d4bf8891f5f44",
+  "run": 43124420572,
+  "mode": "generate",
+  "testsPerViewport": 2,
+  "expectedCaptures": 332,
+  "capturesByStory": {
+    "live-construction-ordinary": 61,
+    "live-construction-recovery": 22
+  },
+  "spec": "tests/e2e/010-construction/construction.spec.ts",
+  "specSha256": "a8c912e9c2fad9febc85d21d8a2a3c458a10ad873c9976d2f7079732d8650fa0",
+  "captureCountAudit": {
+    "ordinary": "28 inherited baseline views plus 27 market-focus views, two one-seat outstanding-build readings, four applied-focus/return readings = 61. The original source includes all these actions; no new gameplay steps added.",
+    "recovery": "11 complete two-player steps = 22, including real withheld delivery and same-command recovery."
+  },
+  "validation": {
+    "actualCollection": 8,
+    "guardTestsPassed": 7,
+    "originalJourneyDeadlineMs": 300000,
+    "retries": 0,
+    "updateSnapshots": "none"
+  },
+  "approval": false,
+  "retentionDays": 14,
+  "disk": "Selected prior comparison evidence required only 4,553,957 range bytes; no 4.97GB archive retained. Entry CRC/SHA verified, whole-archive SHA explicitly not verified.",
+  "scope": "Construction-only inset and real openConstruction geometry check. Existing fleet correction unchanged; its live run preserved. No required workflow or reference changes."
+}
