@@ -335,3 +335,8 @@ Exact continuation: await integrated terminal checks; inspect remaining recovere
 Independently viewed strict43296531488 phone021 recovered chart-envoy ledger and short component004 delivered reduced-motion comparison. Phone shows fully visible focused totals, Innovation1 rate1.404 and last delivered1.404, caveat text and Return to galaxy. Lab shows actual shared ledger side-by-side in standard/reduced motion with same1.4 delivered facts and full selected focus outline/return controls. Top comparison headings partly outside current scroll position; these stills do not demonstrate interactive animation behavior by themselves. No new clipping in inspected essential ledger content. This remains bounded visual inspection, not full product/design approval.
 
 Exact continuation: preserve current runs, review their terminal evidence and remaining gallery/production states; no merge.
+
+
+## Supervisor PR140 running-step confirmation
+
+2026-11-12 21:10 UTC: pane unchanged after integration, top clean at0a2cfbce, public6a2cbeee unchanged. Application43299783685 is executing Application checks in Nix-provisioned renderer since20:32:45UTC; stories43299783595 is executing Exact verification since20:32:37UTC. These are active execution steps, not reuse-wait steps. Neither terminal failure nor evidence of a stall is established. Documentation/publish/generate remain SUCCESS. Latest handoff remains sufficient; no duplicate prompt, rerun, cancellation or merge. Continue waiting for terminal evidence and maintain independent design/release holds.
