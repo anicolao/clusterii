@@ -299,3 +299,12 @@ Exact continuation: inspect existing43296531488 terminal result and immutable ma
 
 Exact handoff:
 Reviewer handoff 2026-11-12 20:20 UTC: Sole science strict run43296531488 completed SUCCESS across all four viewports. Continue from clean7780e680: retain and validate its immutable manifests and all96 exact captures, then prepare the current-stack integration and full no-update application/story verification without duplicate runs. Supervisor is independently downloading artifacts to /private/tmp/pr140-science-strict-review for visual/design review; scoped green CI is not design or release approval. Public140 remains failed86ef8a1a until full replacement evidence. No merges. Record reviewer-attributed handoff per AGENTS referencing main meta-prompts.md Supervisor PR140 science strict completed; retain your ownership of clusterii-top, supervisor owns main meta/audit.
+
+
+## Supervisor PR140 integrated checks and ledger inspection
+
+2026-11-12 20:30 UTC: pane shows completed20:20 handoff and no duplicate dispatch; clean top0a2cfbce. Public140 advanced to6a2cbeeef7dc27783884b2669e1962999e6405e2. Independently queried all five checks: application43299783685, documentation43299783553, publish43299783654 and stories43299783595 verify/generate are IN_PROGRESS. No pass inferred. Source diff against86ef8a1a remains only six-line ScienceLedger paint-layer CSS; workflow diff empty. Agent retained96exact captures/eight manifests and reports lint/unit/policy/path gates passed.
+
+Independently viewed original phone and desktop science-rate-sources010 chart-envoy captures from strict43296531488. Readable per-tick rate, confirmed tick, orbital source and explicit assumptions; phone primary Return to galaxy action visible, desktop source/empire rows and map/selected-system context visible. Compared bounded resource-ledger composition with UX_DESIGN desktop guidance. This is a two-capture inspection, not complete science/concept-plate approval; research plate07 concerns a different research decision instrument. Full design fidelity remains open.
+
+Exact continuation: let integrated checks finish, diagnose terminal failures only; continue independent remaining science views and applicable concept comparisons before acceptance. Agent not interrupted while checks run. No merge.
