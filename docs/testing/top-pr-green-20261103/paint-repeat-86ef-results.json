@@ -1,0 +1,212 @@
+{
+  "run": 43223861057,
+  "source": "8c17b0d8",
+  "request": "96ae7a48fb8de7c88557005f07bd829d0f055a16",
+  "target": "86ef8a1a",
+  "large": {
+    "artifact": {
+      "id": 13947511984,
+      "node_id": "MDg6QXJ0aWZhY3QxMzk0NzUxMTk4NA==",
+      "name": "top-pr140-paint-repeat-86ef-large-96ae7a48fb8de7c88557005f07bd829d0f055a16",
+      "size_in_bytes": 60158961,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13947511984",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13947511984/zip",
+      "expired": false,
+      "digest": "sha256:2d6b983fd1d466b7c68aa472fcaa51a69087a4b5130ab74399da960b76701a4f",
+      "created_at": "2026-11-12T13:17:42Z",
+      "updated_at": "2026-11-12T13:17:42Z",
+      "expires_at": "2026-11-26T13:17:40Z",
+      "workflow_run": {
+        "id": 43223861057,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-paint-repeat-86ef-20261112",
+        "head_sha": "96ae7a48fb8de7c88557005f07bd829d0f055a16"
+      }
+    },
+    "entries": [
+      {
+        "name": "test-results/stories/galaxy-command-surface/large/linux-arm64/renderer.json",
+        "size": 759,
+        "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+        "crc32": "4ece87e2"
+      },
+      {
+        "name": "test-results/stories/galaxy-command-surface/large/linux-arm64/story.json",
+        "size": 14276,
+        "sha256": "dd8c92213c56748bacde923cbff9f89736c0d54a681871e76ed9bd4e08cc5d13",
+        "crc32": "0db90b34"
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "sha256": "639112b8a756d73636bda4f7c82aa746f77382001830008a76ef4983a1cc5df5",
+        "crc32": "878929cb"
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-large.json",
+        "size": 626,
+        "sha256": "8050135e32b176bf8bb883eb99042673bf2b11997d6965ff31a684833ab245c5",
+        "crc32": "84164813"
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1341,
+        "sha256": "06adc37b210f678b250fee00fa5f52e1478ba44a16340eb97d1baad32b48fdbc",
+        "crc32": "6cea74fb"
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-large.json",
+        "size": 4817,
+        "sha256": "450f54c37ccf98363d48105edcb819615d9e26cd0bee4bc7c8a82df7d9a19e5f",
+        "crc32": "6b54fcfe"
+      }
+    ],
+    "exactReferences": [
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+        "sha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+        "sha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+        "sha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+        "sha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+        "sha256": "c50d9a3af5f8795375b91c65f56e2bf116662ac707791194e8f12da5552273d9"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+        "sha256": "bd83577fd5dc5e97fe67b6cbb5f86a11ff7230605baba8245528bd87ba36c8d2"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+        "sha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+        "sha256": "4aa961671480d04b2035a2c882b066e7c94bb690cad343124287c53c45a79e29"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+        "sha256": "50f1a6b97d8b6286e7d2fb86d235abecffea1566c8dc951bb4713c84580253f5"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+        "sha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+        "sha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc"
+      },
+      {
+        "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+        "sha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4"
+      }
+    ],
+    "integrity": "Complete ZIP size/SHA256/CRC verified in memory; no local ZIP retained. Large passing PNGs verified against Git and not duplicated on disk."
+  },
+  "phone": {
+    "artifact": {
+      "id": 13947937561,
+      "node_id": "MDg6QXJ0aWZhY3QxMzk0NzkzNzU2MQ==",
+      "name": "top-pr140-paint-repeat-86ef-phone-96ae7a48fb8de7c88557005f07bd829d0f055a16",
+      "size_in_bytes": 12135922,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13947937561",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13947937561/zip",
+      "expired": false,
+      "digest": "sha256:9f45b9443e22efc49f5ad59d43c0015ad2747cf6a66cf3a99f721c42d89a0bb2",
+      "created_at": "2026-11-12T13:16:53Z",
+      "updated_at": "2026-11-12T13:16:53Z",
+      "expires_at": "2026-11-26T13:16:52Z",
+      "workflow_run": {
+        "id": 43223861057,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-paint-repeat-86ef-20261112",
+        "head_sha": "96ae7a48fb8de7c88557005f07bd829d0f055a16"
+      }
+    },
+    "entries": [
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy-actual.png",
+        "size": 264859,
+        "sha256": "ab12dd2f4de80a3e47bf11dfd986a4c616b37bdafb9bfd2bfa207265a01126cf",
+        "crc32": "f03614e0"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy-diff.png",
+        "size": 58094,
+        "sha256": "60144c9cfff88206b3c8dd70684e87924a45233727f61821d0ac3d31308d43b8",
+        "crc32": "4f3a0bfc"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/e2e/003-science/screenshots/science-rate-sources/phone/linux-arm64/013-read-earned-capacity-1-chart-envoy-expected.png",
+        "size": 258561,
+        "sha256": "f3c89042e792270e2ab6568fd2a9f1e70b4e42d3b13b42b5856dc84b1e92a62b",
+        "crc32": "7a191138"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/error-context.md",
+        "size": 10115,
+        "sha256": "57a194f75c26b57eb1e3cf64f47f7efb0aa853a15e86e30cb61c60281d0830b4",
+        "crc32": "3797a953"
+      },
+      {
+        "name": "test-results/stories/e2e-003-science-science-In-1b7ad-e-and-recover-earned-output-phone/trace.zip",
+        "size": 6297697,
+        "sha256": "4c45898a5a7fc71884728328b2a69318a9e22b9d3682694f5245e369bfabd93c",
+        "crc32": "15d21b03"
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "sha256": "3b06577a7e5272ea119fbd03fa7f85d2f9302d114f82fc78b6faa42587467057",
+        "crc32": "a9c651c5"
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-phone.json",
+        "size": 4828,
+        "sha256": "c3c9f35c3f7dba883d8dd31f9a4a5a2a395414ac470a412e4b74a400e48ba641",
+        "crc32": "88fb5e07"
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-phone.json",
+        "size": 685,
+        "sha256": "80f80ceae177abed839128a559abe587ab7b9a5765b0d272d8bcbac0f8cf11b6",
+        "crc32": "748a408a"
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1341,
+        "sha256": "06adc37b210f678b250fee00fa5f52e1478ba44a16340eb97d1baad32b48fdbc",
+        "crc32": "6cea74fb"
+      }
+    ],
+    "exactReferences": [],
+    "integrity": "Complete ZIP size/SHA256/CRC verified in memory; no local ZIP retained. Large passing PNGs verified against Git and not duplicated on disk."
+  },
+  "outcomes": {
+    "large": "Complete strict PASS,12 exact references independently byte-verified. Original paint mismatch not reproduced; no source fix claimed.",
+    "phone": "FAILURE at earlier013-read-earned-capacity,19570pixels. Native expected/actual/diff inspected: text raster only, same amounts, wording, focus ring and geometry. Prior integrated014 failure and isolated013 establish variation across capture states, not a stable replacement to approve."
+  },
+  "disposition": "Neither failed science image promoted. Exact comparison and all deadlines unchanged.",
+  "proposedCorrection": "ScienceLedger header and reading get translateZ(0) paint layers; no dimensions, colors, artwork, state, commands or test changes. Intended to prevent text raster mode switching across focus/scroll/reload. Actual causal acceptance is pending repeatable pinned-Linux evidence.",
+  "supportingContext": "Chromium picture-layer LCD eligibility depends on opaque backgrounds and compositing state; general mechanism, not proof of this failure cause. https://chromium.googlesource.com/chromium/src/+/HEAD/cc/layers/picture_layer_impl_unittest.cc",
+  "checks": {
+    "svelteErrors": 0,
+    "existingWarnings": 1,
+    "typescript": "PASS",
+    "format": "PASS",
+    "logSha256": "56bca322fcd5b37632b06f550c1e42ceb259c0f5a2e4d26e33d9ac64e3aa42b5"
+  },
+  "next": "One complete existing live science18 and gallery/lab6 per viewport candidate batch (96total), unchanged specs/actions/assertions. Inspect every changed image, then strict verification on immutable reviewed references. No integrated PR push before validated correction."
+}
