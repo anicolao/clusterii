@@ -1025,3 +1025,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Correct route traveler world anchoring after desktop review proved legacy elevation pushes the marker outside tight framing.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete original route journeys to the proven traveler-anchor correction for four-size pinned Linux visual verification.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete four-size route candidate run for corrected marker anchoring with original deadlines and no baseline writes.
