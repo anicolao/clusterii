@@ -11,6 +11,7 @@ import {
   verifyCollection, capturesByStory,
 } from "./top-candidates-request.mjs";
 import { runViewportCohorts } from "./story-cohorts.mjs";
+import { outputDirectory } from "../tests/e2e/helpers/story-paths.mjs";
 const storyServiceGroups = [{ id: "construction-current" }];
 
 const project = process.argv[2]?.replace(/^top-candidates-/, "");
@@ -123,7 +124,7 @@ try {
 if (status === 0) {
   try {
     for (const [story, count] of Object.entries(capturesByStory)) {
-      const manifest = JSON.parse(readFileSync(`test-results/stories/${story}/${project}/linux-arm64/story.json`, "utf8"));
+      const manifest = JSON.parse(readFileSync(`${outputDirectory(story, project, "linux-arm64")}/story.json`, "utf8"));
       assert.equal(manifest.status, "passed");
       assert.equal(manifest.mode, "generate");
       assert.equal(manifest.steps.reduce((n, step) => n + step.views.length, 0), count);

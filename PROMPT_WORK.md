@@ -981,3 +981,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind ordinary and recovery construction evidence to the unobscured campaign header at original complete-journey limits.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete construction family batch with immutable references, original 300-second journeys and 14-day diagnostic expiry.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Correct post-run manifest resolution using the authoritative feature registry; do not rerun the8passed construction journeys.

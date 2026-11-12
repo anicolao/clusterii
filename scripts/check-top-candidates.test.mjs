@@ -120,3 +120,13 @@ test("request identity survives both renderer layers", () => {
   const inner = readFileSync("scripts/ci-in-renderer.sh", "utf8");
   assert.ok(inner.includes('node scripts/top-candidates.mjs "$2"'));
 });
+
+import { outputDirectory } from "../tests/e2e/helpers/story-paths.mjs";
+test("runner resolves migrated and legacy manifests through the authoritative registry", () => {
+  assert.equal(outputDirectory("live-construction-ordinary", "phone", "linux-arm64"), "test-results/stories/010-construction/stories/live-construction-ordinary/phone/linux-arm64");
+  assert.equal(outputDirectory("live-construction-recovery", "short", "linux-arm64"), "test-results/stories/010-construction/stories/live-construction-recovery/short/linux-arm64");
+  assert.equal(outputDirectory("live-fleet-cargo", "desktop", "linux-arm64"), "test-results/stories/live-fleet-cargo/desktop/linux-arm64");
+  const runner = readFileSync("scripts/top-candidates.mjs", "utf8");
+  assert.ok(runner.includes('outputDirectory(story, project, "linux-arm64")'));
+  assert.ok(!runner.includes('test-results/stories/${story}'));
+});
