@@ -850,6 +850,9 @@
     color: #b4cbd1;
   }
   ol[aria-label="Route waypoints"] > li {
+    padding: 4px 0;
+  }
+  .route-editor ol[aria-label="Route waypoints"] > li {
     padding: 0;
   }
   li span {
