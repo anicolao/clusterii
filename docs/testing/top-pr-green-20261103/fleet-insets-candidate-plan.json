@@ -1,0 +1,32 @@
+{
+  "target": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+  "purpose": "Review complete six fleet families after measured header inset; generation only, no reference writes or approval.",
+  "collection": [
+    {
+      "project": "phone",
+      "tests": 6,
+      "captures": 148
+    },
+    {
+      "project": "desktop",
+      "tests": 6,
+      "captures": 148
+    },
+    {
+      "project": "large",
+      "tests": 6,
+      "captures": 148
+    },
+    {
+      "project": "short",
+      "tests": 6,
+      "captures": 148
+    }
+  ],
+  "guards": "9 passed; rejects changed scope/mode/source/retries/snapshot updates/replays, unrelated branches and extra arguments. Both launchers use explicit four-size allowlist.",
+  "firstLocalCollection": "Executor checkout has no node_modules; bun x svelte-kit failed before collection. No project lockfile changed. Actual collection rerun in already-installed main recovery checkout with identical target executable/spec trees, avoiding installation.",
+  "services": "Each complete real story owns fresh emulator lifetime; no mid-story restarts. Original test/step/deadline and all assertion source unchanged.",
+  "captureCounts": "22 cancellation +20 formation +34 reorganization +26 zero science +24 aftermath +22 contacts =148 per viewport,592 total. Counts checked against existing current baseline inventories; final manifest must match.",
+  "limits": "retries0, max-failures1 within each complete journey, update-snapshots none, telemetry off, fresh outputs and ports,3GiB start reserve,14-day remote artifacts.",
+  "requiredWorkflows": "Unmodified. Isolated branch/path-specific push trigger only. PR140 unchanged pending reviewed corrected batch."
+}
