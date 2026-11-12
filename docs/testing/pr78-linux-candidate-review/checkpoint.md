@@ -326,3 +326,12 @@ Exact continuation: let current checks complete and inspect totals/delivered/rec
 Independently viewed short science-rate-sources015 normal-motion chart-envoy totals and018 reduced-motion tidal-envoy totals from43296531488. After keyboard End, each shows complete ledger focus outline, before/after Innovation values, last delivered science, calculation explanation, uncertainty/proposed-rule copy and complete Return to galaxy action above bottom edge. Chart rate1.404 with Innovation1 vs tidal1.4 with Innovation0 remain distinct; both delivered1.4. This resolves the specific short opening-view below-scroll-boundary concern for these totals views, not all motion/privacy or complete design evidence.
 
 Exact continuation: await integrated terminal checks; inspect remaining recovered/delivered/component states and applicable approved visual references. Preserve design/release holds. No merge.
+
+
+## Supervisor PR140 recovered ledger and lab inspection
+
+2026-11-12 21:00 UTC: pane remains at completed integration handoff; top clean. Public6a2cbeee unchanged; application/full strict remain IN_PROGRESS, other three checks SUCCESS. No actionable failure or duplicate prompt warranted.
+
+Independently viewed strict43296531488 phone021 recovered chart-envoy ledger and short component004 delivered reduced-motion comparison. Phone shows fully visible focused totals, Innovation1 rate1.404 and last delivered1.404, caveat text and Return to galaxy. Lab shows actual shared ledger side-by-side in standard/reduced motion with same1.4 delivered facts and full selected focus outline/return controls. Top comparison headings partly outside current scroll position; these stills do not demonstrate interactive animation behavior by themselves. No new clipping in inspected essential ledger content. This remains bounded visual inspection, not full product/design approval.
+
+Exact continuation: preserve current runs, review their terminal evidence and remaining gallery/production states; no merge.
