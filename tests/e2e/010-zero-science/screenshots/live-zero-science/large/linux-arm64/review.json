@@ -37,51 +37,59 @@
   "captures": [
     {
       "image": "013-form-0-1-fleet-marshal.png",
-      "sha256": "0e93e906fa8e1cdb5d224588f210c265e3b3c14b2f15e74d29d6b9b468bfcb8b",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "ef58da62287ba41e819f46abaaaac80118d27473ad79de7568cb44d82f8288ca",
+      "previousSha256": "0e93e906fa8e1cdb5d224588f210c265e3b3c14b2f15e74d29d6b9b468bfcb8b",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "014-form-1-1-independent-marshal.png",
-      "sha256": "1a30b276cd418bf82920fff8512dbaf2e178c402dee082ab57a51c5a90e1ffe7",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "cd7251291f99b767d3a525ee82b54177b6b3ff494565a7a02ebbbcdc9a23dc86",
+      "previousSha256": "1a30b276cd418bf82920fff8512dbaf2e178c402dee082ab57a51c5a90e1ffe7",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "016-formed-fleets-1-fleet-marshal.png",
-      "sha256": "4603cdd6223f0294ac3384de8c25940eb5ec54c00ddd271af32a43339eef6b0c",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "a0108f2db5d37d01aea5a623a8ed9cdacc5610f9e7f6d861dddb051b58afd9d1",
+      "previousSha256": "4603cdd6223f0294ac3384de8c25940eb5ec54c00ddd271af32a43339eef6b0c",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "016-formed-fleets-2-independent-marshal.png",
-      "sha256": "a707fb863ce2806ecc4aa3abb0004ef7d4fe5a334a6340b5be0b2a50399ad3d3",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "f094a6fcce0489f045288dd6edcf6f124cf7e2ec1ea503cf1b972257f5eb3aee",
+      "previousSha256": "a707fb863ce2806ecc4aa3abb0004ef7d4fe5a334a6340b5be0b2a50399ad3d3",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "017-preview-route-0-1-fleet-marshal.png",
-      "sha256": "0f77a5fd686a97373e57d99e3a29a38855d7dc634b28abf85af3a36a6a58cc76",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "6d36275fd2aa4034595237a79a3fc2cb0705fc6bbec103ba533763b98f2aee78",
+      "previousSha256": "0f77a5fd686a97373e57d99e3a29a38855d7dc634b28abf85af3a36a6a58cc76",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "018-commit-route-0-1-fleet-marshal.png",
-      "sha256": "4fdf3e1853ff67da43a512338d428bc831bfa9e2910ad86ba8df7cf075289d27",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "2fccdb3b20c67ad6c0ec39820c1b105fcbd6d812cbd35b2ea4be50e530ee6061",
+      "previousSha256": "4fdf3e1853ff67da43a512338d428bc831bfa9e2910ad86ba8df7cf075289d27",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "019-preview-route-1-1-independent-marshal.png",
-      "sha256": "973262d1c471a6a4799865d7d671c5b3e41251f981d056c9dce819f566cb1382",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "e74877b9c5c27836f4aefa3d85dff0a4288c95fe9e9e38d2f0f2bde93d5c11d5",
+      "previousSha256": "973262d1c471a6a4799865d7d671c5b3e41251f981d056c9dce819f566cb1382",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "020-commit-route-1-1-independent-marshal.png",
-      "sha256": "efa1be36981e4ef79330deba99fce57be22ae69cc698324f7553d6e6ef18620e",
-      "previousSha256": null,
-      "changed": true
+      "sha256": "b93d5b5994c24afce44237f2b883dbe9bfd7189f8695e7e4cce0e00629e983bb",
+      "previousSha256": "efa1be36981e4ef79330deba99fce57be22ae69cc698324f7553d6e6ef18620e",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "022-lost-orbit-1-fleet-marshal.png",
@@ -192,5 +200,18 @@
       "changed": true
     }
   ],
-  "inspectionScope": "Every exact hash inspected or identical to a previously inspected hash; no full design, animation or release approval"
+  "inspectionScope": "Every exact hash inspected or identical to a previously inspected hash; no full design, animation or release approval",
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json",
+      "source": {
+        "commit": "ec13c28dedc76fb08199312ecd5937940995a336",
+        "dirty": false,
+        "spec": "tests/e2e/010-zero-science/zero-science.spec.ts",
+        "specSha256": "b1cdc3792101749e95eb1a12ee07bfb2e90480603ff5beda78aff7e15cd3199f"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-insets-43173376847/large/test-results/stories/live-zero-science/large/linux-arm64/story.json",
+      "scope": "Exact changed-hash regression approval only; no full design/normal motion/privacy-rule/release acceptance."
+    }
+  ]
 }

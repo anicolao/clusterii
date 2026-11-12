@@ -39,10 +39,10 @@
   "captures": [
     {
       "image": "010-inspect-empty-contact-history-1-fleet-pathfinder.png",
-      "sha256": "2e8cd95478bf737ef26737c079f9e66525886fc8e737c092520eabe7f89180f1",
-      "previousSha256": null,
+      "sha256": "2e0ae6c0a6ee1d8d69754fcee2c21264e55dc407be604733a49f3d263b16c361",
+      "previousSha256": "2e8cd95478bf737ef26737c079f9e66525886fc8e737c092520eabe7f89180f1",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "010-inspect-empty-contact-history-2-contact-watcher.png",
@@ -53,10 +53,10 @@
     },
     {
       "image": "011-commit-real-fleet-1-fleet-pathfinder.png",
-      "sha256": "4ec58f74e05a892eae3ccbf5a1fc26833c55a2051ba540481b687f6e4eb0ece7",
-      "previousSha256": null,
+      "sha256": "18f069a3e2437db7152c67403058d6d2abc7de9e7db55e755d272b55d25f7d86",
+      "previousSha256": "4ec58f74e05a892eae3ccbf5a1fc26833c55a2051ba540481b687f6e4eb0ece7",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "011-commit-real-fleet-2-contact-watcher.png",
@@ -67,10 +67,10 @@
     },
     {
       "image": "014-read-current-contact-1-fleet-pathfinder.png",
-      "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
-      "previousSha256": null,
+      "sha256": "133965beb046113e6e47dd1e4bca605fa942cbb7f150a95133539cb1cf471c69",
+      "previousSha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "014-read-current-contact-2-contact-watcher.png",
@@ -81,10 +81,10 @@
     },
     {
       "image": "015-select-and-resize-contact-1-fleet-pathfinder.png",
-      "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
-      "previousSha256": null,
+      "sha256": "133965beb046113e6e47dd1e4bca605fa942cbb7f150a95133539cb1cf471c69",
+      "previousSha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "015-select-and-resize-contact-2-contact-watcher.png",
@@ -95,10 +95,10 @@
     },
     {
       "image": "016-read-current-coordinates-age-1-fleet-pathfinder.png",
-      "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
-      "previousSha256": null,
+      "sha256": "133965beb046113e6e47dd1e4bca605fa942cbb7f150a95133539cb1cf471c69",
+      "previousSha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "016-read-current-coordinates-age-2-contact-watcher.png",
@@ -109,10 +109,10 @@
     },
     {
       "image": "017-read-current-coordinates-facts-1-fleet-pathfinder.png",
-      "sha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
-      "previousSha256": null,
+      "sha256": "133965beb046113e6e47dd1e4bca605fa942cbb7f150a95133539cb1cf471c69",
+      "previousSha256": "ff42a2f57c87e8d896341470cd59caaedc64c5b15a2f7e894160219bda270105",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "017-read-current-coordinates-facts-2-contact-watcher.png",
@@ -123,10 +123,10 @@
     },
     {
       "image": "019-recover-last-seen-record-1-fleet-pathfinder.png",
-      "sha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee",
-      "previousSha256": null,
+      "sha256": "e510ccd6a14dd7d301efd11247099223c03d601a447364de5573e2b68ccd777c",
+      "previousSha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "019-recover-last-seen-record-2-contact-watcher.png",
@@ -137,10 +137,10 @@
     },
     {
       "image": "020-read-retained-coordinates-age-1-fleet-pathfinder.png",
-      "sha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee",
-      "previousSha256": null,
+      "sha256": "e510ccd6a14dd7d301efd11247099223c03d601a447364de5573e2b68ccd777c",
+      "previousSha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "020-read-retained-coordinates-age-2-contact-watcher.png",
@@ -151,10 +151,10 @@
     },
     {
       "image": "021-read-retained-coordinates-facts-1-fleet-pathfinder.png",
-      "sha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee",
-      "previousSha256": null,
+      "sha256": "e510ccd6a14dd7d301efd11247099223c03d601a447364de5573e2b68ccd777c",
+      "previousSha256": "d243a27740bce37870e46ed4679e6e57e1c2bac203b1fcc80854a1ea1b5a73ee",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "021-read-retained-coordinates-facts-2-contact-watcher.png",
@@ -165,10 +165,10 @@
     },
     {
       "image": "022-reload-private-contact-history-1-fleet-pathfinder.png",
-      "sha256": "b22f3df7b519ab630f0677ae12927681b76c2bf8f17eb1f59d41abf804dd97e4",
-      "previousSha256": null,
+      "sha256": "c817cafc7995adfc484aa24ce8f4a06dd088ecbae46d38de1805db8f6fed53d1",
+      "previousSha256": "b22f3df7b519ab630f0677ae12927681b76c2bf8f17eb1f59d41abf804dd97e4",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json"
     },
     {
       "image": "022-reload-private-contact-history-2-contact-watcher.png",
@@ -190,6 +190,19 @@
       "previousSha256": null,
       "changed": true,
       "approval": "exact individually inspected hash"
+    }
+  ],
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/fleet-insets-large-reviewed.json",
+      "source": {
+        "commit": "ec13c28dedc76fb08199312ecd5937940995a336",
+        "dirty": false,
+        "spec": "tests/e2e/012-fleet-contacts/contacts.spec.ts",
+        "specSha256": "eac7eaf98af6b2dc8814fd0a3084b646dfb60e113c0476482f8b29e1d808b4ec"
+      },
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-fleet-insets-43173376847/large/test-results/stories/live-fleet-contacts/large/linux-arm64/story.json",
+      "scope": "Exact changed-hash regression approval only; no full design/normal motion/privacy-rule/release acceptance."
     }
   ]
 }
