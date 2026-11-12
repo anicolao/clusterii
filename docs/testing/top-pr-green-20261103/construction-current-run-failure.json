@@ -1,0 +1,11 @@
+{
+  "run": 43124420572,
+  "conclusion": "failure",
+  "actualTests": "Two complete journeys passed at each of four sizes; eight total. Artifact check then failed ENOENT at legacy output path.",
+  "source": "7f841eccbd94f42c76c832251b371f9110f9125d",
+  "request": "217d008d62b91eec8e46dd1ff02d4bf8891f5f44",
+  "executorRepair": "c8d4600e",
+  "repair": "Use existing outputDirectory registry instead of hard-coded legacy output directory; eight guard/registry tests pass. No gameplay rerun or required workflow mutation.",
+  "artifactVerification": "Retrieval in progress, full archive size/SHA/CRC then actual migrated manifests and original image hashes; not automatically approved.",
+  "logSha256": "93cf257a4ac06b5a032bda5669a30455183a1314a2fd3e67ea3a71d3a330e2f4"
+}
