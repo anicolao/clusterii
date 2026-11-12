@@ -989,3 +989,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reconcile the terminal required strict run with current prepared repairs and preserve its compact exact first-failure classification.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Dispatch corrected complete routes and inspect the next gallery mismatch through bounded selected evidence.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain only complete passed cargo originals from remaining fleet artifacts in memory after checking disk and RAM headroom.

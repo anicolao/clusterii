@@ -1,0 +1,25 @@
+{
+  "target": "6fd3f0baa14ab6c30631a9e38fad7396548d2dbc",
+  "executor": "2f07286def4e4e23dca39951ba3e1ec51189f383",
+  "request": "83dd576d9f30181750181f99318f064628d80def",
+  "run": 43126032986,
+  "capturesByStory": {
+    "identity-component-gallery": 21
+  },
+  "viewports": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "expectedCaptures": 84,
+  "originalDeadlineMs": 120000,
+  "actualCollection": 4,
+  "guardTestsPassed": 7,
+  "mode": "generate",
+  "retries": 0,
+  "updateSnapshots": "none",
+  "retentionDays": 14,
+  "approval": false,
+  "scope": "Complete original gallery, including keyboard/component assertions. Previously inspected first differences are selected Investing row scroll visibility; remaining complete originals require inspection."
+}
