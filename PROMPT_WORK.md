@@ -1123,3 +1123,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete remaining fleet viewport hash and visual review before the next integrated PR140 verification batch.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reclaim only phone and desktop PNG copies proven identical to pushed Git references, preserving manifests and reconstruction paths.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect all remaining short fleet state images and preserve exact visual dispositions before any reference update.
