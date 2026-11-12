@@ -1129,3 +1129,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect complete large fleet candidates, validate exact reference changes and prepare the integrated required-check update.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Audit the complete reviewed reference batch and preserved required gates before fast-forwarding existing PR140.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record active integrated CI handles and reclaim reviewed duplicate fleet extracts and derived review sheets with exact reconstruction provenance.
