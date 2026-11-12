@@ -1037,3 +1037,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain final passed large route-marker artifact once and complete four-size source-bound comparison before baseline integration.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Check combined recovery application units while publishing inspected route references and preparing bounded remaining-family evidence.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Diagnose retained short conversation clipping from original trace without new service runs or redundant archive copies.
