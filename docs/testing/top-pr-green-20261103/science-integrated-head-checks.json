@@ -1,0 +1,57 @@
+{
+  "headRefOid": "6a2cbeeef7dc27783884b2669e1962999e6405e2",
+  "state": "OPEN",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43299783685/job/131467536125",
+      "name": "verify",
+      "startedAt": "2026-11-12T20:23:13Z",
+      "status": "QUEUED",
+      "workflowName": "Application checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43299783553/job/131467535836",
+      "name": "documentation",
+      "startedAt": "2026-11-12T20:23:13Z",
+      "status": "QUEUED",
+      "workflowName": "Documentation checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43299783595/job/131467536417",
+      "name": "stories (verify)",
+      "startedAt": "2026-11-12T20:23:13Z",
+      "status": "QUEUED",
+      "workflowName": "Illustrated stories"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43299783654/job/131467536779",
+      "name": "publish",
+      "startedAt": "2026-11-12T20:23:13Z",
+      "status": "QUEUED",
+      "workflowName": "Publish review build"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "0001-01-01T00:00:00Z",
+      "conclusion": "",
+      "detailsUrl": "https://github.com/anicolao/clusterii/actions/runs/43299783595/job/131467536330",
+      "name": "stories (generate)",
+      "startedAt": "2026-11-12T20:23:13Z",
+      "status": "QUEUED",
+      "workflowName": "Illustrated stories"
+    }
+  ],
+  "meaning": "Normal fast-forward current-stack integration; full five required checks now live. No green claim. Previous failure86ef preserved. Complete96 scoped science strict passed before integration; design/release approval separate."
+}
