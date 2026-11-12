@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr78-route-reference-review/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/route-marker-integration.json",
   "mode": "reviewed-baseline-candidates",
   "story": "paused-fleet-travel",
   "renderer": {
@@ -27,5 +27,186 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "d2350a42e2402d49f5d8b3ffdab1dfdbab904ced",
+    "dirty": false,
+    "spec": "tests/browser/fleet-travel-catchup.story.spec.ts",
+    "specSha256": "4af5646259515907806f7d659968382ce6473860d0af9011f5ae18e6aec8907c"
+  },
+  "target": "9340870486e305050e09c58aa4b1ea4db9935b6b",
+  "run": 43133029642,
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "142d89554bf4aa13004b153c7a5c4b878daf4e71104d9823d448424681390f8a",
+      "previousSha256": "1bd4b0e59f5bd8b4512ac1849f16958a168f2720a2cdbe6baeb121e70d895ba7"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "9ffc823a0d2f826444b2cf48fc820a596dcf85a40f77777d82869bcf9f6b3876",
+      "previousSha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "5ea95177c7fb158da9ada4d1c87fac984e7a89494c4ef3e716249281871e74a0",
+      "previousSha256": "3788d820c8862a73796c7ddc5cde909879d2a199956b0ffd86c2cd146ec5ccab"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "9ffc823a0d2f826444b2cf48fc820a596dcf85a40f77777d82869bcf9f6b3876",
+      "previousSha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "8d8f5529c68c2c847602056fc5f8a8b5682f0ffd0ec74fb515683ea99d070eb1",
+      "previousSha256": "f9db93e3ef2972965248a9f32c24af8b07f304dc44116b8d7055be69f1c9d17f"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "9ffc823a0d2f826444b2cf48fc820a596dcf85a40f77777d82869bcf9f6b3876",
+      "previousSha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "0ebe9428c5a21bc5e0d98fdc2fe9b0b2e5eb18ff110bf569dfe6a6aeee472180",
+      "previousSha256": "81bce14710873084383c123c44b3d91018ea7bde9c29882aa4f628b7f766642f"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "9ffc823a0d2f826444b2cf48fc820a596dcf85a40f77777d82869bcf9f6b3876",
+      "previousSha256": "447667314c1285ec4401098333255f7267546ab2d2d4c0be1fe813f9e112acfd"
+    },
+    {
+      "image": "015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "54c989c81ffe4962f9566f27ce669d4554d39d111ef3fbc732afbd897b8d3270",
+      "previousSha256": "eb30b9c722ff0797e55f7a562d793f03fdbd4548a9865f8e3122082e90a3114c"
+    },
+    {
+      "image": "015-formed-fleet-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "016-open-route-1-fleet-marshal.png",
+      "sha256": "52c611ce44a15fdf6502941ac1c171c71dc420f2be8790fafe60b30b8940ceb6",
+      "previousSha256": "b943deaf81391365e62ab399ce89b953691c93ed247018634aff944342610587"
+    },
+    {
+      "image": "016-open-route-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "2fb5bf4d680e23c72744ec99595d5cad25853569ce6bad350555de277a8bba38",
+      "previousSha256": "db3a98cd6d9110c98df41b86d8002662f2a841ea7d48395200a1d7e02cfaa9b6"
+    },
+    {
+      "image": "017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "03ea97aa713a0d60f091e68ba9f2681afc7323926a21476dbf5f22c6c4b454f0",
+      "previousSha256": "22c421e8c48e72edb6cc41e8d1646cb08005f8c66a197f596b078f158203720a"
+    },
+    {
+      "image": "018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "019-repair-route-1-fleet-marshal.png",
+      "sha256": "9df35cb732779301013ad4ce5bd5eaf945ced0c899ba305572fe3337a59a899b",
+      "previousSha256": "ddcf488e8583ccd01df91c01c09ae990a60f1932cc37fe1b93a59228af7a2cb1"
+    },
+    {
+      "image": "019-repair-route-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "020-accept-route-1-fleet-marshal.png",
+      "sha256": "9d969c9ffcee14440bb1678053c88b1e0481f4dcd013c26c91a5735b1de524f9",
+      "previousSha256": "564f7f916129db79f44a8659a818f1e50e4d13c122376fbdc155c41c9eb81a3b"
+    },
+    {
+      "image": "020-accept-route-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "021-recover-route-1-fleet-marshal.png",
+      "sha256": "2737906fcb06b59129f636a63df3571fc2680f0c2a0c79dcd184dbc4b072ba39",
+      "previousSha256": "ebdd0b6f4f7d890b5efb48ed5cbb9c6db7b0dc1cacdb8f7a8c0dc6e038149be8"
+    },
+    {
+      "image": "021-recover-route-2-independent-marshal.png",
+      "sha256": "e411ab37d28d94812def2dbd8c2e26cc8997121f83a86f838c2987a824033d8c",
+      "previousSha256": "4b47ef52d8d50967e388d76b76348d8bbc366366c287e6cd39e50c6ae094ebca"
+    },
+    {
+      "image": "023-traveling-1-fleet-marshal.png",
+      "sha256": "862620611e403f42ec2b2a9c80c4abcc487e49881db988bbea4afe8203a349be",
+      "previousSha256": "a3ab75c8f72887b49d53237ed3e523af41cf612e0fc4da7aaf7c0a4262c2da0b"
+    },
+    {
+      "image": "023-traveling-2-independent-marshal.png",
+      "sha256": "00b7c77fa73d020ed343a1a58eb67cb7ef759ba5ca1a8cdf6b311eccd26a2b70",
+      "previousSha256": "9dc39fd40b1cc04a2ff01d38cde4d273447129b4a25d06f0a2bd690218ce48db"
+    },
+    {
+      "image": "024-pause-travel-1-fleet-marshal.png",
+      "sha256": "43e5a6d8243d11a0cf37b7050b3c8b5e333fe66421c26bf47cb2ac5ba1855e45",
+      "previousSha256": "6557d6a6df04d3e88995233c78dd2977cb76a6083b2371946d3839130bd2ac7b"
+    },
+    {
+      "image": "024-pause-travel-2-independent-marshal.png",
+      "sha256": "b9d020c0f7693d2ada24523d3662d07ee8f557664e88e21b715aa143581089df",
+      "previousSha256": "c7e162aef5568f7ce462ccf235edc8cb361c791578161218a0d1c30dd6dffad5"
+    },
+    {
+      "image": "026-recover-paused-travel-1-fleet-marshal.png",
+      "sha256": "df67e01e7f172c5073df85426027e1f0435292e0d9513ec0636e4771d4e174db",
+      "previousSha256": "2050eeff2e6b27da927af6b53a59671aaddd770ed3990f9b8f7aab10d0e9d614"
+    },
+    {
+      "image": "026-recover-paused-travel-2-independent-marshal.png",
+      "sha256": "b9d020c0f7693d2ada24523d3662d07ee8f557664e88e21b715aa143581089df",
+      "previousSha256": "c7e162aef5568f7ce462ccf235edc8cb361c791578161218a0d1c30dd6dffad5"
+    },
+    {
+      "image": "027-resume-travel-1-fleet-marshal.png",
+      "sha256": "938c284b9bfca1e28c5ff39a5d48aea491d2b4eba6461b508bae1155c797bc07",
+      "previousSha256": "7bf73dd3c1e71244da76b6e627a7cb0fb48ab84bfa05af3241dcad5a4ac28a3b"
+    },
+    {
+      "image": "027-resume-travel-2-independent-marshal.png",
+      "sha256": "dd503d12cbc46284aa2a94dc45ca62b055ea7dc0b9f23d4694ddb611a40428e5",
+      "previousSha256": "9dc39fd40b1cc04a2ff01d38cde4d273447129b4a25d06f0a2bd690218ce48db"
+    },
+    {
+      "image": "029-arrival-report-1-fleet-marshal.png",
+      "sha256": "1c9fb6c7bea071963718b9dab4f177dd0aabec9743d2fe8c40a9b600bdfe5eab",
+      "previousSha256": "1e35c911fa6833993ed9e9d912f92c776f41adfdaf8d2b26b2a000ec1b685c24"
+    },
+    {
+      "image": "029-arrival-report-2-independent-marshal.png",
+      "sha256": "9b8f8083f9e93ac1940d9f656e27c983089101d2c1103d12294941a0c8e18e91",
+      "previousSha256": "2a24c759d32a28cbaaca23105b508749fb14a54cdd594a6d49abd17f1a1ef0ce"
+    },
+    {
+      "image": "030-recover-arrival-1-fleet-marshal.png",
+      "sha256": "88c2f332a73bff95815bb8556bc1ccee1dc0cd0b2eb84c4626714a045fcaf72c",
+      "previousSha256": "d3d32ea99bbb9b6a8c3f61b2d2ebf8124a43238943a6a03314146c83a6add0a9"
+    },
+    {
+      "image": "030-recover-arrival-2-independent-marshal.png",
+      "sha256": "9b8f8083f9e93ac1940d9f656e27c983089101d2c1103d12294941a0c8e18e91",
+      "previousSha256": "2a24c759d32a28cbaaca23105b508749fb14a54cdd594a6d49abd17f1a1ef0ce"
+    }
+  ],
+  "inspectionScope": "Every changed image inspected via exact SHA representatives, including corrected marker. Large downscaled layout/content review. No full design, normal motion or privacy certification."
 }

@@ -1,0 +1,38 @@
+{
+  "run": 43133029642,
+  "viewport": "large",
+  "records": [
+    {
+      "story": "paused-fleet-travel",
+      "viewport": "large",
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-marker-43133029642/large/test-results/stories/paused-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/large/linux-arm64/023-traveling-1-fleet-marshal.png",
+      "sha256": "67e91d939eb44831910ad0462f2d73aebd846b43012c635d9851d61f7c01aa62",
+      "previousCandidateSha256": "e3ec86a7e94da3175c4ae0e80b88d990608854ed46f64ade1dbe8d6d2eaf3b7e",
+      "oldSha256": "665cc0b9a61392d456943c3e3edf71077dad350aad4def44bdad708c2d50dfa1",
+      "markerChanged": true
+    },
+    {
+      "story": "paused-fleet-travel",
+      "viewport": "large",
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-marker-43133029642/large/test-results/stories/paused-fleet-travel/large/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/paused-fleet-travel/large/linux-arm64/026-recover-paused-travel-1-fleet-marshal.png",
+      "sha256": "174d2137fde8c1d3752cd558647f43c589c3e3963b779eeaaadd98083a9f6ea6",
+      "previousCandidateSha256": "3741f02b9b39f034981d549530d2bec09fb8e02bc93b6a863ea40f284c956684",
+      "oldSha256": "490262a37d718f1543de4be22280fa8f602b8116ebdf874251c58ddb1e0fb743",
+      "markerChanged": true
+    },
+    {
+      "story": "interrupted-fleet-route",
+      "viewport": "large",
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-route-marker-43133029642/large/test-results/stories/interrupted-fleet-route/large/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "reference": "tests/browser/story-baselines/interrupted-fleet-route/large/linux-arm64/031-traveling-1-fleet-marshal.png",
+      "sha256": "1b9e7e7ffd202838df51f8b8d9c78c9e87957b7a54af048db77e33409ab17a3c",
+      "previousCandidateSha256": "c496d3159cf5941ce9f57e1557655c9650d3fa06df231c11ca8e88587118b90f",
+      "oldSha256": "bc4336d2b31de7ee4fdb9264aa089946e5017255e586b9ba1352f50f474f7470",
+      "markerChanged": true
+    }
+  ],
+  "disposition": "approved-regression",
+  "inspection": "Three changed full originals individually viewed after old expected originals: true route anchor restores Fleet7 marker inside chart, clear of origin label and route legend; counts, route, footer and controls unchanged. Remaining71large exact prior-candidate hashes carry reviewed dispositions. Large2048display of3840original, layout/content scope."
+}

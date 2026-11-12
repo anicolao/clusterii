@@ -1033,3 +1033,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record sole fullscreen rail request, real two-case collection and bounded retention while route phone and short complete.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify completed route-marker artifacts once in memory and compare complete originals with prior inspected and held frames.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain final passed large route-marker artifact once and complete four-size source-bound comparison before baseline integration.
