@@ -1119,3 +1119,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify completed phone fleet candidate manifests and selectively retain original review images, without downloading redundant trace archives.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain and compare remaining completed fleet viewports with explicit memory and disk bounds, then verify admission and history outcomes.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete remaining fleet viewport hash and visual review before the next integrated PR140 verification batch.
