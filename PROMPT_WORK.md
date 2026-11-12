@@ -1065,3 +1065,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record passed phone and short route journeys with distinct postprocessing capture-count failure for manifest reconciliation.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify completed route artifacts in memory and reconcile postprocessing view count against unchanged complete story manifests.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect corrected phone travel and force originals with exact duplicate coverage before reference promotion.
