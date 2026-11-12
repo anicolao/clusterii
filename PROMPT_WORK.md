@@ -1107,3 +1107,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Classify the first partial strict log at 44dc, preserve its truncation boundary, and prepare selective pixel diagnosis after upload.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Classify all 27 integrated pixel failures and selectively retain verified comparison entries without the 6.4 GB outer archive.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Trace fleet header clipping and the two isolated rendering failures using bounded retained failure traces before changing production.

@@ -1,0 +1,10 @@
+{
+  "source": "44dc88b9b4742b217ae7c3e28fce0405964b1272",
+  "supersedesFinding": "integrated-44dc-initial-image-diagnosis.json findings.fleet",
+  "inspection": "Reopened original native phone and desktop actual images. Neither shows the previously claimed top clipping: phone title uses deliberate ellipsis, desktop resource labels and full campaign name are visible. This corrects the earlier inspection, not production CSS.",
+  "trace": "Read retained phone owner snapshots. Only recorded nonzero page scroll is 520px in earlier authentication snapshot; no evidence of fleet ancestor scroll defect. This is not a full computed geometry measurement.",
+  "contract": "UX_DESIGN.md upper rail requires campaign context, resources, next tick; fleet task/actions must remain readable. Current inspected actuals show those fields and complete focused infantry control.",
+  "cause": "Measured Galaxy fleet-panel top now follows command-rail-height instead of fixed 58px; foreground panel and hero reflow accordingly. Complete affected stories must be generated/reviewed to expose later differences.",
+  "action": "No unsupported production change. Prepare one bounded six-family four-size generation at unchanged source, retaining all real actions/assertions/deadlines and inspecting every changed capture. Other three isolated failures remain separate investigations.",
+  "approval": "No new reference approved or promoted by this report."
+}

@@ -1,0 +1,62 @@
+{
+  "artifact": {
+    "id": 13921678685,
+    "node_id": "MDg6QXJ0aWZhY3QxMzkyMTY3ODY4NQ==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 6409838817,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13921678685",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13921678685/zip",
+    "expired": false,
+    "digest": "sha256:f20d35df03ab455af966e9cab8f1e7e336d129415729d9d753ab2e147ff744a2",
+    "created_at": "2026-11-12T06:51:21Z",
+    "updated_at": "2026-11-12T06:51:21Z",
+    "expires_at": "2027-02-10T03:59:38Z",
+    "workflow_run": {
+      "id": 43151818973,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/admission-briefing-composition",
+      "head_sha": "44dc88b9b4742b217ae7c3e28fce0405964b1272"
+    }
+  },
+  "rangeBytes": 67528538,
+  "entries": [
+    {
+      "name": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-desktop/error-context.md",
+      "size": 10142,
+      "sha256": "99cf1ae4e9543e2587fbfe97a05ef5a68a0cc5f497ad92bda0a2a09186749633",
+      "crc32": "5246ad76"
+    },
+    {
+      "name": "test-results/stories/browser-campaign-start.sto-4e484-their-named-active-campaign-desktop/trace.zip",
+      "size": 23042275,
+      "sha256": "82fa33952e72776311821a6a32d902d97f86f8e2969c94f1242b695e84756a70",
+      "crc32": "7623966d"
+    },
+    {
+      "name": "test-results/stories/browser-fleet-cancellation-2be44-leases-private-reservations-phone/error-context.md",
+      "size": 10146,
+      "sha256": "63aa53a5f1d73218813e3fe7188d415c4b274500782b37a1b15a75c302d9031f",
+      "crc32": "6b78a502"
+    },
+    {
+      "name": "test-results/stories/browser-fleet-cancellation-2be44-leases-private-reservations-phone/trace.zip",
+      "size": 5467820,
+      "sha256": "946c8a0d7c2f2f3b4732fe539fb40e3fbca60498270c030a7b11470080057e33",
+      "crc32": "2a1c889b"
+    },
+    {
+      "name": "test-results/stories/browser-market-membership--341ab-ew-and-clears-market-intent-large/error-context.md",
+      "size": 10208,
+      "sha256": "0352a2ed0b69b4e02e32f4bfa3471b5f7f3d96f9e1ad41b630d590e6ba230fb3",
+      "crc32": "0ff36097"
+    },
+    {
+      "name": "test-results/stories/browser-market-membership--341ab-ew-and-clears-market-intent-large/trace.zip",
+      "size": 37557102,
+      "sha256": "dd7e285bed91fc07d521f33d36918a86beaf66f7acee4716d5cf429af042c63f",
+      "crc32": "3059cbd1"
+    }
+  ],
+  "integrity": "Exact HTTP Content-Range and API size; selected entries decoded with ZIP CRC and individual SHA256. Full archive SHA not verified; no local archive retained."
+}
