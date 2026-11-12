@@ -1,0 +1,9 @@
+{
+  "target": "31cf16a52ff48de55c662726bed9fdaac64fa86a",
+  "check": "passed 0errors1existingwarning",
+  "lint": "passed",
+  "unit": "121passed4651assertions",
+  "policy": "77passed; policy passed;4baseline-path tests passed",
+  "scope": "Existing cheap integration gates; not full required CI",
+  "briefingImport": "Only inspected PNG/review metadata added after gates, no executable change"
+}
