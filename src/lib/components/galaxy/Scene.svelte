@@ -51,7 +51,11 @@
     ];
   }
   import { frameChartTarget, type ChartCenter } from "$lib/galaxy-camera";
-  import { galaxyOverview, fleetRouteFrame } from "$lib/galaxy-framing";
+  import {
+    galaxyOverview,
+    fleetRouteFrame,
+    fleetMarkerPosition,
+  } from "$lib/galaxy-framing";
   import RouteLine from "./RouteLine.svelte";
   import FleetSymbol from "../FleetSymbol.svelte";
   import type { Star } from "@shared/galaxy";
@@ -257,7 +261,7 @@
     thickness={routeFocus ? routeUnit * 1.5 : 0}
   />{/each}
 {#each travelers as fleet}<T.Group
-    position={[fleet.x / 10, fleet.y / 10 + 0.08, fleet.z / 10]}
+    position={fleetMarkerPosition(fleet, routeFocus)}
     ><HTML style={onfleet ? undefined : "pointer-events: none"}
       >{#if onfleet}<button
           class="travel-marker"
