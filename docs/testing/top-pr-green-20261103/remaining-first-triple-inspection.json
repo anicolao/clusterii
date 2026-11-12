@@ -1,0 +1,274 @@
+{
+  "source": "5d1342c6fa55669bb7044e2f965e41aede6786dc",
+  "run": 43104256802,
+  "artifact": {
+    "id": 13901553521,
+    "node_id": "MDg6QXJ0aWZhY3QxMzkwMTU1MzUyMQ==",
+    "name": "illustrated-stories-verify-linux-arm64",
+    "size_in_bytes": 5262505341,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13901553521",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13901553521/zip",
+    "expired": false,
+    "digest": "sha256:a26937f64fb00e6887169c7063928df7a6a911692026648401543c6e8c278c48",
+    "created_at": "2026-11-11T23:54:48Z",
+    "updated_at": "2026-11-11T23:54:48Z",
+    "expires_at": "2027-02-09T21:34:33Z",
+    "workflow_run": {
+      "id": 43104256802,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "feat/admission-briefing-composition",
+      "head_sha": "5d1342c6fa55669bb7044e2f965e41aede6786dc"
+    }
+  },
+  "rangeBytes": 17829900,
+  "entries": [
+    {
+      "name": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-desktop/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy-actual.png",
+      "size": 878354,
+      "sha256": "d8a74d6c64fcf310d8b1e97a4b816e8bd1787e7dfc055118a1aaca8f2957118b",
+      "crc32": "c583a808"
+    },
+    {
+      "name": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-desktop/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy-diff.png",
+      "size": 278223,
+      "sha256": "cc48350e5bbd05d1b52a5cc684e5ee20883a868f30230e030e9a41261335cf21",
+      "crc32": "d5b4be47"
+    },
+    {
+      "name": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-desktop/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy-expected.png",
+      "size": 869221,
+      "sha256": "63a45740592511712265d6d772c73a1cb27c3a8c18cd41e81e595261dfb58edb",
+      "crc32": "a4025e58",
+      "verifiedReference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png"
+    },
+    {
+      "name": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-phone/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy-actual.png",
+      "size": 137056,
+      "sha256": "bb71b56acb70d6e2616ccdf7126f6f22e4470a27b427e1e82b08bc05770693f8",
+      "crc32": "18cb8756"
+    },
+    {
+      "name": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-phone/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy-diff.png",
+      "size": 36702,
+      "sha256": "e87b2262a8f6e954a3279c7b8e4566a1b04b873660105a94843b7e8d2f7a3bd8",
+      "crc32": "608a39d3"
+    },
+    {
+      "name": "test-results/stories/browser-live-menu-preserva-c310e-ion-across-a-confirmed-tick-phone/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy-expected.png",
+      "size": 128621,
+      "sha256": "a0be16c705cf3cc121eb116b88d229841276c9f0b2edab0c77fb34260b18a32d",
+      "crc32": "80a68e2f",
+      "verifiedReference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy.png"
+    },
+    {
+      "name": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-desktop/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy-actual.png",
+      "size": 1323472,
+      "sha256": "e4c5f69caf6162be1cbd7036c82ae9b3a38d41811afe02229b211000dd3f26e3",
+      "crc32": "9772081a"
+    },
+    {
+      "name": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-desktop/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy-diff.png",
+      "size": 637215,
+      "sha256": "53dbbc15265870e3c283faee0f910b31d21769b162d0c4b52de533a228380ebc",
+      "crc32": "98b05d9b"
+    },
+    {
+      "name": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-desktop/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy-expected.png",
+      "size": 1309088,
+      "sha256": "76a7b8a4ce463f285c92f7dc80eab2ef50337a4080f93510e510e0c642f15c91",
+      "crc32": "2b063006",
+      "verifiedReference": "tests/browser/story-baselines/live-return-briefing/desktop/linux-arm64/011-return-to-campaign-1-returning-envoy.png"
+    },
+    {
+      "name": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-actual.png",
+      "size": 396401,
+      "sha256": "fe1e222222997354f3e038f4de2ae1736689938bc9de36d5a23be3ba92f1a04d",
+      "crc32": "6273fa7e"
+    },
+    {
+      "name": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-diff.png",
+      "size": 158735,
+      "sha256": "3bde9ae32f822a6c8a9d82b6300b5c944b09c0aa19648f77065e1c0001feb74c",
+      "crc32": "cc4cfca8"
+    },
+    {
+      "name": "test-results/stories/browser-return-briefing.st-8d8f8-the-reviewed-private-period-phone/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy-expected.png",
+      "size": 388571,
+      "sha256": "6927c85b6223b8b8ece99e9e9fd543092d827c973a1010c165dbb22678a49bca",
+      "crc32": "7e130c67",
+      "verifiedReference": "tests/browser/story-baselines/live-return-briefing/phone/linux-arm64/011-return-to-campaign-1-returning-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-desktop/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy-actual.png",
+      "size": 781791,
+      "sha256": "abbe886ed79fda36f139198733f6d4268742ecefc1e66f50210972d43e22d752",
+      "crc32": "15dd3c86"
+    },
+    {
+      "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-desktop/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy-expected.png",
+      "size": 771608,
+      "sha256": "f6626d8d614d54d7ed9cd472b03b6c855a9e5e4dff71df16eb066bb980b5c2d7",
+      "crc32": "95cf53c9",
+      "verifiedReference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-desktop/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy-diff.png",
+      "size": 309926,
+      "sha256": "adacab0854127d90d9bc01827020b36ff3e82ace5f7ed2cbe22c292999fa23c1",
+      "crc32": "043ff656"
+    },
+    {
+      "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-phone/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy-diff.png",
+      "size": 56874,
+      "sha256": "fdc3b59d47f1cc00137f56a380e1f78381f2f490110e4151ad50115c30d8ca2b",
+      "crc32": "f6e30455"
+    },
+    {
+      "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-phone/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy-actual.png",
+      "size": 79815,
+      "sha256": "082291198526d9b2d47eef146398a17f71be1de9faac2ca620ecb3363fa876c0",
+      "crc32": "45b9543b"
+    },
+    {
+      "name": "test-results/stories/e2e-002-galaxy-galaxy-Insp-d0278-xy-through-its-command-dock-phone/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy-expected.png",
+      "size": 70053,
+      "sha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338",
+      "crc32": "e879be27",
+      "verifiedReference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-desktop/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy-actual.png",
+      "size": 1504879,
+      "sha256": "fa32d69176d7bedf6b300af3a6e4956588d110bc09ba8eedec34a416ae071484",
+      "crc32": "3e7a29fd"
+    },
+    {
+      "name": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-desktop/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy-diff.png",
+      "size": 437831,
+      "sha256": "a93e2aa9d789ff5bba8f8f1c889ab8cc75f351e49d158176d0cc1463b022143a",
+      "crc32": "26184fde"
+    },
+    {
+      "name": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-desktop/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy-expected.png",
+      "size": 1516738,
+      "sha256": "cc4ee31971f8684d9e1f4e6fa28571b47f7f0133dfa25f2eb9bb6fec2808df9d",
+      "crc32": "1892038f",
+      "verifiedReference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-phone/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy-actual.png",
+      "size": 297234,
+      "sha256": "435d5e1503ef552a546f9cc228f8be4dcb3270d5851453276c519ef75721ecc0",
+      "crc32": "6c0925a9"
+    },
+    {
+      "name": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-phone/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy-diff.png",
+      "size": 99965,
+      "sha256": "76599051c04058139def9b1f37cbaa797a8342c8f1fbe0b03d7c9b980a78b56b",
+      "crc32": "66043f82"
+    },
+    {
+      "name": "test-results/stories/e2e-005-campaign-access-en-9a6ca-without-silent-substitution-phone/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy-expected.png",
+      "size": 300392,
+      "sha256": "696219bc206f09bb04cdb4b7c1f3ccf2f7cc796dd3bb4a5dec637c587b404cf9",
+      "crc32": "ed05563f",
+      "verifiedReference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-desktop/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-1-route-marshal-actual.png",
+      "size": 1350547,
+      "sha256": "035f9203bf511fe0884126c89702e3a6eb33657c39aa33403022b83ff1780440",
+      "crc32": "3c799ce0"
+    },
+    {
+      "name": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-desktop/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-1-route-marshal-diff.png",
+      "size": 509762,
+      "sha256": "e24c938725fcf7f5f0a9db8524604603dd199c270059f22eac7ccea337052b4e",
+      "crc32": "fd1c5805"
+    },
+    {
+      "name": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-desktop/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-1-route-marshal-expected.png",
+      "size": 1350689,
+      "sha256": "2dc4b9f1acb3a4600960268dc9689f17d2de5fc071148bca42ccf30524128ce5",
+      "crc32": "19bf13f8",
+      "verifiedReference": "tests/e2e/009-route-forces/screenshots/route-force-review/desktop/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png"
+    },
+    {
+      "name": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-phone/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/015-edit-multiple-waypoints-1-route-marshal-actual.png",
+      "size": 214817,
+      "sha256": "f631d41e077f9d12f4afbc5e008af48d4da2cb985e40c2c0556a10b6ef06fd46",
+      "crc32": "b87b7a09"
+    },
+    {
+      "name": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-phone/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/015-edit-multiple-waypoints-1-route-marshal-diff.png",
+      "size": 91751,
+      "sha256": "d276535bb60a2f1a177c1173268bd894562abcef674b5c53e7bfebcb19d0ffc8",
+      "crc32": "ec3438ea"
+    },
+    {
+      "name": "test-results/stories/e2e-009-route-forces-force-45e7d-edged-dispatch-and-recovery-phone/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/015-edit-multiple-waypoints-1-route-marshal-expected.png",
+      "size": 214355,
+      "sha256": "1f9635776340e88d18946f561bf61102c55148ea2bef15883b92edd4f5c9a9d2",
+      "crc32": "c50d4c68",
+      "verifiedReference": "tests/e2e/009-route-forces/screenshots/route-force-review/phone/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png"
+    },
+    {
+      "name": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-desktop/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy-actual.png",
+      "size": 373189,
+      "sha256": "2e0a11861c7fd10d6d96654d8f39edd414a67d5fbccb5ea2481d379859b38791",
+      "crc32": "fae05581"
+    },
+    {
+      "name": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-desktop/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy-diff.png",
+      "size": 202083,
+      "sha256": "b280cd6650d255fa2a4d161319054c235afff51415bbabfd896c091267b09c30",
+      "crc32": "666b8fb5"
+    },
+    {
+      "name": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-desktop/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy-expected.png",
+      "size": 357174,
+      "sha256": "34bac591cbcb8ea306390aa517a3b84989bb1354cea4cce16ff4e09ebcbc0731",
+      "crc32": "a9329784",
+      "verifiedReference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/desktop/linux-arm64/010-private-room-1-nacre-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-diff.png",
+      "size": 46020,
+      "sha256": "11ee965b245bca58119247fdd009745151b9a35b219542db07838c2b6c9b5023",
+      "crc32": "a885bf2d"
+    },
+    {
+      "name": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-expected.png",
+      "size": 49663,
+      "sha256": "8d1a6a3b59a926d41abfbdf622e3c690ec63c782430b07dbd00ae969fab119c9",
+      "crc32": "5414403a",
+      "verifiedReference": "tests/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy.png"
+    },
+    {
+      "name": "test-results/stories/e2e-009-selected-history-s-f23cb-mmander-and-survives-reload-phone/e2e/009-selected-history/screenshots/selected-history-consent/phone/linux-arm64/010-private-room-1-nacre-envoy-actual.png",
+      "size": 58838,
+      "sha256": "771356a943e13e5b600698ff439bb3a0bbe07e2a61a454d811ce29f32be89466",
+      "crc32": "eaed4596"
+    }
+  ],
+  "integrity": "Exact HTTP Content-Range and API size; selected entries decoded with ZIP CRC and individual SHA256. Full archive SHA not verified; no local archive retained.",
+  "inspection": {
+    "reviewer": "Implementation agent; all12 triples individually inspected,36 native images",
+    "viewportScope": [
+      "phone",
+      "desktop"
+    ],
+    "dispositions": {
+      "live-menu-preservation": "Expected66/80px panel top versus actual measured rail129/106px. Shared market draft/invalid123/100/focus/actions intact. Complete current family needed before promotion.",
+      "galaxy-command-surface": "Same measured rail inset; full Return focus present. Bounded research reader clips adjacent content at lower edge. Complete journey needed, no wholesale approval.",
+      "live-return-briefing": "HOLD desktop: full briefing starts58px and covers current campaign context/resources/portraits. Phone portrait addition only. Correct fullscreen inset before generation.",
+      "selected-history-consent": "HOLD desktop: conversations starts58px and covers current rail; phone title portrait/typography change without control loss. Correct fullscreen inset; complete all later steps before promotion.",
+      "encryption-unavailable": "Only confirmation/footer paragraph spacing changes; controls readable, secondary rules remain in bounded reader. Source/history confirmation and complete family required.",
+      "route-force-review": "Only map label placement differs in first failure; phone Tupa moves over marker, desktop Belel becomes readable left of panel. Current source also has later route heading/row/marker corrections; failed5d captures are stale and not promoted."
+    }
+  },
+  "next": "Correct measured fullscreen briefing/conversation inset, add read-only rail clearance regression, then bounded complete current-source families. Existing route-marker run remains untouched.",
+  "approval": false,
+  "validationNote": "Initial Git blob comparison hit default1MiB exec buffer; rerun with bounded8MiB buffer verified every expected blob. No download repeated."
+}
