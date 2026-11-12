@@ -1,0 +1,17 @@
+{
+  "scope": "Initial inspection only, no baseline promotions",
+  "inspected": [
+    "fleet-cancellation phone expected/actual",
+    "fleet-cancellation desktop expected/actual",
+    "campaign-scheduled-start desktop024 expected/actual/diff",
+    "selected-history-lab short002 expected/actual/diff",
+    "market-draft-membership-revocation large020 expected/actual/diff"
+  ],
+  "findings": {
+    "fleet": "Actual panel begins lower under measured command rail, matching shared Galaxy fleet inset source delta. Header content is clipped at viewport top in inspected actuals; withhold approval pending actual scroll geometry diagnosis. Expected desktop also clips resource labels: do not simply restore old defect.",
+    "campaignStart": "Foreground roster unchanged; underlying admission reader text is vertically shifted. No corresponding admission source change in recovery delta. Investigate scroll/readiness reproducibility before baseline replacement.",
+    "historyLab": "Shared Conversations short-screen padding change shifts heading/body/footer. Invitation scope, participant list, actions and focused Accept remain readable. Complete family comparison still needed before promotion.",
+    "membershipLarge": "Differences visibly confined to market panel text painting; composition and values appear unchanged at downscaled display. Font/layout origin and reproducibility unresolved; no approval."
+  },
+  "next": "Measure fleet ancestor scroll/rail geometry using retained trace or bounded real journey; inspect remaining representatives; classify isolated campaign reader/market raster before changes. No broad rerun."
+}
