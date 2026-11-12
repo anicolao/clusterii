@@ -1041,3 +1041,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Diagnose retained short conversation clipping from original trace without new service runs or redundant archive copies.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind one complete short history replay to the diagnosed spacing correction, reusing unaffected successful viewport evidence.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record complete phone briefing/history image inspection, three bounded execution handles and memory-only archive provenance.
