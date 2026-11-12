@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "mode": "scoped-verify-and-history-candidates",
+  "source": "c03e504a0c740977fcb232e79133d66f13f97eb8",
+  "target": "9184937e02984ed6112eac832d4a117839176dff",
+  "projects": [
+    "phone",
+    "desktop",
+    "large",
+    "short"
+  ],
+  "serviceGroups": [
+    "campaign",
+    "membership",
+    "history-lab"
+  ],
+  "capturesByStory": {
+    "campaign-scheduled-start": 54,
+    "market-draft-membership-revocation": 14,
+    "selected-history-lab": 10
+  },
+  "testsPerProject": {
+    "phone": 1,
+    "desktop": 1,
+    "large": 2,
+    "short": 2
+  },
+  "retries": 0,
+  "updateSnapshots": "none",
+  "inputs": {
+    "src": "ca2fd0584deb08f284159f1a95bb3207a98d529e",
+    "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+    "functions": "c116879153585f6c933dad28096563165fa23641",
+    "tests": "743db8f33a0e665a9de2852edf05d575d71bf7ac",
+    "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+    "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+    "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+    "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+    "playwright.stories.config.ts": "25440b492b962da9edeb8700ed0c18c9f062db3a",
+    "scripts/story-cohorts.mjs": "2032d7efeed8b914bc6d668594fd04581ccc65a7",
+    "scripts/story-service-groups.mjs": "9ee85e3deb132f318f80d8a9ef63fd2369f451f4",
+    "scripts/run-stories.mjs": "dbe7446f756baa8c11acc0444d5be813b9e4fe88"
+  },
+  "run": 43174325455,
+  "request": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+  "branch": "investigate/pr140-isolated-44dc-20261112",
+  "observedStatus": "in_progress",
+  "collection": [
+    {
+      "project": "phone",
+      "tests": 1,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "tests": 1,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "project": "large",
+      "tests": 2,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        },
+        {
+          "id": "membership",
+          "file": "browser/market-membership-revocation.story.spec.ts",
+          "title": "Live membership revocation rejects a delayed private view and clears market intent",
+          "story": "market-draft-membership-revocation",
+          "captures": 14,
+          "mode": "verify",
+          "projects": [
+            "large"
+          ]
+        }
+      ]
+    },
+    {
+      "project": "short",
+      "tests": 2,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        },
+        {
+          "id": "history-lab",
+          "file": "browser/sharing-lab.story.spec.ts",
+          "title": "Sharing lab preserves selected-history consent and disclosure across motion modes",
+          "story": "selected-history-lab",
+          "captures": 10,
+          "mode": "generate",
+          "projects": [
+            "short"
+          ]
+        }
+      ]
+    }
+  ]
+}

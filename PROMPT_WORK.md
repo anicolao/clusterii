@@ -1111,3 +1111,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Trace fleet header clipping and the two isolated rendering failures using bounded retained failure traces before changing production.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Synchronize both real campaign-start status surfaces after retained trace proves the background timer changes during screenshot capture.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record bounded validation requests and inspect integrated fleet comparisons while their complete journeys execute remotely.
