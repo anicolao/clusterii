@@ -1,0 +1,1019 @@
+{
+  "run": 43136140057,
+  "images": 104,
+  "changed": 44,
+  "manifests": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/story.json",
+      "story": "encryption-unavailable",
+      "viewport": "desktop",
+      "spec": "tests/e2e/005-campaign-access/encryption.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/story.json",
+      "story": "galaxy-command-surface",
+      "viewport": "desktop",
+      "spec": "tests/e2e/002-galaxy/galaxy.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/story.json",
+      "story": "live-menu-preservation",
+      "viewport": "desktop",
+      "spec": "tests/browser/live-menu-preservation.story.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/encryption-unavailable/large/linux-arm64/story.json",
+      "story": "encryption-unavailable",
+      "viewport": "large",
+      "spec": "tests/e2e/005-campaign-access/encryption.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/story.json",
+      "story": "galaxy-command-surface",
+      "viewport": "large",
+      "spec": "tests/e2e/002-galaxy/galaxy.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/story.json",
+      "story": "live-menu-preservation",
+      "viewport": "large",
+      "spec": "tests/browser/live-menu-preservation.story.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/story.json",
+      "story": "encryption-unavailable",
+      "viewport": "phone",
+      "spec": "tests/e2e/005-campaign-access/encryption.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/story.json",
+      "story": "galaxy-command-surface",
+      "viewport": "phone",
+      "spec": "tests/e2e/002-galaxy/galaxy.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/story.json",
+      "story": "live-menu-preservation",
+      "viewport": "phone",
+      "spec": "tests/browser/live-menu-preservation.story.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/encryption-unavailable/short/linux-arm64/story.json",
+      "story": "encryption-unavailable",
+      "viewport": "short",
+      "spec": "tests/e2e/005-campaign-access/encryption.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/story.json",
+      "story": "galaxy-command-surface",
+      "viewport": "short",
+      "spec": "tests/e2e/002-galaxy/galaxy.spec.ts"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/story.json",
+      "story": "live-menu-preservation",
+      "viewport": "short",
+      "spec": "tests/browser/live-menu-preservation.story.spec.ts"
+    }
+  ],
+  "records": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "sha256": "7f6b19f2725fe2c2f396cd1b852a76ffc356c2c328761b81fe0e9eebef0cbad3",
+      "oldSha256": "7f6b19f2725fe2c2f396cd1b852a76ffc356c2c328761b81fe0e9eebef0cbad3",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "sha256": "aaecaa79eadcd8cefb994a229274b84c79fb369567ac5e6fc255e4e5ce9a5c1e",
+      "oldSha256": "aaecaa79eadcd8cefb994a229274b84c79fb369567ac5e6fc255e4e5ce9a5c1e",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "sha256": "fa32d69176d7bedf6b300af3a6e4956588d110bc09ba8eedec34a416ae071484",
+      "oldSha256": "cc4ee31971f8684d9e1f4e6fa28571b47f7f0133dfa25f2eb9bb6fec2808df9d",
+      "changed": true,
+      "story": "encryption-unavailable",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "sha256": "e869387940ead810fd3face97204807813dbce8b1b4c64ef285dd431f6c3aa8b",
+      "oldSha256": "e869387940ead810fd3face97204807813dbce8b1b4c64ef285dd431f6c3aa8b",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/encryption-unavailable/desktop/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/desktop/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "sha256": "f56d5555a2b993f19ac135338dcffc2db3f475e34c7d883cfcb5d9ade9cf7da0",
+      "oldSha256": "f56d5555a2b993f19ac135338dcffc2db3f475e34c7d883cfcb5d9ade9cf7da0",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "9d978815d0ce84c6a60cd9825d3d408bd6275fce1a5e2547bb3f2abd009edc10",
+      "oldSha256": "9d978815d0ce84c6a60cd9825d3d408bd6275fce1a5e2547bb3f2abd009edc10",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "6d5fba87669ac75cdbc1f91b3fc33293e2f06d832cfd16e6661255798f99b18e",
+      "oldSha256": "6d5fba87669ac75cdbc1f91b3fc33293e2f06d832cfd16e6661255798f99b18e",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "98b187b514022f56963504e45826443d0fab592037713ab77fcb0ee3740c296c",
+      "oldSha256": "98b187b514022f56963504e45826443d0fab592037713ab77fcb0ee3740c296c",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "576f34a5f537eb1f26057b63160cd7943a56108e50645d11cc95751151f80969",
+      "oldSha256": "576f34a5f537eb1f26057b63160cd7943a56108e50645d11cc95751151f80969",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "17a6d77cd5ff9b32947417b0746fc57fab9cc8e9439f46baf16a2b5a6820f754",
+      "oldSha256": "5706b8e8552f6f9152b50d8403a284699fc21617918e06832df86f1f352378e7",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "b8ff20dc96ef003aca61f577a3914a6eb7b7a45787463d46d69a5da97e74b441",
+      "oldSha256": "f7dd13ace2416eb6af665504065f8c20c1131c16117eee3e4f204281c5319f69",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "831f8ec52b3750ecba403631f17cd1b7782ce6b48c88e8dfc5098009cc7e3f5b",
+      "oldSha256": "831f8ec52b3750ecba403631f17cd1b7782ce6b48c88e8dfc5098009cc7e3f5b",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "97231ca7f7706bb8777b46af5223f6f9548e84f9010493fbe66ca0932ba632cd",
+      "oldSha256": "cf081ac602547c3891780846cbcdf25065586e278040b5f80c70f8312f66d4ca",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "abbe886ed79fda36f139198733f6d4268742ecefc1e66f50210972d43e22d752",
+      "oldSha256": "f6626d8d614d54d7ed9cd472b03b6c855a9e5e4dff71df16eb066bb980b5c2d7",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "ed3c8d25e5daf32969f582bada2501d524e8328bcf6c50a7f2fb0df58ca777ed",
+      "oldSha256": "ed3c8d25e5daf32969f582bada2501d524e8328bcf6c50a7f2fb0df58ca777ed",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "8cc2e5fe52bee8ec705f39747183791d037fc4ee574ad12d2d8668c7bd1b914a",
+      "oldSha256": "8cc2e5fe52bee8ec705f39747183791d037fc4ee574ad12d2d8668c7bd1b914a",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/galaxy-command-surface/desktop/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/desktop/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "9ed1e9f991cc2abbf803830398cc55ecd6d531192d5dc6ff2513ca54a3c0a4b9",
+      "oldSha256": "9ed1e9f991cc2abbf803830398cc55ecd6d531192d5dc6ff2513ca54a3c0a4b9",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "sha256": "d8a74d6c64fcf310d8b1e97a4b816e8bd1787e7dfc055118a1aaca8f2957118b",
+      "oldSha256": "63a45740592511712265d6d772c73a1cb27c3a8c18cd41e81e595261dfb58edb",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "sha256": "38e9fc06d90ad66a5326a371403ec549405c58aced114cd0a76db30510302e8c",
+      "oldSha256": "006aa2c378d16f9214cd9383a0772893a57c64c74b3704867c5f403e7c86872a",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "sha256": "b7b1d6d732935e3d69e34d0845d0c1fa2ed029464290b18ea18981fd74fa2afa",
+      "oldSha256": "b7b1d6d732935e3d69e34d0845d0c1fa2ed029464290b18ea18981fd74fa2afa",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "sha256": "c8d75c575e3c82bde544e146629f4e2c282a913a957fb2d457de89c792ffd698",
+      "oldSha256": "c8d75c575e3c82bde544e146629f4e2c282a913a957fb2d457de89c792ffd698",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "sha256": "991865d16ecdd3bb44a4825e0a926d6a4497b43f5084ea79993005161ed56609",
+      "oldSha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "sha256": "c6c10808623fd6ab461c08ad51f2b2c3af71d422ee02cc5b332aa3ec0ebbb7af",
+      "oldSha256": "c6c10808623fd6ab461c08ad51f2b2c3af71d422ee02cc5b332aa3ec0ebbb7af",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "sha256": "991865d16ecdd3bb44a4825e0a926d6a4497b43f5084ea79993005161ed56609",
+      "oldSha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "sha256": "93ea2b2be6801d1dfa1d652d07636c5314479a6cc2bc4a0519baf7742bf92f0e",
+      "oldSha256": "8f22408627161ae09858a37eaee71d1ac7703673638921fc4b6387bc5ae2fd66",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/desktop/test-results/stories/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/desktop/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "sha256": "991865d16ecdd3bb44a4825e0a926d6a4497b43f5084ea79993005161ed56609",
+      "oldSha256": "5050a56057b851feb3c23f1475d9b6396966a2d59bf082b3b2e3c98cd07e0588",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "desktop"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/encryption-unavailable/large/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "sha256": "496371d7b5d607a46dbc2b35b4e77e3630624195eb275b9f421823a22c289859",
+      "oldSha256": "496371d7b5d607a46dbc2b35b4e77e3630624195eb275b9f421823a22c289859",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/encryption-unavailable/large/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "sha256": "26b3671eba40626e1c6ebac730e4621400086457fc50ee1598e2c3bc7385695e",
+      "oldSha256": "26b3671eba40626e1c6ebac730e4621400086457fc50ee1598e2c3bc7385695e",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/encryption-unavailable/large/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "sha256": "15f8a0d610a0c3259f9d376ed98a5a91a19bc770ca3d733d34cd0293ac25c786",
+      "oldSha256": "4a28bd0528a072e947d3400247092359b8ad578f79ef9ff9e697f541feba1d41",
+      "changed": true,
+      "story": "encryption-unavailable",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/encryption-unavailable/large/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "sha256": "00531694c83179542856dae856f3e90db76c0fae1d3e22a232f7f190e03feaac",
+      "oldSha256": "00531694c83179542856dae856f3e90db76c0fae1d3e22a232f7f190e03feaac",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/encryption-unavailable/large/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/large/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "sha256": "aaca525e160511e4a19ec171265658e654a80a6bfdb2a6e169e238edc418876b",
+      "oldSha256": "aaca525e160511e4a19ec171265658e654a80a6bfdb2a6e169e238edc418876b",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b",
+      "oldSha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da",
+      "oldSha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6",
+      "oldSha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068",
+      "oldSha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "c50d9a3af5f8795375b91c65f56e2bf116662ac707791194e8f12da5552273d9",
+      "oldSha256": "134b4a5a4795673c4480b693eb5390f4ef694474af40be2cfe3404f4b0447ceb",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "bd83577fd5dc5e97fe67b6cbb5f86a11ff7230605baba8245528bd87ba36c8d2",
+      "oldSha256": "716373a8fa8c9709e2c32dee22e4c189a5ddeff3d00934f3669d9ed62c53911a",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c",
+      "oldSha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "4aa961671480d04b2035a2c882b066e7c94bb690cad343124287c53c45a79e29",
+      "oldSha256": "23088cf0659b4e1028186df15049a8d7b38a18f92c87eba1eabe3f54cc89c021",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "50f1a6b97d8b6286e7d2fb86d235abecffea1566c8dc951bb4713c84580253f5",
+      "oldSha256": "d20c4a9ed64bbaefb27bd9487d68b9708e4294589b6060b3a1b877a10c9dfbfd",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589",
+      "oldSha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc",
+      "oldSha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/galaxy-command-surface/large/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/large/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4",
+      "oldSha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "sha256": "9c3666ea7af86c8358bd19c78da566ff6c592aae5f04964b42f470f533bb3027",
+      "oldSha256": "0d8024b322fd1156952646f368a9ac5df20c2f76aa260a6ca3af99250346c41e",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "sha256": "8f18db2dea89342ed96156f70807ec26d00ce3cf2a1c68770a5479aeecd57f1b",
+      "oldSha256": "c865c787b0435cdf79e791d14f0cc75f7945f7a981516401de9e3997b08bca41",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "sha256": "91fd7db2d11c5e5b35eee3f6929bbd1d8bc8c41af929a9b2e6031f0192a5e31d",
+      "oldSha256": "91fd7db2d11c5e5b35eee3f6929bbd1d8bc8c41af929a9b2e6031f0192a5e31d",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "sha256": "b1470194396358f406ed70db19b1bb997fc75168d17881eb9fce27fc5a4c75e0",
+      "oldSha256": "b1470194396358f406ed70db19b1bb997fc75168d17881eb9fce27fc5a4c75e0",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "sha256": "cc583915b9e092a4580b8f7a2a2fa9e4150ac7d5ec8c4fd029ce2af004b24273",
+      "oldSha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "sha256": "3ecdca07d6e06dd75190d2cb43d3d36c4a6c966fdad623886e34f44cae9e46f3",
+      "oldSha256": "3ecdca07d6e06dd75190d2cb43d3d36c4a6c966fdad623886e34f44cae9e46f3",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "sha256": "cc583915b9e092a4580b8f7a2a2fa9e4150ac7d5ec8c4fd029ce2af004b24273",
+      "oldSha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "sha256": "343289e6fe80000d58bb907ca14a191f81ba6ecb01ba92eb2a6b6d83952472f0",
+      "oldSha256": "fb8b6f13eddce09a46969d8b4c76795c1faaf8430374392631ffdf5dc91445fb",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/large/test-results/stories/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/large/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "sha256": "cc583915b9e092a4580b8f7a2a2fa9e4150ac7d5ec8c4fd029ce2af004b24273",
+      "oldSha256": "d46dc4c5ef8daf9b63712d905dea7f4d924b148f8af303e879fedc44b6b658d7",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "large"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "sha256": "52acc87fa7e1d763b9ed4d888194ab4a16070d1f5d4e32bfd5cf7a3f2e0044b9",
+      "oldSha256": "52acc87fa7e1d763b9ed4d888194ab4a16070d1f5d4e32bfd5cf7a3f2e0044b9",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "sha256": "acd28a0ad94a711be4e443be32392adfa48d8c698d9cd4d5f6b91dc45bd75292",
+      "oldSha256": "acd28a0ad94a711be4e443be32392adfa48d8c698d9cd4d5f6b91dc45bd75292",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "sha256": "435d5e1503ef552a546f9cc228f8be4dcb3270d5851453276c519ef75721ecc0",
+      "oldSha256": "696219bc206f09bb04cdb4b7c1f3ccf2f7cc796dd3bb4a5dec637c587b404cf9",
+      "changed": true,
+      "story": "encryption-unavailable",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "sha256": "df25cf4d265add146f4dacafa68c2f04f1e33ad116bcd5c1e9beffc8bcc05b40",
+      "oldSha256": "df25cf4d265add146f4dacafa68c2f04f1e33ad116bcd5c1e9beffc8bcc05b40",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/encryption-unavailable/phone/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/phone/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "sha256": "f98d814876cdcbfa79c1eb5562549da7f9277f88bbe63e339d3ee04cfd94ac5d",
+      "oldSha256": "f98d814876cdcbfa79c1eb5562549da7f9277f88bbe63e339d3ee04cfd94ac5d",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045",
+      "oldSha256": "9f6a345cfcd8bb2f2c85f4faeef92d09aaab31ace79c4b3d83624dcd8faca045",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457",
+      "oldSha256": "85c22b85a581b144d86d0172d83b1f41d41012a58ddccfd0ade9d5380dbaa457",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf",
+      "oldSha256": "88d5285d05a8762b50027f8cbd001dee2c364653575a348c5740fafcd5bb47bf",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1",
+      "oldSha256": "979c8ff8ccdbbb9322fa2da73470d1922846eb2f82d04e10d8866466841b4fe1",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "8358181612e0c0d8ddb9e2a9d90596b50cdf5f8e94d1b1f1e45141455898edd0",
+      "oldSha256": "c546f218d90d2254ac66f350a02d8b1fb73daf02478dd8088853eb761f89a5c6",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "5fac367e3e47c8d371f73bbc0972b3abeb66d3500a2023dcd804094401b37598",
+      "oldSha256": "ec1aeba49e682bc1e2c6a7cce8b88bf4551ba3e9c0d1bdd099083e5f490a987c",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064",
+      "oldSha256": "fc79f8068a3cce06a7cf1f68dd755eac60ead980f002af4c02f52c933fe99064",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "3d93185b784d69a2a38eeba9f49929d7feb579b16866a63fcd5c5ed3d4d15765",
+      "oldSha256": "8c91f826b652c63e8c711e11f962c0f4d4ccc8f034b01f8106c0c77a0009f25c",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "082291198526d9b2d47eef146398a17f71be1de9faac2ca620ecb3363fa876c0",
+      "oldSha256": "a825aee78a4ab1d384b579d8c937947b009d178998969ce1575aa8a76d242338",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1",
+      "oldSha256": "eedbc72091fdd4b5e1589e7110f595230952fe2aa51f21de492fe4557dcec7f1",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb",
+      "oldSha256": "26e8034de17d9e97cc569f60b29d1dd190484acd661da75e2d9e92fddc2672cb",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/galaxy-command-surface/phone/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/phone/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652",
+      "oldSha256": "d23956e321472e6d852c03e57b2c19edbd05effff371c634894ff5db27b3f652",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "sha256": "bb71b56acb70d6e2616ccdf7126f6f22e4470a27b427e1e82b08bc05770693f8",
+      "oldSha256": "a0be16c705cf3cc121eb116b88d229841276c9f0b2edab0c77fb34260b18a32d",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "sha256": "d31a9e758f56ed460f244f2d0d2d274d2aa57aadae1f07c64039017c134ed8e2",
+      "oldSha256": "433349e04eeb363e3108bb2ecab69b735c1ed7f61e81fb7744c54e72d29bdae8",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "sha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "oldSha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "sha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "oldSha256": "32af41d8113a0e61e00e1523b7944f58163d5a72b89731c94d8715a41d167597",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "sha256": "4987812227a8e8668ba033c026424c48ae08b6328154af426683b699a7550c4b",
+      "oldSha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "sha256": "aebd329b98fc095f0db323288ec49830fc03e8a8eec979735495987033462247",
+      "oldSha256": "aebd329b98fc095f0db323288ec49830fc03e8a8eec979735495987033462247",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "sha256": "4987812227a8e8668ba033c026424c48ae08b6328154af426683b699a7550c4b",
+      "oldSha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "sha256": "37d050fcc6c53e7546ef3b8ce3fa82a3456b53ee0e00dbae2f8cf04c46c43da5",
+      "oldSha256": "6c94cc3af65623beb16a71ae0528ff03948df6f676e9912455107995ac3e92c9",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/phone/test-results/stories/live-menu-preservation/phone/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/phone/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "sha256": "4987812227a8e8668ba033c026424c48ae08b6328154af426683b699a7550c4b",
+      "oldSha256": "37a2117fb6bb46ef4591af8b52a93aec7788ca29de43a6739aa1bfbdf7433ebf",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "phone"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/encryption-unavailable/short/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/002-review-provider-1-cipher-envoy.png",
+      "sha256": "051d3216d1502f89106ee40fdffcb27e3a5b765ed792946356123a8e01081ca6",
+      "oldSha256": "051d3216d1502f89106ee40fdffcb27e3a5b765ed792946356123a8e01081ca6",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/encryption-unavailable/short/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/003-created-campaign-1-cipher-envoy.png",
+      "sha256": "3a49f05cf70c444298b68e8f5729a0a4450fb6d059c55c659b8cefc1e31eb6ee",
+      "oldSha256": "3a49f05cf70c444298b68e8f5729a0a4450fb6d059c55c659b8cefc1e31eb6ee",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/encryption-unavailable/short/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/004-claimed-seat-1-cipher-envoy.png",
+      "sha256": "40f0cabf97be78a53c3548aa37f050c6323f9858e3ce262d02e39ddfb5443bb0",
+      "oldSha256": "72a2e08e6bce0eff0102070a69f1204d01c53956896c2705d11e682087009804",
+      "changed": true,
+      "story": "encryption-unavailable",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/encryption-unavailable/short/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/005-recovered-seat-1-cipher-envoy.png",
+      "sha256": "97c461014ba6dad63526f57e39c7d3c2d295c17025f238383b761da60c1e6379",
+      "oldSha256": "97c461014ba6dad63526f57e39c7d3c2d295c17025f238383b761da60c1e6379",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/encryption-unavailable/short/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "reference": "tests/e2e/005-campaign-access/screenshots/encryption-unavailable/short/linux-arm64/006-released-seat-1-cipher-envoy.png",
+      "sha256": "ab64adad86e6283e06f5909e85a38b043ecc49c00825e5209f4b3483ea5c50ad",
+      "oldSha256": "ab64adad86e6283e06f5909e85a38b043ecc49c00825e5209f4b3483ea5c50ad",
+      "changed": false,
+      "story": "encryption-unavailable",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/006-read-waiting-rail-1-chart-envoy.png",
+      "sha256": "58ff3ea807ddff41708919d116745a14706669c7db5b9c046bec3d559d7cf5ed",
+      "oldSha256": "58ff3ea807ddff41708919d116745a14706669c7db5b9c046bec3d559d7cf5ed",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/011-read-galaxy-1-chart-envoy.png",
+      "sha256": "dd3a78bbbb9d216429fc3c0b078b08962b176cffc7dea7bb7fe509fefd67fac6",
+      "oldSha256": "dd3a78bbbb9d216429fc3c0b078b08962b176cffc7dea7bb7fe509fefd67fac6",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/012-inspect-independent-layers-1-chart-envoy.png",
+      "sha256": "da5cd12a7db185bdb7c3c706f93d26c9542eeea2ca45a3fbeeb4d8b3a6c4cea0",
+      "oldSha256": "da5cd12a7db185bdb7c3c706f93d26c9542eeea2ca45a3fbeeb4d8b3a6c4cea0",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/013-inspect-orbital-authority-1-chart-envoy.png",
+      "sha256": "9c7f2880d1107d16eb792ba8960ddc138b4204ac0c7a2f97eead8b57a73ed2fc",
+      "oldSha256": "9c7f2880d1107d16eb792ba8960ddc138b4204ac0c7a2f97eead8b57a73ed2fc",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/015-reserve-orbital-development-1-chart-envoy.png",
+      "sha256": "4348dfbd3ad62372595b8133fb80df70b408b8b372119cd3d45379c1f7f8b521",
+      "oldSha256": "1b929d4d4e275cf1454d91afc6751c2a2631429a35376e4ffbf3248d72a8a23c",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/016-recover-accepted-orbit-order-1-chart-envoy.png",
+      "sha256": "8040ff563ef3bb0c111119f125ee2227484d2ed4e07f415e5a1c9a2872d3ac95",
+      "oldSha256": "31ff56da8e5dbd8a42a68db5011d0083f115d547b09e676d472c6ada4c711a00",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/017-read-lower-system-facts-1-chart-envoy.png",
+      "sha256": "bbf0deaeed1cfe811a3c03e06d7961a83e5885ae5643a4387e14bde0c7847e10",
+      "oldSha256": "bbf0deaeed1cfe811a3c03e06d7961a83e5885ae5643a4387e14bde0c7847e10",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/018-review-surface-development-1-chart-envoy.png",
+      "sha256": "15a228505eabd5edfd5fdf27dba1442234ec3990eef0733053775483f6da0bc9",
+      "oldSha256": "26840ed4e2bac15924aa691663aaa0d30e36701629911aee0afc7c3c8e056537",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/019-navigate-global-economy-1-chart-envoy.png",
+      "sha256": "24f2d1501628dbf8f856e0b387e21b803f5cefb2b246ec2a5f6f3420f62640a3",
+      "oldSha256": "9720c3498c2b39ac325518116c0a02cec08401940121a1a77df777646b28e50a",
+      "changed": true,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/020-return-to-selected-system-1-chart-envoy.png",
+      "sha256": "ce7244b9836f7f882790cba254fb417124eddd4acda1591ea4c0e1154cfcfbc7",
+      "oldSha256": "ce7244b9836f7f882790cba254fb417124eddd4acda1591ea4c0e1154cfcfbc7",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/021-select-a-catalogued-system-1-chart-envoy.png",
+      "sha256": "d42882751bc5acde71ad01c0d58854e05f4d3d6243789c2dc7ae192ab052241c",
+      "oldSha256": "d42882751bc5acde71ad01c0d58854e05f4d3d6243789c2dc7ae192ab052241c",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/galaxy-command-surface/short/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "reference": "tests/e2e/002-galaxy/screenshots/galaxy-command-surface/short/linux-arm64/022-retain-facts-with-lower-detail-1-chart-envoy.png",
+      "sha256": "fe56ea33ba1282618eb1e5ed0a409b7655f39ab25fb1056b2bb8c8e9179d5437",
+      "oldSha256": "fe56ea33ba1282618eb1e5ed0a409b7655f39ab25fb1056b2bb8c8e9179d5437",
+      "changed": false,
+      "story": "galaxy-command-surface",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/010-select-and-draft-1-menu-envoy.png",
+      "sha256": "af97a5ca9fb6e5dce3c437263c0b630e51444b37ab3e2a317a6b87ede3ea9db1",
+      "oldSha256": "cfaeecb2e8bafefd0af63d49a81b34bf5b6cabc3ad8ca90bbd20d936fe6ca0ce",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/010-select-and-draft-2-ledger-witness.png",
+      "sha256": "fbd1eb241720f7db0b434568475463689ca3bb95e8849b94789558133b08bf06",
+      "oldSha256": "bc5769a321e0ca1b34f54faa472b9f19282258ba5fafbbf863842f81a8e53952",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/011-read-menu-rules-1-menu-envoy.png",
+      "sha256": "48b974ffb7ae344048bc556ea9d96eb2208ffb2c91548afeb053044359b4f6d0",
+      "oldSha256": "48b974ffb7ae344048bc556ea9d96eb2208ffb2c91548afeb053044359b4f6d0",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-1-menu-envoy.png",
+      "sha256": "985494c958c4436cf6bb3dd1c01df855522621d342e02c2f6f70203fc60f4278",
+      "oldSha256": "985494c958c4436cf6bb3dd1c01df855522621d342e02c2f6f70203fc60f4278",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/013-acknowledge-while-reading-2-ledger-witness.png",
+      "sha256": "82f556a57e6a448b7f865a9323fe31418ed7ea2534368076130b1178175c8c84",
+      "oldSha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-1-menu-envoy.png",
+      "sha256": "f8af6894c3d568603b433c3441818ab897b492e1e8e57972aa75f972a451b0ce",
+      "oldSha256": "f8af6894c3d568603b433c3441818ab897b492e1e8e57972aa75f972a451b0ce",
+      "changed": false,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/014-return-to-updated-galaxy-2-ledger-witness.png",
+      "sha256": "82f556a57e6a448b7f865a9323fe31418ed7ea2534368076130b1178175c8c84",
+      "oldSha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-1-menu-envoy.png",
+      "sha256": "7ab86095afcf6f332332c30656ca6cd663ccfb296563252af70bb2452576f6b9",
+      "oldSha256": "286ae4942705fc2068cc31e9d7b9c10b428679072454857569de5e931910a374",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-menu-access-43136140057/short/test-results/stories/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "reference": "tests/browser/story-baselines/live-menu-preservation/short/linux-arm64/015-recover-unsent-allocation-2-ledger-witness.png",
+      "sha256": "82f556a57e6a448b7f865a9323fe31418ed7ea2534368076130b1178175c8c84",
+      "oldSha256": "2911aa8e1415e3bdebb21749470c5ba215b0855cc9fa75098e4449bf8d14d572",
+      "changed": true,
+      "story": "live-menu-preservation",
+      "viewport": "short"
+    }
+  ],
+  "referenceResolution": "Actual TestStepHelper imports baseline-path.ts: e2e spec-relative screenshots; browser specs browser/story-baselines. Duplicate historical browser encryption references are not active. Generic story-paths registry is not authoritative for this helper.",
+  "inspection": "Pending; no baseline promotion from comparison alone."
+}

@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/menu-access-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "encryption-unavailable",
   "renderer": {
@@ -29,48 +29,46 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "commit": "c7fd2d3d79616039922fb380e6a3de061a054957",
     "dirty": false,
     "spec": "tests/e2e/005-campaign-access/encryption.spec.ts",
     "specSha256": "698cc234d3edbd5d58d86108aa71edee6d1201670229e966a8af21976c54d056"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/short/test-results/stories/encryption-unavailable/short/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "target": "0c56cdec",
+  "run": 43136140057,
+  "manifestSha256": "bed1162bf0668018c459e45a4fc14bf8cce21111f6a87a42e61e88a837eabbb6",
+  "inspectionScope": "All36 distinct changed originals individually inspected:9 each viewport, phone/desktop/short at native display, large3840x2160 displayed2048x1152. Seat confirmation and named action/footer remain readable; construction paid69/remaining131 and available costs/queue/cancel controls remain visible; market draft73 with123/100 validation and disabledApply retained; focused training input outline complete; acknowledged tick1 credits202.8 and production2.8 readable. Deliberately bounded readers clip secondary neighboring paragraphs/rows (including short science-earned lower row); this does not claim complete ledger reading in one frame or full design/normal-motion certification. Compared old short market and phone admission originals: measured header/footer placement changes, truthful state retained.",
+  "applicability": "Only Conversations short media spacing and FleetRoute editor CSS differ since0c56cdec. These three stories use waiting admission, construction/economy/market/menu surfaces, never Conversations or FleetRoute. Their specs, shared helpers, runtime and renderer are unchanged.",
   "captures": [
     {
       "image": "002-review-provider-1-cipher-envoy.png",
       "sha256": "051d3216d1502f89106ee40fdffcb27e3a5b765ed792946356123a8e01081ca6",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "051d3216d1502f89106ee40fdffcb27e3a5b765ed792946356123a8e01081ca6",
+      "changed": false
     },
     {
       "image": "003-created-campaign-1-cipher-envoy.png",
       "sha256": "3a49f05cf70c444298b68e8f5729a0a4450fb6d059c55c659b8cefc1e31eb6ee",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "3a49f05cf70c444298b68e8f5729a0a4450fb6d059c55c659b8cefc1e31eb6ee",
+      "changed": false
     },
     {
       "image": "004-claimed-seat-1-cipher-envoy.png",
-      "sha256": "72a2e08e6bce0eff0102070a69f1204d01c53956896c2705d11e682087009804",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "40f0cabf97be78a53c3548aa37f050c6323f9858e3ce262d02e39ddfb5443bb0",
+      "previousSha256": "72a2e08e6bce0eff0102070a69f1204d01c53956896c2705d11e682087009804",
+      "changed": true
     },
     {
       "image": "005-recovered-seat-1-cipher-envoy.png",
       "sha256": "97c461014ba6dad63526f57e39c7d3c2d295c17025f238383b761da60c1e6379",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "97c461014ba6dad63526f57e39c7d3c2d295c17025f238383b761da60c1e6379",
+      "changed": false
     },
     {
       "image": "006-released-seat-1-cipher-envoy.png",
       "sha256": "ab64adad86e6283e06f5909e85a38b043ecc49c00825e5209f4b3483ea5c50ad",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "ab64adad86e6283e06f5909e85a38b043ecc49c00825e5209f4b3483ea5c50ad",
+      "changed": false
     }
   ]
 }

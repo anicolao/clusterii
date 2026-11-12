@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/menu-access-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "galaxy-command-surface",
   "renderer": {
@@ -29,97 +29,88 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "138cb9d567ff7013d5342bc5f4892fdf0f4f9219",
+    "commit": "c7fd2d3d79616039922fb380e6a3de061a054957",
     "dirty": false,
     "spec": "tests/e2e/002-galaxy/galaxy.spec.ts",
     "specSha256": "d37cfb04845bd8d1db1b33268d447ae98759ed00a31a5df664c106ab162adbc6"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-waiting-clearance-41876749323/large/test-results/stories/galaxy-command-surface/large/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "target": "0c56cdec",
+  "run": 43136140057,
+  "manifestSha256": "91ec42819aeb204daa3a3c32bbbaadf9f9f52907df911503f9b564d086a695b7",
+  "inspectionScope": "All36 distinct changed originals individually inspected:9 each viewport, phone/desktop/short at native display, large3840x2160 displayed2048x1152. Seat confirmation and named action/footer remain readable; construction paid69/remaining131 and available costs/queue/cancel controls remain visible; market draft73 with123/100 validation and disabledApply retained; focused training input outline complete; acknowledged tick1 credits202.8 and production2.8 readable. Deliberately bounded readers clip secondary neighboring paragraphs/rows (including short science-earned lower row); this does not claim complete ledger reading in one frame or full design/normal-motion certification. Compared old short market and phone admission originals: measured header/footer placement changes, truthful state retained.",
+  "applicability": "Only Conversations short media spacing and FleetRoute editor CSS differ since0c56cdec. These three stories use waiting admission, construction/economy/market/menu surfaces, never Conversations or FleetRoute. Their specs, shared helpers, runtime and renderer are unchanged.",
   "captures": [
     {
       "image": "006-read-waiting-rail-1-chart-envoy.png",
       "sha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "2b3e7223bde44014ebc3ad416e20c7b0d63885ee7e8a5cd84fe3fa49a853ab0b",
+      "changed": false
     },
     {
       "image": "011-read-galaxy-1-chart-envoy.png",
       "sha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "8ddd278c0c30a77b01b7ab8f881ac328516b250dbd2027436aa1e90e6a8648da",
+      "changed": false
     },
     {
       "image": "012-inspect-independent-layers-1-chart-envoy.png",
       "sha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "c539c32f2d0a75b54b57bb90bbb73f6c38bdf7095ecb0cda6b01a0712c0755b6",
+      "changed": false
     },
     {
       "image": "013-inspect-orbital-authority-1-chart-envoy.png",
       "sha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "f0b46d8a1b4fbb5669a3d7f63582831f1d76232382f37bb8565743e7e5802068",
+      "changed": false
     },
     {
       "image": "015-reserve-orbital-development-1-chart-envoy.png",
-      "sha256": "134b4a5a4795673c4480b693eb5390f4ef694474af40be2cfe3404f4b0447ceb",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "c50d9a3af5f8795375b91c65f56e2bf116662ac707791194e8f12da5552273d9",
+      "previousSha256": "134b4a5a4795673c4480b693eb5390f4ef694474af40be2cfe3404f4b0447ceb",
+      "changed": true
     },
     {
       "image": "016-recover-accepted-orbit-order-1-chart-envoy.png",
-      "sha256": "716373a8fa8c9709e2c32dee22e4c189a5ddeff3d00934f3669d9ed62c53911a",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "bd83577fd5dc5e97fe67b6cbb5f86a11ff7230605baba8245528bd87ba36c8d2",
+      "previousSha256": "716373a8fa8c9709e2c32dee22e4c189a5ddeff3d00934f3669d9ed62c53911a",
+      "changed": true
     },
     {
       "image": "017-read-lower-system-facts-1-chart-envoy.png",
       "sha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "ef7946132b40c21468c837839b3baa23ba7b2f4b9138895fded89267dc32a61c",
+      "changed": false
     },
     {
       "image": "018-review-surface-development-1-chart-envoy.png",
-      "sha256": "23088cf0659b4e1028186df15049a8d7b38a18f92c87eba1eabe3f54cc89c021",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "4aa961671480d04b2035a2c882b066e7c94bb690cad343124287c53c45a79e29",
+      "previousSha256": "23088cf0659b4e1028186df15049a8d7b38a18f92c87eba1eabe3f54cc89c021",
+      "changed": true
     },
     {
       "image": "019-navigate-global-economy-1-chart-envoy.png",
-      "sha256": "d20c4a9ed64bbaefb27bd9487d68b9708e4294589b6060b3a1b877a10c9dfbfd",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "50f1a6b97d8b6286e7d2fb86d235abecffea1566c8dc951bb4713c84580253f5",
+      "previousSha256": "d20c4a9ed64bbaefb27bd9487d68b9708e4294589b6060b3a1b877a10c9dfbfd",
+      "changed": true
     },
     {
       "image": "020-return-to-selected-system-1-chart-envoy.png",
       "sha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "4f6a049ad0f4cb579552159b408c77644bdda8b3be6ba88ee76a271a00c8b589",
+      "changed": false
     },
     {
       "image": "021-select-a-catalogued-system-1-chart-envoy.png",
       "sha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "4893e724bcb3f3ec5b3d57b5df172a01d2531a25a125ad10c332fe6b6fdc63fc",
+      "changed": false
     },
     {
       "image": "022-retain-facts-with-lower-detail-1-chart-envoy.png",
       "sha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "2bf30576fb445940dfaf9b7357f1eba370add06fcbebf966a2aa2733467975b4",
+      "changed": false
     }
   ]
 }
