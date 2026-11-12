@@ -1037,3 +1037,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain final passed large route-marker artifact once and complete four-size source-bound comparison before baseline integration.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind remaining menu, command-surface and unavailable-encryption complete journeys to current source for inspected reference recovery.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one complete menu, command-surface and access evidence run with exact three-case collection and original limits.
