@@ -340,3 +340,12 @@ Exact continuation: preserve current runs, review their terminal evidence and re
 ## Supervisor PR140 running-step confirmation
 
 2026-11-12 21:10 UTC: pane unchanged after integration, top clean at0a2cfbce, public6a2cbeee unchanged. Application43299783685 is executing Application checks in Nix-provisioned renderer since20:32:45UTC; stories43299783595 is executing Exact verification since20:32:37UTC. These are active execution steps, not reuse-wait steps. Neither terminal failure nor evidence of a stall is established. Documentation/publish/generate remain SUCCESS. Latest handoff remains sufficient; no duplicate prompt, rerun, cancellation or merge. Continue waiting for terminal evidence and maintain independent design/release holds.
+
+
+## Supervisor PR140 application passed and gallery source review
+
+2026-11-12 21:20 UTC: panes inspected first; clean top and completed handoff unchanged. Public6a2cbeee application43299783685 completed SUCCESS21:16:04UTC. Documentation/publish/generate also SUCCESS; full strict stories43299783595 alone remains IN_PROGRESS. No integrated all-green claim or repeat prompt.
+
+Independently viewed desktop gallery002 science source specimen from strict43296531488: focused bounded reading region, per-tick1.4, First production pending, calculation/uncertainty copy and full return action visible. Source imports confirm gallery and animation lab use the same production ScienceLedger component. This verifies reuse for this instrument, not complete icon-gallery coverage or interactive lab parity with reference projects. Existing design/release holds remain.
+
+Exact continuation: await sole full strict result; independently assess terminal evidence before acceptance. No merge.
