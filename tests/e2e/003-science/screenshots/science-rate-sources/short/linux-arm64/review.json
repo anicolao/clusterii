@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/science-layer-all-reviewed.json",
   "mode": "reviewed-baseline-candidates",
   "story": "science-rate-sources",
   "renderer": {
@@ -29,139 +29,140 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "9e548d949320b437609a67fd9cefffb0a1afb592",
+    "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
     "dirty": false,
     "spec": "tests/e2e/003-science/science.spec.ts",
     "specSha256": "39544cfe86cd6a05bef42a5bee9e572a86de2cc5ec97c5a3c57926cf74a562f1"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-rail-41915747313/short/test-results/stories/science-rate-sources/short/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/short/test-results/stories/science-rate-sources/short/linux-arm64/story.json",
+  "inspectionScope": "All changed expected/candidate compositions inspected using full phone pairs and changed-RGBA-bounds plus padding for desktop/short/large. Duplicate image hashes explicitly grouped. Text painting changes retain headings, actual values, source names, focus outlines and reading positions. Large component pairs tool-downscaled: layout/content approval, not full native-pixel design certification. Cross-run stability remains to be verified.",
   "captures": [
     {
       "image": "010-inspect-private-sources-1-chart-envoy.png",
-      "sha256": "c2d8adbaf536921457a2f724fad76d8c60e5f18604cf1db3a9a34c16b00d28f3",
-      "previousSha256": null,
+      "sha256": "2988017654d9e4a0b8ca6e907b6b311616c4d2beb3dedf3cd3b2d264ca29efaf",
+      "previousSha256": "c2d8adbaf536921457a2f724fad76d8c60e5f18604cf1db3a9a34c16b00d28f3",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "010-inspect-private-sources-2-tidal-envoy.png",
-      "sha256": "cd80cd94a59032d128a8d132e6ec6ed09a4849abc048db435f661fe000397a0f",
-      "previousSha256": null,
+      "sha256": "2bb845175e50e52fe7b5a7389a9f49e790345ac3cb67c354d01d920b25adf15d",
+      "previousSha256": "cd80cd94a59032d128a8d132e6ec6ed09a4849abc048db435f661fe000397a0f",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "011-commit-innovation-1-chart-envoy.png",
       "sha256": "69b44dfdd95f9c87c8cb2e1ad27873cd1ecf410f7d99e28bb1d6b7a05bffce84",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "69b44dfdd95f9c87c8cb2e1ad27873cd1ecf410f7d99e28bb1d6b7a05bffce84",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "013-read-earned-capacity-1-chart-envoy.png",
-      "sha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
-      "previousSha256": null,
+      "sha256": "1dd55b7df3353d9a559becfca6127d10b2483d0ecdb919a3ed736c4fa8f3346f",
+      "previousSha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "013-read-earned-capacity-2-tidal-envoy.png",
-      "sha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
-      "previousSha256": null,
+      "sha256": "c91ecdf20158447f296254ae18c33081c9e00b8590d9972a42ff9744705523de",
+      "previousSha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "014-earned-normal-ledger-1-chart-envoy.png",
-      "sha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
-      "previousSha256": null,
+      "sha256": "2d6102a8cdbc3eaa6a9ff19e0d64cf187f5f2a6e9d3debd45d704bb1a2339ef0",
+      "previousSha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "014-earned-normal-ledger-2-tidal-envoy.png",
-      "sha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
-      "previousSha256": null,
+      "sha256": "9c6988908d3e7bae6a28669705ce7924ca1b0be38ba22ab0291a66a6947651c4",
+      "previousSha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "015-earned-normal-totals-1-chart-envoy.png",
-      "sha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
-      "previousSha256": null,
+      "sha256": "1dd55b7df3353d9a559becfca6127d10b2483d0ecdb919a3ed736c4fa8f3346f",
+      "previousSha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "015-earned-normal-totals-2-tidal-envoy.png",
-      "sha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
-      "previousSha256": null,
+      "sha256": "c91ecdf20158447f296254ae18c33081c9e00b8590d9972a42ff9744705523de",
+      "previousSha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "016-earned-normal-return-1-chart-envoy.png",
       "sha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "016-earned-normal-return-2-tidal-envoy.png",
       "sha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "017-earned-reduced-ledger-1-chart-envoy.png",
-      "sha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
-      "previousSha256": null,
+      "sha256": "2d6102a8cdbc3eaa6a9ff19e0d64cf187f5f2a6e9d3debd45d704bb1a2339ef0",
+      "previousSha256": "e65b07fca941ce8a14cb84a743fd8d950a9b3f4e29b867136a27221c0fe0f031",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "017-earned-reduced-ledger-2-tidal-envoy.png",
-      "sha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
-      "previousSha256": null,
+      "sha256": "9c6988908d3e7bae6a28669705ce7924ca1b0be38ba22ab0291a66a6947651c4",
+      "previousSha256": "1960ac2b7af2ded679e3b4ac4dd037f815aaaac449c6dbe62a0167a2b90b6dae",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "018-earned-reduced-totals-1-chart-envoy.png",
-      "sha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
-      "previousSha256": null,
+      "sha256": "1dd55b7df3353d9a559becfca6127d10b2483d0ecdb919a3ed736c4fa8f3346f",
+      "previousSha256": "abdaf5ccecb387f98c6d9bd4d751733b558dcf8afc5f52149b68eed8d3cae558",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "018-earned-reduced-totals-2-tidal-envoy.png",
-      "sha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
-      "previousSha256": null,
+      "sha256": "c91ecdf20158447f296254ae18c33081c9e00b8590d9972a42ff9744705523de",
+      "previousSha256": "8319fab00583a0316d1e8c6a72bb8a12a3eb7197175f53f61d66c63aae0c855e",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "019-earned-reduced-return-1-chart-envoy.png",
       "sha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "ce3b3f120c8646f92ee60dcd352ee66976c22ae531744914c6470efc2942e732",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "019-earned-reduced-return-2-tidal-envoy.png",
       "sha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "d1d28ff2d8e57076408b7f583509b23e91acca10a415f7c0317fb5d86b9630e6",
+      "changed": false,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "021-recover-delivered-rate-1-chart-envoy.png",
-      "sha256": "25c5f4400cb7681649c5726102f36a0fdba5077cf71a254a3a97ec27a0a16d17",
-      "previousSha256": null,
+      "sha256": "55031c7654798928165dd408d66fa88e5c919e251ec571b7a3363d721dd92e72",
+      "previousSha256": "25c5f4400cb7681649c5726102f36a0fdba5077cf71a254a3a97ec27a0a16d17",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     }
-  ]
+  ],
+  "previousReview": "docs/testing/top-pr-green-20261103/inspection-decisions.json"
 }

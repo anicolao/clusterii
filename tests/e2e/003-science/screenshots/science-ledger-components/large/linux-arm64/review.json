@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/science-layer-all-reviewed.json",
   "mode": "reviewed-baseline-candidates",
   "story": "science-ledger-components",
   "renderer": {
@@ -29,55 +29,56 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "9b464bcac8918c7eb2260b5d1d03bbe13488456a",
+    "commit": "e8e287c93ddd3da81df4889f38a7d76ccab34226",
     "dirty": false,
     "spec": "tests/e2e/003-science/components.spec.ts",
     "specSha256": "31a710a8573fb1413930579f72513d36c794467e33869208b1cf95f4711a3cbb"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-scroll-41924486083/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-science-layer-43234128112/large/test-results/stories/science-ledger-components/large/linux-arm64/story.json",
+  "inspectionScope": "All changed expected/candidate compositions inspected using full phone pairs and changed-RGBA-bounds plus padding for desktop/short/large. Duplicate image hashes explicitly grouped. Text painting changes retain headings, actual values, source names, focus outlines and reading positions. Large component pairs tool-downscaled: layout/content approval, not full native-pixel design certification. Cross-run stability remains to be verified.",
   "captures": [
     {
       "image": "001-gallery-source-reduce-1-component-reviewer.png",
-      "sha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
+      "sha256": "4c55aecf23bb4c23de7b8814cab0d92120adae078666c2c5a6daaf6da9bf24f6",
       "previousSha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
-      "changed": false,
-      "approval": "exact individually inspected hash"
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "002-gallery-source-no-preference-1-component-reviewer.png",
-      "sha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
+      "sha256": "4c55aecf23bb4c23de7b8814cab0d92120adae078666c2c5a6daaf6da9bf24f6",
       "previousSha256": "e6319c0c0ecabde5ca1a7a9487eda5c120c681d0826a9e0329bc2296af8e8f35",
-      "changed": false,
-      "approval": "exact individually inspected hash"
+      "changed": true,
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "003-lab-capacity-1-standard-motion-comparison.png",
-      "sha256": "3e116427ca1d10b4ee49b06d187e65b5dd94d000d79fc3b3022f04f365d07f74",
-      "previousSha256": "c265994e95f9f1fbed232932143a05ac88397de773d53c054e1f9909bae676d4",
+      "sha256": "f81fd40b1e91a99f1d0b9ee7f77a17b92ba14d5d170e042c52df864ed623542c",
+      "previousSha256": "3e116427ca1d10b4ee49b06d187e65b5dd94d000d79fc3b3022f04f365d07f74",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "003-lab-capacity-2-reduced-motion-comparison.png",
-      "sha256": "a6f4f60621d82b8de08d0560e4cfd4fac7f4475015ee7d79347542e6d1e61edf",
-      "previousSha256": "563424774e52bbec377a9442a6e34b76f935454a4cb86e21fca5f5e4eabd0a87",
+      "sha256": "b7e9e52f3a9c99af4eb938e85ec65490ce633c1fc65872293050cd3b09c3fa01",
+      "previousSha256": "a6f4f60621d82b8de08d0560e4cfd4fac7f4475015ee7d79347542e6d1e61edf",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "004-lab-delivered-1-standard-motion-comparison.png",
-      "sha256": "408e37d82fb04d090570b29874ee3cf964693f1c741205035026885449107a70",
-      "previousSha256": "70fa48451221caacf293d38bdb77928e7916b166d8e234abdd66abd09481a9fa",
+      "sha256": "1166a89953c6ba476f72be105ebcaa8bae3393cfe3a2cead5251501825f15fa0",
+      "previousSha256": "408e37d82fb04d090570b29874ee3cf964693f1c741205035026885449107a70",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     },
     {
       "image": "004-lab-delivered-2-reduced-motion-comparison.png",
-      "sha256": "4be1920077d749cea2daa486399653b783ff62b27bb1da64eea3a5738697611b",
-      "previousSha256": "b23f3f3c8fe66d6522e0d338ce3a9e915c1d953101edbeebd48e05b2071bbec9",
+      "sha256": "5b19841c5baf214536429d2143e30087af3f3ed34f441f4a58970eb0faace8b8",
+      "previousSha256": "4be1920077d749cea2daa486399653b783ff62b27bb1da64eea3a5738697611b",
       "changed": true,
-      "approval": "exact individually inspected hash"
+      "approval": "inspected exact image or exact approved unchanged hash"
     }
-  ]
+  ],
+  "previousReview": "docs/testing/top-pr-green-20261103/inspection-decisions.json"
 }

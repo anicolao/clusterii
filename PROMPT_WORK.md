@@ -1145,3 +1145,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Retain the complete science-layer candidate request and exact scope audit while active PR140 stays unchanged pending validation.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify completed science-layer artifacts against immutable manifests and references, then inspect every changed composition before approval.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Complete all science-layer image inspections and import only the 76 reviewed changed hashes with source and renderer provenance.
