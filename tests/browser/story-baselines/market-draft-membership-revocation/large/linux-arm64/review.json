@@ -109,9 +109,10 @@
     },
     {
       "image": "020-recover-restored-membership-1-market-envoy-campaign-device.png",
-      "sha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
-      "previousSha256": "fe1afc8909d1969e7f127431aa6adc44015f087dccb51092dc26b9723df8813f",
-      "changed": true
+      "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+      "previousSha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+      "changed": true,
+      "approval": "docs/testing/top-pr-green-20261103/market-repeat-44dc-reviewed.json"
     },
     {
       "image": "020-recover-restored-membership-2-independent-investor.png",
@@ -120,5 +121,14 @@
       "changed": true
     }
   ],
-  "scope": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification."
+  "scope": "All 47 distinct changed large compositions individually viewed, including research order outcomes, allocation validation/recovery and eight research choices. Selected controls, focus outlines, effects and queue actions remain readable and contained below the measured rail. Neighboring offscreen rows use bounded scrolling. Large originals viewed at 2048x1152 display: scoped regression layout/content approval, not native-pixel design certification.",
+  "recoveryReviews": [
+    {
+      "review": "docs/testing/top-pr-green-20261103/market-repeat-44dc-reviewed.json",
+      "target": "9184937e02984ed6112eac832d4a117839176dff",
+      "request": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+      "mode": "strict first failure; incomplete story manifest not emitted",
+      "scope": "One exact inspected actual, identical in full CI and isolated repeat and identical to already-reviewed initial owned-focus baseline. No complete-story claim; final peer comparison pending."
+    }
+  ]
 }

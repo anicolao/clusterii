@@ -1,0 +1,198 @@
+{
+  "target": "9184937e02984ed6112eac832d4a117839176dff",
+  "source": {
+    "commit": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+    "dirty": false,
+    "spec": "tests/browser/sharing-lab.story.spec.ts",
+    "specSha256": "da75c94ab03635ab464653095d5c820f029f73754e812228e65702fd763e4397"
+  },
+  "renderer": {
+    "platform": "linux-arm64",
+    "rendererArgs": [
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+      "--num-raster-threads=2",
+      "--disable-skia-runtime-opts",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-checker-imaging",
+      "--disable-partial-raster",
+      "--disable-gpu-rasterization",
+      "--disable-gpu"
+    ],
+    "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+    "browser": "149.0.7827.0",
+    "playwright": "1.61.1",
+    "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "dpr": 1,
+    "motion": "reduce"
+  },
+  "status": "passed",
+  "records": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "ad0bcd97531915c206e7adbdb6cb21092f8f71676bcd40586713ec616971f2d5",
+      "oldSha256": "9e126ec036beb49ba27ce26467d5865ff21b24c82f4df7da9dc48e4f012ff322",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "ad0bcd97531915c206e7adbdb6cb21092f8f71676bcd40586713ec616971f2d5",
+      "oldSha256": "9e126ec036beb49ba27ce26467d5865ff21b24c82f4df7da9dc48e4f012ff322",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+      "sha256": "770a191176d9c146e28165ee70b9edcb6cac3d60e4782a08e3641d3f292bd721",
+      "oldSha256": "60c56ac6b256bc8f51c841db24121f1f1fbef5cdd2e0706c90a4bb53fc8d694a",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "770a191176d9c146e28165ee70b9edcb6cac3d60e4782a08e3641d3f292bd721",
+      "oldSha256": "60c56ac6b256bc8f51c841db24121f1f1fbef5cdd2e0706c90a4bb53fc8d694a",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+      "sha256": "0fa37fb03c1d7cc42a1145cd7b76c395b0269c3c89c18cebcf4715de2941036d",
+      "oldSha256": "430ea09683ceab570f4027ff62d14843f861e6bd273ed3868a6f96c719ab31ec",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "0fa37fb03c1d7cc42a1145cd7b76c395b0269c3c89c18cebcf4715de2941036d",
+      "oldSha256": "430ea09683ceab570f4027ff62d14843f861e6bd273ed3868a6f96c719ab31ec",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+      "sha256": "32e0417c554ea1bbb663676c771d682fb6e1b0c1a8bd344f80ab11e25923844c",
+      "oldSha256": "78c876e2a05673595e7a4ca7cb4686319d83de5bb88828921f56144e6999d926",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "32e0417c554ea1bbb663676c771d682fb6e1b0c1a8bd344f80ab11e25923844c",
+      "oldSha256": "78c876e2a05673595e7a4ca7cb4686319d83de5bb88828921f56144e6999d926",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+      "sha256": "97c58f5e221a584448559b09582800c8ef84cc73f3cdbb263fbd555bf8734746",
+      "oldSha256": "91819e88972f605494e0c07cae50e728782225129c807c2af7ab448f417faf15",
+      "unchanged": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+      "sha256": "97c58f5e221a584448559b09582800c8ef84cc73f3cdbb263fbd555bf8734746",
+      "oldSha256": "91819e88972f605494e0c07cae50e728782225129c807c2af7ab448f417faf15",
+      "unchanged": false
+    }
+  ],
+  "groups": {
+    "ad0bcd97531915c206e7adbdb6cb21092f8f71676bcd40586713ec616971f2d5": [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-1-developer-recipient-in-standard-motion.png",
+        "sha256": "ad0bcd97531915c206e7adbdb6cb21092f8f71676bcd40586713ec616971f2d5",
+        "oldSha256": "9e126ec036beb49ba27ce26467d5865ff21b24c82f4df7da9dc48e4f012ff322",
+        "unchanged": false
+      },
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/002-review-scope-2-developer-recipient-in-reduced-motion.png",
+        "sha256": "ad0bcd97531915c206e7adbdb6cb21092f8f71676bcd40586713ec616971f2d5",
+        "oldSha256": "9e126ec036beb49ba27ce26467d5865ff21b24c82f4df7da9dc48e4f012ff322",
+        "unchanged": false
+      }
+    ],
+    "770a191176d9c146e28165ee70b9edcb6cac3d60e4782a08e3641d3f292bd721": [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/003-pending-1-developer-recipient-in-standard-motion.png",
+        "sha256": "770a191176d9c146e28165ee70b9edcb6cac3d60e4782a08e3641d3f292bd721",
+        "oldSha256": "60c56ac6b256bc8f51c841db24121f1f1fbef5cdd2e0706c90a4bb53fc8d694a",
+        "unchanged": false
+      },
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/003-pending-2-developer-recipient-in-reduced-motion.png",
+        "sha256": "770a191176d9c146e28165ee70b9edcb6cac3d60e4782a08e3641d3f292bd721",
+        "oldSha256": "60c56ac6b256bc8f51c841db24121f1f1fbef5cdd2e0706c90a4bb53fc8d694a",
+        "unchanged": false
+      }
+    ],
+    "0fa37fb03c1d7cc42a1145cd7b76c395b0269c3c89c18cebcf4715de2941036d": [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/004-acceptance-motion-1-developer-recipient-in-standard-motion.png",
+        "sha256": "0fa37fb03c1d7cc42a1145cd7b76c395b0269c3c89c18cebcf4715de2941036d",
+        "oldSha256": "430ea09683ceab570f4027ff62d14843f861e6bd273ed3868a6f96c719ab31ec",
+        "unchanged": false
+      },
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/004-acceptance-motion-2-developer-recipient-in-reduced-motion.png",
+        "sha256": "0fa37fb03c1d7cc42a1145cd7b76c395b0269c3c89c18cebcf4715de2941036d",
+        "oldSha256": "430ea09683ceab570f4027ff62d14843f861e6bd273ed3868a6f96c719ab31ec",
+        "unchanged": false
+      }
+    ],
+    "32e0417c554ea1bbb663676c771d682fb6e1b0c1a8bd344f80ab11e25923844c": [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/005-accepted-history-1-developer-recipient-in-standard-motion.png",
+        "sha256": "32e0417c554ea1bbb663676c771d682fb6e1b0c1a8bd344f80ab11e25923844c",
+        "oldSha256": "78c876e2a05673595e7a4ca7cb4686319d83de5bb88828921f56144e6999d926",
+        "unchanged": false
+      },
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/005-accepted-history-2-developer-recipient-in-reduced-motion.png",
+        "sha256": "32e0417c554ea1bbb663676c771d682fb6e1b0c1a8bd344f80ab11e25923844c",
+        "oldSha256": "78c876e2a05673595e7a4ca7cb4686319d83de5bb88828921f56144e6999d926",
+        "unchanged": false
+      }
+    ],
+    "97c58f5e221a584448559b09582800c8ef84cc73f3cdbb263fbd555bf8734746": [
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/006-reset-scope-1-developer-recipient-in-standard-motion.png",
+        "sha256": "97c58f5e221a584448559b09582800c8ef84cc73f3cdbb263fbd555bf8734746",
+        "oldSha256": "91819e88972f605494e0c07cae50e728782225129c807c2af7ab448f417faf15",
+        "unchanged": false
+      },
+      {
+        "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/selected-history-lab/short/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+        "reference": "tests/browser/story-baselines/selected-history-lab/short/linux-arm64/006-reset-scope-2-developer-recipient-in-reduced-motion.png",
+        "sha256": "97c58f5e221a584448559b09582800c8ef84cc73f3cdbb263fbd555bf8734746",
+        "oldSha256": "91819e88972f605494e0c07cae50e728782225129c807c2af7ab448f417faf15",
+        "unchanged": false
+      }
+    ]
+  },
+  "approval": "All 10 exact generated short images approved through 5 individually viewed native 1280x720 full originals and SHA-identical standard/reduced partners.",
+  "findings": [
+    "Invitation scope, selected-message identifier, absence of pre-consent message content, disabled pending controls, accepted message attribution and acknowledgement, and reset consent are readable.",
+    "The new padding belongs to the integrated Conversations change; footer and focused Accept invitation outline fit.",
+    "Pending keeps an existing partially offscreen invitation heading, and Home reading shows the first authorized message while neighboring lower knowledge prose is partially offscreen. Expected images show the same bounded-reading behavior; this is not simultaneous all-content visibility or new keyboard-navigation certification.",
+    "Standard/reduced captures byte-identical after the existing harness capture settlement; this does not certify full animation behavior."
+  ],
+  "scope": "Exact regression-reference approval, not full design/privacy-rule/release approval."
+}

@@ -1,0 +1,167 @@
+{
+  "run": 43174325455,
+  "admission": "All four complete54-view admission strict journeys passed on stronger readiness source; no reference changes. Overall run failed only separate large membership case.",
+  "manifests": [
+    {
+      "project": "phone",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/phone/test-results/stories/campaign-scheduled-start/phone/linux-arm64/story.json",
+      "sha256": "345a042b794750e089b2426ff8a80e6a372754d2d46028154fe241ca7d7cb962",
+      "source": {
+        "commit": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+        "dirty": false,
+        "spec": "tests/browser/campaign-start.story.spec.ts",
+        "specSha256": "94c4907bda3f2a324ee68453326d8d8ff5c6cd52b937c45803e9c01800c687a4"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 393,
+          "height": 852
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "mode": "verify",
+      "status": "passed",
+      "views": 54
+    },
+    {
+      "project": "desktop",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/desktop/test-results/stories/campaign-scheduled-start/desktop/linux-arm64/story.json",
+      "sha256": "04435854262c746a7f4b745c0d1978784d3066546a26724650876922a505360d",
+      "source": {
+        "commit": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+        "dirty": false,
+        "spec": "tests/browser/campaign-start.story.spec.ts",
+        "specSha256": "94c4907bda3f2a324ee68453326d8d8ff5c6cd52b937c45803e9c01800c687a4"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "mode": "verify",
+      "status": "passed",
+      "views": 54
+    },
+    {
+      "project": "short",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/short/test-results/stories/campaign-scheduled-start/short/linux-arm64/story.json",
+      "sha256": "257abb4eb1148f123737443cb76d592944d4c773d9e0ce4f77af9183113a8bb9",
+      "source": {
+        "commit": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+        "dirty": false,
+        "spec": "tests/browser/campaign-start.story.spec.ts",
+        "specSha256": "94c4907bda3f2a324ee68453326d8d8ff5c6cd52b937c45803e9c01800c687a4"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "mode": "verify",
+      "status": "passed",
+      "views": 54
+    },
+    {
+      "project": "large",
+      "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-isolated-44dc-43174325455/large/test-results/stories/campaign-scheduled-start/large/linux-arm64/story.json",
+      "sha256": "3cc480ee64f044417bf6a93ee209b628bf127888774e1db0147afce2c73dfac8",
+      "source": {
+        "commit": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+        "dirty": false,
+        "spec": "tests/browser/campaign-start.story.spec.ts",
+        "specSha256": "94c4907bda3f2a324ee68453326d8d8ff5c6cd52b937c45803e9c01800c687a4"
+      },
+      "renderer": {
+        "platform": "linux-arm64",
+        "rendererArgs": [
+          "--use-angle=swiftshader",
+          "--enable-unsafe-swiftshader",
+          "--num-raster-threads=2",
+          "--disable-skia-runtime-opts",
+          "--run-all-compositor-stages-before-draw",
+          "--disable-checker-imaging",
+          "--disable-partial-raster",
+          "--disable-gpu-rasterization",
+          "--disable-gpu"
+        ],
+        "environment": "mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321",
+        "browser": "149.0.7827.0",
+        "playwright": "1.61.1",
+        "fonts": "2a55338ec257aea392e33e9a32a650c66cb6bea51995717fd97c06476eb5fcf9",
+        "viewport": {
+          "width": 3840,
+          "height": 2160
+        },
+        "locale": "en-US",
+        "timezone": "UTC",
+        "dpr": 1,
+        "motion": "reduce"
+      },
+      "mode": "verify",
+      "status": "passed",
+      "views": 54
+    }
+  ],
+  "retention": "Only compact manifests/metadata selectively downloaded with CRC/SHA and exact206 ranges, full artifact SHA not verified; complete images remain remote until recorded expiry."
+}
