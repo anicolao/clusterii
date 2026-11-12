@@ -1,0 +1,50 @@
+name: Verify reviewed science text-layer references
+on:
+  push:
+    branches: [investigate/pr140-science-strict-20261112]
+    paths: [.github/recovery/top-candidates.json]
+permissions:
+  contents: read
+concurrency:
+  group: top-pr-140-science-strict
+  cancel-in-progress: false
+jobs:
+  candidates:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [phone, desktop, large, short]
+    defaults:
+      run:
+        shell: nix develop path:./nix --accept-flake-config --command bash -e {0}
+    env:
+      CLUSTER_PINNED_RENDERER: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:824f1a789072e648c62541c2cfa4479c4061a290d5c27766d67dc1dcbc19b321
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 8
+          persist-credentials: false
+      - name: Bootstrap established Nix
+        uses: DeterminateSystems/nix-installer-action@9383ce2bf08796b65508822f5982f49151badc4e
+        with:
+          determinate: false
+      - name: Validate immutable first request
+        run: node scripts/top-candidates-request.mjs
+      - name: Verify complete live science and shared components
+        run: nix run path:./nix#ci-renderer -- recovery top-candidates-${{ matrix.project }}
+      - name: Retain every result and first failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: top-pr140-science-strict-${{ matrix.project }}-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            test-results/
+            ci-evidence/
+            firestore-debug.log
+            firebase-debug.log
+            database-debug.log
