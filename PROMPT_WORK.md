@@ -987,3 +987,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Compact waypoint row spacing without changing fonts, control targets or containment assertions after measured reader failure.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reconcile the terminal required strict run with current prepared repairs and preserve its compact exact first-failure classification.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete route recovery and paused-travel verification to corrected waypoint spacing without replaying successful cargo.
