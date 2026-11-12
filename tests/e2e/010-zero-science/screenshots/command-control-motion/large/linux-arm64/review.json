@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/command-motion-complete-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "command-control-motion",
   "renderer": {
@@ -29,41 +29,38 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "b9f4c4e2b34ca48f65590b75ea06b713dff7bd2c",
+    "commit": "02f85a9751eaabd36be61faace6de6e39b952595",
     "dirty": false,
     "spec": "tests/e2e/010-zero-science/controls.spec.ts",
     "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-candidates-41700997600/large/test-results/stories/command-control-motion/large/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "run": 43150384965,
+  "manifestSha256": "4fc9ef7222aed61e5da66fe0938e442a3089f21c6748484cd1a63f0a791c4e48",
+  "inspectionScope": "Both changed gallery originals individually viewed plus reduced expected; normal expected/actual/diff previously viewed. Only preceding SystemLayers specimen changes from viewport-large sizing to real container sizing. Held-credit explanation and Surface label now contained; command History/Economy selection, focus, disabled example and surrounding portraits unchanged. Two lab captures byte-identical. 3840x2160 viewed at2048x1152: scoped layout/content regression, not native-pixel/full-design/general animation approval.",
   "captures": [
     {
       "image": "001-normal-gallery-selection-1-component-reviewer.png",
-      "sha256": "3e7c125c07d2db3c966fae7d077eaf46272c78d60019c8059171c2849096d50c",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "c21810aa5c030a69cc9a76c5a01c41ee354cd6adaedae9c7d690ac104435e97b",
+      "previousSha256": "3e7c125c07d2db3c966fae7d077eaf46272c78d60019c8059171c2849096d50c",
+      "changed": true
     },
     {
       "image": "002-reduced-gallery-selection-1-component-reviewer.png",
-      "sha256": "8b8464071e310ba568b0ae4188d8d684a2a0b339dcdd42b3598dfb1a18bb1c59",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "6948c698f9bba177b1d5808a7066c694b587ee0eb45a322e165a6d947b67439c",
+      "previousSha256": "8b8464071e310ba568b0ae4188d8d684a2a0b339dcdd42b3598dfb1a18bb1c59",
+      "changed": true
     },
     {
       "image": "003-normal-lab-selection-1-component-reviewer.png",
       "sha256": "09f8004ed9f87561e030b4e4513138ed6b837d314cb55cdbc6b5af55361b8672",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "09f8004ed9f87561e030b4e4513138ed6b837d314cb55cdbc6b5af55361b8672",
+      "changed": false
     },
     {
       "image": "004-reduced-lab-selection-1-component-reviewer.png",
       "sha256": "c5a1d3c43c2db118741aa4859ab25a308cc9106ac5060c65b0a7449bb4da593e",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "previousSha256": "c5a1d3c43c2db118741aa4859ab25a308cc9106ac5060c65b0a7449bb4da593e",
+      "changed": false
     }
   ]
 }

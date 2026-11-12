@@ -1,0 +1,268 @@
+{
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-command-motion-43150384965/large/test-results/stories/command-control-motion/large/linux-arm64/story.json",
+  "manifestSha256": "4fc9ef7222aed61e5da66fe0938e442a3089f21c6748484cd1a63f0a791c4e48",
+  "source": {
+    "commit": "02f85a9751eaabd36be61faace6de6e39b952595",
+    "dirty": false,
+    "spec": "tests/e2e/010-zero-science/controls.spec.ts",
+    "specSha256": "f58311e618820c720120361d0bc9108dbab031d9db156173fd5f84b79874ecfe"
+  },
+  "records": [
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-command-motion-43150384965/large/test-results/stories/command-control-motion/large/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png",
+      "reference": "tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png",
+      "sha256": "c21810aa5c030a69cc9a76c5a01c41ee354cd6adaedae9c7d690ac104435e97b",
+      "oldSha256": "3e7c125c07d2db3c966fae7d077eaf46272c78d60019c8059171c2849096d50c",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-command-motion-43150384965/large/test-results/stories/command-control-motion/large/linux-arm64/002-reduced-gallery-selection-1-component-reviewer.png",
+      "reference": "tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64/002-reduced-gallery-selection-1-component-reviewer.png",
+      "sha256": "6948c698f9bba177b1d5808a7066c694b587ee0eb45a322e165a6d947b67439c",
+      "oldSha256": "8b8464071e310ba568b0ae4188d8d684a2a0b339dcdd42b3598dfb1a18bb1c59",
+      "changed": true
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-command-motion-43150384965/large/test-results/stories/command-control-motion/large/linux-arm64/003-normal-lab-selection-1-component-reviewer.png",
+      "reference": "tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64/003-normal-lab-selection-1-component-reviewer.png",
+      "sha256": "09f8004ed9f87561e030b4e4513138ed6b837d314cb55cdbc6b5af55361b8672",
+      "oldSha256": "09f8004ed9f87561e030b4e4513138ed6b837d314cb55cdbc6b5af55361b8672",
+      "changed": false
+    },
+    {
+      "path": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-command-motion-43150384965/large/test-results/stories/command-control-motion/large/linux-arm64/004-reduced-lab-selection-1-component-reviewer.png",
+      "reference": "tests/e2e/010-zero-science/screenshots/command-control-motion/large/linux-arm64/004-reduced-lab-selection-1-component-reviewer.png",
+      "sha256": "c5a1d3c43c2db118741aa4859ab25a308cc9106ac5060c65b0a7449bb4da593e",
+      "oldSha256": "c5a1d3c43c2db118741aa4859ab25a308cc9106ac5060c65b0a7449bb4da593e",
+      "changed": false
+    }
+  ],
+  "run": 43150384965,
+  "target": "597106f4",
+  "retention": {
+    "run": 43150384965,
+    "artifact": {
+      "id": 13914526424,
+      "node_id": "MDg6QXJ0aWZhY3QxMzkxNDUyNjQyNA==",
+      "name": "top-pr140-motion-large-candidates-large-02f85a9751eaabd36be61faace6de6e39b952595",
+      "size_in_bytes": 3309270,
+      "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13914526424",
+      "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13914526424/zip",
+      "expired": false,
+      "digest": "sha256:7a5129c832d28468ff2983f5a072b1e2e406e0847db0bbb0e7c206894247f674",
+      "created_at": "2026-11-12T03:57:05Z",
+      "updated_at": "2026-11-12T03:57:05Z",
+      "expires_at": "2026-11-26T03:57:04Z",
+      "workflow_run": {
+        "id": 43150384965,
+        "repository_id": 1427003910,
+        "head_repository_id": 1427003910,
+        "head_branch": "investigate/pr140-motion-large-20261112",
+        "head_sha": "02f85a9751eaabd36be61faace6de6e39b952595"
+      }
+    },
+    "archiveSha256": "7a5129c832d28468ff2983f5a072b1e2e406e0847db0bbb0e7c206894247f674",
+    "archiveRetention": "Verified once in memory; no local ZIP saved",
+    "entries": [
+      {
+        "name": "test-results/stories/_cohorts/large/motion-large/firestore-debug.log",
+        "size": 1011,
+        "crc32": "d4636882",
+        "sha256": "8b7a1e8db608fa4a4505a21e580769bac56ad9053e3461ba57f3ac1c23521316",
+        "retained": false
+      },
+      {
+        "name": "test-results/stories/_cohorts/large/motion-large/result.json",
+        "size": 162,
+        "crc32": "2f7eb316",
+        "sha256": "3f6904a46ce08362f1e67f014da4155b8081dc15c91167def602fdb3bf921cc3",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/_cohorts/large/motion-large/playwright.json",
+        "size": 45,
+        "crc32": "e1bbbed0",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/001-normal-gallery-selection-1-component-reviewer.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/001-normal-gallery-selection-1-component-reviewer.png",
+        "size": 1286132,
+        "crc32": "f353a158",
+        "sha256": "c21810aa5c030a69cc9a76c5a01c41ee354cd6adaedae9c7d690ac104435e97b",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/002-reduced-gallery-selection-1-component-reviewer.layout.json",
+        "size": 2069,
+        "crc32": "db3aceb1",
+        "sha256": "d070c12457060d34425d9865dfeef4234984ca20d56f88e4f83e911fab555b05",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/002-reduced-gallery-selection-1-component-reviewer.png",
+        "size": 1286352,
+        "crc32": "2f3c477d",
+        "sha256": "6948c698f9bba177b1d5808a7066c694b587ee0eb45a322e165a6d947b67439c",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/003-normal-lab-selection-1-component-reviewer.layout.json",
+        "size": 2071,
+        "crc32": "4205f62b",
+        "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/003-normal-lab-selection-1-component-reviewer.png",
+        "size": 451634,
+        "crc32": "9ddef122",
+        "sha256": "09f8004ed9f87561e030b4e4513138ed6b837d314cb55cdbc6b5af55361b8672",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/004-reduced-lab-selection-1-component-reviewer.layout.json",
+        "size": 2071,
+        "crc32": "4205f62b",
+        "sha256": "cea7c05ab15244419fed8bb0acac375bc7dc2f2bf08523214aa1c9ec83e1ea82",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/004-reduced-lab-selection-1-component-reviewer.png",
+        "size": 422954,
+        "crc32": "8216062a",
+        "sha256": "c5a1d3c43c2db118741aa4859ab25a308cc9106ac5060c65b0a7449bb4da593e",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/README.md",
+        "size": 3856,
+        "crc32": "b5f7ab7f",
+        "sha256": "5f1051fd80e08d73354074911c0d0e59e45e81b497bed14047948d5f5aca6040",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/renderer.json",
+        "size": 759,
+        "crc32": "4ece87e2",
+        "sha256": "25aa160775ad46a3bfa021a097ac557feaae58b5323ed0c4e59ce82506dc68c2",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/command-control-motion/large/linux-arm64/story.json",
+        "size": 5298,
+        "crc32": "b33d23dd",
+        "sha256": "4fc9ef7222aed61e5da66fe0938e442a3089f21c6748484cd1a63f0a791c4e48",
+        "retained": true
+      },
+      {
+        "name": "test-results/stories/e2e-010-zero-science-contr-5ade1-otion-independent-selection-large/attachments/Illustrated-story-56e64263c69062d2f04878abc07894dd4abf9572.md",
+        "size": 3856,
+        "crc32": "b5f7ab7f",
+        "sha256": "5f1051fd80e08d73354074911c0d0e59e45e81b497bed14047948d5f5aca6040",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/browser-path.txt",
+        "size": 49,
+        "crc32": "1e066675",
+        "sha256": "a84a601a9991bd32ffb9d77d2ddcdaa4e1eed58d1a24b576706e1ea3ae844e5b",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/containerd.log",
+        "size": 11788,
+        "crc32": "be96cc08",
+        "sha256": "0ccad3ae606ce7c150b4c3bc35ebb34fabcd2713cc1b045970365e31b1d2482e",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine-info.log",
+        "size": 1790,
+        "crc32": "b46fc0e8",
+        "sha256": "f221ece16e9f3025c863103ac12f436585490a1f39f1485c9ff7f8c253de7d69",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/engine.log",
+        "size": 2723,
+        "crc32": "b8b6d2de",
+        "sha256": "2b44cb57df1139d931eb498120a557e65dc2178e597b85acc943c2a825221ab9",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-identity.txt",
+        "size": 144,
+        "crc32": "ff699987",
+        "sha256": "120cdb847bf7a719fa55440f47a7b4c10195856835c4a850fd249a10a27262cd",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-inspect.json",
+        "size": 2411,
+        "crc32": "e7016b24",
+        "sha256": "007be59419f0dd4c774a1e8d9f15a7a36cefe9d7181145668e5eae62ead3c6e1",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/nix-renderer/image-load.log",
+        "size": 49,
+        "crc32": "8adde11d",
+        "sha256": "7cea58c9d09e47097edf57e4889c568626f004bd84bb8c77dce73ad74bbfe7e5",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/nix-ldd.txt",
+        "size": 1491,
+        "crc32": "33364c3b",
+        "sha256": "99c0c4b26ca2e2d5ca5c03db41ce40104f32e5437ad48c16281a6b936728bacb",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/nix-renderer/renderer-ldd.txt",
+        "size": 6729,
+        "crc32": "19bd04fb",
+        "sha256": "469a8f2d45795de35c0b3b1fc26ba9d00977d6976871bd3bfde971d04d6ade52",
+        "retained": false
+      },
+      {
+        "name": "ci-evidence/top-candidates/collection-large.json",
+        "size": 4780,
+        "crc32": "5f1ea92c",
+        "sha256": "e57e08bed6260329fb7e6a0988606a44d5047a6099f1e88b5d487a46aa504187",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/outcome-large.json",
+        "size": 357,
+        "crc32": "9e6bbc0e",
+        "sha256": "24ce567920b73dea4eccc9657d626180a3ac83948e4d077abaf11112cbb9f832",
+        "retained": true
+      },
+      {
+        "name": "ci-evidence/top-candidates/request.json",
+        "size": 1252,
+        "crc32": "85247615",
+        "sha256": "eaf84f7cd120dead88030115303946971d068621f3e92b7fe41c89a277ec40f1",
+        "retained": true
+      },
+      {
+        "name": "database-debug.log",
+        "size": 2549,
+        "crc32": "7cd473fa",
+        "sha256": "1ab3c1fc3abfa83c430faff58c150075c21e9ec18caddbbfb06afa7cb1ea39c3",
+        "retained": false
+      }
+    ]
+  },
+  "inspection": "Both changed gallery originals individually viewed plus reduced expected; normal expected/actual/diff previously viewed. Only preceding SystemLayers specimen changes from viewport-large sizing to real container sizing. Held-credit explanation and Surface label now contained; command History/Economy selection, focus, disabled example and surrounding portraits unchanged. Two lab captures byte-identical. 3840x2160 viewed at2048x1152: scoped layout/content regression, not native-pixel/full-design/general animation approval.",
+  "approvedChanged": 2,
+  "unchanged": 2
+}
