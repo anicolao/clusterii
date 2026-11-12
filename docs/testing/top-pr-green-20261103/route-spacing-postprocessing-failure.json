@@ -1,0 +1,27 @@
+{
+  "run": 43140301420,
+  "target": "d914432f8a1b3ce1e81677c08ff9dd50c612b15b",
+  "request": "7554e3436455e1d3703ac95645a7aa2c80606332",
+  "phone": "Two functional journeys passed; postprocessing asserts52!==50. Job failure retained.",
+  "short": "Two functional journeys passed; postprocessing asserts52!==50. Job failure retained.",
+  "otherCases": "Still running at last poll; preserve sole run.",
+  "next": "Verify full manifests and original story count; correct erroneous runner expectation offline without rerunning passed gameplay. No candidate approval implied.",
+  "artifacts": {
+    "phone": 13908999484,
+    "short": 13910220639
+  },
+  "logs": [
+    {
+      "viewport": "phone",
+      "path": "docs/testing/top-pr-green-20261103/route-spacing-phone-job.log.gz",
+      "originalBytes": 145515,
+      "originalSha256": "d1530f7c97c6237c16e445511f0064ed78189b4fd261df94b1ccc35db338fa81"
+    },
+    {
+      "viewport": "short",
+      "path": "docs/testing/top-pr-green-20261103/route-spacing-short-job.log.gz",
+      "originalBytes": 144438,
+      "originalSha256": "f392caa06e20e110db77fa9ee074555840f488007e0d97a51168802ca2a1032e"
+    }
+  ]
+}
