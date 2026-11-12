@@ -197,6 +197,22 @@ test("offline readiness retains decoded background bytes but rejects unseen brok
     server.stop(true);
   }
 });
+test("full-page instruments cannot cover the measured campaign rail", async () => {
+  for (const label of ["Return briefing panel", "Conversations panel"])
+    await fixture(
+      `<header class="command-rail" inert style="height:98px">Campaign context</header><section aria-label="${label}" style="position:absolute;inset:58px 0 0;background:black">Instrument</section>`,
+      async (page) => {
+        await expect(
+          page.evaluate(assertScreenFit, { surface: "game" as const }),
+        ).rejects.toThrow(`Campaign rail covered: ${label}`);
+        await page.getByLabel(label, { exact: true }).evaluate((panel) => {
+          panel.style.top = "98px";
+        });
+        await page.evaluate(assertScreenFit, { surface: "game" as const });
+      },
+    );
+});
+
 test("geometry rejects undersized, overlapping and out-of-viewport controls", async () => {
   for (const [html, message] of [
     ['<button style="width:20px">Bad</button>', "under 44px"],

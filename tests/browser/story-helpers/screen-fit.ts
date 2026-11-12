@@ -58,6 +58,15 @@ export function assertScreenFit({
     e.getAttribute("aria-label") ||
     e.textContent?.trim().slice(0, 80) ||
     e.tagName;
+  const rail = document.querySelector<HTMLElement>(".command-rail");
+  if (rail && visible(rail)) {
+    for (const panel of document.querySelectorAll<HTMLElement>(
+      '[aria-label="Return briefing panel"], [aria-label="Conversations panel"]',
+    )) {
+      if (visible(panel) && rect(panel).top < rect(rail).bottom)
+        failures.push(`Campaign rail covered: ${describe(panel)}`);
+    }
+  }
   const targets = [
     ...document.querySelectorAll<HTMLElement>(
       'button,summary,a[href],input:not([type="hidden"]),select,textarea,[role="button"]',

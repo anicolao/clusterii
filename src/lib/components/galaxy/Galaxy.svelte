@@ -1106,6 +1106,7 @@
     <header
       class="command-rail"
       class:fleet-instrument-open={military}
+      class:full-page-instrument-open={briefingOpen || conversationsOpen}
       bind:offsetHeight={commandRailHeight}
       inert={more ||
         roster ||
@@ -1800,7 +1801,8 @@
 </div>
 
 <style>
-  .command-rail.fleet-instrument-open .commander-presence {
+  .command-rail.fleet-instrument-open .commander-presence,
+  .command-rail.full-page-instrument-open .commander-presence {
     visibility: hidden;
   }
   .construction-panel {
@@ -1925,6 +1927,10 @@
     width: auto;
     padding: 0;
     border: 0;
+  }
+  .construction-panel.contact-panel.history-panel[aria-label="Return briefing panel"],
+  .construction-panel.contact-panel.history-panel[aria-label="Conversations panel"] {
+    top: var(--command-rail-height);
   }
   .history-panel.campaign-records {
     top: max(80px, calc(var(--command-rail-height) + 8px));
