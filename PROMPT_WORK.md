@@ -989,3 +989,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Reconcile the terminal required strict run with current prepared repairs and preserve its compact exact first-failure classification.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete route recovery and paused-travel verification to corrected waypoint spacing without replaying successful cargo.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Execute one corrected complete route family batch; preserve prior geometry failures and all original limits.
