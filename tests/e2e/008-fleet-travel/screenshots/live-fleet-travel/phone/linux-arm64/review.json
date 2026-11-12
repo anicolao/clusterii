@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr78-route-reference-review/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/route-spacing-phone-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "live-fleet-travel",
   "renderer": {
@@ -27,5 +27,333 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "7554e3436455e1d3703ac95645a7aa2c80606332",
+    "dirty": false,
+    "spec": "tests/e2e/008-fleet-travel/fleet-travel.spec.ts",
+    "specSha256": "07eb1eab70fb1b3c8d0e4ac7b8eaf140b2a70c3c85cce9f9c770e86cefc2eace"
+  },
+  "target": "d914432f8a1b3ce1e81677c08ff9dd50c612b15b",
+  "run": 43140301420,
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-travel-forces-43140301420/phone/test-results/stories/008-fleet-travel/stories/live-fleet-travel/phone/linux-arm64/story.json",
+  "manifestSha256": "07282ac171f681dd851bba3abaeebd65ef4555d90f274f8fab2f0b4a5b84c6de",
+  "jobConclusion": "failure all4; not rewritten",
+  "functionalResult": "8complete original journeys passed;8passed manifests;52travel+22force eachviewport,296originals",
+  "postprocessingFailure": "52 actual travel captures from26 two-player viewpoints, validator incorrectly expected50. No gameplay/screenshot assertion failure.",
+  "scope": "Exact inspected hashes, original assertions and deadlines. Large downscaled; not full design/release approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "0cbb713c2c36df056cc44f45938009cbd934c68d6633af105410993ff8ed2e2b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/010-inspect-formation-1-fleet-marshal.png",
+      "previousSha256": "ec881610d5b809fbc7721e5ace21c56c70326dd479285a46cf34801d52bb2556"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/010-inspect-formation-2-independent-marshal.png",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "f7a3f54cc5e4184a5d1d155c299481408594bcfd71b247742c45e0510309c45b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/011-choose-complement-1-fleet-marshal.png",
+      "previousSha256": "7a9a8817e5d4b0c5f1715bc85d586b37c1fe4748be4e10c0b36ddf149ec224de"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/011-choose-complement-2-independent-marshal.png",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "ef5b0cb5d2fae34b9961e6b86d6b02e0845f0b5697a2d9a9c76a205d000a12d5",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/012-reserve-formation-1-fleet-marshal.png",
+      "previousSha256": "f2a1b05ed2860ed4a991a03d25511fd89fa00ea410b3529b169bf23b8106a082"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/012-reserve-formation-2-independent-marshal.png",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "e2166aa7e86fed3fdb6e8c4cf52e09814171d2d333ce8e1622da75acf31edfdc",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/013-reload-formation-1-fleet-marshal.png",
+      "previousSha256": "728d02bd0694af92036502a36e488b3ea3ea3e93c1bdea273b204256a494d599"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "945593e0f6a468f2a2b96c6f8b55d42705543d231b96be3833d6120de3de833c",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/013-reload-formation-2-independent-marshal.png",
+      "previousSha256": "afb0d8eb5f075d534c6b26a43efc8e77ba634d279abecc54479667d0579f6a7b"
+    },
+    {
+      "image": "015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "01cecae0bbe5e56c21ed3469cadb2d5db968a8d035fe90f03f87801b9cc1cbae",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/015-formed-fleet-1-fleet-marshal.png",
+      "previousSha256": "ad7bbacc5032c3d156e6688ccccf2026c4ecfdf5a45ae5f4520ff6efc7848c01"
+    },
+    {
+      "image": "015-formed-fleet-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/015-formed-fleet-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "016-open-route-1-fleet-marshal.png",
+      "sha256": "2890e452fe20b269172af6e033e94aff216de04a3afc10481085cb36d67da0f7",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/016-open-route-1-fleet-marshal.png",
+      "previousSha256": "7be1a3650773100100d02d9c4039c75b893f3cd4cafe45369633aa1593c4a926"
+    },
+    {
+      "image": "016-open-route-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/016-open-route-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "017-choose-waypoint-1-fleet-marshal.png",
+      "sha256": "5d14e960212f2a5f157ce49390aa46f0a4c1c5c0ca99c1590e38e9b87732f910",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-1-fleet-marshal.png",
+      "previousSha256": "ebb462383d2d1c66063f74b79051245920d2fdc7c7d3c914a808f0cb72876b44"
+    },
+    {
+      "image": "017-choose-waypoint-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/017-choose-waypoint-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "018-reject-distant-leg-1-fleet-marshal.png",
+      "sha256": "88bbf8efc637a4be006f05961fce6372fb1eb2e2b451439be86120951b02060f",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-1-fleet-marshal.png",
+      "previousSha256": "26b76c0f7ada3c7a9855a3a66a6fc3216d8e0719430f0debdf760e3e5ce9b5d1"
+    },
+    {
+      "image": "018-reject-distant-leg-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/018-reject-distant-leg-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "019-repair-route-1-fleet-marshal.png",
+      "sha256": "eb6b81ace0b21e1202c8c240bcd9bba46fd057e3af96fddbe7c4bae8e9d06c25",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/019-repair-route-1-fleet-marshal.png",
+      "previousSha256": "62020e0237dc80444c370a60e56946d178465ad015358dc3b4557245abba8b48"
+    },
+    {
+      "image": "019-repair-route-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/019-repair-route-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "020-read-contextual-route-rules-1-fleet-marshal.png",
+      "sha256": "84a31aed86e50ba1dbbc18dc9e7734e16881eaf85f499e880fe7db8f044bccc0",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/020-read-contextual-route-rules-1-fleet-marshal.png",
+      "previousSha256": "848fceb2774e81c629ae55c80cf84259cdccb3818dc46421b5c51e7f9e14c715"
+    },
+    {
+      "image": "020-read-contextual-route-rules-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/020-read-contextual-route-rules-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "021-read-arrival-rule-boundaries-1-fleet-marshal.png",
+      "sha256": "a079a87b2b7705f030cfa8e0259c5ecd10841c176037214cbc1834089bea881c",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/021-read-arrival-rule-boundaries-1-fleet-marshal.png",
+      "previousSha256": "044d5ede8dd5ef6f21555d86e07272a8e532b3d95b2761e331a1114fba7ff9a6"
+    },
+    {
+      "image": "021-read-arrival-rule-boundaries-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/021-read-arrival-rule-boundaries-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "022-return-from-route-rules-1-fleet-marshal.png",
+      "sha256": "39859e4caad5a1ef247d974e239c40f799f23551a0d8450333e9a4aa1b4511e3",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/022-return-from-route-rules-1-fleet-marshal.png",
+      "previousSha256": "99e2b18d24db72fe09386dbbda1c30fb293cee970cee1e8be900ef31c05ed1cc"
+    },
+    {
+      "image": "022-return-from-route-rules-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/022-return-from-route-rules-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "023-recover-unsent-route-navigation-1-fleet-marshal.png",
+      "sha256": "5a0e0fd573ff086537c5e5eb16debea309b6b62abb0d2684bf9d7eef4c49f570",
+      "previousReference": null,
+      "previousSha256": null
+    },
+    {
+      "image": "023-recover-unsent-route-navigation-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": null,
+      "previousSha256": null
+    },
+    {
+      "image": "024-discard-uncommitted-route-1-fleet-marshal.png",
+      "sha256": "b65fa71c9bc20be326d3b0d094cd7e14e633e3d62608adf4087bb5c4ba420044",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/023-discard-uncommitted-route-1-fleet-marshal.png",
+      "previousSha256": "9bc6bfc1bc163256322f948a810b93ee744db5c6fb99e4321560c18edf0f0c3d"
+    },
+    {
+      "image": "024-discard-uncommitted-route-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/023-discard-uncommitted-route-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "025-reopen-cleared-route-1-fleet-marshal.png",
+      "sha256": "7cee5ff5d1da126e1f487d65b46bb7c40ce767a5cc0edad09d855b757bf9f23a",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/024-reopen-cleared-route-1-fleet-marshal.png",
+      "previousSha256": "c1e1a820e4e8c5fcdf0cedcf165af124d1cdb0c014f1ba91b5d7e3302a823611"
+    },
+    {
+      "image": "025-reopen-cleared-route-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/024-reopen-cleared-route-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "026-accept-route-1-fleet-marshal.png",
+      "sha256": "f8648ce1ea6dafcd3637673009f34f41e8204380d35d090208396943bd37ce3e",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/025-accept-route-1-fleet-marshal.png",
+      "previousSha256": "3afb81d9d4a2ecd57672e6cfd19952d4a639ebb8c418f9632650e42bc7ed5f69"
+    },
+    {
+      "image": "026-accept-route-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/025-accept-route-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "027-recover-route-1-fleet-marshal.png",
+      "sha256": "c12fa43c6284d3bbee6cb843fd974da6a79e6dcecb35b88a9b318c048b4fc2ef",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/026-recover-route-1-fleet-marshal.png",
+      "previousSha256": "3317c0a68368685171e6b01a8e341f109d91d28909d61109df6c1b1d3712298c"
+    },
+    {
+      "image": "027-recover-route-2-independent-marshal.png",
+      "sha256": "6f07953515bb73cd079cb11d3510b5d691d5a0ba0d25500cfe195d294c8d903b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/026-recover-route-2-independent-marshal.png",
+      "previousSha256": "ce08f12f13b1d03ad729a285bf2a7371a1337486d91f1e41045ebe7b7dcb838d"
+    },
+    {
+      "image": "029-traveling-1-fleet-marshal.png",
+      "sha256": "9a8237bc0a47a231768e5d745307e7ea1a3c23524258ecad5bc6b752f428c6ff",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/028-traveling-1-fleet-marshal.png",
+      "previousSha256": "e436e21e6b3a7b1aee46f73f86d6ef054049484cb74542a1f09966d6e2f7f071"
+    },
+    {
+      "image": "029-traveling-2-independent-marshal.png",
+      "sha256": "110b6aee220e45d859828d49b9a4c5ece40ee759f4411863acd4a361dcc42c27",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/028-traveling-2-independent-marshal.png",
+      "previousSha256": "cdeca94a12693c20ddc286059c40337c46a8cf4cc15872348c97eef619cf50e9"
+    },
+    {
+      "image": "031-arrival-report-1-fleet-marshal.png",
+      "sha256": "7d6d96c7e0226fb5f5eecc5aa1eb90944ede590e9292974c6769fb4bc77faf37",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/030-arrival-report-1-fleet-marshal.png",
+      "previousSha256": "3019017ef27def9b42ddf5d2150bd632838119125b5292863efbc465a1d2e142"
+    },
+    {
+      "image": "031-arrival-report-2-independent-marshal.png",
+      "sha256": "2c86e32259650e044dabd6342c8bbef9259240c654d6b300e1b00f52cca24643",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/030-arrival-report-2-independent-marshal.png",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f"
+    },
+    {
+      "image": "032-recover-arrival-1-fleet-marshal.png",
+      "sha256": "46052878481e707e6cc1742fd52ffed2dcef0dce20492c9de94b3d7bdf924e26",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/031-recover-arrival-1-fleet-marshal.png",
+      "previousSha256": "68919092c11b66c24560915215136a5b864fb92b0eb6e8c730fa880b96b1e527"
+    },
+    {
+      "image": "032-recover-arrival-2-independent-marshal.png",
+      "sha256": "2c86e32259650e044dabd6342c8bbef9259240c654d6b300e1b00f52cca24643",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/031-recover-arrival-2-independent-marshal.png",
+      "previousSha256": "5a65c66ea395fd5895d81b8d077cb552d89db9e8c377e0986b74403a17ca373f"
+    },
+    {
+      "image": "033-open-private-arrival-archives-1-fleet-marshal.png",
+      "sha256": "857e508e5768757d3c5035e12f38453cf7eeca27ed634facb041daac88b70faa",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/032-open-private-arrival-archives-1-fleet-marshal.png",
+      "previousSha256": "7be2549629e4bc2331a7550cd4e8b94b21fd09c1904faa0ad3d1b0059bf6334c"
+    },
+    {
+      "image": "033-open-private-arrival-archives-2-independent-marshal.png",
+      "sha256": "e52a86a2c778b02fb1c35c8a6529a3d14b78aa8295ee598336ff6656fa44f896",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/032-open-private-arrival-archives-2-independent-marshal.png",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038"
+    },
+    {
+      "image": "034-read-arrival-losses-1-fleet-marshal.png",
+      "sha256": "d93474f8af47e66b2d0dcc4efc4445db0f33e625eee424f0101398945aa20b01",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/033-read-arrival-losses-1-fleet-marshal.png",
+      "previousSha256": "c6b7ba20f1a2befd964ea821772ba5b954a98b0afe5ac78978d05c86387e51ab"
+    },
+    {
+      "image": "034-read-arrival-losses-2-independent-marshal.png",
+      "sha256": "e52a86a2c778b02fb1c35c8a6529a3d14b78aa8295ee598336ff6656fa44f896",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/033-read-arrival-losses-2-independent-marshal.png",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038"
+    },
+    {
+      "image": "035-read-arrival-control-1-fleet-marshal.png",
+      "sha256": "d93474f8af47e66b2d0dcc4efc4445db0f33e625eee424f0101398945aa20b01",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/034-read-arrival-control-1-fleet-marshal.png",
+      "previousSha256": "c6b7ba20f1a2befd964ea821772ba5b954a98b0afe5ac78978d05c86387e51ab"
+    },
+    {
+      "image": "035-read-arrival-control-2-independent-marshal.png",
+      "sha256": "e52a86a2c778b02fb1c35c8a6529a3d14b78aa8295ee598336ff6656fa44f896",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/034-read-arrival-control-2-independent-marshal.png",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038"
+    },
+    {
+      "image": "036-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+      "sha256": "56bc6b3be6602cfadacfb2080f6f4ffed62606c23eb583ae4514322066594622",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/035-read-arrival-resolution-boundaries-1-fleet-marshal.png",
+      "previousSha256": "36e615f87785bd9e6bdf1ebfe8ed709952ac778350d9ad4cd1b04415a8865291"
+    },
+    {
+      "image": "036-read-arrival-resolution-boundaries-2-independent-marshal.png",
+      "sha256": "e52a86a2c778b02fb1c35c8a6529a3d14b78aa8295ee598336ff6656fa44f896",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/035-read-arrival-resolution-boundaries-2-independent-marshal.png",
+      "previousSha256": "8fbf18a1c0b798a1eabc70f5b4e0982818f05cfb2da54c9b63ec0563dc0f5038"
+    },
+    {
+      "image": "037-reload-private-arrival-archives-1-fleet-marshal.png",
+      "sha256": "b429d59e9bb3af7c53cb0f63ee1a66edd2dce74836326c9e2337170bd22ced5b",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/036-reload-private-arrival-archives-1-fleet-marshal.png",
+      "previousSha256": "7be2549629e4bc2331a7550cd4e8b94b21fd09c1904faa0ad3d1b0059bf6334c"
+    },
+    {
+      "image": "037-reload-private-arrival-archives-2-independent-marshal.png",
+      "sha256": "c6281fbfd818d5dbce19efde243a25b7ed404c37c2ac6fe135aba014a95d0ec9",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/036-reload-private-arrival-archives-2-independent-marshal.png",
+      "previousSha256": "56029670c1f183312af6d83fe626d635ae794ae43c3270c5a745446f80b08a1f"
+    },
+    {
+      "image": "038-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+      "sha256": "d2aadcbe9d7d67592cd9436e5cb9fc0a6ef60e1c03877ff053b8b7c64ee8602f",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/037-close-arrival-archives-by-keyboard-1-fleet-marshal.png",
+      "previousSha256": "c80411d05af3d11385d897c733f13cbb4c572cbd9296f160c47998e6b550de55"
+    },
+    {
+      "image": "038-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "sha256": "1fab0bea3ff38a32d91d586fe5b0210e8782a1f4161deb3e7ca739e514f93c59",
+      "previousReference": "tests/e2e/008-fleet-travel/screenshots/live-fleet-travel/phone/linux-arm64/037-close-arrival-archives-by-keyboard-2-independent-marshal.png",
+      "previousSha256": "ad8753d0302c86ce37524c791dc51dff2fcfdad72b729c08a85e070a5d1a9cd2"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/top-pr-green-20261103/inspection-decisions.json",
+  "review": "docs/testing/top-pr-green-20261103/route-spacing-short-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "route-force-review",
   "renderer": {
@@ -29,167 +29,151 @@
     "motion": "reduce"
   },
   "source": {
-    "commit": "004ae8f1abb78d570d739f60ca93344f0434df7c",
+    "commit": "7554e3436455e1d3703ac95645a7aa2c80606332",
     "dirty": false,
     "spec": "tests/e2e/009-route-forces/forces.spec.ts",
     "specSha256": "f019a866493843ec65f953f1dadefdbcd3f953c3f155d5850ffba2b9fb4a5758"
   },
-  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-missing-live-41919956624/short/test-results/stories/route-force-review/short/linux-arm64/story.json",
-  "inspectionScope": "Exact individually inspected changed hashes; unchanged inherited bytes preserved. No full design or release approval.",
+  "target": "d914432f8a1b3ce1e81677c08ff9dd50c612b15b",
+  "run": 43140301420,
+  "manifest": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-travel-forces-43140301420/short/test-results/stories/route-force-review/short/linux-arm64/story.json",
+  "manifestSha256": "a497c70786098df2783d547e88add0b4e7c70a29d8fd64d2d77379957673a6f2",
+  "jobConclusion": "failure all4; not rewritten",
+  "functionalResult": "8complete original journeys passed;8passed manifests;52travel+22force eachviewport,296originals",
+  "postprocessingFailure": "52 actual travel captures from26 two-player viewpoints, validator incorrectly expected50. No gameplay/screenshot assertion failure.",
+  "scope": "Exact inspected hashes, original assertions and deadlines. Large downscaled; not full design/release approval.",
   "captures": [
     {
       "image": "010-reserve-real-complement-1-route-marshal.png",
-      "sha256": "e49343b7e8dc8de60c16eab6753b6233ca12ee1aa92091459e729292ad806e5b",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a4ca33c5b30a2cfc5ab85bab532869dd749b1a94fb05b9306150014ff5ade28d",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/010-reserve-real-complement-1-route-marshal.png",
+      "previousSha256": "e49343b7e8dc8de60c16eab6753b6233ca12ee1aa92091459e729292ad806e5b"
     },
     {
       "image": "010-reserve-real-complement-2-independent-marshal.png",
-      "sha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "4614e79a29189a0fd51e928f9111328426fb08e223f80b02a4af1a0da1984c69",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/010-reserve-real-complement-2-independent-marshal.png",
+      "previousSha256": "8190f654439c8848bffcb89aa7521b44a65754ae66c8123f8dc2ee6bef52fb0b"
     },
     {
       "image": "012-review-confirmed-forces-1-route-marshal.png",
-      "sha256": "54214b2157cc22a52c00b0ef91eabb14c6d94e66d320fc3d3dad296255ba17b9",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a46dc8204f3c67693bcd18882204f1de243675bf5f7546a7840ef86a248ade3f",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/012-review-confirmed-forces-1-route-marshal.png",
+      "previousSha256": "54214b2157cc22a52c00b0ef91eabb14c6d94e66d320fc3d3dad296255ba17b9"
     },
     {
       "image": "012-review-confirmed-forces-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/012-review-confirmed-forces-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     },
     {
       "image": "013-read-origin-defense-1-route-marshal.png",
-      "sha256": "26dd2ebc6c615fc55f27c432109e4216bc35b00789229d8d77602538aedc0ba8",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "4e11fe545e849acb5fa0322c05f28f84a30c17352c73c019b230bd9eddb4ea54",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/013-read-origin-defense-1-route-marshal.png",
+      "previousSha256": "26dd2ebc6c615fc55f27c432109e4216bc35b00789229d8d77602538aedc0ba8"
     },
     {
       "image": "013-read-origin-defense-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/013-read-origin-defense-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     },
     {
       "image": "014-choose-real-waypoint-1-route-marshal.png",
-      "sha256": "af6174a0c13548c71a13ce0cb47ceffc11bf40be5f986e6f3e464f864bae3c04",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "f3df7605d93585417933a80b2245c96bdf5724eb991913a298d8c50776255aaa",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/014-choose-real-waypoint-1-route-marshal.png",
+      "previousSha256": "af6174a0c13548c71a13ce0cb47ceffc11bf40be5f986e6f3e464f864bae3c04"
     },
     {
       "image": "014-choose-real-waypoint-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/014-choose-real-waypoint-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     },
     {
       "image": "015-edit-multiple-waypoints-1-route-marshal.png",
-      "sha256": "aff65385c30267038d3a79aa7c54309ca9bf3564b5172f540776815aca9c6242",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "8684d93f021e87c98187a869e20444a670394aaadaefb66a2d403f64e494e415",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/015-edit-multiple-waypoints-1-route-marshal.png",
+      "previousSha256": "aff65385c30267038d3a79aa7c54309ca9bf3564b5172f540776815aca9c6242"
     },
     {
       "image": "015-edit-multiple-waypoints-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/015-edit-multiple-waypoints-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     },
     {
       "image": "016-read-earlier-focus-1-route-marshal.png",
-      "sha256": "aff65385c30267038d3a79aa7c54309ca9bf3564b5172f540776815aca9c6242",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "8684d93f021e87c98187a869e20444a670394aaadaefb66a2d403f64e494e415",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/016-read-earlier-focus-1-route-marshal.png",
+      "previousSha256": "aff65385c30267038d3a79aa7c54309ca9bf3564b5172f540776815aca9c6242"
     },
     {
       "image": "017-read-later-focus-1-route-marshal.png",
-      "sha256": "df2c8b4feec5d89a1d2bef1705c819aaf1b4bb8628074cd833da6126272894af",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "8f6c3d8cc87526c927085fe3445b751029143e19bb043b4ff8fc9f9d15468c56",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/017-read-later-focus-1-route-marshal.png",
+      "previousSha256": "df2c8b4feec5d89a1d2bef1705c819aaf1b4bb8628074cd833da6126272894af"
     },
     {
       "image": "018-read-remove-focus-1-route-marshal.png",
-      "sha256": "50061acc8c760f8f92f07cb3fbc40c9bc5bd5742f6ecb9994cfe34ca1e5f7c64",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "0728f7d9c56af1b1f3ee7d2fbb3bcf205d400de388071f04d9d0f248002adf60",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/018-read-remove-focus-1-route-marshal.png",
+      "previousSha256": "50061acc8c760f8f92f07cb3fbc40c9bc5bd5742f6ecb9994cfe34ca1e5f7c64"
     },
     {
       "image": "019-reorder-remove-waypoint-1-route-marshal.png",
-      "sha256": "af6174a0c13548c71a13ce0cb47ceffc11bf40be5f986e6f3e464f864bae3c04",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "f3df7605d93585417933a80b2245c96bdf5724eb991913a298d8c50776255aaa",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/019-reorder-remove-waypoint-1-route-marshal.png",
+      "previousSha256": "af6174a0c13548c71a13ce0cb47ceffc11bf40be5f986e6f3e464f864bae3c04"
     },
     {
       "image": "019-reorder-remove-waypoint-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/019-reorder-remove-waypoint-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     },
     {
       "image": "020-review-normal-motion-1-route-marshal.png",
-      "sha256": "af6174a0c13548c71a13ce0cb47ceffc11bf40be5f986e6f3e464f864bae3c04",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "f3df7605d93585417933a80b2245c96bdf5724eb991913a298d8c50776255aaa",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/020-review-normal-motion-1-route-marshal.png",
+      "previousSha256": "af6174a0c13548c71a13ce0cb47ceffc11bf40be5f986e6f3e464f864bae3c04"
     },
     {
       "image": "021-acknowledge-dispatch-1-route-marshal.png",
-      "sha256": "60d9956b0a20f12a3edbbf78ca4e4d93270ce0a43de2abb91ff15d01133bd342",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "bb8379057a5abfb28feee7e69164e1ff6de057ab15ffc0ffca1b024f8c0c0336",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/021-acknowledge-dispatch-1-route-marshal.png",
+      "previousSha256": "60d9956b0a20f12a3edbbf78ca4e4d93270ce0a43de2abb91ff15d01133bd342"
     },
     {
       "image": "021-acknowledge-dispatch-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/021-acknowledge-dispatch-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     },
     {
       "image": "022-read-accepted-top-1-route-marshal.png",
-      "sha256": "e264a6d29ffc60fcdb8cd69b7c70d6113f920aff6e31294a58cfb7a85476b65f",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "ce39862f7a334cf312976d7243747283e6a65fa97a4bfedcdaa60e1621f91998",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/022-read-accepted-top-1-route-marshal.png",
+      "previousSha256": "e264a6d29ffc60fcdb8cd69b7c70d6113f920aff6e31294a58cfb7a85476b65f"
     },
     {
       "image": "023-read-accepted-bottom-1-route-marshal.png",
-      "sha256": "e25bd1d353a8137481eb70b74a22ee346ab46235339c3adb460c0dbac0d66b1e",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "777ffa344ab2a9d930dd76a1b58d4bb65644e234ce2b63053e4c1cee3e914f58",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/023-read-accepted-bottom-1-route-marshal.png",
+      "previousSha256": "e25bd1d353a8137481eb70b74a22ee346ab46235339c3adb460c0dbac0d66b1e"
     },
     {
       "image": "024-recover-same-dispatch-1-route-marshal.png",
-      "sha256": "934dad669cf80e60557acc35b20f381bf906a56503dc0c9af573955292ac1bde",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "17a3e3e3f6cac83027f81e23bb5c221394d9450697a8507141309accf63dad87",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/024-recover-same-dispatch-1-route-marshal.png",
+      "previousSha256": "934dad669cf80e60557acc35b20f381bf906a56503dc0c9af573955292ac1bde"
     },
     {
       "image": "024-recover-same-dispatch-2-independent-marshal.png",
-      "sha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d",
-      "previousSha256": null,
-      "changed": true,
-      "approval": "exact individually inspected hash"
+      "sha256": "a419a200a845ec2d13911b32ada67a25d8cc8ab76b115a8e44dbcecdab340de8",
+      "previousReference": "tests/e2e/009-route-forces/screenshots/route-force-review/short/linux-arm64/024-recover-same-dispatch-2-independent-marshal.png",
+      "previousSha256": "3b96887853c1e0a7ede95e3728ecabd936a489bbcd06db8fa2ae433c6335627d"
     }
   ]
 }
