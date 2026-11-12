@@ -1055,3 +1055,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind unchanged complete travel and force candidate runner to demonstrated route-spacing correction with a fresh isolated trigger.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request one changed-source complete travel and force evidence run after diagnosed waypoint focus and reading correction.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Correct diagnostic travel inventory to26 two-player views after retained52-view manifests; preserve failed request and do not redispatch.

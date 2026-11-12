@@ -17,7 +17,7 @@ export const inputPaths = [
   "scripts/run-stories.mjs",
 ];
 export const serviceGroups = ["travel-forces"];
-export const capturesByStory = { "live-fleet-travel": 50, "route-force-review": 22 };
+export const capturesByStory = { "live-fleet-travel": 52, "route-force-review": 22 };
 export const stories = {
  "e2e/008-fleet-travel/fleet-travel.spec.ts": ["Live fleet travel and arrival preserve private forces through recovery"],
  "e2e/009-route-forces/forces.spec.ts": ["Review confirmed forces before acknowledged dispatch and recovery"]

@@ -130,3 +130,11 @@ test("runner resolves migrated and legacy manifests through the authoritative re
   assert.ok(runner.includes('outputDirectory(story, project, "linux-arm64")'));
   assert.ok(!runner.includes('test-results/stories/${story}'));
 });
+
+test("complete travel includes26 two-player viewpoints and rejects stale50 inventory", () => {
+  assert.equal(capturesByStory["live-fleet-travel"], 26 * 2);
+  assert.equal(capturesByStory["route-force-review"], 22);
+  const stale = request();
+  stale.capturesByStory = { ...capturesByStory, "live-fleet-travel": 50 };
+  assert.throws(() => validateRequest(stale, context()));
+});
