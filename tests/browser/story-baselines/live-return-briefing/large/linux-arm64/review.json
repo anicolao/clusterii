@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr55-linux/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/fullscreen-large-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "live-return-briefing",
   "renderer": {
@@ -27,5 +27,153 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "a016d7a5a698061653cb04f1abaadd470e22afeb",
+    "dirty": false,
+    "spec": "tests/browser/return-briefing.story.spec.ts",
+    "specSha256": "5eac9055e1010e738b64eb606dc921c69cb037aea232a645dce047e5da69a4f3"
+  },
+  "target": "7f72a4fee81accbab5f1060fc72cca085726c92d",
+  "run": 43134611252,
+  "manifestSha256": "640aae13c79b619f85c3123b97238711bb4b8b7d9c135b6c6b3c0dfd476b6c91",
+  "inspectionScope": "All55 distinct originals inspected individually at2048x1152 display from3840x2160. First four inspected across the preceding and current continuation; remaining5\u201355 individually opened. Reopened actual briefing020 and019 show complete Credits/Science/next-tick controls; suspected header clipping was not present. Expected020 also opened for comparison. Briefing headings, tick12/13 reports, focused full report outline and footer actions readable. Consent boundaries, removal confirmation, invitation scope, private draft conflicts, reload and retry, renewed access and retained historical records readable. Intentional bounded readers can clip neighboring offscreen content; full automatically visible content is not claimed. Existing singular participant wording, label/star proximity and concept composition differences remain separately scoped; no full design, normal-motion or native-pixel visual certification.",
+  "applicability": "Since executed target, only Conversations short-desktop media query inactive at this viewport and FleetRoute editing spacing, absent from these journeys, changed. No story/helper/runtime/renderer change.",
+  "captures": [
+    {
+      "image": "015-retain-reading-position-2-independent-envoy.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "019-acknowledge-latest-3-outer-witness.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "019-acknowledge-latest-2-independent-envoy.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "016-save-reviewed-period-2-independent-envoy.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-3-outer-witness.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-2-independent-envoy.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-2-independent-envoy.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "015-retain-reading-position-3-outer-witness.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-3-outer-witness.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "018-inspect-report-subject-2-independent-envoy.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "016-save-reviewed-period-3-outer-witness.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "018-inspect-report-subject-3-outer-witness.png",
+      "sha256": "a4c76009c48a08fc55b929605d2850ee47b7f6820398baeb9e1d5b3b62abb03f",
+      "previousSha256": "de1fee00fa7447644c8e7b2a1bdfad2590aca49c2d1e03eeb5d6c04382922481"
+    },
+    {
+      "image": "020-continue-without-repeat-briefing-1-returning-envoy.png",
+      "sha256": "dc910261619647c95b0758a70cc9428e509067f2e3709449807658f86693125e",
+      "previousSha256": "ccfb4994379989f3f16049d7d30c4e05dfdca3a070d740128ce56c77b3de6658"
+    },
+    {
+      "image": "019-acknowledge-latest-1-returning-envoy.png",
+      "sha256": "e45b9fba11e3e0ebe5954e0d31c34298a272b77272fbb92a195834c4ed1536f5",
+      "previousSha256": "66fc9c7700d3512a5fdf0ed0604d8197582eea23d3299a4bc5e2510b1990f9d5"
+    },
+    {
+      "image": "016-save-reviewed-period-1-returning-envoy.png",
+      "sha256": "e45b9fba11e3e0ebe5954e0d31c34298a272b77272fbb92a195834c4ed1536f5",
+      "previousSha256": "66fc9c7700d3512a5fdf0ed0604d8197582eea23d3299a4bc5e2510b1990f9d5"
+    },
+    {
+      "image": "012-recover-complete-period-2-independent-envoy.png",
+      "sha256": "c497831b290ca654d148faed3f84787f21c0e7238aa1543b1040c95f046a4b41",
+      "previousSha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6"
+    },
+    {
+      "image": "013-read-later-production-2-independent-envoy.png",
+      "sha256": "c497831b290ca654d148faed3f84787f21c0e7238aa1543b1040c95f046a4b41",
+      "previousSha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6"
+    },
+    {
+      "image": "013-read-later-production-3-outer-witness.png",
+      "sha256": "c497831b290ca654d148faed3f84787f21c0e7238aa1543b1040c95f046a4b41",
+      "previousSha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6"
+    },
+    {
+      "image": "012-recover-complete-period-1-returning-envoy.png",
+      "sha256": "c497831b290ca654d148faed3f84787f21c0e7238aa1543b1040c95f046a4b41",
+      "previousSha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6"
+    },
+    {
+      "image": "012-recover-complete-period-3-outer-witness.png",
+      "sha256": "c497831b290ca654d148faed3f84787f21c0e7238aa1543b1040c95f046a4b41",
+      "previousSha256": "ceac036bd764ffb8261335fbbba83e43c2d3ca07178504dd5f8a28b44aa25ce6"
+    },
+    {
+      "image": "011-return-to-campaign-2-independent-envoy.png",
+      "sha256": "84ba1fba664eec000e4a03c9701f9e4d0c63e0534830265d59f35b3596f9b1ea",
+      "previousSha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe"
+    },
+    {
+      "image": "011-return-to-campaign-3-outer-witness.png",
+      "sha256": "84ba1fba664eec000e4a03c9701f9e4d0c63e0534830265d59f35b3596f9b1ea",
+      "previousSha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe"
+    },
+    {
+      "image": "011-return-to-campaign-1-returning-envoy.png",
+      "sha256": "84ba1fba664eec000e4a03c9701f9e4d0c63e0534830265d59f35b3596f9b1ea",
+      "previousSha256": "d92ba9c7d2e53d9f06184f361b109d77677b96d2006d5adce94b0876da4c0dfe"
+    },
+    {
+      "image": "015-retain-reading-position-1-returning-envoy.png",
+      "sha256": "08ae93176d4c29ccbabe0e17db042f2ce9c57953ac6709107613186da2e87471",
+      "previousSha256": "c0b7feab65b17c2dde471838c17168c2832b3ab7d9b0da328d3ec9da6a670642"
+    },
+    {
+      "image": "017-reload-unreviewed-activity-1-returning-envoy.png",
+      "sha256": "bcabf496cdda982b6c17e1f34027dd2c8663871f146db03b530fa2560c44c78f",
+      "previousSha256": "84929b7214c95775d146bf96d797b6818f90a31a2adf322ec05a059a0540ee57"
+    },
+    {
+      "image": "013-read-later-production-1-returning-envoy.png",
+      "sha256": "259476e84ab267d178e80746c9031c138e802a0e19b4c78d71d95c78bb4c5c97",
+      "previousSha256": "5f55f6df8d543c20520536c369e76b6ed9b4172d98d6c1e198991a53d0a57d31"
+    },
+    {
+      "image": "018-inspect-report-subject-1-returning-envoy.png",
+      "sha256": "50cb79ccde839c51a28cfd496f30ade769d173439910ef85b1f29ac39ec258a1",
+      "previousSha256": "7466222cf5f698707c80e7eb96475a7f1953afdd3abc9341ca959cb749fce55c"
+    }
+  ]
 }

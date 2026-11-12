@@ -1053,3 +1053,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Limit waypoint spacing correction to the editing surface so accepted-route list presentation remains unchanged.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record sole changed-source route spacing request and successful short-history retention without claiming integrated green.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Import only completely inspected phone desktop and large briefing-history references with exact manifest and renderer checks.
