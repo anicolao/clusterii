@@ -975,3 +975,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect retained fleet first-failure comparison pixels by bounded ZIP ranges before preparing complete current-source evidence.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record the single fleet request, exact collection guards and preserved active required verification.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Inspect construction header comparisons from selected retained failure entries while preserving the live fleet and required runs.

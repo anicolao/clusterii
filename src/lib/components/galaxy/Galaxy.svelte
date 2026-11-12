@@ -1831,6 +1831,9 @@
   .construction-panel.fleet-panel {
     top: var(--command-rail-height);
   }
+  .construction-panel[aria-label="System construction panel"] {
+    top: max(var(--command-rail-height), var(--commander-presence-bottom));
+  }
   .galaxy-surface {
     height: 100svh;
     min-height: 0;

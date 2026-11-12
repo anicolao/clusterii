@@ -171,6 +171,28 @@ export async function openConstruction(page: Page, layer: "Orbit" | "Surface") {
       exact: true,
     }),
   ).toBeVisible();
+  await expect
+    .poll(() =>
+      page
+        .getByRole("dialog", { name: "System construction panel", exact: true })
+        .evaluate((panel) => {
+          const rail = document.querySelector(".command-rail");
+          const presence = document.querySelector(".commander-presence");
+          const heading = document.querySelector("#galaxy-heading");
+          if (!rail || !presence || !heading) return false;
+          const panelBox = panel.getBoundingClientRect();
+          const railBox = rail.getBoundingClientRect();
+          const headingBox = heading.getBoundingClientRect();
+          return (
+            headingBox.height > 0 &&
+            headingBox.top >= 0 &&
+            headingBox.bottom <= railBox.bottom &&
+            panelBox.top >= railBox.bottom &&
+            panelBox.top >= presence.getBoundingClientRect().bottom
+          );
+        }),
+    )
+    .toBe(true);
 }
 
 /** Global destinations belong to the dock, including its real phone More disclosure. */
