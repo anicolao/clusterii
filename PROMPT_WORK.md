@@ -1029,3 +1029,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Extract only unresolved current-head comparison triples to diagnose menu, briefing, access, history and route-force failures while marker verification runs.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Keep briefing and conversation surfaces below measured campaign context and add a read-only clipping regression before new rendered evidence.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete briefing and consent-history journeys to measured fullscreen rail repair with unchanged real-service assertions and deadlines.
