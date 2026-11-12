@@ -995,3 +995,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Record native phone cargo inspection of all20distinct images and the sole complete gallery request.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Recover construction manifests at their migrated paths after all8journeys passed; keep runner failure explicit without rerunning gameplay.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Verify all8original construction manifests and332captures at migrated paths without rerunning successful gameplay or approving unseen images.
