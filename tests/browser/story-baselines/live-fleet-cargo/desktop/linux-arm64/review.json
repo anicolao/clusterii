@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr60-linux-promotion/REVIEW.md",
+  "review": "docs/testing/top-pr-green-20261103/cargo-current-desktop-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "live-fleet-cargo",
   "renderer": {
@@ -27,5 +27,177 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "d267d7dbc38ae7cf4493050ffdd85bdd3ce73abe",
+    "dirty": false,
+    "spec": "tests/browser/fleet-cargo.story.spec.ts",
+    "specSha256": "2dd06bc18e56c762b80e2801d1e2757570313636089db85db6c247be4e317805"
+  },
+  "target": "456a0ece123133018ef0a878732804c44044a771",
+  "run": 43119625703,
+  "manifestSha256": "9167e2bb3416a39fc7378e1f6a03b06eedac65014372a12821d14130ae9b01ca",
+  "scope": "All32 inspected by20exactSHA groups. Cargo passed; unrelated route failures in same outer batch retained separately. Reduced motion only, no whole-design approval.",
+  "captures": [
+    {
+      "image": "010-inspect-formation-1-fleet-marshal.png",
+      "sha256": "bf1a91765e88a43ae4a061c67f48094823ff1dec5b249dd66df8cd943f654b7d",
+      "previousSha256": "5211253d08a444730af9efe3d347813611866776c34454772f29f1f3c8b283da"
+    },
+    {
+      "image": "010-inspect-formation-2-independent-marshal.png",
+      "sha256": "204a6a7f22844dd46a0981570040015803b5222cfca13b2362c9e37d7ecbe154",
+      "previousSha256": "17ff7e328e565457223c271803e2252043a30d8741f7469b74e72f9c978bab0e"
+    },
+    {
+      "image": "011-choose-complement-1-fleet-marshal.png",
+      "sha256": "56b314504f4330059cd6bcf9a31be8fb8f932a82b9a5cd48a07211573100f684",
+      "previousSha256": "937812f0c089fa458ede39272a3cb3e36792fbbbb3d17d346cdbe64b426c43b1"
+    },
+    {
+      "image": "011-choose-complement-2-independent-marshal.png",
+      "sha256": "204a6a7f22844dd46a0981570040015803b5222cfca13b2362c9e37d7ecbe154",
+      "previousSha256": "17ff7e328e565457223c271803e2252043a30d8741f7469b74e72f9c978bab0e"
+    },
+    {
+      "image": "012-reserve-formation-1-fleet-marshal.png",
+      "sha256": "7e8d17e6251bed447bd0fb5fcf7aadbb37123af81e0a5e3e61b5cb9cecd13215",
+      "previousSha256": "39a2bc84c5d43dedd5a9ccbd74cad65d5f57d2d8c4587216927584bf47241d79"
+    },
+    {
+      "image": "012-reserve-formation-2-independent-marshal.png",
+      "sha256": "204a6a7f22844dd46a0981570040015803b5222cfca13b2362c9e37d7ecbe154",
+      "previousSha256": "17ff7e328e565457223c271803e2252043a30d8741f7469b74e72f9c978bab0e"
+    },
+    {
+      "image": "013-reload-formation-1-fleet-marshal.png",
+      "sha256": "d0c8d4c8a234a82c98df58c5d09df2087207a87628c2bd6b81015b8d83d2b56b",
+      "previousSha256": "7e33e101ef1b0cf5ebec57c86399f06f6679d4dfca700ef36c1667cb0a629936"
+    },
+    {
+      "image": "013-reload-formation-2-independent-marshal.png",
+      "sha256": "204a6a7f22844dd46a0981570040015803b5222cfca13b2362c9e37d7ecbe154",
+      "previousSha256": "17ff7e328e565457223c271803e2252043a30d8741f7469b74e72f9c978bab0e"
+    },
+    {
+      "image": "015-formed-fleet-1-fleet-marshal.png",
+      "sha256": "4d14dca9fbbc97f29eb8038bdccde1e42afd6a3a0b62d6049a5674ed9a1d2970",
+      "previousSha256": "ba709a5d1843197e9709f63381e0f06844bc503bfdda8ffd9ce000d7ede789f2"
+    },
+    {
+      "image": "015-formed-fleet-2-independent-marshal.png",
+      "sha256": "1dae860c8e9bf26b1b580535de4b816e66fb975f702f9938a4c67eca3d776284",
+      "previousSha256": "4733571c05dc49bed991d7e7e5a218f939484f5b357aac559948daeaeebe7b4e"
+    },
+    {
+      "image": "016-unload-capacity-1-fleet-marshal.png",
+      "sha256": "b7b3f5853bf6167434547423dfc22ad414519877b00728ba28fa08867cf6216d",
+      "previousSha256": "0e373b6cb50ada6d018fb6959afe95934ae01a3d2fdbda41b5fda3be8bd899b8"
+    },
+    {
+      "image": "016-unload-capacity-2-independent-marshal.png",
+      "sha256": "1dae860c8e9bf26b1b580535de4b816e66fb975f702f9938a4c67eca3d776284",
+      "previousSha256": "4733571c05dc49bed991d7e7e5a218f939484f5b357aac559948daeaeebe7b4e"
+    },
+    {
+      "image": "017-unload-preview-1-fleet-marshal.png",
+      "sha256": "004491957493ab2c518a8d34c973c067aec73d92315809a09f13d5c911fb7f5c",
+      "previousSha256": "a858240a07f8d1fd339a9e6724388040af6c02b15a1cecbf16a48bb34dcb6582"
+    },
+    {
+      "image": "017-unload-preview-2-independent-marshal.png",
+      "sha256": "1dae860c8e9bf26b1b580535de4b816e66fb975f702f9938a4c67eca3d776284",
+      "previousSha256": "4733571c05dc49bed991d7e7e5a218f939484f5b357aac559948daeaeebe7b4e"
+    },
+    {
+      "image": "018-unload-accepted-1-fleet-marshal.png",
+      "sha256": "ce0cf2c03b5ad2ee281842e023692eb210b7f0c06146c523bd7572a45443ec55",
+      "previousSha256": "405e5819971a090512013e9919eca4c6402276c30de31fde8b927e67be711a4d"
+    },
+    {
+      "image": "018-unload-accepted-2-independent-marshal.png",
+      "sha256": "1dae860c8e9bf26b1b580535de4b816e66fb975f702f9938a4c67eca3d776284",
+      "previousSha256": "4733571c05dc49bed991d7e7e5a218f939484f5b357aac559948daeaeebe7b4e"
+    },
+    {
+      "image": "019-unload-reload-1-fleet-marshal.png",
+      "sha256": "01890c5c33546cff125a39f75034a496983bf556f36be30a4fb35f3ee20ecb7c",
+      "previousSha256": "db1a45cdd8f9dad989f4265240373ea7e6006e64a14662e42148e34fb7495130"
+    },
+    {
+      "image": "019-unload-reload-2-independent-marshal.png",
+      "sha256": "1dae860c8e9bf26b1b580535de4b816e66fb975f702f9938a4c67eca3d776284",
+      "previousSha256": "4733571c05dc49bed991d7e7e5a218f939484f5b357aac559948daeaeebe7b4e"
+    },
+    {
+      "image": "021-unload-settled-1-fleet-marshal.png",
+      "sha256": "288d5ba3b46428bed0bf87aac7ff1a8a646af0b6be31087dfaa939c31d0c2049",
+      "previousSha256": "f6b6b5fb3ed15f44a6fbcff8efc3a32c99304c604e4817d634511525dabbd72b"
+    },
+    {
+      "image": "021-unload-settled-2-independent-marshal.png",
+      "sha256": "f0deae118463a8c857d5c9229eda875d76c21dca77c0d9073bf425ffc2a797fc",
+      "previousSha256": "11282aee7e62e549251a9a95d323e1d62312f56880e7d93ec894094b2ee020c7"
+    },
+    {
+      "image": "022-load-capacity-1-fleet-marshal.png",
+      "sha256": "42a0ae35a09182701a0631e10dbc150507c1265a47a7c31ac8b7b3eefec2c2cc",
+      "previousSha256": "80fc8c434cbf02cc962252ccde427747509dc7894c03b2d4043449590ce86d67"
+    },
+    {
+      "image": "022-load-capacity-2-independent-marshal.png",
+      "sha256": "f0deae118463a8c857d5c9229eda875d76c21dca77c0d9073bf425ffc2a797fc",
+      "previousSha256": "11282aee7e62e549251a9a95d323e1d62312f56880e7d93ec894094b2ee020c7"
+    },
+    {
+      "image": "023-load-preview-1-fleet-marshal.png",
+      "sha256": "63538fdd7282e1be11af751545a8d98626ab545e77df42efea9077bc9ba55050",
+      "previousSha256": "debaf0c3103fc8c8a72cfd6f34fa1f4544498e79ac732275525f67b3987eef9f"
+    },
+    {
+      "image": "023-load-preview-2-independent-marshal.png",
+      "sha256": "f0deae118463a8c857d5c9229eda875d76c21dca77c0d9073bf425ffc2a797fc",
+      "previousSha256": "11282aee7e62e549251a9a95d323e1d62312f56880e7d93ec894094b2ee020c7"
+    },
+    {
+      "image": "024-load-accepted-1-fleet-marshal.png",
+      "sha256": "0404a17eb70e2aeea691e6ca21105e6ab93dc69169f1b31bfa6a2cb7bb64dcb8",
+      "previousSha256": "6360e3075e9513e24865dbfaa690c39575d90c7fd3544be25a67431d06c15c01"
+    },
+    {
+      "image": "024-load-accepted-2-independent-marshal.png",
+      "sha256": "f0deae118463a8c857d5c9229eda875d76c21dca77c0d9073bf425ffc2a797fc",
+      "previousSha256": "11282aee7e62e549251a9a95d323e1d62312f56880e7d93ec894094b2ee020c7"
+    },
+    {
+      "image": "025-load-reload-1-fleet-marshal.png",
+      "sha256": "c70dde13f489a6f00053fca2a403738139f7cb34326029a8912d0637be22ba96",
+      "previousSha256": "dc1843b39a6d40ab44177a5c80484476bba1c54ab9d5d5aac2182c4f09159ee1"
+    },
+    {
+      "image": "025-load-reload-2-independent-marshal.png",
+      "sha256": "f0deae118463a8c857d5c9229eda875d76c21dca77c0d9073bf425ffc2a797fc",
+      "previousSha256": "11282aee7e62e549251a9a95d323e1d62312f56880e7d93ec894094b2ee020c7"
+    },
+    {
+      "image": "027-load-settled-1-fleet-marshal.png",
+      "sha256": "dc67e1b74845bab451ea68ced25059895962396fb88cbfb97d74054f82bd5bc9",
+      "previousSha256": "37e4f4b627adf9181ffe57227ff896f7147bdba3aae29d5e4085819a1d092bc0"
+    },
+    {
+      "image": "027-load-settled-2-independent-marshal.png",
+      "sha256": "2975683c605a3cc910746151a148b895acb9419375229d3091211e4b8ecfd261",
+      "previousSha256": "dec82a50a8548b7aff25254e65d8b98b3569a96414b07508c18a81f2a1aedfc7"
+    },
+    {
+      "image": "028-recover-loaded-fleet-1-fleet-marshal.png",
+      "sha256": "a27f9d50d2319fa67c42334ff078c4ec5df7351288cc69c744feb597cd163bb2",
+      "previousSha256": "b9bd085eee1b3344384ef37b4dfa792183a30fe696cea3ea16e3a5fb33e17414"
+    },
+    {
+      "image": "028-recover-loaded-fleet-2-independent-marshal.png",
+      "sha256": "2975683c605a3cc910746151a148b895acb9419375229d3091211e4b8ecfd261",
+      "previousSha256": "dec82a50a8548b7aff25254e65d8b98b3569a96414b07508c18a81f2a1aedfc7"
+    }
+  ]
 }
