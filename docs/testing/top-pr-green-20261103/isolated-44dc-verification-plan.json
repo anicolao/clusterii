@@ -1,0 +1,115 @@
+{
+  "target": "9184937e02984ed6112eac832d4a117839176dff",
+  "scope": [
+    {
+      "project": "phone",
+      "tests": 1,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "project": "desktop",
+      "tests": 1,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "project": "large",
+      "tests": 2,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        },
+        {
+          "id": "membership",
+          "file": "browser/market-membership-revocation.story.spec.ts",
+          "title": "Live membership revocation rejects a delayed private view and clears market intent",
+          "story": "market-draft-membership-revocation",
+          "captures": 14,
+          "mode": "verify",
+          "projects": [
+            "large"
+          ]
+        }
+      ]
+    },
+    {
+      "project": "short",
+      "tests": 2,
+      "cases": [
+        {
+          "id": "campaign",
+          "file": "browser/campaign-start.story.spec.ts",
+          "title": "Five commanders start two campaigns and recover their named active campaign",
+          "story": "campaign-scheduled-start",
+          "captures": 54,
+          "mode": "verify",
+          "projects": [
+            "phone",
+            "desktop",
+            "large",
+            "short"
+          ]
+        },
+        {
+          "id": "history-lab",
+          "file": "browser/sharing-lab.story.spec.ts",
+          "title": "Sharing lab preserves selected-history consent and disclosure across motion modes",
+          "story": "selected-history-lab",
+          "captures": 10,
+          "mode": "generate",
+          "projects": [
+            "short"
+          ]
+        }
+      ]
+    }
+  ],
+  "purpose": {
+    "campaign": "Strict complete four-size validation of stronger acknowledgement. Existing reference images immutable;54 current views per size, not outdated50 comment or59 filesystem files which include5 historical ordinal duplicates.",
+    "membership": "One unchanged complete large strict reproduction of isolated text raster mismatch. Source/assertions/deadlines/reference bytes preserved; no claimed font/layout cause or automatic promotion.",
+    "history-lab": "Generate all10 short standard/reduced shared Conversations states affected by already integrated short padding repair. Original functional/focus/geometry/motion assertions preserved; candidates require full comparison/inspection."
+  },
+  "guards": "9 passed plus exact real collection:phone1 desktop1 large2 short2. Both renderer layers explicit four-size allowlist; source/request binding, retries0, snapshotsnone, telemetryoff, fresh ports/output and3GiB preflight reserve.",
+  "sourceScope": "No production/helper/renderer/test changes in executor beyond reviewed target. Per-case mode is immutable code: campaign and membership verify; only short history-lab generate. Required PR workflows untouched.",
+  "retention": "14-day remote artifacts; compact outcomes first; selectively retain unique failures and review images, no automatic full artifact downloads."
+}
