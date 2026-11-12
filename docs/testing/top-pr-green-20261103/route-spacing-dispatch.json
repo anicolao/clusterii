@@ -1,0 +1,52 @@
+{
+  "run": 43140301420,
+  "request": "7554e3436455e1d3703ac95645a7aa2c80606332",
+  "executor": "7bce161e4bd797027e5402d42b18a6560407d36c",
+  "target": "d914432f8a1b3ce1e81677c08ff9dd50c612b15b",
+  "branch": "investigate/pr140-route-spacing-20261112",
+  "requestBody": {
+    "schema": 1,
+    "mode": "generate",
+    "target": "d914432f8a1b3ce1e81677c08ff9dd50c612b15b",
+    "source": "7bce161e4bd797027e5402d42b18a6560407d36c",
+    "projects": [
+      "phone",
+      "desktop",
+      "large",
+      "short"
+    ],
+    "serviceGroups": [
+      "travel-forces"
+    ],
+    "capturesByStory": {
+      "live-fleet-travel": 50,
+      "route-force-review": 22
+    },
+    "testsPerProject": {
+      "phone": 2,
+      "desktop": 2,
+      "large": 2,
+      "short": 2
+    },
+    "retries": 0,
+    "updateSnapshots": "none",
+    "inputs": {
+      "src": "ca2fd0584deb08f284159f1a95bb3207a98d529e",
+      "shared": "9026eed552a7b4e41c0346e8f1bfb8fc5a335834",
+      "functions": "c116879153585f6c933dad28096563165fa23641",
+      "tests": "a397f296ae6e3d961dccc134148e133a2d620e66",
+      "package.json": "3f3bc678f5de43d16689e37f87738922fb929e32",
+      "bun.lock": "7222342e7237310c0dbf40bb2a9125742ff28897",
+      "nix/flake.nix": "1bbc9071572790323070ee27479000dc1a39fefc",
+      "nix/flake.lock": "414b47485cd1dd7b5abd7ed0dd81a78047a21d56",
+      "playwright.stories.config.ts": "25440b492b962da9edeb8700ed0c18c9f062db3a",
+      "scripts/story-cohorts.mjs": "2032d7efeed8b914bc6d668594fd04581ccc65a7",
+      "scripts/story-service-groups.mjs": "9ee85e3deb132f318f80d8a9ef63fd2369f451f4",
+      "scripts/run-stories.mjs": "dbe7446f756baa8c11acc0444d5be813b9e4fe88"
+    }
+  },
+  "localValidation": "Eight unchanged scope/request/launcher guards passed; exact immutable request validator passed after request commit. Prior actual collection2 cases per viewport reused because specs/config/filter unchanged. Executor diff from previous only branch guards; original240s case limits, real service, all assertions and normal-motion force checks unchanged.",
+  "reason": "Original all-four force clearance failure and phone travel whole-list visibility failure; retained-state replay measured1px ring/fact overlap and list clipping. Scope compact row padding to editor only; accepted-route list padding preserved.",
+  "retention": "14-day remote artifacts; no redundant outer ZIP retained locally; new candidate pixels require actual inspection.",
+  "state": "Only this new run was dispatched. PR140 active5d1342c6 remains application success/strict failure until validated integration and full required checks."
+}
