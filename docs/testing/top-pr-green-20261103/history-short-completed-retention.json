@@ -1,0 +1,29 @@
+{
+  "run": 43137283407,
+  "conclusion": "success",
+  "artifact": {
+    "id": 13908995787,
+    "node_id": "MDg6QXJ0aWZhY3QxMzkwODk5NTc4Nw==",
+    "name": "top-pr140-history-short-candidates-short-eb382adf12ab0fc54d5b0994b291afbf70c10822",
+    "size_in_bytes": 23003129,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13908995787",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13908995787/zip",
+    "expired": false,
+    "digest": "sha256:376cc2e6053cac989f9e0f4a95bc4e3f8ea3b9eefd4b7323039905b7e12f829a",
+    "created_at": "2026-11-12T02:02:56Z",
+    "updated_at": "2026-11-12T02:02:56Z",
+    "expires_at": "2026-11-26T02:02:54Z",
+    "workflow_run": {
+      "id": 43137283407,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr140-history-short-20261112",
+      "head_sha": "eb382adf12ab0fc54d5b0994b291afbf70c10822"
+    }
+  },
+  "archiveSha256": "376cc2e6053cac989f9e0f4a95bc4e3f8ea3b9eefd4b7323039905b7e12f829a",
+  "localZipRetained": false,
+  "retainedImages": 68,
+  "imageReview": "Pending; no promotion from successful run alone.",
+  "inventory": "/Users/anicolao/projects/games/clusterii-recovery-evidence/pr140-history-short-43137283407/short/verified-retention.json"
+}

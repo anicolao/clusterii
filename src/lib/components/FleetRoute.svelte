@@ -850,13 +850,13 @@
     color: #b4cbd1;
   }
   ol[aria-label="Route waypoints"] > li {
-    padding: 4px 0;
+    padding: 0;
   }
   li span {
     display: block;
   }
   .waypoint-actions {
-    margin: 4px 0;
+    margin: 7px 0;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
@@ -984,10 +984,11 @@
       left: 0;
       right: 0;
       width: auto;
-      padding: 12px 16px;
+      padding: 8px 16px;
     }
     .route-editor h2 {
       font-size: 26px;
+      margin-bottom: 4px;
     }
     .destinations {
       max-height: 110px;
