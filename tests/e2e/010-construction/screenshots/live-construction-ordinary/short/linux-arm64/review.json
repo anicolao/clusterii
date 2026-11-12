@@ -1,5 +1,5 @@
 {
-  "review": "docs/testing/pr79-contact-preparation/linux-corrected-all-review.md",
+  "review": "docs/testing/top-pr-green-20261103/construction-current-short-inspection.json",
   "mode": "reviewed-baseline-candidates",
   "story": "live-construction-ordinary",
   "renderer": {
@@ -27,5 +27,322 @@
     "timezone": "UTC",
     "dpr": 1,
     "motion": "reduce"
-  }
+  },
+  "source": {
+    "commit": "217d008d62b91eec8e46dd1ff02d4bf8891f5f44",
+    "dirty": false,
+    "spec": "tests/e2e/010-construction/construction.spec.ts",
+    "specSha256": "a8c912e9c2fad9febc85d21d8a2a3c458a10ad873c9976d2f7079732d8650fa0"
+  },
+  "target": "7f841eccbd94f42c76c832251b371f9110f9125d",
+  "run": 43124420572,
+  "manifestSha256": "a6f0e37c28262db9ead15645fab0ca7eb5c4d5d1f2db000ed9f1346fb3714633",
+  "scope": "Complete inspected ordinary/recovery journeys; passed gameplay manifests, outer post-test path lookup failure retained. Reduced motion regression only.",
+  "captures": [
+    {
+      "image": "010-inspect-development-1-builder-envoy.png",
+      "sha256": "de61d3a43c0bfc67013e567ff1f64911506cf592c1247347fd5d8eeb6c304da2",
+      "previousSha256": "f8f17301ed91c37d2910f1ce85577dfd213e8c521339685c4e83c5faccbe0b98"
+    },
+    {
+      "image": "010-inspect-development-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038"
+    },
+    {
+      "image": "011-read-construction-price-1-builder-envoy.png",
+      "sha256": "7ba47fda85b233483c34463ccb7bc7590f906ff93bbac99f83eccdcbf7cbb657",
+      "previousSha256": "a19c235752d6c47d9afedba15ebe7863d7e8710b2213380ddd4221c5f7b26d8a"
+    },
+    {
+      "image": "011-read-construction-price-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038"
+    },
+    {
+      "image": "012-read-construction-reservation-1-builder-envoy.png",
+      "sha256": "eb2af4ba2677b58d37fd6ffc9efb18b72982147c174523f7bb0d7cb15c657d0a",
+      "previousSha256": "1c684003697d4d1d99f837210d3e13f17be9d2a8ce23915744e8d8dc22485461"
+    },
+    {
+      "image": "012-read-construction-reservation-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038"
+    },
+    {
+      "image": "013-read-construction-refund-1-builder-envoy.png",
+      "sha256": "c94db73f64301096e36dbad61ba61baccc630f72db15d1c217316e0fcf6949ab",
+      "previousSha256": "e4dd70ee3c85adf5a8a55427fe4161271e0aab0b95d57160ac568932ae8afe3f"
+    },
+    {
+      "image": "013-read-construction-refund-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038"
+    },
+    {
+      "image": "014-read-construction-outcomes-1-builder-envoy.png",
+      "sha256": "c94db73f64301096e36dbad61ba61baccc630f72db15d1c217316e0fcf6949ab",
+      "previousSha256": "e4dd70ee3c85adf5a8a55427fe4161271e0aab0b95d57160ac568932ae8afe3f"
+    },
+    {
+      "image": "014-read-construction-outcomes-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038"
+    },
+    {
+      "image": "015-close-construction-rules-1-builder-envoy.png",
+      "sha256": "c316663bce801d5abea5040260ca93353c5538c72d7ba64c287cee73f2cea112",
+      "previousSha256": "c6f528a07f8a4cc1f761fa713a54cda8a91642254259ec9977aa382111fafd1c"
+    },
+    {
+      "image": "015-close-construction-rules-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": "912449e109e1eb2398bb045aa8dbecf1da5453cf1ea36998d4237007e8658038"
+    },
+    {
+      "image": "016-open-market-focus-1-builder-envoy.png",
+      "sha256": "766a924d73ea7abbecabb28fd8959a8ff319aa96f9b7e7556e187e4ac376bc7e",
+      "previousSha256": null
+    },
+    {
+      "image": "016-open-market-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "017-read-market-rule-0-1-builder-envoy.png",
+      "sha256": "38602e0c7ca13a4d312c1c4c1e5ed4d023c97f7e5cd2f0871c8e39714b51235a",
+      "previousSha256": null
+    },
+    {
+      "image": "017-read-market-rule-0-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "018-read-market-rule-1-1-builder-envoy.png",
+      "sha256": "14249392f2d1ba2f21ca3fcec6192b07abc3d30e3b1d4a5c3bdcdd626e4aefc8",
+      "previousSha256": null
+    },
+    {
+      "image": "018-read-market-rule-1-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "019-read-market-rule-2-1-builder-envoy.png",
+      "sha256": "9c46409eabff91e513381199e192db3c0ecacc2294a52a061fa768cc3f722fd0",
+      "previousSha256": null
+    },
+    {
+      "image": "019-read-market-rule-2-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "020-read-market-rule-3-1-builder-envoy.png",
+      "sha256": "45ec5328b2cfeed4c38916b7d0735dba412b0387c243ca10ac0168f3463a58a2",
+      "previousSha256": null
+    },
+    {
+      "image": "020-read-market-rule-3-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "021-close-market-rules-1-builder-envoy.png",
+      "sha256": "fde4df54a52060eb67840cca1e19654dc62f4352558d77c3cf7cf74aadac403f",
+      "previousSha256": null
+    },
+    {
+      "image": "021-close-market-rules-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "022-review-invalid-focus-1-builder-envoy.png",
+      "sha256": "acccb537ae8d0fcc048fe478b73fe9177d7c06d5f1660bf314ca28eb663a5800",
+      "previousSha256": null
+    },
+    {
+      "image": "022-review-invalid-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "023-leave-partial-focus-1-builder-envoy.png",
+      "sha256": "cfd3e40f0534fbff4fef81f559e60d317f8d691a9e960cb615963fea1ea15e49",
+      "previousSha256": null
+    },
+    {
+      "image": "023-leave-partial-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "024-restore-invalid-focus-1-builder-envoy.png",
+      "sha256": "0425c5bb82a31ffbc65fc3d0ec0177c3a873e2923d9d73facccd4fed8440fc69",
+      "previousSha256": null
+    },
+    {
+      "image": "024-restore-invalid-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "025-review-market-draft-1-builder-envoy.png",
+      "sha256": "23cadb8b7ff64bbbefef38735811eb341553b1ad78ae6f8d954b1cacbfefffb9",
+      "previousSha256": null
+    },
+    {
+      "image": "025-review-market-draft-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "026-accept-market-focus-1-builder-envoy.png",
+      "sha256": "bcbad4e450995488282d93b62301015143a0c49b270be467b255c525af307843",
+      "previousSha256": null
+    },
+    {
+      "image": "026-accept-market-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "027-close-market-feedback-1-builder-envoy.png",
+      "sha256": "15779711d42786e22eb9d70bfd6d5cc5c58d7c22d932d68e890b0707d65344e6",
+      "previousSha256": null
+    },
+    {
+      "image": "028-recover-market-focus-1-builder-envoy.png",
+      "sha256": "b0ba32691403f6f8b96a9c8c8fb772c90e0abe095eebc03620a54ab69370a6de",
+      "previousSha256": null
+    },
+    {
+      "image": "028-recover-market-focus-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "029-return-to-development-1-builder-envoy.png",
+      "sha256": "de61d3a43c0bfc67013e567ff1f64911506cf592c1247347fd5d8eeb6c304da2",
+      "previousSha256": null
+    },
+    {
+      "image": "029-return-to-development-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "030-reserve-build-1-builder-envoy.png",
+      "sha256": "d8052afb85e2dfd38e2a60f7fd3a7516da46ce172db6d874294c3cb1f919cb22",
+      "previousSha256": null
+    },
+    {
+      "image": "030-reserve-build-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "031-inspect-economy-with-outstanding-build-1-builder-envoy.png",
+      "sha256": "04c1474f9605535792fcb4bbbdd7f79183b9cbf92a488867e1a47a784991e753",
+      "previousSha256": null
+    },
+    {
+      "image": "032-restore-outstanding-build-feedback-1-builder-envoy.png",
+      "sha256": "9ddbd06fa3218ba4ec1e703ac48d1649763c1c515f64ed17ac04b8753aed62c7",
+      "previousSha256": null
+    },
+    {
+      "image": "033-reload-reservation-1-builder-envoy.png",
+      "sha256": "05d19deb5e5fc1962843df819ca19e7e0faf420742aeaa4540053d17169aa781",
+      "previousSha256": null
+    },
+    {
+      "image": "033-reload-reservation-2-independent-builder.png",
+      "sha256": "88a68e5b2520f90670484cbbc105ba2fe338184b2d23c5d05e268ca24e8d1271",
+      "previousSha256": null
+    },
+    {
+      "image": "035-completed-build-1-builder-envoy.png",
+      "sha256": "62f130352dc134ba3faf5ca556baa906307e9438ee699c643056ed219943aafc",
+      "previousSha256": null
+    },
+    {
+      "image": "035-completed-build-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "previousSha256": null
+    },
+    {
+      "image": "036-inspect-applied-focus-1-builder-envoy.png",
+      "sha256": "4bc057cc172af6ed529ff2ce6b60d027a2d43073f4d5712dbd48ec4f0286e875",
+      "previousSha256": null
+    },
+    {
+      "image": "036-inspect-applied-focus-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "previousSha256": null
+    },
+    {
+      "image": "037-return-after-focus-settlement-1-builder-envoy.png",
+      "sha256": "ae4ee4f9ebdeeac8f2b803d0cbdafa8684ecfc79059b4c75516dd7ffd67ed592",
+      "previousSha256": null
+    },
+    {
+      "image": "037-return-after-focus-settlement-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "previousSha256": null
+    },
+    {
+      "image": "038-reserve-cancellable-base-1-builder-envoy.png",
+      "sha256": "93adba4399d2485519a615cfde3d987a1431b52784169a4e929eacb11b5ef8af",
+      "previousSha256": null
+    },
+    {
+      "image": "038-reserve-cancellable-base-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "previousSha256": null
+    },
+    {
+      "image": "039-cancel-base-1-builder-envoy.png",
+      "sha256": "76140a50201bb6170c3d10cd55f5792321b337bf0c3a43d8a2dcf1f8b0757ede",
+      "previousSha256": null
+    },
+    {
+      "image": "039-cancel-base-2-independent-builder.png",
+      "sha256": "0e7619a480325b5cee44eadd41d9edd276f3e5bd685387d7e889ff66a8a2a363",
+      "previousSha256": null
+    },
+    {
+      "image": "041-cancelled-base-1-builder-envoy.png",
+      "sha256": "3391096d2f057efb2f435cd6ab353f1d453d6ea6d356bd6d53818804109305a0",
+      "previousSha256": null
+    },
+    {
+      "image": "041-cancelled-base-2-independent-builder.png",
+      "sha256": "87fa1da8023d54f10317b238df85b1610c71537770bd4db7293f60c95e7a28eb",
+      "previousSha256": null
+    },
+    {
+      "image": "042-recover-settled-outcome-1-builder-envoy.png",
+      "sha256": "83d7a4344649b37d4f9c88ab84bb88bbc48811a6786f820bd9f322e7269a115e",
+      "previousSha256": null
+    },
+    {
+      "image": "042-recover-settled-outcome-2-independent-builder.png",
+      "sha256": "87fa1da8023d54f10317b238df85b1610c71537770bd4db7293f60c95e7a28eb",
+      "previousSha256": null
+    },
+    {
+      "image": "043-keyboard-return-1-builder-envoy.png",
+      "sha256": "6bf1df6b1994eb9c1a9da41aba68b61f4a769d4ad4d9289f4d0d099dfb8d8421",
+      "previousSha256": null
+    },
+    {
+      "image": "043-keyboard-return-2-independent-builder.png",
+      "sha256": "87fa1da8023d54f10317b238df85b1610c71537770bd4db7293f60c95e7a28eb",
+      "previousSha256": null
+    }
+  ]
 }
