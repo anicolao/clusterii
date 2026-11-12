@@ -1,0 +1,49 @@
+{
+  "artifact": {
+    "id": 13923854342,
+    "node_id": "MDg6QXJ0aWZhY3QxMzkyMzg1NDM0Mg==",
+    "name": "top-pr140-isolated-44dc-large-0d41edf3eadfcabf0fd7172b6361bbe252e34b99",
+    "size_in_bytes": 434650831,
+    "url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13923854342",
+    "archive_download_url": "https://api.github.com/repos/anicolao/clusterii/actions/artifacts/13923854342/zip",
+    "expired": false,
+    "digest": "sha256:195b821efecf9c1d0b0d147b31209995efe4738b8cac00fa7e1e4490a1371ff2",
+    "created_at": "2026-11-12T07:35:16Z",
+    "updated_at": "2026-11-12T07:35:16Z",
+    "expires_at": "2026-11-26T07:35:04Z",
+    "workflow_run": {
+      "id": 43174325455,
+      "repository_id": 1427003910,
+      "head_repository_id": 1427003910,
+      "head_branch": "investigate/pr140-isolated-44dc-20261112",
+      "head_sha": "0d41edf3eadfcabf0fd7172b6361bbe252e34b99"
+    }
+  },
+  "rangeBytes": 11130098,
+  "entries": [
+    {
+      "name": "test-results/stories/browser-market-membership--341ab-ew-and-clears-market-intent-large/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device-actual.png",
+      "size": 5111229,
+      "sha256": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+      "crc32": "551079cb"
+    },
+    {
+      "name": "test-results/stories/browser-market-membership--341ab-ew-and-clears-market-intent-large/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device-diff.png",
+      "size": 1534961,
+      "sha256": "64a330b28409be4100ff09a9ac8aa9045c1c5966abd8a3b857868316d6bd6cf4",
+      "crc32": "7f2cc902"
+    },
+    {
+      "name": "test-results/stories/browser-market-membership--341ab-ew-and-clears-market-intent-large/browser/story-baselines/market-draft-membership-revocation/large/linux-arm64/020-recover-restored-membership-1-market-envoy-campaign-device-expected.png",
+      "size": 5111837,
+      "sha256": "e2c61777b4c1996d62ceddc5402ce6834ce82ea5adcae8cbe0bbb13039701512",
+      "crc32": "5290f68f"
+    }
+  ],
+  "integrity": "Exact HTTP Content-Range and API size; selected entries decoded with ZIP CRC and individual SHA256. Full archive SHA not verified; no local archive retained.",
+  "comparison": "All three repeated actual/expected/diff SHA256s equal the prior integrated failure exactly. Reproduction on unchanged production/spec/renderer establishes repeatability in these two runs, not universal raster determinism.",
+  "inspection": "Viewed full diff at downscaled large size and native 900x1050 panel crops of expected and actual. Changes confined to text raster; words, allocations 25/25/25/25, full heading focus outline, rules, explanation, controls and geometry retained. No layout or content defect seen.",
+  "disposition": "Exact actual approved for scoped regression reference; full final story state/peer still requires strict verification after approved replacement. No speculative CSS change or tolerance change.",
+  "approvedActual": "abff8cb4a32ce9ea1e64caa92505d80eef9290bb4b84f496b6b388d34e42f5a4",
+  "scope": "No full design/normal-motion/release approval; panel crop only native pixel inspection, remaining full-screen composition previously reviewed."
+}
