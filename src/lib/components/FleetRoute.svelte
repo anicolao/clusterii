@@ -849,15 +849,14 @@
     font-size: 0.85em;
     color: #b4cbd1;
   }
-  li {
-    padding: 8px 0;
+  ol[aria-label="Route waypoints"] > li {
+    padding: 4px 0;
   }
   li span {
     display: block;
   }
   .waypoint-actions {
-    margin-top: 10px;
-    margin-bottom: 6px;
+    margin: 4px 0;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
