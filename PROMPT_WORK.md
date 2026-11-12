@@ -1041,3 +1041,5 @@ Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Diagnose retained short conversation clipping from original trace without new service runs or redundant archive copies.
 
 Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Bind complete travel and confirmed-force source families to current renderer repairs with all original normal-motion and real-service assertions.
+
+Prompt 390 | ce87921203e9c559c503e7d05c3389e719c635abf62f789b90f70ffccca74bd0 | Request complete288-view travel and force evidence once after all four exact selections and guarded source validation.
