@@ -308,3 +308,12 @@ Reviewer handoff 2026-11-12 20:20 UTC: Sole science strict run43296531488 comple
 Independently viewed original phone and desktop science-rate-sources010 chart-envoy captures from strict43296531488. Readable per-tick rate, confirmed tick, orbital source and explicit assumptions; phone primary Return to galaxy action visible, desktop source/empire rows and map/selected-system context visible. Compared bounded resource-ledger composition with UX_DESIGN desktop guidance. This is a two-capture inspection, not complete science/concept-plate approval; research plate07 concerns a different research decision instrument. Full design fidelity remains open.
 
 Exact continuation: let integrated checks finish, diagnose terminal failures only; continue independent remaining science views and applicable concept comparisons before acceptance. Agent not interrupted while checks run. No merge.
+
+
+## Supervisor PR140 short and large ledger review
+
+2026-11-12 20:40 UTC: pane and clean top0a2cfbce unchanged. Public140 remains6a2cbeee. Publish43299783654 and stories-generate43299783595 now SUCCESS; application, documentation and full strict stories remain IN_PROGRESS. No failure or duplicate prompt warrants intervention.
+
+Independently viewed short1280x720 and large3840x2160 science-rate-sources010 chart-envoy captures from strict43296531488. Short retains heading/rate/assumptions and complete fixed Return to galaxy action; lower source rows continue below scroll boundary. Source test readTotals explicitly focuses Science source ledger and presses End; still must inspect resulting totals captures before claiming all content reviewed. Large retains map context, separate selected-system inspector and complete source/empire ledger; preview resized2048x1152, so this is composition inspection only. Together with prior phone/desktop010 review, this covers four opening views, not all96images or full design approval.
+
+Exact continuation: let current checks complete and inspect totals/delivered/recovery science states plus actual shared gallery/lab evidence. Maintain concept-fidelity/release holds; no agent interruption or merge.
